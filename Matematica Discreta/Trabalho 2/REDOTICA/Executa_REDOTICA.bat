@@ -1,0 +1,2 @@
+REDOTICA 0< REDOTICA.txt
+pause

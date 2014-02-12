@@ -1,0 +1,19 @@
+    Ciência da Computação - UNIPAMPA.
+    Matemática Discreta 2012/2 - Teoria de Grafos.
+    Bruno Schubert, Marcos Treviso, Matheus Serpa e Paulo Almeida.
+
+Para compilar use uma das alternativas a seguir:
+	1) Abra o terminal/prompt e digite 
+		gcc -o PEDAGIO PEDAGIO.c
+	2) Execute o arquivo bat (Windows)
+		Compila_PEDAGIO.bat
+	3) Abra o terminal e digite
+		make compilar (Linux / Mac)
+
+Para executar use uma das alternativas a seguir:
+	1) Abra o terminal/prompt e digite 
+		PEDAGIO 0< PEDAGIO.txt
+	2) Execute o arquivo bat (Windows)
+		Executa_PEDAGIO.bat
+	3) Abra o terminal e digite
+		make executar (Linux / Mac)

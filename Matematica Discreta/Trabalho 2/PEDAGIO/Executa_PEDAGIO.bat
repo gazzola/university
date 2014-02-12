@@ -1,0 +1,2 @@
+PEDAGIO 0< PEDAGIO.txt
+pause

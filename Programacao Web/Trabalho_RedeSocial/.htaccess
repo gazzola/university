@@ -1,0 +1,21 @@
+RewriteEngine On
+#Ativa o suporte à reescrita de URL. Isso significa que as URL poderão ser direcionadas para um determinado arquivo no apache.
+
+RewriteCond %{REQUEST_FILENAME} !-f
+#Não aplica a condição para arquivos que existam. Isso significa que as imagens, CSS, JS e outros arquivos que já existem continuarão funcionando perfeitamente.
+
+RewriteCond %{REQUEST_FILENAME} !-d
+#Não aplica a condição para diretórios que existam.
+
+RewriteRule . index.php [L]
+#L = flag(last) que diz que se essa regra for utiliza nenhuma outra regra seja usada.
+
+
+#Para habilitar arquivos maiores no campo de file.
+php_value upload_max_filesize 64M
+php_value post_max_size 64M
+php_value memory_limit 64M
+
+#para habilitar maior tempo de ao enviar um arquivo.
+php_value max_execution_time 259200
+php_value max_input_time 259200

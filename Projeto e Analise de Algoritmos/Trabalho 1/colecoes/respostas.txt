@@ -1,0 +1,9 @@
+Valor maximo da colecao 1: 6
+Valor maximo da colecao 2: 15
+Valor maximo da colecao 3: 46
+Valor maximo da colecao 4: 51
+Valor maximo da colecao 5: 65
+Valor maximo da colecao 6: 83
+Valor maximo da colecao 7: 133
+Valor maximo da colecao 8: 175
+Valor maximo da colecao 9: 238

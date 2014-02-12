@@ -1,0 +1,497 @@
+/******************************************
+*
+* TRABALHO 5 DE ESTRUTURAS DE DADOS II
+* Arvores B - Busca e Inserção
+* Marcos Vinicius Treviso - 121150107
+*
+*******************************************/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#define ORDEM 5
+#define MAX_CHAVES ORDEM-1
+#define MIN_CHAVES (ORDEM-1)/2
+
+
+typedef int TipoChave;
+
+typedef struct _no{
+	char ehFolha;
+	int num_chaves;
+	TipoChave chaves[ORDEM-1];
+	struct _no *filhos[ORDEM];
+}no;
+
+typedef no *raiz;
+
+
+
+void criaArvore(raiz *r){
+	(*r) = NULL;
+}
+
+no *aloca_no(TipoChave x){
+	no *novo = (no*)malloc(sizeof(no));
+
+	int i;
+	for(i=0; i<ORDEM; i++)
+		novo->filhos[i] = NULL;
+
+	novo->chaves[0] = x;
+	novo->num_chaves = 1;
+	novo->ehFolha = 's';
+	return novo;
+}
+
+
+no *buscaEmArvoreB(raiz *r, TipoChave x) {
+
+	if(*r == NULL)
+		return NULL;
+
+	int i;
+	for(i=0; i<(*r)->num_chaves && (*r)->chaves[i]<x; i++);
+
+
+	if (i+1 > (*r)->num_chaves || (*r)->chaves[i] > x)
+		return buscaEmArvoreB(&(*r)->filhos[i], x);
+	else
+		return (*r);
+}
+
+no *buscaFolha(raiz *r, TipoChave x){
+	if(*r == NULL)
+		return NULL;
+
+	int i;
+	for(i=0; i<(*r)->num_chaves && (*r)->chaves[i]<x; i++);
+
+	if((i >= (*r)->num_chaves || (*r)->chaves[i] > x) && (*r)->ehFolha == 'n')
+		return buscaFolha(&(*r)->filhos[i], x);
+	else if((*r)->chaves[i] == x)
+		return NULL;
+	else
+		return (*r);
+
+}
+
+int ehRaiz(raiz *r){
+	int i;
+	for(i=0; i<ORDEM; i++)
+		if((*r)->filhos[i] != NULL)
+			return 1;
+	return 0;
+}
+
+raiz buscaAscendente(raiz *r, raiz *pre){
+	if(*r == NULL)
+		return NULL;
+
+	int i;
+	for(i=0; i<(*r)->num_chaves && (*r)->filhos[i] != (*pre); i++);
+
+	if (i+1 > (*r)->num_chaves || (*r)->filhos[i] != (*pre))
+		return buscaAscendente(&(*r)->filhos[i], &(*pre));
+	else
+		return (*r);
+}
+
+
+
+int getPosFilho(raiz *r, TipoChave x){
+	if(*r == NULL)
+		return -1;
+
+	int i;
+	for(i=0; i<(*r)->num_chaves && (*r)->chaves[i]<x; i++);
+
+	if((i >= (*r)->num_chaves || (*r)->chaves[i] > x) && (*r)->ehFolha == 'n')
+		buscaFolha(&(*r)->filhos[i], x);
+	
+	return i;
+
+}
+
+void deslocaDir(raiz *r, int x, int pos){
+	int i;
+	for(i=MAX_CHAVES; i>pos; i--)
+		(*r)->chaves[i] = (*r)->chaves[i-1];
+	(*r)->chaves[pos]=x;
+}
+
+void tiraEsq(raiz *r){
+	int i;
+	for(i=0; i<MIN_CHAVES; i++)
+		(*r)->chaves[i] = (*r)->chaves[i+1];
+	(*r)->chaves[i] = 9999999;
+}
+
+void tiraDir(raiz *r){
+	(*r)->chaves[MIN_CHAVES] = 9999999;
+}
+
+int getPosChave(raiz *r, TipoChave x){
+	int i;
+    for(i=0; i<(*r)->num_chaves && (*r)->chaves[i]<x; i++);
+    return i;
+}
+
+void distribuiChaves(raiz *r1, raiz *r2){
+
+	int j=0;
+
+	int i;
+	for(i=0; i<ORDEM; i++)
+		(*r2)->filhos[i] = NULL;
+
+	i=MIN_CHAVES;
+	while(i<MAX_CHAVES){
+		(*r2)->chaves[j] = (*r1)->chaves[i];
+		(*r1)->chaves[i] = 9999999;
+		(*r2)->filhos[j] = (*r1)->filhos[i+1];
+		(*r1)->filhos[i+1] = NULL;
+		i++;
+		j++;
+	}
+
+	(*r1)->num_chaves = MIN_CHAVES;
+	(*r2)->num_chaves = MIN_CHAVES-1;
+
+}
+
+int compare (const void * a, const void * b){
+  return ( *(int*)a - *(int*)b );
+}
+
+void arrumaNos(raiz *r){
+	qsort((*r)->chaves, (*r)->num_chaves, sizeof(int), compare);
+}
+
+void insercaoEmArvoreB(raiz *r, TipoChave x){
+
+	if(*r == NULL){
+		(*r) = aloca_no(x);
+	}
+	else{
+
+		no *novo = buscaFolha(&(*r), x);
+
+		if(novo == NULL){
+			printf("Elemento ja existe! fujam para as colinas u.u");
+			exit(0);
+		}
+
+        if(novo->num_chaves < MAX_CHAVES){
+	        int pos = getPosChave(&novo, x);
+	        deslocaDir(&novo, x, pos);
+            novo->num_chaves++;
+            novo->ehFolha = 's';
+            return;
+        }
+        else{
+
+
+        	int novopai = novo->chaves[MIN_CHAVES];
+            no *no1 = novo;
+            no *no2 = (no*)malloc(sizeof(no));
+            distribuiChaves(&no1, &no2);
+
+            if(x >= novopai){
+            	int pos = getPosChave(&no2, x);
+            	deslocaDir(&no2, x, pos);
+            	tiraEsq(&no2);
+            }
+            else{
+                novopai = x;
+            	int pos = getPosChave(&no1, x);
+            	deslocaDir(&no1, x, pos);
+            	if(pos == MIN_CHAVES)
+            		tiraDir(&no1);
+            	else
+            		tiraEsq(&no1);
+            }
+
+            no1->num_chaves = MIN_CHAVES;
+            no2->num_chaves = MIN_CHAVES;
+
+            no1->ehFolha = 's';
+            no2->ehFolha = 's';
+
+            arrumaNos(&no1);
+            arrumaNos(&no2);
+
+            
+            no *paino = buscaAscendente(&(*r), &novo);
+            if(paino == NULL)
+            	paino = (*r);
+
+            if(paino->ehFolha == 'n'){
+
+                paino->num_chaves++;
+            	int i;
+            	for(i=0; i<MAX_CHAVES && paino->chaves[i]<novopai; i++);
+
+            	if(paino->num_chaves <= MAX_CHAVES){
+            		if(paino->chaves[i] < 99999){//ja tem alocado
+            			//desloca chaves
+            			int j;
+            			for(j=MAX_CHAVES-1; j>i; j--)
+            				paino->chaves[j] = paino->chaves[j-1];
+            			paino->chaves[i] = novopai;
+
+            			//desloca ponteiros
+            			int k;
+            			for(k=ORDEM; k>i; k--)
+            				paino->filhos[k] = paino->filhos[k-1];
+            			paino->filhos[i+1] = no2;
+            		}
+                    else{
+                    	paino->filhos[paino->num_chaves] = no2;
+                    	paino->chaves[i] = novopai;
+                    }
+            	}
+                else{
+                    
+                	//novopai = 15
+                	//no1 = 13,14
+                	//no2 = 16,17
+                	/*
+                	-> jogar 15 pro ascendente do novo (paino);
+					-> dividir o no
+					-> criar nova raiz
+                	-> novo noesq = paino
+                	-> novo nodir = aponta pro no1 e no2
+                	// nova raiz aponta pra noesq e nodir
+                	*/
+
+                	int novox = novopai;
+                	int paigeral;
+
+                	
+                	int possel = getPosFilho(&(*r), x);
+
+					if(possel < MIN_CHAVES){//possel<2 = esq | possel>2 = dir | possel=2 = divide
+						no *noesq = (no*)malloc(sizeof(no));
+                		no *nodir = paino;
+
+                		no *nomeio = paino->filhos[MIN_CHAVES+1];
+						paigeral = paino->chaves[MIN_CHAVES-1];
+
+						distribuiChaves(&noesq, &nodir);
+		            
+		            	int pos = getPosChave(&noesq, novox);
+		            	deslocaDir(&noesq, novox, pos);
+		            	if(pos == MIN_CHAVES)
+		            		tiraDir(&noesq);
+		            	else
+		            		tiraEsq(&noesq);
+
+		            	noesq->num_chaves = MIN_CHAVES;
+			            noesq->ehFolha = 'n';
+
+		            	arrumaNos(&noesq);
+
+		            	//desloca ponteiros
+		            	noesq->filhos[0] = no1;
+		            	noesq->filhos[1] = no2;
+            			noesq->filhos[2] = nomeio;
+
+            			no *raizgeral = (no*)malloc(sizeof(no));
+            			raizgeral->num_chaves = 1;
+            			raizgeral->chaves[0] = paigeral;
+            			raizgeral->filhos[0] = noesq;
+            			raizgeral->filhos[1] = nodir;
+            			raizgeral->ehFolha = 'n';
+            			(*r) = raizgeral;
+
+					}
+					else if(possel > MIN_CHAVES){
+						no *noesq = paino;
+                		no *nodir = (no*)malloc(sizeof(no));
+
+						no *nomeio = paino->filhos[MIN_CHAVES+1];
+						paigeral = paino->chaves[MIN_CHAVES];
+
+						distribuiChaves(&noesq, &nodir);
+
+						int pos = getPosChave(&nodir, novox);
+		            	deslocaDir(&nodir, novox, pos);
+		            	tiraEsq(&nodir);
+
+		            	nodir->num_chaves = MIN_CHAVES;
+			            nodir->ehFolha = 'n';
+
+		            	arrumaNos(&nodir);
+
+		            	//desloca ponteiros
+		            	/*nodir->filhos[0] = no1;
+		            	nodir->filhos[1] = no2;
+
+            			int k;
+            			for(k=ORDEM; k>0; k--)
+            				nodir->filhos[k] = nodir->filhos[k-1];
+            			nodir->filhos[0] = nomeio;*/
+            			nodir->filhos[0] = nomeio;
+		            	nodir->filhos[1] = no1;
+            			nodir->filhos[2] = no2;
+
+            			no *raizgeral = (no*)malloc(sizeof(no));
+            			raizgeral->num_chaves = 1;
+            			raizgeral->chaves[0] = paigeral;
+            			raizgeral->filhos[0] = noesq;
+            			raizgeral->filhos[1] = nodir;
+            			raizgeral->ehFolha = 'n';
+            			(*r) = raizgeral;
+		            	
+					}
+					else{//divide
+						
+						no *noesq = paino;
+                		no *nodir = (no*)malloc(sizeof(no));
+						paigeral = novox;
+
+						distribuiChaves(&noesq, &nodir);
+
+						int pos = getPosChave(&nodir, novox);
+		            	deslocaDir(&nodir, novox, pos);
+		            	tiraEsq(&nodir);
+
+		            	nodir->num_chaves = MIN_CHAVES;
+			            nodir->ehFolha = 'n';
+
+		            	arrumaNos(&nodir);
+
+		            	//desloca ponteiros
+		            	nodir->filhos[0] = no2;
+		            	nodir->filhos[1] = paino->filhos[MIN_CHAVES+1];
+            			nodir->filhos[2] = paino->filhos[MIN_CHAVES+2];
+            			noesq->filhos[2] = no1;
+
+            			no *raizgeral = (no*)malloc(sizeof(no));
+            			raizgeral->num_chaves = 1;
+            			raizgeral->chaves[0] = paigeral;
+            			raizgeral->filhos[0] = noesq;
+            			raizgeral->filhos[1] = nodir;
+            			raizgeral->ehFolha = 'n';
+            			(*r) = raizgeral;
+					}
+
+                    //no1 e no2
+                    //insercaoEmArvoreB(&novoascend, novopai);
+                    //printf("estorou a raiz!");
+                }
+
+            }
+            else{
+                no *novoraiz = (no*)malloc(sizeof(no));
+                novoraiz->num_chaves = 1;
+                novoraiz->chaves[0] = novopai;
+                novoraiz->filhos[0] = no1;
+                novoraiz->filhos[1] = no2;
+                (*r)->num_chaves -= 1;
+                (*r) = novoraiz;
+            }
+
+            (*r)->ehFolha='n';
+            return;
+        }
+
+	}
+
+	return;
+}
+
+void em_ordem(raiz *r){
+	int i;
+	if ((*r) != NULL){
+		for (i=0; i<(*r)->num_chaves; i++){
+			em_ordem(&(*r)->filhos[i]);
+			printf("\n%d", (*r)->chaves[i]);
+		}
+		em_ordem(&(*r)->filhos[i+1]);//i+1
+	}
+}
+
+void em_normal(raiz *r){
+	int i;
+	for(i=0; i<MAX_CHAVES; i++)
+		if((*r)->chaves[i] < 99999)
+			printf("%d ", (*r)->chaves[i]);
+}
+
+void em_normal2(raiz *r){
+	int i;
+	for(i=0; i<MAX_CHAVES; i++)
+		if((*r)->chaves[i] < 99999)
+			printf("%d ", (*r)->chaves[i]);
+}
+
+int main(){
+
+	raiz novo;
+	criaArvore(&novo);
+	/*insercaoEmArvoreB(&novo, 10);
+	insercaoEmArvoreB(&novo, 8);
+	insercaoEmArvoreB(&novo, 7);
+	insercaoEmArvoreB(&novo, 12);
+	insercaoEmArvoreB(&novo, 15);
+	insercaoEmArvoreB(&novo, 1);
+	insercaoEmArvoreB(&novo, 3);
+	insercaoEmArvoreB(&novo, 22);
+	insercaoEmArvoreB(&novo, 19);
+	insercaoEmArvoreB(&novo, 30);
+	insercaoEmArvoreB(&novo, 32);
+	insercaoEmArvoreB(&novo, 5);
+	insercaoEmArvoreB(&novo, 31);
+	insercaoEmArvoreB(&novo, 4);
+	insercaoEmArvoreB(&novo, 18);
+	insercaoEmArvoreB(&novo, 16);
+	insercaoEmArvoreB(&novo, 0);
+	insercaoEmArvoreB(&novo, 2);
+	insercaoEmArvoreB(&novo, 6);
+	insercaoEmArvoreB(&novo, 9);
+	insercaoEmArvoreB(&novo, 11);
+	insercaoEmArvoreB(&novo, 33);*/
+
+	insercaoEmArvoreB(&novo, 1);
+	insercaoEmArvoreB(&novo, 2);
+	insercaoEmArvoreB(&novo, 3);
+	insercaoEmArvoreB(&novo, 4);
+	insercaoEmArvoreB(&novo, 5);
+	insercaoEmArvoreB(&novo, 6);
+	insercaoEmArvoreB(&novo, 7);
+	insercaoEmArvoreB(&novo, 8);
+	insercaoEmArvoreB(&novo, 9);
+	insercaoEmArvoreB(&novo, 10);
+	insercaoEmArvoreB(&novo, 11);
+	insercaoEmArvoreB(&novo, 12);
+	insercaoEmArvoreB(&novo, 13);
+	insercaoEmArvoreB(&novo, 14);
+	insercaoEmArvoreB(&novo, 15);
+	insercaoEmArvoreB(&novo, 16);
+	insercaoEmArvoreB(&novo, 17);
+
+	raiz aux1 = novo->filhos[0];
+	raiz aux2 = novo->filhos[1];
+	em_normal(&novo);
+	printf("\n\n");
+	em_normal(&aux1);
+	printf("\n\n");
+	em_normal(&aux2);
+	printf("\n\n");
+	em_normal(&aux1->filhos[0]);
+	printf("\n\n");
+	em_normal(&aux1->filhos[1]);
+	printf("\n\n");
+	em_normal(&aux1->filhos[2]);
+	printf("\n\n");
+	em_normal(&aux2->filhos[0]);
+	printf("\n\n");
+	em_normal(&aux2->filhos[1]);
+	printf("\n\n");
+	em_normal(&aux2->filhos[2]);
+	printf("\n");
+
+	return 0;
+}
