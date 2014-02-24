@@ -2,12 +2,10 @@ class HeapMin:
 
 	__heap = []
 	__capacity = 0
-	__inf = float("inf")
 
-	def __init__(self, node, capacity, inf):
-		self.__heap.append(node)
+	def __init__(self, capacity):
+		self.__heap.append(-1)
 		self.__capacity = capacity
-		self.__inf = inf
 
 
 	def __issetNode(self, node):
@@ -21,17 +19,17 @@ class HeapMin:
 	def __getLeftSon(self, node):
 		if(self.__issetNode(node*2)):
 			return self.__heap[node*2]
-		return self.__inf
+		return False
 
 
 	def __getRightSon(self, node):
 		if(self.__issetNode(node*2+1)):
 			return self.__heap[node*2 + 1]
-		return self.__inf
+		return False
 
 
 	def __rollUp(self, node):
-		while self.__getFather(node).freq > self.__heap[node].freq:
+		while self.__getFather(node) > self.__heap[node]:
 			temp = self.__getFather(node)
 			self.__heap[int(node/2)] = self.__heap[node]
 			self.__heap[node] = temp;
@@ -39,10 +37,9 @@ class HeapMin:
 
 
 	def __rollDown(self, node):
-
-		while self.__heap[node].freq > self.__getLeftSon(node).freq or self.__heap[node].freq > self.__getRightSon(node).freq:
+		while self.__heap[node] > self.__getLeftSon(node) or self.__heap[node] > self.__getRightSon(node):
 			
-			if(self.__getRightSon(node).freq < self.__getLeftSon(node).freq):
+			if(self.__getRightSon(node) < self.__getLeftSon(node)):
 				pos = node*2 + 1
 			else:
 				pos = node*2
@@ -65,10 +62,10 @@ class HeapMin:
 	def heapify(self, node):
 		bigger = node
 
-		if(self.__getLeftSon(node).freq < self.__heap[node].freq and self.__getLeftSon(node) != False):
+		if(self.__getLeftSon(node) < self.__heap[node] and self.__getLeftSon(node) != False):
 			bigger = node*2
 
-		if(self.__getRightSon(node).freq < self.__heap[bigger].freq and self.__getRightSon(node) != False):
+		if(self.__getRightSon(node) < self.__heap[bigger] and self.__getRightSon(node) != False):
 			bigger = node*2 + 1
 
 		if(bigger != node):
@@ -91,13 +88,9 @@ class HeapMin:
 
 
 	def extractMin(self):
-		if(len(self.__heap) > 2):
-			temp = self.__heap[1]
-			self.__heap[1] = self.__heap.pop()
-			self.__rollDown(1)
-		else:
-			temp = self.__heap.pop()
-
+		temp = self.__heap[1]
+		self.__heap[1] = self.__heap.pop()		
+		self.__rollDown(1)
 		return temp
 
 
@@ -120,14 +113,6 @@ class HeapMin:
 			if(i == nl):
 				nl *= 2
 				print("\n", end="")
-
-
-	def getSize(self):
-		return len(self.__heap)
-
-
-	def getNode(self, pos):
-		return self.__heap[pos]
 
 
 

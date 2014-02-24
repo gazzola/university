@@ -119,11 +119,12 @@ class Huffman:
 			temp = b[start:end] 
 			text += chr(int(temp, 2))
 			start, end = end, end+7
+
 		return text
 
 
 	def __convertStringToBin(self, b):
-		bytetable = [("00000000"+bin(x)[2:])[-7:] for x in range(128)]
+		bytetable = [("0000000"+bin(x)[2:])[-7:] for x in range(128)]
 		text = "".join(bytetable[ord(x)] for x in b)
 		return text
 
@@ -136,20 +137,3 @@ class Huffman:
 	def printTable(self):
 		print(self.__table)
 
-
-
-h = Huffman("entrada")
-
-h.queueNodes()
-h.joinElements()
-
-h.compress()
-
-h.saveFile('saida')
-h.saveFileBin('bsaida')
-
-h.printTexts()
-print("\n")
-
-final = h.extract('bsaida')
-print("EXTRACT:\n"+final)

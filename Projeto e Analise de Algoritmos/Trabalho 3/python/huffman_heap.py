@@ -1,11 +1,12 @@
+from heap import HeapMin, CapacityError
 from node import Node
+import sys
 
 class Huffman:
 
-	__queue = {}
-	__nodes = []
-	__text = ''
-	__bintext = ''
+	__queue, __table = {}, {}
+	__heap_queue = []
+	__text, __bintext = '', ''
 
 	def __init__(self, filename):
 		f = open(filename, 'r')
@@ -20,56 +21,52 @@ class Huffman:
 
 
 	def printQueue(self):
-		for char in sorted(self.__queue, key=self.__queue.get):
+		for char in self.__queue:
 			print("%c:%d" %(char, self.__queue[char]))
 
 
-	def queueNodes(self):
-		for char in sorted(self.__queue, key=self.__queue.get):
-			self.__nodes.append(Node(char, self.__queue[char]))
+	def queueHeap(self):
+		size = len(self.__queue)+1
+		first = Node('', -1)
+		inf = Node('', float("inf"))
+
+		self.__heap_queue = HeapMin(first, size, inf)
+
+		for char in self.__queue:
+			try:
+				self.__heap_queue.insertNode(Node(char, self.__queue[char]))
+			except CapacityError as e:
+				print(e.expr.upper() + ":\n" + e.msg + "\n")
+				sys.exit(0)
+
+
+	def printHeapQueue(self):
+		self.__heap_queue.printHeap()
 
 
 	def printAllNodes(self):
-		i=0
-		while(i<len(self.__nodes)):
-			print("")
-			level = self.__nodes[i].height(self.__nodes[i])+1
-			self.__nodes[i].printNode(self.__nodes[i], level)
-			i+=1
+		root = self.__heap_queue.getNode(1)
+		level = root.height(root)+1
+		root.printNode(root, level)
 
 
 	def printSequenceNodes(self):
-		i = 0
-		while(i < len(self.__nodes)):
-			print("")
-			self.__nodes[i].printNodeLine(self.__nodes[i])
-			i+=1
-
-
-	def extractMin(self):
-		pos = 0
-		m, i = self.__nodes[pos], 1
-		while(i < len(self.__nodes)):
-			if(self.__nodes[i].freq < m.freq):
-				m = self.__nodes[i]
-				pos = i
-			i += 1
-
-		del self.__nodes[pos]
-		return m
+		root = self.__heap_queue.getNode(1)
+		root.printNodeLine(root)
 
 
 	def joinElements(self):
-		while(len(self.__nodes) > 1):
-			left = h.extractMin()
-			right = h.extractMin()
+		while(self.__heap_queue.getSize() > 2):			
+			left = self.__heap_queue.extractMin()
+			right = self.__heap_queue.extractMin()
 			root = Node(left.char+right.char, left.freq+right.freq, left, right)
-			self.__nodes.append(root)
+			self.__heap_queue.insertNode(root)
 
 
 	def compress(self):
-		self.__nodes[0].passTree(self.__nodes[0])
-		self.__table = self.__nodes[0].getTable()
+		root = self.__heap_queue.getNode(1)
+		root.passTree(root)
+		self.__table = root.getTable()
 
 
 	def extract(self, filename=''):
@@ -116,16 +113,24 @@ class Huffman:
 		start, end = 0, 7
 		text = ''
 		while(end < len(b)+7):
-			temp = b[start:end] 
+			temp = b[start:end]
 			text += chr(int(temp, 2))
 			start, end = end, end+7
+
 		return text
 
 
 	def __convertStringToBin(self, b):
-		bytetable = [("00000000"+bin(x)[2:])[-7:] for x in range(128)]
-		text = "".join(bytetable[ord(x)] for x in b)
+		i = 0
+		text = ''
+		while(i < len(b)):
+			temp = b[i]
+			text += str(bin(ord(temp)))[2:].zfill(7)
+			i += 1
+
 		return text
+
+
 
 
 	def printTexts(self):
@@ -136,20 +141,3 @@ class Huffman:
 	def printTable(self):
 		print(self.__table)
 
-
-
-h = Huffman("entrada")
-
-h.queueNodes()
-h.joinElements()
-
-h.compress()
-
-h.saveFile('saida')
-h.saveFileBin('bsaida')
-
-h.printTexts()
-print("\n")
-
-final = h.extract('bsaida')
-print("EXTRACT:\n"+final)
