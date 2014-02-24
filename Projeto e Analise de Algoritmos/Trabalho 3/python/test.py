@@ -1,5 +1,5 @@
 import sys
-from heapok import HeapMin, CapacityError
+from heapInteger import HeapMin, CapacityError
 
 
 #set the capacity of heap
