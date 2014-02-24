@@ -81,8 +81,8 @@ class Node():
 
 #left = Node('a', 1)
 #right = Node('b', 2)
-#raiz = Node('c', 3, left, right)
+#root = Node('c', 3, left, right)
 
 #print("\n")
-#raiz.printNode(raiz, raiz.height(raiz))
+#root.printNode(root, root.height(root))
 #print("\n")
