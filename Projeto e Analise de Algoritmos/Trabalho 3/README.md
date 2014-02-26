@@ -1,4 +1,4 @@
-Exercício Prático 2 - Projeto e Análise de Algoritmos
+Exercício Prático 2 - PAA
 =========================================================
 
 Implemente o algoritmo de Huffman (usando um Heap) para compactar textos.
