@@ -1,9 +1,8 @@
-#Marcos Vinicius Treviso (121150107)
-
 Exercício Prático 2 - Projeto e Análise de Algoritmos
 =========================================================
 
 Implemente o algoritmo de Huffman (usando um Heap) para compactar textos.
+#Marcos Vinicius Treviso (121150107)
 
 
 Implementação
