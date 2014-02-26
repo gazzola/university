@@ -131,8 +131,6 @@ class Huffman:
 		return text
 
 
-
-
 	def printTexts(self):
 		print(self.__text)
 		print(self.__bintext)
@@ -141,3 +139,11 @@ class Huffman:
 	def printTable(self):
 		print(self.__table)
 
+
+	def printSizes(self):
+		sizeOriginalText = len(self.__text)*8
+		sizeCompressText = len(self.__bintext)
+		compressRatio = 100-float((sizeCompressText*100)/sizeOriginalText)
+		print("Tamanho do texto original em bits: %d" %(sizeOriginalText))
+		print("Tamanho do texto compactado em bits: %d" %(sizeCompressText))
+		print("Taxa de compactacao: %.2f%%" %compressRatio)

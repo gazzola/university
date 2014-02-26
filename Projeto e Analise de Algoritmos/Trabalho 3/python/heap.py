@@ -39,7 +39,6 @@ class HeapMin:
 
 
 	def __rollDown(self, node):
-
 		while self.__heap[node].freq > self.__getLeftSon(node).freq or self.__heap[node].freq > self.__getRightSon(node).freq:
 			
 			if(self.__getRightSon(node).freq < self.__getLeftSon(node).freq):

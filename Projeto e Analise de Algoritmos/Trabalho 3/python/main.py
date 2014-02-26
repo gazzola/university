@@ -1,7 +1,9 @@
+#from huffman_node import Huffman
 from huffman_heap import Huffman
 
 h = Huffman("entrada")
 
+#h.queueNodes()
 h.queueHeap()
 h.joinElements()
 
@@ -15,3 +17,6 @@ print("\n")
 
 final = h.extract('bsaida')
 print("EXTRACT:\n"+final)
+
+print("\n")
+h.printSizes()

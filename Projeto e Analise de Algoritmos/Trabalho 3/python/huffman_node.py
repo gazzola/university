@@ -61,8 +61,8 @@ class Huffman:
 
 	def joinElements(self):
 		while(len(self.__nodes) > 1):
-			left = h.extractMin()
-			right = h.extractMin()
+			left = self.extractMin()
+			right = self.extractMin()
 			root = Node(left.char+right.char, left.freq+right.freq, left, right)
 			self.__nodes.append(root)
 
@@ -137,3 +137,11 @@ class Huffman:
 	def printTable(self):
 		print(self.__table)
 
+
+	def printSizes(self):
+		sizeOriginalText = len(self.__text)*8
+		sizeCompressText = len(self.__bintext)
+		compressRatio = 100-float((sizeCompressText*100)/sizeOriginalText)
+		print("Tamanho do texto original em bits: %d" %(sizeOriginalText))
+		print("Tamanho do texto compactado em bits: %d" %(sizeCompressText))
+		print("Taxa de compactacao: %.2f%%" %compressRatio)
