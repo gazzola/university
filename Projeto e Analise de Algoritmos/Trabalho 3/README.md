@@ -2,7 +2,6 @@ Exercício Prático 2 - Projeto e Análise de Algoritmos
 =========================================================
 
 Implemente o algoritmo de Huffman (usando um Heap) para compactar textos.
-#Marcos Vinicius Treviso (121150107)
 
 
 Implementação
@@ -30,3 +29,8 @@ Extra
 ======
 
 Foram realizados testes utilizando a linguagem C, entretanto a implementação completa foi feita em Python.
+
+
+Copyright
+==========
+Marcos Vinicius Treviso (121150107)
