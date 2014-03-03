@@ -1,4 +1,4 @@
-Trabalho 1 - Programacao Orientada a Objetos
+Trabalho Final - Programacao Orientada a Objetos
 ======================================================
 MARCOS TREVISO - 121150107
 
