@@ -407,26 +407,26 @@ public class SupporterEditWindow extends JFrame implements ActionListener {
             throw new NegativeNumberException("Campo `peso` negativo");
 
 
-        this.supporter.setName(name);
-        this.supporter.setTeam(team);
-        this.supporter.setDateBirth(date);
-        this.supporter.setCpf(cpf);
-        this.supporter.setOccupation(occupation);
-        this.supporter.setScholarityLevel(school);
-        this.supporter.setTattoo(tattoo);
-        this.supporter.setNumFights(numFights);
-        this.supporter.setNumExpulsions(numExpulsions);
-        this.supporter.setHairSize(hairSize);
-        this.supporter.setHairColor(hairColor);
-        this.supporter.setPosTattoo(posTattoo);
-        this.supporter.setSkin(skin);
-        this.supporter.setHeight(height);
-        this.supporter.setWeight(weight);
-        this.supporter.setOrganizationSup(organizationSup);
-
-        
         String nameok = name.replaceAll("\\s+", "");
         if(!RegistrySupporter.isSet(nameok) || nameok.equals(this.sup)){
+           
+            this.supporter.setName(name);
+            this.supporter.setTeam(team);
+            this.supporter.setDateBirth(date);
+            this.supporter.setCpf(cpf);
+            this.supporter.setOccupation(occupation);
+            this.supporter.setScholarityLevel(school);
+            this.supporter.setTattoo(tattoo);
+            this.supporter.setNumFights(numFights);
+            this.supporter.setNumExpulsions(numExpulsions);
+            this.supporter.setHairSize(hairSize);
+            this.supporter.setHairColor(hairColor);
+            this.supporter.setPosTattoo(posTattoo);
+            this.supporter.setSkin(skin);
+            this.supporter.setHeight(height);
+            this.supporter.setWeight(weight);
+            this.supporter.setOrganizationSup(organizationSup);
+        
             RegistrySupporter.Remove(this.sup);
             RegistrySupporter.Set(nameok, this.supporter);
         }
