@@ -1,36 +1,46 @@
-# TRABALHO 1 - PROGRAMACAO ORIENTADA A OBJETOS
-# MARCOS TREVISO - 121150107
+Trabalho 1 - Programacao Orientada a Objetos
+======================================================
+MARCOS TREVISO - 121150107
 
-# ARQUIVO PARA EXECUTAR: LoginWindow
-# .class NA PASTA bin/
-# DIAGRAMA DE CLASSES NA PASTA diagrama/ (xmi|png)
+ARQUIVO PARA EXECUTAR: LoginWindow<br>
+.class NA PASTA bin/<br>
+DIAGRAMA DE CLASSES NA PASTA diagrama/ (xmi|png)
 
-# USER: mark | jose
-# PASS: mark | jose
-# EM CASO DE DUVIDAS, ABRIR ARQUIVO LoginWindow.java
-# NO METODO main ESTA VISIVEL AS ACOES TOMADAS.
+USER: mark | jose<br>
+PASS: mark | jose<br>
+EM CASO DE DUVIDAS, ABRIR ARQUIVO LoginWindow.java<br>
+NO METODO main ESTA VISIVEL AS ACOES TOMADAS.
 
 
-INICIAR APLICACAO:
-$ cd bin/
+
+Iniciar Aplicacao:
+--------------
+$ cd bin/<br>
 $ java LoginWindow
 
 
-COMPILAR APLICACAO:
-javac -d pasta *.java 		#no diretorio chamado pasta
-javac *.java 				#no diretorio atual
+Compilar Aplicacao:
+--------------
+javac -d pasta *.java 		#no diretorio chamado pasta<br>
+javac *.java 			      	#no diretorio atual
 
 
-USANDO MAKEFILE: 			#EM LINUX
-make 						#compilar tudo
-make run 					#rodar
-make clean 					#limpar
+Usando Makefile em Linux:
+--------------
+make 					    	      #compilar tudo<br>
+make run 			          	#rodar<br>
+make clean 		      	    #limpar
 
 
-USANDO MAKEFILE: 			#EM WINDOWS
+Usando Makefile em Windows:
+--------------
 cd C:/MinGW/mingw32-make	#mudar pasta e usar passos anteriores
-nmake -f makefile			#no cmd do visual studio
+<br>
+nmake -f makefile			    #no cmd do visual studio
 
 
--- Excecoes criadas: EmptyField | NegativeNumber.
--- output.out eh o arquivo de saida, o arquivo de saida pode ser alterado no arquivo SupporterWindowReport.java
+Novas Alteracoes:
+--------------
+Excecoes criadas: EmptyField | NegativeNumber.<br>
+output.out eh o arquivo de saida, o arquivo de saida pode ser alterado no arquivo SupporterWindowReport.java<br>
+Implementacao do padrao arquitetural observer mais explicado na pasta observer/
