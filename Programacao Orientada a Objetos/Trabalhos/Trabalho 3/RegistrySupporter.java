@@ -14,6 +14,11 @@ public class RegistrySupporter{
 		return data.get(name);
 	}
 
+	public static boolean isSet(String key) {
+		Supporter foo = data.get(key);
+	 	return foo != null;
+	}
+
 	public static void Remove(String name){
 		data.remove(name);
 	}

@@ -321,6 +321,10 @@ public class SupporterRegisterWindow extends JFrame implements ActionListener {
                     msg = "ERRO! NumberFormatException: campo `altura` ou `peso` vazio"; 
                 JOptionPane.showMessageDialog(null, msg);
             }
+            catch(SupporterAlreadyRegisteredException sare){
+                String msg = "ERRO! "+sare;
+                JOptionPane.showMessageDialog(null, msg);
+            }
             catch(Exception ex){
                 String msg = "ERRO! "+ex;
                 JOptionPane.showMessageDialog(null, msg);
@@ -334,7 +338,7 @@ public class SupporterRegisterWindow extends JFrame implements ActionListener {
     }
 
 
-    private void saveDatas() throws EmptyFieldException, NegativeNumberException, NumberFormatException{
+    private void saveDatas() throws EmptyFieldException, NegativeNumberException, NumberFormatException, SupporterAlreadyRegisteredException{
         String name = this.fieldName.getText();
         String team = (String) this.fieldTeam.getSelectedItem();
         Date date = (Date) this.fieldDate.getValue();
@@ -392,8 +396,13 @@ public class SupporterRegisterWindow extends JFrame implements ActionListener {
         sup.setOrganizationSup(organizationSup);
 
         String nameok = name.replaceAll("\\s+", "");
-        RegistrySupporter.Set(nameok, sup);
-        idCount++;
+        if(!RegistrySupporter.isSet(name)){
+            RegistrySupporter.Set(nameok, sup);
+            idCount++;
+        }
+        else
+            throw new SupporterAlreadyRegisteredException("Torcedo ja existente, por favor troque o nome dele");
+        
     }
 
 
