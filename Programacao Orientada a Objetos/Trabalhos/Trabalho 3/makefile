@@ -5,7 +5,9 @@ RM = rm -f
 
 MAIN = LoginWindow
 CLASSES = \
+		EmptyFieldException.java \
 		LoginWindow.java \
+		NegativeNumberException.java \
 		RegistryFunctionary.java \
 		RegistrySupporter.java \
 		Supporter.java \
@@ -13,7 +15,6 @@ CLASSES = \
 		SupporterRegisterWindow.java \
 		SupporterReportWindow.java \
 		SupporterWindow.java
-
 
 
 all: default

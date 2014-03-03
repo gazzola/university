@@ -63,11 +63,18 @@ public class SupporterReportWindow extends JFrame{
             this.output = new Formatter(file);
         }
         catch(SecurityException se){
-            System.err.println("Sem permissao de acesso: "+se.getMessage());
+            String msg = "ERRO! Sem permissao de acesso: "+se.getMessage();
+            JOptionPane.showMessageDialog(null, msg);
             System.exit(1);
         }
         catch (FileNotFoundException fnfe){
-            System.err.println("Nao foi possivel criar o arquivo: "+fnfe.getMessage());
+            String msg = "ERRO! Nao foi possivel criar o arquivo: "+fnfe.getMessage();
+            JOptionPane.showMessageDialog(null, msg);
+            System.exit(1);
+        }
+        catch(Exception ex){
+            String msg = "ERRO! "+ex;
+            JOptionPane.showMessageDialog(null, msg);
             System.exit(1);
         }
     }

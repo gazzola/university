@@ -350,7 +350,11 @@ public class SupporterEditWindow extends JFrame implements ActionListener {
                 if(nfe.getMessage().equals("empty String"))
                     msg = "ERRO! NumberFormatException: campo `altura` ou `peso` vazio"; 
                 JOptionPane.showMessageDialog(null, msg);
-            }            
+            }
+            catch(Exception ex){
+                String msg = "ERRO! "+ex;
+                JOptionPane.showMessageDialog(null, msg);
+            }
         }
         else if(comando.equals("VERTATUAGEMEDIT")){
             String tat = (String) this.fieldTattoo.getSelectedItem();
