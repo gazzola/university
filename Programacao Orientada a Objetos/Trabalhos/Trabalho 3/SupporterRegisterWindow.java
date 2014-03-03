@@ -396,7 +396,7 @@ public class SupporterRegisterWindow extends JFrame implements ActionListener {
         sup.setOrganizationSup(organizationSup);
 
         String nameok = name.replaceAll("\\s+", "");
-        if(!RegistrySupporter.isSet(name)){
+        if(!RegistrySupporter.isSet(nameok)){
             RegistrySupporter.Set(nameok, sup);
             idCount++;
         }
