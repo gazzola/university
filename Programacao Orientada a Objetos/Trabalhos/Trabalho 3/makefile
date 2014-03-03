@@ -11,6 +11,7 @@ CLASSES = \
 		RegistryFunctionary.java \
 		RegistrySupporter.java \
 		Supporter.java \
+		SupporterAlreadyRegisteredException.java \
 		SupporterEditWindow.java \
 		SupporterRegisterWindow.java \
 		SupporterReportWindow.java \
