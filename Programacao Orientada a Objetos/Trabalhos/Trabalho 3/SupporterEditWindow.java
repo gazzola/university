@@ -426,7 +426,7 @@ public class SupporterEditWindow extends JFrame implements ActionListener {
 
         
         String nameok = name.replaceAll("\\s+", "");
-        if(!RegistrySupporter.isSet(nameok) || nameok == this.sup){
+        if(!RegistrySupporter.isSet(nameok) || nameok.equals(this.sup)){
             RegistrySupporter.Remove(this.sup);
             RegistrySupporter.Set(nameok, this.supporter);
         }
