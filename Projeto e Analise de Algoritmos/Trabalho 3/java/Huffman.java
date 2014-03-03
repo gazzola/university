@@ -46,13 +46,14 @@ public class Huffman extends Dicionario{
 		}
 	}
 
+
 	public void gerarEstatisticas(){
 		int tamanhoTexto = this.texto.length()*8;
 		int tamanhoTextoBinario = this.textoBinario.length();
-		double taxaDeCompressao = (double) 100-((tamanhoTextoBinario*100)/tamanhoTexto);
+		double taxaDeCompressao = 100-((double)(tamanhoTextoBinario*100)/tamanhoTexto);
 		System.out.println("Tamanho do texto original em bits: "+tamanhoTexto);
 		System.out.println("Tamanho do texto compactado em bits: "+tamanhoTextoBinario);
-		System.out.println("Taxa de compactacao: "+taxaDeCompressao+"%");
+		System.out.printf("Taxa de compactacao: %.2f%%\n", taxaDeCompressao);
 	}
 
 
