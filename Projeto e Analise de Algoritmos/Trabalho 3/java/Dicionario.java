@@ -1,12 +1,12 @@
 import java.util.*;
 
-abstract class Dicionario{
+public class Dicionario{
 	
-	protected static Map<Character, Integer> dic = new HashMap<Character, Integer>();
+	public static Map<Character, Integer> dic = new HashMap<Character, Integer>();
 
-	public Dicionario(){};
+	private Dicionario(){};
 
-	protected void insereDicionario(String str){
+	public static void insereDicionario(String str){
 		for(int i=0; i<str.length(); i++){
 			char caracter = str.charAt(i);
 			if(isSetDicionarioFrequencia(caracter))
@@ -16,15 +16,15 @@ abstract class Dicionario{
 		}
 	}
 
-	protected static void setDicionarioFrequencia(char caracter, int freq){
+	public static void setDicionarioFrequencia(char caracter, int freq){
 		dic.put(caracter, freq);
 	}
 
-	protected static int getDicionarioFrequencia(char caracter){
+	public static int getDicionarioFrequencia(char caracter){
 		return dic.get(caracter);
 	}
 	
-	private static boolean isSetDicionarioFrequencia(char caracter){
+	public static boolean isSetDicionarioFrequencia(char caracter){
 		Integer foo = dic.get(caracter);
 	 	return (foo != null);
 	}

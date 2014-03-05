@@ -8,16 +8,18 @@ class Huffman:
 	__heap_queue = []
 	__text, __bintext = '', ''
 
-	def __init__(self, filename):
-		f = open(filename, 'r')
-		for char in f.read():
-			if char in self.__queue:
-				self.__queue[char] += 1
-			else:
-				self.__queue[char] = 1
 
-			self.__text += char
-		f.close()
+	def __init__(self, filename):
+		with open(filename, 'r') as f: 
+			for line in f:
+				for char in line:
+					if char in self.__queue:
+						self.__queue[char] += 1
+					else:
+						self.__queue[char] = 1
+
+				self.__text += line
+           		
 
 
 	def printQueue(self):
