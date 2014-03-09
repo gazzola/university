@@ -5,17 +5,27 @@ RM = rm -f
 
 MAIN = LoginWindow
 CLASSES = \
-		EmptyFieldException.java \
-		LoginWindow.java \
-		NegativeNumberException.java \
-		RegistryFunctionary.java \
-		RegistrySupporter.java \
-		Supporter.java \
-		SupporterAlreadyRegisteredException.java \
-		SupporterEditWindow.java \
-		SupporterRegisterWindow.java \
-		SupporterReportWindow.java \
-		SupporterWindow.java
+		CreateObjectFile.java \ 
+		RegistryFunctionary.java \ 
+		CreateTextFile.java \ 
+		RegistrySupporter.java \ 
+		EmptyFieldException.java \ 
+		SupporterAlreadyRegisteredException.java \ 
+		FileAction.java \ 
+		SupporterEditWindow.java \ 
+		FileException.java \ 
+		Supporter.java \ 
+		FileType.java \ 
+		SupporterRegisterWindow.java \ 
+		LoginWindow.java \ 
+		SupporterReportWindow.java \ 
+		NegativeNumberException.java \ 
+		SupporterWindow.java \ 
+		ObjectFile.java \ 
+		SystemLog.java \ 
+		ReadObjectFile.java \ 
+		TextFile.java \ 
+		ReadTextFile.java
 
 
 all: default

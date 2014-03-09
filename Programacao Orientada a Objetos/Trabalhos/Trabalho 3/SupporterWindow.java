@@ -15,7 +15,6 @@ public class SupporterWindow extends JFrame implements ActionListener {
 
 
     public SupporterWindow(){
-
         super("SUPPORTER WINDOW");
        
         Container content = getContentPane();
@@ -30,8 +29,23 @@ public class SupporterWindow extends JFrame implements ActionListener {
         this.labelFunctionary = new JLabel(labelText);
         this.labelFunctionary.setBounds(new Rectangle(250,10,300,25));
         content.add(this.labelFunctionary, null);
-       
-        labelText = "Registrar Torcedor:";
+ 
+        this.setFields(content);
+        this.setLog(LoginWindow.functionaryName, "entrou no sistema", "");
+        
+        setVisible(true);
+        setSize(400, 450);
+    }
+
+
+    private void setLog(String functionary, String action, String supporter){
+        SystemLog log = SystemLog.getInstance();
+        log.addData(functionary, action, supporter);
+    }
+
+
+    private void setFields(Container content){
+        String labelText = "Registrar Torcedor:";
         this.labelRegister = new JLabel(labelText);
         this.labelRegister.setBounds(new Rectangle(1,50,300,25));
         content.add(this.labelRegister, null);
@@ -85,13 +99,7 @@ public class SupporterWindow extends JFrame implements ActionListener {
        
         this.buttonRegister.setActionCommand("VISUALIZAR");
         this.buttonRegister.addActionListener(this);
-
-        
-        setVisible(true);
-        setSize(400, 450);
-
     }
-
 
     private String[] removeElements(String[] input, String functionary) {
         List result = new LinkedList();
