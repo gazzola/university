@@ -5,14 +5,14 @@ import java.io.BufferedReader;
 import java.util.Formatter;
 import java.util.*;
 
-public class Huffman extends Dicionario{
+public class Huffman{
 
 	private String texto, textoBinario="";
 	private Heap heap;
 
-	public Huffman(){
-		this.texto = this.abrirArquivo();
-		this.insereDicionario(this.texto);
+	public Huffman(String filename){
+		this.texto = this.abrirArquivo(filename);
+		Dicionario.insereDicionario(this.texto);
 		this.criarHeap(50);
 		this.unirNodos();
 	}
@@ -57,10 +57,10 @@ public class Huffman extends Dicionario{
 	}
 
 
-	private String abrirArquivo(){
+	private String abrirArquivo(String filename){
 		String linha = "";
 		try{
-			BufferedReader entrada = new BufferedReader(new FileReader("entrada.txt"));
+			BufferedReader entrada = new BufferedReader(new FileReader(filename));
 			while(entrada.ready())
 				linha += entrada.readLine();
 			entrada.close();
@@ -72,10 +72,9 @@ public class Huffman extends Dicionario{
 		return linha;
 	}
 
-
 	private void criarHeap(int capacidade){
 		this.heap = new Heap(capacidade);
-		for(Map.Entry<Character, Integer> entry : dic.entrySet()) {
+		for(Map.Entry<Character, Integer> entry : Dicionario.dic.entrySet()) {
 		    Character carac = entry.getKey();
 		    Integer freq = entry.getValue();
 			this.heap.insereElemento(new Nodo(carac.toString(), freq));
@@ -92,9 +91,9 @@ public class Huffman extends Dicionario{
 		}
 	}
 
-	
+
 	public static void main (String[] args){
-		Huffman huff = new Huffman();
+		Huffman huff = new Huffman("entrada.txt");
 		huff.comprimir();
 		huff.salvarArquivo("saida.txt");
 		huff.gerarEstatisticas();

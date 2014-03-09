@@ -251,7 +251,7 @@ public class SupporterEditWindow extends JFrame implements ActionListener {
         this.labelSkin.setBounds(new Rectangle(xLabelInit,yLabelInit,widthLabel,25));
         content.add(this.labelSkin, null);
 
-        String[] skin = {"Muito clara", "Clara", "Caucasiano", "Escura", "Muito escura"};
+        String[] skin = {"Clara", "Caucasiano", "Escura"};
         this.fieldSkin = new JComboBox(skin);
         this.fieldSkin.setBounds(new Rectangle(xFieldInit,yFieldInit,widthField,25));
         pos = this.getPositionInArray(skin, this.supporter.getSkin());
@@ -429,9 +429,16 @@ public class SupporterEditWindow extends JFrame implements ActionListener {
         
             RegistrySupporter.Remove(this.sup);
             RegistrySupporter.Set(nameok, this.supporter);
+
+            this.setLog(LoginWindow.functionaryName, "editou", name);
         }
         else
             throw new SupporterAlreadyRegisteredException("Torcedo ja existente, por favor troque o nome dele");
+    }
+
+    private void setLog(String functionary, String action, String supporter){
+        SystemLog log = SystemLog.getInstance();
+        log.addData(functionary, action, supporter);
     }
 
 

@@ -42,4 +42,14 @@ nmake -f makefile			    #no cmd do visual studio
 Novas Alteracoes:
 --------------
 Excecoes criadas: EmptyField | NegativeNumber | SupporterAlreadyRegistered.<br>
-output.out eh o arquivo de saida, o arquivo de saida pode ser alterado no arquivo SupporterWindowReport.java<br>
+output.out eh o arquivo de saida de texto, o arquivo de saida pode ser alterado no arquivo SupporterWindowReport.java<br>
+output_object.bin  eh o arquivo de saida de objeto, o arquivo de saida pode ser alterado no arquivo SupporterWindowReport.java<br>
+system.log eh o arquivo de log do sistema, mais informacoes em SystemLog.java
+
+
+Padroes utilizados:
+--------------
+Abstract Facotry
+Dependency Injection
+Singleton
+Registry

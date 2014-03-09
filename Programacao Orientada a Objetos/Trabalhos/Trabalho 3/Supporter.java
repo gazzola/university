@@ -1,6 +1,7 @@
 import java.util.*;
+import java.io.Serializable;
 
-public class Supporter{
+public class Supporter implements Serializable{
 
 	private int id;
 	private String name, team, cpf, occupation, scholarityLevel, funcName, 
@@ -10,6 +11,10 @@ public class Supporter{
 	private double height, weight;
 	private boolean tattoo;
 
+
+	public Supporter(String funcName){
+		this.funcName = funcName;
+	}
 
 	public Supporter(String name, int id, String funcName){
 		this.id = id;

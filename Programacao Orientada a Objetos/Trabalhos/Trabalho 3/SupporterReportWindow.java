@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.util.*;
+import java.util.ArrayList;
 import java.io.*;
 
 public class SupporterReportWindow extends JFrame{
@@ -8,8 +9,9 @@ public class SupporterReportWindow extends JFrame{
     private JLabel labelNavigator, labelFunctionary;
     private JTextArea report;
     private JScrollPane areaScrollPane;
-    private Formatter output;
-    private String outputText;
+
+    private String outputText, outputArea;
+    private Supporter[] outputRecords = new Supporter[RegistrySupporter.getSize()];
 
     public SupporterReportWindow(boolean crescentOrder){
 
@@ -29,16 +31,28 @@ public class SupporterReportWindow extends JFrame{
         content.add(this.labelFunctionary, null);
 
         this.generateOutputText();
-        this.reportFile("output.out");
-        this.reportArea(content);
-        
+        this.reportTextFile("output.out");
+
+        this.generateOutputObjects();
+        this.reportObjectFile("output_object.bin");
+
+        this.generateOutputArea();
+        this.reportArea(content, this.outputArea);
+        //this.reportArea(content, this.readTextFile("output.out"));
+        //this.reportArea(content, this.readObjectFile("output_object.bin"));
+
         setVisible(true);
         setSize(800, 600);
 
     }
 
+    private void setLog(String functionary, String action, String supporter){
+        SystemLog log = SystemLog.getInstance();
+        log.addData(functionary, action, supporter);
+    }
 
-    private void reportArea(Container content){
+
+    private void reportArea(Container content, String text){
         this.report = new JTextArea();
         this.areaScrollPane = new JScrollPane(report);
 
@@ -47,54 +61,90 @@ public class SupporterReportWindow extends JFrame{
         areaScrollPane.setBounds(new Rectangle(1, 40, 770, 500));
         content.add(areaScrollPane, null);
 
-        report.append(this.outputText);
-    }
+        report.append(text);
 
-    private void reportFile(String file){
-        this.openFile(file);
-        this.addText();
-        this.closeFile();
+        this.setLog(LoginWindow.functionaryName, "reportou na area", "todos torcedores");
     }
 
 
-    private void openFile(String file){
-            
+    private void reportTextFile(String file){
+       try{
+            FileAction textCreate = FileType.getFileType("Text").getFileAction("Create");
+            textCreate.openFile(file);
+            textCreate.addContent(this.outputText);
+            textCreate.closeFile();
+        }
+        catch(FileException fe){
+            String msg = fe.getMessage();
+            JOptionPane.showMessageDialog(null, msg);
+        }
+
+        this.setLog(LoginWindow.functionaryName, "reportou no arquivo de texto", "todos torcedores");
+    }
+
+
+    private void reportObjectFile(String file){
         try{
-            this.output = new Formatter(file);
+            FileAction objCreate = FileType.getFileType("Object").getFileAction("Create");
+            objCreate.openFile(file);
+            objCreate.addContent(this.outputRecords);
+            objCreate.closeFile();
         }
-        catch(SecurityException se){
-            String msg = "ERRO! Sem permissao de acesso: "+se.getMessage();
+        catch(FileException fe){
+            String msg = fe.getMessage();
             JOptionPane.showMessageDialog(null, msg);
-            System.exit(1);
         }
-        catch (FileNotFoundException fnfe){
-            String msg = "ERRO! Nao foi possivel criar o arquivo: "+fnfe.getMessage();
-            JOptionPane.showMessageDialog(null, msg);
-            System.exit(1);
-        }
-        catch(Exception ex){
-            String msg = "ERRO! "+ex;
-            JOptionPane.showMessageDialog(null, msg);
-            System.exit(1);
-        }
-    }
-    
-    private void addText(){        
-        this.output.format("%s \n", this.outputText);
-    }
 
-    
-    private void closeFile(){
-        if(this.output != null)
-            this.output.close();
+        this.setLog(LoginWindow.functionaryName, "reportou no arquivo de objeto", "todos torcedores");
     }
 
 
-    private void generateOutputText(){
+    private String readTextFile(String file){
+        String text = "";
+        try{
+            FileAction textRead = FileType.getFileType("Text").getFileAction("Read");
+            textRead.openFile(file);
+            text = textRead.readContent();
+            textRead.closeFile();
+        }
+        catch(FileException fe){
+            String msg = fe.getMessage();
+            JOptionPane.showMessageDialog(null, msg);
+        }
+
+        return text;
+    }
+
+
+    private String readObjectFile(String file){
+        String text = "";
+        try{
+            FileAction objRead = FileType.getFileType("Object").getFileAction("Read");
+            objRead.openFile(file);
+            text = objRead.readContent();
+            objRead.closeFile();
+        }
+        catch(FileException fe){
+            String msg = fe.getMessage();
+            JOptionPane.showMessageDialog(null, msg);
+        }
+
+        return text;
+    }
+
+
+    private void generateOutputObjects(){
+        String[] names = RegistrySupporter.GetAll();
+
+        for(int i=0; i<RegistrySupporter.getSize(); i++)
+            this.outputRecords[i] = RegistrySupporter.Get(names[i]);
+    }
+
+
+    private void generateOutputArea(){
         String text = "";
         String[] names = RegistrySupporter.GetAll();
-        int size = RegistrySupporter.getSize();
-        for(int i=0; i<size; i++){
+        for(int i=0; i<RegistrySupporter.getSize(); i++){
             Supporter objr = RegistrySupporter.Get(names[i]);
             String tattoo = (objr.hasTattoo()) ? "Sim" : "Nao";
             text += "ID: "+objr.getId()+"\n";
@@ -116,6 +166,34 @@ public class SupporterReportWindow extends JFrame{
             text += "POSICAO DA TATUAGEM: "+objr.getPosTattoo()+"\n";
             text += "REGISTRADO POR: "+objr.getFuncName()+"\n";
             text += "\n------------------------------------------------------------------------------\n\n";
+        }
+        this.outputArea = text;
+    }
+
+    private void generateOutputText(){
+        String text = "";
+        String[] names = RegistrySupporter.GetAll();
+        for(int i=0; i<RegistrySupporter.getSize(); i++){
+            Supporter objr = RegistrySupporter.Get(names[i]);
+            String tattoo = (objr.hasTattoo()) ? "Sim" : "Nao";
+            text += objr.getId()+" ";
+            text += objr.getName()+" ";
+            text += objr.getTeam()+" ";
+            text += objr.getDateBirth()+" ";
+            text += objr.getCpf()+" ";
+            text += objr.getOccupation()+" ";
+            text += objr.getScholarityLevel()+" ";
+            text += tattoo+" ";
+            text += objr.getNumFights()+" ";
+            text += objr.getNumExpulsions()+" ";
+            text += objr.getHairSize()+" ";
+            text += objr.getHairColor()+" ";
+            text += objr.getSkin()+" ";
+            text += objr.getHeight()+" ";
+            text += objr.getWeight()+" ";
+            text += objr.getOrganizationSup()+" ";
+            text += objr.getPosTattoo()+" ";
+            text += objr.getFuncName()+"\n";
         }
         this.outputText = text;
     }

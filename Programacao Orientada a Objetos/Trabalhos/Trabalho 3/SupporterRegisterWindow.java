@@ -228,7 +228,7 @@ public class SupporterRegisterWindow extends JFrame implements ActionListener {
         this.labelSkin.setBounds(new Rectangle(xLabelInit,yLabelInit,widthLabel,25));
         content.add(this.labelSkin, null);
 
-        String[] skin = {"Muito clara", "Clara", "Caucasiano", "Escura", "Muito escura"};
+        String[] skin = {"Clara", "Caucasiano", "Escura"};
         this.fieldSkin = new JComboBox(skin);
         this.fieldSkin.setBounds(new Rectangle(xFieldInit,yFieldInit,widthField,25));
         this.fieldSkin.setSelectedIndex(0);
@@ -378,31 +378,39 @@ public class SupporterRegisterWindow extends JFrame implements ActionListener {
 
 
 
-        Supporter sup = new Supporter(name, idCount, LoginWindow.functionaryName);
-        sup.setTeam(team);
-        sup.setDateBirth(date);
-        sup.setCpf(cpf);
-        sup.setOccupation(occupation);
-        sup.setScholarityLevel(school);
-        sup.setTattoo(tattoo);
-        sup.setNumFights(numFights);
-        sup.setNumExpulsions(numExpulsions);
-        sup.setHairSize(hairSize);
-        sup.setHairColor(hairColor);
-        sup.setPosTattoo(posTattoo);
-        sup.setSkin(skin);
-        sup.setHeight(height);
-        sup.setWeight(weight);
-        sup.setOrganizationSup(organizationSup);
-
         String nameok = name.replaceAll("\\s+", "");
         if(!RegistrySupporter.isSet(nameok)){
+
+            Supporter sup = new Supporter(name, idCount, LoginWindow.functionaryName);
+            sup.setTeam(team);
+            sup.setDateBirth(date);
+            sup.setCpf(cpf);
+            sup.setOccupation(occupation);
+            sup.setScholarityLevel(school);
+            sup.setTattoo(tattoo);
+            sup.setNumFights(numFights);
+            sup.setNumExpulsions(numExpulsions);
+            sup.setHairSize(hairSize);
+            sup.setHairColor(hairColor);
+            sup.setPosTattoo(posTattoo);
+            sup.setSkin(skin);
+            sup.setHeight(height);
+            sup.setWeight(weight);
+            sup.setOrganizationSup(organizationSup);
+
             RegistrySupporter.Set(nameok, sup);
             idCount++;
+
+            this.setLog(LoginWindow.functionaryName, "registrou", name);
         }
         else
             throw new SupporterAlreadyRegisteredException("Torcedo ja existente, por favor troque o nome dele");
         
+    }
+
+    private void setLog(String functionary, String action, String supporter){
+        SystemLog log = SystemLog.getInstance();
+        log.addData(functionary, action, supporter);
     }
 
 

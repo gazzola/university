@@ -67,7 +67,6 @@ public class LoginWindow extends JFrame implements ActionListener {
         this.buttonExit.addActionListener(this);
     
        
-       
         setVisible(true);
     }
 
@@ -91,15 +90,11 @@ public class LoginWindow extends JFrame implements ActionListener {
             }
             else
                 JOptionPane.showMessageDialog(null, "Usuario ou Senha Incorretos!");
-
-
         }
-       
     }
 
 
-    public static void main(String[] args){
-        
+    public static void main(String[] args){        
         RegistryFunctionary.Set("mark", "mark");
         RegistryFunctionary.Set("jose", "jose");
 
