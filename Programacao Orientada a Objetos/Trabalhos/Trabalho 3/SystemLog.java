@@ -32,8 +32,8 @@ class SystemLog implements Log{
 
 
 	public void addData(String functionary, String action, String suppoter){
-		String data = functionary+" "+action+" "+suppoter+" - "+this.getCurrentDateAndTime()+"\n";
-		this.text += data;
+		String data = functionary+" "+action+" "+suppoter+" - "+this.getCurrentDateAndTime();
+		this.text += "\n"+data;
 		this.writeData(this.filename);
 	}
 

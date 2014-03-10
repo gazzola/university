@@ -13,7 +13,6 @@ public class SupporterWindow extends JFrame implements ActionListener {
     protected JComboBox fieldSupporter;
     private JButton buttonRegister, buttonEdit, buttonReport;
 
-
     public SupporterWindow(){
         super("SUPPORTER WINDOW");
        
@@ -29,7 +28,8 @@ public class SupporterWindow extends JFrame implements ActionListener {
         this.labelFunctionary = new JLabel(labelText);
         this.labelFunctionary.setBounds(new Rectangle(250,10,300,25));
         content.add(this.labelFunctionary, null);
- 
+        
+        this.setSupportersRegistry(this.readObjectFile("output_object.bin"));
         this.setFields(content);
         this.setLog(LoginWindow.functionaryName, "entrou no sistema", "");
         
@@ -100,6 +100,36 @@ public class SupporterWindow extends JFrame implements ActionListener {
         this.buttonRegister.setActionCommand("VISUALIZAR");
         this.buttonRegister.addActionListener(this);
     }
+
+    private Vector<Supporter> readObjectFile(String file){
+        Vector<Supporter> supporters = new Vector<Supporter>();
+
+        try{
+            FileAction objRead = FileType.getFileType("Object").getFileAction("Read");
+            objRead.openFile(file);
+            String slave = objRead.readContent();
+            objRead.closeFile();
+
+            supporters = objRead.getSupporters();
+        }
+        catch(FileException fe){
+            String msg = fe.getMessage();
+            JOptionPane.showMessageDialog(null, msg);
+        }
+
+        return supporters;
+    }
+
+
+    private void setSupportersRegistry(Vector<Supporter> supporters){
+        for(int i=0; i<supporters.size(); i++){
+            Supporter record = (Supporter) supporters.elementAt(i);
+            String name = record.getName().replaceAll("\\s+", "");
+            if(!RegistrySupporter.isSet(name))
+                RegistrySupporter.Set(name, record);
+        }
+    }
+
 
     private String[] removeElements(String[] input, String functionary) {
         List result = new LinkedList();

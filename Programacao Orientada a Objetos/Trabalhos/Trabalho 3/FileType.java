@@ -1,5 +1,3 @@
-import javax.swing.*;
-
 public abstract class FileType{
 	
 	protected String type;

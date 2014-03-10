@@ -430,11 +430,13 @@ public class SupporterEditWindow extends JFrame implements ActionListener {
             RegistrySupporter.Remove(this.sup);
             RegistrySupporter.Set(nameok, this.supporter);
 
-            this.setLog(LoginWindow.functionaryName, "editou", name);
+            this.setLog(LoginWindow.functionaryName, "editou "+this.sup+" para", name);
+            this.saveSupporterInObjectFile(this.sup, name);
         }
         else
             throw new SupporterAlreadyRegisteredException("Torcedo ja existente, por favor troque o nome dele");
     }
+
 
     private void setLog(String functionary, String action, String supporter){
         SystemLog log = SystemLog.getInstance();
@@ -442,11 +444,37 @@ public class SupporterEditWindow extends JFrame implements ActionListener {
     }
 
 
+    private void saveSupporterInObjectFile(String supOldName, String supNewName){
+        try{
+            FileAction objCreate = FileType.getFileType("Object").getFileAction("Create");
+            objCreate.openFile("output_object.bin");
+            objCreate.addContent(generateOutputObjects());
+            objCreate.closeFile();
+        }
+        catch(FileException fe){
+            String msg = fe.getMessage();
+            JOptionPane.showMessageDialog(null, msg);
+        }
+
+        this.setLog(LoginWindow.functionaryName, "salvou no arquivo de objeto o torcedor "+supOldName+" para", supNewName);
+    }
+
+
+    private Supporter[] generateOutputObjects(){
+        String[] names = RegistrySupporter.GetAll();
+        Supporter[] outputRecords = new Supporter[RegistrySupporter.getSize()];
+
+        for(int i=0; i<RegistrySupporter.getSize(); i++)
+            outputRecords[i] = RegistrySupporter.Get(names[i]);
+
+        return outputRecords;
+    }
+
+
     private void replaceSwCombo(){
-        int index = RegistrySupporter.getSize()-1;
         this.sw.fieldSupporter.removeItemAt(this.sw.fieldSupporter.getSelectedIndex());
         this.sw.fieldSupporter.addItem(this.fieldName.getText());
-        this.sw.fieldSupporter.setSelectedIndex(index);
+        this.sw.fieldSupporter.setSelectedItem(this.fieldName.getText());
     }
 
     private void resetCoords(){
