@@ -17,12 +17,12 @@
 #include <time.h>
 
 
-int *vectorAllocation(int m){
+int *allocateVector(int m){
 	int *vector = (int*) calloc(m, sizeof(int));
 	return vector;
 }
 
-int **matrixAllocation(int m, int n){
+int **allocateMatrix(int m, int n){
 	int i;
 	int **matrix = (int**) calloc(m, sizeof(int*));
 	for(i=0; i<m; ++i)
@@ -76,31 +76,43 @@ void swapVectors(int *vB, int *vC, int maxSize){
 		vB[i] = vC[i];
 }
 
+void swapVectorsPointers(int **vB, int **vC){
+	int *temp = *vB;
+	*vB = *vC;
+	*vC = temp;  
+}
+
+
 //complexity: O(n.maxSize)
-int binaryKnapsackVector(int *vB, int *vC, int n, int *weight, int *rank, int maxSize){
+int binaryKnapsackVector(int **vB, int **vC, int n, int *weight, int *rank, int maxSize){
 	
 	int x, i, a, b, vi, pi;
 
 	for(x=0; x<n; ++x){
 		for(i=0; i<=maxSize; ++i){
-			a = vB[i];
-
+			a = (*vB)[i];
+			
 			vi = rank[x];
 			pi = weight[x];
 
 			if(i-pi >= 0){
-				b = vi + vB[i-pi];
+				b = vi + (*vB)[i-pi];
 				if(a < b)
 					a = b;
 			}
 
-			vC[i] = a;
+			(*vC)[i] = a;
 		}
-		swapVectors(vB, vC, maxSize);
+
+		swapVectorsPointers(&(*vB), &(*vC));
+		//swapVectors(*vB, *vC, maxSize);
+		
 	}
 
-	return vC[maxSize];
+	return (*vC)[maxSize];
 }
+
+
 
 double crono(){
     struct timeval tv;
@@ -124,11 +136,11 @@ int main(){
 
 
 	//set allocations
-	weight = vectorAllocation(ammount);
-	rank = vectorAllocation(ammount);
-	vectorBefore = vectorAllocation(maxSize+1);
-	vectorCurrent = vectorAllocation(maxSize+1);
-	//matrix = matrixAllocation(ammount+1, maxSize+1);
+	weight = allocateVector(ammount);
+	rank = allocateVector(ammount);
+	vectorBefore = allocateVector(maxSize+1);
+	vectorCurrent = allocateVector(maxSize+1);
+	//matrix = allocateMatrix(ammount+1, maxSize+1);
 
 
 	//get the values contained in file
@@ -141,7 +153,7 @@ int main(){
 
 	//calcule time of binaryKnapsack function
 	double timer = crono();
-	int result = binaryKnapsackVector(vectorBefore, vectorCurrent, ammount, weight, rank, maxSize);
+	int result = binaryKnapsackVector(&vectorBefore, &vectorCurrent, ammount, weight, rank, maxSize);
 	//int result = binaryKnapsackMatrix(matrix, ammount, weight, rank, maxSize);
 	timer = crono() - timer;
 

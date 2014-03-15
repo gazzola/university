@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Passe o nome do arquivo contido na pasta colecoes/ que deseja ler ou digite `all` para executar todos arquivos"
+echo "Passe o nome do arquivo contido na pasta colecoes/ que deseja ler ou digite all para executar todos arquivos"
 read value
 
 if [[ $value = "all" || $value = "ALL" ]]; then
