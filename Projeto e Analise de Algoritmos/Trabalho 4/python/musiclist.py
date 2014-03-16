@@ -22,8 +22,6 @@ class MusicList:
 		self.setAmmount(ammount)
 		
 		self.setMusics(f, divisor)
-		#self.setMatriz(self.getAmmount()+1, self.getMaxSize()+1) #madness
-		self.setMatriz(2, self.getMaxSize()+1)
 
 
 
@@ -40,7 +38,7 @@ class MusicList:
 	def setMaxSize(self, value):
 		self.__maxSize = int(value)
 
-	def setMatriz(self, lines, columns):
+	def setMatrix(self, lines, columns):
 		self.__matrix = [[0 for y in range(columns)] for x in range(lines)]
 
 	def setMusics(self, filename, divisor):
@@ -83,6 +81,8 @@ class MusicList:
 
 
 	def binaryKnapsackOptimized(self, ammount, weight, rank, maxSize):
+		self.setMatrix(2, self.getMaxSize()+1)
+
 		for x in range(ammount+1):
 			for i in range(maxSize+1):
 				a = self.__matrix[0][i]
@@ -103,6 +103,8 @@ class MusicList:
 
 
 	def binaryKnapsack(self, ammount, weight, rank, maxSize):
+		self.setMatrix(self.getAmmount()+1, self.getMaxSize()+1) #madness
+
 		for x in range(maxSize+1):
 			self.__matrix[0][x] = 0
 
