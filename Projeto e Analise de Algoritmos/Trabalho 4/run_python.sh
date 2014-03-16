@@ -6,6 +6,9 @@ read inter
 echo "Passe o nome do arquivo contido na pasta colecoes/ que deseja ler ou digite all para executar todos arquivos"
 read value
 
+echo "Passe o tipo do algoritmo guloso/pdinamica"
+read algtype
+
 echo ""
 
 if [ $inter = "pypy" ] || [ $inter = "python3" ] || [ $inter = "python" ]; then
@@ -15,7 +18,7 @@ if [ $inter = "pypy" ] || [ $inter = "python3" ] || [ $inter = "python" ]; then
 		for filename in *; do
 			echo "Executando para o arquivo: $filename"
 			cd ../python/
-			$inter main.py $filename
+			$inter main.py $filename $algtype
 			cd ../colecoes/
 			echo ""
 			sleep 1
@@ -23,7 +26,7 @@ if [ $inter = "pypy" ] || [ $inter = "python3" ] || [ $inter = "python" ]; then
 
 	else
 		cd python/
-		$inter main.py $value
+		$inter main.py $value $algtype
 	fi
 
 else

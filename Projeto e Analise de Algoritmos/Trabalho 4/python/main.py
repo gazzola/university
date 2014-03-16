@@ -1,3 +1,8 @@
+# run: $INTERPRETER main.py $FILENAME $ALGORITHM_TYPE
+# $INTERPRETER = {python, python3, pypy}
+# $FILENAME = {colecao01.txt} in ../colecoes/
+# $ALGORITHM_TYPE = {guloso, pdinamica}
+
 import os, sys, time
 from musiclist import MusicList
 
@@ -9,10 +14,12 @@ else:
 
 
 
-#SET INTERPRETE AND FILENAME
+#SET FILENAME AND TYPE OF ALGORITHM
 filename = "colecao01.txt"
+algtype = "guloso"
 if(len(sys.argv) >= 2):
 	filename = sys.argv[1]
+	algtype = sys.argv[2]
 
 
 
@@ -20,34 +27,36 @@ if(len(sys.argv) >= 2):
 start_time = default_timer()
 
 
-#CREATE OBJECT AND EXECUTE METHODS
+#CREATE OBJECT
 listam = MusicList("../colecoes/"+filename, 10**3) #in KB
-musicas = listam.getMusics()
-#listam.showMusics(musicas)
-
-resultado = listam.selectMusics(musicas)
-timeguloso = default_timer() - start_time
 
 
+if(algtype == "guloso"):
 
-#GET THE DEPENDENCIES
-start_time = default_timer()
+	#EXECUTE METHODS
+	musicas = listam.getMusics()
+	#listam.showMusics(musicas)
+	resultado = listam.selectMusics(musicas)
 
-qtdElementos = listam.getAmmount()
-tamMochila = listam.getMaxSize()
-pesos = listam.getWeight()
-valores = listam.getRank()
+else:
+
+	#GET THE DEPENDENCIES
+	qtdElementos = listam.getAmmount()
+	tamMochila = listam.getMaxSize()
+	pesos = listam.getWeight()
+	valores = listam.getRank()
+
+	#resultado = listam.binaryKnapsack(qtdElementos, pesos, valores, tamMochila)
+	resultado = listam.binaryKnapsackOptimized(qtdElementos, pesos, valores, tamMochila)
 
 
-#resultado2 = listam.binaryKnapsack(qtdElementos, pesos, valores, tamMochila)
-resultado2 = listam.binaryKnapsackOptimized(qtdElementos, pesos, valores, tamMochila)
-timeprodg = default_timer() - start_time - timeguloso
+
+tempo = default_timer() - start_time
 
 
 
 #PRINT RESULT AND EXECUTION TIME
-print("RESULTADO ALG. GULOSO:", resultado)
-print("TEMPO ALG. GULOSO:"+str(timeguloso),  "s")
-print(30*"-")
-print("RESULTADO ALG. PROG.D:", resultado2)
-print("TEMPO ALG. PROG.D:"+str(timeprodg), "s\n")
+print("ALGORITMO:", algtype)
+print("RESULTADO:", resultado)
+print("TEMPO ALG:", str(tempo)+"s")
+print(50*"-")

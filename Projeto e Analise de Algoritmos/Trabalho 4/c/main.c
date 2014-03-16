@@ -2,7 +2,6 @@
 *
 * TRABALHO DE PROJETO E ANALISE DE ALGORITMOS
 * Resolver corretamente o primeiro trabalho
-* Marcos Vinicius Treviso - 121150107
 * 
 * EXECUTAR (LINUX): 
 * ./execname < ../colecoes/colecao1.txt
@@ -105,11 +104,11 @@ int binaryKnapsackVector(int **vB, int **vC, int n, int *weight, int *rank, int 
 		}
 
 		swapVectorsPointers(&(*vB), &(*vC));
-		//swapVectors(*vB, *vC, maxSize);
-		
+		//swapVectors(*vB, *vC, maxSize);	
 	}
 
-	return (*vC)[maxSize];
+
+	return (*vB)[maxSize];
 }
 
 
@@ -124,7 +123,7 @@ double crono(){
 int main(){
 	
 	srand(time(NULL));
-	int maxSize, ammount, aux, id, count=0, 
+	int maxSize, ammount, aux, id, count=0, temp, 
 		*weight, *rank;
 
 	//int **matrix;
@@ -133,6 +132,11 @@ int main(){
 
 	//get the maxSize of bag and ammount of elements
 	scanf("%d %d", &maxSize, &ammount);
+
+
+	//transform values in KB, if you want to be normal, just given 1 to the divisor
+	int divisor = (maxSize >= 1000) ? 1000 : 1;
+	maxSize /= divisor;
 
 
 	//set allocations
@@ -146,7 +150,8 @@ int main(){
 	//get the values contained in file
 	aux = ammount;
 	while(aux--){
-		scanf("%d %d %d", &id, &weight[count], &rank[count]);
+		scanf("%d %d %d", &id, &temp, &rank[count]);
+		weight[count] = temp/divisor;
 		count++;
 	}
 
@@ -166,7 +171,8 @@ int main(){
 	//matrixFreeAllocation(matrix, ammount+1);
 
 
-	printf("\nRESULTADO: %d\nTEMPO DE EXECUCAO: %.25lfs\n\n", result, timer);
+	printf("RESULTADO: %d\nTEMPO DE EXECUCAO: %.25lfs\n", result, timer);
+	printf("--------------------------------------------------\n");
 	
 	return 0;
 }
