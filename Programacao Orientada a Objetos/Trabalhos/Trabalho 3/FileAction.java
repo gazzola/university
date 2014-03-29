@@ -1,7 +1,10 @@
+import java.util.*;
+
 public abstract class FileAction{
 
 	protected String action;
-	protected Supporter[] supporters;
+	//protected Supporter[] supporters;
+    protected Vector<Supporter> supporters = new Vector<Supporter>();
 
 	public abstract void openFile(String filename);
     public abstract void closeFile();
@@ -13,7 +16,7 @@ public abstract class FileAction{
     	return null;
     }
 
-    public Supporter[] getSupporters(){
+    public Vector<Supporter> getSupporters(){
     	return this.supporters;
     }
 

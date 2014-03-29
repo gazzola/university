@@ -32,14 +32,14 @@ class ReadObjectFile extends FileAction{
 
 	public String readContent(){
 		
-		this.supporters = new Supporter[RegistrySupporter.getSize()];
-
 		Supporter record;
 		String text = "";
-		int count = 0;
 
 		try{
 			while(true){
+
+				//if(inputStream.avaliable() > 0) is a solution for not show the NullPointerException
+
 				record = (Supporter) input.readObject();
 				String tattoo = (record.hasTattoo()) ? "Sim" : "Nao";
 	            text += "ID: "+record.getId()+"\n";
@@ -62,9 +62,12 @@ class ReadObjectFile extends FileAction{
 	            text += "REGISTRADO POR: "+record.getFuncName()+"\n";
 	            text += "\n------------------------------------------------------------------------------\n\n";
 
-	            this.supporters[count] = record;
-	            count++;
+	            this.supporters.add(record);
 			}
+		}
+		catch(NullPointerException errx){
+			String msg = "O arquivo esta vazio: "+errx;
+            JOptionPane.showMessageDialog(null, msg);
 		}
 		catch(EOFException err2){
 			return text;

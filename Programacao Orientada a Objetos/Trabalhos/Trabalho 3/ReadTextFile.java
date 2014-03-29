@@ -37,7 +37,7 @@ class ReadTextFile extends FileAction{
 		try{
 			BufferedReader input = new BufferedReader(new FileReader(filename));
 			while(input.ready())
-				text += input.readLine();
+				text += input.readLine()+"\n";
 			input.close();
 		}
 		catch(IOException ioe){
@@ -49,7 +49,7 @@ class ReadTextFile extends FileAction{
 
 
 	public String readContent(){
-		this.supporters = new Supporter[RegistrySupporter.getSize()];
+
 		String text = "";
 
 		try{
@@ -76,7 +76,6 @@ class ReadTextFile extends FileAction{
 
 
 	private String getTextAndSetDatas(){
-		int count = 0;
 		String text = "";
 
 		while(input.hasNext()){
@@ -173,8 +172,7 @@ class ReadTextFile extends FileAction{
 			record.setWeight(weight);
 			record.setOrganizationSup(organizationSup);
 
-			this.supporters[count] = record;
-			count++;
+			this.supporters.add(record);
 		}
 
 		return text;

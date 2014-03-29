@@ -20,7 +20,6 @@ public class SupporterRegisterWindow extends JFrame implements ActionListener {
     private JButton buttonEndRegister;
     private SupporterWindow sw;
 
-    private static int idCount = 0;
     private int xLabelInit=1, yLabelInit=50,
                 xFieldInit=160, yFieldInit=50,
                 widthLabel=300, widthField=120;
@@ -381,7 +380,7 @@ public class SupporterRegisterWindow extends JFrame implements ActionListener {
         String nameok = name.replaceAll("\\s+", "");
         if(!RegistrySupporter.isSet(nameok)){
 
-            Supporter sup = new Supporter(name, idCount, LoginWindow.functionaryName);
+            Supporter sup = new Supporter(name, RegistrySupporter.getSize(), LoginWindow.functionaryName);
             sup.setTeam(team);
             sup.setDateBirth(date);
             sup.setCpf(cpf);
@@ -399,18 +398,45 @@ public class SupporterRegisterWindow extends JFrame implements ActionListener {
             sup.setOrganizationSup(organizationSup);
 
             RegistrySupporter.Set(nameok, sup);
-            idCount++;
-
             this.setLog(LoginWindow.functionaryName, "registrou", name);
+            this.saveSupporterInObjectFile(name);
         }
         else
             throw new SupporterAlreadyRegisteredException("Torcedo ja existente, por favor troque o nome dele");
         
     }
 
+
     private void setLog(String functionary, String action, String supporter){
         SystemLog log = SystemLog.getInstance();
         log.addData(functionary, action, supporter);
+    }
+
+
+    private void saveSupporterInObjectFile(String supName){
+        try{
+            FileAction objCreate = FileType.getFileType("Object").getFileAction("Create");
+            objCreate.openFile("output_object.bin");
+            objCreate.addContent(generateOutputObjects());
+            objCreate.closeFile();
+        }
+        catch(FileException fe){
+            String msg = fe.getMessage();
+            JOptionPane.showMessageDialog(null, msg);
+        }
+
+        this.setLog(LoginWindow.functionaryName, "salvou no arquivo de objeto o torcedor", supName);
+    }
+
+
+    private Supporter[] generateOutputObjects(){
+        String[] names = RegistrySupporter.GetAll();
+        Supporter[] outputRecords = new Supporter[RegistrySupporter.getSize()];
+
+        for(int i=0; i<RegistrySupporter.getSize(); i++)
+            outputRecords[i] = RegistrySupporter.Get(names[i]);
+
+        return outputRecords;
     }
 
 
