@@ -86,8 +86,10 @@ int main(){
 		printf("%c", cod);
 	}
 
-	for(aux = l; aux != NULL; aux = aux->front)
-		fprintf(stderr, "%s%c", aux->data, aux->cod);
+	printf("\n\n");
+
+	//for(aux = l; aux != NULL; aux = aux->front)
+	//	fprintf(stderr, "%s%c", aux->data, aux->cod);
 
 	destroyList(&l);
 
