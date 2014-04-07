@@ -1,3 +1,9 @@
+/*
+*  Projeto e Análise de Algoritmos - Codificação de Huffman
+*  Matheus S. Serpa - 121151631
+*  matheusserpa@gmail.com
+*/
+
 #ifndef HUFFMAN_H
 #define	HUFFMAN_H
 
