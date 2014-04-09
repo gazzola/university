@@ -1,0 +1,15 @@
+int extraiMin(int n, int *queue, int *chave){
+
+    int i;
+    int u, men=999999;
+    for(i=1; i<=n; i++){
+        if(chave[i] <= men && queue[i]){
+            men = chave[i];
+            u=i;
+        }
+    }
+
+    queue[u] = 0;
+    return u;
+
+}

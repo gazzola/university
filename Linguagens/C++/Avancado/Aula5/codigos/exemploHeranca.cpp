@@ -142,7 +142,8 @@ int main() {
 	// chama o operador << de Gerente
 	cout << *ge;
 
+
    	delete emp;
    	
-	return 01;
+	return 0;
 }

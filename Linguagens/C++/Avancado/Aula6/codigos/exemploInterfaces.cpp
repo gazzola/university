@@ -81,6 +81,7 @@ public:
 		return false;
 	}
 
+
 };
 
 
@@ -92,10 +93,9 @@ int main() {
 	cout << "Perimetro: " << eG->perimetro() << endl;
 	cout << "Area: " << eG->area() << endl;
 	cG->exibir();
+	cout << endl;
 	
 	delete q;
 	
-	getchar();
-
 	return 0;
 }

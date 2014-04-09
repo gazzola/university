@@ -9,7 +9,7 @@
  * exemploStatic.c - Mostra utilizar a palavra reservada static.
  */
 
-#include<stdio.h>
+#include <stdio.h>
 
 // Evita que outros módulos possam modificar e ver esta variável
 static int numero = 0;

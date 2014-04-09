@@ -9,8 +9,8 @@
  * exemploStructs1.c - Demonstra com utilizar estruturas em C
  */
  
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <string.h>
 
 struct Endereco {
     char rua[50];

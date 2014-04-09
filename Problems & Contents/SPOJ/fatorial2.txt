@@ -1,0 +1,77 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int fat(int n){
+    int ft=1;
+    if(n!=0 && n!=1){
+        while(n>1){
+            ft=ft*n;
+            n--;
+        }
+        return ft;
+    }
+    else
+        return 1;
+}
+
+int len(int value){
+    int l=!value;
+    while(value){ l++; value/=10; }
+    return l;
+}
+
+
+int simple(int k){
+    while(len(k)>1){
+        k=k/10;
+        if(k>9){
+        int x=k/10;
+        k=k-(10*x);
+        }
+    }
+    return k;
+}
+
+int ult(int ft, int n){
+    int l=len(ft)-1;
+    int x=1;
+    if(l>=1){
+
+        while(l--)
+            x=x*10;
+
+        int div = ft/x;
+        int k = (ft-(div*x));
+
+        if(k>9){
+            int sdfs=k;
+            k = simple(sdfs);
+        }
+
+        return k;
+    }
+    else{
+        return ft;
+    }
+}
+
+
+int main(){
+
+FILE *entrada = fopen("entrada.txt", "r");
+int n, ft, count=1;
+
+while(!feof(entrada)){
+fscanf(entrada, "%d", &n);
+printf("%d\n", n);
+ft=fat(n);
+printf("%d\n", ft);
+printf("Instancia %d\n%d\n\n", count, ult(ft,n));
+count++;
+}
+
+
+return 0;
+}

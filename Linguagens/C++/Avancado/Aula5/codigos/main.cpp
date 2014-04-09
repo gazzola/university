@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include "Retangulo.h"
+#include "Retangulo.cpp"
 
 using namespace std;
 

@@ -35,8 +35,7 @@ int main () {
 	// O ponteiro p passa a apontar para a função puts
 	// que tem o seguinte prototipo: int puts(const char *)
 	p = puts;
-
-        p(string);
+    p(string);
 
 	printString(string, p); // O ponteiro é passado como parametro para PrintString
 	return 0;
