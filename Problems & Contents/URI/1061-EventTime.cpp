@@ -2,6 +2,11 @@
 
 using namespace std;
 
+int secondToDay(int seconds){
+    return 
+}
+
+
 int main(){
 
     int di, hi, mi, si, df, hf, mf, sf;
