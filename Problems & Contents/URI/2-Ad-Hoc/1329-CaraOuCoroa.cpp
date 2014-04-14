@@ -18,7 +18,6 @@ int main(){
 		cm=cj=0;
 
 		while(n--){
-
 			cin >> x;
 			if(x == 0)
 				cm++;
