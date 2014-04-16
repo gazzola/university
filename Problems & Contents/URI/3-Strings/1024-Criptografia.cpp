@@ -2,7 +2,6 @@
 #include <iomanip>
 #include <string>
 #include <algorithm>
-#include <cstdio>
 
 using namespace std;
 
@@ -11,10 +10,10 @@ using namespace std;
 int main(){
 
 	int n;
+	char c;
 	string s;
 	
-	cin >> n;
-	char c = getchar();
+	cin >> n >> c;
 	while(n--){
 
 		getline(cin, s);
