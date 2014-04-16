@@ -1,7 +1,7 @@
 Problems & Contents
 ========
 
-Solucoes de problemas de alguns portais. Algumas solucoes esta usando o stream de c, pois ele tem uma melhor perfomance.
+Solucoes de problemas de alguns portais. Algumas solucoes estao usando o stream de c, pois ele tem uma melhor perfomance.
 
 Nao copie os codigos, tente fazer por voce mesmo, deixo meus codigos aqui para tirar duvidas e manter um registro das solucoes.
 
