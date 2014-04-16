@@ -1,8 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include <cmath>
-#include <vector>
-#include <algorithm>
+#include <queue>
 #include <map>
 
 using namespace std;
@@ -19,41 +18,44 @@ int main(){
 		if(n==0)
 			break;
 
-		vector <int> vec;
+		//priority_queue<int, vector<int>, greater<int> > fila;
 		map <int, int> mapa;
-		int last = -94941516;
+		map <int, int> :: const_iterator iter;
 
 		if(count > 1)
 			cout << endl;
+
 		cout << "Cidade# " << count << ":" << endl;
 
 
 		int somam=0, somac=0;
-		for(int i=1; i<=n; i++){
+		for(int i=0; i<n; i++){
 			cin >> a >> b;
 			mapa[b/a] += a;
-			vec.push_back(b/a);
+			//fila.push(b/a);
 			somac += b;
 			somam += a;
 		}
 
-		sort(vec.begin(), vec.end()); //nlogn
-		//tentar usar priority queue, diminui o tempo
-		//tirar ins c++ e usar c
-		//ou usar 2 maps e tentar ordenar com o iterador (pesquisar)
 
-		int tam = vec.size();
-		for(int i=0; i<tam; i++) {
-			
-			int x = vec[i];
-			if(x != last){
-				cout <<  mapa[x] << "-" << x;
-				last = x;
-				if(i < tam-1)
-					cout << " ";
-			}
+		/*int x = fila.top();
+		cout <<  mapa[x] << "-" << x;
+		fila.pop();
+
+		int tam = fila.size();
+		while (tam--){
+			x = fila.top();
+			cout << " " <<  mapa[x] << "-" << x;
+			fila.pop();
+		}*/
+
+
+		iter = mapa.begin();
+		cout << iter->second << "-" << iter->first;
+		iter++;
+		for(iter; iter != mapa.end(); iter++){
+			cout << " " << iter->second << "-" << iter->first;	
 		}
-
 
 		double media = floor(100.0*somac/somam)/100.0;
 		cout << fixed << setprecision(2)
