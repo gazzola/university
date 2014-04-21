@@ -1,4 +1,6 @@
-#include <cstdio>
+//http://pt.wikibooks.org/wiki/Resolu%C3%A7%C3%A3o_de_problemas/Cubos_coloridos
+
+#include <iostream>
 #include <cstring>
 #include <set>
 
@@ -8,6 +10,7 @@ struct cubo{
 	int lados[6];
 	
 	bool operator<(const cubo &c) const{
+		//if this->cubo.lados[i] < c.lados[i]
 		return (memcmp(lados, c.lados, sizeof(lados)) < 0);
 	}
 };
@@ -66,14 +69,14 @@ int main(){
 
 	while(true){
 
-		scanf("%d", &n);
+		cin >> n;
 		if(n == 0)
 			break;
 
 		int num = 0;
 		for(int i=0; i<n; i++){
 			for(int i=0; i<6; i++)
-				scanf("%d", &c.lados[i]);
+				cin >> c.lados[i];
 
 			if(temRotDisponivel(cubos, c)){
 				cubos.insert(c);
@@ -81,8 +84,8 @@ int main(){
 			}
 		}
 
+		cout << num << endl;
 
-		printf("%d\n", num);
 		cubos.clear();
 	}
 
