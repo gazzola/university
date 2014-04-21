@@ -6,18 +6,14 @@ using namespace std;
  
 struct cubo{
 	int lados[6];
-		
+	
 	bool operator<(const cubo &c) const{
 		return (memcmp(lados, c.lados, sizeof(lados)) < 0);
 	}
 };
- 
- 
-cubo c;
-set<cubo> cubos;
- 
- 
-void rotaciona_horizontal(){
+
+
+void rotHorizontal(cubo &c){
 	int temp = c.lados[0];
 	c.lados[0] = c.lados[1];
 	c.lados[1] = c.lados[5];
@@ -26,7 +22,7 @@ void rotaciona_horizontal(){
 }
  
  
-void rotaciona_vertical(){
+void rotVertical(cubo &c){
 	int temp = c.lados[1];
 	c.lados[1] = c.lados[2];
 	c.lados[2] = c.lados[3];
@@ -35,7 +31,7 @@ void rotaciona_vertical(){
 }
  
  
-void rotaciona_eixo(){
+void rotEixo(cubo &c){
 	int temp = c.lados[0];
 	c.lados[0] = c.lados[2];
 	c.lados[2] = c.lados[5];
@@ -44,47 +40,49 @@ void rotaciona_eixo(){
 }
 
 
+bool temRotDisponivel(set<cubo> &cubos, cubo &c){
 
-//primeiro rotaciona verticalmente e o eixo e verifica
-//se ja esta no conjunto.
-//depois rotaciona horizontalmente.
-bool tem_rotacao(){
-	for(int x = 0; x < 4; x++){
-		for(int y = 0; y < 4; y++){
-			rotaciona_vertical();
-			for(int z = 0; z < 4; z++){
-				rotaciona_eixo();
+	for(int x=0; x<4; x++){
+		for(int y=0; y<4; y++){
+			rotVertical(c);
+			for(int z=0; z<4; z++){
+				rotEixo(c);
 				if(cubos.count(c))
-					return true;
+					return false;
 			}
 		}
-		rotaciona_horizontal();
+		rotHorizontal(c);
 	}
-	return false;
+
+	return true;
 }
  
  
 int main(){
 	
 	int n;
+	cubo c;
+	set<cubo> cubos;
+
 	while(true){
 
 		scanf("%d", &n);
 		if(n == 0)
 			break;
 
-		int count = 0;
+		int num = 0;
 		for(int i=0; i<n; i++){
 			for(int i=0; i<6; i++)
 				scanf("%d", &c.lados[i]);
 
-			if(!tem_rotacao()){
-				count++;
+			if(temRotDisponivel(cubos, c)){
 				cubos.insert(c);
+				num++;
 			}
 		}
 
-		printf("%d\n", count);
+
+		printf("%d\n", num);
 		cubos.clear();
 	}
 
