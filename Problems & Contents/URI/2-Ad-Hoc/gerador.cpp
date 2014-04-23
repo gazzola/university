@@ -3,21 +3,25 @@
 #include <ctime>
 
 int main(){
-        
-    srand(time(NULL));
+		
+	srand(time(NULL));
 
-    int n = 50;
+	int n = 10;
 
-    while(n--){
-    	for(int i=0; i<9; i++){
-	    	int x = (rand()%8)+1;	
-	    	char c = 96+(rand()%8)+1;
-	    	printf("%d%c\n", x, c);
-    	}
-    }
+	while(n--){
+		
+		int n = (rand()%10)+1;
+		int m = (rand()%10)+1;
+		int k = (rand()%n);	
+		printf("%d %d %d\n", n, m, k);
 
-    printf("0\n");
-    
-    
-    return 0;    
+		for(int i=0; i<m; i++){
+			int x1 = (rand()%n)+1;
+			int x2 = (rand()%n)+1;
+
+			printf("%d %d\n", x1, x2);
+		}
+	}
+	
+	return 0;	
 }
