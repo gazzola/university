@@ -16,11 +16,11 @@ string bin(unsigned int n){
 
 
 unsigned long int quadral(unsigned long int n){
-	unsigned long int rem, i=1, quadral=0;
-	while (n!=0){
-		rem = n%4;
+	unsigned long int resto, i=1, quadral=0;
+	while(n!=0){
+		resto = n%4;
 		n /= 4;
-		quadral += rem*i;
+		quadral += resto*i;
 		i *= 10;
 	}
 	return quadral;
