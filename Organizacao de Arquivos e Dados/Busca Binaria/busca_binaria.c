@@ -48,7 +48,7 @@ int main(){
 	
 	printf("Iteracoes Busca Binaria: %d\n", x1);
 	printf("Iteracoes Busca Binaria Recursiva: %d\n", x2);
-	printf("Iteracoes Busca Sequencial: %d", x3);
+	printf("Iteracoes Busca Sequencial: %d\n", x3);
 
 	return 0;
 }

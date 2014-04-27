@@ -16,14 +16,14 @@
 using namespace std;
 
 int main () {
-    map < string, float, less <string> > mapaDeNotas;
+    map < string, float > mapaDeNotas;
 
     mapaDeNotas["EU"] = 10.0f;
     mapaDeNotas["TU"] = 5.5f;
     mapaDeNotas["ELE"] = 8.5f;
 
 
-    map < string, float, less <string> > :: const_iterator iter;
+    map < string, float > :: const_iterator iter;
 
     // imrime na ordem ELE, EU, TU
     for (iter = mapaDeNotas.begin(); iter != mapaDeNotas.end(); iter++) {
