@@ -1,0 +1,25 @@
+template<class T>
+bool myfunction (const pair<int, T>& i, const pair<int, T>& j){ 
+	
+	if(i.first < j.first){
+		if(i.second < j.second)
+			return true;
+		else{
+			if(i.first < j.second)
+				return true;
+			else
+				return false;
+		}
+	}
+	else{
+		if(i.second < j.second){
+			if(i.first < j.second)
+				return true;
+			else
+				return false;
+		}
+		else
+			return false;
+	}
+
+}
