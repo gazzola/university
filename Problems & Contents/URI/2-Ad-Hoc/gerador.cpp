@@ -13,8 +13,18 @@ int main(){
 
 	while(n--){
 		
-		int x = (rand()%100000)+1;
-		cout << x << endl;
+		int c = (rand()%20)+1;
+		cout << c << endl;
+		for(int i=0; i<c; i++){
+			int n = (rand()%450)+3;
+			cout << n << endl;
+			for(int j=0; j<n; j++){
+				int x = (rand()%10000);
+				int y = (rand()%10000);
+				cout << x << " " << y << endl;
+			}
+
+		}
 		
 	}
 
