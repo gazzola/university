@@ -3,7 +3,6 @@
 #include <algorithm>
 #include <vector>
 #include <cmath>
-#include <map>
 
 using namespace std;
 
@@ -41,22 +40,24 @@ int extractMin(vector<int> &vertices, double *chave){
 
 void prim(vector<int> &vertices, int r, double *chave, int *pi){
 
-	for(int i=0; i<vertices.size(); i++){
+	int posicoes[510];
+	int tam = vertices.size();
+
+	for(int i=0; i<tam; i++){
 		chave[i] = INF;
 		pi[i] = -1;
+		posicoes[i] = 0;
 	}
 
 	chave[r] = 0;
-	int tam = vertices.size();
-	map<int, int> posicao;
 
 	while(vertices.size() > 0){
 		int u = extractMin(vertices, chave);
-		posicao[u] = 1;
+		posicoes[u] = 1;
 
 		for(int v=0; v<tam; v++){
 			if(matAdj[u][v] > 0){
-				if(!posicao.count(v) && matAdj[u][v] < chave[v]){
+				if(!posicoes[v] && matAdj[u][v] < chave[v]){
 					chave[v] = matAdj[u][v];
 					pi[v] = u;
 				}
@@ -83,16 +84,13 @@ int main(){
 			pessoas.push_back(ii(x, y));
 			vertices.push_back(i);
 
-			for(int j=0; j<n; j++)
-				matAdj[i][j] = 0;
-
 			for(int j=i; j>=0; j--)
 				matAdj[i][j] = matAdj[j][i] = distancia(pessoas[i], pessoas[j]);
 		}
 
 
-		double chave[10001], soma=0;
-		int pi[10001];
+		double chave[510], soma=0;
+		int pi[510];
 
 		prim(vertices, 0, chave, pi);
 		for(int i=1; i<n; i++)
