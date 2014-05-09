@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdio>
+#include <algorithm>
 #include <vector>
 #include <cmath>
 
@@ -8,7 +9,7 @@ using namespace std;
 
 const double INF = 9999999;
 typedef pair<int, int> ii;
-double matAdj[10001][10001];
+double matAdj[550][550];
 
 
 double distancia(ii p1, ii p2){
@@ -17,12 +18,9 @@ double distancia(ii p1, ii p2){
 	return sqrt((x*x) + (y*y));
 }
 
-
-//can be bsearch O(lg n)
-int isSet(vector<int> &vertices, int v){
-	for(int i=0; i<vertices.size(); i++)
-		if(vertices[i] == v)
-			return true;
+bool isSet(vector<int> &vertices, int v){
+	if(binary_search(vertices.begin(), vertices.end(), v))
+		return true;
 	return false;
 }
 
@@ -42,7 +40,7 @@ int extractMin(vector<int> &vertices, double *chave){
 }
 
 
-void *prim(vector<int> &vertices, int r, double *chave, int *pi){
+void prim(vector<int> &vertices, int r, double *chave, int *pi){
 
 	for(int i=0; i<vertices.size(); i++){
 		chave[i] = INF;
@@ -51,7 +49,6 @@ void *prim(vector<int> &vertices, int r, double *chave, int *pi){
 
 	chave[r] = 0;
 	int tam = vertices.size();
-	vector<int> arvore;
 
 	while(vertices.size() > 0){
 		int u = extractMin(vertices, chave);
