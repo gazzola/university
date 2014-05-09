@@ -3,13 +3,14 @@
 #include <algorithm>
 #include <vector>
 #include <cmath>
+#include <map>
 
 using namespace std;
 
 
 const double INF = 9999999;
 typedef pair<int, int> ii;
-double matAdj[550][550];
+double matAdj[510][510];
 
 
 double distancia(ii p1, ii p2){
@@ -19,9 +20,7 @@ double distancia(ii p1, ii p2){
 }
 
 bool isSet(vector<int> &vertices, int v){
-	if(binary_search(vertices.begin(), vertices.end(), v))
-		return true;
-	return false;
+	return binary_search(vertices.begin(), vertices.end(), v);
 }
 
 
@@ -49,13 +48,15 @@ void prim(vector<int> &vertices, int r, double *chave, int *pi){
 
 	chave[r] = 0;
 	int tam = vertices.size();
+	map<int, int> posicao;
 
 	while(vertices.size() > 0){
 		int u = extractMin(vertices, chave);
+		posicao[u] = 1;
 
 		for(int v=0; v<tam; v++){
 			if(matAdj[u][v] > 0){
-				if(isSet(vertices, v) && matAdj[u][v] < chave[v]){
+				if(!posicao.count(v) && matAdj[u][v] < chave[v]){
 					chave[v] = matAdj[u][v];
 					pi[v] = u;
 				}
@@ -64,8 +65,6 @@ void prim(vector<int> &vertices, int r, double *chave, int *pi){
 	}
 
 }
-
-
 
 
 int main(){
