@@ -1,18 +1,15 @@
 #include <iostream>
 #include <iomanip>
-
+#include <cstdio>
+ 
 using namespace std;
-
-
+ 
+ 
 int main(){
-	
+	 
 	unsigned int a, b, result;
-	while(cin >> a >> b){
-
-		result = a ^ b;
-		cout << result << endl;
-
-	}
-
+	while(scanf("%u %u", &a, &b) != EOF)
+		printf("%u\n", a^b);
+ 
 	return 0;
 }
