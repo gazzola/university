@@ -5,6 +5,9 @@ Install on linux (debian based):
 sudo apt-get install haskell-platform
 ```
 
+---
+
+
 Compile and run:
 ```bash
 $ ghc -o hello hello.hs
