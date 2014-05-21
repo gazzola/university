@@ -3,9 +3,7 @@ Problems & Contents
 
 Solucoes de problemas de alguns portais. Algumas solucoes estao usando o stream de c, pois ele tem uma melhor perfomance.
 
-Nao copie os codigos, tente fazer por voce mesmo, deixo meus codigos aqui para tirar duvidas e manter um registro das solucoes.
-
-Tente pesquisar sobre o problema para conseguir resolve-lo, livros sao de grande ajuda, e como de praxe, pesquise na internet. Para ajudar, encontrei os seguintes sites:
+Para ajudar, encontrei os seguintes sites:
 
 * [Blog sobre a Maratona de Programacao](http://marathoncode.blogspot.com.br/)
 * [Blog do Cristhian Bonilha](http://crbonilha.blogspot.com.br/)
