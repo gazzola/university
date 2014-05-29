@@ -26,7 +26,7 @@ namespace ex1{
 
 
 			virtual ~Vetor(){
-				delete this->array;
+				delete[] this->array;
 			}
 
 			T &operator [] (int indice);
