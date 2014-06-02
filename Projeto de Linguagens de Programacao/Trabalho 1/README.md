@@ -1,8 +1,8 @@
 # Trabalho 2 de PLP
 
-* Bruno Trindade
-* Marcos Treviso
-* Wolgan Ens
+* Bruno Schubert Trindade (121151557)
+* Marcos Vinícius Treviso (121150107)
+* Wolgan Ens Quepfert (121151535)
 
 
 Rodar em sistemas unix-like: 

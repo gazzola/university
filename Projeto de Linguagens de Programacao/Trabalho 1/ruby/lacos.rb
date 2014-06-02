@@ -13,7 +13,7 @@ def multMatrix(matrix1, matrix2)
 		0.upto(n-1) do |j|
 			0.upto(n-1) do |k|
 				mat[i][j] += matrix1[i][k] * matrix2[k][j]
-			end      
+			end
 		end
 	end
 

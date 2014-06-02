@@ -1,6 +1,6 @@
-<?hh
+<?php
 
-function multMatrix(array $matrix1, array $matrix2): array{
+function multMatrix($matrix1, $matrix2){
 	
 	$tam = count($matrix1);
 	$mat = array(array());
@@ -29,4 +29,7 @@ for($i=0; $i<$tam; $i++){
 	}
 }
 
-print_r(multMatrix($mat1, $mat2));
+multMatrix($mat1, $mat2);
+
+
+?>
