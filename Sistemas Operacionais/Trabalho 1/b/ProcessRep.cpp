@@ -61,14 +61,6 @@ int main(int argc, char const *argv[]){
 	manager->printStates();
 	manager->executeAllProcesses(1000);
 
-
-	manager->createProcess(1, 0);
-	manager->createProcess(2, 1);
-	manager->createProcess(3, 0);
-	manager->createProcess(4, 1);
-	manager->createProcess(5, 0);
-	manager->executeAllProcesses(1000);
-
 	manager->reportProcessesHistory();
 
 	delete manager;
