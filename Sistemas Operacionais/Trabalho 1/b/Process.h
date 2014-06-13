@@ -29,6 +29,7 @@ class Process{
 		usi getState();
 		usi getType();
 		int getInstIterations() const;
+		int getRunIterations();
 		vector<string> getHistory();
 		void setPriority(usi priority);
 		void setState(usi state);

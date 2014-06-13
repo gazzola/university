@@ -41,6 +41,10 @@ int Process::getInstIterations() const{
 	return this->instIterations;
 }
 
+int Process::getRunIterations(){
+	return this->runIterations;
+}
+
 vector<string> Process::getHistory(){
 	return this->history;
 }
@@ -55,6 +59,8 @@ void Process::setState(usi state){
 }
 
 void Process::setInstIterations(int instIterations){
+	if(this->type == CPUBOUND)
+		instIterations *= 2;
 	this->instIterations = instIterations;
 }
 
@@ -70,10 +76,7 @@ void Process::addHistory(string msg){
 }
 
 void Process::execute(int moreIterations){
-	if(this->type == CPUBOUND) //se for cpu bound
-		this->runIterations += moreIterations;
-	else //se for i/o bound (demora mais, e a chance de ter uma interrupcao ou um bloqueio eh maior)
-		this->runIterations += moreIterations/2;
+	this->runIterations += moreIterations;
 }
 
 bool Process::alreadyExecuted(){

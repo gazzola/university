@@ -18,6 +18,7 @@ using namespace std;
 
 					// bibs usadas para:
 #include <iostream> // stream
+#include <iomanip>	// setw gantt diagram
 #include <ctime>	// current time and date
 #include <cstdlib>  // srand
 #include <algorithm>// sort
@@ -40,7 +41,7 @@ int main(int argc, char const *argv[]){
 	}
 
 	srand(time(NULL));
-	int i, qtd, type, priority;
+	int i, qtd, type, priority, instruction;
 	double tclock;
 
 	qtd = atoi(argv[1]);
@@ -48,20 +49,22 @@ int main(int argc, char const *argv[]){
 	rlutil::cls();
 	
 	Manager<Process> *manager = new Manager<Process>(tclock);
-	manager->setAlgorithmType("SJF");
+	manager->setAlgorithmType("SJF"); //FIFO/SJF/PRIORIDADE/ROUNDROBIN
 
 	for(i=0; i<qtd; ++i){
 		priority = (rand()%20)+1;
 		type = rand()%2;
-		manager->createProcess(priority, type);
+		instruction = (rand()%10)+1;
+		manager->createProcess(priority, type, instruction);
 	}
 	
 	manager->printLine();
-	manager->printAction("PREPARAR PARA DECOLAGEM .......... DECOLAR!");
+	manager->printAction("INICIANDO SIMULACAO DO GERENCIAMENTO!");
 	manager->printStates();
-	manager->executeAllProcesses(1000);
+	manager->executeAllProcesses(1);
 
 	manager->reportProcessesHistory();
+	manager->reportGanttDiagram(true, true); //1.true = ordenado por id | 2.true = exibicao na mesma linha
 
 	delete manager;
 

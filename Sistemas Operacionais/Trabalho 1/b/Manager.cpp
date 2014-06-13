@@ -26,7 +26,9 @@ Manager<T>::~Manager(){
 
 
 
-
+bool orderById(const pair<uli, pair<int, int> > &i, const pair<uli, pair<int, int> > &j){
+	return (i.first < j.first);
+}
 
 bool orderByFIFO(const Process &i, const Process &j){
 	return (i.getId() < j.getId());
@@ -63,8 +65,8 @@ void Manager<T>::escalonar(int state){
 		sort(this->stateQueue[state].begin(), this->stateQueue[state].end(), orderBySJF);
 	else if(this->algorithmType == "PRIORIDADE")
 		sort(this->stateQueue[state].begin(), this->stateQueue[state].end(), orderByPriority);
-	else if(this->algorithmType == "ROUNDROBIN")
-		sort(this->stateQueue[state].begin(), this->stateQueue[state].end(), orderBySJF);
+	//else if(this->algorithmType == "ROUNDROBIN")
+	//	sort(this->stateQueue[state].begin(), this->stateQueue[state].end(), orderBySJF);
 	
 	//	nao preicsa ordenar no FIFO, pois ja esta inserindo no final do deque
 	//	mantento assim a razao de o primeiro a entrar eh o primeiro a sair.
@@ -76,7 +78,7 @@ void Manager<T>::decrementPriority(){
 	if(this->algorithmType == "SJF" || this->algorithmType == "ROUNDROBIN"){
 		int inst = this->stateQueue[EXECUTANDO].front().getInstIterations();
 		if(inst > 1001)
-			this->stateQueue[EXECUTANDO].front().setInstIterations(inst-1000);
+			this->stateQueue[EXECUTANDO].front().setInstIterations(inst-1);
 	}
 	else{
 		int priority = this->stateQueue[EXECUTANDO].front().getPriority();
@@ -90,7 +92,7 @@ template <class T>
 void Manager<T>::incrementPriority(){
 	if(this->algorithmType == "SJF" || this->algorithmType == "ROUNDROBIN"){
 		int inst = this->stateQueue[EXECUTANDO].front().getInstIterations();
-		this->stateQueue[EXECUTANDO].front().setInstIterations(inst+1000);
+		this->stateQueue[EXECUTANDO].front().setInstIterations(inst+1);
 	}
 	else{ //FIFO 
 		int priority = this->stateQueue[EXECUTANDO].front().getPriority();
@@ -170,16 +172,16 @@ string Manager<T>::catchStateName(int state){
 
 template <class T>
 bool Manager<T>::interruption(){
-	return (rand()%250 == 42); 
+	return (rand()%150 == 42); 
 }
 
 template <class T>
 bool Manager<T>::block(){
-	return (rand()%250 == 6);
+	return (rand()%150 == 6);
 }
 
 template <class T>
-bool Manager<T>::preEmption(){
+bool Manager<T>::preemption(){
 	return (rand()%2 == 1);
 }
 
@@ -198,7 +200,7 @@ bool Manager<T>::hasSpace(int state){
 
 
 template <class T>
-void Manager<T>::createProcess(usi priority, usi type){
+void Manager<T>::createProcess(usi priority, usi type, int instruction){
 
 	if(priority < 1 || priority > 20){
 		cout << "Prioridade do processo no intervalo [1,20]";
@@ -211,7 +213,7 @@ void Manager<T>::createProcess(usi priority, usi type){
 	uli id = Manager::idProcesses;
 	
 	Process *p = new Process(id, priority, CRIADO, type);
-	p->setInstIterations((rand()%99000)+1000);
+	p->setInstIterations(instruction);
 	this->stateQueue[CRIADO].push_back(*p);
 
 	this->printLine();
@@ -235,16 +237,21 @@ void Manager<T>::createProcess(usi priority, usi type){
 template <class T>
 void Manager<T>::executeProcess(int iterations){
 	
-	Process p = this->stateQueue[PRONTO].front();
-	this->switchState(PRONTO, EXECUTANDO, p.getId());
+	//Process p = this->stateQueue[PRONTO].front();
+	this->runningProcces = &this->stateQueue[PRONTO].front();
+	this->switchState(PRONTO, EXECUTANDO, this->stateQueue[PRONTO].front().getId());
+	int its = 0;
 
-	while(!p.alreadyExecuted()){
+	while(!this->stateQueue[EXECUTANDO].front().alreadyExecuted()){
+
 		if(this->block()){
 
+			this->addDiagramProcess(this->stateQueue[EXECUTANDO].front().getId(), its, 0);
+
 			if(this->hasSpace(BLOQUEADO))
-				this->lockProcess(p.getId());
+				this->lockProcess(this->stateQueue[EXECUTANDO].front().getId());
 			else
-				this->switchState(EXECUTANDO, BLOQUEADOSUS, p.getId());
+				this->switchState(EXECUTANDO, BLOQUEADOSUS, this->stateQueue[EXECUTANDO].front().getId());
 
 
 			if(this->stateQueue[PRONTOSUS].size() > 0)
@@ -252,35 +259,57 @@ void Manager<T>::executeProcess(int iterations){
 
 
 			if(this->stateQueue[PRONTO].size() > 0){
-				p = this->stateQueue[PRONTO].front();
-				this->runningProcces = &p;
-				this->switchState(PRONTO, EXECUTANDO, p.getId());
+				this->runningProcces = &this->stateQueue[PRONTO].front();
+				this->switchState(PRONTO, EXECUTANDO, this->stateQueue[PRONTO].front().getId());
+				its = 0;
 			}
 			else
 				break;
 		}
 		else if(this->interruption()){
 
-			this->runningProcces = &p;
+			this->addDiagramProcess(this->stateQueue[EXECUTANDO].front().getId(), its, 0);
 
-			if(this->preEmption())
+			this->runningProcces = &this->stateQueue[EXECUTANDO].front();
+
+			if(this->preemption())
 				this->decrementPriority();
 			else
 				this->incrementPriority();
 
-			switchState(EXECUTANDO, PRONTO, p.getId());
+			switchState(EXECUTANDO, PRONTO, this->stateQueue[EXECUTANDO].front().getId());
 			break;
 		}
 		else{
-			p.execute(iterations);
-			this->runningProcces = &p;
+			this->stateQueue[EXECUTANDO].front().execute(iterations);
+			this->runningProcces = &this->stateQueue[EXECUTANDO].front();
+			its++;
+
+			if(this->algorithmType == "ROUNDROBIN"){
+				if(its == QUANTUM){
+					
+					if(this->stateQueue[EXECUTANDO].front().alreadyExecuted())
+						break;
+
+					this->addDiagramProcess(this->stateQueue[EXECUTANDO].front().getId(), its, 0);
+					switchState(EXECUTANDO, PRONTO, this->stateQueue[EXECUTANDO].front().getId());
+					its = 0;
+
+					if(this->stateQueue[PRONTO].size() > 0)
+						this->switchState(PRONTO, EXECUTANDO, this->stateQueue[PRONTO].front().getId());
+					else
+						break;
+				}
+			}
 		}
 	}
 
 	
-	if(this->closeProcess(EXECUTANDO, p.getId()))
+	if(this->closeProcess(EXECUTANDO, this->stateQueue[EXECUTANDO].front().getId())){
+		this->addDiagramProcess(this->stateQueue[EXECUTANDO].front().getId(), its, 0);
 		if(this->stateQueue[PRONTOSUS].size() > 0 && this->hasSpace(PRONTO))
 			this->switchState(PRONTOSUS, PRONTO, this->stateQueue[PRONTOSUS].front().getId());
+	}
 	
 	this->unlockAllProcesses(); // se quiser desbloquear todos processos para a fila de prontos ou pronto/susp
 	//this->unlockProcess();
@@ -371,6 +400,109 @@ bool Manager<T>::closeProcess(int origin, uli idProcess){
 
 
 template <class T>
+void Manager<T>::addDiagramProcess(uli idProcesses, int runnedIterations, int position){
+	this->ganttDiagram.push_back(make_pair(idProcesses, make_pair(runnedIterations, position)));
+}
+
+template <class T>
+void Manager<T>::reportGanttDiagram(bool idOrder, bool idOrderInLine){
+	
+	rlutil::cls();
+	this->printLine();
+	this->printAction("DIAGRAMA DE GANTT (Processos/Duracao):");
+	cout << endl;
+
+	int i, j, last = 0;
+
+	if(idOrder){
+		
+		for(i=0; i<this->ganttDiagram.size(); i++){
+			this->ganttDiagram[i].second.second = last;
+			for(j=0; j<this->ganttDiagram[i].second.first; j++);
+			last += j;
+		}
+
+		sort(this->ganttDiagram.begin(), this->ganttDiagram.end(), orderById);
+
+		if(idOrderInLine){
+
+			bool *alreadyPass = new bool[Manager::idProcesses+1]();
+
+			for(i=0; i<this->ganttDiagram.size(); i++){
+				if(!alreadyPass[this->ganttDiagram[i].first]){
+					rlutil::setColor(((this->ganttDiagram[i].first-1)%14)+1);
+
+					cout << setw(3) << this->ganttDiagram[i].first << " :";
+					cout << setw(3 + this->ganttDiagram[i].second.second);
+
+					for(j=0; j<this->ganttDiagram[i].second.first; j++)
+						cout << "|";
+					
+					alreadyPass[this->ganttDiagram[i].first] = true;
+				}
+				else{
+
+					int lasted = this->ganttDiagram[i-1].second.second;
+					int now = this->ganttDiagram[i].second.second;
+					cout << setw(now-(lasted+this->ganttDiagram[i-1].second.first)+1);
+
+					for(j=0; j<this->ganttDiagram[i].second.first; j++)
+						cout << "|";
+				}
+
+
+				if(i < this->ganttDiagram.size()-1)
+					if(this->ganttDiagram[i].first != this->ganttDiagram[i+1].first)
+						cout << endl;
+			
+			}
+
+			delete[] alreadyPass;
+		}
+		else{
+
+			for(i=0; i<this->ganttDiagram.size(); i++){
+				rlutil::setColor(((this->ganttDiagram[i].first-1)%14)+1);
+
+				cout << setw(3) << this->ganttDiagram[i].first << " :";
+				cout << setw(3 + this->ganttDiagram[i].second.second);
+
+				for(j=0; j<this->ganttDiagram[i].second.first; j++)
+					cout << "|";
+
+				cout << endl;
+			}
+
+		}
+	}
+	else{
+
+		for(i=0; i<this->ganttDiagram.size(); i++){
+
+			rlutil::setColor(((this->ganttDiagram[i].first-1)%14)+1);
+
+			cout << setw(3) << this->ganttDiagram[i].first << " :";
+			cout << setw(3+last);
+			
+			for(j=0; j<this->ganttDiagram[i].second.first; j++)
+				cout << "|";
+			
+			cout << endl;
+		
+			last += j;
+		}
+
+	}
+
+
+	cout << endl << endl;
+	rlutil::setColor(7);
+
+}
+
+
+
+template <class T>
 void Manager<T>::reportProcessesHistory(){
 	
 	deque<Process>::iterator it;
@@ -395,6 +527,11 @@ void Manager<T>::reportProcessesHistory(){
 
 		cout << endl;
 	}
+
+	if(this->tclock == 0)
+		getchar();
+	else
+		sleep(this->tclock);
 }
 
 
@@ -413,8 +550,9 @@ void Manager<T>::printAction(string action){
 template <class T>
 void Manager<T>::printState(deque<T> &state){
 	deque<Process>::iterator it;
+
 	for(it=state.begin(); it!=state.end(); it++)
-		cout << it->getId() << "[" << it->getPriority() << "," << it->getInstIterations()/1000 << "] ";
+		cout << it->getId() << "[" << it->getPriority() << "," << it->getInstIterations() << "] ";
 }
 
 
@@ -464,6 +602,7 @@ void Manager<T>::printStates(){
 		getchar();
 	else
 		sleep(this->tclock);
+
 	rlutil::cls();
 	rlutil::setColor(7);
 
