@@ -77,7 +77,7 @@ template <class T>
 void Manager<T>::decrementPriority(){
 	if(this->algorithmType == "SJF" || this->algorithmType == "ROUNDROBIN"){
 		int inst = this->stateQueue[EXECUTANDO].front().getInstIterations();
-		if(inst > 1001)
+		if(inst > 21)
 			this->stateQueue[EXECUTANDO].front().setInstIterations(inst-1);
 	}
 	else{
@@ -92,7 +92,8 @@ template <class T>
 void Manager<T>::incrementPriority(){
 	if(this->algorithmType == "SJF" || this->algorithmType == "ROUNDROBIN"){
 		int inst = this->stateQueue[EXECUTANDO].front().getInstIterations();
-		this->stateQueue[EXECUTANDO].front().setInstIterations(inst+1);
+		if(inst < 30)
+			this->stateQueue[EXECUTANDO].front().setInstIterations(inst+1);
 	}
 	else{ //FIFO 
 		int priority = this->stateQueue[EXECUTANDO].front().getPriority();
@@ -109,6 +110,7 @@ bool Manager<T>::switchState(int origin, int final, uli idProcess){
 
 	deque<Process>::iterator it;
 	string str;
+	int id, execs;
 
 	for(it=this->stateQueue[origin].begin(); it!=this->stateQueue[origin].end(); ++it){
 		if(it->getId() == idProcess){
@@ -118,6 +120,25 @@ bool Manager<T>::switchState(int origin, int final, uli idProcess){
 			
 			this->stateQueue[final].push_back(*it);
 			this->stateQueue[origin].erase(it);
+
+
+
+			if(origin == EXECUTANDO){
+
+				id = this->stateQueue[EXECUTANDO].front().getId();
+				execs = this->stateQueue[EXECUTANDO].front().getRunIterations();
+
+				if(execs == 0)
+					execs = 1;
+
+				if(this->algorithmType == "ROUNDROBIN"){
+					if(execs%QUANTUM == 0)
+						this->addDiagramProcess(id, QUANTUM, 0);
+				}
+				else
+					this->addDiagramProcess(id, execs, 0);
+				
+			}
 
 			// maior desempenho fazendo uma busca binaria para buscar a posicao a ser inserido o processo O(log n)
 			// ou pode-se percorrer normalmente e gastar O(n)
@@ -172,7 +193,7 @@ string Manager<T>::catchStateName(int state){
 
 template <class T>
 bool Manager<T>::interruption(){
-	return (rand()%150 == 42); 
+	return (rand()%50 == 42); 
 }
 
 template <class T>
@@ -224,8 +245,10 @@ void Manager<T>::createProcess(usi priority, usi type, int instruction){
 	
 	if(this->hasSpace(PRONTO)){
 		if(this->switchState(CRIADO, PRONTO, id)){
-			if(this->interruption())
+			if(this->interruption()){
+				this->addDiagramProcess(this->stateQueue[PRONTO].front().getId(), 0, 0); //se nao chegar a executar, pelo menos add ele no diagrama
 				this->closeProcess(PRONTO, id);
+			}
 		}
 	}
 	else
@@ -237,16 +260,13 @@ void Manager<T>::createProcess(usi priority, usi type, int instruction){
 template <class T>
 void Manager<T>::executeProcess(int iterations){
 	
-	//Process p = this->stateQueue[PRONTO].front();
+
 	this->runningProcces = &this->stateQueue[PRONTO].front();
 	this->switchState(PRONTO, EXECUTANDO, this->stateQueue[PRONTO].front().getId());
-	int its = 0;
 
 	while(!this->stateQueue[EXECUTANDO].front().alreadyExecuted()){
 
 		if(this->block()){
-
-			this->addDiagramProcess(this->stateQueue[EXECUTANDO].front().getId(), its, 0);
 
 			if(this->hasSpace(BLOQUEADO))
 				this->lockProcess(this->stateQueue[EXECUTANDO].front().getId());
@@ -261,14 +281,11 @@ void Manager<T>::executeProcess(int iterations){
 			if(this->stateQueue[PRONTO].size() > 0){
 				this->runningProcces = &this->stateQueue[PRONTO].front();
 				this->switchState(PRONTO, EXECUTANDO, this->stateQueue[PRONTO].front().getId());
-				its = 0;
 			}
 			else
 				break;
 		}
 		else if(this->interruption()){
-
-			this->addDiagramProcess(this->stateQueue[EXECUTANDO].front().getId(), its, 0);
 
 			this->runningProcces = &this->stateQueue[EXECUTANDO].front();
 
@@ -277,26 +294,37 @@ void Manager<T>::executeProcess(int iterations){
 			else
 				this->incrementPriority();
 
-			switchState(EXECUTANDO, PRONTO, this->stateQueue[EXECUTANDO].front().getId());
-			break;
+			if(this->hasSpace(PRONTO))
+				this->switchState(EXECUTANDO, PRONTO, this->stateQueue[EXECUTANDO].front().getId());
+			else
+				this->switchState(EXECUTANDO, PRONTOSUS, this->stateQueue[EXECUTANDO].front().getId());
+
+			if(this->stateQueue[PRONTO].size() > 0){
+				this->runningProcces = &this->stateQueue[PRONTO].front();
+				this->switchState(PRONTO, EXECUTANDO, this->stateQueue[PRONTO].front().getId());
+			}
+			else
+				break;
 		}
 		else{
 			this->stateQueue[EXECUTANDO].front().execute(iterations);
 			this->runningProcces = &this->stateQueue[EXECUTANDO].front();
-			its++;
 
 			if(this->algorithmType == "ROUNDROBIN"){
-				if(its == QUANTUM){
+				if(this->stateQueue[EXECUTANDO].front().getRunIterations()%QUANTUM == 0){
 					
 					if(this->stateQueue[EXECUTANDO].front().alreadyExecuted())
 						break;
 
-					this->addDiagramProcess(this->stateQueue[EXECUTANDO].front().getId(), its, 0);
-					switchState(EXECUTANDO, PRONTO, this->stateQueue[EXECUTANDO].front().getId());
-					its = 0;
+					if(this->hasSpace(PRONTO))
+						this->switchState(EXECUTANDO, PRONTO, this->stateQueue[EXECUTANDO].front().getId());
+					else
+						this->switchState(EXECUTANDO, PRONTOSUS, this->stateQueue[EXECUTANDO].front().getId());
 
-					if(this->stateQueue[PRONTO].size() > 0)
+					if(this->stateQueue[PRONTO].size() > 0){
+						this->runningProcces = &this->stateQueue[PRONTO].front();
 						this->switchState(PRONTO, EXECUTANDO, this->stateQueue[PRONTO].front().getId());
+					}
 					else
 						break;
 				}
@@ -306,7 +334,6 @@ void Manager<T>::executeProcess(int iterations){
 
 	
 	if(this->closeProcess(EXECUTANDO, this->stateQueue[EXECUTANDO].front().getId())){
-		this->addDiagramProcess(this->stateQueue[EXECUTANDO].front().getId(), its, 0);
 		if(this->stateQueue[PRONTOSUS].size() > 0 && this->hasSpace(PRONTO))
 			this->switchState(PRONTOSUS, PRONTO, this->stateQueue[PRONTOSUS].front().getId());
 	}
@@ -418,11 +445,10 @@ void Manager<T>::reportGanttDiagram(bool idOrder, bool idOrderInLine){
 		
 		for(i=0; i<this->ganttDiagram.size(); i++){
 			this->ganttDiagram[i].second.second = last;
-			for(j=0; j<this->ganttDiagram[i].second.first; j++);
-			last += j;
+			last += this->ganttDiagram[i].second.first;
 		}
-
-		sort(this->ganttDiagram.begin(), this->ganttDiagram.end(), orderById);
+	
+		stable_sort(this->ganttDiagram.begin(), this->ganttDiagram.end(), orderById);
 
 		if(idOrderInLine){
 
@@ -442,9 +468,11 @@ void Manager<T>::reportGanttDiagram(bool idOrder, bool idOrderInLine){
 				}
 				else{
 
-					int lasted = this->ganttDiagram[i-1].second.second;
+					int lasttab = this->ganttDiagram[i-1].second.second;
+					int lastbars = this->ganttDiagram[i-1].second.first;
 					int now = this->ganttDiagram[i].second.second;
-					cout << setw(now-(lasted+this->ganttDiagram[i-1].second.first)+1);
+					int total = now-(lasttab+lastbars);
+					cout << setw(total+1);
 
 					for(j=0; j<this->ganttDiagram[i].second.first; j++)
 						cout << "|";
@@ -454,7 +482,6 @@ void Manager<T>::reportGanttDiagram(bool idOrder, bool idOrderInLine){
 				if(i < this->ganttDiagram.size()-1)
 					if(this->ganttDiagram[i].first != this->ganttDiagram[i+1].first)
 						cout << endl;
-			
 			}
 
 			delete[] alreadyPass;
