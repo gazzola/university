@@ -69,7 +69,7 @@ void Manager<T>::escalonar(int state){
 	//	sort(this->stateQueue[state].begin(), this->stateQueue[state].end(), orderBySJF);
 	
 	//	nao preicsa ordenar no FIFO, pois ja esta inserindo no final do deque
-	//	mantento assim a razao de o primeiro a entrar eh o primeiro a sair.
+	//	mantendo assim a razao de o primeiro a entrar eh o primeiro a sair.
 }
 
 
@@ -436,7 +436,7 @@ void Manager<T>::reportGanttDiagram(bool idOrder, bool idOrderInLine){
 	
 	rlutil::cls();
 	this->printLine();
-	this->printAction("DIAGRAMA DE GANTT (Processos/Duracao):");
+	this->printAction("DIAGRAMA DE GANTT (Processos/Duracao) - "+this->algorithmType+":");
 	cout << endl;
 
 	int i, j, last = 0;
