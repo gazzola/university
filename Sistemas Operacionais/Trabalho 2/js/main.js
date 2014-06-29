@@ -1,5 +1,6 @@
 var MAX_FRAMES = 32;
 var MAX_PROCESS = 90;
+var MAX_PROCESS_FRAME = 4;
 
 var PRONTO = 0;
 var EXECUTANDO = 1;
@@ -163,7 +164,7 @@ var MemManager = (function(){
 
 		// poderia buscar o dado no disco
 
-		if(this._numAllocated < MAX_FRAMES){
+		if(this._numAllocated < MAX_FRAMES && this._NumFrameOfProcess(pid) < MAX_PROCESS_FRAME){
 			var index = this._getSpacePointer();
 			ManHistory.add("Pagina "+pid+""+page+" alocada.");
 			this._allocate(index, pid, page, color);
@@ -209,6 +210,14 @@ var MemManager = (function(){
 
 
 	// verficadores
+	MemManager.prototype._NumFrameOfProcess = function(pid){
+		var count=0;
+		for(var i=0; i<MAX_FRAMES; i++)
+			if(this.table[i][0] == pid)
+				count++;
+		return count;
+	}
+
 	MemManager.prototype._isAllocatedProcess = function(pid){
 		for(var i=0; i<MAX_FRAMES; i++)
 			if(this.table[i][0] == pid)
