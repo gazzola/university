@@ -5,6 +5,6 @@ Abrir o arquivo index.html no seu navegador preferido.
 
 
 Integrantes
-===========
+-----------
 
 Vide arquivo humans.txt
