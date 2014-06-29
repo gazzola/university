@@ -3,13 +3,13 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Marcos V. Treviso -- marcosvtreviso[at]gmail.com -- facebook.com/marcos.treviso
 
 # THANKS
 
-    <name>
+    Linus Torvalds :p
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
+    HTML5, CSS3, Javascript
     jQuery, Modernizr

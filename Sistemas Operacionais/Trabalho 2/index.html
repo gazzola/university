@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Trabalho 2 de SO - Gerenciamento de Memória</title>
+        <title>Gerenciamento de Memória</title>
         <meta name="description" content="Trabalho para disciplina de Sistema Operacionais - 2014/01">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="favicon.ico">
@@ -16,15 +16,13 @@
     </head>
     <body>
     
-    <!--[if lt IE 7]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+   
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
-            <span class"=icon-bar"></span>
+            <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
@@ -37,21 +35,54 @@
             <li><a id="contact" data-toggle="modal" data-target="#myModal" data-title="Contact">Contact</a></li>
 
           <div id="aboutContent" class="hidden">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            
+            <p class="text-justify">
+              <strong>
+                Trabalho sobre gerenciamento de memória.
+              </strong>
+            </p>
+
+            <p class="text-justify">• Implemente um mecanismo de gerenciamento de memória virtual.</p>
+
+            <p class="text-justify">• O programa deverá conter um espaço de quadros (memória real) global, para todos os processos, e um espaço de páginas virtuais (memória virtual) para cada processo.</p>
+
+            <p class="text-justify">• O tamanho do quadro e da página devem ser idênticos.</p>
+
+            <p class="text-justify">• O número de quadros do sistema será de 32.</p>
+
+            <p class="text-justify">• Cada processo poderá ter até 4 páginas alocadas nos quadros. O número máximo de páginas de um processo será de 32 páginas.</p>
+
+            <p class="text-justify">• O tamanho da página ou quadro será de 4 KB.</p>
+
+            <p class="text-justify">• O programa deverá ser capaz de gerenciar uma fila de processos (abstração), cada qual com seu número de páginas que, de acordo com a execução precisam utilizar alguns dos quadros da "memória principal".
+            Simule a utilização dos quadros e também a falha dos quadros para alguns processos. Implemente um mecanismo de substituição de página, bem como a estrutura da tabela de páginas.</p>
+
           </div>
 
           <div id="contactContent" class="hidden">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+            <p>
+                My name is Marcos Treviso. This is a work for the operating systems class on graduation over computer science.
+            </p>
+
+            <p>
+              You can find me by e-mail <u>marcosvtreviso</u><span class="label label-primary">at</span><u>gmail.com</u>. or by links below:
+            </p>
+
+            <p>
+              <a href="https://www.facebook.com/marcos.treviso" target="_blank">Facebook</a>
+              <br>
+              <a href="https://github.com/meitcher/" target="_blank">GitHub</a>
+              <br>
+              <a href="https://www.urionlinejudge.com.br/judge/pt/profile/18175" target="_blank">URI Online Judge</a>
+              <br>
+              <a href="http://lattes.cnpq.br/0591404005568638" target="_blank">Lattes Curriculum</a>
+            </p>
+
+            <p>
+              :)
+            </p>
+
           </div>
 
         </div><!--/.navbar-collapse -->
@@ -61,14 +92,19 @@
 
 
     <div class="jumbotron">
-      <div class="container" align="center">
+      <div class="container center-block">
         <br><br>
         <h1>Tabela de Memória</h1>
+         <!--[if lt IE 7]>
+			        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://outdatedbrowser.com/">upgrade your browser</a> to improve your experience.</p>
+			    <![endif]-->
         
         <p>
-            <div id="memTable"></div>
+            <div id="memTable" class="center-block"></div>
         </p>
 
+        <!-- FORMULARIO PARA CRIAR TABELA DE MEMORIA -->
+        <!--
         <p>
         <form class="form-inline" role="form">
             <div class="form-group">
@@ -79,6 +115,8 @@
             </div>
         </form>
         </p>
+        -->
+      
       </div>
     </div>
 
@@ -89,63 +127,76 @@
       <!-- Example row of columns -->
       <div class="row">
         
-        <div class="col-md-4">
+        <div class="col-md-8 myblocks">
             <h2>Filas de Processos</h2>
+            <p>
+              <form class="form-inline" role="form">
+                <div class="form-group">
+                    <input type="text" id="qtdProcess" class="form-control input-sm" placeholder="Qtd. de Processos">
+                    <a id="createProcess" class="btn btn-primary btn-sm" role="button">
+                        Criar &raquo;
+                    </a>
+
+                    &nbsp;&nbsp;&nbsp;
+
+                    <a id="executeProcess" class="btn btn-primary btn-sm" role="button">
+                        Executar &raquo;
+                    </a>
+
+                    &nbsp;&nbsp;&nbsp;
+
+                    <input type="text" id="secProcess" class="form-control input-sm" placeholder="Segundos">
+
+                    <a id="executeAllProcesses" class="btn btn-primary btn-sm" role="button">
+                        Executar Todos &raquo;
+                    </a>
+                </div>
+              </form>
+            </p>
             <p>
                 <div id="processQueues"></div>
             <p>
-            <form class="form-inline" role="form">
-                <div class="form-group">
-                    <input type="text" id="qtdProcess" class="form-control" placeholder="Quantidade de Processos">
-                    <a id="createProcess" class="btn btn-primary" role="button">
-                        Criar &raquo;
-                    </a>
-                </div>
-            </form>
-
         </div>
 
-        <div class="col-md-4">
+
+        <div class="col-md-4 myblocks">
           <h2>Processo em Execução</h2>
           <p>
             <div id="processor">
-                1
+                &Oslash;
             </div>
           </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
        </div>
-        
-        <div class="col-md-4">
-          <h2>Memória Secundária</h2>
-          <p>
-            <div id="disk">
-            </div>
-          </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
+
       </div>
-
       
+     <div class="clearfix"></div>
 
-      <br>
-      <br>
+     <div class="row"> 
+       <p>
+         <a id="seeHistory" class="btn btn-primary btn-sm" role="button">Ver Histórico &raquo;
+         </a>
+       </p>
+       <p>
+
+
+<pre id="console" visible="false">
+</pre>
+
+         
+       </p>
+     </div>
+
+
+     	<br>
       <hr>
 
       <footer>
         <p>
           &copy; Universidade Federal do Pampa - Ciência da Computação - 2014
-          <a id="moreInfo" data-toggle="modal" data-target="#myModal" data-title="More Info">
-            <span class="glyphicon glyphicon-globe pull-right" data-toggle="tooltip" data-placement="top" title="More Info"></span>
-          </a>
-
-          <div id="moreInfoContent" class="hidden">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
+          <button id="moreInfo" class="popovers pull-right btn btn-xs btn-primary" data-toggle="popover" title="Integrantes" data-placement="top" data-content="Marcos V. Treviso (121150107)">
+            <span class="glyphicon glyphicon-info-sign" title="More Info"></span>
+          </button>
 
         </p>
 
@@ -178,6 +229,8 @@
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/plugins.js"></script>
+
+        <script type="js/utils.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
