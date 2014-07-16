@@ -225,7 +225,51 @@ def breadthFirstSearch(problem):
 def uniformCostSearch(problem):
   "Search the node of least total cost first. "
   "*** YOUR CODE HERE ***"
-  util.raiseNotDefined()
+  if(problem.isGoalState(problem.getStartState())):
+    return ['Stop']
+  
+  fila = util.PriorityQueueWithFunction(lambda x: x[2])
+
+  final = None
+  inicial = problem.getStartState()
+
+  caminho = []
+  predecessores = {}
+  visitados = {}
+
+  visitados[inicial] = True
+  fila.push((inicial, None, 0))
+  import sys
+
+  while fila.isEmpty() == False:
+    
+    aux = fila.pop()
+    u = aux[0]
+
+    if(problem.isGoalState(u)):
+      final = aux
+      break
+
+    for adj in problem.getSuccessors(u):
+      v = adj[0]
+
+      if not(v in visitados):
+
+        fila.push((adj[0], adj[1], aux[2]+adj[2]))
+        visitados[v] = True
+
+        if not(v in predecessores):
+          predecessores[v] = aux
+
+  it = final[0]
+  caminho.insert(0, final[1])
+
+  while predecessores[it][0] != inicial:
+    caminho.insert(0, predecessores[it][1])
+    it = predecessores[it][0]
+
+
+  return caminho
 
 def nullHeuristic(state, problem=None):
   """
@@ -237,7 +281,51 @@ def nullHeuristic(state, problem=None):
 def aStarSearch(problem, heuristic=nullHeuristic):
   "Search the node that has the lowest combined cost and heuristic first."
   "*** YOUR CODE HERE ***"
-  util.raiseNotDefined()
+  if(problem.isGoalState(problem.getStartState())):
+    return ['Stop']
+  
+  fila = util.PriorityQueueWithFunction(lambda x: x[2] + heuristic(x[0], problem))
+
+  final = None
+  inicial = problem.getStartState()
+
+  caminho = []
+  predecessores = {}
+  visitados = {}
+
+  visitados[inicial] = True
+  fila.push((inicial, None, 0))
+  import sys
+
+  while fila.isEmpty() == False:
+    
+    aux = fila.pop()
+    u = aux[0]
+
+    if(problem.isGoalState(u)):
+      final = aux
+      break
+
+    for adj in problem.getSuccessors(u):
+      v = adj[0]
+
+      if not(v in visitados):
+
+        fila.push((adj[0], adj[1], aux[2]+adj[2]))
+        visitados[v] = True
+
+        if not(v in predecessores):
+          predecessores[v] = aux
+
+  it = final[0]
+  caminho.insert(0, final[1])
+
+  while predecessores[it][0] != inicial:
+    caminho.insert(0, predecessores[it][1])
+    it = predecessores[it][0]
+
+
+  return caminho
     
   
 # Abbreviations
