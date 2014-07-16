@@ -239,7 +239,6 @@ def uniformCostSearch(problem):
 
   visitados[inicial] = True
   fila.push((inicial, None, 0))
-  import sys
 
   while fila.isEmpty() == False:
     
@@ -295,7 +294,6 @@ def aStarSearch(problem, heuristic=nullHeuristic):
 
   visitados[inicial] = True
   fila.push((inicial, None, 0))
-  import sys
 
   while fila.isEmpty() == False:
     
