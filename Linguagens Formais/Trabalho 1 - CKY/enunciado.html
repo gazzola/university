@@ -1,0 +1,22 @@
+<meta charset='utf8'>
+
+<div id="yui_3_13_0_3_1405389096653_55" class="no-overflow"><h3 id="yui_3_13_0_2_1405389096653_13">Algoritmo CKY</h3>
+<p>Implemente o algoritmo CKY visto em aula.</p>
+<p id="yui_3_13_0_3_1405389096653_54">O programa deve ler dois arquivos especificados na linha de comando:</p>
+<pre>programa GRAMATICA STRINGS</pre>
+<p id="yui_3_13_0_3_1405389096653_58">O arquivo GRAMATICA especifica uma gramática na Forma Normal de Chomsky, e possui o seguinte formato (note os separadores de lado esquerdo e direito, de união de lados direitos, e de variáveis):</p>
+<pre>S -&gt; A B<br>A -&gt; B C | a<br>B -&gt; A C | b<br>C -&gt; a | b</pre>
+<p>O arquivo STRINGS contém uma lista de strings a serem testadas com a gramática dada. Por exemplo:</p>
+<pre>ababa<br>ababab</pre>
+<p id="yui_3_13_0_3_1405389096653_59">O programa deve ler os dois arquivos e, para cada string de entrada, executar o algoritmo CKY com a gramática e imprimir na saída a matriz resultante. O formato da saída deve ser: uma linha da matriz por linha, cada coluna separada por espaço, e os símbolos de cada célula separados por vírgula e em ordem alfabética. Por exemplo, para as strings (e gramática) acima a saída deve ser:</p>
+<pre>A,C B,S A B,S A<br>B,C A B,S A<br>A,C B,S A<br>B,C A<br>A,C<br>A,C B,S A B,S A B,S<br>B,C A B,S A B,S<br>A,C B,S A B,S<br>B,C A B,S<br>A,C B,S<br>B,C</pre>
+<h4></h4>
+<h4><strong>Atenção<br></strong></h4>
+<p id="yui_3_13_0_3_1405389096653_61"><strong id="yui_3_13_0_3_1405389096653_60">Você pode imprimir outras coisas na tela apenas durante a implementação. Quando submeter a versão final, retire tudo que não seja matriz resultante de uma string de entrada. Caso contrário sua nota poderá ser penalizada.</strong></p>
+<h4><br>Arquivo</h4>
+<p id="yui_3_13_0_3_1405389096653_62">Para ajudar um pouco, baixe o arquivo <a href="https://moodle.unipampa.edu.br/pluginfile.php/143349/mod_assignment/intro/CKY.tar.gz">CKY.tar.gz</a>. Nele há o arquivo CKY.py, que contém um esqueleto de programa em Python. Falta apenas completar os métodos de leitura de gramática, do algoritmo CKY e da impressão da matriz (chamada chart).</p>
+<p id="yui_3_13_0_3_1405389096653_63">Os exemplos acima estão no zip também, junto com um arquivo com mais strings de teste.</p>
+<h4><br>Detalhes</h4>
+<p id="yui_3_13_0_3_1405389096653_64">O trabalho é simples. Por isso, deve ser feito individualmente. Discutam entre si, mas de forma alguma copiem código um do outro ou da internet. Farei a verificação e, caso encontre cópia, reprovarei os envolvidos na disciplina e notificarei o NuDE.</p>
+<p id="yui_3_13_0_3_1405389096653_65">Não é obrigatório implementar em Python. Podem usar Java, C/C++, Ruby, etc. Apenas não usem nada que não possa ser <em>facilmente</em> executado em linha de comando (PHP, por exemplo).</p>
+<p></p></div>

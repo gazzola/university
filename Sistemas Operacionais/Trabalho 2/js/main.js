@@ -1,6 +1,7 @@
 var MAX_FRAMES = 32;
 var MAX_PROCESS = 90;
 var MAX_PROCESS_FRAME = 4;
+var MAX_SECONDS_PER_PROCESS = 10;
 
 var PRONTO = 0;
 var EXECUTANDO = 1;
@@ -359,15 +360,6 @@ var Process = (function(){
 }());
 
 
-function sleep(milliseconds) {
-	var start = new Date().getTime();
-	for(var i=0; i<1e7; i++){
-		if((new Date().getTime() - start) > milliseconds)
-		  break;
-	}
-}
-
-var timer = null;
 
 
 var ProcManager = (function(){
@@ -462,16 +454,28 @@ var ProcManager = (function(){
 
 
 	ProcManager.prototype.executeAllProcesses = function(sec){
-		sec *= 1000; //in ms
 
-		if(this.qtdProcess > 0){
-			while(!this.readyQueue.isEmpty()){
-				this.executeProcess();
-				//sleep(sec);
+		if(sec <= MAX_SECONDS_PER_PROCESS){
+			
+			sec *= 1000; //in ms
+
+			if(this.qtdProcess > 0){
+				var $this=this;
+				var interval = setInterval(function(){ 
+					if(!$this.readyQueue.isEmpty()) 
+						$this.executeProcess(); 
+					else 
+						clearInterval(interval); 
+				}, sec);
 			}
+			else
+				alert("Nenhum processo na lista.");
+
 		}
-		else
-			alert("Nenhum processo na lista.");
+		else{
+			alert(MAX_SECONDS_PER_PROCESS+" é o máximo de segundos.");
+			return;
+		}
 	}
 
 	ProcManager.prototype.closeAllProcesses = function(){
@@ -606,6 +610,7 @@ document.getElementById("executeProcess").onclick = function(e){
 	ProcManager.executeProcess();
 	e.preventDefault();
 }
+
 
 document.getElementById("secProcess").onkeypress = function(e){
 

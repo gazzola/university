@@ -100,7 +100,10 @@ def depthFirstSearch(problem):
   # porem usa mais memoria, pois aloca uma posicao booleana para cada estado
   #
   # ***********************************************************************
-  
+
+  if(problem.isGoalState(problem.getStartState())):
+    return ['Stop']
+
   pilha = util.Stack()
 
   final = None
@@ -112,13 +115,9 @@ def depthFirstSearch(problem):
   caminho = []
   visitados = [[False for y in range(ALTURA+1)] for x in range(LARGURA+1)]
   predecessores = [[None for y in range(ALTURA+1)] for x in range(LARGURA+1)] 
-  
 
   visitados[LARGURA][ALTURA] = True
-  for adj in problem.getSuccessors(inicial):
-    predecessores[adj[0][0]][adj[0][1]] = (inicial, None, 0)
-    pilha.push(adj)
-
+  pilha.push((inicial, None, 0))
 
   while pilha.isEmpty() == False:
     
@@ -175,6 +174,9 @@ def breadthFirstSearch(problem):
   #
   # ***********************************************************************
 
+  if(problem.isGoalState(problem.getStartState())):
+    return ['Stop']
+  
   fila = util.Queue()
 
   final = None
@@ -184,12 +186,8 @@ def breadthFirstSearch(problem):
   predecessores = {}
   visitados = {}
 
-
   visitados[inicial] = True
-  for adj in problem.getSuccessors(inicial):
-    predecessores[adj[0]] = (inicial, None, 0)
-    fila.push(adj)
-
+  fila.push((inicial, None, 0))
 
   while fila.isEmpty() == False:
     
