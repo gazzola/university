@@ -7,7 +7,7 @@ Implemente o algoritmo de Huffman (usando um Heap) para compactar textos.
 
 
 Implementação
-===============
+---
 
 Implementado usando Heap de Mínimo na linguagem de programação Python versão 3.
 
@@ -19,7 +19,7 @@ A classe Node eh utilizada para criar os nós da árvore e também os nós para 
 
 
 Execução
-==========
+---
 
 Arquivo main.py ($ python3 main.py)
 Ou execute o arquivo: ./run_huffman.sh
@@ -28,6 +28,6 @@ Necessário um arquivo de entrada na pasta python/ para a entrada de texto do pr
 
 
 Extra
-======
+---
 
 Foram realizados testes utilizando a linguagem C, entretanto a implementação completa foi feita em Python.
