@@ -41,9 +41,9 @@ int main(){
 					//senao, entao romano atual eh D ou L ou V
 					//entao vai diminuir C do D, X do L, I do V
 
-					if(valor+romanos[i+d].second >= romanos[i].second){
-						valor -=  romanos[i].second - romanos[i+d].second;
-						numRomano += romanos[i+d].first + romanos[i].first;
+					if(valor+romanos[i+d].second >= romanos[i].second){			//49+10(X) >= 50(L)
+						valor -=  romanos[i].second - romanos[i+d].second;		//valor = valor - (50-10) -> valor = 49-40 -> valor = 9
+						numRomano += romanos[i+d].first + romanos[i].first;		//numRomano = numRomano + X + L
 					}
 				}
 
