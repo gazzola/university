@@ -1,3 +1,8 @@
+/*
+* Compile: g++ -o romanos romanos.cpp -Wall -Wextra
+* Run: ./romanos
+*/
+
 #include <iostream>
 #include <cstdio>
 #include <vector>
@@ -17,6 +22,7 @@ int main(){
 
 	while(true){
 
+		cout << "Digite o num arabico: ";
 		cin >> numArabico;
 
 		valor = numArabico;
@@ -25,21 +31,20 @@ int main(){
 
 		while(i < 7 && valor > 0){
 
-			if(valor >= romanos[i].second){
-				valor -= romanos[i].second;
-				numRomano += romanos[i].first;
-				
+			if(valor >= romanos[i].second){		//51 >= 50(L)
+				valor -= romanos[i].second;		//valor = valor - 50 -> valor = 51-50 -> valor = 1
+				numRomano += romanos[i].first;	//numRomano = numRomano + L
 			}
 			else{
 
-				if(i < 6){ // ate V
+				if(i < 6){ //ate V
 					int d = ((i&1) == 1) ? 1 : 2;	//deslocamento
 
-					//se par, entao romano atual eh M ou C ou X
-					//entao vai diminuir C do M, X do C, I do X
-
-					//senao, entao romano atual eh D ou L ou V
+					//se eh impar, entao romano atual eh D ou L ou V (desloca 1 no vetor de numeros romanos)
 					//entao vai diminuir C do D, X do L, I do V
+
+					//senao, entao romano atual eh M ou C ou X (desloca 2 no vetor de numeros romanos)
+					//entao vai diminuir C do M, X do C, I do X
 
 					if(valor+romanos[i+d].second >= romanos[i].second){			//49+10(X) >= 50(L)
 						valor -=  romanos[i].second - romanos[i+d].second;		//valor = valor - (50-10) -> valor = 49-40 -> valor = 9
@@ -53,7 +58,7 @@ int main(){
 			qtdIters++;
 		}
 
-		cout << numArabico << " para " << numRomano << " em " << qtdIters << " iters." << endl;
+		cout << numArabico << " para " << numRomano << " em " << qtdIters << " iters." << endl << endl;
 
 	}
 
