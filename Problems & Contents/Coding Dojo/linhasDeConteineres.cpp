@@ -1,3 +1,8 @@
+/*
+* Resolucao exercicio do Coding Dojo 2014 - SACTA
+* Complexidade do algoritmo: O(L*C)
+*/
+
 #include <cstdio>
 #include <cstring>
 #include <cstdlib>
@@ -10,38 +15,65 @@ typedef pair<int, int> ii;
 int matrix[301][301];
 
 
+//se o ultimo for igual ao atual, esta ok
+
+// 1 2 3
+// 5 4 6
+// ^
+
+// 1 mod 3 = 1 
+// 5 mod 3 = 2 -> como 1 != 2, entao esses elementos nao podem estar na mesma coluna
 bool verColuna(int ultimo, int atual){
 	return (ultimo == atual);
 }
 
+
+
+//se o (maior - menor) elemento da linha for igual ao (numero de colunas - 1), esta ok 
+
+// 1 5 3 <
+// 4 2 6
+
+// maior = 5
+// menor = 1
+// c = 3 [num de  colunas]
+// 5-1 != 3-1, entao esses elementos nao podem estar na mesma linha
 bool verLinha(int maior, int menor, int c){
 	return (maior-menor == c-1);
 }
 
 
 
+// verifica se a linha l esta com os elementos corretos, ou seja, se eles estao ordenados, 
+// pois a verificacao de impossibilidade ja foi feita pelas funcoes acima
+
+// se nao existe mais trocas possiveis, retorna (-1, -1)
+// c.c eh retornado as colunas que devem ser trocadas (col1, col2)
+
 ii linhaCorreta(int l, int numColunas){
 	int ultimo = 0;
-	ii melhorTroca = ii(-1, -1);
 	ii primeiraTroca = ii(-1, -1);
 
 	for(int i=1; i<numColunas; i++){
-		if(matrix[l][ultimo] > matrix[l][i]){ //1, 4, 3, 2
+		if(matrix[l][ultimo] > matrix[l][i]){ 
 
-			if(primeiraTroca.first == -1)
-				primeiraTroca == ii(ultimo, i);
+			//1  4  3  2
+			//   ^     ^
+			//  ult  atual
 
 			//(2-1)%numColunas == ultimo
 			// e
 			//(4-1)%numColunas == pos(2)
 
-			int atual = matrix[l][i];
 			int ult = matrix[l][ultimo];
+			int atual = matrix[l][i];
 
-			if(((atual-1)%numColunas == ultimo) && ((ult-1)%numColunas == i)){
-				melhorTroca = ii(ultimo, i);
-				return melhorTroca;
-			}
+			if(primeiraTroca.first == -1)
+				if(((atual-1)%numColunas == ultimo) || ((ult-1)%numColunas == i))
+					primeiraTroca = ii(ultimo, i); //primeira troca possivel
+
+			if(((atual-1)%numColunas == ultimo) && ((ult-1)%numColunas == i))
+				return ii(ultimo, i); //melhor troca possivel, substitui 2 elementos pra suas posicoes corretas
 			
 		}
 		else
@@ -52,46 +84,43 @@ ii linhaCorreta(int l, int numColunas){
 	return primeiraTroca;
 }
 
+
+// verifica se a coluna c esta com os elementos corretos, ou seja, se eles estao ordenados, 
+// pois a verificacao de impossibilidade ja foi feita pelas funcoes acima
+
+// se nao existe mais trocas possiveis, retorna (-1, -1)
+// c.c eh retornado as linhas que devem ser trocadas (lin1, lin2)
+
+
 ii colunaCorreta(int c, int numLinhas, int numColunas){
 
 	int ultimo = 0;
-	ii melhorTroca = ii(-1, -1);
 	ii primeiraTroca = ii(-1, -1);
 
 	for(int i=1; i<numLinhas; i++){
 		if(matrix[ultimo][c] > matrix[i][c]){
 
 
-
 			/*
-			
-			1 3 2
-			7 8 9
-			4 5 6
-
-			1
-			13
-			9
-			5
-			17
-
+			1 
+			7 < ult
+			4 < atual
 			*/
-
-
-			if(primeiraTroca.first == -1)
-				primeiraTroca == ii(ultimo, i);
 
 			// ultimo*c + 1 == matrix[i][c] 
 			// e
 			// i*c + 1 == matrix[ultimo][c]
 
-			int atual = matrix[i][c];
 			int ult = matrix[ultimo][c];
+			int atual = matrix[i][c];
 
-			if(((ultimo*numColunas + 1) == atual) && ((i*numColunas + 1) == ult)){
-				melhorTroca = ii(ultimo, i);
-				return melhorTroca;
-			}
+
+			if(primeiraTroca.first == -1)
+				if(((ultimo*numColunas + 1) == atual) || ((i*numColunas + 1) == ult))
+					primeiraTroca = ii(ultimo, i); //primeira troca possivel
+
+			if(((ultimo*numColunas + 1) == atual) && ((i*numColunas + 1) == ult))
+				return ii(ultimo, i); //melhor troca possivel, substitui 2 elementos pra suas posicoes corretas
 			
 		}
 		else
@@ -101,6 +130,16 @@ ii colunaCorreta(int c, int numLinhas, int numColunas){
 	return primeiraTroca;
 }
 
+
+
+
+// se analisar o fato de so mexer na linha 0 e coluna 0
+// poderiamos optar por so inverter os elementos especificados
+// nesses indicies, ou seja, gastariamos O(1) para isso
+// porem, como a impressao da matriz foi importante para a compreensao,
+// foi optado por deixar a inversao completa
+
+// funcao para inverter duas linhas da matriz
 void inverteLinhas(int l1, int l2, int numColunas){
 	int temp;
 	for(int i=0; i<numColunas; i++){
@@ -110,6 +149,8 @@ void inverteLinhas(int l1, int l2, int numColunas){
 	}
 }
 
+
+// funcao para inverter duas colunas da matriz
 void inverteColunas(int c1, int c2, int numLinhas){
 	int temp;
 	for(int i=0; i<numLinhas; i++){
@@ -120,23 +161,23 @@ void inverteColunas(int c1, int c2, int numLinhas){
 }
 
 
-void printMatriz(int c, int l){
+// simples lacos para exibicao da matriz
+void printMatriz(int l, int c){
 	for(int i=0; i<l; i++){
 		for(int j=0; j<c; j++)
 			printf("%d ", matrix[i][j]);
 		printf("\n");
 	}
 
-	printf("\n---\n\n");
+	printf("\n------------------------\n\n");
 }
+
 
 
 int main(){
 
-
-	
-	int ultimos[301];
-	int l,c;
+	int ultimos[301]; //vetor para verificar integridade das colunas
+	int l,c; //linhas, colunas
 	int count=0;
 
 	while(scanf("%d %d", &l, &c) != EOF){
@@ -146,9 +187,13 @@ int main(){
 		int menor, maior;
 		int linhaDoUm=0, colunaDoUm=0;
 
+
+		// preenche o vetor com os ultimos elementos da coluna i
 		for(int i=0; i<c; i++)
 			ultimos[i] = -1;
 
+
+		// le os elementos e verifica os casos de impossibilidade
 		for(int i=0; i<l; i++){
 
 			menor = 99999; //300*300
@@ -158,26 +203,35 @@ int main(){
 				scanf("%d", &matrix[i][j]);
 
 
+				// pega os indicies do elemento 1, ja que eh ele que vamos mover primeiramente
+				// alem do 1, poderia ser tambem o ultimo valor, que eh igual a l*c
 				if(matrix[i][j] == 1){
 					linhaDoUm = i;
 					colunaDoUm = j;
 				}
 
+
+				// define o primeiro valor das colunas da primeira linha no vetor
 				int atual = matrix[i][j] % c;
 				if(ultimos[j] == -1)
 					ultimos[j] = atual;
 				else{
+
+					// faz a verificacao da integridade da coluna j 
 					if(!verColuna(ultimos[j], atual))
 						ok = false;
 				}
 				
+				// pega menor elemento
 				if(matrix[i][j] < menor)
 					menor = matrix[i][j];
 				
+				// pega maior elemento
 				if(matrix[i][j] > maior)
 					maior = matrix[i][j];
 			}
 
+			// verificado a integridade da linha i, atraves do maior e menor calculados no `for` acima
 			if(!verLinha(maior, menor, c))
 				ok = false;
 		}
@@ -188,8 +242,8 @@ int main(){
 		//por colunas = se ultimo (num%c) for diferente do atual
 
 
-		printf("%d: ", ++count);
-		int iters = 0;
+		printf("Teste %d: ", ++count);
+		int trocas = 0;
 
 		if(!ok){
 			printf("*\n");
@@ -201,60 +255,59 @@ int main(){
 			//primeiro sempre troca a primeira linha pela linha q tem o 1
 			//depois troca as colunas ate o 1 ser o primeiro elemento da matriz
 			//assim tu garante q a primeira linha e a primeira coluna consequentemente ta ok
-			//dae depois verifica a proxima linha e coluna disponivel
-			//ou seja, vai pegando sempre elementos da diagonal principal
+			//dae depois verifica todos elementos da primeira linha e da primeira coluna
 
+
+			// faz a inversao da linha/coluna do elemento 1 para a posicao inical (0,0)
 			if(linhaDoUm > 0){
 				inverteLinhas(0, linhaDoUm, c);
-				iters++;
+				trocas++;
 			}
 
 			if(colunaDoUm > 0){
 				inverteColunas(0, colunaDoUm, l);
-				iters++;
+				trocas++;
 			}
 
 
-			int k = 0;
+			int posicaoInicial = 0;
 
-			while(true){ //vai so ate o penultimo elemento da dp
+			while(true){
 
-				ii linc = linhaCorreta(k, c);
+				// verifica se deve-se inverter as colunas e faz a devida inversao
+				ii linc = linhaCorreta(posicaoInicial, c);
 				if(linc.first >= 0){
 					inverteColunas(linc.first, linc.second, l);
-					iters++;
+					trocas++;
 				}
 				else{ // se td tiver correto com a linha, comeca a ver a coluna
-					ii colc = colunaCorreta(k, l, c);
+					ii colc = colunaCorreta(posicaoInicial, l, c);
 					if(colc.first >= 0){
 						inverteLinhas(colc.first, colc.second, c);
-						iters++;
+						trocas++;
 					}
-					else //se td certo oom as colunas tbm, a matriz final ta correta, pois os casos impossiveis ja foram tirados no comeco
-						break;
+					else 		//se td certo oom as colunas tbm, a matriz final ta correta, pois tds trocas possiveis
+						break;	//foram feitas e todos os casos impossiveis ja foram tirados no comeco
 				}
 			}
 
 
 
-			printf("%d\n", iters);
+			printf("%d\n", trocas);
 			//printMatriz(l, c);
 
-			//if(count == 9)
-			//	break;
 		}
 
 	}
 
 
 	/*
+
+	TESTAR ESSES 2 CASOS:   
 	
-
-	TESTAR ESSES 2 CASOS:
-
 	1 10
 	10 1 4 9 2 8 7 5 3 6
-	
+	resp: 7
 
 	10 1
 	4
@@ -267,6 +320,7 @@ int main(){
 	5
 	2
 	1
+	resp: 9
 	
 	--------------------
 
