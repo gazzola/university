@@ -1,3 +1,11 @@
+/*
+* Resolucao exercicio do Coding Dojo 2014 - SACTA
+* Complexidade do algoritmo: O(N)
+*
+* Compile: g++ -o mergulhadores mergulhadores.cpp -Wall -Wextra
+* Run: ./mergulhadores < texto_entrada
+*/
+
 #include <iostream>
 #include <cstdio>
 #include <cstring>

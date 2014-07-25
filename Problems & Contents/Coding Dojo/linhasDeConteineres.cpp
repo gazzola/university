@@ -1,6 +1,9 @@
 /*
 * Resolucao exercicio do Coding Dojo 2014 - SACTA
 * Complexidade do algoritmo: O(L*C)
+*
+* Compile: g++ -o linhasDeConteineres linhasDeConteineres.cpp -Wall -Wextra
+* Run: ./linhasDeConteineres < texto_entrada
 */
 
 #include <cstdio>

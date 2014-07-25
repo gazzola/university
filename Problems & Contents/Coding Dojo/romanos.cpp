@@ -1,4 +1,7 @@
 /*
+* Resolucao exercicio do Coding Dojo 2014 - SACTA
+* Complexidade do algoritmo: O(n*log(n))
+*
 * Compile: g++ -o romanos romanos.cpp -Wall -Wextra
 * Run: ./romanos
 */
@@ -58,7 +61,7 @@ int main(){
 			qtdIters++;
 		}
 
-		cout << numArabico << " para " << numRomano << " em " << qtdIters << " iters." << endl << endl;
+		cout << numArabico << " para " << numRomano << " em " << qtdIters << " iteracoes." << endl << endl;
 
 	}
 

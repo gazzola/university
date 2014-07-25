@@ -1,3 +1,11 @@
+/*
+* Resolucao exercicio do Coding Dojo 2014 - SACTA
+* Complexidade do algoritmo: O(N^2)
+*
+* Compile: g++ -o espiral espiral.cpp -Wall -Wextra
+* Run: ./espiral
+*/
+
 #include <iostream>
 #include <cstdio>
 
