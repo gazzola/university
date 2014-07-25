@@ -32,14 +32,32 @@ llu fib_fd(long long int n){
 	return fast_doubling(n-1).second;
 }
 
- 
+
+int pisano(int m){
+	
+	int x=2;
+	while(true){
+
+		llu t1 = fib_fd(x)%m;
+		llu t2 = fib_fd(x+1)%m;
+		if(t1 == t2 && t2 == 1)
+			break;
+
+		x++;
+	}
+
+	return x-1;
+}
+
+
 int main(){
 	 
 	long long int n, m; 
-	//1000000000 100 -> 50
 
 	while(scanf("%llu %llu", &n, &m) != EOF){
-		printf("%llu\n", fib_fd(fib_fd(n)) % m);
+		int c = pisano(m);
+		llu result = fib_fd(fib_fd(n)%c) % m;
+		printf("%llu\n", result);
 	}
 
 	return 0;
