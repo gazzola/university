@@ -1,54 +1,61 @@
+/*
+* Mais informacoes sobre fibonacci em O(logn):
+* http://www.geeksforgeeks.org/program-for-nth-fibonacci-number/
+* http://nayuki.eigenstate.org/page/fast-fibonacci-algorithms
+*
+* Mais informacoes sobre periodo de pisanno:
+* http://en.wikipedia.org/wiki/Pisano_period
+*/
+
 #include <cstdio>
 #include <cstring>
 
 using namespace std;
 typedef long long unsigned int llu;
 
+
+
 int MOD;
 
-struct Matrix{
-    long long X[2][2];
-    
-    Matrix(){}
-    
-    void init(){
-        memset(X,0,sizeof(X));
-        for(int i = 0;i < 2;++i) X[i][i] = 1;
-    }
-}aux;
+void multiply(llu F[2][2], llu M[2][2]){
 
-void mult(Matrix &m, Matrix &m1, Matrix &m2){
-    memset(m.X,0,sizeof(m.X));
+	llu x =  F[0][0]*M[0][0] + F[0][1]*M[1][0];
+	llu y =  F[0][0]*M[0][1] + F[0][1]*M[1][1];
+	llu z =  F[1][0]*M[0][0] + F[1][1]*M[1][0];
+	llu w =  F[1][0]*M[0][1] + F[1][1]*M[1][1];
 
-    for(int i = 0;i < 2;++i)
-        for(int j = 0;j < 2;++j)
-            for(int k = 0;k < 2;++k)
-                m.X[i][k] = (m.X[i][k] + m1.X[i][j] * m2.X[j][k]) % MOD;
+	F[0][0] = x % MOD;
+	F[0][1] = y % MOD;
+	F[1][0] = z % MOD;
+	F[1][1] = w % MOD;
 }
 
-Matrix pow(Matrix &M0, llu n){
-	Matrix ret;
-	ret.init();
 
-	if(n == 0) return ret;
-	if(n == 1) return M0;
+void power(llu F[2][2], int n){
+  
+  if(n == 0 || n == 1)
+      return;
 
-	Matrix P = M0;
-
-	while(n != 0){
-	    if(n & 1){
-	        aux = ret;
-	        mult(ret,aux,P);
-	    }
-
-	    n >>= 1;
-
-	    aux = P;
-	    mult(P,aux,aux);
-	}
-
-    return ret;
+  llu M[2][2] = {{1,1},{1,0}};
+ 
+  power(F, n/2);
+  multiply(F, F);
+ 
+  if((n&1) == 1)
+     multiply(F, M);
 }
+
+
+int fib(int n){
+
+	if(n == 0)
+		return 0;
+
+	llu F[2][2] = {{1,1},{1,0}};
+	power(F, n-1);
+	return F[0][0];
+}
+
 
 int pisano(int m){
 
@@ -75,25 +82,20 @@ int pisano(int m){
 }
 
 int main(){
-    Matrix M0;
-    M0.X[0][0] = M0.X[0][1] = M0.X[1][0] = 1;
-    M0.X[1][1] = 0;
-    
-    int n, m, c;
-    llu res1, res2;
 
-    while(scanf("%d %d",&n,&m) != EOF){
-        
-        
-        c = pisano(m);
-        MOD = c;
-        res1 = pow(M0,n).X[0][1];
+	int n, m;
+	llu res1, res2;
 
-        MOD = m;
-        res2 = pow(M0,res1).X[0][1];
+	while(scanf("%d %d",&n,&m) != EOF){
 
-        printf("%lld\n", res2);
-    }
-    
-    return 0;
+		MOD = pisano(m);
+		res1 = fib(n);
+
+		MOD = m;
+		res2 = fib(res1);
+
+		printf("%lld\n", res2);
+	}
+
+	return 0;
 }

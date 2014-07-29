@@ -1,3 +1,12 @@
+/*
+* Mais informacoes sobre fibonacci em O(logn):
+* http://www.geeksforgeeks.org/program-for-nth-fibonacci-number/
+* http://nayuki.eigenstate.org/page/fast-fibonacci-algorithms
+*
+* Mais informacoes sobre periodo de pisanno:
+* http://en.wikipedia.org/wiki/Pisano_period
+*/
+
 #include <cstdio>
 #include <vector>
 
