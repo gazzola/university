@@ -1,0 +1,14 @@
+$ -> S
+S -> NP VP
+NP -> Det N
+NP -> NP PP
+VP -> VP PP
+VP -> V NP
+PP -> P NP
+NP -> papa
+N -> caviar
+N -> spoon
+V -> eat
+P -> with
+Det -> the
+Det -> a
