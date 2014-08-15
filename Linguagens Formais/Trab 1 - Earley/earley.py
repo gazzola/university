@@ -199,7 +199,7 @@ def parse_earley(chart, gramatica, w):
 				if i+1 < len(chart):
 					scanner(chart, i+1, estado, gramatica, w[i])
 			else:
-				completer(chart, i, estado) #completer
+				completer(chart, i, estado)
 
 			j += 1
 
@@ -217,7 +217,6 @@ def aceita_string(chart):
 
 def exibe_mensagem(chart, w):
 
-
 	if(aceita_string(chart)):
 		print("STRING `%s` ACEITA\n" % w)
 	else:
@@ -230,7 +229,10 @@ def print_chart(chart):
 		print(i)
 		print(20*"-")
 		for x,y,z in r:
-			print("%d | %s -> %s" %(x,y,z))
+			if y == "$":
+				print("\033[92m%d | %s -> %s\033[0m" %(x,y,z))
+			else:
+				print("%d | %s -> %s" %(x,y,z))
 		print("\n")
 		i+=1
 
