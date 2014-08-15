@@ -15,16 +15,26 @@ the strings in strings.txt must be separated by spaces,
 because the default example uses complete sentences to make
 the test over the algorithm.
 
+the gamma state is represented by `$` symbol, please 
+be sure that the your grammar do not have this symbol,
+and the start symbol is represented by 'S', then please
+be sure that the your start symbol is it.
+
 Extra:
 if you want the parser tree, just make a pointer
 to the parent state in completer function, after that,
 you can use a bib to draw the tree or print a vector
 with all pointers in order of creation.
 
+Complexity:
+Best case is O(n^2) [not ambiguous]
+Worst case is O(n^3) [ambiguous]
 """
 
 import sys
 import os
+
+inicial = '$'
 
 
 def parar():
@@ -32,10 +42,8 @@ def parar():
 
 
 def create_chart(w):
-
 	w = w.split(" ")
 	tam = len(w)+1
-	w = ["@"]+w
 	return [[] for x in range(tam)]
 
 
@@ -44,9 +52,8 @@ def le_gramatica(arquivo):
 	f = open(arquivo, 'r')
 	gramatica = {}
 
-	inicial = '$'
-	tem_inicial = False
 
+	tem_inicial = False
 	for string in f:
 
 		cadeia = string.strip().split("->")
@@ -81,17 +88,6 @@ def le_gramatica(arquivo):
 
 
 
-def pega_proxima_pelo_ponto(producao):
-	proxima = producao.split(".")
-	proxima = proxima[1]
-
-	while " " in proxima:
-		temp = proxima.split(" ")
-		proxima = temp[0]
-
-	return proxima
-
-
 
 
 def mover_ponto_na_producao(producao):
@@ -102,44 +98,26 @@ def mover_ponto_na_producao(producao):
 	if comeco < len(producao):
 		if " " in producao:
 			pos = producao.index(" ")
-			producao[comeco-1] = " "
 			producao[pos] = "."
 		else:
-			producao[comeco-1] = " "
 			producao += "."
-	else:
+
 		producao[comeco-1] = " "
-		producao += "."
+	
+	return ''.join(producao).strip()
 
 
-	novaprod = ""
-	for x in producao:
-		novaprod += x
 
-	return novaprod.strip()
+def pega_proxima_pelo_ponto(producao):
+	return producao.split(".")[1].split(" ")[0]
 
 
 def variavel_depois_do_ponto(char, producao):
-	
-	novaprod = ""
-	for x in producao:
-		novaprod += x
-
-	novaprod = novaprod.split(".")[1]
-	if " " in novaprod:
-		novaprod = novaprod.split(" ")[0]
-
-	if char == novaprod:
-		return True
-
-	return False
-
+	return (char == pega_proxima_pelo_ponto(producao))
 
 
 def completa(valor):
-	if valor == " " or valor == "":
-		return True
-	return False
+	return (valor == " " or valor == "")
 
 
 
@@ -181,7 +159,7 @@ def parse_earley(chart, gramatica, w):
 	
 
 	w = w.split(" ")
-	chart[0].append([0, "$", ".S"]) #noob state
+	chart[0].append([0, inicial, ".S"]) #noob state
 		
 	for i in range(len(chart)):
 		
@@ -215,12 +193,14 @@ def aceita_string(chart):
 	return False
 
 
+
 def exibe_mensagem(chart, w):
 
 	if(aceita_string(chart)):
 		print("STRING `%s` ACEITA\n" % w)
 	else:
 		print("STRING `%s` NAO ACEITA\n" % w)
+
 
 
 def print_chart(chart):
@@ -273,4 +253,5 @@ if __name__ == '__main__':
 	if len(sys.argv) != 3:
 		print('Use: {} ARQUIVO_GRAMATICA ARQUIVO_STRINGS'.format(os.path.basename(sys.argv[0])))
 		exit()
+	
 	main(sys.argv[1], sys.argv[2])
