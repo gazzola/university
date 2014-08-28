@@ -1,0 +1,99 @@
+a[data-toggle="modal"]{
+	cursor: pointer;
+}
+
+.col-xs-2 .btn{
+	margin-bottom: 10px;
+}
+
+
+.results{
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 11px;
+}
+
+.helps{
+	color: rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+	font-size: 11px;
+}
+
+.helps:hover{
+	text-decoration: underline;
+}
+
+.delimiter-helps{
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 11px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+input[type="text"]{
+	margin-bottom: 10px;
+}
+
+input[type="text"]:focus{
+	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+	border-color: #333;
+}
+
+
+select{
+	width: 100%;
+	background: #FFF;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857;
+	color: #555;
+	background-color: #FFF;
+	background-image: none;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+
+
+select:focus{
+	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+	border-color: #333;
+}
+
+
+#transicoes{
+	height: 297px;
+	max-width: 100%;
+}
+
+#transicoes:focus{
+	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+	border-color: #333;
+}
+
+
+
+
+#turing-machine{
+	width: 100%;
+	font-size: 14px;
+	font-weight: bolder;
+	margin-left: 18px;
+}
+
+#turing-machine .active{
+	background: #454545;
+}
+
+.state{
+	border: 1px solid #CCC;
+	margin-left: -1px;
+	padding: 10px 20px;
+	float: left;
+}
+
+
+#tipo-maquina{
+	text-shadow:none;
+	margin-top: 15px;
+	margin-left: 20px;
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Máquina de Turing na unha</title>
+		<meta name="description" content="Trabalho para disciplina de Sistema Operacionais - 2014/01">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/cover.css">
+		<link rel="stylesheet" href="css/main.css">
+
+		<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	</head>
+	<body>
+
+		<div class="site-wrapper">
+
+			<div class="site-wrapper-inner">
+
+				<div class="cover-container">
+
+					<div class="masthead clearfix">
+						<div class="inner">
+							<h3 class="masthead-brand">
+								<a href="index.html">Máquina de Turing <i>na unha</i></a>
+							</h3>
+							<!-- Extra small button group -->
+
+							<ul class="nav masthead-nav">
+								<li class="active"><a href="index.html">Home</a></li>
+								<li><a id="about" data-toggle="modal" data-target="#myModal" data-title="About">About</a></li>
+								<li><a id="contact" data-toggle="modal" data-target="#myModal" data-title="Contact">Contact</a></li>
+							</ul>
+
+							<div id="tipo-maquina" class="dropdown pull-left">
+							  <button class="btn btn-default dropdown-toggle btn-xs" type="button" id="dropdownMenu1" data-toggle="dropdown">
+							    Machine Extension <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Fita limitada</a></li>
+							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Múltiplas fitas</a></li>
+							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Estado com cache</a></li>
+							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Múltiplos cursores</a></li>
+							  </ul>
+							</div>
+
+						</div>
+
+
+						<div id="aboutContent" class="hidden">
+
+							<p class="text-justify"><b>Máquina de Turing na unha</b></p>
+
+							<p class="text-justify">
+								Implemente um programa que execute uma Máquina de Turing arbitrária. Para isso, o programa deverá receber como entrada a especificação de uma MT e a string de entrada e devolver como saída a fita resultante e se a string é aceita ou não (isso implica que a MT deve <b>decidir</b> a linguagem; não se preocupe em testar MTs que apenas <b>aceitam</b> uma linguagem).
+							</p>
+
+							<p class="text-justify">
+								A especificação da MT pode ser lida de um arquivo, e deverá conter o necessário: conjunto de estados, alfabeto de entrada, lista de transições, etc.
+							</p>
+
+							<p class="text-justify">
+								Considere também que a MT possui uma fita semi-infinita: infinita para a direita. Sinta-se livre para implementar qualquer das extensões mais comuns de MTs.
+							</p>
+
+						</div>
+
+						<div id="contactContent" class="hidden">
+
+							<p class="text-justify">
+								This is a work for the formal languages class on graduation over computer science.
+							</p>
+
+							<p class="text-justify">
+								You can find the developer by e-mail <u>marcosvtreviso</u><span class="label label-primary">at</span><u>gmail.com</u>, or by links below:
+							</p>
+
+							<p class="text-justify">
+								<a href="https://github.com/meitcher/" target="_blank">GitHub Page</a>
+								<br>
+								<a href="https://www.urionlinejudge.com.br/judge/pt/profile/18175" target="_blank">URI Online Judge</a>
+								<br>
+								<a href="http://lattes.cnpq.br/0591404005568638" target="_blank">Lattes Curriculum</a>
+							</p>
+
+							<p class="text-justify">
+							:)
+							</p>
+
+						</div>
+
+						<div id="helpContent" class="hidden">
+
+							<p class="text-justify">
+								You need separate each configuration by a comma.
+							</p>
+
+							<p>
+								<b>Final States: <i>q0</i> and <i>q1</i></b>
+								<br>
+								<pre>q0, q1</pre>
+
+								<br>
+
+								<b>Transitions: (<i>q0</i>, <i>0</i>) -> (<i>q1</i>, <i>1</i>, <i>D</i>)</b>
+								<br>
+								<pre>q0,0, q1,1,D</pre>
+
+								<br>
+
+								<b>Actions</b>
+								<br> 
+								<pre>D = Right  and  E = Left  and  S = Stop</pre>
+							</p>
+
+						</div>
+
+					</div>
+
+
+
+
+					<div class="inner cover">
+
+						<div id="turing-machine">
+						</div>
+
+						<div class="clearfix"></div>
+						<br>
+						<br>
+
+						<!--<h1 class="cover-heading">Cover your page.</h1>-->
+						
+						<div class="col-xs-4">
+							<input type="text" id="string" class="form-control" placeholder="Input String">
+							<input type="text" id="estados" class="form-control" placeholder="Set of States">
+							<input type="text" id="alfabeto" class="form-control" placeholder="Input Alphabet">
+							<input type="text" id="alfabeto-fita" class="form-control" placeholder="Tape Alphabet">
+							<input type="text" id="simbolo-vazio" class="form-control" placeholder="Blank Symbol">
+							<input type="text" id="estados-finais" class="form-control" placeholder="Final States">
+							<select id="estado-inicial">
+								<option disabled="disabled" selected="selected">Initial State</option>
+							</select>
+							<br>
+							<p align="left">
+								<span class="helps" id="exemplo">Fill with example data</span>
+								<span class="delimiter-helps">·</span>
+								<span class="helps" id="help" data-toggle="modal" data-target="#myModal" data-title="Help">Help</span>
+							</p>
+							
+						</div>
+
+						<div class="col-xs-6">
+							<textarea id="transicoes" class="form-control" placeholder="Transitions"></textarea>
+							<p align="left">
+								<span class="results">
+									Result: <span id="resultado" class="label label-default">waiting</span>.
+								</span>
+							</p>
+						</div>
+
+						<div class="col-xs-2">
+							<br>
+							<input type="text" id="segundos" class="form-control input-sm" placeholder="Seconds">
+							<a href="#" id="iniciar" class="btn btn-lg btn-default">Start</a>
+							<a href="#" id="pausar" class="btn btn-lg btn-default">Pause</a>
+							<a href="#" id="passar" class="btn btn-lg btn-default">Step</a>
+							<a href="#" id="testar" class="btn btn-lg btn-default">Test</a>
+							</p>
+						</div>
+					</div>
+
+
+
+
+
+					<div class="mastfoot">
+						<div class="inner">
+							<p align="left">© Universidade Federal do Pampa - Ciência da Computação - 2014.
+								<span class="pull-right">Framework <a href="http://getbootstrap.com/">Bootstrap v3</a>.</span>
+							</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel"></h4>
+              </div>
+              <div class="modal-body">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/plugins.js"></script>
+
+		<!-- The Turing Machine file -->
+		<script src="js/main.js"></script>
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			e.src='//www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			ga('create','UA-XXXXX-X');ga('send','pageview');
+		</script>
+	</body>
+</html>
