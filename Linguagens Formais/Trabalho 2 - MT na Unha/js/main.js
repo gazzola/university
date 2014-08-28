@@ -288,7 +288,7 @@ tm = new TuringMachine(document.getElementById("turing-machine"));
 
 
 
-// functions to capturate the events
+// functions to capture events
 
 function setPropriedades(){
 	var string = document.getElementById("string").value;
@@ -368,8 +368,8 @@ document.getElementById("iniciar").onclick = function(e){
 		if(segundos == "")
 			segundos = 0.5;
 
-		var aux = tm.startMachine(segundos*1000); //in ms
-		limpar(aux);
+		tm.startMachine(segundos*1000); //in ms
+
 	}
 		
 }
@@ -384,8 +384,7 @@ document.getElementById("pausar").onclick = function(e){
 		bt_start.setAttribute("class", "btn btn-lg btn-default");
 		bt_pause.setAttribute("class", "btn btn-lg btn-primary"); 
 
-		var aux = tm.pauseMachine();
-		limpar(aux);
+		tm.pauseMachine();
 	}
 }
 
