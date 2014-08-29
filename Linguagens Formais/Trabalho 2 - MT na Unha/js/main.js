@@ -6,7 +6,7 @@ var TuringMachine = (function(){
 	function TuringMachine(machine_element){
 
 		this.head_pointer = 0;								// head_pointer to the init of array
-		this.pointer = 0;									// pointer to current state
+		this.pointer = 1;									// pointer to current state
 		this.element = machine_element;						// dom element <div>
 		this.len = Math.ceil(this.element.offsetWidth/52);	// 52 = state width in html
 		
@@ -18,6 +18,7 @@ var TuringMachine = (function(){
 		this.blank_symbol = '□';
 		this.final_states = [];
 		this.initial_state = "";
+		this.start_symbol = '<';
 
 		this.actual_state = "";
 		this.accepted = null; 	// var to view if machine is accepeted
@@ -29,19 +30,22 @@ var TuringMachine = (function(){
 
 
 	TuringMachine.prototype.initializeMachine = function(){
-		for(var i=0; i<this.len; i++)
+		this.machine[0] = this.start_symbol;
+		for(var i=1; i<this.len; i++)
 			this.machine[i] = this.blank_symbol;
 	};
 
 	TuringMachine.prototype.setStringEquals = function(string){
-		this.initializeMachine();
-		
-		this.string = string;
-		var start = Math.ceil((this.len-string.length)/2);
-		this.pointer = start;
+		if(this.string == ""){	
+			this.initializeMachine();
+			
+			this.string = string;
+			var start = Math.ceil((this.len-string.length)/2);
+			this.pointer = start;
 
-		for(var i=start, len=string.length+start; i<len; i++)
-			this.machine[i] = string[i-start];
+			for(var i=start, len=string.length+start; i<len; i++)
+				this.machine[i] = string[i-start];
+		}
 	};
 
 	TuringMachine.prototype.setString = function(string){
@@ -49,8 +53,8 @@ var TuringMachine = (function(){
 			this.initializeMachine();
 
 			this.string = string;
-			for(var i=0, len=string.length; i<len; i++)
-				this.machine[i] = string[i];
+			for(var i=1, len=string.length; i<=len; i++)
+				this.machine[i] = string[i-1];
 		}
 	};
 
@@ -135,7 +139,6 @@ var TuringMachine = (function(){
 	};
 
 
-
 	TuringMachine.prototype.startMachine = function(seconds){
 
 		if(this.accepted == null){
@@ -153,12 +156,12 @@ var TuringMachine = (function(){
 						if($this.final_states.indexOf($this.actual_state) != -1){
 							alert("String accepted by machine!");
 							this.accepted = true;
-							limpar(true);	// !
+							resetar(true);	// !
 						}
 						else{
 							alert("String not accepted by machine!");
 							this.accepted = false;
-							limpar(false);	// !
+							resetar(false);	// !
 						}
 
 					}
@@ -237,10 +240,6 @@ var TuringMachine = (function(){
 	};
 
 
-
-
-
-
 	TuringMachine.prototype._verifyDependencies = function(){
 		
 		// verify is a string is in the alphabet
@@ -262,11 +261,11 @@ var TuringMachine = (function(){
 			var de = this.transitions[i][1];
 			var para = this.transitions[i][3];
 			
-			if(this.alphabet_tape.indexOf(de) == -1){
+			if(this.alphabet_tape.indexOf(de) == -1 && de != this.start_symbol){
 				alert(de);
 				return false; 
 			}
-			else if(this.alphabet_tape.indexOf(para) == -1){
+			else if(this.alphabet_tape.indexOf(para) == -1 && para != this.start_symbol){
 				return false;
 			}
 		}
@@ -361,8 +360,8 @@ document.getElementById("iniciar").onclick = function(e){
 		var bt_start = document.getElementById("iniciar");
 		var bt_pause = document.getElementById("pausar");
 
-		bt_start.setAttribute("class", "btn btn-lg btn-primary");
-		bt_pause.setAttribute("class", "btn btn-lg btn-default"); 
+		bt_start.setAttribute("class", "btn btn-primary");
+		bt_pause.setAttribute("class", "btn btn-default"); 
 
 		var segundos = document.getElementById("segundos").value;
 		if(segundos == "")
@@ -381,8 +380,8 @@ document.getElementById("pausar").onclick = function(e){
 		var bt_start = document.getElementById("iniciar");
 		var bt_pause = document.getElementById("pausar");
 
-		bt_start.setAttribute("class", "btn btn-lg btn-default");
-		bt_pause.setAttribute("class", "btn btn-lg btn-primary"); 
+		bt_start.setAttribute("class", "btn btn-default");
+		bt_pause.setAttribute("class", "btn btn-primary"); 
 
 		tm.pauseMachine();
 	}
@@ -391,15 +390,28 @@ document.getElementById("pausar").onclick = function(e){
 document.getElementById("passar").onclick = function(e){
 	if(setPropriedades()){
 		var aux = tm.stepMachine();
-		limpar(aux);
+		resetar(aux);
 	}
 }
 
 document.getElementById("testar").onclick = function(e){
 	if(setPropriedades()){
 		var aux = tm.testMachine();
-		limpar(aux);
+		resetar(aux);
 	}
+}
+
+document.getElementById("resetar").onclick = function(e){
+	tm.pauseMachine();
+	resetar(null);
+
+	tm = undefined;
+	tm = new TuringMachine(document.getElementById("turing-machine"));
+}
+
+document.getElementById("limpar").onclick = function(e){
+	document.getElementById("resetar").click();
+	limpar();
 }
 
 
@@ -441,7 +453,18 @@ function preencher(){
 	document.getElementById("transicoes").value = "q0,□, q1,1,D\nq0,0, q1,1,D\nq0,1, q0,0,D";
 }
 
-function limpar(accepted){
+function limpar(){
+	document.getElementById("string").value = "";
+	document.getElementById("estados").value = "";
+	document.getElementById("alfabeto").value = "";
+	document.getElementById("alfabeto-fita").value = "";
+	document.getElementById("simbolo-vazio").value = "";
+	document.getElementById("estados-finais").value = "";
+	document.getElementById("estado-inicial").innerHTML = '<option disabled selected>Initial State</option>';
+	document.getElementById("transicoes").value = "";
+}
+
+function resetar(accepted){
 
 	var result = document.getElementById("resultado");
 
@@ -454,12 +477,12 @@ function limpar(accepted){
 		result.innerHTML = "accepted";
 	}
 	else if(accepted === false){
-		result.setAttribute("class", "label label-warning");
+		result.setAttribute("class", "label label-danger");
 		result.innerHTML = "not accepted";
 	}
 
-	document.getElementById("iniciar").setAttribute("class", "btn btn-lg btn-default");
-	document.getElementById("pausar").setAttribute("class", "btn btn-lg btn-default");
+	document.getElementById("iniciar").setAttribute("class", "btn btn-default");
+	document.getElementById("pausar").setAttribute("class", "btn btn-default");
 }
 
 

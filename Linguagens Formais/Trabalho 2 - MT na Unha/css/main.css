@@ -78,6 +78,7 @@ select:focus{
 	font-size: 14px;
 	font-weight: bolder;
 	margin-left: 18px;
+	font-family: monospace;
 }
 
 #turing-machine .active{
