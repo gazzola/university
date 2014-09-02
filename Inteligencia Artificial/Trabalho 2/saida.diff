@@ -1,0 +1,72 @@
+20c20
+< MAIS PROVÁVEL: naico  |  ERRADA: baico  |  CORRETA: baixo
+---
+> MAIS PROVÁVEL: baico  |  ERRADA: baico  |  CORRETA: baixo
+22,25c22,25
+< Levenshtein: Prob. da errada `baico` em relação a mais provável `naico`: 80.00%
+< Dice's     : Prob. da errada `baico` em relação a mais provável `naico`: 80.00%
+< Levenshtein: Prob. da mais provável `naico` em relação a correta `baixo`: 60.00%
+< Dice's     : Prob. da mais provável `naico` em relação a correta `baixo`: 60.00%
+---
+> Levenshtein: Prob. da errada `baico` em relação a mais provável `baico`: 100.00%
+> Dice's     : Prob. da errada `baico` em relação a mais provável `baico`: 100.00%
+> Levenshtein: Prob. da mais provável `baico` em relação a correta `baixo`: 80.00%
+> Dice's     : Prob. da mais provável `baico` em relação a correta `baixo`: 80.00%
+37c37
+< MAIS PROVÁVEL: peso  |  ERRADA: pezo  |  CORRETA: peso
+---
+> MAIS PROVÁVEL: pezo  |  ERRADA: pezo  |  CORRETA: peso
+39,43c39,42
+< Algoritmo descobriu que deve-se trocar `pezo` por `peso`!
+< Levenshtein: Prob. da errada `pezo` em relação a mais provável `peso`: 75.00%
+< Dice's     : Prob. da errada `pezo` em relação a mais provável `peso`: 75.00%
+< Levenshtein: Prob. da mais provável `peso` em relação a correta `peso`: 100.00%
+< Dice's     : Prob. da mais provável `peso` em relação a correta `peso`: 100.00%
+---
+> Levenshtein: Prob. da errada `pezo` em relação a mais provável `pezo`: 100.00%
+> Dice's     : Prob. da errada `pezo` em relação a mais provável `pezo`: 100.00%
+> Levenshtein: Prob. da mais provável `pezo` em relação a correta `peso`: 75.00%
+> Dice's     : Prob. da mais provável `pezo` em relação a correta `peso`: 75.00%
+102c101
+< MAIS PROVÁVEL: namiano  |  ERRADA: bahiano  |  CORRETA: baiano
+---
+> MAIS PROVÁVEL: bamiano  |  ERRADA: bahiano  |  CORRETA: baiano
+104,107c103,106
+< Levenshtein: Prob. da errada `bahiano` em relação a mais provável `namiano`: 71.43%
+< Dice's     : Prob. da errada `bahiano` em relação a mais provável `namiano`: 72.73%
+< Levenshtein: Prob. da mais provável `namiano` em relação a correta `baiano`: 71.43%
+< Dice's     : Prob. da mais provável `namiano` em relação a correta `baiano`: 80.00%
+---
+> Levenshtein: Prob. da errada `bahiano` em relação a mais provável `bamiano`: 85.71%
+> Dice's     : Prob. da errada `bahiano` em relação a mais provável `bamiano`: 83.33%
+> Levenshtein: Prob. da mais provável `bamiano` em relação a correta `baiano`: 85.71%
+> Dice's     : Prob. da mais provável `bamiano` em relação a correta `baiano`: 90.91%
+118c117
+< MAIS PROVÁVEL: calabresa  |  ERRADA: calabreza  |  CORRETA: calabresa
+---
+> MAIS PROVÁVEL: calabreza  |  ERRADA: calabreza  |  CORRETA: calabresa
+120,124c119,122
+< Algoritmo descobriu que deve-se trocar `calabreza` por `calabresa`!
+< Levenshtein: Prob. da errada `calabreza` em relação a mais provável `calabresa`: 88.89%
+< Dice's     : Prob. da errada `calabreza` em relação a mais provável `calabresa`: 85.71%
+< Levenshtein: Prob. da mais provável `calabresa` em relação a correta `calabresa`: 100.00%
+< Dice's     : Prob. da mais provável `calabresa` em relação a correta `calabresa`: 100.00%
+---
+> Levenshtein: Prob. da errada `calabreza` em relação a mais provável `calabreza`: 100.00%
+> Dice's     : Prob. da errada `calabreza` em relação a mais provável `calabreza`: 100.00%
+> Levenshtein: Prob. da mais provável `calabreza` em relação a correta `calabresa`: 88.89%
+> Dice's     : Prob. da mais provável `calabreza` em relação a correta `calabresa`: 85.71%
+269c267
+< MAIS PROVÁVEL: nalao  |  ERRADA: balao  |  CORRETA: balão
+---
+> MAIS PROVÁVEL: balao  |  ERRADA: balao  |  CORRETA: balão
+271,274c269,272
+< Levenshtein: Prob. da errada `balao` em relação a mais provável `nalao`: 80.00%
+< Dice's     : Prob. da errada `balao` em relação a mais provável `nalao`: 75.00%
+< Levenshtein: Prob. da mais provável `nalao` em relação a correta `balão`: 60.00%
+< Dice's     : Prob. da mais provável `nalao` em relação a correta `balão`: 66.67%
+---
+> Levenshtein: Prob. da errada `balao` em relação a mais provável `balao`: 100.00%
+> Dice's     : Prob. da errada `balao` em relação a mais provável `balao`: 100.00%
+> Levenshtein: Prob. da mais provável `balao` em relação a correta `balão`: 80.00%
+> Dice's     : Prob. da mais provável `balao` em relação a correta `balão`: 88.89%

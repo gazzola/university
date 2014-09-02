@@ -1,0 +1,304 @@
+
+MAIS PROVÁVEL: caza  |  ERRADA: caza  |  CORRETA: casa
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `caza` em relação a mais provável `caza`: 100.00%
+Dice's     : Similaridade da errada `caza` em relação a mais provável `caza`: 100.00%
+Levenshtein: Similaridade da mais provável `caza` em relação a correta `casa`: 75.00%
+Dice's     : Similaridade da mais provável `caza` em relação a correta `casa`: 66.67%
+
+
+MAIS PROVÁVEL: mesa  |  ERRADA: m3sa  |  CORRETA: mesa
+------------------------------------------------------------------------------------------
+Algoritmo descobriu que deve-se trocar `m3sa` por `mesa`!
+Levenshtein: Similaridade da errada `m3sa` em relação a mais provável `mesa`: 75.00%
+Dice's     : Similaridade da errada `m3sa` em relação a mais provável `mesa`: 75.00%
+Levenshtein: Similaridade da mais provável `mesa` em relação a correta `mesa`: 100.00%
+Dice's     : Similaridade da mais provável `mesa` em relação a correta `mesa`: 100.00%
+
+
+MAIS PROVÁVEL: baico  |  ERRADA: baico  |  CORRETA: baixo
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `baico` em relação a mais provável `baico`: 100.00%
+Dice's     : Similaridade da errada `baico` em relação a mais provável `baico`: 100.00%
+Levenshtein: Similaridade da mais provável `baico` em relação a correta `baixo`: 80.00%
+Dice's     : Similaridade da mais provável `baico` em relação a correta `baixo`: 80.00%
+
+
+MAIS PROVÁVEL: interno  |  ERRADA: inferno  |  CORRETA: interno
+------------------------------------------------------------------------------------------
+Algoritmo descobriu que deve-se trocar `inferno` por `interno`!
+Levenshtein: Similaridade da errada `inferno` em relação a mais provável `interno`: 85.71%
+Dice's     : Similaridade da errada `inferno` em relação a mais provável `interno`: 83.33%
+Levenshtein: Similaridade da mais provável `interno` em relação a correta `interno`: 100.00%
+Dice's     : Similaridade da mais provável `interno` em relação a correta `interno`: 100.00%
+
+
+MAIS PROVÁVEL: peso  |  ERRADA: pezo  |  CORRETA: peso
+------------------------------------------------------------------------------------------
+Algoritmo descobriu que deve-se trocar `pezo` por `peso`!
+Levenshtein: Similaridade da errada `pezo` em relação a mais provável `peso`: 75.00%
+Dice's     : Similaridade da errada `pezo` em relação a mais provável `peso`: 75.00%
+Levenshtein: Similaridade da mais provável `peso` em relação a correta `peso`: 100.00%
+Dice's     : Similaridade da mais provável `peso` em relação a correta `peso`: 100.00%
+
+
+MAIS PROVÁVEL: pronramamao  |  ERRADA: programakao  |  CORRETA: programacao
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `programakao` em relação a mais provável `pronramamao`: 81.82%
+Dice's     : Similaridade da errada `programakao` em relação a mais provável `pronramamao`: 76.92%
+Levenshtein: Similaridade da mais provável `pronramamao` em relação a correta `programacao`: 81.82%
+Dice's     : Similaridade da mais provável `pronramamao` em relação a correta `programacao`: 76.92%
+
+
+MAIS PROVÁVEL: ciensia  |  ERRADA: ciensia  |  CORRETA: ciencia
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `ciensia` em relação a mais provável `ciensia`: 100.00%
+Dice's     : Similaridade da errada `ciensia` em relação a mais provável `ciensia`: 100.00%
+Levenshtein: Similaridade da mais provável `ciensia` em relação a correta `ciencia`: 85.71%
+Dice's     : Similaridade da mais provável `ciensia` em relação a correta `ciencia`: 90.91%
+
+
+MAIS PROVÁVEL: gonador  |  ERRADA: gogador  |  CORRETA: jogador
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `gogador` em relação a mais provável `gonador`: 85.71%
+Dice's     : Similaridade da errada `gogador` em relação a mais provável `gonador`: 90.91%
+Levenshtein: Similaridade da mais provável `gonador` em relação a correta `jogador`: 71.43%
+Dice's     : Similaridade da mais provável `gonador` em relação a correta `jogador`: 83.33%
+
+
+MAIS PROVÁVEL: gameria  |  ERRADA: gakeria  |  CORRETA: galeria
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `gakeria` em relação a mais provável `gameria`: 85.71%
+Dice's     : Similaridade da errada `gakeria` em relação a mais provável `gameria`: 83.33%
+Levenshtein: Similaridade da mais provável `gameria` em relação a correta `galeria`: 85.71%
+Dice's     : Similaridade da mais provável `gameria` em relação a correta `galeria`: 83.33%
+
+
+MAIS PROVÁVEL: paralizado  |  ERRADA: paralizado  |  CORRETA: paralisado
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `paralizado` em relação a mais provável `paralizado`: 100.00%
+Dice's     : Similaridade da errada `paralizado` em relação a mais provável `paralizado`: 100.00%
+Levenshtein: Similaridade da mais provável `paralizado` em relação a correta `paralisado`: 90.00%
+Dice's     : Similaridade da mais provável `paralizado` em relação a correta `paralisado`: 87.50%
+
+
+MAIS PROVÁVEL: cabalereiro  |  ERRADA: cabalereiro  |  CORRETA: cabaleirero
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `cabalereiro` em relação a mais provável `cabalereiro`: 100.00%
+Dice's     : Similaridade da errada `cabalereiro` em relação a mais provável `cabalereiro`: 100.00%
+Levenshtein: Similaridade da mais provável `cabalereiro` em relação a correta `cabaleirero`: 81.82%
+Dice's     : Similaridade da mais provável `cabalereiro` em relação a correta `cabaleirero`: 100.00%
+
+
+MAIS PROVÁVEL: germinadas  |  ERRADA: germinadas  |  CORRETA: geminadas
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `germinadas` em relação a mais provável `germinadas`: 100.00%
+Dice's     : Similaridade da errada `germinadas` em relação a mais provável `germinadas`: 100.00%
+Levenshtein: Similaridade da mais provável `germinadas` em relação a correta `geminadas`: 90.00%
+Dice's     : Similaridade da mais provável `germinadas` em relação a correta `geminadas`: 94.12%
+
+
+MAIS PROVÁVEL: baniano  |  ERRADA: bahiano  |  CORRETA: baiano
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `bahiano` em relação a mais provável `baniano`: 85.71%
+Dice's     : Similaridade da errada `bahiano` em relação a mais provável `baniano`: 90.91%
+Levenshtein: Similaridade da mais provável `baniano` em relação a correta `baiano`: 85.71%
+Dice's     : Similaridade da mais provável `baniano` em relação a correta `baiano`: 100.00%
+
+
+MAIS PROVÁVEL: tinela  |  ERRADA: tijela  |  CORRETA: tigela
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `tijela` em relação a mais provável `tinela`: 83.33%
+Dice's     : Similaridade da errada `tijela` em relação a mais provável `tinela`: 83.33%
+Levenshtein: Similaridade da mais provável `tinela` em relação a correta `tigela`: 83.33%
+Dice's     : Similaridade da mais provável `tinela` em relação a correta `tigela`: 83.33%
+
+
+MAIS PROVÁVEL: calabresa  |  ERRADA: calabreza  |  CORRETA: calabresa
+------------------------------------------------------------------------------------------
+Algoritmo descobriu que deve-se trocar `calabreza` por `calabresa`!
+Levenshtein: Similaridade da errada `calabreza` em relação a mais provável `calabresa`: 88.89%
+Dice's     : Similaridade da errada `calabreza` em relação a mais provável `calabresa`: 85.71%
+Levenshtein: Similaridade da mais provável `calabresa` em relação a correta `calabresa`: 100.00%
+Dice's     : Similaridade da mais provável `calabresa` em relação a correta `calabresa`: 100.00%
+
+
+MAIS PROVÁVEL: organisar  |  ERRADA: organisar  |  CORRETA: organizar
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `organisar` em relação a mais provável `organisar`: 100.00%
+Dice's     : Similaridade da errada `organisar` em relação a mais provável `organisar`: 100.00%
+Levenshtein: Similaridade da mais provável `organisar` em relação a correta `organizar`: 88.89%
+Dice's     : Similaridade da mais provável `organisar` em relação a correta `organizar`: 85.71%
+
+
+MAIS PROVÁVEL: padastro  |  ERRADA: padastro  |  CORRETA: padrasto
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `padastro` em relação a mais provável `padastro`: 100.00%
+Dice's     : Similaridade da errada `padastro` em relação a mais provável `padastro`: 100.00%
+Levenshtein: Similaridade da mais provável `padastro` em relação a correta `padrasto`: 75.00%
+Dice's     : Similaridade da mais provável `padastro` em relação a correta `padrasto`: 100.00%
+
+
+MAIS PROVÁVEL: cadeifa  |  ERRADA: cadeifa  |  CORRETA: cadeira
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `cadeifa` em relação a mais provável `cadeifa`: 100.00%
+Dice's     : Similaridade da errada `cadeifa` em relação a mais provável `cadeifa`: 100.00%
+Levenshtein: Similaridade da mais provável `cadeifa` em relação a correta `cadeira`: 85.71%
+Dice's     : Similaridade da mais provável `cadeifa` em relação a correta `cadeira`: 83.33%
+
+
+MAIS PROVÁVEL: digitar  |  ERRADA: digiyar  |  CORRETA: digitar
+------------------------------------------------------------------------------------------
+Algoritmo descobriu que deve-se trocar `digiyar` por `digitar`!
+Levenshtein: Similaridade da errada `digiyar` em relação a mais provável `digitar`: 85.71%
+Dice's     : Similaridade da errada `digiyar` em relação a mais provável `digitar`: 83.33%
+Levenshtein: Similaridade da mais provável `digitar` em relação a correta `digitar`: 100.00%
+Dice's     : Similaridade da mais provável `digitar` em relação a correta `digitar`: 100.00%
+
+
+MAIS PROVÁVEL: trem  |  ERRADA: trfm  |  CORRETA: trem
+------------------------------------------------------------------------------------------
+Algoritmo descobriu que deve-se trocar `trfm` por `trem`!
+Levenshtein: Similaridade da errada `trfm` em relação a mais provável `trem`: 75.00%
+Dice's     : Similaridade da errada `trfm` em relação a mais provável `trem`: 75.00%
+Levenshtein: Similaridade da mais provável `trem` em relação a correta `trem`: 100.00%
+Dice's     : Similaridade da mais provável `trem` em relação a correta `trem`: 100.00%
+
+
+MAIS PROVÁVEL: cachotro  |  ERRADA: cachotro  |  CORRETA: cachorro
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `cachotro` em relação a mais provável `cachotro`: 100.00%
+Dice's     : Similaridade da errada `cachotro` em relação a mais provável `cachotro`: 100.00%
+Levenshtein: Similaridade da mais provável `cachotro` em relação a correta `cachorro`: 87.50%
+Dice's     : Similaridade da mais provável `cachotro` em relação a correta `cachorro`: 90.91%
+
+
+MAIS PROVÁVEL: cinoo  |  ERRADA: cinko  |  CORRETA: cinco
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `cinko` em relação a mais provável `cinoo`: 80.00%
+Dice's     : Similaridade da errada `cinko` em relação a mais provável `cinoo`: 88.89%
+Levenshtein: Similaridade da mais provável `cinoo` em relação a correta `cinco`: 80.00%
+Dice's     : Similaridade da mais provável `cinoo` em relação a correta `cinco`: 100.00%
+
+
+MAIS PROVÁVEL: senhora  |  ERRADA: senjora  |  CORRETA: senhora
+------------------------------------------------------------------------------------------
+Algoritmo descobriu que deve-se trocar `senjora` por `senhora`!
+Levenshtein: Similaridade da errada `senjora` em relação a mais provável `senhora`: 85.71%
+Dice's     : Similaridade da errada `senjora` em relação a mais provável `senhora`: 85.71%
+Levenshtein: Similaridade da mais provável `senhora` em relação a correta `senhora`: 100.00%
+Dice's     : Similaridade da mais provável `senhora` em relação a correta `senhora`: 100.00%
+
+
+MAIS PROVÁVEL: denrulado  |  ERRADA: debrulado  |  CORRETA: debruçado
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `debrulado` em relação a mais provável `denrulado`: 88.89%
+Dice's     : Similaridade da errada `debrulado` em relação a mais provável `denrulado`: 87.50%
+Levenshtein: Similaridade da mais provável `denrulado` em relação a correta `debruçado`: 77.78%
+Dice's     : Similaridade da mais provável `denrulado` em relação a correta `debruçado`: 75.00%
+
+
+MAIS PROVÁVEL: metamoreose  |  ERRADA: metamorfoze  |  CORRETA: metamorfose
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `metamorfoze` em relação a mais provável `metamoreose`: 81.82%
+Dice's     : Similaridade da errada `metamorfoze` em relação a mais provável `metamoreose`: 80.00%
+Levenshtein: Similaridade da mais provável `metamoreose` em relação a correta `metamorfose`: 90.91%
+Dice's     : Similaridade da mais provável `metamoreose` em relação a correta `metamorfose`: 93.33%
+
+
+MAIS PROVÁVEL: inconstitucionalisaimamente  |  ERRADA: inconstitucionaliszimamente  |  CORRETA: inconstitucionalissimamente
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `inconstitucionaliszimamente` em relação a mais provável `inconstitucionalisaimamente`: 96.30%
+Dice's     : Similaridade da errada `inconstitucionaliszimamente` em relação a mais provável `inconstitucionalisaimamente`: 95.65%
+Levenshtein: Similaridade da mais provável `inconstitucionalisaimamente` em relação a correta `inconstitucionalissimamente`: 96.30%
+Dice's     : Similaridade da mais provável `inconstitucionalisaimamente` em relação a correta `inconstitucionalissimamente`: 100.00%
+
+
+MAIS PROVÁVEL: ar  |  ERRADA: af  |  CORRETA: ar
+------------------------------------------------------------------------------------------
+Algoritmo descobriu que deve-se trocar `af` por `ar`!
+Levenshtein: Similaridade da errada `af` em relação a mais provável `ar`: 50.00%
+Dice's     : Similaridade da errada `af` em relação a mais provável `ar`: 50.00%
+Levenshtein: Similaridade da mais provável `ar` em relação a correta `ar`: 100.00%
+Dice's     : Similaridade da mais provável `ar` em relação a correta `ar`: 100.00%
+
+
+MAIS PROVÁVEL: musica  |  ERRADA: musica  |  CORRETA: música
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `musica` em relação a mais provável `musica`: 100.00%
+Dice's     : Similaridade da errada `musica` em relação a mais provável `musica`: 100.00%
+Levenshtein: Similaridade da mais provável `musica` em relação a correta `música`: 83.33%
+Dice's     : Similaridade da mais provável `musica` em relação a correta `música`: 83.33%
+
+
+MAIS PROVÁVEL: lampada  |  ERRADA: lampada  |  CORRETA: lâmpada
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `lampada` em relação a mais provável `lampada`: 100.00%
+Dice's     : Similaridade da errada `lampada` em relação a mais provável `lampada`: 100.00%
+Levenshtein: Similaridade da mais provável `lampada` em relação a correta `lâmpada`: 85.71%
+Dice's     : Similaridade da mais provável `lampada` em relação a correta `lâmpada`: 90.91%
+
+
+MAIS PROVÁVEL: saude  |  ERRADA: saude  |  CORRETA: saúde
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `saude` em relação a mais provável `saude`: 100.00%
+Dice's     : Similaridade da errada `saude` em relação a mais provável `saude`: 100.00%
+Levenshtein: Similaridade da mais provável `saude` em relação a correta `saúde`: 80.00%
+Dice's     : Similaridade da mais provável `saude` em relação a correta `saúde`: 80.00%
+
+
+MAIS PROVÁVEL: mar  |  ERRADA: mae  |  CORRETA: mãe
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `mae` em relação a mais provável `mar`: 66.67%
+Dice's     : Similaridade da errada `mae` em relação a mais provável `mar`: 66.67%
+Levenshtein: Similaridade da mais provável `mar` em relação a correta `mãe`: 33.33%
+Dice's     : Similaridade da mais provável `mar` em relação a correta `mãe`: 33.33%
+
+
+MAIS PROVÁVEL: pais  |  ERRADA: pais  |  CORRETA: país
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `pais` em relação a mais provável `pais`: 100.00%
+Dice's     : Similaridade da errada `pais` em relação a mais provável `pais`: 100.00%
+Levenshtein: Similaridade da mais provável `pais` em relação a correta `país`: 75.00%
+Dice's     : Similaridade da mais provável `pais` em relação a correta `país`: 75.00%
+
+
+MAIS PROVÁVEL: balao  |  ERRADA: balao  |  CORRETA: balão
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `balao` em relação a mais provável `balao`: 100.00%
+Dice's     : Similaridade da errada `balao` em relação a mais provável `balao`: 100.00%
+Levenshtein: Similaridade da mais provável `balao` em relação a correta `balão`: 80.00%
+Dice's     : Similaridade da mais provável `balao` em relação a correta `balão`: 88.89%
+
+
+MAIS PROVÁVEL: coramao  |  ERRADA: coramão  |  CORRETA: coraçao
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `coramão` em relação a mais provável `coramao`: 85.71%
+Dice's     : Similaridade da errada `coramão` em relação a mais provável `coramao`: 90.91%
+Levenshtein: Similaridade da mais provável `coramao` em relação a correta `coraçao`: 85.71%
+Dice's     : Similaridade da mais provável `coramao` em relação a correta `coraçao`: 80.00%
+
+
+MAIS PROVÁVEL: manha  |  ERRADA: manha  |  CORRETA: manhã
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `manha` em relação a mais provável `manha`: 100.00%
+Dice's     : Similaridade da errada `manha` em relação a mais provável `manha`: 100.00%
+Levenshtein: Similaridade da mais provável `manha` em relação a correta `manhã`: 80.00%
+Dice's     : Similaridade da mais provável `manha` em relação a correta `manhã`: 88.89%
+
+
+MAIS PROVÁVEL: negocio  |  ERRADA: negocio  |  CORRETA: negócio
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `negocio` em relação a mais provável `negocio`: 100.00%
+Dice's     : Similaridade da errada `negocio` em relação a mais provável `negocio`: 100.00%
+Levenshtein: Similaridade da mais provável `negocio` em relação a correta `negócio`: 85.71%
+Dice's     : Similaridade da mais provável `negocio` em relação a correta `negócio`: 92.31%
+
+
+MAIS PROVÁVEL: espiritos  |  ERRADA: espiritos  |  CORRETA: espíritos
+------------------------------------------------------------------------------------------
+Levenshtein: Similaridade da errada `espiritos` em relação a mais provável `espiritos`: 100.00%
+Dice's     : Similaridade da errada `espiritos` em relação a mais provável `espiritos`: 100.00%
+Levenshtein: Similaridade da mais provável `espiritos` em relação a correta `espíritos`: 88.89%
+Dice's     : Similaridade da mais provável `espiritos` em relação a correta `espíritos`: 93.33%
+

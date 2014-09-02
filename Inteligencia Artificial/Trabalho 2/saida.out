@@ -1,0 +1,308 @@
+
+MAIS PROVÁVEL: casa  |  ERRADA: caza  |  CORRETA: casa
+------------------------------------------------------------------------------------------
+Algoritmo descobriu que deve-se trocar `caza` por `casa`!
+Levenshtein: Prob. da errada `caza` em relação a mais provável `casa`: 75.00%
+Dice's     : Prob. da errada `caza` em relação a mais provável `casa`: 66.67%
+Levenshtein: Prob. da mais provável `casa` em relação a correta `casa`: 100.00%
+Dice's     : Prob. da mais provável `casa` em relação a correta `casa`: 100.00%
+
+
+MAIS PROVÁVEL: mesa  |  ERRADA: m3sa  |  CORRETA: mesa
+------------------------------------------------------------------------------------------
+Algoritmo descobriu que deve-se trocar `m3sa` por `mesa`!
+Levenshtein: Prob. da errada `m3sa` em relação a mais provável `mesa`: 75.00%
+Dice's     : Prob. da errada `m3sa` em relação a mais provável `mesa`: 75.00%
+Levenshtein: Prob. da mais provável `mesa` em relação a correta `mesa`: 100.00%
+Dice's     : Prob. da mais provável `mesa` em relação a correta `mesa`: 100.00%
+
+
+MAIS PROVÁVEL: naico  |  ERRADA: baico  |  CORRETA: baixo
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `baico` em relação a mais provável `naico`: 80.00%
+Dice's     : Prob. da errada `baico` em relação a mais provável `naico`: 80.00%
+Levenshtein: Prob. da mais provável `naico` em relação a correta `baixo`: 60.00%
+Dice's     : Prob. da mais provável `naico` em relação a correta `baixo`: 60.00%
+
+
+MAIS PROVÁVEL: interno  |  ERRADA: inferno  |  CORRETA: interno
+------------------------------------------------------------------------------------------
+Algoritmo descobriu que deve-se trocar `inferno` por `interno`!
+Levenshtein: Prob. da errada `inferno` em relação a mais provável `interno`: 85.71%
+Dice's     : Prob. da errada `inferno` em relação a mais provável `interno`: 83.33%
+Levenshtein: Prob. da mais provável `interno` em relação a correta `interno`: 100.00%
+Dice's     : Prob. da mais provável `interno` em relação a correta `interno`: 100.00%
+
+
+MAIS PROVÁVEL: peso  |  ERRADA: pezo  |  CORRETA: peso
+------------------------------------------------------------------------------------------
+Algoritmo descobriu que deve-se trocar `pezo` por `peso`!
+Levenshtein: Prob. da errada `pezo` em relação a mais provável `peso`: 75.00%
+Dice's     : Prob. da errada `pezo` em relação a mais provável `peso`: 75.00%
+Levenshtein: Prob. da mais provável `peso` em relação a correta `peso`: 100.00%
+Dice's     : Prob. da mais provável `peso` em relação a correta `peso`: 100.00%
+
+
+MAIS PROVÁVEL: prorramaoao  |  ERRADA: programakao  |  CORRETA: programacao
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `programakao` em relação a mais provável `prorramaoao`: 81.82%
+Dice's     : Prob. da errada `programakao` em relação a mais provável `prorramaoao`: 83.33%
+Levenshtein: Prob. da mais provável `prorramaoao` em relação a correta `programacao`: 81.82%
+Dice's     : Prob. da mais provável `prorramaoao` em relação a correta `programacao`: 83.33%
+
+
+MAIS PROVÁVEL: ciensia  |  ERRADA: ciensia  |  CORRETA: ciencia
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `ciensia` em relação a mais provável `ciensia`: 100.00%
+Dice's     : Prob. da errada `ciensia` em relação a mais provável `ciensia`: 100.00%
+Levenshtein: Prob. da mais provável `ciensia` em relação a correta `ciencia`: 85.71%
+Dice's     : Prob. da mais provável `ciensia` em relação a correta `ciencia`: 90.91%
+
+
+MAIS PROVÁVEL: górador  |  ERRADA: gogador  |  CORRETA: jogador
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `gogador` em relação a mais provável `górador`: 71.43%
+Dice's     : Prob. da errada `gogador` em relação a mais provável `górador`: 90.91%
+Levenshtein: Prob. da mais provável `górador` em relação a correta `jogador`: 57.14%
+Dice's     : Prob. da mais provável `górador` em relação a correta `jogador`: 83.33%
+
+
+MAIS PROVÁVEL: gameria  |  ERRADA: gakeria  |  CORRETA: galeria
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `gakeria` em relação a mais provável `gameria`: 85.71%
+Dice's     : Prob. da errada `gakeria` em relação a mais provável `gameria`: 83.33%
+Levenshtein: Prob. da mais provável `gameria` em relação a correta `galeria`: 85.71%
+Dice's     : Prob. da mais provável `gameria` em relação a correta `galeria`: 83.33%
+
+
+MAIS PROVÁVEL: paraliaado  |  ERRADA: paralizado  |  CORRETA: paralisado
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `paralizado` em relação a mais provável `paraliaado`: 90.00%
+Dice's     : Prob. da errada `paralizado` em relação a mais provável `paraliaado`: 93.33%
+Levenshtein: Prob. da mais provável `paraliaado` em relação a correta `paralisado`: 90.00%
+Dice's     : Prob. da mais provável `paraliaado` em relação a correta `paralisado`: 93.33%
+
+
+MAIS PROVÁVEL: cabalereiro  |  ERRADA: cabalereiro  |  CORRETA: cabaleirero
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `cabalereiro` em relação a mais provável `cabalereiro`: 100.00%
+Dice's     : Prob. da errada `cabalereiro` em relação a mais provável `cabalereiro`: 100.00%
+Levenshtein: Prob. da mais provável `cabalereiro` em relação a correta `cabaleirero`: 81.82%
+Dice's     : Prob. da mais provável `cabalereiro` em relação a correta `cabaleirero`: 100.00%
+
+
+MAIS PROVÁVEL: germinadas  |  ERRADA: germinadas  |  CORRETA: geminadas
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `germinadas` em relação a mais provável `germinadas`: 100.00%
+Dice's     : Prob. da errada `germinadas` em relação a mais provável `germinadas`: 100.00%
+Levenshtein: Prob. da mais provável `germinadas` em relação a correta `geminadas`: 90.00%
+Dice's     : Prob. da mais provável `germinadas` em relação a correta `geminadas`: 94.12%
+
+
+MAIS PROVÁVEL: namiano  |  ERRADA: bahiano  |  CORRETA: baiano
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `bahiano` em relação a mais provável `namiano`: 71.43%
+Dice's     : Prob. da errada `bahiano` em relação a mais provável `namiano`: 72.73%
+Levenshtein: Prob. da mais provável `namiano` em relação a correta `baiano`: 71.43%
+Dice's     : Prob. da mais provável `namiano` em relação a correta `baiano`: 80.00%
+
+
+MAIS PROVÁVEL: tinela  |  ERRADA: tijela  |  CORRETA: tigela
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `tijela` em relação a mais provável `tinela`: 83.33%
+Dice's     : Prob. da errada `tijela` em relação a mais provável `tinela`: 83.33%
+Levenshtein: Prob. da mais provável `tinela` em relação a correta `tigela`: 83.33%
+Dice's     : Prob. da mais provável `tinela` em relação a correta `tigela`: 83.33%
+
+
+MAIS PROVÁVEL: calabresa  |  ERRADA: calabreza  |  CORRETA: calabresa
+------------------------------------------------------------------------------------------
+Algoritmo descobriu que deve-se trocar `calabreza` por `calabresa`!
+Levenshtein: Prob. da errada `calabreza` em relação a mais provável `calabresa`: 88.89%
+Dice's     : Prob. da errada `calabreza` em relação a mais provável `calabresa`: 85.71%
+Levenshtein: Prob. da mais provável `calabresa` em relação a correta `calabresa`: 100.00%
+Dice's     : Prob. da mais provável `calabresa` em relação a correta `calabresa`: 100.00%
+
+
+MAIS PROVÁVEL: organisar  |  ERRADA: organisar  |  CORRETA: organizar
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `organisar` em relação a mais provável `organisar`: 100.00%
+Dice's     : Prob. da errada `organisar` em relação a mais provável `organisar`: 100.00%
+Levenshtein: Prob. da mais provável `organisar` em relação a correta `organizar`: 88.89%
+Dice's     : Prob. da mais provável `organisar` em relação a correta `organizar`: 85.71%
+
+
+MAIS PROVÁVEL: padastro  |  ERRADA: padastro  |  CORRETA: padrasto
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `padastro` em relação a mais provável `padastro`: 100.00%
+Dice's     : Prob. da errada `padastro` em relação a mais provável `padastro`: 100.00%
+Levenshtein: Prob. da mais provável `padastro` em relação a correta `padrasto`: 75.00%
+Dice's     : Prob. da mais provável `padastro` em relação a correta `padrasto`: 100.00%
+
+
+MAIS PROVÁVEL: cadeira  |  ERRADA: cadeifa  |  CORRETA: cadeira
+------------------------------------------------------------------------------------------
+Algoritmo descobriu que deve-se trocar `cadeifa` por `cadeira`!
+Levenshtein: Prob. da errada `cadeifa` em relação a mais provável `cadeira`: 85.71%
+Dice's     : Prob. da errada `cadeifa` em relação a mais provável `cadeira`: 83.33%
+Levenshtein: Prob. da mais provável `cadeira` em relação a correta `cadeira`: 100.00%
+Dice's     : Prob. da mais provável `cadeira` em relação a correta `cadeira`: 100.00%
+
+
+MAIS PROVÁVEL: digitar  |  ERRADA: digiyar  |  CORRETA: digitar
+------------------------------------------------------------------------------------------
+Algoritmo descobriu que deve-se trocar `digiyar` por `digitar`!
+Levenshtein: Prob. da errada `digiyar` em relação a mais provável `digitar`: 85.71%
+Dice's     : Prob. da errada `digiyar` em relação a mais provável `digitar`: 83.33%
+Levenshtein: Prob. da mais provável `digitar` em relação a correta `digitar`: 100.00%
+Dice's     : Prob. da mais provável `digitar` em relação a correta `digitar`: 100.00%
+
+
+MAIS PROVÁVEL: trem  |  ERRADA: trfm  |  CORRETA: trem
+------------------------------------------------------------------------------------------
+Algoritmo descobriu que deve-se trocar `trfm` por `trem`!
+Levenshtein: Prob. da errada `trfm` em relação a mais provável `trem`: 75.00%
+Dice's     : Prob. da errada `trfm` em relação a mais provável `trem`: 75.00%
+Levenshtein: Prob. da mais provável `trem` em relação a correta `trem`: 100.00%
+Dice's     : Prob. da mais provável `trem` em relação a correta `trem`: 100.00%
+
+
+MAIS PROVÁVEL: cachorro  |  ERRADA: cachotro  |  CORRETA: cachorro
+------------------------------------------------------------------------------------------
+Algoritmo descobriu que deve-se trocar `cachotro` por `cachorro`!
+Levenshtein: Prob. da errada `cachotro` em relação a mais provável `cachorro`: 87.50%
+Dice's     : Prob. da errada `cachotro` em relação a mais provável `cachorro`: 90.91%
+Levenshtein: Prob. da mais provável `cachorro` em relação a correta `cachorro`: 100.00%
+Dice's     : Prob. da mais provável `cachorro` em relação a correta `cachorro`: 100.00%
+
+
+MAIS PROVÁVEL: cinoo  |  ERRADA: cinko  |  CORRETA: cinco
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `cinko` em relação a mais provável `cinoo`: 80.00%
+Dice's     : Prob. da errada `cinko` em relação a mais provável `cinoo`: 88.89%
+Levenshtein: Prob. da mais provável `cinoo` em relação a correta `cinco`: 80.00%
+Dice's     : Prob. da mais provável `cinoo` em relação a correta `cinco`: 100.00%
+
+
+MAIS PROVÁVEL: senhora  |  ERRADA: senjora  |  CORRETA: senhora
+------------------------------------------------------------------------------------------
+Algoritmo descobriu que deve-se trocar `senjora` por `senhora`!
+Levenshtein: Prob. da errada `senjora` em relação a mais provável `senhora`: 85.71%
+Dice's     : Prob. da errada `senjora` em relação a mais provável `senhora`: 85.71%
+Levenshtein: Prob. da mais provável `senhora` em relação a correta `senhora`: 100.00%
+Dice's     : Prob. da mais provável `senhora` em relação a correta `senhora`: 100.00%
+
+
+MAIS PROVÁVEL: denrulado  |  ERRADA: debrulado  |  CORRETA: debruçado
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `debrulado` em relação a mais provável `denrulado`: 88.89%
+Dice's     : Prob. da errada `debrulado` em relação a mais provável `denrulado`: 87.50%
+Levenshtein: Prob. da mais provável `denrulado` em relação a correta `debruçado`: 77.78%
+Dice's     : Prob. da mais provável `denrulado` em relação a correta `debruçado`: 75.00%
+
+
+MAIS PROVÁVEL: metamoreose  |  ERRADA: metamorfoze  |  CORRETA: metamorfose
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `metamorfoze` em relação a mais provável `metamoreose`: 81.82%
+Dice's     : Prob. da errada `metamorfoze` em relação a mais provável `metamoreose`: 80.00%
+Levenshtein: Prob. da mais provável `metamoreose` em relação a correta `metamorfose`: 90.91%
+Dice's     : Prob. da mais provável `metamoreose` em relação a correta `metamorfose`: 93.33%
+
+
+MAIS PROVÁVEL: inconstitucionalisaimamente  |  ERRADA: inconstitucionaliszimamente  |  CORRETA: inconstitucionalissimamente
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `inconstitucionaliszimamente` em relação a mais provável `inconstitucionalisaimamente`: 96.30%
+Dice's     : Prob. da errada `inconstitucionaliszimamente` em relação a mais provável `inconstitucionalisaimamente`: 95.65%
+Levenshtein: Prob. da mais provável `inconstitucionalisaimamente` em relação a correta `inconstitucionalissimamente`: 96.30%
+Dice's     : Prob. da mais provável `inconstitucionalisaimamente` em relação a correta `inconstitucionalissimamente`: 100.00%
+
+
+MAIS PROVÁVEL: ar  |  ERRADA: af  |  CORRETA: ar
+------------------------------------------------------------------------------------------
+Algoritmo descobriu que deve-se trocar `af` por `ar`!
+Levenshtein: Prob. da errada `af` em relação a mais provável `ar`: 50.00%
+Dice's     : Prob. da errada `af` em relação a mais provável `ar`: 50.00%
+Levenshtein: Prob. da mais provável `ar` em relação a correta `ar`: 100.00%
+Dice's     : Prob. da mais provável `ar` em relação a correta `ar`: 100.00%
+
+
+MAIS PROVÁVEL: musica  |  ERRADA: musica  |  CORRETA: música
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `musica` em relação a mais provável `musica`: 100.00%
+Dice's     : Prob. da errada `musica` em relação a mais provável `musica`: 100.00%
+Levenshtein: Prob. da mais provável `musica` em relação a correta `música`: 83.33%
+Dice's     : Prob. da mais provável `musica` em relação a correta `música`: 83.33%
+
+
+MAIS PROVÁVEL: lampada  |  ERRADA: lampada  |  CORRETA: lâmpada
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `lampada` em relação a mais provável `lampada`: 100.00%
+Dice's     : Prob. da errada `lampada` em relação a mais provável `lampada`: 100.00%
+Levenshtein: Prob. da mais provável `lampada` em relação a correta `lâmpada`: 85.71%
+Dice's     : Prob. da mais provável `lampada` em relação a correta `lâmpada`: 90.91%
+
+
+MAIS PROVÁVEL: saude  |  ERRADA: saude  |  CORRETA: saúde
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `saude` em relação a mais provável `saude`: 100.00%
+Dice's     : Prob. da errada `saude` em relação a mais provável `saude`: 100.00%
+Levenshtein: Prob. da mais provável `saude` em relação a correta `saúde`: 80.00%
+Dice's     : Prob. da mais provável `saude` em relação a correta `saúde`: 80.00%
+
+
+MAIS PROVÁVEL: mae  |  ERRADA: mae  |  CORRETA: mãe
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `mae` em relação a mais provável `mae`: 100.00%
+Dice's     : Prob. da errada `mae` em relação a mais provável `mae`: 100.00%
+Levenshtein: Prob. da mais provável `mae` em relação a correta `mãe`: 66.67%
+Dice's     : Prob. da mais provável `mae` em relação a correta `mãe`: 66.67%
+
+
+MAIS PROVÁVEL: pais  |  ERRADA: pais  |  CORRETA: país
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `pais` em relação a mais provável `pais`: 100.00%
+Dice's     : Prob. da errada `pais` em relação a mais provável `pais`: 100.00%
+Levenshtein: Prob. da mais provável `pais` em relação a correta `país`: 75.00%
+Dice's     : Prob. da mais provável `pais` em relação a correta `país`: 75.00%
+
+
+MAIS PROVÁVEL: nalao  |  ERRADA: balao  |  CORRETA: balão
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `balao` em relação a mais provável `nalao`: 80.00%
+Dice's     : Prob. da errada `balao` em relação a mais provável `nalao`: 75.00%
+Levenshtein: Prob. da mais provável `nalao` em relação a correta `balão`: 60.00%
+Dice's     : Prob. da mais provável `nalao` em relação a correta `balão`: 66.67%
+
+
+MAIS PROVÁVEL: coramao  |  ERRADA: coramão  |  CORRETA: coraçao
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `coramão` em relação a mais provável `coramao`: 85.71%
+Dice's     : Prob. da errada `coramão` em relação a mais provável `coramao`: 90.91%
+Levenshtein: Prob. da mais provável `coramao` em relação a correta `coraçao`: 85.71%
+Dice's     : Prob. da mais provável `coramao` em relação a correta `coraçao`: 80.00%
+
+
+MAIS PROVÁVEL: manha  |  ERRADA: manha  |  CORRETA: manhã
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `manha` em relação a mais provável `manha`: 100.00%
+Dice's     : Prob. da errada `manha` em relação a mais provável `manha`: 100.00%
+Levenshtein: Prob. da mais provável `manha` em relação a correta `manhã`: 80.00%
+Dice's     : Prob. da mais provável `manha` em relação a correta `manhã`: 88.89%
+
+
+MAIS PROVÁVEL: negócio  |  ERRADA: negocio  |  CORRETA: negócio
+------------------------------------------------------------------------------------------
+Algoritmo descobriu que deve-se trocar `negocio` por `negócio`!
+Levenshtein: Prob. da errada `negocio` em relação a mais provável `negócio`: 85.71%
+Dice's     : Prob. da errada `negocio` em relação a mais provável `negócio`: 92.31%
+Levenshtein: Prob. da mais provável `negócio` em relação a correta `negócio`: 100.00%
+Dice's     : Prob. da mais provável `negócio` em relação a correta `negócio`: 100.00%
+
+
+MAIS PROVÁVEL: espiritos  |  ERRADA: espiritos  |  CORRETA: espíritos
+------------------------------------------------------------------------------------------
+Levenshtein: Prob. da errada `espiritos` em relação a mais provável `espiritos`: 100.00%
+Dice's     : Prob. da errada `espiritos` em relação a mais provável `espiritos`: 100.00%
+Levenshtein: Prob. da mais provável `espiritos` em relação a correta `espíritos`: 88.89%
+Dice's     : Prob. da mais provável `espiritos` em relação a correta `espíritos`: 93.33%
+
