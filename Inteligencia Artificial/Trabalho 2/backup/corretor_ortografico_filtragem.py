@@ -1,11 +1,7 @@
-# coding=UTF-8
 """
 Fazer um corretor ortográfico usando o Algoritmo de Viterbi.
 
 Inteligência Artificial
-José Carlos Bins Filho
----
-Ciência da Computação
 Universidade Federal do Pampa
 
 ------------------------------------
@@ -42,7 +38,8 @@ class corretor_ortografico:
 	prob_correta = 0
 	prob_provavel = 0
 
-	prob_final_evidencia = 0
+	certeza_filtragem = 0
+	certeza_soma = 0
 
 	transicoes = 0
 	
@@ -182,44 +179,57 @@ class corretor_ortografico:
 
 		# palavra mais provavel termina com a melhor letra
 		melhor_caminho = melhor_letra 
+		tupla_f = ("final", melhor_letra)
+		antecessor = melhor_letra
+		resultado = self.modelo[dia_final][tupla_f][0]
+
 
 		# adiciona uma posicao de erro para cada letra da palavra errada
 		self.transicoes = [0 for i in range(tam_pal)]
 
 
 		# percorre o modelo atraves dos ponteiros antecessores e identifica os erros
-		tupla_f = ("final", melhor_letra)
-		for dia in range(dia_final, 0, -1):
+		for dia in range(dia_final, -1, -1):
+
+			if dia < len(self.palavra_correta):
+				if antecessor == self.palavra_correta[dia]:
+					self.transicoes[dia] = 0
+				else:
+					self.transicoes[dia] = resultado
 
 			antecessor = self.modelo[dia][tupla_f][1]
 			resultado = self.modelo[dia][tupla_f][0]
-
-			if dia < len(self.palavra_correta):
-				self.transicoes[dia] = resultado
-
 			melhor_caminho = antecessor+melhor_caminho
 			tupla_f = ("final", antecessor)
-			
-		self.transicoes[0] = self.modelo[0][tupla_f][0]
-
-		return melhor_caminho
 
 
+		return melhor_caminho[1:]
 
-	def __novos_somas(self):
-		somas = {}
+
+	def __print_dados(self, dados):
+		count = 0
+		for dicio in dados:
+			print("Dia %d:" % (count+1))
+			for seila, valor in sorted(dicio.items(), key=lambda x:x[0], reverse=True):
+				print("%s: %.3f" % (seila, valor))
+			print("")
+			count += 1
+
+
+	def __novos_dados(self):
+		dados = {}
 		for k in self.alfabeto:
-			somas[k] = 0
-		return somas
+			dados[k] = 0
+		return dados
 
-	def __normalizar_somas(self, somas):
-		soma = sum(somas.values())
+	def __normalizar_dados(self, dados):
+		soma = sum(dados.values())
 		for k in self.alfabeto:
-			somas[k] /= soma
+			dados[k] /= soma
 
-	def __em_porcentagem(self, somas, palavra):
+	def __em_porcentagem(self, dados, palavra):
 		count, soma = 0, 0
-		for dicio in somas:
+		for dicio in dados:
 			e = palavra[count]
 			soma += dicio[e]
 			count += 1
@@ -242,7 +252,9 @@ class corretor_ortografico:
 			evidencia = palavra[dia]
 
 			finais = self.__novas_finais()
-			somas = self.__novos_somas()
+			somas = self.__novos_dados()
+			filtros = self.__novos_dados()
+
 
 			for x1 in self.alfabeto:
 				for x2 in self.alfabeto:
@@ -266,31 +278,42 @@ class corretor_ortografico:
 						finais[x2] = [result, x1]
 
 
-					# soma das probabilidades (filtragem)
+					# filtragem e soma das probabilidades
 					if dia == 0:
+						filtros[x2] += primeiro*segundo
 						somas[x2] += primeiro*segundo*terceiro
 					else:
+						filtros[x2] += todos_filtros[dia-1][x1]*segundo
 						somas[x2] += todas_somas[dia-1][x1]*segundo*terceiro
-			 
 
-			# inclui a nova tabela no modelo
+
+
+			# atualiza a filtragem com a evidencia
+			for x1 in self.alfabeto:
+				filtros[x1] *= self.get_prob_erro(evidencia, x1) 
+
+			self.__normalizar_dados(somas)
+			self.__normalizar_dados(filtros)
+
+			todos_filtros.append(filtros)
+			todas_somas.append(somas)
+
 			self.modelo.append(tabela)
-			
-			# normaliza e seleciona as finais
 			if(normalizar):
 				self.__normalizar(finais)
 			self.__selecionar_finais(dia, finais)
 
-			# normaliza as somas
-			self.__normalizar_somas(somas)
-			todas_somas.append(somas)
 
-
-		# coloca em porcentagem a probabilidade de estar no estado final dada toda a evidencia P(Xt|g1,..,gt)
-		self.prob_final_evidencia = self.__em_porcentagem(todas_somas, palavra)
+		# calculamos as estatisticas de certeza do algoritmo utilizando dois metodos diferentes
+		self.certeza_filtragem = self.__em_porcentagem(todos_filtros, palavra)
+		self.certeza_soma = self.__em_porcentagem(todas_somas, palavra)
 		
 		# por fim, calculamos a palavra mais provavel de acordo com o algoritmo
 		self.palavra_provavel = self.__achar_melhor_caminho()
+
+		self.prob_errada = self.__em_porcentagem(todas_somas, self.palavra_errada)
+		self.prob_correta = self.__em_porcentagem(todas_somas, self.palavra_correta)
+		self.prob_provavel = self.__em_porcentagem(todas_somas, self.palavra_provavel)
 
 
 
@@ -360,11 +383,14 @@ class corretor_ortografico:
 		
 		print("")
 
-		print("Prob. de estar no estado final dada toda a evidência: %.2f%%" % self.prob_final_evidencia)
+		print("Prob. da sequência de evidência dada palavra errada  : %.2f%%" % self.certeza_soma) # ou use self.certeza_filtragem
+		print("Prob. da sequência de evidência dada palavra correta : %.2f%%" % self.prob_correta)
+		print("Prob. da sequência de evidência dada palavra provavel: %.2f%%" % self.prob_provavel)
 
 		print("")
 
-		print("Prob. cada transição do algoritmo de viterbi para a palavra mais provável em relação a correta:")
+
+		print("Prob. cada transição de erro da palavra mais provável em relação a correta:")
 
 		
 		tam_correta = len(self.palavra_correta)
@@ -374,19 +400,18 @@ class corretor_ortografico:
 
 		for i in range(tam_pal):
 			
-			x1, x2, v, a = ' ', ' ', ' ', ''
+			x1, x2, v = ' ', ' ', ' '
 			if i < tam_provavel:
 				x1 = self.palavra_provavel[i]
-				v = self.transicoes[i]*100
+				v = self.transicoes[i]
+				if v > 0:
+					count_erros += 1
+				v *= 100
 
 			if i < tam_correta:
 				x2 = self.palavra_correta[i]
 
-			if x1 != x2 and x2 != ' ':
-				count_erros += 1
-				a = '*'
-
-			print("%s-%s: %.2f%% %s" %(x1, x2, v, a))
+			print("%s-%s: %.2f%%" %(x1, x2, v))
 
 		print("Total: %d erro(s)" % count_erros)
 

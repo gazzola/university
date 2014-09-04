@@ -1,14 +1,21 @@
+# coding=UTF-8
 """
 Programa que calcule as probabilidades a priori das letras e
 das probabilidades de transição de uma letra para a outra.
 
 Inteligência Artificial
+José Carlos Bins Filho
+---
+Ciência da Computação
 Universidade Federal do Pampa
 
 ------------------------------------
 
-Marcos Treviso (121150107)
-marcosvtreviso@gmail.com
+Gustavo Alves Rodrigues, 121151605, gugax35@gmail.com
+Marcos Vinícius Treviso, 121150107, marcosvtreviso@gmail.com
+Thayson Rafael Karlinski, 111151990, thaysonr.karlinski@gmail.com
+
+------------------------------------
 
 Version of python: 3
 For run use: python3 gerador_probabilidades.py <arquivo_texto>
@@ -365,8 +372,10 @@ def main(arquivo_texto):
 	#gp.print_erros(pe)
 	gp.maior_acentuado(pb)
 
+
 if __name__ == '__main__':
 	if len(sys.argv) != 2:
 		print('Use: {} <arquivo_texto>'.format(os.path.basename(sys.argv[0])))
 		exit()
 	main(sys.argv[1])
+

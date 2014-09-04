@@ -5,7 +5,7 @@ inferno interno
 pezo peso
 programakao programacao
 ciensia ciencia
-gogador jogador 
+gogador jogador
 gakeria galeria
 paralizado paralisado
 cabalereiro cabaleirero
@@ -30,8 +30,11 @@ lampada lâmpada
 saude saúde
 mae mãe
 pais país
-balao balão 
-coramão coraçao
+balao balão
+coracão coração
 manha manhã
 negocio negócio
 espiritos espíritos
+heladoire geladeira
+coverros cobertor
+chocolate xocolathe
