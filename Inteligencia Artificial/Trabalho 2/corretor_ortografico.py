@@ -480,11 +480,11 @@ def main(arquivo_texto, arquivo_palavras):
 
 	
 	# 	exemplo do livro, atencao para valores normalizados:
-	#	pl = {'v':0.5, 'f':0.5}
-	#	pb = {'v':{'v':0.7, 'f':0.3}, 'f':{'v':0.3, 'f':0.7}}
-	#	pe = {'v':{'v':0.9, 'f':0.1}, 'f':{'v':0.2, 'f':0.8}}
-	#	alf = ['v', 'f']
-	#	palavras = [['vvfvv', 'vvfvv']]
+	pl = {'v':0.5, 'f':0.5}
+	pb = {'v':{'v':0.7, 'f':0.3}, 'f':{'v':0.3, 'f':0.7}}
+	pe = {'v':{'v':0.9, 'f':0.1}, 'f':{'v':0.2, 'f':0.8}}
+	alf = ['v', 'f']
+	palavras = [['vvfvv', 'vvfvv']]
 
 	#	pl = {'v':0.1, 'f':0.9}
 	#	pb = {'v':{'v':0.8, 'f':0.2}, 'f':{'v':0.1, 'f':0.9}}
@@ -518,7 +518,7 @@ def main(arquivo_texto, arquivo_palavras):
 		# aplica o algoritmo de viterbi para a correcao e mostra os resultados
 		co.viterbi(True) # normalizar=True
 		co.print_resultado()
-		#co.print_modelo()
+		co.print_modelo()
 
 
 
