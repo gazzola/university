@@ -13,7 +13,7 @@ typedef long long unsigned int llu;
 typedef pair<char*, int> ci;
 
  
-int somatorioNome(char nome[10]){
+int somatorioNome(char nome[12]){
 	llu soma = 0;
 	for(int i=0; nome[i]!='\0'; i++)
 		soma += (int) nome[i];
@@ -54,10 +54,9 @@ int main(){
 			break;
  
 		ci pessoas[100001];
-		//vector<ci> pessoas;
  
 		for(int i=0; i<n; i++){
-			char *nome = (char*) malloc (10); 
+			char *nome = (char*) malloc (12); 
 			scanf("%s", nome);
 			pessoas[i] = ci(nome, somatorioNome(nome));
 		}

@@ -1,31 +1,26 @@
-6 4
-0 700000 0
-1500000 2000000 2000000
-I B1
-M A2 2000000
-P A2
-G B
-6 4
-0 700000 0
-1500000 2000000 2000000
-I B1
-M A2 1999999
-P A2
-G B
-6 5
-0 700000 0
-1500000 2000000 2000000
-I B1
-M A2 1999999
-P A2
-P B2
-G B
-6 5
-0 700000 0
-1500000 2000000 2000000
-I B1
-M A2 1999999
-P A2
-P B2
-G A
-0 0
+9
+Ana
+Bruna
+Cro
+Digory
+Emerson
+Fiaror
+Geomar
+Iago
+Zacarias
+14
+Aule
+Este
+Lorien
+Mandos
+Manwe
+Nessa
+Nienna
+Orome
+Tulkas
+Ulmo
+Vaire
+Vana
+Varda
+Yavanna
+0
