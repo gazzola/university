@@ -1,8 +1,13 @@
-3
-3 3
-asa
-bao
-oab
+2
+8 3
+abc
+def
+ghi
+jkl
+mno
+pqr
+stu
+vwx
 6
 a
 asa
@@ -10,25 +15,14 @@ bao
 boa
 aob
 ab
-5 5
-abcde
-fghij
-klmno
-pqrst
-uvwxy
+3 8
+abcdefgh
+ijklmnop
+qrstuvwx
 6
-agm
-cdef
-imq
-ye
-au
-gfji
-4 3
-aaa
-aaa
-aaa
-aaa
-3
 a
-aa
-aaa
+asa
+bao
+boa
+aob
+ab
