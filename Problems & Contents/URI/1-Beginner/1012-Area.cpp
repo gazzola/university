@@ -3,7 +3,7 @@
 
 using namespace std;
 
-#define PI 3.14159
+#define PI 3.141592654
 
 
 double triangleArea(double base, double height){
