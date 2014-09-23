@@ -61,7 +61,7 @@ bool ehSomaDQ_BuscaBinaria(int n){
 
 void ehSomaDQ2_PD(bool *todasSomas){
 
-	int max = 71;	//sqrt(10000/2)
+	int max = 100;
 
 	for(int i=0; i<=max; i++){
 		todasSomas[i*i] = true;
@@ -76,8 +76,8 @@ int main(){
 	
 
 	int n;
-	bool todasSomas[10002];
-	
+	bool todasSomas[20002];
+
 	memset(todasSomas, false, sizeof(todasSomas));
 	ehSomaDQ2_PD(todasSomas);
 
@@ -87,6 +87,7 @@ int main(){
 		else
 			printf("NO\n");
 	}
+
 
 	return 0;
 }
