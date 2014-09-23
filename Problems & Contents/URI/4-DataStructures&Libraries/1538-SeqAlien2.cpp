@@ -2,9 +2,9 @@
 #include <cstring>
 
 
-unsigned long int quadral(unsigned long int n){
+unsigned long long int quadral(unsigned long long int n){
 
-	unsigned long int resto, i=1, quadral=0;
+	unsigned long long int resto, i=1, quadral=0;
 
 	while(n!=0){
 		resto = n%4;
@@ -37,11 +37,11 @@ char* alien(char quadral[50]){
 
 int main(){
 
-	unsigned long int n;
+	unsigned long long int n;
 
-	while(scanf("%lu ", &n) && n){
+	while(scanf("%llu ", &n) && n){
 		char buffer[50];
-		sprintf(buffer, "%lu", quadral(n*n));
+		sprintf(buffer, "%llu", quadral(n*n));
 		printf("%s\n", alien(buffer));
 	}
 
