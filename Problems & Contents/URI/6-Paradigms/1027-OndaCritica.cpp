@@ -62,15 +62,15 @@ void printMapSet(map<int, int> &m, map<int, set<int> > &grafico, int min, int ma
 }
 
 
-int calcular(map<int, int> &ipsolons, map<int, set<int> > &grafico){
+int calcular(vector<int> &ipsolons, map<int, set<int> > &grafico){
 	
-	map<int, int>::const_iterator itm;
+	vector<int>::iterator itm;
 	set<int> set1, set2;
 	set<int>::iterator its1, its2;
 
 	int maior = 1;
 	for(itm = ipsolons.begin(); itm != ipsolons.end(); itm++){
-		int a = itm->first;
+		int a = *itm;
 
 		int count = 1;
 		set1 = grafico[a+1];
@@ -308,16 +308,16 @@ int main(){
 
 	while(scanf("%d", &n) != EOF){
 
-		vector<ii> pontos;
+		//vector<ii> pontos;
 
-		map<int, int> ipsolons;
+		//map<int, int> ipsolons;
 		map<int, set<int> > grafico;	//y -> x
-
+		vector<int> ipsolons;
 		
 
 
 		scanf("%d %d", &x, &y);
-		pontos.push_back(ii(x, y));
+		//pontos.push_back(ii(x, y));
 		grafico[y].insert(x);
 		//ipsolons[y] = y;
 		n--;
@@ -326,7 +326,7 @@ int main(){
 
 		while(n--){
 			scanf("%d %d", &x, &y);
-			pontos.push_back(ii(x, y));
+			//pontos.push_back(ii(x, y));
 
 			if(y < min)
 				min = y;
@@ -341,7 +341,7 @@ int main(){
 		//ipsolons.erase(min);
 		//ipsolons.erase(max);
 		for(int i=min+1; i<max; i++)
-			ipsolons[i] = i;
+			ipsolons.push_back(i);
 
 		//printMapSet(ipsolons, grafico, min, max);
 		//printMap(ipsolons);
