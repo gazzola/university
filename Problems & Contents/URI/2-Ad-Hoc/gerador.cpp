@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include <cstdio>
 #include <ctime>
 
 using namespace std;
@@ -12,14 +13,30 @@ int main(){
 
 	while(k--){
 
-		int c = 10;
-		cout << c << endl;
-		for(int i=0; i<c; i++){
-			int x = (rand()%6);
-			int y = (rand()%10)-5;
+		int a,b,c;
+		a = (rand()%100);
+		b = (rand()%100);
+		c = (rand()%100);
+		printf("%d %d %d\n", a, b, c);
+		for(int i=0; i<b; i++){
+			int x = (rand()%101);
+			int y = (rand()%101);
 			cout << x << " " << y << endl;
+		}
+
+		for(int i=0; i<c; i++){
+			int x = (rand()%101);
+			cout << x << endl;
 		}
 	}
 
 	return 0;
 }
+
+/*
+1
+3 1 3
+4 20
+3
+4
+5
