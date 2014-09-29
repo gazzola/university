@@ -13,30 +13,35 @@ int main(){
 
 	while(k--){
 
+
 		int a,b,c;
-		a = (rand()%100);
-		b = (rand()%100);
-		c = (rand()%100);
-		printf("%d %d %d\n", a, b, c);
-		for(int i=0; i<b; i++){
-			int x = (rand()%101);
-			int y = (rand()%101);
-			cout << x << " " << y << endl;
+		a = (rand()%100)+2;
+		
+		printf("%d\n", a);
+
+		bool visitados[101][101];
+		for(int i=0; i<101; i++)
+			for(int j=0; j<101; j++)
+				visitados[i][j] = false;
+
+		for(int i=0; i<a; i++){
+			
+			int x = (rand()%10)+1;
+			int y = (rand()%10)+1;
+
+			if(!visitados[x][y]){
+				printf("(%d,%d)", x, y);
+				if(i < a-1)
+					printf(" ");
+			}
 		}
 
-		for(int i=0; i<c; i++){
-			int x = (rand()%101);
-			cout << x << endl;
-		}
+		printf("\n");
+
 	}
+
+	printf("0\n");
 
 	return 0;
 }
 
-/*
-1
-3 1 3
-4 20
-3
-4
-5
