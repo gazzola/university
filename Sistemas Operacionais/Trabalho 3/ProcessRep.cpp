@@ -49,7 +49,7 @@ int main(int argc, char const *argv[]){
 	rlutil::cls();
 	
 	Manager<Process> *manager = new Manager<Process>(tclock);
-	manager->setAlgorithmType("ROUNDROBIN"); //FIFO/SJF/PRIORIDADE/ROUNDROBIN
+	manager->setAlgorithmType("SJF"); //FIFO/SJF/PRIORIDADE/ROUNDROBIN
 
 	for(i=0; i<qtd; ++i){
 		priority = (rand()%20)+1;

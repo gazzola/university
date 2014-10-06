@@ -6,9 +6,14 @@ int buscaBinaria(int x, int *v) {
  
    while (e <= d) { 
       m = (e + d)/2; 
-      if (v[m] == x) return count;
-      if (v[m] < x) e = m + 1;
-      else d = m - 1;
+      
+      if (v[m] == x) 
+      	return count;
+     
+      if (v[m] < x) 
+      	e = m + 1;
+      else 
+      	d = m - 1;
    }
 
 	return -1;

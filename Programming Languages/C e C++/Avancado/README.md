@@ -8,59 +8,97 @@ Retirado de: http://allanlima.wordpress.com/category/curso-de-c-e-c-avancado/
 Sumario
 ---------
 
-Aula 1:<br>
-    História da linguagem C<br>
-    Conceitos básicos de C<br>
-    Ponteiros<br>
-    Matrizes<br>
-    Strings<br>
+Aula 1:
+
+    História da linguagem C
+    
+    Conceitos básicos de C
+    
+    Ponteiros
+    
+    Matrizes
+    
+    Strings
+    
 
 
-Aula 2:<br>
-    Ponteiros (continução)<br>
-    Alocação dinâmica<br>
-    Diretivas de compilação<br>
+Aula 2:
+
+    Ponteiros (continução)
+    
+    Alocação dinâmica
+    
+    Diretivas de compilação
+    
 
 
-Aula 3:<br>
-    Entrada e saída<br>
-    Tipos avançados de dados<br>
+Aula 3:
+
+    Entrada e saída
+    
+    Tipos avançados de dados
+    
 
 
-Aula 4:<br>
-    Biblioteca padrão do C ANSI<br>
+Aula 4:
+
+    Biblioteca padrão do C ANSI
+    
 
 
-Aula 5:<br>
-    História da linguagem C++<br>
-    Diferenças entre C e C++<br>
-    Declaração de classes<br>
-    Ponteiros para classes<br>
-    Herança<br>
+Aula 5:
+
+    História da linguagem C++
+    
+    Diferenças entre C e C++
+    
+    Declaração de classes
+    
+    Ponteiros para classes
+    
+    Herança
+    
 
 
-Aula 6:<br>
-    O ponteiro this<br>
-    Membros estáticos<br>
-    Friends<br>
-    Métodos virtuais<br>
-    Overload de operadores<br>
+Aula 6:
+
+    O ponteiro this
+    
+    Membros estáticos
+    
+    Friends
+    
+    Métodos virtuais
+    
+    Overload de operadores
+    
 
 
-Aula 7:<br>
-    Templates<br>
-    Namespaces<br>
-    Exceções<br><br>
-    Casts<br>
+Aula 7:
+
+    Templates
+    
+    Namespaces
+    
+    Exceções
+    
+    Casts
+    
 
 
-Aula 8:<br>
-    Standard template library<br>
+Aula 8:
+
+    Standard template library
+    
 
 
-Aula 9:<br>
-    Sockets<br>
+Aula 9:
+
+    Sockets
+    
 
 
-Aula 10:<br>
-    Threads<br>
+Aula 10:
+
+    Threads
+    

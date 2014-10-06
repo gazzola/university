@@ -9,38 +9,24 @@ int main(){
 		
 	srand(time(NULL));
 
-	int k = 10;
+	//int k = 1000;
 
-	while(k--){
+	//while(k--){
 
-
-		int a,b,c;
-		a = (rand()%100)+2;
+		/*int y = (rand()%10)+2;
+		int x = (rand()%(20-y))+y;
 		
-		printf("%d\n", a);
+		printf("%d %d\n", x, y);*/
 
-		bool visitados[101][101];
-		for(int i=0; i<101; i++)
-			for(int j=0; j<101; j++)
-				visitados[i][j] = false;
-
-		for(int i=0; i<a; i++){
-			
-			int x = (rand()%10)+1;
-			int y = (rand()%10)+1;
-
-			if(!visitados[x][y]){
-				printf("(%d,%d)", x, y);
-				if(i < a-1)
-					printf(" ");
+		for(int i=2; i<=60; i++){
+			for(int j=i; j>=2; j--){
+				printf("%d %d\n", i, j);
 			}
 		}
 
-		printf("\n");
+	//}
 
-	}
-
-	printf("0\n");
+	printf("0 0\n");
 
 	return 0;
 }
