@@ -8,6 +8,7 @@
 */
 
 #include <cstdio>
+#include <cstring>
 #include <vector>
 
 using namespace std;
@@ -71,9 +72,19 @@ int main(){
 	int n, m, c; 
 	llu res1, res2;
 
+	int pisanoVet[1000001];
+	memset(pisanoVet, -1, sizeof(pisanoVet));
+
+
 	while(scanf("%d %d", &n, &m) != EOF){
 		
-		c = pisano(m);
+		if(pisanoVet[m] != -1)
+			c = pisanoVet[m];
+		else{
+			c = pisano(m);
+			pisanoVet[m] = c;
+		}
+
 		res1 = fib_fd(n, c);
 		res2 = fib_fd(res1, m);
 
