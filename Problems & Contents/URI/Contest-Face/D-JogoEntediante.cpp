@@ -13,33 +13,34 @@ typedef long long unsigned int llu;
 
 int contaDivisores(llu x){
 	
-	int total = 1;
-	for(llu i=2; i*i<=x; ++i){
+	if(x == 1)
+		return 1;
+
+
+	int total = 2;
+	for(llu i=3; i*i<=x; ++i){
 		if(x % i == 0)
 			total++;
 	}
-
-	if(x > 1)
-		total++;
 	
 	return total;
 }
 
 
-int divisorCount(llu n) {
+llu divisorCount(llu n) {
     // a counter for the number of divisors
     // intially 1 (the multiplication identity)
-    int count = 1;
+    llu count = 1;
  
     // save the square root to avoid re-computation
-    int mysqrt = (int) sqrt(n);
+    llu mysqrt = (llu) sqrt(n);
  
     // loop through 2 and the odd numbers up to sqrt(n)
-    for (int i = 2; i <= mysqrt; i = (i == 2 ? 3 : i + 2)) {
+    for (llu i = 2; i <= mysqrt; i = (i == 2 ? 3 : i + 2)) {
  
         // a counter for the power of the
         // current number in the prime factorization
-        int mypow = 0;
+        llu mypow = 0;
  
         // while i is in n's prime factorization
         while (n % i == 0) {
@@ -54,7 +55,7 @@ int divisorCount(llu n) {
  
             // recompute the square root, since we've changed n
             // (a little optimization)
-            mysqrt = (int)sqrt(n);
+            mysqrt = (llu)sqrt(n);
         }
     }
  
@@ -69,8 +70,22 @@ int divisorCount(llu n) {
     return count;
 }
 
+// metodo para teste, obviamente deve-se usar o crivo
+bool ehPrimo(int x){
+
+	if(x <= 2)
+		return true;
+
+	for(int i=2; i<=(x/2)+1; i++){
+		if(x % i == 0){
+			return false;
+		}
+	}
+
+	return true;
+}
+
 int num_divisors(llu n){
-	
 	
     if(n % 2 == 0)
     	n = n/2;
@@ -98,40 +113,56 @@ int num_divisors(llu n){
     return divisors;
 }
 
+
+// essa funcao tem erros por causa da precisao do epsilon
+bool ehQuadradoPerfeito(llu x){
+	double y = sqrt(x);
+	if(y == (int) y)
+		return true;
+	return false;
+}
+
+
+bool ehQuadradoPerfeito_Bissecao(llu x){
+
+	if(x == 1)
+		return true;
+
+	llu ini=0, fim=x, erro=fim-ini;
+	llu meio, res;
+
+	while(ini < fim and erro > 1){
+
+		meio = (ini+fim)/2;
+
+		res = meio*meio;
+		if(res == x)
+			return true;
+		else if(res < x)
+			ini = meio;
+		else
+			fim = meio;
+
+		erro = fim-ini;
+	}
+
+	return false;
+
+}
+
+
+
 int main(){
 	
-
 	int n;
 	llu x;
-	
-
-	int divisores[1000001];
-	memset(divisores, 0, sizeof(divisores));
-	unordered_map<llu, int> numDivisores;
 
 	while(scanf("%d", &n) and n > 0){
-		llu soma = 0;
+		int soma = 0;
 		while(n--){
 			scanf("%llu", &x);
-			if(x > 1000000){
-				if(numDivisores.count(x) == 0){
-					int k = divisorCount(x);
-					numDivisores[x] = k;
-					soma += k;
-				}
-				else
-					soma += divisorCount(x);
-				//printf("%d\n", num_divisors(x));
-			}
-			else if(divisores[x] == 0){
-				divisores[x] = num_divisors(x);
-				soma += divisores[x];
-			}
-			else{
-				soma += divisores[x];
-			}
-
-			//printf("%d\n", divisores[x]);
+			if(ehQuadradoPerfeito_Bissecao(x))
+				soma++;
 		}
 
 		if(soma % 2 == 0)
