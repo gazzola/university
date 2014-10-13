@@ -600,7 +600,7 @@ a small {
 }
 
 .nostyle:hover{
-  text-shadow: 0px 0px 10px #B4EA20;
+  text-shadow: 0px 0px 10px rgba(180, 234, 32, 0.5);
 }
 
 ul {
