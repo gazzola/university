@@ -595,6 +595,14 @@ a small {
   display: block;
 }
 
+a .nostyle{
+  color: inherit;
+}
+
+a .nostyle:hover{
+  text-shadow: 0px 0px 10px #B4EA20;
+}
+
 ul {
   list-style-image: url("../images/bullet.png");
 }
