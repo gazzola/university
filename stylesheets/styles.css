@@ -595,11 +595,11 @@ a small {
   display: block;
 }
 
-a .nostyle{
-  color: inherit;
+.nostyle{
+  color: #e8e8e8;
 }
 
-a .nostyle:hover{
+.nostyle:hover{
   text-shadow: 0px 0px 10px #B4EA20;
 }
 
