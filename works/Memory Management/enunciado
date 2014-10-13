@@ -1,0 +1,18 @@
+Trabalho sobre gerenciamento de memória.
+
+Implemente um mecanismo de gerenciamento de memória virtual.
+
+O programa deverá conter um espaço de quadros (memória real) global, para todos os processos, e um espaço de páginas virtuais (memória virtual) para cada processo.
+
+O tamanho do quadro e da página devem ser idênticos.
+
+O número de quadros do sistema será de 32.
+
+Cada processo poderá ter até 4 páginas alocadas nos quadros. O número máximo de páginas de um processo será de 32 páginas.
+
+O tamanho da página ou quadro será de 4 KB.
+
+O programa deverá ser capaz de gerenciar uma fila de processos (abstração), cada qual com seu número de páginas que, de acordo com a execução precisam utilizar alguns dos quadros da "memória principal".
+Simule a utilização dos quadros e também a falha dos quadros para alguns processos. Implemente um mecanismo de substituição de página, bem como a estrutura da tabela de páginas.
+
+Maiores detalhes do trabalho poderão ser vistos na próxima terça, em laboratório. Mas comecem logo a pensar e estruturar esse problema, para depois pensar na programação.

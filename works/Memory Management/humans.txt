@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Marcos V. Treviso -- marcosvtreviso[at]gmail.com -- facebook.com/marcos.treviso
+    Gustavo A. Rodrigues -- gugax[at]ymail.com -- facebook.com/gustavo105
+
+# THANKS
+
+    Linus Torvalds :p
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, Javascript
+    jQuery, Modernizr

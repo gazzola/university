@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Gerenciamento de Memória</title>
+        <meta name="description" content="Trabalho para disciplina de Sistema Operacionais - 2014/01">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="favicon.ico">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+    
+   
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Gerenciamento de Memória</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a id="about" data-toggle="modal" data-target="#myModal" data-title="About">About</a></li>
+            <li><a id="contact" data-toggle="modal" data-target="#myModal" data-title="Contact">Contact</a></li>
+
+          <div id="aboutContent" class="hidden">
+            
+            <p class="text-justify">
+              <strong>
+                Trabalho sobre gerenciamento de memória.
+              </strong>
+            </p>
+
+            <p class="text-justify">• Implemente um mecanismo de gerenciamento de memória virtual.</p>
+
+            <p class="text-justify">• O programa deverá conter um espaço de quadros (memória real) global, para todos os processos, e um espaço de páginas virtuais (memória virtual) para cada processo.</p>
+
+            <p class="text-justify">• O tamanho do quadro e da página devem ser idênticos.</p>
+
+            <p class="text-justify">• O número de quadros do sistema será de 32.</p>
+
+            <p class="text-justify">• Cada processo poderá ter até 4 páginas alocadas nos quadros. O número máximo de páginas de um processo será de 32 páginas.</p>
+
+            <p class="text-justify">• O tamanho da página ou quadro será de 4 KB.</p>
+
+            <p class="text-justify">• O programa deverá ser capaz de gerenciar uma fila de processos (abstração), cada qual com seu número de páginas que, de acordo com a execução precisam utilizar alguns dos quadros da "memória principal".
+            Simule a utilização dos quadros e também a falha dos quadros para alguns processos. Implemente um mecanismo de substituição de página, bem como a estrutura da tabela de páginas.</p>
+
+          </div>
+
+          <div id="contactContent" class="hidden">
+
+            <p>
+                This is a work for the operating systems class on graduation over computer science.
+            </p>
+
+            <p>
+              You can find the developers by e-mail <u>marcosvtreviso</u><span class="label label-primary">at</span><u>gmail.com</u>, <u>gugax</u><span class="label label-primary">at</span><u>ymail.com</u>. or by links below:
+            </p>
+
+            <p>
+              <a href="https://github.com/meitcher/" target="_blank">Marcos - GitHub</a>
+              <br>
+              <a href="https://github.com/johnlacer" target="_blank">Gustavo - GitHub</a>
+              <br>
+              <a href="https://www.urionlinejudge.com.br/judge/pt/profile/18175" target="_blank">Marcos - URI Online Judge</a>
+              <br>
+              <a href="http://lattes.cnpq.br/0591404005568638" target="_blank">Marcos - Lattes Curriculum</a>
+            </p>
+
+            <p>
+              :)
+            </p>
+
+          </div>
+
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+
+
+    <div class="jumbotron">
+      <div class="container center-block">
+        <br><br>
+        <h1>Tabela de Memória</h1>
+         <!--[if IE]>
+			        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://outdatedbrowser.com/">upgrade your browser</a> to improve your experience.</p>
+			    <![endif]-->
+        
+        <p>
+            <div id="memTable" class="center-block"></div>
+        </p>
+
+        <!-- FORMULARIO PARA CRIAR TABELA DE MEMORIA -->
+        <!--
+        <p>
+        <form class="form-inline" role="form">
+            <div class="form-group">
+                <input type="text" id="qtdFrames" class="form-control" placeholder="Quantidade de Quadros">
+                <a id="createTable" class="btn btn-primary" role="button">
+                    Criar Tabela &raquo;
+                </a>
+            </div>
+        </form>
+        </p>
+        -->
+      
+      </div>
+    </div>
+
+
+
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        
+        <div class="col-md-8 myblocks">
+            <h2>Filas de Processos</h2>
+            <p>
+              <form class="form-inline" role="form">
+                <div class="form-group">
+                    <input type="text" id="qtdProcess" class="form-control input-sm" placeholder="Qtd. de Processos">
+                    <a id="createProcess" class="btn btn-primary btn-sm" role="button">
+                        Criar &raquo;
+                    </a>
+
+                    &nbsp;&nbsp;&nbsp;
+
+                    <a id="executeProcess" class="btn btn-primary btn-sm" role="button">
+                        Executar &raquo;
+                    </a>
+
+                    &nbsp;&nbsp;&nbsp;
+
+                    <input type="text" id="secProcess" class="form-control input-sm" placeholder="Segundos">
+
+                    <a id="executeAllProcesses" class="btn btn-primary btn-sm" role="button">
+                        Executar Todos &raquo;
+                    </a>
+                </div>
+              </form>
+            </p>
+            <p>
+                <div id="processQueues"></div>
+            <p>
+        </div>
+
+
+        <div class="col-md-4 myblocks">
+          <h2>Processo em Execução</h2>
+          <p>
+            <div id="processor">
+                &Oslash;
+            </div>
+          </p>
+       </div>
+
+      </div>
+      
+     <div class="clearfix"></div>
+
+     <div class="row"> 
+       <p>
+         <a id="seeHistory" class="btn btn-primary btn-sm" role="button">Ver Histórico &raquo;
+         </a>
+       </p>
+       <p>
+
+
+<pre id="console" visible="false">
+</pre>
+
+         
+       </p>
+     </div>
+
+
+     	<br>
+      <hr>
+
+      <footer>
+        <p>
+          &copy; Universidade Federal do Pampa - Ciência da Computação - 2014
+          <button id="moreInfo" class="popovers pull-right btn btn-xs btn-primary" data-toggle="popover" title="Integrantes" data-placement="top" data-content="Marcos V. Treviso (121150107) | Gustavo A. Rodrigues (121151605)">
+            <span class="glyphicon glyphicon-info-sign" title="More Info"></span>
+          </button>
+
+        </p>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel"></h4>
+              </div>
+              <div class="modal-body">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </footer>
+
+    </div> <!-- /container -->        
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+
+        <!-- <script src="js/utils.js"></script> -->
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
