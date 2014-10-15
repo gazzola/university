@@ -3,8 +3,8 @@
 #include <cstring>
 #include <cmath>
 #include <vector>
-#include <map>
 #include <set>
+#include <unordered_map>
 #include <algorithm>
 
 using namespace std;
@@ -31,14 +31,14 @@ void printVector(const vector<ii> &v){
 }
 
 
-void printMap(const map<int, int> &m){
-	map<int, int> :: const_iterator iter;
+void printMap(const unordered_map<int, int> &m){
+	unordered_map<int, int> :: const_iterator iter;
 	for (iter = m.begin(); iter != m.end(); iter++)
 		printf("%d ", iter->first);
 	printf("\n");
 }
 
-void printSet(map<int, set<int> > &grafico, int a){
+void printSet(unordered_map<int, set<int> > &grafico, int a){
 	set<int>::iterator its;
 	printf("%2d: ", a);
 	for(its = grafico[a].begin(); its != grafico[a].end(); ++its)
@@ -46,9 +46,9 @@ void printSet(map<int, set<int> > &grafico, int a){
 	printf("\n");
 }
 
-void printMapSet(map<int, int> &m, map<int, set<int> > &grafico, int min, int max){
+void printMapSet(unordered_map<int, int> &m, unordered_map<int, set<int> > &grafico, int min, int max){
 	
-	map<int, int> :: iterator iter;
+	unordered_map<int, int> :: iterator iter;
 	printSet(grafico, min);
 
 	for (iter = m.begin(); iter != m.end(); ++iter){
@@ -62,7 +62,7 @@ void printMapSet(map<int, int> &m, map<int, set<int> > &grafico, int min, int ma
 }
 
 
-int calcular(vector<int> &ipsolons, map<int, set<int> > &grafico){
+int calcular(vector<int> &ipsolons, unordered_map<int, set<int> > &grafico){
 	
 	vector<int>::iterator itm;
 	set<int> set1, set2;
@@ -310,8 +310,8 @@ int main(){
 
 		//vector<ii> pontos;
 
-		//map<int, int> ipsolons;
-		map<int, set<int> > grafico;	//y -> x
+		//unordered_map<int, int> ipsolons;
+		unordered_map<int, set<int> > grafico;	//y -> x
 		vector<int> ipsolons;
 		
 
