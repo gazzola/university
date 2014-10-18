@@ -7,6 +7,9 @@
 
 using namespace std;
 
+
+typedef long long unsigned int llu;
+
 void swap(int *a, int *b){
 	int temp = *a;
 	*a = *b;
@@ -16,7 +19,7 @@ void swap(int *a, int *b){
 
 void bubbleInverse(int *vet, int n, vector<int> &mods, int m){
 
-	for(int i=0; i<m; i++){
+	for(int i=0; i<m; ++i){
 
 		int trocas = 0;
 		for(int j=0; j<n-1; j++){
@@ -28,7 +31,34 @@ void bubbleInverse(int *vet, int n, vector<int> &mods, int m){
 				break;
 		}
 	}
+}
 
+void printVet(int *vet, int n){
+	for(int i=0; i<n; ++i)
+		printf("%d ", vet[i]);
+	printf("\n");
+}
+
+
+
+
+void bubbleReverse(int *vet, int n, int *mods, int m){
+
+	int pos = 0;
+	int ele = 0;
+
+	for(int i=0; i<m; ++i){
+		pos = mods[i];
+		while(vet[pos] > 0)
+			++pos;
+
+		vet[pos] = ++ele;
+	}
+
+	int k = m;
+	for(int i=0; i<n; ++i)
+		if(vet[i]==0)
+			vet[i] = ++k;
 }
 
 
@@ -37,23 +67,23 @@ int main(){
  
 	int n, m, x;
 	int vet[100000];
+	int mods[100001];
 
 	while(scanf("%d %d", &n, &m) and n > 0){
 
-		for(int i=0; i<n; i++)
-			vet[i] = i+1;
-
-		vector<int> mods;
-		for(int i=0; i<m; i++){
+		memset(vet, 0, sizeof(vet));
+		
+		for(int i=0; i<m; ++i){
 			scanf("%d", &x);
-			mods.push_back(x);
+			mods[i] = x;
 		}
 
 
-		bubbleInverse(vet, n, mods, m);
+		bubbleReverse(vet, n, mods, m);
 
-		for(int i=0; i<n; i++)
-			printf("%d ", vet[i]);
+		printf("%d", vet[0]);
+		for(int i=1; i<n; ++i)
+			printf(" %d", vet[i]);
 
 		printf("\n");
 	}
