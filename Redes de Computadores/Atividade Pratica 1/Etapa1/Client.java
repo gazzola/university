@@ -17,9 +17,11 @@ class Client{
 
 		System.out.println("Digite uma mensagem ou `STOP` para parar");
 
+		
 		String sentence, capSentence;
 		int id = this.getIdFromServer();
 		CustomMessage cm;
+
 
 		try{
 			while(true){
@@ -30,10 +32,22 @@ class Client{
 				ObjectInputStream inFromServer = new ObjectInputStream(clientSocket.getInputStream());
 				
 				sentence = inFromUser.readLine();
-				if(sentence.equalsIgnoreCase("STOP"))
-					break;
-
 				String hostName = clientSocket.getInetAddress().getHostName();
+
+				if(sentence.equalsIgnoreCase("STOP")){
+					cm = new CustomMessage(id, hostName);
+					cm.setMessage("STOP" + "\n");
+					outToServer.writeObject(cm);
+
+					System.out.println("\n\n");
+					
+					clientSocket.close();
+					outToServer.close();
+					inFromServer.close();
+
+					break;
+				}
+				
 				cm = new CustomMessage(id, hostName);
 				cm.setMessage(sentence + "\n");
 				outToServer.writeObject(cm);
@@ -41,8 +55,6 @@ class Client{
 				cm = (CustomMessage) inFromServer.readObject();
 				capSentence = cm.getMessage();
 				System.out.println("Servidor respondeu: " + capSentence);
-
-				clientSocket.close();
 			}
 		}
 		catch(Exception e){
@@ -74,7 +86,6 @@ class Client{
 		}
 
 		Integer p = Integer.parseInt(args[0]);
-		Client c1 = new Client("127.0.0.1", p);
-		c1.run();
+		new Client("127.0.0.1", p).run();
 	}
 }
