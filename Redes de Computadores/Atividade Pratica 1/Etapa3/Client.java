@@ -33,28 +33,17 @@ class Client{
 				
 				sentence = inFromUser.readLine();
 				String hostName = clientSocket.getInetAddress().getHostName();
-
-				if(sentence.equalsIgnoreCase("STOP")){
-					cm = new CustomMessage(id, hostName);
-					cm.setMessage("STOP" + "\n");
-					outToServer.writeObject(cm);
-
-					System.out.println("\n\n");
-					
-					clientSocket.close();
-					outToServer.close();
-					inFromServer.close();
-					
-					break;
-				}
 				
 				cm = new CustomMessage(id, hostName);
-				cm.setMessage(sentence + "\n");
+				cm.setMessage(sentence);
 				outToServer.writeObject(cm);
 
 				cm = (CustomMessage) inFromServer.readObject();
 				capSentence = cm.getMessage();
 				System.out.println("Servidor respondeu: " + capSentence);
+
+				if(sentence.equalsIgnoreCase("STOP"))
+					break;
 			}
 		}
 		catch(Exception e){
@@ -86,10 +75,6 @@ class Client{
 		}
 
 		Integer p = Integer.parseInt(args[0]);
-		Client c1 = new Client("127.0.0.1", p);
-		c1.run();
-
-		Client c2 = new Client("127.0.0.1", p);
-		c2.run();
+		new Client("127.0.0.1", p).run();
 	}
 }

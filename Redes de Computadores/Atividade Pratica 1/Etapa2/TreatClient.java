@@ -1,15 +1,23 @@
 import java.io.*;
 import java.net.*;
 import java.util.*;
+import java.text.*;
 
 
 class TreatClient extends Thread{
 
 	private Socket connSocket;
 	static int qtdClients = 0;
+	static int qtdMessages = 0;
 
 	public TreatClient(Socket connSocket){
 		this.connSocket = connSocket;
+	}
+
+
+	private String formatDate(Date date){
+		DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		return dateFormat.format(date);
 	}
 
 	public void run(){
@@ -38,9 +46,13 @@ class TreatClient extends Thread{
 				sm = new CustomMessage(0, "server");
 				sm.setMessage(capSequence);
 
-				System.out.println("Cliente "+idClient+" disse: "+clientSentence);
-				outToClient.writeObject(sm);
+				qtdMessages++;
+				Date dateNow = new Date();
+
+				System.out.println("Cliente "+idClient+" disse: "+clientSentence+" - "+qtdMessages);
+				System.out.println("Enviada em: "+cm.getFormatedDate()+" - Recebida em:"+this.formatDate(dateNow));
 				
+				outToClient.writeObject(sm);
 			}
 
 			outToClient.close(); 

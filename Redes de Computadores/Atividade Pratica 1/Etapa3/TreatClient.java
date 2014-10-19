@@ -1,15 +1,30 @@
 import java.io.*;
 import java.net.*;
 import java.util.*;
+import java.text.*;
 
 
 class TreatClient extends Thread{
 
 	private Socket connSocket;
 	static int qtdClients = 0;
+	static int qtdMessages = 0;
 
 	public TreatClient(Socket connSocket){
 		this.connSocket = connSocket;
+	}
+
+
+	private String getDiffDate(Date dateNow, Date dateClient){
+		long diff = dateNow.getTime() - dateClient.getTime();
+		long diffSeconds = diff / 1000 % 60;
+		long diffMinutes = diff / (60 * 1000) % 60;
+		return  diffMinutes + "min e " + diffSeconds + "s.";
+	}
+
+	private String formatDate(Date date){
+		DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		return dateFormat.format(date);
 	}
 
 	public void run(){
@@ -35,20 +50,17 @@ class TreatClient extends Thread{
 				idClient = cm.getIdClient();
 				capSequence = clientSentence.toUpperCase() + "\n";
 
-				Date dnow = new Date();
-				long diff = dnow.getTime() - cm.getDate().getTime();
-				long diffSeconds = diff / 1000 % 60;
-				long diffMinutes = diff / (60 * 1000) % 60;
-				String dmsg =  diffMinutes + "min e " + diffSeconds + "s.";
-
 				sm = new CustomMessage(0, "server");
 				sm.setMessage(capSequence);
 
-				System.out.println("Cliente "+idClient+" disse: "+clientSentence);
-				System.out.println("Em: "+dmsg+"\n\n");
+				qtdMessages++;
+				Date dateNow = new Date();
+
+				System.out.println("Cliente "+idClient+" disse: "+clientSentence+" - "+qtdMessages);
+				System.out.println("Enviada em: "+cm.getFormatedDate()+" - Recebida em:"+this.formatDate(dateNow));
+				System.out.println("Atraso: "+getDiffDate(dateNow, cm.getDate())+"\n\n");
 				
 				outToClient.writeObject(sm);
-				
 			}
 
 			outToClient.close(); 
