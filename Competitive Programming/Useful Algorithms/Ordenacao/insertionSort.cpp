@@ -15,15 +15,10 @@
 #include <cstdlib>
 #include <ctime>
 #include <vector>
+#include "../utils.h"
 
 using namespace std;
 const int MAX = 6;
-
-void printVector(vector<int> &vet){
-	for(int i=0; i<(int) vet.size(); i++)
-		printf("%d ", vet[i]);
-	printf("\n");
-}
 
 
 

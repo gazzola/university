@@ -16,17 +16,10 @@
 #include <ctime>
 #include <vector>
 #include <algorithm>
+#include "../utils.h"
 
 using namespace std;
 const int MAX = 6;
-
-void printVector(vector<int> &vet){
-	for(int i=0; i<(int) vet.size(); i++)
-		printf("%d ", vet[i]);
-	printf("\n");
-}
-
-
 
 int findMin(vector<int> &vet, int i){
 	int lower = vet[i];

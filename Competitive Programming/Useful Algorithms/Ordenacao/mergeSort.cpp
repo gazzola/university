@@ -16,18 +16,13 @@
 #include <ctime>
 #include <vector>
 #include <algorithm>
+#include "../utils.h"
 
 using namespace std;
 const int MAX = 8;
 const int INF = 999999;
 int trocas = 0;
 
-
-void printVector(vector<int> &vet){
-	for(int i=0; i<(int) vet.size(); i++)
-		printf("%d ", vet[i]);
-	printf("\n");
-}
 
 
 void myMerge(vector<int> &vet, int p, int q, int r){
