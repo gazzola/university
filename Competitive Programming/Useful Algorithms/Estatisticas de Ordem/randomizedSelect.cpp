@@ -42,6 +42,13 @@ int randPartition(vector<int> &vet, int p, int r){
 	return partition(vet, p, r);
 }
 
+// pivo mediana
+int medPartition(vector<int> &vet, int p, int r){
+	int i = (p+r)/2;
+	swap(vet[p], vet[i]);
+	return partition(vet, p, r);
+}
+
 
 int randomizedSelect(vector<int> &vet, int p, int r, int i){
 	
