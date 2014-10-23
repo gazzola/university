@@ -113,6 +113,7 @@ no *remove_no(raiz *r, int x){
     no *e = remove_no(&(*r)->esq, x);
     if(e != NULL)
         return e;
+    
     no *d = remove_no(&(*r)->dir, x);
     if(d != NULL)
         return d;
