@@ -125,12 +125,10 @@ void BinTree<T>::insert_node(Node<T> *&node, Node<T> *&parent, T x){
 		node->parent = parent;
 		this->ammount++;
 	}
-	else if(x < node->key){
+	else if(x < node->key)
 		this->insert_node(node->left, node, x);
-	}
-	else{
+	else
 		this->insert_node(node->right, node, x);
-	}
 }
 
 
@@ -150,7 +148,8 @@ template <class T>
 Node<T> *BinTree<T>::remove_node(Node<T> *&node, T x){
 	if(node == NULL)
 		return NULL;
-	else if(node->key == x){
+	
+	if(node->key == x){
 		Node<T> *aux = node;
 		node = NULL;
 		return aux;
@@ -178,14 +177,14 @@ template <class T>
 Node<T> *BinTree<T>::search_node(Node<T> *&node, T x){
 	if(node == NULL)
 		return NULL;
-	else if(node->key == x)
+	
+	if(node->key == x)
 		return node;
-	else if(node->key > x)
+	
+	if(node->key > x)
 		return this->search_node(node->left, x);
-	else
-		return this->search_node(node->right, x);
-
-	return NULL;
+	
+	return this->search_node(node->right, x);
 }
 
 template <class T>
@@ -201,12 +200,13 @@ bool BinTree<T>::empty(){
 
 template <class T>
 int BinTree<T>::height(){
+	
 	if(this->lastAmmount == this->ammount)
 		return this->h;
-	int h = this->calculeHeight(this->root);
-	this->h = h;
+
+	this->h = this->calculeHeight(this->root);
 	this->lastAmmount = this->ammount;
-	return h;
+	return this->h;
 }
 
 
