@@ -33,7 +33,7 @@ class TreatClient extends Thread{
 
 			cm = (CustomMessage) inFromClient.readObject();
 
-			if(cm.getIdClient() == -1){	// se cliente ainda nao tem id, atribui um para ele
+			if(cm.getIdClient() == CustomMessage.UNKNOWN_CLIENT){	// se cliente ainda nao tem id, atribui um para ele
 				qtdClients++;
 				outToClient.writeObject(new CustomMessage(qtdClients, "server"));
 			}
@@ -51,7 +51,8 @@ class TreatClient extends Thread{
 
 				System.out.println("Cliente "+idClient+" disse: "+clientSentence+" - "+qtdMessages);
 				System.out.println("Enviada em: "+cm.getFormatedDate()+" - Recebida em:"+this.formatDate(dateNow));
-				
+				System.out.println("");
+
 				outToClient.writeObject(sm);
 			}
 

@@ -8,6 +8,7 @@ class CustomMessage implements Serializable{
 	private String node;
 	private String msg; 
 	private Date date;
+	public static int UNKNOWN_CLIENT = -1;
 
 	public CustomMessage(int idClient, String node){
 		this.idClient = idClient;

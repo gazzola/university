@@ -15,7 +15,7 @@ class Server{
 		this.qtdClients = 0;
 	}
 
-	private void run() throws Exception{
+	public void run() throws Exception{
 
 		String clientSentence;
 		String capSequence;
@@ -35,7 +35,7 @@ class Server{
 
 				cm = (CustomMessage) inFromClient.readObject();
 
-				if(cm.getIdClient() == -1){
+				if(cm.getIdClient() == CustomMessage.UNKNOWN_CLIENT){
 					this.qtdClients++;
 					sm = new CustomMessage(this.qtdClients, "server");
 					outToClient.writeObject(sm);

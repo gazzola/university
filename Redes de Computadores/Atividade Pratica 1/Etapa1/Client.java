@@ -13,49 +13,41 @@ class Client{
 		this.port = port;
 	}
 
-	private void run() throws Exception{
+	public void run() throws Exception{
 
 		System.out.println("Digite uma mensagem ou `STOP` para parar");
 
 		
 		String sentence, capSentence;
 		int id = this.getIdFromServer();
+		
+		Socket clientSocket = null;
 		CustomMessage cm;
-
 
 		try{
 			while(true){
 				BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
-				Socket clientSocket = new Socket(this.host, this.port);
+				clientSocket = new Socket(this.host, this.port);
 				
 				ObjectOutputStream outToServer = new ObjectOutputStream(clientSocket.getOutputStream());
 				ObjectInputStream inFromServer = new ObjectInputStream(clientSocket.getInputStream());
 				
 				sentence = inFromUser.readLine();
 				String hostName = clientSocket.getInetAddress().getHostName();
-
-				if(sentence.equalsIgnoreCase("STOP")){
-					cm = new CustomMessage(id, hostName);
-					cm.setMessage("STOP" + "\n");
-					outToServer.writeObject(cm);
-
-					System.out.println("\n\n");
-					
-					clientSocket.close();
-					outToServer.close();
-					inFromServer.close();
-
-					break;
-				}
 				
 				cm = new CustomMessage(id, hostName);
-				cm.setMessage(sentence + "\n");
+				cm.setMessage(sentence);
 				outToServer.writeObject(cm);
 
 				cm = (CustomMessage) inFromServer.readObject();
 				capSentence = cm.getMessage();
 				System.out.println("Servidor respondeu: " + capSentence);
+			
+				if(sentence.equalsIgnoreCase("STOP"))
+					break;
 			}
+
+			clientSocket.close();
 		}
 		catch(Exception e){
 			System.out.println(e.getMessage());
@@ -70,7 +62,7 @@ class Client{
 		ObjectOutputStream outToServerId = new ObjectOutputStream(idSocket.getOutputStream());
 		ObjectInputStream inFromServerId = new ObjectInputStream(idSocket.getInputStream());
 
-		cm = new CustomMessage(-1, "localhost");
+		cm = new CustomMessage(CustomMessage.UNKNOWN_CLIENT, "localhost");
 		outToServerId.writeObject(cm);
 
 		cm = (CustomMessage) inFromServerId.readObject();
@@ -85,7 +77,10 @@ class Client{
 			return;
 		}
 
+		int MAX_CLIENTES = 4;
 		Integer p = Integer.parseInt(args[0]);
-		new Client("127.0.0.1", p).run();
+
+		while(MAX_CLIENTES-- > 0)
+			new Client("127.0.0.1", p).run();
 	}
 }

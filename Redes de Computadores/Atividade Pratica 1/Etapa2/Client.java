@@ -13,20 +13,21 @@ class Client{
 		this.port = port;
 	}
 
-	private void run() throws Exception{
+	public void run() throws Exception{
 
 		System.out.println("Digite uma mensagem ou `STOP` para parar");
 
 		
 		String sentence, capSentence;
 		int id = this.getIdFromServer();
-		CustomMessage cm;
 
+		Socket clientSocket = null;
+		CustomMessage cm;
 
 		try{
 			while(true){
 				BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
-				Socket clientSocket = new Socket(this.host, this.port);
+				clientSocket = new Socket(this.host, this.port);
 				
 				ObjectOutputStream outToServer = new ObjectOutputStream(clientSocket.getOutputStream());
 				ObjectInputStream inFromServer = new ObjectInputStream(clientSocket.getInputStream());
@@ -45,11 +46,13 @@ class Client{
 				if(sentence.equalsIgnoreCase("STOP"))
 					break;
 			}
+
+			clientSocket.close();
 		}
 		catch(Exception e){
 			System.out.println(e.getMessage());
-		} 
-
+		}
+		
 	}
 
 	private int getIdFromServer() throws Exception{
@@ -59,7 +62,7 @@ class Client{
 		ObjectOutputStream outToServerId = new ObjectOutputStream(idSocket.getOutputStream());
 		ObjectInputStream inFromServerId = new ObjectInputStream(idSocket.getInputStream());
 
-		cm = new CustomMessage(-1, "localhost");
+		cm = new CustomMessage(CustomMessage.UNKNOWN_CLIENT, "localhost");
 		outToServerId.writeObject(cm);
 
 		cm = (CustomMessage) inFromServerId.readObject();

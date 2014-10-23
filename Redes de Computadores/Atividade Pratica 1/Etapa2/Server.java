@@ -3,7 +3,7 @@ import java.net.*;
 import java.util.*;
 
 
-class Server extends Thread{
+class Server{
 
 	private int port;
 
@@ -36,7 +36,6 @@ class Server extends Thread{
 
 		Integer p = Integer.parseInt(args[0]);
 		Server s1 = new Server(p);
-		s1.run();
 	}
 	
 }
