@@ -2,13 +2,13 @@
 
 using namespace std;
 
-void swap(int *a, int *b){
-	int temp = *a;
+void swap(double *a, double *b){
+	double temp = *a;
 	*a = *b;
 	*b = temp;
 }
 
-void sortThreeValues(int *v){
+void sortThreeValues(double *v){
 	if(v[0] < v[1])
 		swap(v[0], v[1]);
 
@@ -24,6 +24,8 @@ int main(){
 
 	double v[3];
 	cin >> v[0] >> v[1] >> v[2];
+
+	sortThreeValues(v);
 
 	if(v[0] >= v[1]+v[2])
 		cout << "NAO FORMA TRIANGULO" << endl;

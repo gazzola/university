@@ -10,12 +10,13 @@
 * O(1) para auxiliar
 */
 
+#include <iostream>
 #include <cstdio>
 #include <cstdlib>
 #include <ctime>
 #include <vector>
 #include <algorithm>
-#include "../utils.h"
+
 
 using namespace std;
 const int MAX = 8;
@@ -27,6 +28,7 @@ class Node{
 		Node *left;
 		Node *right;
 		Node *parent;
+		int h;
 		T key;
 
 		Node(T x){
@@ -36,11 +38,7 @@ class Node{
 			this->key = x; 
 		};
 
-		virtual ~Node(){
-			delete this->left;
-			delete this->right;
-			delete this->parent;
-		};
+		virtual ~Node(){};
 };
 
 
@@ -96,17 +94,16 @@ BinTree<T>::BinTree(){
 
 template <class T>
 BinTree<T>::~BinTree(){
-	delete this->root;
+	this->destroy();
 }
-
 
 
 template <class T>
 void BinTree<T>::destroy_node(Node<T> *&node){
-	if(*node != NULL){
-		this->destroy(node->left);
-		this->destroy(node->right);
-		delete left;
+	if(node != NULL){
+		this->destroy_node(node->left);
+		this->destroy_node(node->right);
+		delete node;
 	}
 }
 
@@ -124,8 +121,9 @@ void BinTree<T>::insert_node(Node<T> *&node, Node<T> *&parent, T x){
 		node = new Node<T>(x);
 		node->parent = parent;
 		this->ammount++;
+		node->h = parent->h+1;
 	}
-	else if(x < node->key)
+	else if(x <= node->key)
 		this->insert_node(node->left, node, x);
 	else
 		this->insert_node(node->right, node, x);
@@ -136,6 +134,7 @@ template <class T>
 void BinTree<T>::insert(T x){
 	if(this->root == NULL){
 		this->root = new Node<T>(x);
+		this->root->h = 1;
 		this->ammount++;
 	}
 	else
@@ -230,7 +229,7 @@ template <class T>
 void BinTree<T>::printInOrder_node(Node<T> *&node){
 	if(node != NULL){
 		this->printInOrder_node(node->left);
-		cout << node->key << " ";
+		cout << " " << node->key;
 		this->printInOrder_node(node->right);
 	}
 }
@@ -245,15 +244,15 @@ void BinTree<T>::printInOrder(){
 template <class T>
 void BinTree<T>::printPreOrder_node(Node<T> *&node){
 	if(node != NULL){
-		cout << node->key << " ";
-		this->printInOrder_node(node->left);
-		this->printInOrder_node(node->right);
+		cout << " " << node->key;
+		this->printPreOrder_node(node->left);
+		this->printPreOrder_node(node->right);
 	}
 }
 
 template <class T>
 void BinTree<T>::printPreOrder(){
-	this->printInOrder_node(this->root);
+	this->printPreOrder_node(this->root);
 }
 
 
@@ -261,15 +260,15 @@ void BinTree<T>::printPreOrder(){
 template <class T>
 void BinTree<T>::printPosOrder_node(Node<T> *&node){
 	if(node != NULL){
-		this->printInOrder_node(node->left);
-		this->printInOrder_node(node->right);
-		cout << node->key << " ";
+		this->printPosOrder_node(node->left);
+		this->printPosOrder_node(node->right);
+		cout << " " << node->key;
 	}
 }
 
 template <class T>
 void BinTree<T>::printPosOrder(){
-	this->printInOrder_node(this->root);
+	this->printPosOrder_node(this->root);
 }
 
 
@@ -288,7 +287,7 @@ void BinTree<T>::printInLevel_node(Node<T> *&node, int level){
 		return;
 	
 	if(level == 1)
-		cout << node->key << " ";
+		cout << " " << node->key;
 	else if(level > 1){
 		this->printInLevel_node(node->left, level-1);
 		this->printInLevel_node(node->right, level-1);
@@ -300,33 +299,32 @@ void BinTree<T>::printInLevel_node(Node<T> *&node, int level){
 int main(){
 
 	srand(time(NULL));
-	BinTree<int> *bt = new BinTree<int>();
 
-	int x = 0;
+	int x;
+
+	BinTree<int> *bt = new BinTree<int>();
 	for(int i=0; i<MAX; i++){
+		cin >> x;
 		x = rand()%MAX;
 		cout << x << " ";
 		bt->insert(x);
 	}
 
-	cout << endl;
-	bt->printInLevel();
+
 	cout << endl;
 	
-	cout << endl << "Search ("<< x <<"):" << endl;
-	Node<int> *n1 = bt->search(x);
-	if(n1->parent == NULL)
-		cout << n1->key << endl;
-	else
-		cout << n1->parent->key << " -> " << x << endl;
-	
-
-	cout << endl << "Remove ("<< x <<"):" << endl;
-	bt->remove(x);
-	bt->printInLevel();
+	cout << "Pre.:"; bt->printPreOrder();
+	cout << endl;
+	cout << "In..:"; bt->printInOrder();
+	cout << endl;
+	cout << "Pos.:"; bt->printPosOrder();
+	cout << endl;
+	cout << "Levl:"; bt->printInLevel();
+	cout << endl;
 
 	cout << endl;
 
+	delete bt;
 
 
 	return 0;
