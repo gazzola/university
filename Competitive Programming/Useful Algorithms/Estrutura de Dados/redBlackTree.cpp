@@ -1,4 +1,12 @@
 /*
+* Mais detalhes em: http://www.geeksforgeeks.org/
+* Codigo incompleto, falta a operacao de remocao
+* E a insercao tbm nao ta mto boa
+*
+* Review:
+* Melhor eh usar structs com ponteiros do que
+* classes com instancias
+*
 * Complexidade:
 * Inserir: 		O(logn)
 * Retirar: 		O(logn)
@@ -61,17 +69,22 @@ class RedBlackTree{
 		Node<T> *NIL;
 		
 		void destroy_node(Node<T> *&node);
-		Node<T> *remove_node(Node<T> *&node, T x);
+		
+		void transplant(Node<T> *&u, Node<T> *&v);	// not implemented
+		void removeFixUp(Node<T> *&x);				// not implemented
+		
 		Node<T> *search_node(Node<T> *&node, T x);
+		
 		void printInfo(Node<T> *&x);
 		void printInOrder_node(Node<T> *&node);
 		void printPreOrder_node(Node<T> *&node);
 		void printPosOrder_node(Node<T> *&node);
 		void printInLevel_node(Node<T> *&node, int level);
+		
 		int calculeHeight(Node<T> *&node);
+		
 		void rotateLeft(Node<T> *&x);
 		void rotateRight(Node<T> *&y);
-		void insert_node(Node<T> *&z);
 		void insertFixUp(Node<T> *&x);
 
 		
@@ -83,7 +96,7 @@ class RedBlackTree{
 		void destroy();
 		
 		void insert(T x);
-		void remove(T x);
+		void remove(T x);	// not implemented
 		Node<T> *search(T x);
 		
 		
@@ -101,7 +114,7 @@ template <class T>
 RedBlackTree<T>::RedBlackTree(){
 	
 	this->ammount = 0;
-	this->lastAmmount = -1;
+	this->lastAmmount = 0;
 	this->h = 0;
 	
 	this->NIL = new Node<T>(-1);
@@ -116,16 +129,15 @@ RedBlackTree<T>::RedBlackTree(){
 
 template <class T>
 RedBlackTree<T>::~RedBlackTree(){
-	delete this->root;
+	this->destroy();
 }
-
 
 
 template <class T>
 void RedBlackTree<T>::destroy_node(Node<T> *&node){
-	if(node != NULL){
-		this->destroy(node->left);
-		this->destroy(node->right);
+	if(node != this->NIL){
+		this->destroy_node(node->left);
+		this->destroy_node(node->right);
 		delete node;
 	}
 }
@@ -134,6 +146,7 @@ template <class T>
 void RedBlackTree<T>::destroy(){
 	this->destroy_node(this->root);
 }
+
 
 
 template <class T>
@@ -156,6 +169,7 @@ void RedBlackTree<T>::rotateLeft(Node<T> *&x){
 
 	y->left = x;
 	x->parent = y;
+
 }
 
 
@@ -168,7 +182,6 @@ void RedBlackTree<T>::rotateRight(Node<T> *&y){
 	if(x->right != this->NIL)
 		x->right->parent = y;
 
-	x->parent = y->parent;
 
 	if(y->parent == this->NIL)
 		this->root = x;
@@ -177,8 +190,10 @@ void RedBlackTree<T>::rotateRight(Node<T> *&y){
 	else
 		y->parent->right = x;
 
+
 	x->right = y;
 	y->parent = x;
+	x->parent = y->parent;
 }
 
 
@@ -198,13 +213,15 @@ void RedBlackTree<T>::insertFixUp(Node<T> *&z){
 				z = z->parent->parent;
 			}
 			else{
+
 				if(z == z->parent->right){
 					z = z->parent;
 					this->rotateLeft(z);
 				}
 
-				z->parent->color = BLACK;
-				z->parent->parent->color = RED;
+
+				z->parent->color = RED;
+				z->parent->parent->color = BLACK;
 				this->rotateRight(z->parent->parent);
 			}
 		}
@@ -267,44 +284,19 @@ void RedBlackTree<T>::insert(T val){
 	z->color = RED;
 	
 	this->insertFixUp(z);
+	this->ammount++;
 }
 
 
 
 
-template <class T>
-Node<T> *RedBlackTree<T>::remove_node(Node<T> *&node, T x){
-	if(node == NULL)
-		return NULL;
-	
-	if(node->key == x){
-		Node<T> *aux = node;
-		node = NULL;
-		return aux;
-	}
-
-	Node<T> *esq = this->remove_node(node->left, x);
-	if(esq != NULL)
-		return esq;
-
-	Node<T> *dir = this->remove_node(node->right, x);
-	if(dir != NULL)
-		return dir;
-
-	return NULL;
-}
-
-template <class T>
-void RedBlackTree<T>::remove(T x){
-	this->remove_node(this->root, x);
-}
 
 
 
 template <class T>
 Node<T> *RedBlackTree<T>::search_node(Node<T> *&node, T x){
-	if(node == NULL)
-		return NULL;
+	if(node == this->NIL)
+		return this->NIL;
 	
 	if(node->key == x)
 		return node;
@@ -319,6 +311,9 @@ template <class T>
 Node<T> *RedBlackTree<T>::search(T x){
 	return this->search_node(this->root, x);
 }
+
+
+
 
 
 template <class T>
@@ -354,6 +349,8 @@ int RedBlackTree<T>::calculeHeight(Node<T> *&node){
 
 
 
+
+
 template <class T>
 void RedBlackTree<T>::printInfo(Node<T> *&x){
 	cout << "  key=";
@@ -384,7 +381,6 @@ template <class T>
 void RedBlackTree<T>::printInOrder_node(Node<T> *&node){
 	if(node != this->NIL){
 		this->printInOrder_node(node->left);
-		//cout << " " << node->key;
 		this->printInfo(node);
 		this->printInOrder_node(node->right);
 	}
@@ -400,7 +396,7 @@ void RedBlackTree<T>::printInOrder(){
 template <class T>
 void RedBlackTree<T>::printPreOrder_node(Node<T> *&node){
 	if(node != this->NIL){
-		cout << " " << node->key;
+		this->printInfo(node);
 		this->printPreOrder_node(node->left);
 		this->printPreOrder_node(node->right);
 	}
@@ -418,7 +414,7 @@ void RedBlackTree<T>::printPosOrder_node(Node<T> *&node){
 	if(node != this->NIL){
 		this->printPosOrder_node(node->left);
 		this->printPosOrder_node(node->right);
-		cout << " " << node->key;
+		this->printInfo(node);
 	}
 }
 
@@ -443,7 +439,7 @@ void RedBlackTree<T>::printInLevel_node(Node<T> *&node, int level){
 		return;
 	
 	if(level == 1)
-		this->printInfo(node); //cout << node->key << " ";
+		this->printInfo(node);
 	else if(level > 1){
 		this->printInLevel_node(node->left, level-1);
 		this->printInLevel_node(node->right, level-1);
@@ -464,7 +460,6 @@ int main(){
 
 	for(int i=0; i<9; i++){
 		x = vet[i];
-		cout << x << " ";
 		bt->insert(x);
 	}
 
@@ -472,6 +467,8 @@ int main(){
 	cout << "Level:" << endl; 
 	bt->printInLevel();
 	cout << endl;
+	
+
 	/*
 	
 	cout << endl << "Search ("<< x <<"):" << endl;
