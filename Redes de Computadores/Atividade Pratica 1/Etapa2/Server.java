@@ -19,7 +19,6 @@ class Server{
 				Socket connSocket = svSocket.accept();
 				new TreatClient(connSocket).start();
 			}
-
 		}
 		catch(Exception e){
 			System.out.println(e.getMessage());

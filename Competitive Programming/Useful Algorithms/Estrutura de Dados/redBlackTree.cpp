@@ -169,7 +169,6 @@ void RedBlackTree<T>::rotateLeft(Node<T> *&x){
 
 	y->left = x;
 	x->parent = y;
-
 }
 
 
@@ -182,6 +181,11 @@ void RedBlackTree<T>::rotateRight(Node<T> *&y){
 	if(x->right != this->NIL)
 		x->right->parent = y;
 
+	this->printInfo(x);
+	this->printInfo(y);
+	x->parent = y->parent;
+	this->printInfo(x);
+	this->printInfo(y);
 
 	if(y->parent == this->NIL)
 		this->root = x;
@@ -193,7 +197,6 @@ void RedBlackTree<T>::rotateRight(Node<T> *&y){
 
 	x->right = y;
 	y->parent = x;
-	x->parent = y->parent;
 }
 
 

@@ -19,7 +19,6 @@ class Server{
 				Socket connSocket = svSocket.accept();
 				new TreatClient(connSocket).start();
 			}
-
 		}
 		catch(Exception e){
 			System.out.println(e.getMessage());
@@ -35,7 +34,7 @@ class Server{
 		}
 
 		Integer p = Integer.parseInt(args[0]);
-		new Server(p);
+		Server s1 = new Server(p);
 	}
 	
 }

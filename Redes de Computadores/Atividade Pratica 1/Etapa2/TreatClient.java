@@ -7,7 +7,6 @@ import java.text.*;
 class TreatClient extends Thread{
 
 	private Socket connSocket;
-	static int qtdClients = 0;
 	static int qtdMessages = 0;
 
 	public TreatClient(Socket connSocket){
@@ -23,42 +22,34 @@ class TreatClient extends Thread{
 	public void run(){
 
 		String clientSentence;
-		String capSequence;
 		int idClient;
-		CustomMessage cm, sm;
+		CustomMessage cm;
 		
 		try{
-			ObjectOutputStream outToClient = new ObjectOutputStream(this.connSocket.getOutputStream());
+			
 			ObjectInputStream inFromClient = new ObjectInputStream(this.connSocket.getInputStream());
-
+			
 			cm = (CustomMessage) inFromClient.readObject();
+			clientSentence = cm.getMessage();
+			idClient = cm.getIdClient();
 
-			if(cm.getIdClient() == CustomMessage.UNKNOWN_CLIENT){	// se cliente ainda nao tem id, atribui um para ele
-				qtdClients++;
-				outToClient.writeObject(new CustomMessage(qtdClients, "server"));
-			}
-			else{
+			qtdMessages++;
+			Date dateNow = new Date();
 
-				clientSentence = cm.getMessage();
-				idClient = cm.getIdClient();
-				capSequence = clientSentence.toUpperCase() + "\n";
-
-				sm = new CustomMessage(0, "server");
-				sm.setMessage(capSequence);
-
-				qtdMessages++;
-				Date dateNow = new Date();
-
-				System.out.println("Cliente "+idClient+" disse: "+clientSentence+" - "+qtdMessages);
-				System.out.println("Enviada em: "+cm.getFormatedDate()+" - Recebida em:"+this.formatDate(dateNow));
-				System.out.println("");
-
-				outToClient.writeObject(sm);
-			}
-
-			outToClient.close(); 
-			inFromClient.close(); 
+			System.out.printf("Cliente %d disse: %s %d \nEnviada em: %s - Recebida em: %s\n\n", 
+								idClient, clientSentence, qtdMessages,
+								cm.getFormatedDate(), this.formatDate(dateNow));
+	
+			inFromClient.close();
 			this.connSocket.close();
+
+			try{
+				Thread.sleep(1000);
+			}
+			catch(InterruptedException e){
+				System.out.println("Room has been interrupted.");
+			}
+
 		}
 		catch(Exception e){
 			System.out.println(e.getMessage());
