@@ -52,6 +52,7 @@ class BinTree{
 		int lastAmmount;
 		Node<T> *root;
 		
+		Node<T> *minNode(Node<T> *z);
 		void destroy_node(Node<T> *&node);
 		void insert_node(Node<T> *&node, Node<T> *&parent, T x);
 		Node<T> *remove_node(Node<T> *&node, T x);
@@ -144,25 +145,43 @@ void BinTree<T>::insert(T x){
 
 
 template <class T>
+Node<T> *BinTree<T>::minNode(Node<T> *z){
+	Node<T> *x = z;
+	while(x->left != NULL)
+		x = x->left;
+	return x;
+}
+
+
+template <class T>
 Node<T> *BinTree<T>::remove_node(Node<T> *&node, T x){
 	if(node == NULL)
-		return NULL;
+		return node;
 	
-	if(node->key == x){
-		Node<T> *aux = node;
-		node = NULL;
-		return aux;
+	if(x < node->key)
+		node->left = this->remove_node(node->left, x);
+	else if(x > node->key)
+		node->right = this->remove_node(node->right, x);
+	else{
+
+		Node<T> *temp;
+		if(node->left == NULL){
+			temp = node->right;
+			delete node;
+			return temp;
+		}
+		else if(node->right == NULL){
+			temp = node->left;
+			delete node;
+			return temp;
+		}
+
+		temp = this->minNode(node->right);
+		node->key = temp->key;
+		node->right = this->remove_node(node->right, temp->key);
 	}
 
-	Node<T> *esq = this->remove_node(node->left, x);
-	if(esq != NULL)
-		return esq;
-
-	Node<T> *dir = this->remove_node(node->right, x);
-	if(dir != NULL)
-		return dir;
-
-	return NULL;
+	return node;
 }
 
 template <class T>
@@ -303,9 +322,10 @@ int main(){
 	int x;
 
 	BinTree<int> *bt = new BinTree<int>();
-	for(int i=0; i<MAX; i++){
-		cin >> x;
-		x = rand()%MAX;
+	
+	int vet[7] = {5, 3, 7, 2, 4, 6, 8};
+	for(int i=0; i<7; i++){
+		x = vet[i];
 		cout << x << " ";
 		bt->insert(x);
 	}
@@ -322,6 +342,19 @@ int main(){
 	cout << "Levl:"; bt->printInLevel();
 	cout << endl;
 
+	cout << endl;
+
+
+	bt->remove(2);
+	cout << "Levl:"; bt->printInLevel();
+	cout << endl;
+
+	bt->remove(3);
+	cout << "Levl:"; bt->printInLevel();
+	cout << endl;
+
+	bt->remove(5);
+	cout << "Levl:"; bt->printInLevel();
 	cout << endl;
 
 	delete bt;

@@ -1,11 +1,6 @@
 /*
 * Mais detalhes em: http://www.geeksforgeeks.org/
-* Codigo incompleto, falta a operacao de remocao
-* E a insercao tbm nao ta mto boa
-*
-* Review:
-* Melhor eh usar structs com ponteiros do que
-* classes com instancias
+* Simulacao: https://www.cs.usfca.edu/~galles/visualization/RedBlack.html
 *
 * Complexidade:
 * Inserir: 		O(logn)
@@ -18,7 +13,8 @@
 * O(1) para auxiliar
 *
 * Deixa a arvore balanceada, como a AVL,
-* porem eh melhor pois faz menos rotacoes
+* porem eh melhor para insercoes/remocoes,
+* pois faz menos rotacoes.
 */
 
 #include <iostream>
@@ -69,10 +65,6 @@ class RedBlackTree{
 		Node<T> *NIL;
 		
 		void destroy_node(Node<T> *&node);
-		
-		void transplant(Node<T> *&u, Node<T> *&v);	// not implemented
-		void removeFixUp(Node<T> *&x);				// not implemented
-		
 		Node<T> *search_node(Node<T> *&node, T x);
 		
 		void printInfo(Node<T> *&x);
@@ -83,10 +75,13 @@ class RedBlackTree{
 		
 		int calculeHeight(Node<T> *&node);
 		
-		void rotateLeft(Node<T> *&x);
-		void rotateRight(Node<T> *&y);
-		void insertFixUp(Node<T> *&x);
+		void rotateLeft(Node<T> *x);
+		void rotateRight(Node<T> *y);
+		void insertFixUp(Node<T> *x);
 
+		Node<T> *minNode(Node<T> *z);
+		void transplant(Node<T> *u, Node<T> *v);
+		void removeFixUp(Node<T> *x);
 		
 
 	public:
@@ -150,7 +145,7 @@ void RedBlackTree<T>::destroy(){
 
 
 template <class T>
-void RedBlackTree<T>::rotateLeft(Node<T> *&x){
+void RedBlackTree<T>::rotateLeft(Node<T> *x){
 	
 	Node<T> *y = x->right;
 	x->right = y->left;
@@ -173,7 +168,7 @@ void RedBlackTree<T>::rotateLeft(Node<T> *&x){
 
 
 template <class T>
-void RedBlackTree<T>::rotateRight(Node<T> *&y){
+void RedBlackTree<T>::rotateRight(Node<T> *y){
 	
 	Node<T> *x = y->left;
 	y->left = x->right;
@@ -181,11 +176,10 @@ void RedBlackTree<T>::rotateRight(Node<T> *&y){
 	if(x->right != this->NIL)
 		x->right->parent = y;
 
-	this->printInfo(x);
-	this->printInfo(y);
+	
 	x->parent = y->parent;
-	this->printInfo(x);
-	this->printInfo(y);
+
+
 
 	if(y->parent == this->NIL)
 		this->root = x;
@@ -194,19 +188,18 @@ void RedBlackTree<T>::rotateRight(Node<T> *&y){
 	else
 		y->parent->right = x;
 
-
 	x->right = y;
 	y->parent = x;
 }
 
 
 template <class T>
-void RedBlackTree<T>::insertFixUp(Node<T> *&z){
+void RedBlackTree<T>::insertFixUp(Node<T> *z){
 	
 
 	Node<T> *y;
 
-	while(z != this->root and z->parent->color == RED){
+	while(z->parent->color == RED){
 		if(z->parent == z->parent->parent->left){
 			y = z->parent->parent->right;
 			if(y->color == RED){
@@ -223,8 +216,8 @@ void RedBlackTree<T>::insertFixUp(Node<T> *&z){
 				}
 
 
-				z->parent->color = RED;
-				z->parent->parent->color = BLACK;
+				z->parent->color = BLACK;
+				z->parent->parent->color = RED;
 				this->rotateRight(z->parent->parent);
 			}
 		}
@@ -251,7 +244,6 @@ void RedBlackTree<T>::insertFixUp(Node<T> *&z){
 
 	
 	this->root->color = BLACK;
-	
 }
 
 
@@ -291,8 +283,131 @@ void RedBlackTree<T>::insert(T val){
 }
 
 
+template <class T>
+void RedBlackTree<T>::transplant(Node<T> *u, Node<T> *v){
+	if(u->parent == this->NIL)
+		this->root = v;
+	else if(u == u->parent->left)
+		u->parent->left = v;
+	else
+		u->parent->right = v;
+	v->parent = u->parent;
+}
 
+template <class T>
+Node<T> *RedBlackTree<T>::minNode(Node<T> *z){
+	Node<T> *x = z;
+	while(x->left != this->NIL)
+		x = x->left;
+	return x;
+}
 
+template <class T>
+void RedBlackTree<T>::removeFixUp(Node<T> *x){
+
+	Node<T> *w;
+
+	while(x != this->root and x->color == BLACK){
+		if(x == x->parent->left){
+
+			w = x->parent->right;
+			if(w->color == RED){
+				w->color = BLACK;
+				x->parent->color = RED;
+				this->rotateLeft(x->parent);
+				w = x->parent->right;
+			}
+
+			if(w->left->color == BLACK and w->right->color == BLACK){
+				w->color = RED;
+				x = x->parent;
+			}
+			else{
+				if(w->right->color == BLACK){
+					w->left->color = BLACK;
+					w->color = RED;
+					this->rotateRight(w);
+					w = x->parent->right;	
+				}
+
+				w->color = x->parent->color;
+				x->parent->color = BLACK;
+				w->right->color = BLACK;
+				this->rotateLeft(x->parent);
+				x = this->root;
+			}
+		}
+		else{
+
+			w = x->parent->left;
+			if(w->color == RED){
+				w->color = BLACK;
+				x->parent->color = RED;
+				this->rotateRight(x->parent);
+				w = x->parent->left;
+			}
+
+			if(w->right->color == BLACK and w->left->color == BLACK){
+				w->color = RED;
+				x = x->parent;
+			}
+			else{ 
+				if(w->left->color == BLACK){
+					w->right->color = BLACK;
+					w->color = RED;
+					this->rotateLeft(w);
+					w = x->parent->left;
+				}
+
+				w->color = x->parent->color;
+				x->parent->color = BLACK;
+				w->left->color = BLACK;
+				this->rotateRight(x->parent);
+				x = this->root;
+			}
+		}
+	}
+
+	x->color = BLACK;
+}
+
+template <class T>
+void RedBlackTree<T>::remove(T val){
+	Node<T> *z = this->search(val);
+	Node<T> *x;
+	Node<T> *y = z;
+	
+	char originalColor = y->color;
+
+	if(z->left == this->NIL){
+		x = z->right;
+		this->transplant(z, z->right);
+	}
+	else if(z->right == this->NIL){
+		x = z->left;
+		this->transplant(z, z->left);
+	}
+	else{
+		y = this->minNode(z->right);
+		originalColor = y->color;
+		x = y->right;
+		if(y->parent == z)
+			x->parent = y;
+		else{
+			this->transplant(y, y->right);
+			y->right = z->right;
+			y->right->parent = y;
+		}
+
+		this->transplant(z, y);
+		y->left = z->left;
+		y->left->parent = y;
+		y->color = z->color;
+	}
+
+	if(originalColor == BLACK)
+		this->removeFixUp(x);
+}
 
 
 
@@ -472,21 +587,17 @@ int main(){
 	cout << endl;
 	
 
-	/*
-	
-	cout << endl << "Search ("<< x <<"):" << endl;
-	Node<int> *n1 = bt->search(x);
-	if(n1->parent == NULL)
-		cout << n1->key << endl;
-	else
-		cout << n1->parent->key << " -> " << x << endl;
-	
+	bt->remove(5);
 
-	cout << endl << "Remove ("<< x <<"):" << endl;
-	bt->remove(x);
+	cout << endl;
+	cout << "Level:" << endl; 
 	bt->printInLevel();
+	cout << endl;
 
-	cout << endl;*/
+
+	cout << "Node 11:" << endl;
+	Node<int> *n1 = bt->search(11);
+	cout << n1->key << " " << n1->color << endl;
 
 	delete bt;
 
