@@ -96,9 +96,12 @@ class IntervalTree{
 		void destroy();
 		
 		void insert(T i, T j);
-		void remove(T x);	// not implemented
+		void remove(T x);
 		Node<T> *searchElement(T x);
-		Node<T> *search(T i, T j);
+		Node<T> *searchInterval(T i, T j);
+		Node<T> *searchMinInterval(T i, T j);
+		Node<T> *searchExactInterval(T i, T j);
+		Node<T> *overlapList(T i, T j);	// not implement
 
 		// news methods
 		Node<T> *nthSelect(int i);
@@ -591,7 +594,7 @@ bool IntervalTree<T>::overlap(T i1, T j1, T i2, T j2){
 
 
 template <class T>
-Node<T> *IntervalTree<T>::search(T i, T j){
+Node<T> *IntervalTree<T>::searchInterval(T i, T j){
 	Node<T> *x = this->root;
 
 	while(x != this->NIL and !this->overlap(i, j, x->key.first, x->key.second)){
@@ -604,6 +607,35 @@ Node<T> *IntervalTree<T>::search(T i, T j){
 
 	return x;
 }
+
+
+template <class T>
+Node<T> *IntervalTree<T>::searchMinInterval(T i, T j){
+	Node<T> *x = this->root;
+
+	while(x != this->NIL){
+		if(x->left != this->NIL and x->left->max >= i)
+			x = x->left;
+		else{
+			if(this->overlap(i, j, x->key.first, x->key.second))
+				return x;
+			x = x->right;
+		}
+	}
+
+	return this->NIL;
+}
+
+
+template <class T>
+Node<T> *IntervalTree<T>::searchExactInterval(T i, T j){
+	Node<T> *x = this->searchElement(i);
+	if(x == this->NIL or x->key.second != j)
+		return this->NIL;
+	return x;
+}
+
+
 
 
 
@@ -804,7 +836,15 @@ int main(){
 	cout << endl;
 
 	cout << "In interval [22, 25]: ";
-	n1 = bt->search(14, 25);
+	n1 = bt->searchInterval(22, 25);
+	cout << n1->key.first << "," << n1->key.second << " " << n1->color << endl;
+
+	cout << "In min interval [14, 25]: ";
+	n1 = bt->searchMinInterval(14, 25);
+	cout << n1->key.first << "," << n1->key.second << " " << n1->color << endl;
+
+	cout << "In exact interval [17, 19]: ";
+	n1 = bt->searchExactInterval(17, 19);
 	cout << n1->key.first << "," << n1->key.second << " " << n1->color << endl;
 
 

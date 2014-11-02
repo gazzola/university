@@ -91,7 +91,7 @@ class RedBlackTree{
 		void destroy();
 		
 		void insert(T x);
-		void remove(T x);	// not implemented
+		void remove(T x);
 		Node<T> *search(T x);
 		
 		
