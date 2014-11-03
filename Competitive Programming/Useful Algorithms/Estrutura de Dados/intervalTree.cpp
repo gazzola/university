@@ -101,7 +101,8 @@ class IntervalTree{
 		Node<T> *searchInterval(T i, T j);
 		Node<T> *searchMinInterval(T i, T j);
 		Node<T> *searchExactInterval(T i, T j);
-		Node<T> *overlapList(T i, T j);	// not implement
+		Node<T> *overlapList(Node<T> *x, T i, T j);
+		Node<T> *overlapList(T i, T j);
 
 		// news methods
 		Node<T> *nthSelect(int i);
@@ -637,6 +638,25 @@ Node<T> *IntervalTree<T>::searchExactInterval(T i, T j){
 
 
 
+template <class T>
+Node<T> *IntervalTree<T>::overlapList(Node<T> *x, T i, T j){
+	if(this->overlap(i, j, x->key.first, x->key.second))
+		cout << x->key.first << " ";
+
+	if(x->left != this->NIL and x->left->max >= i)
+		this->overlapList(x->left, i, j);
+
+	if(x->key.first <= j and x->right != this->NIL and x->right->max >= i)
+		this->overlapList(x->right, i, j);
+
+	return x;
+}
+
+template <class T>
+Node<T> *IntervalTree<T>::overlapList(T i, T j){
+	return this->overlapList(this->root, i, j);
+}
+
 
 
 template <class T>
@@ -847,6 +867,11 @@ int main(){
 	n1 = bt->searchExactInterval(17, 19);
 	cout << n1->key.first << "," << n1->key.second << " " << n1->color << endl;
 
+	cout << endl;
+
+	cout << "Overlap list of intervlal [14, 24]: ";
+	bt->overlapList(14, 24);
+	cout << endl;
 
 	delete bt;
 
