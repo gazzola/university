@@ -21,7 +21,7 @@ typedef long unsigned int lu;
 typedef long double Lf;
 typedef pair<int, int> ii;
 typedef tuple<int, int, int> iii; //C++11
-
+typedef vector<int> vi;
 
 
 // functions

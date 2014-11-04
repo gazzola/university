@@ -116,8 +116,8 @@ int num_divisors(llu n){
 
 // essa funcao tem erros por causa da precisao do epsilon
 bool ehQuadradoPerfeito(llu x){
-	double y = sqrt(x);
-	if(y == (int) y)
+	llu y = round(sqrt(x));
+	if(y*y == x)
 		return true;
 	return false;
 }
@@ -147,7 +147,6 @@ bool ehQuadradoPerfeito_Bissecao(llu x){
 	}
 
 	return false;
-
 }
 
 
@@ -157,12 +156,22 @@ int main(){
 	int n;
 	llu x;
 
+	bool ehQP[10000];
+	memset(ehQP, false, sizeof(ehQP));
+
 	while(scanf("%d", &n) and n > 0){
 		int soma = 0;
 		while(n--){
 			scanf("%llu", &x);
-			if(ehQuadradoPerfeito_Bissecao(x))
+			if(x < 10000 and ehQP[x])
 				soma++;
+			else{
+				if(ehQuadradoPerfeito(x)){
+					if(x < 10000)
+					ehQP[x] = true;
+					soma++;
+				}
+			}
 		}
 
 		if(soma % 2 == 0)
