@@ -9,7 +9,7 @@
 * O(n) para vetor
 * O(1) para auxiliar
 *
-* Politica: LIFO
+* Politica: FIFO
 */
 
 #include <cstdio>

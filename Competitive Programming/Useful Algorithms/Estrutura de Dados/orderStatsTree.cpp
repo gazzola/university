@@ -95,6 +95,7 @@ class OrderStatsTree{
 		
 		void insert(T x);
 		void remove(T x);
+		void remove(Node<T> *z);
 		Node<T> *search(T x);
 
 		// news methods
@@ -107,6 +108,8 @@ class OrderStatsTree{
 		Node<T> *successor(Node<T> *x);
 		Node<T> *getMaximum();
 		Node<T> *getMinimum();
+
+		Node<T> *josephusProblem(int n, int m);
 
 
 		bool empty();
@@ -449,6 +452,50 @@ void OrderStatsTree<T>::remove(T val){
 		this->removeFixUp(x);
 }
 
+template <class T>
+void OrderStatsTree<T>::remove(Node<T> *z){
+
+	Node<T> *aux = z;
+	while(aux != this->NIL){
+		aux->size--;
+		aux = aux->parent;
+	}
+
+	Node<T> *x;
+	Node<T> *y = z;
+	
+	char originalColor = y->color;
+
+	if(z->left == this->NIL){
+		x = z->right;
+		this->transplant(z, z->right);
+	}
+	else if(z->right == this->NIL){
+		x = z->left;
+		this->transplant(z, z->left);
+	}
+	else{
+		y = this->minNode(z->right);
+		originalColor = y->color;
+		x = y->right;
+		if(y->parent == z)
+			x->parent = y;
+		else{
+			this->transplant(y, y->right);
+			y->right = z->right;
+			y->right->parent = y;
+		}
+
+		this->transplant(z, y);
+		y->left = z->left;
+		y->left->parent = y;
+		y->color = z->color;
+	}
+
+	if(originalColor == BLACK)
+		this->removeFixUp(x);
+}
+
 
 
 template <class T>
@@ -555,6 +602,26 @@ Node<T> *OrderStatsTree<T>::getMaximum(){
 template <class T>
 Node<T> *OrderStatsTree<T>::getMinimum(){
 	return this->minimum;
+}
+
+
+template <class T>
+Node<T> *OrderStatsTree<T>::josephusProblem(int n, int m){
+	
+	for(int i=1; i<=n; i++)
+		this->insert(i);
+
+	int j = 1;
+	Node<T> *x;
+
+	for(int k=n; k>1; k--){
+		j = ((j+m-2)%k)+1;
+		x = this->nthSelect(j);
+		cout << x->key << " ";
+		this->remove(x);
+	}
+
+	return this->root;
 }
 
 
@@ -696,6 +763,13 @@ int main(){
 
 	srand(time(NULL));
 	OrderStatsTree<int> *bt = new OrderStatsTree<int>();
+
+	cout << "Josepus (7,3): ";
+	Node<int> *vivo = bt->josephusProblem(7, 3);
+	cout << endl << "Vivo: " << vivo->key << endl;
+	bt->remove(vivo);
+
+
 
 	int x = 0;
 	int vet[9] = {11, 2, 14, 1, 7, 15, 5, 8, 4};

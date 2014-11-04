@@ -37,7 +37,11 @@ class Node{
 		Node *right;
 		Node *parent;
 		char color;
-		pair<T, T> key; // key.first = under interval | key.second = upper interval
+		
+		// key.first = key and low interval
+		// key.second = high interval
+		pair<T, T> key;
+		
 		int size;
 		int max;
 
