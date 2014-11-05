@@ -1,16 +1,14 @@
 /*
 *
-* NAO ESlluA FUNCIONANDO AINDA
+* File: Problema F - Teletransporte
+* Author: Marcos V. Treviso
 *
-* File: Problema F - llueletransporte
-* Author: Marcos V. llureviso
-*
-* Complexity: O()
+* Complexity: O(n^3 log n)
 *
 * Description: 
 *	- 
 *
-* Compile: g++ -o teste F-llueletransporte.cpp -Wall -Wextra
+* Compile: g++ -o teste F-Teletransporte.cpp -Wall -Wextra
 * Run: ./teste < <arquivo.txt>
 *
 */
@@ -20,77 +18,58 @@
 #include <cstdlib>
 #include <cmath>
 #include <vector>
-#include <deque>
-#include <map>
-#include <string>
+#include <cstring>
+#include <algorithm>
+#include <cstdint>
 
 using namespace std;
 
+
 typedef long int llu;
 
-llu MOD = 10000;
 
-llu matrixFim[100][100];
-llu matrixMul[100][100];
+const int SIZE = 10000;
+const int MOD = 10000;
 
 
-void multiplica(llu a[100][100], llu b[100][100], int n){
-	int i,j,k;
-	
-	for(i=0;i<n;i++){
-		for(j=0;j<n;j++){
-			matrixMul[i][j] = llu();    
-			for(k=0;k<n;k++){
-				matrixMul[i][j] += a[i][k]*b[k][j] % MOD;
+void multiplica(llu *a, llu *b, int n, llu *c){
+
+	register int i, j, k;
+	llu mul[10000], temp;
+	memset(mul, 0, sizeof(mul));
+
+	for(i=0; i<n; ++i){
+		for(k=0; k<n; ++k){
+			temp = a[i*n + k];
+			for(j=0; j<n; ++j){
+				mul[i*n + j] += (temp * b[k*n + j])%10000;
 			}
 		}
 	}
-
-	for(i=0;i<n;i++)
-		for(j=0;j<n;j++)
-			matrixFim[i][j] = matrixMul[i][j];
-
+	
+	for(i=0; i<n*n; i++)
+		c[i] = mul[i];
 }
- 
 
-void exp(llu a[100][100], int n, int m){
+
+
+llu exp(llu *a, int n, int l, int s, int t){
 	
-	int i,j;
+	llu res[10000];
+
+	for(int i=0; i<n; i++)
+		for(int j=0; j<n; j++)
+			res[i*n + j] = (i==j) ? 1 : 0;
+
+	while(l > 0){
+		if(l % 2 == 1)
+			multiplica(res, a, n, res);
 	
-
-	if(m==0){
-		for(i=0;i<n;i++){
-			for(j=0;j<n;j++){
-				if(i==j) 
-					matrixFim[i][j] = (llu)1;
-				else 
-					matrixFim[i][j] = (llu)0;
-			}
-		}
+		multiplica(a, a, n, a);
+		l /= 2;
 	}
-	else if(m==1){
-		for(i=0;i<n;i++)
-			for(j=0;j<n;j++)
-				matrixFim[i][j] = a[i][j];
-	}
-	else if(m%2 == 0){
-		exp(a, n, (int)m/2);
-		multiplica(matrixFim, matrixFim, n);
 
-		for(i=0;i<n;i++)
-			for(j=0;j<n;j++)
-				matrixFim[i][j] = matrixMul[i][j];
-
-	}
-	else if(m%2==1){
-		exp(a,n,m-1);
-		multiplica(matrixFim, a, n);
-		for(i=0;i<n;i++)
-			for(j=0;j<n;j++)
-				matrixFim[i][j] = matrixMul[i][j];
-	}
-	
-
+	return res[n*(s-1) + t-1]%10000;
 }
 
 int main(){
@@ -98,30 +77,22 @@ int main(){
 	
 	
 	int n, l, s, t, x;
-
+	llu naves[SIZE];
 
 	while(scanf("%d %d %d %d", &n, &l, &s, &t) != EOF){
 
-		llu naves[100][100];		
-		for(int i=0; i<n; i++)
-			for(int j=0; j<n; j++)
-				naves[i][j] = 0;
+		memset(naves, 0, sizeof(naves));
 
 		for(int i=0; i<n; i++){
 			for(int j=0; j<4; j++){
 				scanf("%d", &x);
-				naves[i][--x] += 1;
+				naves[i*n + x-1] += 1;
 			}
 		}
-
-		exp(naves, n, l);
-		printf("%ld\n", matrixFim[s-1][t-1]%MOD);
+		
+		printf("%lu\n", exp(naves, n, l, s, t));
 
 	}
-
-
-
-
 
 	return 0;
 }

@@ -13,12 +13,28 @@
 *
 */
 
-
+#include <iostream>
 #include <cstdio>
 #include <cmath>
+#include <climits>
+#include <vector>
+
+using namespace std;
 
 typedef long long unsigned int llu;
 typedef long long signed int lls;
+typedef pair<lls, lls> ll;
+
+typedef struct triple{
+	llu first, second, third;
+
+	triple(){}
+	triple(llu f, llu s, llu t){
+		first = f;
+		second = s;
+		third = t;
+	}
+}triple;
 
 
 // algoritmo de euclides para calcular o mdc de 2 nums
@@ -63,6 +79,7 @@ lls inv(lls a, lls MOD){
 }
 
 
+
 // regra: mdc(n, e) == 1
 
 // totiente = quantos numeros respeitam a regra
@@ -88,6 +105,37 @@ llu totiente(llu n){
 	return total;
 }
 
+
+ 
+llu totient(llu n) {
+    if (n == 1)
+        return 1ll;
+    llu out = n;
+    // 2
+    if (n % 2 == 0) {
+        out -= out / 2;
+        do
+            n /= 2;
+        while (n % 2 == 0);
+    }
+    // odds
+    for (unsigned int i = 3; i * i <= n; i += 2)
+        if (n % i == 0) {
+            out -= out / i;
+            do
+                n /= i;
+            while (n % i == 0);
+        }
+    //
+    if (n > 1)
+        out -= out / n;
+    return out;
+}
+
+
+
+
+
 // inverso multiplicativo de e mod totiente
 llu getD(llu e, llu totiente){
 	return inv(e, totiente);
@@ -110,16 +158,37 @@ llu powmod(llu c, llu d, llu n){
 
 }
 
+// funcao em log n
+// exponentiation by squaring
+llu PowMod(llu x, llu e, llu mod){
+	
+	if(e == 0)
+		return 1;
+
+	if(e == 1)
+		return x;
+	
+	llu res;
+	res = PowMod(x, e/2, mod);
+	res = res * res % mod;
+
+	if(e % 2 == 1)
+		res = res * x % mod;
+
+	return res;
+}
+
+
 int main(){
 
+	
 	llu n, e, c;
 	while(scanf("%llu %llu %llu", &n, &e, &c) != EOF){
 
-		llu tot = totiente(n);
+		llu tot = totient(n);
 		llu d = getD(e, tot);
+		llu res = PowMod(c, d, n);
 
-		//llu res = (llu) pow(c, d) % n; //overflow
-		llu res = powmod(c, d, n);
 		printf("%llu\n", res);
 	}
 
