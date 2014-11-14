@@ -40,7 +40,7 @@ class TreatClient extends Thread{
 			qtdMessages++;
 			Date dateNow = new Date();
 
-			System.out.printf("Cliente %d disse: %s %d \nEnviada em: %s - Recebida em: %s \nAtraso: %fms.\n\n", 
+			System.out.printf("Cliente %d disse: %s %d \nEnviada em: %s - Recebida em: %s \nAtraso: %.3fms.\n\n", 
 								idClient, clientSentence, qtdMessages,
 								cm.getFormatedDate(), this.formatDate(dateNow),
 								this.getDiffDate(dateNow, cm.getDate()));
@@ -52,7 +52,7 @@ class TreatClient extends Thread{
 				Thread.sleep(1000);
 			}
 			catch(InterruptedException e){
-				System.out.println("Room has been interrupted.");
+				System.out.println("Interrupted.");
 			}
 
 		}
