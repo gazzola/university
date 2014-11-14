@@ -3,18 +3,19 @@
 
 using namespace std;
 
-#define PI 3.14159
+const double PI = 3.14159;
 
 
 int main(){
 
-	int radius;
+	int r;
 	double result;
 
-	cin >> radius;
-	result = (4.0/3) * PI * (radius*radius*radius);
+	cin >> r;
+	result = 4.0/3 * PI * radius*radius*radius;
 
-	cout << "VOLUME = " << fixed << setprecision(3) << result << endl;
+
+	printf("VOLUME = %.3lf\n", result);
 
 	return 0;
 }

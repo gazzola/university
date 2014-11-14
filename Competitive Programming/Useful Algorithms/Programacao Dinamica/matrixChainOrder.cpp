@@ -1,12 +1,12 @@
 /*
 * Complexidade:
-* Pior Caso: 	O(n^2) com PD c.c O(2^n)
-* Caso medio: 	O(n^2) com PD c.c O(2^n)
-* Melhor Caso:	O(n^2) com PD c.c O(2^n)
+* Pior Caso: 	O(n^3)
+* Caso medio: 	O(n^3)
+* Melhor Caso:	O(n^3)
 *
 * Memoria usada: 
 * O(n) para vetor
-* O(n) para auxiliar com PD c.c O(1)
+* O(n^2) para tabela
 *
 */
 
