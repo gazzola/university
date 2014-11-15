@@ -27,3 +27,5 @@
 ### Utilidades:
 * Métodos para encontrar o valor de PI.
 * Métodos para intervalo de raízes.
+* Métodos para interpolção linear e quadrática.
+* Resolvedor de sistemas linear 2x2 e 3x3.
