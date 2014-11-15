@@ -1,9 +1,3 @@
-'''
-' Calculo Numerico - Trabalho 3
-' Fabricio N. Hubert (121151513)
-'''
-
-
 import math
 # ver metodos disponiveis na math:
 # print(dir(math))

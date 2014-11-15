@@ -1,9 +1,4 @@
-'''
-' Calculo Numerico - Trabalho 5
-' Fabricio N. Hubert (121151513)
-'''
-
-
+import math
 
 
 def eliminacaoGaussiana(matriz, vetor):

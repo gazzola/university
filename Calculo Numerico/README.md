@@ -5,18 +5,18 @@
 * Trab 1: Conversor de decimal para binário e vice-versa.
 
 
-### Zeros de Funções
+### Zeros de Funções:
 * Trab 2: Método da Bisseção
 * Trab 3: Método de Newton-Raphson
 
 
-### Zeros de Polinômios
+### Zeros de Polinômios:
 * Trab 4: Algoritmo de Briot-Ruffini
 
 
 ### Ajuste de Funções: 
-* Trab 5: Ajuste linear
-* Trab 6: Ajuste quadrático
+* Trab 5: Ajuste Linear
+* Trab 6: Ajuste Quadrático
 
 
 ### Interpolação:

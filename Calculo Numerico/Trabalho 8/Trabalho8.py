@@ -1,8 +1,4 @@
-'''
-' Calculo Numerico - Trabalho 8
-' Fabricio N. Hubert (121151513)
-'''
-
+import math
 
 n = 5
 x = [0.2, 0.4, 0.6, 0.8, 1.0]
@@ -28,6 +24,23 @@ def newton():
 		print("")
 
 
+
+def roundp(number, precision):
+	return  ("{:."+str(precision)+"f}").format(number) 
+
+
+def polynomial(p=4):
+	
+	polynom = roundp(y[0], p)
+	for i in range(1, n):
+		polynom += " + "
+		for j in range(0, i):
+			polynom += "(x - "+roundp(x[j], p)+")*"
+		polynom += "("+roundp(mat[i][i], p)+")"
+
+	return polynom
+
+
 def phi(valorX):
 
 	total = y[0]
@@ -40,8 +53,6 @@ def phi(valorX):
 	return total
 
 
-
-
 print("Metodo de Newton para valores: ")
 print("X: ", end="")
 print(x)
@@ -52,6 +63,9 @@ print("Tabela de solucao: ")
 newton();
 print("")
 
+print("Polinomio gerador: ")
+print("Phi(x) = "+polynomial())
+print("")
 
 while(True):
 	print("Digite o valor de X ou `CTRL-C` para parar:")

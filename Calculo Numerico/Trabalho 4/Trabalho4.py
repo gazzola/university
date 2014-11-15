@@ -1,9 +1,3 @@
-'''
-' Calculo Numerico - Trabalho 4
-' Fabricio N. Hubert (121151513)
-'''
-
-
 import math
 
 coeficientes = []

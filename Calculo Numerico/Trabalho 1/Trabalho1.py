@@ -1,8 +1,3 @@
-'''
-' Calculo Numero - Trabalho 1
-' Fabricio N. Hubert (121151513)
-'''
-
 import math
 
 def inteiroParaBinario(inteiro):

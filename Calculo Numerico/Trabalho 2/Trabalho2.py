@@ -1,8 +1,3 @@
-'''
-' Calculo Numerico - Trabalho 2
-' Fabricio N. Hubert (121151513)
-'''
-
 from decimal import Decimal
 from math import ceil, floor
 

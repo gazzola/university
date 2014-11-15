@@ -116,3 +116,4 @@ if __name__ == "__main__":
 	test("Newton", pi_newton, 48)
 	test("Takano", pi_takano, 1)
 	test("Stormer", pi_stormer, 1)
+
