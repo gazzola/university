@@ -47,7 +47,7 @@ class TreatClient extends Thread{
 				Thread.sleep(1000);
 			}
 			catch(InterruptedException e){
-				System.out.println("Room has been interrupted.");
+				System.out.println("Interrupted.");
 			}
 
 		}

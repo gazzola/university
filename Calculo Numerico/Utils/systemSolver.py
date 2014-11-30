@@ -1,4 +1,59 @@
 import math
+import numpy as np
+
+
+def solve(matriz, vetor):
+	a = np.array(matriz)
+	b = np.array(vetor)
+	return np.linalg.solve(a, b)
+
+
+def gauss(matriz, vetor):
+
+	n = len(matriz)
+	for i in range(n):
+		matriz[i].append(vetor[i])
+
+
+	for i in range(n):
+		
+		# Search for maximum in this column
+		maxEl = abs(matriz[i][i])
+		maxRow = i
+		for k in range(i+1, n):
+			if abs(matriz[k][i]) > maxEl:
+				maxEl = abs(matriz[k][i])
+				maxRow = k
+
+		
+		# Swap maximum row with current row (column by column)
+		for k in range(i, n+1):
+			tmp = matriz[maxRow][k]
+			matriz[maxRow][k] = matriz[i][k]
+			matriz[i][k] = tmp
+
+		
+		# Make all rows below this one 0 in current column
+		for k in range(i+1, n):
+			c = -matriz[k][i]/matriz[i][i]
+			for j in range(i, n+1):
+				if i == j:
+					matriz[k][j] = 0
+				else:
+					matriz[k][j] += c * matriz[i][j]
+
+
+	# Solve equation Ax=b for an upper triangular matrix matriz
+	x = [0 for i in range(n)]
+	for i in range(n-1, -1, -1):
+		x[i] = matriz[i][n]/matriz[i][i]
+		for k in range(i-1, -1, -1):
+			matriz[k][n] -= matriz[k][i] * x[i]
+
+	return x
+
+
+
 
 def eliminacaoGaussiana3(matriz, vetor):
 
@@ -58,3 +113,16 @@ def eliminacaoGaussiana2(matriz, vetor):
 	x1 = (vetor[0] - matriz[0][1]*x2)/matriz[0][0]  
 	
 	return (x1, x2)
+
+
+
+
+
+if __name__ == "__main__":
+	
+	n = 3
+	mat = [[i+j+1 for j in range(n)] for i in range(n)]
+	vet = [i for i in range(n)]
+
+	x = solve(mat, vet)
+	print(x)

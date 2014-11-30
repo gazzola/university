@@ -7,11 +7,13 @@ class Client{
 	private String host;
 	private int port;
 	private int id;
+	private int sleepTime;
 
-	public Client(String host, int port, int id){
+	public Client(String host, int port, int id, int s){
 		this.host = host;
 		this.port = port;
 		this.id = id;
+		this.sleepTime = s;
 	}
 
 	public void run() throws Exception{
@@ -27,6 +29,8 @@ class Client{
 				CustomMessage cm = new CustomMessage(id, hostName);
 				cm.setMessage("msg");
 				outToServer.writeObject(cm);
+				
+				Thread.sleep(this.sleepTime);
 			}
 		}
 		catch(Exception e){
@@ -45,6 +49,6 @@ class Client{
 
 		Integer p = Integer.parseInt(args[0]);
 		Integer id = Integer.parseInt(args[1]);
-		new Client("127.0.0.1", p, id).run();
+		new Client("127.0.0.1", p, id, 0).run();
 	}
 }
