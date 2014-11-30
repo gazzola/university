@@ -18,7 +18,7 @@
 *
 * Instrucoes:
 * ---
-* Compile: g++ -o trab Trabalho10.cpp -Wall -Wextra
+* Compile: g++ -o trab Trabalho11.cpp -Wall -Wextra
 * Run: ./trab
 *
 */
