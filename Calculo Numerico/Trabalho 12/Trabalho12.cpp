@@ -1,5 +1,5 @@
 /*
-* Trabalho 11.
+* Trabalho 12.
 * Implemente a Fatoração LU
 *
 * Calculo Numerico

@@ -24,6 +24,23 @@
 * Trab 8: Método de Newton
 
 
+### Integração Numérica:
+* Trab 9: Método dos Retângulos e Método dos Trapézios
+* Trab 10: Regra de Simpson
+* Trab 11: Método de Newton-Côtes
+
+
+### Resolução de Sistemas Lineares:
+* Trab 12: Fatoração LU
+* Trab 13: Métodos de Jacobi e Gauss-Seidel
+
+
+### Equações Diferenciais OrdináriasÇ
+* Trab 14: Método de Euler
+* Trab 15: Método de Runge-Kutta [-]
+* Trab 16: Integração das implementações [-]
+
+
 ### Utilidades:
 * Métodos para encontrar o valor de PI.
 * Métodos para intervalo de raízes.
