@@ -2,7 +2,7 @@
 
 
 ### Sistemas Numéricos:
-* Trab 1: Conversor de decimal para binário e vice-versa.
+* Trab 1: Conversor de decimal para binário e vice-versa
 
 
 ### Zeros de Funções:
@@ -35,14 +35,14 @@
 * Trab 13: Métodos de Jacobi e Gauss-Seidel
 
 
-### Equações Diferenciais OrdináriasÇ
+### Equações Diferenciais Ordinárias:
 * Trab 14: Método de Euler
-* Trab 15: Método de Runge-Kutta [-]
-* Trab 16: Integração das implementações [-]
+* Trab 15: Método de Runge-Kutta
+* Trab 16: Integração das implementações
 
 
 ### Utilidades:
-* Métodos para encontrar o valor de PI.
-* Métodos para intervalo de raízes.
-* Métodos para interpolção linear e quadrática.
-* Resolvedor de sistemas linear 2x2 e 3x3.
+* Métodos para encontrar o valor de PI
+* Métodos para intervalo de raízes
+* Métodos para interpolção linear e quadrática
+* Resolvedor de sistemas linear 2x2 e 3x3
