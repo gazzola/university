@@ -1,0 +1,1201 @@
+
+
+Exec #1ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00630116462708
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15615987777710
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #2ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00834894180298
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15581393241882
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #3ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00540399551392
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15565705299377
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #4ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00545597076416
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15572810173035
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #5ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00542998313904
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15583395957947
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #6ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00745010375977
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15600419044495
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #7ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00584483146667
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15541982650757
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #8ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00757789611816
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15662002563477
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #9ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00540208816528
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15590286254883
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #10ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00544500350952
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15587687492371
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #11ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00550007820129
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15584397315979
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #12ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00817799568176
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15610599517822
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #13ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00572991371155
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15585994720459
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #14ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00743293762207
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15569591522217
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #15ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00735211372375
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15589785575867
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #16ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00546598434448
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15602707862854
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #17ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00767517089844
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15589499473572
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #18ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00544095039368
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15550303459167
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #19ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00805282592773
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15495300292969
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #20ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00834107398987
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15577697753906
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #21ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00708103179932
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15570592880249
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #22ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00757789611816
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15597081184387
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #23ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00745201110840
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15465402603149
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #24ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00834488868713
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15618300437927
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #25ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00765419006348
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15577888488770
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #26ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00688695907593
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15544891357422
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #27ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00809001922607
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15585088729858
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #28ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00555014610291
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15550708770752
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #29ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00540614128113
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15603899955750
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #30ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00664615631104
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15560793876648
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #31ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00833511352539
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15572214126587
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #32ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00833988189697
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15574407577515
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #33ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00833678245544
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15616893768311
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #34ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00660800933838
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15587806701660
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #35ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00544810295105
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15591788291931
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #36ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00638484954834
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15580081939697
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #37ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00602102279663
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15607213973999
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #38ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00772190093994
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15612983703613
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #39ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00721812248230
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15581512451172
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #40ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00545001029968
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15553808212280
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #41ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00833582878113
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15618801116943
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #42ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00835084915161
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15556406974792
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #43ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00542402267456
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15601420402527
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #44ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00595092773438
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15568089485168
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #45ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00748991966248
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15577101707458
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #46ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00543904304504
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15550613403320
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #47ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00542807579041
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15639209747314
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #48ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00544714927673
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15578007698059
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #49ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00833797454834
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15593314170837
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+Exec #50ENTRADA 1:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.00625085830688
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/EAX
+Key Length: 16
+Time: 0.15590190887451
+
+Blowfish/GCM: block size of underlying block cipher is not 16
+
+Blowfish/CCM: block size of underlying block cipher is not 16
+

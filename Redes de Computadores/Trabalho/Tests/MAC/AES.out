@@ -1,0 +1,1701 @@
+
+
+Exec #1
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00084400177002
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00039505958557
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064897537231
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02173495292664
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01249694824219
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02036595344543
+
+
+Exec #2
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00089001655579
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00039100646973
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064992904663
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02168083190918
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01281404495239
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02055215835571
+
+
+Exec #3
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00147914886475
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00070714950562
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00077509880066
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02170801162720
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01254796981812
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02032613754272
+
+
+Exec #4
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00099682807922
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00039005279541
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064706802368
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02170515060425
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01260900497437
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02040600776672
+
+
+Exec #5
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00086593627930
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00040698051453
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064611434937
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02168798446655
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01268506050110
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02048397064209
+
+
+Exec #6
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00084614753723
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00039005279541
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064706802368
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02149605751038
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01262307167053
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02042102813721
+
+
+Exec #7
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00166702270508
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00081014633179
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00090289115906
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02158999443054
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01287293434143
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02046203613281
+
+
+Exec #8
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00118684768677
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00039196014404
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064611434937
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02152514457703
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01264500617981
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02035999298096
+
+
+Exec #9
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00133419036865
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00063681602478
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00108194351196
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02190613746643
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01252508163452
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02033710479736
+
+
+Exec #10
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00093483924866
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00040578842163
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064611434937
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02150201797485
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01254081726074
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02059006690979
+
+
+Exec #11
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00155186653137
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00039100646973
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064492225647
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02173089981079
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01258111000061
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02040410041809
+
+
+Exec #12
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00141000747681
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00068497657776
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00078392028809
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02155303955078
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01251292228699
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02046012878418
+
+
+Exec #13
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00209212303162
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00103306770325
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00069189071655
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02150416374207
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01335883140564
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02041506767273
+
+
+Exec #14
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00086903572083
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00039291381836
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064706802368
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02175688743591
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01245093345642
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02026200294495
+
+
+Exec #15
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00083589553833
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00039291381836
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064492225647
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02179312705994
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01264905929565
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02050518989563
+
+
+Exec #16
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00083589553833
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00038695335388
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064516067505
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02082395553589
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01142406463623
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.01935315132141
+
+
+Exec #17
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00140500068665
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00039100646973
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064682960510
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02164316177368
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01274704933167
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02066802978516
+
+
+Exec #18
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00084710121155
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00038695335388
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00066900253296
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02076911926270
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01155400276184
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.01931405067444
+
+
+Exec #19
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00088882446289
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00039505958557
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00065088272095
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02191615104675
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01291584968567
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02068090438843
+
+
+Exec #20
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00084114074707
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00039410591125
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064897537231
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02169990539551
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01257109642029
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02044606208801
+
+
+Exec #21
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00084710121155
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00038814544678
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00065016746521
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02144908905029
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01259994506836
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02056193351746
+
+
+Exec #22
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00085306167603
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00039196014404
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064587593079
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02143311500549
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01256990432739
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02026510238647
+
+
+Exec #23
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00084710121155
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00039005279541
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00068902969360
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02164602279663
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01259303092957
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02040696144104
+
+
+Exec #24
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00087594985962
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00041508674622
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00068593025208
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02144980430603
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01266694068909
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02058792114258
+
+
+Exec #25
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00127005577087
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00060105323792
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00102210044861
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02167391777039
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01248002052307
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02026700973511
+
+
+Exec #26
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00084900856018
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00039315223694
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064587593079
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02159595489502
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01247596740723
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02120018005371
+
+
+Exec #27
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00135707855225
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00063204765320
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00105404853821
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02164793014526
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01249909400940
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02048707008362
+
+
+Exec #28
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00140690803528
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00040006637573
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00070786476135
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02161502838135
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01244807243347
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02036309242249
+
+
+Exec #29
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00088500976562
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00039196014404
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064897537231
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02195501327515
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01273894309998
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02059412002563
+
+
+Exec #30
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00094604492188
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00039100646973
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00067901611328
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02160596847534
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01260304450989
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02033782005310
+
+
+Exec #31
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00085520744324
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00039005279541
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064682960510
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02178788185120
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01265406608582
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02050900459290
+
+
+Exec #32
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00140285491943
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00067496299744
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00112104415894
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02150797843933
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01253509521484
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02044296264648
+
+
+Exec #33
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00134420394897
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00065112113953
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00105500221252
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02157902717590
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01326394081116
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02047586441040
+
+
+Exec #34
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00086593627930
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00040197372437
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00069713592529
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02185297012329
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01266717910767
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02044200897217
+
+
+Exec #35
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00089693069458
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00040793418884
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064611434937
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02156996726990
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01273012161255
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02055597305298
+
+
+Exec #36
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00085806846619
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00039100646973
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064611434937
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02201795578003
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01276397705078
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02065491676331
+
+
+Exec #37
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00195884704590
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00092482566833
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00088500976562
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02170300483704
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01252198219299
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02041697502136
+
+
+Exec #38
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00084280967712
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00038909912109
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064897537231
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02164196968079
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01271295547485
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02053189277649
+
+
+Exec #39
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00187587738037
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00039100646973
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064802169800
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02184200286865
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01288008689880
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02059102058411
+
+
+Exec #40
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00084781646729
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00038886070251
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064706802368
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02241182327271
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01249694824219
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02031898498535
+
+
+Exec #41
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00084018707275
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00038814544678
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064682960510
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02171301841736
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01263499259949
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02090120315552
+
+
+Exec #42
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00085997581482
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00039410591125
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00069189071655
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02181482315063
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01265001296997
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02030992507935
+
+
+Exec #43
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00091791152954
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00039696693420
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064992904663
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02162694931030
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01247382164001
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02034115791321
+
+
+Exec #44
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00088906288147
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00039792060852
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00065302848816
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02172613143921
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01257610321045
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02038383483887
+
+
+Exec #45
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00179910659790
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00086116790771
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00129485130310
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02178597450256
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01249694824219
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02041411399841
+
+
+Exec #46
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00087189674377
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00040793418884
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00066709518433
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02170205116272
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01293301582336
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02069807052612
+
+
+Exec #47
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00162100791931
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00040507316589
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00067114830017
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02157092094421
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01263594627380
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02054882049561
+
+
+Exec #48
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00083994865417
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00043702125549
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00065803527832
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02156114578247
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01247787475586
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02034306526184
+
+
+Exec #49
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00142097473145
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00067186355591
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00113701820374
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02167510986328
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01275491714478
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02087903022766
+
+
+Exec #50
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.00093603134155
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.00039696693420
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.00064992904663
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/EAX
+Key Length: 16
+Time: 0.02165293693542
+
+Algorithm: AES/GCM
+Key Length: 16
+Time: 0.01251482963562
+
+Algorithm: AES/CCM
+Key Length: 16
+Time: 0.02030706405640
+

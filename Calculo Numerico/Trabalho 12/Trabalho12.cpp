@@ -78,12 +78,12 @@ double *lu_decomposition(double A[N][N], double *b){
 			L[i][j] = (double)(i==j);
 
 	double r;
-	for(int i=0; i<N; i++){
+	for(int i=0; i<N-1; i++){
 		for(int j=i+1; j<N; j++){
 
 			r = -A[j][i]/A[i][i];
 			L[j][i] = -r;
-			for(int k=0; k<N; k++)
+			for(int k=i; k<N; k++)
 				A[j][k] += r*A[i][k];
 		}
 	}

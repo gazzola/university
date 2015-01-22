@@ -1,0 +1,2801 @@
+
+
+Exec #1ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00263404846191
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00266385078430
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00253295898438
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00256299972534
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257921218872
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00263285636902
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07472300529480
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07794690132141
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07503485679626
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07530283927917
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07674694061279
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07876992225647
+
+
+Exec #2ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00286602973938
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00373196601868
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00357007980347
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00355911254883
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00262379646301
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00272488594055
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07524180412292
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07859492301941
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07471919059753
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07517004013062
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07682991027832
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07837295532227
+
+
+Exec #3ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00376915931702
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00411581993103
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00393199920654
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00274896621704
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00258088111877
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00263285636902
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07523584365845
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07792091369629
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07627105712891
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07579493522644
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07679295539856
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07851600646973
+
+
+Exec #4ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00358510017395
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00410604476929
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00393509864807
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00302314758301
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00260496139526
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00265002250671
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07675695419312
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.08076095581055
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07865595817566
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07721090316772
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07873296737671
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07931280136108
+
+
+Exec #5ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00264310836792
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00264716148376
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00254201889038
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00263905525208
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00293993949890
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00282502174377
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07518792152405
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07846117019653
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07530188560486
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07581520080566
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07765793800354
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07941102981567
+
+
+Exec #6ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00389695167542
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00409913063049
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00392508506775
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00265002250671
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00259089469910
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00272202491760
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07495808601379
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07810378074646
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07391405105591
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07408499717712
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07539486885071
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07729887962341
+
+
+Exec #7ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00295782089233
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00286507606506
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00260996818542
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00262522697449
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00266909599304
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00288391113281
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07756280899048
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.08474111557007
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07621502876282
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07680106163025
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07739496231079
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07953500747681
+
+
+Exec #8ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00365805625916
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00371193885803
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00356912612915
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00272297859192
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257301330566
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00264406204224
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07575702667236
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07858705520630
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07460594177246
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07556200027466
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07770299911499
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07844686508179
+
+
+Exec #9ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00260806083679
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00272917747498
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00252604484558
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00253510475159
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00258994102478
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00264596939087
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07490205764771
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07767486572266
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07458281517029
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07496404647827
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07615709304810
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07818698883057
+
+
+Exec #10ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00402307510376
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00373792648315
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00252580642700
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00255203247070
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257611274719
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00262999534607
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07467985153198
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07797002792358
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07472205162048
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07501196861267
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07631111145020
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07855391502380
+
+
+Exec #11ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00366187095642
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00323390960693
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00252604484558
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00257301330566
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257921218872
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00262999534607
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07378196716309
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.08846116065979
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07414197921753
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07399106025696
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07583689689636
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07712817192078
+
+
+Exec #12ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00260901451111
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00268292427063
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00252890586853
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00253295898438
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257802009583
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00262999534607
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07494401931763
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07807493209839
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07481312751770
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07495594024658
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07652497291565
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07878899574280
+
+
+Exec #13ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00365900993347
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00373506546021
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00288105010986
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00253391265869
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257110595703
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00263500213623
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07480192184448
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07824206352234
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07501602172852
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07576394081116
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07618808746338
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07819294929504
+
+
+Exec #14ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00322604179382
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00410199165344
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00392580032349
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00329995155334
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00256896018982
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00263690948486
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07487201690674
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07777595520020
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07500004768372
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07488703727722
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07619214057922
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07829999923706
+
+
+Exec #15ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00401210784912
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00310015678406
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00254988670349
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00253415107727
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257515907288
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00263619422913
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07456398010254
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07786202430725
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07515311241150
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07519483566284
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07652711868286
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07855796813965
+
+
+Exec #16ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00303077697754
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00266194343567
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00252485275269
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00256609916687
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00259900093079
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00263094902039
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07513189315796
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07825708389282
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07443213462830
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07536387443542
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07634997367859
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.08199810981750
+
+
+Exec #17ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00402092933655
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00412607192993
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00363183021545
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00255203247070
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257897377014
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00263190269470
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07502603530884
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07812309265137
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07560300827026
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07549715042114
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07658100128174
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07869505882263
+
+
+Exec #18ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00264120101929
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00267195701599
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00252509117126
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00253105163574
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00260519981384
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00262784957886
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07470703125000
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07792401313782
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07513093948364
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07513284683228
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07639479637146
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07840800285339
+
+
+Exec #19ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00314903259277
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00273799896240
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00261282920837
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00261998176575
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00266385078430
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00271797180176
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07902812957764
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.08188986778259
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07714486122131
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07528901100159
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07644104957581
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07824397087097
+
+
+Exec #20ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00259900093079
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00266504287720
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00253391265869
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00253009796143
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257897377014
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00263404846191
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07479381561279
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07780599594116
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07479405403137
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07516193389893
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07619500160217
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07825303077698
+
+
+Exec #21ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00387406349182
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00410509109497
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00393915176392
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00267910957336
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257802009583
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00263786315918
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07447004318237
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07783794403076
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07509016990662
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07506585121155
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07635307312012
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07840704917908
+
+
+Exec #22ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00260996818542
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00267291069031
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00253200531006
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00253295898438
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257802009583
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00262999534607
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07470202445984
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07806015014648
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07433485984802
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07487082481384
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07623887062073
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07816100120544
+
+
+Exec #23ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00259804725647
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00266289710999
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00254988670349
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00252914428711
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00259399414062
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00263214111328
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07391214370728
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07710099220276
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07374501228333
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07393407821655
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07523703575134
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07711100578308
+
+
+Exec #24ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00372290611267
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00409817695618
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00392699241638
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00281190872192
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257277488708
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00264596939087
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07493090629578
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07793688774109
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07494091987610
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07483410835266
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07617998123169
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07808399200439
+
+
+Exec #25ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00402998924255
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00410008430481
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00363206863403
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00255203247070
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257802009583
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00264000892639
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07518196105957
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07813692092896
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07447409629822
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07492399215698
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07614398002625
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07834196090698
+
+
+Exec #26ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00346207618713
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00410985946655
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00392794609070
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00310492515564
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257301330566
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00262999534607
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07484412193298
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07781314849854
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07480692863464
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07525610923767
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07623314857483
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07847881317139
+
+
+Exec #27ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00402998924255
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00303006172180
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00254082679749
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00254011154175
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257897377014
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00263810157776
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07509613037109
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07781910896301
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07481002807617
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07483696937561
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07655286788940
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07826590538025
+
+
+Exec #28ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00261211395264
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00264501571655
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00255203247070
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00256609916687
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00256896018982
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00268006324768
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07486796379089
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07870411872864
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07462906837463
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07503890991211
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07640004158020
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07836890220642
+
+
+Exec #29ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00263190269470
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00264000892639
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00253105163574
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00252699851990
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00259590148926
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00263190269470
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07462096214294
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.08077597618103
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07655310630798
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07485795021057
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07634401321411
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07820487022400
+
+
+Exec #30ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00259995460510
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00267100334167
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00255703926086
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00252795219421
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257897377014
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00263094902039
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07388186454773
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07702493667603
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07376599311829
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07393097877502
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07517600059509
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07708883285522
+
+
+Exec #31ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00391697883606
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00411295890808
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00392389297485
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00261688232422
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257420539856
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00262904167175
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07467913627625
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07813501358032
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07474398612976
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07493090629578
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07605600357056
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07818484306335
+
+
+Exec #32ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00336790084839
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00411105155945
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00392580032349
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00317311286926
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257396697998
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00262808799744
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07469701766968
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07781600952148
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07515192031860
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07515716552734
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07617402076721
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07825994491577
+
+
+Exec #33ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00375986099243
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00410199165344
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00393414497375
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00277900695801
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257515907288
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00263309478760
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07497692108154
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07772517204285
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07492399215698
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07490396499634
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07632708549500
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07829093933105
+
+
+Exec #34ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00401306152344
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00408482551575
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00252604484558
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00253200531006
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00256800651550
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00264811515808
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07476305961609
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.08072495460510
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07540798187256
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07498002052307
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07615303993225
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07822203636169
+
+
+Exec #35ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00259900093079
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00266098976135
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00253200531006
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00254607200623
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257587432861
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00264787673950
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07462000846863
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07773590087891
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07488799095154
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07489991188049
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07621216773987
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07814884185791
+
+
+Exec #36ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00277709960938
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00266408920288
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00252294540405
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00255298614502
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257992744446
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00264716148376
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07486701011658
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07778692245483
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07468986511230
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07493114471436
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07612800598145
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07810807228088
+
+
+Exec #37ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00365591049194
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00278902053833
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00255513191223
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00252985954285
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257492065430
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00263810157776
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07483005523682
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07791399955750
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07500410079956
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07512712478638
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07649493217468
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07836914062500
+
+
+Exec #38ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00327301025391
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00263619422913
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00253796577454
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00253105163574
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257086753845
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00266098976135
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07500386238098
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07777595520020
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07501101493835
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07482695579529
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07615208625793
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07808899879456
+
+
+Exec #39ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00260186195374
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00265789031982
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00253510475159
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00252795219421
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257301330566
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00262689590454
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07479214668274
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07804822921753
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07486295700073
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07502698898315
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07632613182068
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07829213142395
+
+
+Exec #40ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00262880325317
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00263690948486
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00253391265869
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00253486633301
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00258779525757
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00263404846191
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07499313354492
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07775211334229
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07486701011658
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07509589195251
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07613086700439
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07830500602722
+
+
+Exec #41ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00265002250671
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00263595581055
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00254106521606
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00253796577454
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00256991386414
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00263285636902
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07486510276794
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07783102989197
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07505106925964
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07489585876465
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07618498802185
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07839393615723
+
+
+Exec #42ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00401401519775
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00400114059448
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00252604484558
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00255298614502
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257492065430
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00262904167175
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07447290420532
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07769298553467
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07521891593933
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07485413551331
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07612299919128
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07825493812561
+
+
+Exec #43ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00402903556824
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00410604476929
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00255990028381
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00253295898438
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257086753845
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00263786315918
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07462406158447
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07841396331787
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07462906837463
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07499599456787
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07648777961731
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07826519012451
+
+
+Exec #44ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00364899635315
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00277280807495
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00255107879639
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00253200531006
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00260782241821
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00265002250671
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07461690902710
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07782793045044
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07470989227295
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07510995864868
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07627701759338
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07813596725464
+
+
+Exec #45ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00345516204834
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00267601013184
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00255489349365
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00254201889038
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257205963135
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00263905525208
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07491111755371
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07815980911255
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07505416870117
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07511997222900
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07627415657043
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07817482948303
+
+
+Exec #46ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00262594223022
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00264811515808
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00254297256470
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00253009796143
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00256991386414
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00264906883240
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07467389106750
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07862687110901
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07456183433533
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07508707046509
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07632803916931
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07835698127747
+
+
+Exec #47ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00351595878601
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00263690948486
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00255703926086
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00255990028381
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00257182121277
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00263690948486
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07498121261597
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07792592048645
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07504510879517
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07515192031860
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07632398605347
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07837986946106
+
+
+Exec #48ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00400900840759
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00297689437866
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00259590148926
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00253105163574
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00260782241821
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00267291069031
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07474493980408
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07803416252136
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07499098777771
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07512211799622
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07659316062927
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07951593399048
+
+
+Exec #49ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00303697586060
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00266313552856
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00252604484558
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00255584716797
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00258016586304
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00262880325317
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07465815544128
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07838320732117
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07477903366089
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07536602020264
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07645487785339
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07840800285339
+
+
+Exec #50ENTRADA 1:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.00295209884644
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.00410604476929
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.00392484664917
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.00359797477722
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.00258803367615
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00265097618103
+
+
+ENTRADA 2:
+=================
+
+Algorithm: Blowfish/ECB
+Key Length: 16 bytes
+Time: 0.07579493522644
+
+Algorithm: Blowfish/CBC
+Key Length: 16 bytes
+Time: 0.07794308662415
+
+Algorithm: Blowfish/CFB
+Key Length: 16 bytes
+Time: 0.07498598098755
+
+Algorithm: Blowfish/OFB
+Key Length: 16 bytes
+Time: 0.07494091987610
+
+Algorithm: Blowfish/CTR
+Key Length: 16 bytes
+Time: 0.07622504234314
+
+Algorithm: Blowfish/CBC/CTS
+Key Length: 16 bytes
+Time: 0.07814693450928
+

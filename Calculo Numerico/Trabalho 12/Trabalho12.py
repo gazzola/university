@@ -33,12 +33,12 @@ def lu_decomposition(A):
 	# id matrix
 	L = [[float(i==j) for j in range(n)] for i in range(n)]
 	
-	for i in range(n):
+	for i in range(n-1):
 		for j in range(i+1, n):
-			r = -A[j][i]/A[i][i]
-			L[j][i] = -r
-			for k in range(n):
-				A[j][k] += r*A[i][k]
+			pivo = -A[j][i]/A[i][i]
+			L[j][i] = -pivo
+			for k in range(i, n):
+				A[j][k] += pivo*A[i][k]
 
 
 	# L U

@@ -1,0 +1,2801 @@
+
+
+Exec #1ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00794100761414
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00687408447266
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00665211677551
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00662589073181
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00686502456665
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00686097145081
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20230293273926
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20678091049194
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19968581199646
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.20177292823792
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20816612243652
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20704388618469
+
+
+Exec #2ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00954794883728
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00706601142883
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00678610801697
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00666213035583
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00709414482117
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00690603256226
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20200896263123
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20910882949829
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.20323801040649
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.20014190673828
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20915079116821
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20905399322510
+
+
+Exec #3ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00737905502319
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00685381889343
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00664496421814
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00666499137878
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00688290596008
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00684499740601
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20255899429321
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.21449589729309
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.20823693275452
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.20182895660400
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.21017098426819
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20800185203552
+
+
+Exec #4ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00902819633484
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00691294670105
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00684595108032
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00671911239624
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00717997550964
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00712680816650
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20522403717041
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.21040487289429
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.20358705520630
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.20514178276062
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.21282696723938
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20727491378784
+
+
+Exec #5ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00980806350708
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00811004638672
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00680613517761
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00664901733398
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00690603256226
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00684404373169
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20553517341614
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20796489715576
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.20275902748108
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.22193908691406
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.22394514083862
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.21594595909119
+
+
+Exec #6ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.01015996932983
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00686001777649
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00662088394165
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00663590431213
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00690388679504
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00685286521912
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.21038794517517
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.21932601928711
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.20229291915894
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.20162415504456
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.21631407737732
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.22001600265503
+
+
+Exec #7ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00771617889404
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00693297386169
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00662612915039
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00665593147278
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00687980651855
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00696897506714
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20739507675171
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.21286988258362
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.20343184471130
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.20330715179443
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.21215200424194
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20920109748840
+
+
+Exec #8ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00973892211914
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00823116302490
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00661492347717
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00662112236023
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00688195228577
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00682806968689
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20252990722656
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20659184455872
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19985795021057
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.20031809806824
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20709705352783
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20660495758057
+
+
+Exec #9ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00877499580383
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00835394859314
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00661587715149
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00665807723999
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00685691833496
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00683593750000
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20278096199036
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20632100105286
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19942498207092
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.20087599754333
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20736098289490
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20673489570618
+
+
+Exec #10ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00688195228577
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00686883926392
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00663900375366
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00663900375366
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00686097145081
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00687599182129
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20278596878052
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20624613761902
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19953989982605
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19973087310791
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20713996887207
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20640206336975
+
+
+Exec #11ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00909304618835
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00806903839111
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00661492347717
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00662207603455
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00691008567810
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00682783126831
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20194697380066
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20669913291931
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19960498809814
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.20056414604187
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20810604095459
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20664715766907
+
+
+Exec #12ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.01024293899536
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00685310363770
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00663495063782
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00661683082581
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00690722465515
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00687599182129
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20193195343018
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20663189888000
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19937181472778
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19980406761169
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20794510841370
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20674896240234
+
+
+Exec #13ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00966501235962
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00708889961243
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00672388076782
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00662279129028
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00693702697754
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00689101219177
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20171189308167
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20631694793701
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19904994964600
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19953513145447
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20865297317505
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.21807813644409
+
+
+Exec #14ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.01026511192322
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00766491889954
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00662302970886
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00661706924438
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00688505172729
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00683403015137
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20197391510010
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20623302459717
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19932794570923
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19962000846863
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20765590667725
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20641398429871
+
+
+Exec #15ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00679397583008
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00684690475464
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00665616989136
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00662207603455
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00691986083984
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00685095787048
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20194911956787
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20695304870605
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19960689544678
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.20029306411743
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20766496658325
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20667004585266
+
+
+Exec #16ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.01014399528503
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00709509849548
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00682377815247
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00665807723999
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00701498985291
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00695109367371
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20726799964905
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.21051883697510
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.20305395126343
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.20308279991150
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.21287012100220
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.21158695220947
+
+
+Exec #17ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00759005546570
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00689601898193
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00662803649902
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00662112236023
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00688982009888
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00685095787048
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20228385925293
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20694899559021
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19962596893311
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19999289512634
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20797896385193
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20668506622314
+
+
+Exec #18ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00795006752014
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00687003135681
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00663709640503
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00665211677551
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00689196586609
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00690412521362
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20302510261536
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20668411254883
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19967389106750
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.20013403892517
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20823216438293
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20665192604065
+
+
+Exec #19ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00942802429199
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00686287879944
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00663590431213
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00663805007935
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00686216354370
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00685214996338
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20210814476013
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20723915100098
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19961595535278
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.20207214355469
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20765805244446
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20775103569031
+
+
+Exec #20ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00942516326904
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00847697257996
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00661492347717
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00662589073181
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00686216354370
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00683212280273
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20193600654602
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20633912086487
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19931101799011
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19974207878113
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20749020576477
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20645499229431
+
+
+Exec #21ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00993108749390
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00684404373169
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00661611557007
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00663995742798
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00686597824097
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00682783126831
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20167112350464
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20630002021790
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19942498207092
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19979095458984
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20738697052002
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20631313323975
+
+
+Exec #22ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00709390640259
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00684905052185
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00660991668701
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00662302970886
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00688099861145
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00683808326721
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20164299011230
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20619606971741
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19911813735962
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19943618774414
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20717692375183
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20617508888245
+
+
+Exec #23ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00763797760010
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00684714317322
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00663900375366
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00662589073181
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00687694549561
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00683283805847
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20222902297974
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20613288879395
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.20026707649231
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19963598251343
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20716905593872
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20635414123535
+
+
+Exec #24ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00683403015137
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00705504417419
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00669384002686
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00661301612854
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00688099861145
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00687098503113
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20183491706848
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20635700225830
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.20283412933350
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19973921775818
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20768189430237
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20634603500366
+
+
+Exec #25ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00953793525696
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00687408447266
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00661897659302
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00663304328918
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00686311721802
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00685405731201
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20188212394714
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20613193511963
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19923615455627
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19982004165649
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20737099647522
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20641207695007
+
+
+Exec #26ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00937318801880
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00686192512512
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00661993026733
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00662088394165
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00686597824097
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00683808326721
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20249080657959
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20629405975342
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19915986061096
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19968700408936
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20733499526978
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20630788803101
+
+
+Exec #27ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00681400299072
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00687003135681
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00663399696350
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00661802291870
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00688004493713
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00685381889343
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20294094085693
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20625305175781
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19906902313232
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19961404800415
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20761799812317
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20622491836548
+
+
+Exec #28ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00935578346252
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00853705406189
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00661683082581
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00662398338318
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00688004493713
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00683188438416
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20167088508606
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20600509643555
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19964885711670
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19941282272339
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20767593383789
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20617294311523
+
+
+Exec #29ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00920915603638
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00686001777649
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00662207603455
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00665378570557
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00686883926392
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00686597824097
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20177292823792
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20636200904846
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19960117340088
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19987010955811
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20733690261841
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20637416839600
+
+
+Exec #30ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00969815254211
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00684404373169
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00661587715149
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00664710998535
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00690889358521
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00684714317322
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20158219337463
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20609092712402
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19891095161438
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19951295852661
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20725822448730
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20615100860596
+
+
+Exec #31ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.01052594184875
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00683784484863
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00662279129028
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00664091110229
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00689578056335
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00683712959290
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20178198814392
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20605206489563
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19915413856506
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19954800605774
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20722699165344
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20662784576416
+
+
+Exec #32ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00858402252197
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00686383247375
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00663304328918
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00661897659302
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00686097145081
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00685286521912
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20216321945190
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20656394958496
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19939112663269
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19963192939758
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20742917060852
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20628190040588
+
+
+Exec #33ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00677490234375
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00684595108032
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00663495063782
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00662398338318
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00686001777649
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00684094429016
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20162320137024
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20647001266479
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19906806945801
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19967603683472
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20712304115295
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20614695549011
+
+
+Exec #34ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00679016113281
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00690793991089
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00661706924438
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00665402412415
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00686216354370
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00684213638306
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20173001289368
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20606517791748
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19923710823059
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19970011711121
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20757198333740
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20634794235229
+
+
+Exec #35ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00964784622192
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00709080696106
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00710797309875
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00664114952087
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00686502456665
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00685286521912
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20199990272522
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20621991157532
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19923496246338
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19950604438782
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20703482627869
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20664596557617
+
+
+Exec #36ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00679111480713
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00686812400818
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00661802291870
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00662207603455
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00685906410217
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00683903694153
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20159482955933
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20618891716003
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19900393486023
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19955110549927
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20740008354187
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20616006851196
+
+
+Exec #37ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00823783874512
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00686192512512
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00661897659302
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00662398338318
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00688099861145
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00683808326721
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20755290985107
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20885610580444
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19896984100342
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19951915740967
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20714807510376
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20612478256226
+
+
+Exec #38ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00812911987305
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00691699981689
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00661802291870
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00663900375366
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00686502456665
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00692200660706
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20161104202271
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20607304573059
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19891405105591
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19969582557678
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20707702636719
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20610785484314
+
+
+Exec #39ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00897097587585
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00686693191528
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00664591789246
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00661110877991
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00687408447266
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00687289237976
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20184016227722
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20609498023987
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19913911819458
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19954586029053
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20755290985107
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20638298988342
+
+
+Exec #40ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00870800018311
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00687909126282
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00662088394165
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00663018226624
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00686407089233
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00683617591858
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20184493064880
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20662999153137
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19957399368286
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19984507560730
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20760917663574
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20650601387024
+
+
+Exec #41ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00837683677673
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00683689117432
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00663590431213
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00665712356567
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00687313079834
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00687003135681
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20196986198425
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20661091804504
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19950985908508
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19973707199097
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20920395851135
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20635390281677
+
+
+Exec #42ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00841093063354
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00685501098633
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00661897659302
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00663709640503
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00685310363770
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00685214996338
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20186710357666
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20664095878601
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19919490814209
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19963288307190
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20731210708618
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20626997947693
+
+
+Exec #43ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00789809226990
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00683808326721
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00663805007935
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00662684440613
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00687503814697
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00683283805847
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20180606842041
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.21835684776306
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19956994056702
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.20004105567932
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20754909515381
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20646905899048
+
+
+Exec #44ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.01049304008484
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00685882568359
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00662302970886
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00669384002686
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00686192512512
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00684094429016
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20193195343018
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20619702339172
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19916105270386
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19959592819214
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20741796493530
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20618605613708
+
+
+Exec #45ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.01022005081177
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00768589973450
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00662493705750
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00661897659302
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00686812400818
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00683498382568
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20165205001831
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20601415634155
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19890189170837
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19949197769165
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20758986473083
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20627689361572
+
+
+Exec #46ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00999689102173
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00791120529175
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00661206245422
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00664186477661
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00686192512512
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00684905052185
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20179700851440
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20664501190186
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19926905632019
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19962286949158
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20742106437683
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20643711090088
+
+
+Exec #47ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00681996345520
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00686693191528
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00661683082581
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00662112236023
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00688505172729
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00683712959290
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20151305198669
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20623993873596
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19894409179688
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19958186149597
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20734405517578
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20620799064636
+
+
+Exec #48ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00678491592407
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00686717033386
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00662207603455
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00661993026733
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00685906410217
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00685191154480
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20178389549255
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20617508888245
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19899797439575
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19939088821411
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20711398124695
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20623207092285
+
+
+Exec #49ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.00680303573608
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00686287879944
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00668001174927
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00662183761597
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00687909126282
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00685501098633
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20165491104126
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.20608401298523
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19889402389526
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19947695732117
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20699882507324
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20624279975891
+
+
+Exec #50ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.01006507873535
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.00685405731201
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.00662112236023
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.00663399696350
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.00688195228577
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.00682783126831
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/ECB
+Key Length: 10 bytes
+Time: 0.20195603370667
+
+Algorithm: SKIPJACK/CBC
+Key Length: 10 bytes
+Time: 0.21252012252808
+
+Algorithm: SKIPJACK/CFB
+Key Length: 10 bytes
+Time: 0.19918513298035
+
+Algorithm: SKIPJACK/OFB
+Key Length: 10 bytes
+Time: 0.19966506958008
+
+Algorithm: SKIPJACK/CTR
+Key Length: 10 bytes
+Time: 0.20761585235596
+
+Algorithm: SKIPJACK/CBC/CTS
+Key Length: 10 bytes
+Time: 0.20634102821350
+

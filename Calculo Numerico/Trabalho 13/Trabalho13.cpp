@@ -190,12 +190,6 @@ double *gaussSeidell(double A[N][N], double *b, double *xs){
 
 
 
-
-
-
-
-
-
 int main(){
 
 	double mat[N][N] = {{10, 2, 1},

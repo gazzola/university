@@ -1,0 +1,2801 @@
+
+
+Exec #1ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00440287590027
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00467181205750
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00432801246643
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00426411628723
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00442695617676
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00430703163147
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12933993339539
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13034892082214
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12838292121887
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12905621528625
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13227915763855
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13066291809082
+
+
+Exec #2ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00666689872742
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00444102287292
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00426197052002
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00431108474731
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00437307357788
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00439810752869
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12992191314697
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13075208663940
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12955093383789
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.13081502914429
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13317704200745
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13151693344116
+
+
+Exec #3ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00591588020325
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00607800483704
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00499105453491
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00455594062805
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00460004806519
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00474405288696
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.13098502159119
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13248801231384
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.13197898864746
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12995195388794
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13535094261169
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13456797599792
+
+
+Exec #4ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00664114952087
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00604987144470
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00433993339539
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00467514991760
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00453495979309
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00432491302490
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12920689582825
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13463997840881
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.13188695907593
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.13119602203369
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13418316841125
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13081312179565
+
+
+Exec #5ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00611996650696
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00571489334106
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00443005561829
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00441002845764
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00455284118652
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00444293022156
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.13112092018127
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13160490989685
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12857198715210
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12920093536377
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13249588012695
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13024902343750
+
+
+Exec #6ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00527310371399
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00448012351990
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00424313545227
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00429916381836
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00443696975708
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00439906120300
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.13840699195862
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13541388511658
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.13919782638550
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.14014482498169
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.14629888534546
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13406181335449
+
+
+Exec #7ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00663089752197
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00431108474731
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00423002243042
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00426888465881
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00437712669373
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00430607795715
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.13097810745239
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13137817382812
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.13066816329956
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.13631701469421
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13835787773132
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13074612617493
+
+
+Exec #8ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00666308403015
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00433206558228
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00422692298889
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00424599647522
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00435805320740
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00429892539978
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12822818756104
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13059687614441
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12943005561829
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12923502922058
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13278508186340
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13042593002319
+
+
+Exec #9ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00670790672302
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00506186485291
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00425004959106
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00429415702820
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00438404083252
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00432300567627
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12838196754456
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13043093681335
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12810015678406
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12882590293884
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13280296325684
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13093519210815
+
+
+Exec #10ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00640583038330
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00646615028381
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00424790382385
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00426197052002
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00437784194946
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00427889823914
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12787199020386
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13008713722229
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12822318077087
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12884116172791
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13210105895996
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13032507896423
+
+
+Exec #11ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00654602050781
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00430893898010
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00426793098450
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00424599647522
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00437498092651
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00430011749268
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12847089767456
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13078093528748
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12779784202576
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12872600555420
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13248801231384
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13108587265015
+
+
+Exec #12ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00591683387756
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00431203842163
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00431609153748
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00425004959106
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00436401367188
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428199768066
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12829303741455
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13153409957886
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12810397148132
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12922406196594
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13244605064392
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13130998611450
+
+
+Exec #13ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00502896308899
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00434684753418
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00430107116699
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00427794456482
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00443506240845
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00431489944458
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12851190567017
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13010692596436
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12814092636108
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12875795364380
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13234901428223
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13034009933472
+
+
+Exec #14ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00664997100830
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00531005859375
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00425004959106
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00424599647522
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00436496734619
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428509712219
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.13000082969666
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13052821159363
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12762784957886
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12861394882202
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13230395317078
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13040399551392
+
+
+Exec #15ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00622987747192
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00667691230774
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00422692298889
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00427699089050
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00437998771667
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428199768066
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12713813781738
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.12906193733215
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12673687934875
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12763500213623
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13562893867493
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13141822814941
+
+
+Exec #16ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00612711906433
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00666594505310
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00448918342590
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00425696372986
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00435996055603
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00439190864563
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.13232684135437
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13247179985046
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12965178489685
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.13094806671143
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13503289222717
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13358807563782
+
+
+Exec #17ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00677418708801
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00589513778687
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00428009033203
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00429081916809
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00436496734619
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00431203842163
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.13012290000916
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13128709793091
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12814712524414
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12915515899658
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13256883621216
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13137388229370
+
+
+Exec #18ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00443792343140
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00430703163147
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00439095497131
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00457715988159
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00435996055603
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428295135498
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.13187408447266
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13876199722290
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.13053607940674
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.13082003593445
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13477587699890
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13307690620422
+
+
+Exec #19ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00640797615051
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00648903846741
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00424504280090
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00424695014954
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00436305999756
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428199768066
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12840580940247
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.12982988357544
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12776184082031
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12856292724609
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13281893730164
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.12985491752625
+
+
+Exec #20ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00666093826294
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00531315803528
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00422906875610
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00425982475281
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00436401367188
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428295135498
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12780594825745
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13053703308105
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12990093231201
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12784695625305
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13189387321472
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13018298149109
+
+
+Exec #21ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00455188751221
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00431990623474
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00423192977905
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00426101684570
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00436091423035
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428795814514
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12829303741455
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13045096397400
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12794780731201
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12872099876404
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13238000869751
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13056802749634
+
+
+Exec #22ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00491309165955
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00434088706970
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00425004959106
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00425410270691
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00436091423035
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428700447083
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12845993041992
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13000988960266
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12763309478760
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12848711013794
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13213205337524
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13014006614685
+
+
+Exec #23ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00576400756836
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00665283203125
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00470590591431
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00466513633728
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00453782081604
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00432181358337
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12787008285522
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13020896911621
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12776303291321
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12853598594666
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13191008567810
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13056516647339
+
+
+Exec #24ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00582599639893
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00665497779846
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00463104248047
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00424504280090
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00436186790466
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00429892539978
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12805795669556
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13075709342957
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12762594223022
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12864112854004
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13199210166931
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13058400154114
+
+
+Exec #25ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00553297996521
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00431513786316
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00422692298889
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00424909591675
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00437211990356
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00430297851562
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12964200973511
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13017296791077
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12759590148926
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12872910499573
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13208794593811
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13012814521790
+
+
+Exec #26ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00547790527344
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00431609153748
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00423097610474
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00425004959106
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00436496734619
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428318977356
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12993502616882
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13027882575989
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12765502929688
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12867403030396
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13199520111084
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13021206855774
+
+
+Exec #27ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00646209716797
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00642800331116
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00423216819763
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00426316261292
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00436091423035
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00429892539978
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12764501571655
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13062000274658
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12784695625305
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12865495681763
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13205099105835
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13078308105469
+
+
+Exec #28ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00663495063782
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00583696365356
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00422811508179
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00424599647522
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00436401367188
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00427985191345
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12811088562012
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.12993311882019
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12781214714050
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12842297554016
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13190197944641
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13037395477295
+
+
+Exec #29ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00487899780273
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00433683395386
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00424194335938
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00429701805115
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00437784194946
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00430607795715
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12829113006592
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13026404380798
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12770819664001
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12879109382629
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13189101219177
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13015198707581
+
+
+Exec #30ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00663995742798
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00456809997559
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00424599647522
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00424981117249
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00435495376587
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428390502930
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12777900695801
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13086295127869
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12792992591858
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12878894805908
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13215994834900
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13070416450500
+
+
+Exec #31ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00666189193726
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00509595870972
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00422692298889
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00424718856812
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00437784194946
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00432300567627
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12798714637756
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13050103187561
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12778115272522
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12868714332581
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13211107254028
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13047599792480
+
+
+Exec #32ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00464487075806
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00429105758667
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00423192977905
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00426197052002
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00435996055603
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428390502930
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12797904014587
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13064503669739
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12768006324768
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12855076789856
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13254785537720
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13071489334106
+
+
+Exec #33ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00564289093018
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00668382644653
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00479316711426
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00424289703369
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00436902046204
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428199768066
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12785792350769
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13033699989319
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12761998176575
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12983489036560
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13216805458069
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13027310371399
+
+
+Exec #34ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00514197349548
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00606417655945
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00512480735779
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00424480438232
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00438189506531
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00430417060852
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12739706039429
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.12900590896606
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12685108184814
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12772107124329
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13331580162048
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.12971282005310
+
+
+Exec #35ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00533008575439
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00431394577026
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00422596931458
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00424504280090
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00437402725220
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428891181946
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12783408164978
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13032484054565
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12770104408264
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12852692604065
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13210010528564
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13031220436096
+
+
+Exec #36ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00437808036804
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00431394577026
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00423312187195
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00429391860962
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00436091423035
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428605079651
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12651205062866
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.12931108474731
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12811088562012
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12701702117920
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13080286979675
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.12933301925659
+
+
+Exec #37ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00604891777039
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00566101074219
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00425100326538
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00424885749817
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00436186790466
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428199768066
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12910103797913
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13040089607239
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12750315666199
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12852716445923
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13184404373169
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13032579421997
+
+
+Exec #38ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00573301315308
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00431489944458
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00422906875610
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00424790382385
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00436305999756
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428605079651
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12785792350769
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13030695915222
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12755489349365
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12861108779907
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13175797462463
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.12982702255249
+
+
+Exec #39ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00549411773682
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00432109832764
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00427198410034
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00424504280090
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00435495376587
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428986549377
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12775897979736
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13059687614441
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12770581245422
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12850499153137
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13193297386169
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13066291809082
+
+
+Exec #40ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00434684753418
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00431108474731
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00423216819763
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00424289703369
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00437283515930
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428700447083
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12838602066040
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13049602508545
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12772798538208
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12894296646118
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13211393356323
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13033199310303
+
+
+Exec #41ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00568699836731
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00665998458862
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00475692749023
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00424194335938
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00437021255493
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428104400635
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12834095954895
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13067102432251
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12812304496765
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12889409065247
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13240003585815
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13048887252808
+
+
+Exec #42ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00464582443237
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00438189506531
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00435996055603
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00424504280090
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00439214706421
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428700447083
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12783408164978
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13093900680542
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12805390357971
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12878489494324
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13213610649109
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13164782524109
+
+
+Exec #43ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00431799888611
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00430297851562
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00424504280090
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00424790382385
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00436687469482
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428104400635
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12859106063843
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13029885292053
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12786102294922
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12873601913452
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13212895393372
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13085508346558
+
+
+Exec #44ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00666189193726
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00466895103455
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00425505638123
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00430393218994
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00436305999756
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00431799888611
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12925910949707
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13946509361267
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12766003608704
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12870788574219
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13239598274231
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13048601150513
+
+
+Exec #45ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00664806365967
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00611400604248
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00422811508179
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00424814224243
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00438094139099
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428199768066
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12702894210815
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.12893605232239
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12648797035217
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12756991386414
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13083600997925
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.12919902801514
+
+
+Exec #46ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00666379928589
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00498700141907
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00423288345337
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00426006317139
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00438404083252
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00429081916809
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12849879264832
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13008403778076
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12763977050781
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12849688529968
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13223886489868
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13078618049622
+
+
+Exec #47ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00510883331299
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00606703758240
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00514602661133
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00424480438232
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00436186790466
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428700447083
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12771701812744
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13032603263855
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12767314910889
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12848806381226
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13197803497314
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13033413887024
+
+
+Exec #48ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00625991821289
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00662302970886
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00423002243042
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00424790382385
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00436210632324
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428295135498
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12768888473511
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13028693199158
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12766385078430
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12846708297729
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13176107406616
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13026905059814
+
+
+Exec #49ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00432491302490
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00433278083801
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00429487228394
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00424695014954
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00435709953308
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428700447083
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12822985649109
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.13000798225403
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12762808799744
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12848591804504
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13189888000488
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.13034391403198
+
+
+Exec #50ENTRADA 1:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.00432801246643
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.00430083274841
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.00422906875610
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.00426197052002
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.00436401367188
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00428318977356
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/ECB
+Key Length: 16 bytes
+Time: 0.12685418128967
+
+Algorithm: TEA/CBC
+Key Length: 16 bytes
+Time: 0.12931990623474
+
+Algorithm: TEA/CFB
+Key Length: 16 bytes
+Time: 0.12661719322205
+
+Algorithm: TEA/OFB
+Key Length: 16 bytes
+Time: 0.12755608558655
+
+Algorithm: TEA/CTR
+Key Length: 16 bytes
+Time: 0.13090801239014
+
+Algorithm: TEA/CBC/CTS
+Key Length: 16 bytes
+Time: 0.12894988059998
+

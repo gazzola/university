@@ -1,0 +1,1201 @@
+
+
+Exec #1ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01408982276917
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41384315490723
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #2ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01743102073669
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41315889358521
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #3ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01666116714478
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41243290901184
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #4ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01448202133179
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41329097747803
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #5ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01822614669800
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41674590110779
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #6ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01607704162598
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41264986991882
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #7ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01812100410461
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41233515739441
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #8ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01529908180237
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41474294662476
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #9ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01470208168030
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41336488723755
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #10ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01401185989380
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41301512718201
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #11ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01653099060059
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41325092315674
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #12ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01820397377014
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41262388229370
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #13ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01817393302917
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41529583930969
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #14ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01741909980774
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41336584091187
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #15ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01660895347595
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41342306137085
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #16ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01636004447937
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41337108612061
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #17ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01618480682373
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41339993476868
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #18ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01559615135193
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41244912147522
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #19ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01410603523254
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41286396980286
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #20ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01531791687012
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41292595863342
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #21ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01820111274719
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41302585601807
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #22ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01493811607361
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41346311569214
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #23ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01823401451111
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41346597671509
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #24ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01472187042236
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41438412666321
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #25ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01606297492981
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41142797470093
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #26ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01823306083679
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41235089302063
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #27ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01551485061646
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41142821311951
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #28ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01702308654785
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41278600692749
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #29ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01456904411316
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41543006896973
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #30ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01781797409058
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41250085830688
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #31ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01486301422119
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41430878639221
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #32ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01401209831238
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41228795051575
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #33ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01519203186035
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41285109519958
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #34ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01824307441711
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41313004493713
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #35ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01523494720459
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41324782371521
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #36ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01659989356995
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41350197792053
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #37ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01713585853577
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41453194618225
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #38ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01704502105713
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41266798973083
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #39ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01728487014771
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41190385818481
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #40ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01626110076904
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41275906562805
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #41ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01475787162781
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41293716430664
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #42ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01458191871643
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41305518150330
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #43ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01572680473328
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41512107849121
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #44ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01722884178162
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41355013847351
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #45ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01592516899109
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41300487518311
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #46ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01738405227661
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41270995140076
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #47ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01820707321167
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41325211524963
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #48ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01745390892029
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41268491744995
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #49ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01736211776733
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41424107551575
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+Exec #50ENTRADA 1:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.01718711853027
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: SKIPJACK/EAX
+Key Length: 10
+Time: 0.41305994987488
+
+SKIPJACK/GCM: block size of underlying block cipher is not 16
+
+SKIPJACK/CCM: block size of underlying block cipher is not 16
+

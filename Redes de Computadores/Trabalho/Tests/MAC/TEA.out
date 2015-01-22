@@ -1,0 +1,1201 @@
+
+
+Exec #1ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01078391075134
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26267004013062
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #2ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01199603080750
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26227378845215
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #3ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01229214668274
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26250791549683
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #4ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01298618316650
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26207304000854
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #5ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.00962805747986
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26296210289001
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #6ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.00895500183105
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26313209533691
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #7ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01075506210327
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26250600814819
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #8ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01153612136841
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26236009597778
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #9ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01201391220093
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26280498504639
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #10ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01254510879517
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26231098175049
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #11ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.00890398025513
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26246881484985
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #12ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01196098327637
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26317715644836
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #13ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.00945901870728
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26244807243347
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #14ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01057815551758
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26290702819824
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #15ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01010799407959
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26280593872070
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #16ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01007699966431
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26250910758972
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #17ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.00894308090210
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26234197616577
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #18ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.00914907455444
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26220297813416
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #19ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01224184036255
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26244592666626
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #20ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01251602172852
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26132106781006
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #21ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01097488403320
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26174879074097
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #22ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01319289207458
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26254105567932
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #23ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01139593124390
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26231193542480
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #24ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01261210441589
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26240396499634
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #25ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.00954103469849
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26230406761169
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #26ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01117801666260
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26221704483032
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #27ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.00891089439392
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26223587989807
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #28ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.00969195365906
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26233005523682
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #29ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01183795928955
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26234698295593
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #30ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01051998138428
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26706981658936
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #31ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01289010047913
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26242995262146
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #32ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01334691047668
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26221108436584
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #33ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01274776458740
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26541590690613
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #34ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01111793518066
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26190710067749
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #35ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01300382614136
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26261115074158
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #36ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.00895595550537
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26221609115601
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #37ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.00890803337097
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26257705688477
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #38ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.00977015495300
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26106405258179
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #39ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.00893712043762
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26273703575134
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #40ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.00997304916382
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26218104362488
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #41ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01312208175659
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26206803321838
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #42ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01317501068115
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26322793960571
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #43ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01300120353699
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26225090026855
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #44ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.00962305068970
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26244497299194
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #45ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.00912594795227
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26229882240295
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #46ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01000118255615
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26218485832214
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #47ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01143002510071
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26211595535278
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #48ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01201009750366
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26261281967163
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #49ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.01030087471008
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26236081123352
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+Exec #50ENTRADA 1:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.00944614410400
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: TEA/EAX
+Key Length: 16
+Time: 0.26302385330200
+
+TEA/GCM: block size of underlying block cipher is not 16
+
+TEA/CCM: block size of underlying block cipher is not 16
+

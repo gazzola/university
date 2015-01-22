@@ -1,0 +1,2901 @@
+
+
+Exec #1
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00032496452332
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00036311149597
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00042986869812
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00054883956909
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00020599365234
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00035500526428
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00681495666504
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01148295402527
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01438903808594
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01722407341003
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00626897811890
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01131606101990
+
+
+Exec #2
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00032210350037
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00036692619324
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00044107437134
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00056004524231
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00020289421082
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00036096572876
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00814795494080
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01224899291992
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01482701301575
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01763296127319
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00744605064392
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01242709159851
+
+
+Exec #3
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00033020973206
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00037717819214
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00043988227844
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00057005882263
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00020408630371
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00035405158997
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00805020332336
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01237297058105
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01498818397522
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01777720451355
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00747108459473
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01253509521484
+
+
+Exec #4
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00032901763916
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00036382675171
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00042700767517
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00054717063904
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00020408630371
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00035405158997
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.01174783706665
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01448798179626
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.02020311355591
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01922416687012
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00804781913757
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01246809959412
+
+
+Exec #5
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00032496452332
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00036096572876
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00043892860413
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00054693222046
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00020194053650
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00035500526428
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00784111022949
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01297998428345
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01495099067688
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01781606674194
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00738596916199
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01287698745728
+
+
+Exec #6
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00049400329590
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00058007240295
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00068116188049
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00088310241699
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00031900405884
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00056982040405
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00777792930603
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01239895820618
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01517319679260
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01784801483154
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00745320320129
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01256895065308
+
+
+Exec #7
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00048804283142
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00051212310791
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00067210197449
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00072503089905
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00029397010803
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00050902366638
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00788307189941
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01240110397339
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01524019241333
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01802682876587
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00743579864502
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01543211936951
+
+
+Exec #8
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00034117698669
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00037407875061
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00041913986206
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00054097175598
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019693374634
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00034785270691
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00804996490479
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01228404045105
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01486492156982
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01776504516602
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00743818283081
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01252198219299
+
+
+Exec #9
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00032281875610
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00035905838013
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00046610832214
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00054717063904
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019788742065
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00035309791565
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00784993171692
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01212811470032
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01489782333374
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01770091056824
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00728011131287
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01238417625427
+
+
+Exec #10
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00049614906311
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00038385391235
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00043606758118
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00056481361389
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00020599365234
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00036191940308
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00794720649719
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01249194145203
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01526689529419
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01807689666748
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00763487815857
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01264309883118
+
+
+Exec #11
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00074791908264
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00035881996155
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00043177604675
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00056195259094
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00020599365234
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00036215782166
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00793099403381
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01217198371887
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01493096351624
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01765584945679
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00733399391174
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01233696937561
+
+
+Exec #12
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00033497810364
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00036978721619
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00043606758118
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00056290626526
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00020503997803
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00036120414734
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00789690017700
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01256394386292
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01536607742310
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01794290542603
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00755596160889
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01265788078308
+
+
+Exec #13
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00063014030457
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00073504447937
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00042319297791
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00056314468384
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019907951355
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00034999847412
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00802397727966
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01222801208496
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01485705375671
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01777291297913
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00731492042542
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01238298416138
+
+
+Exec #14
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00059294700623
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00068902969360
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00080990791321
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00105309486389
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00038194656372
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00055408477783
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00786495208740
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01247096061707
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01504206657410
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01797914505005
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00758981704712
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01261186599731
+
+
+Exec #15
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00032806396484
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00035786628723
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00042104721069
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00054502487183
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019979476929
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00035095214844
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00773978233337
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01219296455383
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01490592956543
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01766610145569
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00732803344727
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01239705085754
+
+
+Exec #16
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00047993659973
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00055408477783
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00065112113953
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00083899497986
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00030493736267
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00056195259094
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00780200958252
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01222419738770
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01490592956543
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01772809028625
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00732302665710
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01238203048706
+
+
+Exec #17
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00033998489380
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00037813186646
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00043201446533
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00055789947510
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00020122528076
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00035214424133
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00774097442627
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01223206520081
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01493597030640
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01782894134521
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00740814208984
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01235818862915
+
+
+Exec #18
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00035881996155
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00040292739868
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00044894218445
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00054407119751
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019693374634
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00034999847412
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00809502601624
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01290583610535
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01548290252686
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01845502853394
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00757598876953
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01288199424744
+
+
+Exec #19
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00032711029053
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00037980079651
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00042295455933
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00054383277893
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019907951355
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00034999847412
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00807499885559
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01254987716675
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01545405387878
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01816606521606
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00752496719360
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01273417472839
+
+
+Exec #20
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00034809112549
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00035691261292
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00042200088501
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00054407119751
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019598007202
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00041294097900
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00774979591370
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01219105720520
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01491785049438
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01769399642944
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00736403465271
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01234388351440
+
+
+Exec #21
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00032401084900
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00035810470581
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00043606758118
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00056195259094
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00020503997803
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00036096572876
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00771903991699
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01214599609375
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01494503021240
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01775407791138
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00739812850952
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01242589950562
+
+
+Exec #22
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00075912475586
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00091886520386
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00108289718628
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00061798095703
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019598007202
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00034999847412
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00799918174744
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01217103004456
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01488089561462
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01765799522400
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00732016563416
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01229119300842
+
+
+Exec #23
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00034093856812
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00037002563477
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00043702125549
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00056195259094
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00020503997803
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00036191940308
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00785303115845
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01211905479431
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01489090919495
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01769900321960
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00734496116638
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01237010955811
+
+
+Exec #24
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00063014030457
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00070810317993
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00044202804565
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00056314468384
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00020503997803
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00036191940308
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00770902633667
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01217222213745
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01488208770752
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01771688461304
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00732398033142
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01236510276794
+
+
+Exec #25
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00047707557678
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00055599212646
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00065517425537
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00084400177002
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00031399726868
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00035214424133
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00795602798462
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01226305961609
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01500892639160
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01775503158569
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00745511054993
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01252889633179
+
+
+Exec #26
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00049400329590
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00061202049255
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00043201446533
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00054407119751
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019788742065
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00034999847412
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00787496566772
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01212000846863
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01480078697205
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01772189140320
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00731205940247
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01242613792419
+
+
+Exec #27
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00033593177795
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00035905838013
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00043392181396
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00054407119751
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00020003318787
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00035095214844
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00798606872559
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01239681243896
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01517200469971
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01804995536804
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00758600234985
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01257920265198
+
+
+Exec #28
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00033020973206
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00035786628723
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00045299530029
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00054478645325
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019812583923
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00034999847412
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00785303115845
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01220107078552
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01477003097534
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01763415336609
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00735187530518
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01232099533081
+
+
+Exec #29
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00032997131348
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00037503242493
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00041913986206
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00054407119751
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019502639771
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00034999847412
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00786399841309
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01218914985657
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01479101181030
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01765298843384
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00737810134888
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01234483718872
+
+
+Exec #30
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00033783912659
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00037002563477
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00043606758118
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00056314468384
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00020384788513
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00036311149597
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00706195831299
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01146507263184
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01368498802185
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01658582687378
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00628495216370
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01127696037292
+
+
+Exec #31
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00032806396484
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00035905838013
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00045490264893
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00054597854614
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019788742065
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00035095214844
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00774192810059
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01224803924561
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01491189002991
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01774883270264
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00730490684509
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01229405403137
+
+
+Exec #32
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00073409080505
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00088310241699
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00042486190796
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00054502487183
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019884109497
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00035095214844
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00795793533325
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01221489906311
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01482796669006
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01759696006775
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00726485252380
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01242709159851
+
+
+Exec #33
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00032091140747
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00035786628723
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00042390823364
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00054407119751
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019598007202
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00035095214844
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00791501998901
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01213097572327
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01491999626160
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01761889457703
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00740098953247
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01245713233948
+
+
+Exec #34
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00037598609924
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00039815902710
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00048398971558
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00056815147400
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019884109497
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00034999847412
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00832986831665
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01277899742126
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01490712165833
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01774311065674
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00742888450623
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01247715950012
+
+
+Exec #35
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00033092498779
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00037097930908
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00044393539429
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00056099891663
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019788742065
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00035190582275
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00779914855957
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01229310035706
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01483893394470
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01772999763489
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00738191604614
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01238584518433
+
+
+Exec #36
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00032806396484
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00035786628723
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00042200088501
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00058507919312
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019812583923
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00035095214844
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00797104835510
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01215291023254
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01485395431519
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01782083511353
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00728416442871
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01223993301392
+
+
+Exec #37
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00043201446533
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00050401687622
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00061511993408
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00076794624329
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00027799606323
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00049185752869
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00785613059998
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01219296455383
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01485896110535
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01769280433655
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00740098953247
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01235914230347
+
+
+Exec #38
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00031900405884
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00035691261292
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00042104721069
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00054311752319
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019598007202
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00034999847412
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00774502754211
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01213502883911
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01483988761902
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01770687103271
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00723290443420
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01229786872864
+
+
+Exec #39
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00036478042603
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00037002563477
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00046586990356
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00054407119751
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00020003318787
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00035095214844
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00813698768616
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01233887672424
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01499795913696
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01774907112122
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00745010375977
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01243591308594
+
+
+Exec #40
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00032591819763
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00035905838013
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00042700767517
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00058412551880
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019907951355
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00035190582275
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00835800170898
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01265811920166
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01571393013000
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01767015457153
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00727200508118
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01229190826416
+
+
+Exec #41
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00032997131348
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00039505958557
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00042510032654
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00054287910461
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00020313262939
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00036001205444
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00774002075195
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01213598251343
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01487708091736
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01775217056274
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00735282897949
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01235818862915
+
+
+Exec #42
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00077986717224
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00092005729675
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00096416473389
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00054502487183
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00020003318787
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00034999847412
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00769400596619
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01215600967407
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01496601104736
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01760411262512
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00727415084839
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01238107681274
+
+
+Exec #43
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00033092498779
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00035786628723
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00042200088501
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00057601928711
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019598007202
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00035095214844
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00785684585571
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01219582557678
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01497101783752
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01759982109070
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00729393959045
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01242899894714
+
+
+Exec #44
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00033712387085
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00037598609924
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00043988227844
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00055813789368
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019788742065
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00034999847412
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00787901878357
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01231384277344
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01501107215881
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01781296730042
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00745177268982
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01249504089355
+
+
+Exec #45
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00078105926514
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00092101097107
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00072407722473
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00054502487183
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019812583923
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00035095214844
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00785398483276
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01231598854065
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01500988006592
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01784014701843
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00766992568970
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01257705688477
+
+
+Exec #46
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00032305717468
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00035810470581
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00042104721069
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00056600570679
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019788742065
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00035095214844
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00786900520325
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01223683357239
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01488304138184
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01766800880432
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00738501548767
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01233077049255
+
+
+Exec #47
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00033092498779
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00035905838013
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00042295455933
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00054478645325
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019884109497
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00035190582275
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00785303115845
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01211690902710
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01482200622559
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01768016815186
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00735306739807
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01230883598328
+
+
+Exec #48
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00058698654175
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00069308280945
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00081896781921
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00107598304749
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019693374634
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00035190582275
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00783276557922
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01228594779968
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01511907577515
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01781702041626
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00751185417175
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01245498657227
+
+
+Exec #49
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00048494338989
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00055503845215
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00065279006958
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00087308883667
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00030899047852
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00054192543030
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00776100158691
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01219201087952
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01492691040039
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01772904396057
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00732207298279
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01257085800171
+
+
+Exec #50
+------------
+ENTRADA 1:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00031995773315
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.00035619735718
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.00044202804565
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.00054192543030
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00019598007202
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00034904479980
+
+
+ENTRADA 2:
+=================
+
+Algorithm: AES/ECB
+Key Length: 16 bytes
+Time: 0.00687289237976
+
+Algorithm: AES/CBC
+Key Length: 16 bytes
+Time: 0.01142191886902
+
+Algorithm: AES/CFB
+Key Length: 16 bytes
+Time: 0.01377487182617
+
+Algorithm: AES/OFB
+Key Length: 16 bytes
+Time: 0.01663994789124
+
+Algorithm: AES/CTR
+Key Length: 16 bytes
+Time: 0.00623512268066
+
+Algorithm: AES/CBC/CTS
+Key Length: 16 bytes
+Time: 0.01126194000244
+

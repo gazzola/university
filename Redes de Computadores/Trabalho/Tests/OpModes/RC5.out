@@ -1,0 +1,2801 @@
+
+
+Exec #1ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00209999084473
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00139999389648
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00137400627136
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00163197517395
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00149202346802
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00146317481995
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04040408134460
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04225802421570
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04129290580750
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04202604293823
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04400587081909
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04217195510864
+
+
+Exec #2ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00194191932678
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00190520286560
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00189900398254
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00133800506592
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00142812728882
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00144696235657
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04063987731934
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04221701622009
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04201912879944
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04126906394958
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04413390159607
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04215693473816
+
+
+Exec #3ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00139617919922
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00138497352600
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00134110450745
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00144410133362
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00146508216858
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00135493278503
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04090619087219
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04227399826050
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04145503044128
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04148101806641
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04423093795776
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04222106933594
+
+
+Exec #4ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00183701515198
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00210404396057
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00212502479553
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00239801406860
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00235605239868
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00221514701843
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04235506057739
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04343819618225
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04306483268738
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04172706604004
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04415988922119
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04333686828613
+
+
+Exec #5ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00205206871033
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00211405754089
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00206685066223
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00208520889282
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00220394134521
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00190019607544
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04048895835876
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04220604896545
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04262495040894
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04138898849487
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04400682449341
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04205083847046
+
+
+Exec #6ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00211095809937
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00211215019226
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00206613540649
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00149703025818
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00161600112915
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00156402587891
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04084086418152
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04213690757751
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04100990295410
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04164576530457
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04386806488037
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04205894470215
+
+
+Exec #7ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00211310386658
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00210785865784
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00206899642944
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00176596641541
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00142097473145
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00134396553040
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04144287109375
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04252290725708
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04298686981201
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04212093353271
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04440307617188
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04260110855103
+
+
+Exec #8ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00192117691040
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00193190574646
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00188398361206
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00188493728638
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00199794769287
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00190806388855
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04158592224121
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04236197471619
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04123306274414
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04124879837036
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04399895668030
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04253315925598
+
+
+Exec #9ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00137400627136
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00139021873474
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00133800506592
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00133204460144
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00146818161011
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00134491920471
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04081487655640
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04217100143433
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04132509231567
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04128599166870
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04410314559937
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04234099388123
+
+
+Exec #10ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00211000442505
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00211596488953
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00206804275513
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00207495689392
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00219988822937
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00159597396851
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04057097434998
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04213595390320
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04136800765991
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04101991653442
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04419398307800
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04215002059937
+
+
+Exec #11ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00143599510193
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00135421752930
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00136399269104
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00144791603088
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00145292282104
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00134706497192
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04030990600586
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04250812530518
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04155993461609
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04156112670898
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04463100433350
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04241800308228
+
+
+Exec #12ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00211000442505
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00209879875183
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00204586982727
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00135493278503
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00146603584290
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00139689445496
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04053688049316
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04210495948792
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04140901565552
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04152011871338
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04409313201904
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04211783409119
+
+
+Exec #13ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00170993804932
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00135207176208
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00133490562439
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00141596794128
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00142097473145
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00134778022766
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04246711730957
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04225611686707
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04155206680298
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04482007026672
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04580783843994
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04486584663391
+
+
+Exec #14ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00206899642944
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00192499160767
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00187897682190
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00183415412903
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00142002105713
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00134515762329
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04084420204163
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04211902618408
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04137897491455
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04114890098572
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04448008537292
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04219698905945
+
+
+Exec #15ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00154590606689
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00209403038025
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00208306312561
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00206804275513
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00221610069275
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00208711624146
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04232215881348
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04983210563660
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04142284393311
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04190087318420
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04396009445190
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04206800460815
+
+
+Exec #16ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00222492218018
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00198292732239
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00148296356201
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00163102149963
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00161099433899
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00155210494995
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04341197013855
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04481291770935
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04424500465393
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04239487648010
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04684305191040
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04412913322449
+
+
+Exec #17ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00143313407898
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00163912773132
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00188279151917
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00189304351807
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00200295448303
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00191092491150
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04083299636841
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04220700263977
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04150295257568
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04136490821838
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04479193687439
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04225993156433
+
+
+Exec #18ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00137710571289
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00143289566040
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00137805938721
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00133800506592
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00143909454346
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00134587287903
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04061579704285
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04220104217529
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04151606559753
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04180812835693
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04399704933167
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04223394393921
+
+
+Exec #19ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00221896171570
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00184679031372
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00135397911072
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00147294998169
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00144600868225
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00144696235657
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04072117805481
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04294800758362
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04137110710144
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04117703437805
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04396700859070
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04206299781799
+
+
+Exec #20ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00212502479553
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00209593772888
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00209093093872
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00206184387207
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00193691253662
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00134706497192
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04059410095215
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04209399223328
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04132890701294
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04124999046326
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04456496238708
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04219818115234
+
+
+Exec #21ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00211310386658
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00205397605896
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00133895874023
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00133085250854
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00144600868225
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00135993957520
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04049682617188
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04208493232727
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04143714904785
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04164910316467
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04404091835022
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04215192794800
+
+
+Exec #22ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00138306617737
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00188803672791
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00188302993774
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00188803672791
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00200104713440
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00191593170166
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04053306579590
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04237699508667
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04191803932190
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04155611991882
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04422688484192
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04369688034058
+
+
+Exec #23ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00153398513794
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00135278701782
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00146389007568
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00134587287903
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00144600868225
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00137305259705
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04071784019470
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04234385490417
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04147005081177
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04144906997681
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04461121559143
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04228806495667
+
+
+Exec #24ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00211310386658
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00192022323608
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00133705139160
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00133109092712
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00144600868225
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00134491920471
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04077696800232
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04596495628357
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04150199890137
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04142189025879
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04409122467041
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04211497306824
+
+
+Exec #25ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00211691856384
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00166797637939
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00133490562439
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00133109092712
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00145387649536
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00135087966919
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04048180580139
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04217791557312
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04143309593201
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04140996932983
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04387998580933
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04215812683105
+
+
+Exec #26ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00213003158569
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00222396850586
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00157117843628
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00133109092712
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00142097473145
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00142979621887
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04066205024719
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04281592369080
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04145097732544
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04138898849487
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04475903511047
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04246401786804
+
+
+Exec #27ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00138282775879
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00185608863831
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00207781791687
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00208210945129
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00219702720642
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00209999084473
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04130196571350
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04314112663269
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04127407073975
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04120397567749
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04433798789978
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04208803176880
+
+
+Exec #28ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00142598152161
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00140810012817
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00136709213257
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00133085250854
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00142693519592
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00134491920471
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04037904739380
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04217004776001
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04162287712097
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04140901565552
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04386305809021
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04219102859497
+
+
+Exec #29ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00221800804138
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00143098831177
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00133299827576
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00147795677185
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00141811370850
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00134491920471
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04047012329102
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04212498664856
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04128289222717
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04108905792236
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04422402381897
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04217290878296
+
+
+Exec #30ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00212788581848
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00209403038025
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00168395042419
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00133395195007
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00141882896423
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00134801864624
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04047083854675
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04253792762756
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04173517227173
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04141592979431
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04452800750732
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04237389564514
+
+
+Exec #31ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00228214263916
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00222897529602
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00176906585693
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00133895874023
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00144696235657
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00136494636536
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04049110412598
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04223299026489
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04130005836487
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04160809516907
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04400491714478
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04195094108582
+
+
+Exec #32ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00212883949280
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00208687782288
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00133490562439
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00132989883423
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00144410133362
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00136518478394
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04031586647034
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04308414459229
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04156613349915
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04142713546753
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04485702514648
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04313898086548
+
+
+Exec #33ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00222110748291
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00175189971924
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00133395195007
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00147199630737
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00145387649536
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00134396553040
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04197287559509
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04334497451782
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04243087768555
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04146790504456
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04413390159607
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04210805892944
+
+
+Exec #34ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00137400627136
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00137901306152
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00133514404297
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00132799148560
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00142598152161
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00134205818176
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04037308692932
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04207611083984
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04130506515503
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04162502288818
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04388689994812
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04210019111633
+
+
+Exec #35ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00211906433105
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00209498405457
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00188994407654
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00132703781128
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00141692161560
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00134801864624
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04220294952393
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04338812828064
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04126596450806
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04117608070374
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04427814483643
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04206705093384
+
+
+Exec #36ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00220608711243
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00212192535400
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00207996368408
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00229287147522
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00202107429504
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00134301185608
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04051494598389
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04202508926392
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04119110107422
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04154586791992
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04380297660828
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04201102256775
+
+
+Exec #37ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00146412849426
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00187182426453
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00188112258911
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00195384025574
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00199508666992
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00191307067871
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04079294204712
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04209303855896
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04123997688293
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04163217544556
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04395294189453
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04209208488464
+
+
+Exec #38ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00171089172363
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00190305709839
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00190091133118
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00187087059021
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00201606750488
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00189113616943
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04049301147461
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04206609725952
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04129695892334
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04112386703491
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04442811012268
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04224610328674
+
+
+Exec #39ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00221610069275
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00201702117920
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00133609771729
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00132989883423
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00146508216858
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00134515762329
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04260087013245
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04212594032288
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04142594337463
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04106903076172
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04423213005066
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04217100143433
+
+
+Exec #40ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00211715698242
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00148415565491
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00133705139160
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00134897232056
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00142002105713
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00134491920471
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04054713249207
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04230308532715
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04125404357910
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04201197624207
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04399394989014
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04221010208130
+
+
+Exec #41ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00165009498596
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00135588645935
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00139784812927
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00136899948120
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00142192840576
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00137877464294
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04069590568542
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04217314720154
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04133319854736
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04120707511902
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04447507858276
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04224491119385
+
+
+Exec #42ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00201511383057
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00135302543640
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00133609771729
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00134992599487
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00141787528992
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00134515762329
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04075503349304
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04222106933594
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04133009910583
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04186296463013
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04404807090759
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04205489158630
+
+
+Exec #43ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00137901306152
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00135302543640
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00136184692383
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00132989883423
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00141811370850
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00136804580688
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04052090644836
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04210495948792
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04132986068726
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04199981689453
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04386806488037
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04208397865295
+
+
+Exec #44ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00212597846985
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00209307670593
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00195312500000
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00133204460144
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00142407417297
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00135111808777
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04038500785828
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04204821586609
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04135894775391
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04115605354309
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04449510574341
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04204988479614
+
+
+Exec #45ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00211811065674
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00224304199219
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00206589698792
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00207996368408
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00220203399658
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00150012969971
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04236388206482
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04215312004089
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04209184646606
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04125189781189
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04405403137207
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04237484931946
+
+
+Exec #46ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00213718414307
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00209498405457
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00207996368408
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00227689743042
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00176095962524
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00134396553040
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04041409492493
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04226088523865
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04202485084534
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04123497009277
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04392600059509
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04211401939392
+
+
+Exec #47ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00211691856384
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00210905075073
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00206708908081
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00208210945129
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00219511985779
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00161409378052
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04053497314453
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04208898544312
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04125690460205
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04124784469604
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04441809654236
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04213786125183
+
+
+Exec #48ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00221705436707
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00211191177368
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00206899642944
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00229811668396
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00222992897034
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00134420394897
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04059386253357
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04207801818848
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04126691818237
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04138278961182
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04381084442139
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04213690757751
+
+
+Exec #49ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00221800804138
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00209188461304
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00209116935730
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00220489501953
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00141787528992
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00134611129761
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04051613807678
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04244613647461
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04167819023132
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04198002815247
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04430198669434
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04330611228943
+
+
+Exec #50ENTRADA 1:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.00213003158569
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.00209593772888
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.00159311294556
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.00138115882874
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.00141787528992
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.00134706497192
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/ECB
+Key Length: 16 bytes
+Time: 0.04035305976868
+
+Algorithm: RC5/CBC
+Key Length: 16 bytes
+Time: 0.04218912124634
+
+Algorithm: RC5/CFB
+Key Length: 16 bytes
+Time: 0.04127717018127
+
+Algorithm: RC5/OFB
+Key Length: 16 bytes
+Time: 0.04105877876282
+
+Algorithm: RC5/CTR
+Key Length: 16 bytes
+Time: 0.04426312446594
+
+Algorithm: RC5/CBC/CTS
+Key Length: 16 bytes
+Time: 0.04212999343872
+

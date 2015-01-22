@@ -1,0 +1,1201 @@
+
+
+Exec #1ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00322890281677
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08637595176697
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #2ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00443410873413
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08645009994507
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #3ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00430703163147
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08681702613831
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #4ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00306892395020
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08669614791870
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #5ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00378680229187
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08696293830872
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #6ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00462603569031
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08664417266846
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #7ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00353622436523
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08639979362488
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #8ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00420308113098
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08665513992310
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #9ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00419688224792
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08677482604980
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #10ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00461602210999
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08803915977478
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #11ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00432610511780
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08735513687134
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #12ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00377988815308
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08692693710327
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #13ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00381898880005
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08641290664673
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #14ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00423407554626
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08624005317688
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #15ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00412297248840
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08680915832520
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #16ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00419998168945
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08631801605225
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #17ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00460886955261
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08677911758423
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #18ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00463509559631
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08644294738770
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #19ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00415015220642
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08631992340088
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #20ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00462198257446
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08666801452637
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #21ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00298500061035
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08634901046753
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #22ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00463008880615
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08712315559387
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #23ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00404095649719
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08651518821716
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #24ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00461912155151
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08694601058960
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #25ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00462508201599
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08670783042908
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #26ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00299501419067
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08637404441833
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #27ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00462913513184
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08631992340088
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #28ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00461101531982
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08616709709167
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #29ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00461196899414
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08706617355347
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #30ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00396704673767
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08642911911011
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #31ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00462388992310
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08694696426392
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #32ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00430893898010
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08685708045959
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #33ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00462603569031
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08672809600830
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #34ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00303697586060
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08661103248596
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #35ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00462412834167
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08551907539368
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #36ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00421214103699
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08643198013306
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #37ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00407004356384
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08634805679321
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #38ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00463891029358
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08709883689880
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #39ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00424814224243
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08689498901367
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #40ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00419902801514
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08685708045959
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #41ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00462889671326
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08638405799866
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #42ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00462007522583
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08707308769226
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #43ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00453495979309
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08808898925781
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #44ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00353598594666
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08684587478638
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #45ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00463199615479
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08671092987061
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #46ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00397586822510
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08676409721375
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #47ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00412607192993
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08717298507690
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #48ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00394392013550
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08640909194946
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #49ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00416302680969
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08664202690125
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+Exec #50ENTRADA 1:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.00347304344177
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
+
+ENTRADA 2:
+=================
+
+Algorithm: RC5/EAX
+Key Length: 16
+Time: 0.08666086196899
+
+RC5/GCM: block size of underlying block cipher is not 16
+
+RC5/CCM: block size of underlying block cipher is not 16
+
