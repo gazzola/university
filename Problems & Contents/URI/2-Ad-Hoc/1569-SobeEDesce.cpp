@@ -9,7 +9,7 @@ using namespace std;
 
 
 int getPos(int *vet, int dado){
-	while(vet[dado] >= 0)
+	while(vet[dado] > 0)
 		dado = vet[dado];
 	return dado;
 }
@@ -23,7 +23,7 @@ int main(){
 	scanf("%d", &n);
 	while(n--){
 
-		memset(jogo, -1, sizeof(jogo));
+		memset(jogo, 0, sizeof(jogo));
 		scanf("%d %d %d", &a, &b, &c);
 
 
@@ -32,22 +32,30 @@ int main(){
 			jogo[x] = y;
 		}
 
-		bool ganhou = false;
+		
 		
 		int jogadores[1000001];
 		for(int i=0; i<=a; i++)
 			jogadores[i] = 1;
 
-		for(int i=0; i<c; i++){
 
-			int j = (i%a);
+		bool ganhou = false;
+		for(int i=0; i<c; i++){
+			
 			scanf("%d", &z);
 
 			if(!ganhou){
-				int pos = getPos(jogo, z+jogadores[j]);
-				jogadores[j] = pos;
-				if(pos == 100)
+
+				int j = (i%a);
+				if(z+jogadores[j] >= 100){
+					jogadores[j] = 100;
 					ganhou = true;
+				}
+				else{
+					jogadores[j] = getPos(jogo, z+jogadores[j]);
+					if(jogadores[j] == 100)
+						ganhou = true;
+				}	
 			}
 
 		}
