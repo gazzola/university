@@ -1,8 +1,8 @@
 /*
 * Complexidade:
 * Pior Caso: 	O(n^2)
-* Caso medio: 	O(n^2)
-* Melhor Caso:	O(n)
+* Caso medio: 	O(nlgn)
+* Melhor Caso:	O(nlgn)
 *
 * Memoria usada: 
 * O(n) para vetor
