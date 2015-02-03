@@ -11,8 +11,8 @@ mat = [[10, 1, 1, 2, 3, -2],
 
 vet = [6.57, -68.448, -112.05, -3.98, -2.18, 10.882]
 
-# vet = [1, 2, -5]
-# mat = [[1,3,2], [1,4,1], [-3, 1, -10]]
+vet = [7, 7, 13]
+mat = [[6, 2, -1], [2, 4, 1], [3, 2, 8]]
 
 
 # helpers
@@ -29,6 +29,7 @@ def mult_matrix(A, B):
 def lu_decomposition(A):
 	
 	n = len(A)
+	K = [vet[i] for i in range(len(vet))]
 
 	# id matrix
 	L = [[float(i==j) for j in range(n)] for i in range(n)]
@@ -37,10 +38,12 @@ def lu_decomposition(A):
 		for j in range(i+1, n):
 			pivo = -A[j][i]/A[i][i]
 			L[j][i] = -pivo
+			K[j] += K[i]*pivo
 			for k in range(i, n):
 				A[j][k] += pivo*A[i][k]
 
 
+	print(K)
 	# L U
 	return (L, A)
 
@@ -70,6 +73,7 @@ def solve_by_x(U, b):
 
 L, U = lu_decomposition(mat)
 y = solve_by_y(L, vet)
+print(y)
 x = solve_by_x(U, y)
 print(x)
 

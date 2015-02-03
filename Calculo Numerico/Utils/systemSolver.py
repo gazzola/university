@@ -120,9 +120,12 @@ def eliminacaoGaussiana2(matriz, vetor):
 
 if __name__ == "__main__":
 	
-	n = 3
-	mat = [[i+j+1 for j in range(n)] for i in range(n)]
-	vet = [i for i in range(n)]
+	mat = [[1., 0.20, 0.04], [1., 0.25, 0.0625], [1., 0.30, 0.09]]
+	vet = [0.16, 0.19, 0.22]
 
-	x = solve(mat, vet)
-	print(x)
+	k = solve(mat, vet)
+	print(k)
+
+	x = 0.28
+	print(k[0] + k[1]*x + k[2]*x*x)
+

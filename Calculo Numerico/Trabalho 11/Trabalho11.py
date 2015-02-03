@@ -11,7 +11,7 @@ coefs[4] = ((19, 75, 50, 50, 75, 19), 5/288.0)
 
 
 def eq(x):
-	return c1 * pow(math.e, x)
+	return math.sin(x**2)
 
 
 def get_h(a, b, n):
@@ -26,9 +26,11 @@ def solve(i, h, m):
 
 
 def newton_cotes(a, b, m, M):
-	n, h = m*M, get_h(a, b, n)
+	n = m*M
+	h = get_h(a, b, n)
 	soma = 0
-	for i in range(a, a+M):
+	ads = a+M
+	for k in range(M):
 		soma += solve(i, h, m)
 	return soma
 
@@ -39,7 +41,7 @@ while(True):
 	c1 = int(input())
 
 	print("Digite os intervalos de integracao i, j:")
-	i, j = map(int, input().split())
+	i, j = map(float, input().split())
 
 	print("Digite o grau m e o n de subdivisoes M:")
 	m, M = map(int, input().split())

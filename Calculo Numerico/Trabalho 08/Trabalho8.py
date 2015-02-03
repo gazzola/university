@@ -1,8 +1,8 @@
 import math
 
-n = 5
-x = [0.2, 0.4, 0.6, 0.8, 1.0]
-y = [1.22, 1.49, 1.82, 2.23, 2.72]
+n = 6
+x = [0.15, 0.20, 0.25, 0.30, 0.35, 0.40]
+y = [0.12, 0.16, 0.19, 0.22, 0.25, 0.27]
 mat = [[0 for y in range(n)] for x in range(n)]
 
 def newton():
@@ -18,9 +18,9 @@ def newton():
 	for i in range(n):
 		for j in range(n):
 			if(j > i):
-				print("  ~  ", end="")
+				print("%4.4s " % "~", end="")
 			else:
-				print("%.2f " % mat[i][j], end="")
+				print("%4.4f " % mat[i][j], end="")
 		print("")
 
 

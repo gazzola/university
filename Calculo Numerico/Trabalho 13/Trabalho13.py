@@ -2,12 +2,10 @@ import math
 
 
 
-mat = [[10., 2., 1.],
-       [1., 5., 1.],
-       [2., 3., 10.]]
+mat = [[4., 3., -1.], [-2., -4., 5.], [1., 2., 6.]]
 
-vet = [7, -8, 6]
-xini = [0.7, -1.6, 0.6]
+vet = [-2., 20., 7.]
+xini = [0., 0., 0.]
 
 
 '''
@@ -93,6 +91,8 @@ def gauss_jacobi(A, b, xs):
 
 	while True:
 		
+		print(xs)
+
 		for i in range(n):
 			s = sum([A[i][j]*xs[j] for j in range(n)]) - A[i][i] * xs[i]
 			ys[i] = (b[i] - s)/A[i][i]
@@ -116,6 +116,7 @@ def gauss_seidell(A, b, xs):
 
 	while True:
 		
+		print(xs)
 		ys = [v for v in xs]
 
 		for i in range(n):

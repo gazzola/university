@@ -42,11 +42,16 @@ void printResult(vd &v){
 }
 
 double f(double x, double y){
-	return x - y + 2;
+	return 2*x*y;
+}
+
+
+double next_ele(double x, double y, double h){
+	return y + h*f(x, y);
 }
 
 double nextY(double x, double y, double h){
-	return y + h*f(x, y);
+	return y + h*(f(x, y)+f(x+h, next_ele(x, y, h)))/2.0;
 }
 
 
@@ -59,7 +64,7 @@ vd euler(double x0, double xn, double y0, double h){
 	double x = x0+h;
 	while(x <= xn+h){
 		m = y.size()-1;
-		y.push_back(dd(x, nextY(x, y[m].second, h)));
+		y.push_back(dd(x, nextY(y[m].first, y[m].second, h)));
 		x += h;
 	}
 
@@ -69,7 +74,7 @@ vd euler(double x0, double xn, double y0, double h){
 
 int main(){
 
-	vd result = euler(0, 1, 2, 0.01);
+	vd result = euler(1.0, 1.5, 1, 0.1);
 	printResult(result);
 
 	return 0;

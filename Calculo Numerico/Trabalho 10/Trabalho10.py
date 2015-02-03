@@ -8,7 +8,7 @@ def ln(x):
 a, b, c, d = 0, 0, 0, 0
 
 def eq(x):
-	return ln((a*x) + (b*(x**(1/2.0))) + (c*(x**(1/3.0))) + (d*(x**(1/4.0))))
+	return x*x - math.e**x
 
 
 def getH(i, j, n):

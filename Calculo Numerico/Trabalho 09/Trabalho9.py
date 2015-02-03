@@ -4,7 +4,7 @@ import math
 a, b, c = 0, 0, 0
 
 def eq(x):
-	return a*math.sin(x) + b*math.cos(x) + c*x
+	return 1.0/(x*x)
 
 
 
