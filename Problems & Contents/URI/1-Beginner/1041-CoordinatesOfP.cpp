@@ -8,24 +8,28 @@ int main(){
 
 	
 	double x, y;
-	string msg = "Q4";
+	string msg;
 
-	cin >> x >> y;
+	while(cin >> x >> y){
 
-	if(x == 0 && y == 0)
-		msg = "Origem";
-	else if(x == 0 && y != 0)
-		msg = "Eixo Y";
-	else if(x != 0 && y == 0)
-		msg = "Eixo X";
-	else if(x > 0 && y > 0)
-		msg = "Q1";
-	else if(x < 0 && y > 0)
-		msg = "Q2";
-	else if(x < 0 && y < 0)
-		msg = "Q3";
+		msg = "Q4";
+		if(x == 0 && y == 0)
+			msg = "Origem";
+		else if(x == 0 and y != 0)
+			msg = "Eixo X";
+		else if(y == 0 and x != 0)
+			msg = "Eixo Y";
+		else if(x > 0 && y > 0)
+			msg = "Q1";
+		else if(x < 0 && y > 0)
+			msg = "Q2";
+		else if(x < 0 && y < 0)
+			msg = "Q3";
+		else
+			msg = "Q4";
 
-	cout << msg << endl;
+		cout << msg << endl;
+	}
 
 	return 0;
 }
