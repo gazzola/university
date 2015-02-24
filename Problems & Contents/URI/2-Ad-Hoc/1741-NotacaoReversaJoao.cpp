@@ -50,39 +50,41 @@ int main(){
 		deque<lls> conta;
 		mal = zero = false;
 
-		for(int i=n-1; i>=0; i-=2){
+		if(n % 2 == 1){
+			for(int i=n-1; i>=0; i-=2){
 
-			if(!isdigit(sentenca[i])){
+				if(!isdigit(sentenca[i])){
 
-				if(conta.size() < 2){
-					mal = true;
-					break;
-				}
-
-				x = conta.back();
-				conta.pop_back();
-
-				y = conta.back();
-				conta.pop_back();
-
-
-				if(sentenca[i] == '+')
-					conta.push_back(y+x);
-				else if(sentenca[i] == '-')
-					conta.push_back(y-x);
-				else if(sentenca[i] == '*')
-					conta.push_back(y*x);
-				else if(sentenca[i] == '/'){
-					if(x == 0){
-						zero = true;
-						x = 1;
+					if(conta.size() < 2){
+						mal = true;
+						break;
 					}
-					conta.push_back(y/x);
-				}
 
-			}
-			else{
-				conta.push_back(myatoi(sentenca[i]));
+					x = conta.back();
+					conta.pop_back();
+
+					y = conta.back();
+					conta.pop_back();
+
+
+					if(sentenca[i] == '+')
+						conta.push_back(y+x);
+					else if(sentenca[i] == '-')
+						conta.push_back(y-x);
+					else if(sentenca[i] == '*')
+						conta.push_back(y*x);
+					else if(sentenca[i] == '/'){
+						if(x == 0){
+							zero = true;
+							x = 1;
+						}
+						conta.push_back(y/x);
+					}
+
+				}
+				else{
+					conta.push_back(myatoi(sentenca[i]));
+				}
 			}
 		}
 
