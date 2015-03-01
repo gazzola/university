@@ -4,6 +4,8 @@
 #include <cstring>
 #include <cmath>
 #include <vector>
+#include <map>
+#include <string>
 
 using namespace std;
 
@@ -24,12 +26,16 @@ int main(){
 
 		for(int i=0; i<m; i++){
 			planos[i].t = 0;
-			scanf("%d %d %d %d", &planos[i].a, &planos[i].c, &planos[i].b, &planos[i].d);
+			scanf("%d %d %d %d", &planos[i].a, &planos[i].b, &planos[i].c, &planos[i].d);
 		}
+
+		map<string, int> dict;
+		int maior = 0;
 
 		for(int i=0; i<n; i++){
 			scanf("%d %d %d", &x, &y, &z);
 
+			string s;
 			for(int j=0; j<m; j++){
 
 				int a = planos[j].a;
@@ -38,15 +44,16 @@ int main(){
 				int d = planos[j].d;
 
 				if(a*x + b*y + c*z > d)
-					planos[j].t += 1;
+					s.push_back('y');
+				else
+					s.push_back('n');
 			}
+
+			dict[s] += 1;
+			maior = max(maior, dict[s]);
 		}
 
-		int res = -1;
-		for(int i=0; i<m; i++)
-			res = max(res, planos[i].t);
-		
-		printf("%d\n", res);
+		printf("%d\n", maior);
 
 	}
 
