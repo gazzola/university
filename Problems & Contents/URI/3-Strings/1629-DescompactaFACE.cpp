@@ -10,6 +10,17 @@ int ctoi(char c){
 	return (int) c - '0';
 }
 
+int somaDigitos(int n){
+
+	int t = 0;
+	while(n > 0){
+		t += n%10;
+		n /= 10;
+	}
+
+	return t;
+}
+
 
 int main(){
 
@@ -22,40 +33,16 @@ int main(){
 			scanf("%s%n\n", numero, &n);
 
 			int x=0, y=0;
-			int j=0, k=0;
 
 			for(int i=0; i<n; i++){
-				if(i%2 == 0){
-					if(ctoi(numero[i]) > 0)
-						j++;
+				if(i%2 == 0)
 					x += ctoi(numero[i]);
-				}
-				else{
-					if(ctoi(numero[i]) > 0)
-						k++;
+				else
 					y += ctoi(numero[i]);
-				}
 			}
 
-
-			int mx = 9 * (j/2);
-			int my = 9 * (k/2);
-
-			if(mx > 0)
-				x = x%mx;
-
-			if(my > 0)
-				y = y%my;
-
-
-			if(x == 0)
-				x = mx;
-
-			if(y == 0)
-				y = my;
-
-			printf("%d\n", x+y);
-
+			printf("%d\n", somaDigitos(x)+somaDigitos(y));
+		
 		}
 	}
 
