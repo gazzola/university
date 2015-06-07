@@ -1,0 +1,29 @@
+int a;
+int soma(int a, int b){
+	return a + b;
+};
+
+int main(){
+	int a, b;
+	float c, d;
+	int e;
+	
+	a = 0; e = 7;
+	
+	while(a>e*3){
+		a = a + 1;
+	};
+
+	if(a == 0 | a == b & a == c) then {
+		a = soma(a,b);
+		b = 6 / d;
+		if(b >= a) then {
+			while(c < 0){
+				print b;
+			};
+		} else { };
+	} else {
+		b = a * ( 4 + 7 ) + 5 * c;
+	};
+	return b - 5;
+};
