@@ -1,0 +1,1399 @@
+State 1 conflicts: 1 shift/reduce
+State 4 conflicts: 3 shift/reduce
+State 8 conflicts: 1 shift/reduce
+State 27 conflicts: 3 shift/reduce
+State 69 conflicts: 1 reduce/reduce
+State 107 conflicts: 2 shift/reduce
+
+
+Grammar
+
+    0 $accept: input $end
+
+    1 input: %empty
+    2      | input programa
+
+    3 programa: declaracoes
+
+    4 declaracoes: %empty
+    5            | declaracoes tipo declFuncao
+    6            | declaracoes tipo declrVariaveis
+
+    7 declrVariaveis: %empty
+    8               | listaItens SEMICOLON declaracoes
+
+    9 declFuncao: ID P_OPEN parametros P_CLOSE C_OPEN corpoFuncao C_CLOSE SEMICOLON
+   10           | MAIN P_OPEN P_CLOSE C_OPEN corpoFuncao C_CLOSE SEMICOLON
+
+   11 listaItens: item COMMA listaItens
+   12           | item
+
+   13 item: ID
+   14     | ID B_OPEN INTNUM B_CLOSE
+   15     | POINTER item
+
+   16 parametros: %empty
+   17           | tipo item
+   18           | tipo item COMMA parametros
+
+   19 tipo: INT
+   20     | FLOAT
+   21     | BOOL
+
+   22 corpoFuncao: declaracoes comandos
+
+   23 blocoComandos: C_OPEN comandos C_CLOSE
+
+   24 comandos: %empty
+   25         | comando SEMICOLON comandos
+
+   26 comando: atribuicao
+   27        | retorno
+   28        | seEntao
+   29        | impressao
+   30        | enquanto
+
+   31 atribuicao: ID ASSIGN expressao
+   32           | ID B_OPEN INTNUM B_CLOSE ASSIGN expressao
+
+   33 expressao: expAritmetica
+   34          | expLogica
+
+   35 expAritmetica: expAritmetica PLUS t1
+   36              | expAritmetica MINUS t1
+   37              | t1
+
+   38 t1: t1 MULT f
+   39   | t1 DIV f
+   40   | f
+
+   41 f: P_OPEN expAritmetica P_CLOSE
+   42  | ID
+   43  | ID P_OPEN listaExp P_CLOSE
+   44  | ID B_OPEN INTNUM B_CLOSE
+   45  | INTNUM
+   46  | FLOATNUM
+
+   47 listaExp: %empty
+   48         | ID COMMA listaExp
+   49         | ID
+
+   50 expLogica: expLogica opLogico expLogica
+   51          | t2
+
+   52 t2: expAritmetica opComparacao expAritmetica
+   53   | ID
+
+   54 opLogico: OPE
+   55         | OPOU
+
+   56 opComparacao: LT
+   57             | GT
+   58             | LE
+   59             | GE
+   60             | EQ
+
+   61 seEntao: IF P_OPEN expLogica P_CLOSE THEN blocoComandos ELSE blocoComandos
+
+   62 enquanto: WHILE P_OPEN expLogica P_CLOSE blocoComandos
+
+   63 impressao: PRINT expAritmetica
+
+   64 retorno: RETURN expAritmetica
+
+
+Terminals, with rules where they appear
+
+$end (0) 0
+error (256)
+ID (258) 9 13 14 31 32 42 43 44 48 49 53
+INTNUM (259) 14 32 44 45
+FLOATNUM (260) 46
+SEMICOLON (261) 8 9 10 25
+COMMA (262) 11 18 48
+P_OPEN (263) 9 10 41 43 61 62
+P_CLOSE (264) 9 10 41 43 61 62
+B_OPEN (265) 14 32 44
+B_CLOSE (266) 14 32 44
+C_OPEN (267) 9 10 23
+C_CLOSE (268) 9 10 23
+PLUS (269) 35
+MINUS (270) 36
+MULT (271) 38
+DIV (272) 39
+POINTER (273) 15
+OPE (274) 54
+OPOU (275) 55
+ASSIGN (276) 31 32
+LT (277) 56
+GT (278) 57
+LE (279) 58
+GE (280) 59
+EQ (281) 60
+INT (282) 19
+FLOAT (283) 20
+BOOL (284) 21
+MAIN (285) 10
+IF (286) 61
+THEN (287) 61
+ELSE (288) 61
+WHILE (289) 62
+PRINT (290) 63
+RETURN (291) 64
+
+
+Nonterminals, with rules where they appear
+
+$accept (37)
+    on left: 0
+input (38)
+    on left: 1 2, on right: 0 2
+programa (39)
+    on left: 3, on right: 2
+declaracoes (40)
+    on left: 4 5 6, on right: 3 5 6 8 22
+declrVariaveis (41)
+    on left: 7 8, on right: 6
+declFuncao (42)
+    on left: 9 10, on right: 5
+listaItens (43)
+    on left: 11 12, on right: 8 11
+item (44)
+    on left: 13 14 15, on right: 11 12 15 17 18
+parametros (45)
+    on left: 16 17 18, on right: 9 18
+tipo (46)
+    on left: 19 20 21, on right: 5 6 17 18
+corpoFuncao (47)
+    on left: 22, on right: 9 10
+blocoComandos (48)
+    on left: 23, on right: 61 62
+comandos (49)
+    on left: 24 25, on right: 22 23 25
+comando (50)
+    on left: 26 27 28 29 30, on right: 25
+atribuicao (51)
+    on left: 31 32, on right: 26
+expressao (52)
+    on left: 33 34, on right: 31 32
+expAritmetica (53)
+    on left: 35 36 37, on right: 33 35 36 41 52 63 64
+t1 (54)
+    on left: 38 39 40, on right: 35 36 37 38 39
+f (55)
+    on left: 41 42 43 44 45 46, on right: 38 39 40
+listaExp (56)
+    on left: 47 48 49, on right: 43 48
+expLogica (57)
+    on left: 50 51, on right: 34 50 61 62
+t2 (58)
+    on left: 52 53, on right: 51
+opLogico (59)
+    on left: 54 55, on right: 50
+opComparacao (60)
+    on left: 56 57 58 59 60, on right: 52
+seEntao (61)
+    on left: 61, on right: 28
+enquanto (62)
+    on left: 62, on right: 30
+impressao (63)
+    on left: 63, on right: 29
+retorno (64)
+    on left: 64, on right: 27
+
+
+State 0
+
+    0 $accept: . input $end
+
+    $default  reduce using rule 1 (input)
+
+    input  go to state 1
+
+
+State 1
+
+    0 $accept: input . $end
+    2 input: input . programa
+
+    $end  shift, and go to state 2
+
+    $end      [reduce using rule 4 (declaracoes)]
+    $default  reduce using rule 4 (declaracoes)
+
+    programa     go to state 3
+    declaracoes  go to state 4
+
+
+State 2
+
+    0 $accept: input $end .
+
+    $default  accept
+
+
+State 3
+
+    2 input: input programa .
+
+    $default  reduce using rule 2 (input)
+
+
+State 4
+
+    3 programa: declaracoes .
+    5 declaracoes: declaracoes . tipo declFuncao
+    6            | declaracoes . tipo declrVariaveis
+
+    INT    shift, and go to state 5
+    FLOAT  shift, and go to state 6
+    BOOL   shift, and go to state 7
+
+    INT       [reduce using rule 3 (programa)]
+    FLOAT     [reduce using rule 3 (programa)]
+    BOOL      [reduce using rule 3 (programa)]
+    $default  reduce using rule 3 (programa)
+
+    tipo  go to state 8
+
+
+State 5
+
+   19 tipo: INT .
+
+    $default  reduce using rule 19 (tipo)
+
+
+State 6
+
+   20 tipo: FLOAT .
+
+    $default  reduce using rule 20 (tipo)
+
+
+State 7
+
+   21 tipo: BOOL .
+
+    $default  reduce using rule 21 (tipo)
+
+
+State 8
+
+    5 declaracoes: declaracoes tipo . declFuncao
+    6            | declaracoes tipo . declrVariaveis
+
+    ID       shift, and go to state 9
+    POINTER  shift, and go to state 10
+    MAIN     shift, and go to state 11
+
+    ID        [reduce using rule 7 (declrVariaveis)]
+    $default  reduce using rule 7 (declrVariaveis)
+
+    declrVariaveis  go to state 12
+    declFuncao      go to state 13
+    listaItens      go to state 14
+    item            go to state 15
+
+
+State 9
+
+    9 declFuncao: ID . P_OPEN parametros P_CLOSE C_OPEN corpoFuncao C_CLOSE SEMICOLON
+   13 item: ID .
+   14     | ID . B_OPEN INTNUM B_CLOSE
+
+    P_OPEN  shift, and go to state 16
+    B_OPEN  shift, and go to state 17
+
+    $default  reduce using rule 13 (item)
+
+
+State 10
+
+   15 item: POINTER . item
+
+    ID       shift, and go to state 18
+    POINTER  shift, and go to state 10
+
+    item  go to state 19
+
+
+State 11
+
+   10 declFuncao: MAIN . P_OPEN P_CLOSE C_OPEN corpoFuncao C_CLOSE SEMICOLON
+
+    P_OPEN  shift, and go to state 20
+
+
+State 12
+
+    6 declaracoes: declaracoes tipo declrVariaveis .
+
+    $default  reduce using rule 6 (declaracoes)
+
+
+State 13
+
+    5 declaracoes: declaracoes tipo declFuncao .
+
+    $default  reduce using rule 5 (declaracoes)
+
+
+State 14
+
+    8 declrVariaveis: listaItens . SEMICOLON declaracoes
+
+    SEMICOLON  shift, and go to state 21
+
+
+State 15
+
+   11 listaItens: item . COMMA listaItens
+   12           | item .
+
+    COMMA  shift, and go to state 22
+
+    $default  reduce using rule 12 (listaItens)
+
+
+State 16
+
+    9 declFuncao: ID P_OPEN . parametros P_CLOSE C_OPEN corpoFuncao C_CLOSE SEMICOLON
+
+    INT    shift, and go to state 5
+    FLOAT  shift, and go to state 6
+    BOOL   shift, and go to state 7
+
+    $default  reduce using rule 16 (parametros)
+
+    parametros  go to state 23
+    tipo        go to state 24
+
+
+State 17
+
+   14 item: ID B_OPEN . INTNUM B_CLOSE
+
+    INTNUM  shift, and go to state 25
+
+
+State 18
+
+   13 item: ID .
+   14     | ID . B_OPEN INTNUM B_CLOSE
+
+    B_OPEN  shift, and go to state 17
+
+    $default  reduce using rule 13 (item)
+
+
+State 19
+
+   15 item: POINTER item .
+
+    $default  reduce using rule 15 (item)
+
+
+State 20
+
+   10 declFuncao: MAIN P_OPEN . P_CLOSE C_OPEN corpoFuncao C_CLOSE SEMICOLON
+
+    P_CLOSE  shift, and go to state 26
+
+
+State 21
+
+    8 declrVariaveis: listaItens SEMICOLON . declaracoes
+
+    $default  reduce using rule 4 (declaracoes)
+
+    declaracoes  go to state 27
+
+
+State 22
+
+   11 listaItens: item COMMA . listaItens
+
+    ID       shift, and go to state 18
+    POINTER  shift, and go to state 10
+
+    listaItens  go to state 28
+    item        go to state 15
+
+
+State 23
+
+    9 declFuncao: ID P_OPEN parametros . P_CLOSE C_OPEN corpoFuncao C_CLOSE SEMICOLON
+
+    P_CLOSE  shift, and go to state 29
+
+
+State 24
+
+   17 parametros: tipo . item
+   18           | tipo . item COMMA parametros
+
+    ID       shift, and go to state 18
+    POINTER  shift, and go to state 10
+
+    item  go to state 30
+
+
+State 25
+
+   14 item: ID B_OPEN INTNUM . B_CLOSE
+
+    B_CLOSE  shift, and go to state 31
+
+
+State 26
+
+   10 declFuncao: MAIN P_OPEN P_CLOSE . C_OPEN corpoFuncao C_CLOSE SEMICOLON
+
+    C_OPEN  shift, and go to state 32
+
+
+State 27
+
+    5 declaracoes: declaracoes . tipo declFuncao
+    6            | declaracoes . tipo declrVariaveis
+    8 declrVariaveis: listaItens SEMICOLON declaracoes .
+
+    INT    shift, and go to state 5
+    FLOAT  shift, and go to state 6
+    BOOL   shift, and go to state 7
+
+    INT       [reduce using rule 8 (declrVariaveis)]
+    FLOAT     [reduce using rule 8 (declrVariaveis)]
+    BOOL      [reduce using rule 8 (declrVariaveis)]
+    $default  reduce using rule 8 (declrVariaveis)
+
+    tipo  go to state 8
+
+
+State 28
+
+   11 listaItens: item COMMA listaItens .
+
+    $default  reduce using rule 11 (listaItens)
+
+
+State 29
+
+    9 declFuncao: ID P_OPEN parametros P_CLOSE . C_OPEN corpoFuncao C_CLOSE SEMICOLON
+
+    C_OPEN  shift, and go to state 33
+
+
+State 30
+
+   17 parametros: tipo item .
+   18           | tipo item . COMMA parametros
+
+    COMMA  shift, and go to state 34
+
+    $default  reduce using rule 17 (parametros)
+
+
+State 31
+
+   14 item: ID B_OPEN INTNUM B_CLOSE .
+
+    $default  reduce using rule 14 (item)
+
+
+State 32
+
+   10 declFuncao: MAIN P_OPEN P_CLOSE C_OPEN . corpoFuncao C_CLOSE SEMICOLON
+
+    $default  reduce using rule 4 (declaracoes)
+
+    declaracoes  go to state 35
+    corpoFuncao  go to state 36
+
+
+State 33
+
+    9 declFuncao: ID P_OPEN parametros P_CLOSE C_OPEN . corpoFuncao C_CLOSE SEMICOLON
+
+    $default  reduce using rule 4 (declaracoes)
+
+    declaracoes  go to state 35
+    corpoFuncao  go to state 37
+
+
+State 34
+
+   18 parametros: tipo item COMMA . parametros
+
+    INT    shift, and go to state 5
+    FLOAT  shift, and go to state 6
+    BOOL   shift, and go to state 7
+
+    $default  reduce using rule 16 (parametros)
+
+    parametros  go to state 38
+    tipo        go to state 24
+
+
+State 35
+
+    5 declaracoes: declaracoes . tipo declFuncao
+    6            | declaracoes . tipo declrVariaveis
+   22 corpoFuncao: declaracoes . comandos
+
+    ID      shift, and go to state 39
+    INT     shift, and go to state 5
+    FLOAT   shift, and go to state 6
+    BOOL    shift, and go to state 7
+    IF      shift, and go to state 40
+    WHILE   shift, and go to state 41
+    PRINT   shift, and go to state 42
+    RETURN  shift, and go to state 43
+
+    $default  reduce using rule 24 (comandos)
+
+    tipo        go to state 8
+    comandos    go to state 44
+    comando     go to state 45
+    atribuicao  go to state 46
+    seEntao     go to state 47
+    enquanto    go to state 48
+    impressao   go to state 49
+    retorno     go to state 50
+
+
+State 36
+
+   10 declFuncao: MAIN P_OPEN P_CLOSE C_OPEN corpoFuncao . C_CLOSE SEMICOLON
+
+    C_CLOSE  shift, and go to state 51
+
+
+State 37
+
+    9 declFuncao: ID P_OPEN parametros P_CLOSE C_OPEN corpoFuncao . C_CLOSE SEMICOLON
+
+    C_CLOSE  shift, and go to state 52
+
+
+State 38
+
+   18 parametros: tipo item COMMA parametros .
+
+    $default  reduce using rule 18 (parametros)
+
+
+State 39
+
+   31 atribuicao: ID . ASSIGN expressao
+   32           | ID . B_OPEN INTNUM B_CLOSE ASSIGN expressao
+
+    B_OPEN  shift, and go to state 53
+    ASSIGN  shift, and go to state 54
+
+
+State 40
+
+   61 seEntao: IF . P_OPEN expLogica P_CLOSE THEN blocoComandos ELSE blocoComandos
+
+    P_OPEN  shift, and go to state 55
+
+
+State 41
+
+   62 enquanto: WHILE . P_OPEN expLogica P_CLOSE blocoComandos
+
+    P_OPEN  shift, and go to state 56
+
+
+State 42
+
+   63 impressao: PRINT . expAritmetica
+
+    ID        shift, and go to state 57
+    INTNUM    shift, and go to state 58
+    FLOATNUM  shift, and go to state 59
+    P_OPEN    shift, and go to state 60
+
+    expAritmetica  go to state 61
+    t1             go to state 62
+    f              go to state 63
+
+
+State 43
+
+   64 retorno: RETURN . expAritmetica
+
+    ID        shift, and go to state 57
+    INTNUM    shift, and go to state 58
+    FLOATNUM  shift, and go to state 59
+    P_OPEN    shift, and go to state 60
+
+    expAritmetica  go to state 64
+    t1             go to state 62
+    f              go to state 63
+
+
+State 44
+
+   22 corpoFuncao: declaracoes comandos .
+
+    $default  reduce using rule 22 (corpoFuncao)
+
+
+State 45
+
+   25 comandos: comando . SEMICOLON comandos
+
+    SEMICOLON  shift, and go to state 65
+
+
+State 46
+
+   26 comando: atribuicao .
+
+    $default  reduce using rule 26 (comando)
+
+
+State 47
+
+   28 comando: seEntao .
+
+    $default  reduce using rule 28 (comando)
+
+
+State 48
+
+   30 comando: enquanto .
+
+    $default  reduce using rule 30 (comando)
+
+
+State 49
+
+   29 comando: impressao .
+
+    $default  reduce using rule 29 (comando)
+
+
+State 50
+
+   27 comando: retorno .
+
+    $default  reduce using rule 27 (comando)
+
+
+State 51
+
+   10 declFuncao: MAIN P_OPEN P_CLOSE C_OPEN corpoFuncao C_CLOSE . SEMICOLON
+
+    SEMICOLON  shift, and go to state 66
+
+
+State 52
+
+    9 declFuncao: ID P_OPEN parametros P_CLOSE C_OPEN corpoFuncao C_CLOSE . SEMICOLON
+
+    SEMICOLON  shift, and go to state 67
+
+
+State 53
+
+   32 atribuicao: ID B_OPEN . INTNUM B_CLOSE ASSIGN expressao
+
+    INTNUM  shift, and go to state 68
+
+
+State 54
+
+   31 atribuicao: ID ASSIGN . expressao
+
+    ID        shift, and go to state 69
+    INTNUM    shift, and go to state 58
+    FLOATNUM  shift, and go to state 59
+    P_OPEN    shift, and go to state 60
+
+    expressao      go to state 70
+    expAritmetica  go to state 71
+    t1             go to state 62
+    f              go to state 63
+    expLogica      go to state 72
+    t2             go to state 73
+
+
+State 55
+
+   61 seEntao: IF P_OPEN . expLogica P_CLOSE THEN blocoComandos ELSE blocoComandos
+
+    ID        shift, and go to state 69
+    INTNUM    shift, and go to state 58
+    FLOATNUM  shift, and go to state 59
+    P_OPEN    shift, and go to state 60
+
+    expAritmetica  go to state 74
+    t1             go to state 62
+    f              go to state 63
+    expLogica      go to state 75
+    t2             go to state 73
+
+
+State 56
+
+   62 enquanto: WHILE P_OPEN . expLogica P_CLOSE blocoComandos
+
+    ID        shift, and go to state 69
+    INTNUM    shift, and go to state 58
+    FLOATNUM  shift, and go to state 59
+    P_OPEN    shift, and go to state 60
+
+    expAritmetica  go to state 74
+    t1             go to state 62
+    f              go to state 63
+    expLogica      go to state 76
+    t2             go to state 73
+
+
+State 57
+
+   42 f: ID .
+   43  | ID . P_OPEN listaExp P_CLOSE
+   44  | ID . B_OPEN INTNUM B_CLOSE
+
+    P_OPEN  shift, and go to state 77
+    B_OPEN  shift, and go to state 78
+
+    $default  reduce using rule 42 (f)
+
+
+State 58
+
+   45 f: INTNUM .
+
+    $default  reduce using rule 45 (f)
+
+
+State 59
+
+   46 f: FLOATNUM .
+
+    $default  reduce using rule 46 (f)
+
+
+State 60
+
+   41 f: P_OPEN . expAritmetica P_CLOSE
+
+    ID        shift, and go to state 57
+    INTNUM    shift, and go to state 58
+    FLOATNUM  shift, and go to state 59
+    P_OPEN    shift, and go to state 60
+
+    expAritmetica  go to state 79
+    t1             go to state 62
+    f              go to state 63
+
+
+State 61
+
+   35 expAritmetica: expAritmetica . PLUS t1
+   36              | expAritmetica . MINUS t1
+   63 impressao: PRINT expAritmetica .
+
+    PLUS   shift, and go to state 80
+    MINUS  shift, and go to state 81
+
+    $default  reduce using rule 63 (impressao)
+
+
+State 62
+
+   37 expAritmetica: t1 .
+   38 t1: t1 . MULT f
+   39   | t1 . DIV f
+
+    MULT  shift, and go to state 82
+    DIV   shift, and go to state 83
+
+    $default  reduce using rule 37 (expAritmetica)
+
+
+State 63
+
+   40 t1: f .
+
+    $default  reduce using rule 40 (t1)
+
+
+State 64
+
+   35 expAritmetica: expAritmetica . PLUS t1
+   36              | expAritmetica . MINUS t1
+   64 retorno: RETURN expAritmetica .
+
+    PLUS   shift, and go to state 80
+    MINUS  shift, and go to state 81
+
+    $default  reduce using rule 64 (retorno)
+
+
+State 65
+
+   25 comandos: comando SEMICOLON . comandos
+
+    ID      shift, and go to state 39
+    IF      shift, and go to state 40
+    WHILE   shift, and go to state 41
+    PRINT   shift, and go to state 42
+    RETURN  shift, and go to state 43
+
+    $default  reduce using rule 24 (comandos)
+
+    comandos    go to state 84
+    comando     go to state 45
+    atribuicao  go to state 46
+    seEntao     go to state 47
+    enquanto    go to state 48
+    impressao   go to state 49
+    retorno     go to state 50
+
+
+State 66
+
+   10 declFuncao: MAIN P_OPEN P_CLOSE C_OPEN corpoFuncao C_CLOSE SEMICOLON .
+
+    $default  reduce using rule 10 (declFuncao)
+
+
+State 67
+
+    9 declFuncao: ID P_OPEN parametros P_CLOSE C_OPEN corpoFuncao C_CLOSE SEMICOLON .
+
+    $default  reduce using rule 9 (declFuncao)
+
+
+State 68
+
+   32 atribuicao: ID B_OPEN INTNUM . B_CLOSE ASSIGN expressao
+
+    B_CLOSE  shift, and go to state 85
+
+
+State 69
+
+   42 f: ID .
+   43  | ID . P_OPEN listaExp P_CLOSE
+   44  | ID . B_OPEN INTNUM B_CLOSE
+   53 t2: ID .
+
+    P_OPEN  shift, and go to state 77
+    B_OPEN  shift, and go to state 78
+
+    SEMICOLON  reduce using rule 42 (f)
+    SEMICOLON  [reduce using rule 53 (t2)]
+    P_CLOSE    reduce using rule 53 (t2)
+    OPE        reduce using rule 53 (t2)
+    OPOU       reduce using rule 53 (t2)
+    $default   reduce using rule 42 (f)
+
+
+State 70
+
+   31 atribuicao: ID ASSIGN expressao .
+
+    $default  reduce using rule 31 (atribuicao)
+
+
+State 71
+
+   33 expressao: expAritmetica .
+   35 expAritmetica: expAritmetica . PLUS t1
+   36              | expAritmetica . MINUS t1
+   52 t2: expAritmetica . opComparacao expAritmetica
+
+    PLUS   shift, and go to state 80
+    MINUS  shift, and go to state 81
+    LT     shift, and go to state 86
+    GT     shift, and go to state 87
+    LE     shift, and go to state 88
+    GE     shift, and go to state 89
+    EQ     shift, and go to state 90
+
+    $default  reduce using rule 33 (expressao)
+
+    opComparacao  go to state 91
+
+
+State 72
+
+   34 expressao: expLogica .
+   50 expLogica: expLogica . opLogico expLogica
+
+    OPE   shift, and go to state 92
+    OPOU  shift, and go to state 93
+
+    $default  reduce using rule 34 (expressao)
+
+    opLogico  go to state 94
+
+
+State 73
+
+   51 expLogica: t2 .
+
+    $default  reduce using rule 51 (expLogica)
+
+
+State 74
+
+   35 expAritmetica: expAritmetica . PLUS t1
+   36              | expAritmetica . MINUS t1
+   52 t2: expAritmetica . opComparacao expAritmetica
+
+    PLUS   shift, and go to state 80
+    MINUS  shift, and go to state 81
+    LT     shift, and go to state 86
+    GT     shift, and go to state 87
+    LE     shift, and go to state 88
+    GE     shift, and go to state 89
+    EQ     shift, and go to state 90
+
+    opComparacao  go to state 91
+
+
+State 75
+
+   50 expLogica: expLogica . opLogico expLogica
+   61 seEntao: IF P_OPEN expLogica . P_CLOSE THEN blocoComandos ELSE blocoComandos
+
+    P_CLOSE  shift, and go to state 95
+    OPE      shift, and go to state 92
+    OPOU     shift, and go to state 93
+
+    opLogico  go to state 94
+
+
+State 76
+
+   50 expLogica: expLogica . opLogico expLogica
+   62 enquanto: WHILE P_OPEN expLogica . P_CLOSE blocoComandos
+
+    P_CLOSE  shift, and go to state 96
+    OPE      shift, and go to state 92
+    OPOU     shift, and go to state 93
+
+    opLogico  go to state 94
+
+
+State 77
+
+   43 f: ID P_OPEN . listaExp P_CLOSE
+
+    ID  shift, and go to state 97
+
+    $default  reduce using rule 47 (listaExp)
+
+    listaExp  go to state 98
+
+
+State 78
+
+   44 f: ID B_OPEN . INTNUM B_CLOSE
+
+    INTNUM  shift, and go to state 99
+
+
+State 79
+
+   35 expAritmetica: expAritmetica . PLUS t1
+   36              | expAritmetica . MINUS t1
+   41 f: P_OPEN expAritmetica . P_CLOSE
+
+    P_CLOSE  shift, and go to state 100
+    PLUS     shift, and go to state 80
+    MINUS    shift, and go to state 81
+
+
+State 80
+
+   35 expAritmetica: expAritmetica PLUS . t1
+
+    ID        shift, and go to state 57
+    INTNUM    shift, and go to state 58
+    FLOATNUM  shift, and go to state 59
+    P_OPEN    shift, and go to state 60
+
+    t1  go to state 101
+    f   go to state 63
+
+
+State 81
+
+   36 expAritmetica: expAritmetica MINUS . t1
+
+    ID        shift, and go to state 57
+    INTNUM    shift, and go to state 58
+    FLOATNUM  shift, and go to state 59
+    P_OPEN    shift, and go to state 60
+
+    t1  go to state 102
+    f   go to state 63
+
+
+State 82
+
+   38 t1: t1 MULT . f
+
+    ID        shift, and go to state 57
+    INTNUM    shift, and go to state 58
+    FLOATNUM  shift, and go to state 59
+    P_OPEN    shift, and go to state 60
+
+    f  go to state 103
+
+
+State 83
+
+   39 t1: t1 DIV . f
+
+    ID        shift, and go to state 57
+    INTNUM    shift, and go to state 58
+    FLOATNUM  shift, and go to state 59
+    P_OPEN    shift, and go to state 60
+
+    f  go to state 104
+
+
+State 84
+
+   25 comandos: comando SEMICOLON comandos .
+
+    $default  reduce using rule 25 (comandos)
+
+
+State 85
+
+   32 atribuicao: ID B_OPEN INTNUM B_CLOSE . ASSIGN expressao
+
+    ASSIGN  shift, and go to state 105
+
+
+State 86
+
+   56 opComparacao: LT .
+
+    $default  reduce using rule 56 (opComparacao)
+
+
+State 87
+
+   57 opComparacao: GT .
+
+    $default  reduce using rule 57 (opComparacao)
+
+
+State 88
+
+   58 opComparacao: LE .
+
+    $default  reduce using rule 58 (opComparacao)
+
+
+State 89
+
+   59 opComparacao: GE .
+
+    $default  reduce using rule 59 (opComparacao)
+
+
+State 90
+
+   60 opComparacao: EQ .
+
+    $default  reduce using rule 60 (opComparacao)
+
+
+State 91
+
+   52 t2: expAritmetica opComparacao . expAritmetica
+
+    ID        shift, and go to state 57
+    INTNUM    shift, and go to state 58
+    FLOATNUM  shift, and go to state 59
+    P_OPEN    shift, and go to state 60
+
+    expAritmetica  go to state 106
+    t1             go to state 62
+    f              go to state 63
+
+
+State 92
+
+   54 opLogico: OPE .
+
+    $default  reduce using rule 54 (opLogico)
+
+
+State 93
+
+   55 opLogico: OPOU .
+
+    $default  reduce using rule 55 (opLogico)
+
+
+State 94
+
+   50 expLogica: expLogica opLogico . expLogica
+
+    ID        shift, and go to state 69
+    INTNUM    shift, and go to state 58
+    FLOATNUM  shift, and go to state 59
+    P_OPEN    shift, and go to state 60
+
+    expAritmetica  go to state 74
+    t1             go to state 62
+    f              go to state 63
+    expLogica      go to state 107
+    t2             go to state 73
+
+
+State 95
+
+   61 seEntao: IF P_OPEN expLogica P_CLOSE . THEN blocoComandos ELSE blocoComandos
+
+    THEN  shift, and go to state 108
+
+
+State 96
+
+   62 enquanto: WHILE P_OPEN expLogica P_CLOSE . blocoComandos
+
+    C_OPEN  shift, and go to state 109
+
+    blocoComandos  go to state 110
+
+
+State 97
+
+   48 listaExp: ID . COMMA listaExp
+   49         | ID .
+
+    COMMA  shift, and go to state 111
+
+    $default  reduce using rule 49 (listaExp)
+
+
+State 98
+
+   43 f: ID P_OPEN listaExp . P_CLOSE
+
+    P_CLOSE  shift, and go to state 112
+
+
+State 99
+
+   44 f: ID B_OPEN INTNUM . B_CLOSE
+
+    B_CLOSE  shift, and go to state 113
+
+
+State 100
+
+   41 f: P_OPEN expAritmetica P_CLOSE .
+
+    $default  reduce using rule 41 (f)
+
+
+State 101
+
+   35 expAritmetica: expAritmetica PLUS t1 .
+   38 t1: t1 . MULT f
+   39   | t1 . DIV f
+
+    MULT  shift, and go to state 82
+    DIV   shift, and go to state 83
+
+    $default  reduce using rule 35 (expAritmetica)
+
+
+State 102
+
+   36 expAritmetica: expAritmetica MINUS t1 .
+   38 t1: t1 . MULT f
+   39   | t1 . DIV f
+
+    MULT  shift, and go to state 82
+    DIV   shift, and go to state 83
+
+    $default  reduce using rule 36 (expAritmetica)
+
+
+State 103
+
+   38 t1: t1 MULT f .
+
+    $default  reduce using rule 38 (t1)
+
+
+State 104
+
+   39 t1: t1 DIV f .
+
+    $default  reduce using rule 39 (t1)
+
+
+State 105
+
+   32 atribuicao: ID B_OPEN INTNUM B_CLOSE ASSIGN . expressao
+
+    ID        shift, and go to state 69
+    INTNUM    shift, and go to state 58
+    FLOATNUM  shift, and go to state 59
+    P_OPEN    shift, and go to state 60
+
+    expressao      go to state 114
+    expAritmetica  go to state 71
+    t1             go to state 62
+    f              go to state 63
+    expLogica      go to state 72
+    t2             go to state 73
+
+
+State 106
+
+   35 expAritmetica: expAritmetica . PLUS t1
+   36              | expAritmetica . MINUS t1
+   52 t2: expAritmetica opComparacao expAritmetica .
+
+    PLUS   shift, and go to state 80
+    MINUS  shift, and go to state 81
+
+    $default  reduce using rule 52 (t2)
+
+
+State 107
+
+   50 expLogica: expLogica . opLogico expLogica
+   50          | expLogica opLogico expLogica .
+
+    OPE   shift, and go to state 92
+    OPOU  shift, and go to state 93
+
+    OPE       [reduce using rule 50 (expLogica)]
+    OPOU      [reduce using rule 50 (expLogica)]
+    $default  reduce using rule 50 (expLogica)
+
+    opLogico  go to state 94
+
+
+State 108
+
+   61 seEntao: IF P_OPEN expLogica P_CLOSE THEN . blocoComandos ELSE blocoComandos
+
+    C_OPEN  shift, and go to state 109
+
+    blocoComandos  go to state 115
+
+
+State 109
+
+   23 blocoComandos: C_OPEN . comandos C_CLOSE
+
+    ID      shift, and go to state 39
+    IF      shift, and go to state 40
+    WHILE   shift, and go to state 41
+    PRINT   shift, and go to state 42
+    RETURN  shift, and go to state 43
+
+    $default  reduce using rule 24 (comandos)
+
+    comandos    go to state 116
+    comando     go to state 45
+    atribuicao  go to state 46
+    seEntao     go to state 47
+    enquanto    go to state 48
+    impressao   go to state 49
+    retorno     go to state 50
+
+
+State 110
+
+   62 enquanto: WHILE P_OPEN expLogica P_CLOSE blocoComandos .
+
+    $default  reduce using rule 62 (enquanto)
+
+
+State 111
+
+   48 listaExp: ID COMMA . listaExp
+
+    ID  shift, and go to state 97
+
+    $default  reduce using rule 47 (listaExp)
+
+    listaExp  go to state 117
+
+
+State 112
+
+   43 f: ID P_OPEN listaExp P_CLOSE .
+
+    $default  reduce using rule 43 (f)
+
+
+State 113
+
+   44 f: ID B_OPEN INTNUM B_CLOSE .
+
+    $default  reduce using rule 44 (f)
+
+
+State 114
+
+   32 atribuicao: ID B_OPEN INTNUM B_CLOSE ASSIGN expressao .
+
+    $default  reduce using rule 32 (atribuicao)
+
+
+State 115
+
+   61 seEntao: IF P_OPEN expLogica P_CLOSE THEN blocoComandos . ELSE blocoComandos
+
+    ELSE  shift, and go to state 118
+
+
+State 116
+
+   23 blocoComandos: C_OPEN comandos . C_CLOSE
+
+    C_CLOSE  shift, and go to state 119
+
+
+State 117
+
+   48 listaExp: ID COMMA listaExp .
+
+    $default  reduce using rule 48 (listaExp)
+
+
+State 118
+
+   61 seEntao: IF P_OPEN expLogica P_CLOSE THEN blocoComandos ELSE . blocoComandos
+
+    C_OPEN  shift, and go to state 109
+
+    blocoComandos  go to state 120
+
+
+State 119
+
+   23 blocoComandos: C_OPEN comandos C_CLOSE .
+
+    $default  reduce using rule 23 (blocoComandos)
+
+
+State 120
+
+   61 seEntao: IF P_OPEN expLogica P_CLOSE THEN blocoComandos ELSE blocoComandos .
+
+    $default  reduce using rule 61 (seEntao)
