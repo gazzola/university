@@ -9,11 +9,13 @@ using namespace std;
 
 
 enum STTypes{
-	ST_INT, ST_BOOL, ST_DOUBLE, ST_CHAR,
-	ST_INT_VECTOR, ST_BOOL_VECTOR, ST_DOUBLE_VECTOR, ST_STRING
+	ST_INT, ST_BOOL, ST_FLOAT, ST_CHAR,
+	ST_INT_VECTOR, ST_BOOL_VECTOR, ST_DOUBLE_VECTOR, ST_STRING,
+	ST_FUNC, ST_VAR, ST_GLOBAL, ST_LOCAL
 };
 
 typedef pair<int, int> ii;
+typedef pair<string, int> si;
 
 class Node{
 
@@ -34,7 +36,8 @@ class Node{
 
 		// if is a function
 		map<string, Node> params;
-		
+
+
 		Node(string name, ii type, int scope, unsigned int line){
 			this->name = name;
 			this->line = line;
@@ -62,7 +65,7 @@ class SymbolTable{
 
 
 	private:
-		map<string, Node> tab;
+		map<si, Node> tab;
 		
 	public:
 
@@ -77,24 +80,24 @@ class SymbolTable{
 
 		SymbolTable(){};
 
-		Node* get(string name){
-			map<string, Node>::iterator it = this->tab.find(name);
+		Node* get(string name, int scope){
+			map<si, Node>::iterator it = this->tab.find(si(name, scope));
 			if(it != this->tab.end())
 				return &(*it).second;
 			return NULL;
 		}
 
-		void add(Node *n){
-			this->tab.insert(pair<string, Node>(n->name, *n));
+		bool add(Node *n){
+			if(this->get(n->name, n->scope) != NULL)
+				return false;
+			this->tab.insert(pair<si, Node>(si(n->name, n->scope), *n));
+			return true;
 		}
 
 
 		virtual ~SymbolTable(){};
 };
 
-const int SymbolTable::GLOBAL = 0;
-const int SymbolTable::PARAM = 1;
-const int SymbolTable::LOCAL = 2;
 const ii SymbolTable::UNKNOWN_TYPE = ii(-1, -1);
 const int SymbolTable::UNKNOWN_SCOPE = -1;
 

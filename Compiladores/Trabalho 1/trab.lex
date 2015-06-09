@@ -1,10 +1,3 @@
-%{
-unsigned int nlines = 1;
-unsigned int ncols	= 1;
-%}
-
-
-
 del [ \n\t]
 ws {del}+
 letra [A-Za-z]
@@ -59,7 +52,7 @@ nferro {digito}+((,|e|,e)?{digito}+)?
 "return"	{printf("RETURN"); ncols+=6; return RETURN;}
 {numint}	{printf("NUM_INT"); ncols+=strlen(yytext); yylval.tint = atoi(yytext); return INTNUM;}
 {numfloat}	{printf("NUM_FLOAT"); ncols+=strlen(yytext);; yylval.tdouble = atof(yytext);return FLOATNUM;}
-{id}		{printf("ID"); ncols+=strlen(yytext);; yylval.tstring = yytext; if(strlen(yytext) <= 32) return ID; 
+{id}		{printf("ID"); ncols+=strlen(yytext); yylval.tstring = yytext; if(strlen(yytext) <= 32) return ID; 
 			printf("\nERRO LEXICO(%u, %u): id nao pode ter mais que 32 caracteres: `%s`\n", nlines, ncols, yytext); yyterminate();}
 {iderro1}	{printf("\nERRO LEXICO(%u, %u): id nao pode terminar com _: `%s`\n", nlines, ncols, yytext); yyterminate();}
 {iderro2}	{printf("\nERRO LEXICO(%u, %u): id nao pode comecar com digito: `%s`\n", nlines, ncols, yytext); yyterminate();}

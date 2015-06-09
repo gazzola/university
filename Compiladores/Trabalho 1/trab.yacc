@@ -5,6 +5,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <string>
+#include <cstring>
 
 using namespace std;
 
@@ -19,6 +20,12 @@ void yyerror(const char *s);
 #include "SymbolTable.cpp"
 SymbolTable *st = new SymbolTable();
 
+unsigned int nlines = 1;
+unsigned int ncols	= 1;
+unsigned int nscopes = 1;
+unsigned int tipoatual;
+
+
 %}
 
 
@@ -27,6 +34,8 @@ SymbolTable *st = new SymbolTable();
 	char tchar;
 	double tdouble;
 	char* tstring;
+	Node *tnode;
+	vector<string> *tvecstr;
 };
 
 
@@ -35,13 +44,13 @@ SymbolTable *st = new SymbolTable();
 %token <tdouble> FLOATNUM
 
 
-%token<tint> SEMICOLON COMMA
-%token<tint> P_OPEN P_CLOSE B_OPEN B_CLOSE C_OPEN C_CLOSE
-%token<tint> PLUS MINUS MULT DIV POINTER
-%token<tint> OPE OPOU
-%token<tint> ASSIGN LT GT LE GE EQ
-%token<tint> INT FLOAT BOOL
-%token<tint> MAIN IF THEN ELSE WHILE PRINT RETURN
+%token<tstring> SEMICOLON COMMA
+%token<tstring> P_OPEN P_CLOSE B_OPEN B_CLOSE C_OPEN C_CLOSE
+%token<tstring> PLUS MINUS MULT DIV POINTER
+%token<tstring> OPE OPOU
+%token<tstring> ASSIGN LT GT LE GE EQ
+%token<tstring> INT FLOAT BOOL
+%token<tstring> MAIN IF THEN ELSE WHILE PRINT RETURN
 
 
 %left COMMA
@@ -55,40 +64,48 @@ SymbolTable *st = new SymbolTable();
 %left POINTER
 %nonassoc P_OPEN P_CLOSE B_OPEN B_CLOSE
 
+%type<tvecstr> listaItens
+%type<tstring> item
+
 
 %%
 
-programa	: 	declaracoes funcaoMain SEMICOLON
+programa	: 	declaracoes funcaoMain
 			;
 
 
 declaracoes	:	/* vazio */
-			|	declaracoes tipo declFuncao SEMICOLON
-			|	declaracoes tipo declrVariaveis SEMICOLON
+			|	declaracoes tipo declFuncao
+			|	declaracoes tipo declrVariaveis
 			;
 
 
-declrVariaveis	:	/* vazio */ 
-				|	listaItens 
+declrVariaveis	: listaItens SEMICOLON {	for(int i=0; i<(int) $1->size(); i++){
+												if(!st->add(new Node($1->at(i), ii(ST_VAR, tipoatual), nscopes, nlines)))
+													printf("\nERRO SEMANTICO: variavel `%s` ja foi declarada!\n", $1->at(i).c_str());
+											}
+										}
 				;
 
 
-declFuncao	:	ID P_OPEN parametros P_CLOSE C_OPEN corpoFuncao C_CLOSE
+declFuncao	:	ID {*($1+strlen($1)-1)='\0';if(!st->add(new Node($1, ii(ST_FUNC, tipoatual), ST_GLOBAL, nlines)))
+					printf("\nERRO SEMANTICO: funcao `%s` ja foi declarada!\n", $1);} 
+					P_OPEN {nscopes++;} parametros P_CLOSE C_OPEN corpoFuncao C_CLOSE SEMICOLON
 			;
 
 
-funcaoMain	:	tipo MAIN P_OPEN P_CLOSE C_OPEN corpoFuncao C_CLOSE
-			;
-			
-
-listaItens	:	listaItens COMMA item
-			|	item
+funcaoMain	:	tipo MAIN P_OPEN {nscopes++;} P_CLOSE C_OPEN corpoFuncao C_CLOSE SEMICOLON
 			;
 
 
-item		:	ID
-			|	ID B_OPEN INTNUM B_CLOSE
-			|	MULT item %prec POINTER
+listaItens	:	listaItens COMMA item	{$$->push_back($3);}
+			|	item	{$$ = new vector<string>(); $$->push_back($1);}
+			;
+
+
+item		:	ID {*($1+strlen($1)-1)='\0'; $$ = $1;} 
+			|	ID B_OPEN INTNUM B_CLOSE {*($1+strlen($1)-1)='\0'; $$ = $1;}
+			|	MULT item %prec POINTER {$$ = $2;}
 			;
 
 
@@ -98,9 +115,9 @@ parametros	:	/* vazio */
 			;
 
 
-tipo		:	INT	
-			|	FLOAT
-			|	BOOL
+tipo		:	INT	{tipoatual = ST_INT;}
+			|	FLOAT {tipoatual = ST_FLOAT;}
+			|	BOOL {tipoatual = ST_BOOL;}
 			;
 
 
@@ -149,10 +166,14 @@ t1				:	t1 MULT f
 
 f 				:	P_OPEN expAritmetica P_CLOSE
 				|	ID
-				|	ID P_OPEN listaItens P_CLOSE
+				|	ID P_OPEN listaExp P_CLOSE
 				|	ID B_OPEN INTNUM B_CLOSE
 				|	INTNUM
 				|	FLOATNUM
+				;
+
+listaExp		:	ID
+				|	ID COMMA listaExp
 				;
 
 
@@ -160,11 +181,7 @@ expLogica		:	expLogica OPE expLogica
 				|	expLogica OPOU expLogica
 				|	ID OPE	ID
 				|	ID OPOU	ID
-				|	t2
-				;
-
-
-t2				:	expAritmetica opComparacao expAritmetica
+				|	expAritmetica opComparacao expAritmetica
 				;
 
 
