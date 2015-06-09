@@ -3,11 +3,15 @@
 #include <vector>
 #include <deque>
 #include <map>
-// #include <iostream>
+#include <iostream>
 
 using namespace std;
 
 
+enum STTypes{
+	ST_INT, ST_BOOL, ST_DOUBLE, ST_CHAR,
+	ST_INT_VECTOR, ST_BOOL_VECTOR, ST_DOUBLE_VECTOR, ST_STRING
+};
 
 typedef pair<int, int> ii;
 
@@ -15,17 +19,39 @@ class Node{
 
 	public:
 
+		// id
 		string name;
+		
+		// line number defined
+		unsigned int line;
+
+		// 1 - n
 		int scope;
-		ii type;
+		
 		// 1: function or variable
 		// 2: type
+		ii type;
 
-		Node(string name, ii type, int scope){
+		// if is a function
+		map<string, Node> params;
+		
+		Node(string name, ii type, int scope, unsigned int line){
 			this->name = name;
+			this->line = line;
 			this->type = type;
 			this->scope = scope;
 		};
+
+		void addParam(Node *n){
+			this->params.insert(pair<string, Node>(n->name, *n));
+		}
+
+		Node* getParam(string name){
+			map<string, Node>::iterator it = this->params.find(name);
+			if(it != this->params.end())
+				return &(*it).second;
+			return NULL;
+		}
 
 		virtual ~Node(){};
 };
@@ -58,9 +84,8 @@ class SymbolTable{
 			return NULL;
 		}
 
-		void add(string name, ii type, int scope){
-			Node *n1 = new Node(name, type, scope);
-			this->tab.insert(pair<string,Node>(name, *n1));
+		void add(Node *n){
+			this->tab.insert(pair<string, Node>(n->name, *n));
 		}
 
 
@@ -78,12 +103,20 @@ const int SymbolTable::UNKNOWN_SCOPE = -1;
 // int main(){
 
 // 	SymbolTable *st = new SymbolTable();
-// 	st->add("main", ii(1, 1), 0);
+
+// 	Node *n1 = new Node("main", ii(1, 1), 0, 0);
+// 	n1->addParam(new Node("argc", ii(0, ST_INT), 1, 0));
+// 	n1->addParam(new Node("argv", ii(0, ST_STRING), 1, 0));
+
+// 	st->add(n1);
+
 // 	Node *n = st->get("main");
 
 // 	cout << n->name << endl;
 // 	cout << n->type.first << " | " << n->type.second << endl;
 // 	cout << n->scope << endl;
+	
+// 	cout << n->getParam("argc")->name << endl;
 
 
 // 	delete st;

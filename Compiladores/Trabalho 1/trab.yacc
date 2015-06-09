@@ -4,6 +4,7 @@
 #include <cstdio>
 #include <iostream>
 #include <cstdlib>
+#include <string>
 
 using namespace std;
 
@@ -43,7 +44,6 @@ SymbolTable *st = new SymbolTable();
 %token<tint> MAIN IF THEN ELSE WHILE PRINT RETURN
 
 
-
 %left COMMA
 %right ASSIGN
 %left OPOU
@@ -52,60 +52,70 @@ SymbolTable *st = new SymbolTable();
 %left LT GT LE GE
 %left PLUS MINUS
 %left MULT DIV
+%left POINTER
 %nonassoc P_OPEN P_CLOSE B_OPEN B_CLOSE
 
 
 %%
 
-input 	:
-		| input programa
-      	;
-
-programa	: 	declaracoes
+programa	: 	declaracoes funcaoMain SEMICOLON
 			;
+
 
 declaracoes	:	/* vazio */
-			|	declaracoes tipo declFuncao
-			|	declaracoes tipo declrVariaveis
+			|	declaracoes tipo declFuncao SEMICOLON
+			|	declaracoes tipo declrVariaveis SEMICOLON
 			;
 
-declrVariaveis	:	/* vazio */
-				|	listaItens SEMICOLON declaracoes
+
+declrVariaveis	:	/* vazio */ 
+				|	listaItens 
 				;
 
-declFuncao	:	ID P_OPEN parametros P_CLOSE C_OPEN corpoFuncao C_CLOSE SEMICOLON
-			|	MAIN P_OPEN P_CLOSE C_OPEN corpoFuncao C_CLOSE SEMICOLON
+
+declFuncao	:	ID P_OPEN parametros P_CLOSE C_OPEN corpoFuncao C_CLOSE
 			;
 
 
-listaItens	:	item COMMA listaItens
+funcaoMain	:	tipo MAIN P_OPEN P_CLOSE C_OPEN corpoFuncao C_CLOSE
+			;
+			
+
+listaItens	:	listaItens COMMA item
 			|	item
 			;
 
+
 item		:	ID
 			|	ID B_OPEN INTNUM B_CLOSE
-			|	POINTER item
+			|	MULT item %prec POINTER
 			;
+
 
 parametros	:	/* vazio */
 			| 	tipo item
-			|	tipo item COMMA parametros
+			|	parametros COMMA tipo item
 			;
+
 
 tipo		:	INT	
 			|	FLOAT
 			|	BOOL
 			;
 
+
 corpoFuncao	:	declaracoes comandos
 			;
+
 
 blocoComandos	:	C_OPEN comandos C_CLOSE
 				;
 
+
 comandos	:	/* vazio */
 			|	comando SEMICOLON comandos
 			;
+
 
 comando 	:	atribuicao
 			|	retorno
@@ -114,49 +124,49 @@ comando 	:	atribuicao
 			|	enquanto
 			;
 
+
 atribuicao	:	ID ASSIGN expressao
 			|	ID B_OPEN INTNUM B_CLOSE ASSIGN expressao
 			;
 
+
 expressao	:	expAritmetica
 			|	expLogica
 			;
+
 
 expAritmetica	:	expAritmetica PLUS t1
 				|	expAritmetica MINUS t1
 				|	t1
 				;
 
+
 t1				:	t1 MULT f
 				|	t1 DIV f
 				|	f
 				;
 
+
 f 				:	P_OPEN expAritmetica P_CLOSE
 				|	ID
-				|	ID P_OPEN listaExp P_CLOSE
+				|	ID P_OPEN listaItens P_CLOSE
 				|	ID B_OPEN INTNUM B_CLOSE
 				|	INTNUM
 				|	FLOATNUM
 				;
 
-listaExp		:	/* vazio */
-				|	ID COMMA listaExp
-				|	ID
-				;
 
-
-expLogica		:	expLogica opLogico expLogica
+expLogica		:	expLogica OPE expLogica
+				|	expLogica OPOU expLogica
+				|	ID OPE	ID
+				|	ID OPOU	ID
 				|	t2
 				;
 
+
 t2				:	expAritmetica opComparacao expAritmetica
-				|	ID
 				;
 
-opLogico		:	OPE
-				|	OPOU
-				;
 
 opComparacao	:	LT
 				|	GT
@@ -165,14 +175,18 @@ opComparacao	:	LT
 				|	EQ
 				;
 
+
 seEntao			:	IF P_OPEN expLogica P_CLOSE THEN blocoComandos ELSE blocoComandos
 				;
+
 
 enquanto 		:	WHILE P_OPEN expLogica P_CLOSE blocoComandos
 				;
 
+
 impressao		:	PRINT expAritmetica
 				;
+
 
 retorno			:	RETURN expAritmetica
 				;	
@@ -187,5 +201,5 @@ int main(){
 }
 
 void yyerror(const char *s){
-	cout << s << endl;
+	cout << endl << s << endl;
 }
