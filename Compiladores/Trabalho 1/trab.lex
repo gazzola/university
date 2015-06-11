@@ -6,7 +6,7 @@ digito [0-9]
 id {letra}(_{letra}|_{digito}|{letra}|{digito})*
 numint {digito}+
 numfloat {digito}+((\.|e|\.e)?{digito}+)?
-
+caractere \'.\'
 
 iderro1 {letra}(_{letra}|_{digito}|{letra}|{digito})*_
 iderro2 {digito}(_{letra}|_{digito}|{letra}|{digito})*
@@ -40,6 +40,7 @@ nferro {digito}+((,|e|,e)?{digito}+)?
 "<="		{printf("<="); ncols+=2; return LE;}
 ">="		{printf(">="); ncols+=2; return GE;}
 "=="		{printf("=="); ncols+=2; return EQ;}
+"char"		{printf("CHAR"); ncols+=4; return CHAR;}
 "int"		{printf("INT"); ncols+=3; return INT;}
 "float"		{printf("FLOAT"); ncols+=5; return FLOAT;}
 "bool"		{printf("BOOL"); ncols+=4; return BOOL;}
@@ -50,9 +51,12 @@ nferro {digito}+((,|e|,e)?{digito}+)?
 "while"		{printf("WHILE"); ncols+=5; return WHILE;}
 "print"		{printf("PRINT"); ncols+=5; return PRINT;}
 "return"	{printf("RETURN"); ncols+=6; return RETURN;}
+"true"		{printf("true"); ncols+=4; yylval.tbool = true; return BOOLEANO;}
+"false"		{printf("false"); ncols+=5; yylval.tbool = false; return BOOLEANO;}
+{caractere} {printf("CARACTERE"); ncols+=9; yylval.tchar = yytext[1]; return CARACTERE;}
 {numint}	{printf("NUM_INT"); ncols+=strlen(yytext); yylval.tint = atoi(yytext); return INTNUM;}
 {numfloat}	{printf("NUM_FLOAT"); ncols+=strlen(yytext);; yylval.tdouble = atof(yytext);return FLOATNUM;}
-{id}		{printf("ID"); ncols+=strlen(yytext); yylval.tstring = yytext; if(strlen(yytext) <= 32) return ID; 
+{id}		{printf("ID"); int tam=strlen(yytext); ncols+=tam; yylval.tstring = new char[tam]; strcpy(yylval.tstring, yytext); if(tam <= 32) return ID; 
 			printf("\nERRO LEXICO(%u, %u): id nao pode ter mais que 32 caracteres: `%s`\n", nlines, ncols, yytext); yyterminate();}
 {iderro1}	{printf("\nERRO LEXICO(%u, %u): id nao pode terminar com _: `%s`\n", nlines, ncols, yytext); yyterminate();}
 {iderro2}	{printf("\nERRO LEXICO(%u, %u): id nao pode comecar com digito: `%s`\n", nlines, ncols, yytext); yyterminate();}

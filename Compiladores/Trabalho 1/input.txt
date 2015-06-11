@@ -1,8 +1,9 @@
 int a;
 int b;
+int seila[30];
 
 int soma(int a, int b){
-	return a + b;
+	return a + seila[25];
 };
 
 
@@ -11,6 +12,8 @@ int main(){
 	int a, b;
 	float c, d;
 	int e;
+	char f = '7';
+
 	
 	a = 0; e = 7;
 	
@@ -20,7 +23,7 @@ int main(){
 
 	if(a == 0 | a == b & a == c) then {
 		a = soma(a,b);
-		b = 6 / d;
+		b = 6 / 0;
 		if(b >= a) then {
 			while(c < 0){
 				print b;
@@ -30,4 +33,5 @@ int main(){
 		b = a * ( 4 + 7 ) + 5 * c;
 	};
 	return b - 5;
+
 };

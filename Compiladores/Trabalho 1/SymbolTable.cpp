@@ -4,18 +4,27 @@
 #include <deque>
 #include <map>
 #include <iostream>
+#include <cassert>
+#include <cstring>
 
 using namespace std;
 
 
+typedef pair<int, int> ii;
+typedef pair<char, char> cc;
+typedef pair<float, float> ff;
+typedef pair<bool, bool> bb;
+
+typedef pair<string, int> si;
+
 enum STTypes{
 	ST_INT, ST_BOOL, ST_FLOAT, ST_CHAR,
-	ST_INT_VECTOR, ST_BOOL_VECTOR, ST_DOUBLE_VECTOR, ST_STRING,
-	ST_FUNC, ST_VAR, ST_GLOBAL, ST_LOCAL
+	ST_FUNC, ST_VAR, ST_CONST, ST_GLOBAL, ST_LOCAL
 };
 
-typedef pair<int, int> ii;
-typedef pair<string, int> si;
+const ii UNKNOWN_TYPE = ii(-1, -1);
+const int UNKNOWN_SCOPE = -1;
+
 
 class Node{
 
@@ -30,20 +39,69 @@ class Node{
 		// 1 - n
 		int scope;
 		
-		// 1: function or variable
+		// 1: function, variable, constant
 		// 2: type
 		ii type;
+
+		// dimension
+		// 0 -> pointer
+		// 1 -> variable
+		// n -> array of size n
+		int dim;
 
 		// if is a function
 		map<string, Node> params;
 
+		// attribute value
+		// void *value;
+		double value;
+		bool setted;
 
-		Node(string name, ii type, int scope, unsigned int line){
+
+		Node(string name, int dim, ii type, int scope, unsigned int line){
 			this->name = name;
 			this->line = line;
 			this->type = type;
 			this->scope = scope;
+			this->dim = dim;
+			this->setted = false;
 		};
+
+		// const node
+		Node(int dim, ii type){
+			this->name = "_unknown_";
+			this->dim = dim;
+			this->type = type;
+			this->setted = false;
+		}
+
+
+		void setValue(double v){
+			this->value = v;
+			this->setted = true;
+		}
+
+		
+		double getValue(){
+			return this->value;
+		}
+
+		void printValue(){
+			int t = this->type.second;
+			if(t == ST_INT){
+				printf("%d", (int) this->value);
+			}
+			else if(t == ST_FLOAT){
+				printf("%f", (float) this->value);
+			}
+			else if(t == ST_CHAR){
+				printf("%c", (int) this->value);
+			}
+			else{
+				printf("%d", (bool) this->value);
+			}
+		}
+
 
 		void addParam(Node *n){
 			this->params.insert(pair<string, Node>(n->name, *n));
@@ -69,15 +127,6 @@ class SymbolTable{
 		
 	public:
 
-		// scopes
-		const static int GLOBAL;
-		const static int PARAM;
-		const static int LOCAL;
-
-		// unknown type and scope
-		const static ii UNKNOWN_TYPE;
-		const static int UNKNOWN_SCOPE;
-
 		SymbolTable(){};
 
 		Node* get(string name, int scope){
@@ -94,12 +143,10 @@ class SymbolTable{
 			return true;
 		}
 
-
 		virtual ~SymbolTable(){};
 };
 
-const ii SymbolTable::UNKNOWN_TYPE = ii(-1, -1);
-const int SymbolTable::UNKNOWN_SCOPE = -1;
+
 
 
 
@@ -107,13 +154,13 @@ const int SymbolTable::UNKNOWN_SCOPE = -1;
 
 // 	SymbolTable *st = new SymbolTable();
 
-// 	Node *n1 = new Node("main", ii(1, 1), 0, 0);
-// 	n1->addParam(new Node("argc", ii(0, ST_INT), 1, 0));
-// 	n1->addParam(new Node("argv", ii(0, ST_STRING), 1, 0));
+// 	Node *n1 = new Node("main", 1, ii(1, 1), 1, 0);
+// 	n1->addParam(new Node("argc", 1, ii(0, ST_INT), 1, 0));
+// 	n1->addParam(new Node("argv", 4, ii(0, ST_CHAR), 1, 0));
 
 // 	st->add(n1);
 
-// 	Node *n = st->get("main");
+// 	Node *n = st->get("main", 1);
 
 // 	cout << n->name << endl;
 // 	cout << n->type.first << " | " << n->type.second << endl;
@@ -121,6 +168,16 @@ const int SymbolTable::UNKNOWN_SCOPE = -1;
 	
 // 	cout << n->getParam("argc")->name << endl;
 
+
+// 	n->setValue<int>(25);
+// 	cout << n->getValue<int>() << endl;
+
+// 	int x[2] = {3, 5};
+// 	int y[2];
+
+// 	n->setArray<int>(x);
+// 	memcpy(&y, n->getArray<int>(), sizeof(y));
+// 	cout << x[0] << " " << x[1] << endl;
 
 // 	delete st;
 
