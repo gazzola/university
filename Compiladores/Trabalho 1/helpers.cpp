@@ -34,12 +34,18 @@ void assign(Node *a, T v1, T v2, string op){
 
 void assignValue(Node *a, Node *b, Node *c, string op, unsigned int line){
 	if(b->type.second != c->type.second){
-		printf("\nERRO SEMANTICO: operacao: '%s' com tipos diferentes! linha:%u\n", op.c_str(), line);
-		return;
+		printf("\nERRO SEMANTICO: operacao: `%s %s %s` com tipos diferentes! linha:%u\n", b->name.c_str(), op.c_str(), c->name.c_str(), line);
+		exit(0);
+	}
+
+	if(b->dim != c->dim){
+		printf("\nERRO SEMANTICO: operacao `%s %s %s` com dimensoes diferentes! linha:%u\n", b->name.c_str(), op.c_str(), c->name.c_str(), line);
+		exit(0);
 	}
 
 	int t = b->type.second;
-	a->type = ii(ST_CONST, t);
+	if(a->type.first == ST_UNKNOWN)
+		a->type = ii(ST_CONST, t);
 	a->line = line;
 
 	if(t == ST_INT){
@@ -63,7 +69,8 @@ void assignValue(Node *a, Node *b, Node *c, string op, unsigned int line){
 		assign<bool>(a, v1, v2, op);
 	}
 	else{
-		printf("\nERRO SEMANTICO: operacao '%s' com tipos não conhecidos! linha:%u\n", op.c_str(), line);
+		printf("\nERRO SEMANTICO: operacao '%s %s %s' com tipos não conhecidos! linha:%u\n", b->name.c_str(), op.c_str(), c->name.c_str(), line);
+		exit(0);
 	}
 }
 

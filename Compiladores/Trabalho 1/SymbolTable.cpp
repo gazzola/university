@@ -6,6 +6,7 @@
 #include <iostream>
 #include <cassert>
 #include <cstring>
+#include <iomanip>
 
 using namespace std;
 
@@ -57,6 +58,8 @@ class Node{
 		// attribute value
 		// void *value;
 		double value;
+		
+		// flag for interpreter
 		bool setted;
 
 
@@ -71,7 +74,7 @@ class Node{
 
 		// const node
 		Node(int dim, ii type){
-			this->name = "_unknown_";
+			this->name = "_constant_";
 			this->dim = dim;
 			this->type = type;
 			this->setted = false;
@@ -88,20 +91,21 @@ class Node{
 			return this->value;
 		}
 
-		void printValue(){
-			int t = this->type.second;
-			if(t == ST_INT){
-				printf("%d", (int) this->value);
+		void printValue(int w){
+
+			if(this->setted){
+				int t = this->type.second;
+				if(t == ST_INT)
+					cout << setw(w) << (int) this->value;
+				else if(t == ST_FLOAT)
+					cout << setw(w) << (float) this->value;
+				else if(t == ST_CHAR)
+					cout << setw(w) << (char) this->value;
+				else
+					cout << setw(w) << (bool) this->value;
 			}
-			else if(t == ST_FLOAT){
-				printf("%f", (float) this->value);
-			}
-			else if(t == ST_CHAR){
-				printf("%c", (int) this->value);
-			}
-			else{
-				printf("%d", (bool) this->value);
-			}
+			else
+				cout << setw(w) << "undefined";
 		}
 
 
@@ -149,6 +153,107 @@ class SymbolTable{
 		}
 
 		virtual ~SymbolTable(){};
+
+		void print(){
+
+
+			map<si, Node>::iterator it;
+			map<string, Node>::iterator itp;
+			string s = "";
+
+
+			cout << left << setw(16) << "NOME:";
+			cout << setw(4) << " | ";
+
+			cout << left << setw(36) << "TIPO:";
+			cout << setw(4) << " | ";
+
+			cout << left << setw(16) << "DIMENSAO:";
+			cout << setw(4) << " | ";
+
+			cout << left << setw(16) << "ESCOPO:";
+			cout << setw(4) << " | ";
+
+			cout << left << setw(16) << "VALOR:";
+			cout << setw(4) << " | ";
+
+			cout << left << setw(16) << "LINHA:";
+			cout << setw(4) << " | ";
+
+			cout << endl;
+
+
+
+			for(it = this->tab.begin(); it != this->tab.end(); ++it){
+				
+				cout << left << setw(16) << it->second.name;
+				cout << setw(4) << " | ";
+
+
+
+				if(it->second.type.second == ST_INT)
+					s = "int ";
+				else if(it->second.type.second == ST_FLOAT)
+					s = "float ";
+				else if(it->second.type.second == ST_CHAR)
+					s = "char ";
+				else
+					s = "bool ";
+
+				if(it->second.type.first == ST_VAR)
+					s += "variable";
+				else if(it->second.type.first == ST_FUNC){
+					string t = "";
+					s += "function(";
+					string x = "";
+
+					for(itp = it->second.params.begin(); itp != it->second.params.end(); ++itp){
+						if(itp->second.type.second == ST_INT)
+							x = "int ";
+						else if(itp->second.type.second == ST_FLOAT)
+							x = "float ";
+						else if(itp->second.type.second == ST_CHAR)
+							x = "char ";
+						else
+							x = "bool ";
+
+						t += x + itp->first + ",";
+					}
+					if(t.size() > 0)
+						t[t.size()-1] = ')';
+					else
+						t = ")";
+					s += t;
+				}
+				else
+					s += "const";	
+
+				cout << left << setw(36) << s;
+				cout << setw(4) << " | ";
+
+
+				cout << left << setw(16) << it->second.dim;
+				cout << setw(4) << " | "; 
+
+
+
+				cout << left << setw(16) << it->second.scope - ST_GLOBAL;
+				cout << setw(4) << " | "; 
+
+
+				it->second.printValue(16);
+				cout << setw(4) << " | ";
+
+
+
+				cout << left << setw(16) << it->second.line;
+				cout << setw(4) << " | "; 
+				cout << endl; 
+
+				
+			}
+
+		}
 };
 
 
