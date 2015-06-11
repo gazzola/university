@@ -19,11 +19,13 @@ typedef pair<string, int> si;
 
 enum STTypes{
 	ST_INT, ST_BOOL, ST_FLOAT, ST_CHAR,
-	ST_FUNC, ST_VAR, ST_CONST, ST_GLOBAL, ST_LOCAL
+	ST_FUNC, ST_VAR, ST_CONST,  ST_CMD,
+	ST_GLOBAL, ST_LOCAL
 };
 
-const ii UNKNOWN_TYPE = ii(-1, -1);
-const int UNKNOWN_SCOPE = -1;
+const int ST_UNKNOWN = -1;
+const ii UNKNOWN_TYPE = ii(ST_UNKNOWN, ST_UNKNOWN);
+const int UNKNOWN_SCOPE = ST_UNKNOWN;
 
 
 class Node{
@@ -39,7 +41,7 @@ class Node{
 		// 1 - n
 		int scope;
 		
-		// 1: function, variable, constant
+		// 1: function, variable, constant, command
 		// 2: type
 		ii type;
 
@@ -103,8 +105,11 @@ class Node{
 		}
 
 
-		void addParam(Node *n){
+		bool addParam(Node *n){
+			if(this->getParam(n->name) != NULL)
+				return false;
 			this->params.insert(pair<string, Node>(n->name, *n));
+			return true;
 		}
 
 		Node* getParam(string name){

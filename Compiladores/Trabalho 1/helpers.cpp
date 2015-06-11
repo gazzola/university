@@ -1,7 +1,7 @@
 
-// a = b op c
+// a = b op c com cast dos tipos genericos T
 template <class T>
-void setHelper(Node *a, T v1, T v2, string op){
+void assign(Node *a, T v1, T v2, string op){
 	if("&")
 		a->setValue((T) v1 && (T) v2);
 	else if("|")
@@ -45,22 +45,30 @@ void assignValue(Node *a, Node *b, Node *c, string op, unsigned int line){
 	if(t == ST_INT){
 		int v1 = b->getValue();
 		int v2 = c->getValue();
-		setHelper<int>(a, v1, v2, op);
+		assign<int>(a, v1, v2, op);
 	}
 	else if(t == ST_FLOAT){
 		float v1 = b->getValue();
 		float v2 = c->getValue();
-		setHelper<float>(a, v1, v2, op);
+		assign<float>(a, v1, v2, op);
 	}
 	else if(t == ST_CHAR){
 		char v1 = b->getValue();
 		char v2 = c->getValue();
-		setHelper<char>(a, v1, v2, op);
+		assign<char>(a, v1, v2, op);
 	}
-	else{
+	else if(t == ST_BOOL){
 		bool v1 = b->getValue();
 		bool v2 = c->getValue();
-		setHelper<bool>(a, v1, v2, op);
+		assign<bool>(a, v1, v2, op);
+	}
+	else{
+		printf("\nERRO SEMANTICO: operacao '%s' com tipos não conhecidos! linha:%u\n", op.c_str(), line);
 	}
 }
 
+void appendVector(vector<Node> *v, vector<Node> *t){
+	if(t != NULL)
+		for(int i=0; i<(int) t->size(); i++)
+			v->push_back(t->at(i));
+}

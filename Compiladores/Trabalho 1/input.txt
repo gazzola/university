@@ -24,6 +24,11 @@ int main(){
 	if(a == 0 | a == b & a == c) then {
 		a = soma(a,b);
 		b = 6 / 0;
+		if(a) then {
+			print a;
+		}
+		else { };
+
 		if(b >= a) then {
 			while(c < 0){
 				print b;

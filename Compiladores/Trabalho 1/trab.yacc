@@ -34,7 +34,7 @@ unsigned int nscopes = ST_GLOBAL;
 unsigned int mscope = ST_GLOBAL; // max scope
 unsigned int tipoatual = 0;
 Node *funcaoatual = NULL;
-
+vector<Node> *codigo = new vector<Node>(); // todo o codigo
 
 %}
 
@@ -49,6 +49,7 @@ Node *funcaoatual = NULL;
 	vector<Node> *tvnode;
 };
 
+%define parse.error verbose
 
 %token <tstring> ID
 %token <tint> INTNUM 
@@ -77,20 +78,22 @@ Node *funcaoatual = NULL;
 %left POINTER
 %nonassoc P_OPEN P_CLOSE B_OPEN B_CLOSE
 
-%type<tvnode> listaItens parametros
-%type<tnode> item expAritmetica expLogica t2 t1 atribuicao expressao
+%type<tvnode> declaracoes declFuncao declrVariaveis funcaoMain
+%type<tvnode> listaItens parametros comandos comando blocoComandos 
+%type<tvnode> atribuicao seEntao enquanto impressao retorno corpoFuncao
+%type<tnode> item expAritmetica expLogica t2 t1 expressao 
 %type<tint> tipo
 
 
 %%
 
-programa		: 	declaracoes funcaoMain
+programa		: 	declaracoes funcaoMain {appendVector($1, $2); appendVector(codigo, $1);}
 				;
 
 
-declaracoes		:	/* vazio */
-				|	declaracoes declFuncao
-				|	declaracoes declrVariaveis
+declaracoes		:	/* vazio */ {$$ = new vector<Node>();}
+				|	declaracoes declFuncao {appendVector($$, $2);}
+				|	declaracoes declrVariaveis {appendVector($$, $2);}
 				;
 
 
@@ -100,6 +103,9 @@ declrVariaveis	: tipo listaItens SEMICOLON {	for(int i=0; i<(int) $2->size(); i+
 														printf("\nERRO SEMANTICO: variavel `%s` ja foi declarada na linha %d!\n", $2->at(i).name.c_str(), $2->at(i).line);
 												}
 												delete $2;
+
+												$$ = new vector<Node>();
+												appendVector($$, $2);
 											}
 				;
 
@@ -107,28 +113,52 @@ declrVariaveis	: tipo listaItens SEMICOLON {	for(int i=0; i<(int) $2->size(); i+
 declFuncao		:	tipo ID {if(!st->add(new Node($2, 1, ii(ST_FUNC, $1), ST_GLOBAL, nlines)))
 					printf("\nERRO SEMANTICO: funcao `%s` ja foi declarada na linha %d!\n", $2, st->get($2, ST_GLOBAL)->line); funcaoatual = st->get($2, ST_GLOBAL);} 
 					P_OPEN {mscope++; nscopes=mscope;} 
-					parametros {	for(int i=0; i<(int) $6->size(); i++){
+					parametros {	
+									Node *fun = st->get($2, ST_GLOBAL);
+									for(int i=0; i<(int) $6->size(); i++){
 										$6->at(i).scope = nscopes;
-										if(!st->add(&($6->at(i))))
+										if(!st->add(&($6->at(i)))){
+											fun->addParam(&($6->at(i)));
 											printf("\nERRO SEMANTICO: parametro `%s` ja foi declarado na linha %d!\n", $6->at(i).name.c_str(), $6->at(i).line);
+										}
 									}
 									delete $6;
 								}
-					P_CLOSE C_OPEN corpoFuncao C_CLOSE SEMICOLON {nscopes = ST_GLOBAL;} 
-				|	ID P_OPEN P_CLOSE C_OPEN corpoFuncao P_CLOSE SEMICOLON {printf("\nERRO SINTATICO: uma funcao deve ter um tipo de retorno! linha:%d\n", nlines);  exit(0);}
+					P_CLOSE C_OPEN corpoFuncao C_CLOSE SEMICOLON {
+						nscopes = ST_GLOBAL; 
+						funcaoatual = NULL;
+						$$ = new vector<Node>(); $$->push_back(*st->get($2, ST_GLOBAL)); appendVector($$, $10);
+					} 
+				|	ID {printf("\nERRO SINTATICO: uma funcao deve ter um tipo de retorno! linha:%d\n", nlines);  exit(0);} P_OPEN parametros P_CLOSE C_OPEN corpoFuncao P_CLOSE SEMICOLON {}
 				;
 
 
 funcaoMain		:	tipo MAIN {if(!st->add(new Node("main", 1, ii(ST_FUNC, $1), ST_GLOBAL, nlines)))
 					printf("\nERRO SEMANTICO: funcao `main` ja foi declarada na linha %d!\n", st->get("main", ST_GLOBAL)->line); funcaoatual = st->get("main", ST_GLOBAL);} 
-					P_OPEN {mscope++; nscopes = mscope;} P_CLOSE C_OPEN corpoFuncao C_CLOSE SEMICOLON {nscopes = ST_GLOBAL; funcaoatual = NULL;}
+					P_OPEN {mscope++; nscopes = mscope;} P_CLOSE C_OPEN corpoFuncao C_CLOSE SEMICOLON {
+						nscopes = ST_GLOBAL; 
+						funcaoatual = NULL;
+						$$ = new vector<Node>(); $$->push_back(*st->get("main", ST_GLOBAL)); appendVector($$, $8);
+					}
 				;
 
 
 listaItens		:	listaItens COMMA item	{$$->push_back(*$3);}
 				|	item	{$$ = new vector<Node>(); $$->push_back(*$1);}
-				|	item ASSIGN expressao { $$ = new vector<Node>(); $$->push_back(*$1);
-										 } 
+				|	item ASSIGN expressao { $$ = new vector<Node>(); $$->push_back(*$1); 
+												// if is a pointer
+												while($1->dim == 0)
+													$1 = st->get($1->name, $1->scope);
+
+												if($1->type.second == $3->type.second)
+													if($1->dim == $3->dim)
+														$1->setValue($3->getValue());
+													else
+														printf("\nERRO SEMANTICO: dimensoes incompativeis! na linha %d\n", nlines);
+												else
+													printf("\nERRO SEMANTICO: tipos incompativeis! na linha %d\n", nlines);
+
+											} 
 					/* regra adicionada para permitir atribuicoes na declaracao */
 				;
 
@@ -152,29 +182,35 @@ tipo			:	INT	{$$ = ST_INT; tipoatual = ST_INT;}
 				;
 
 
-corpoFuncao		:	declaracoes comandos
+corpoFuncao		:	declaracoes comandos {$$ = new vector<Node>(); appendVector($1, $2); appendVector($$, $1);}
 				;
 
 
-blocoComandos	:	C_OPEN comandos C_CLOSE
+blocoComandos	:	C_OPEN comandos C_CLOSE {$$ = new vector<Node>(); appendVector($$, $2);}
+				|	C_OPEN comandos {printf("\nERRO SINTATICO: um bloco deve ser fechado por '}! linha:%d\n", nlines);  exit(0);}
 				;
 
 
-comandos		:	/* vazio */
-				|	comando SEMICOLON comandos
+comandos		:	/* vazio */ {$$ = new vector<Node>();}
+				|	comando SEMICOLON comandos {appendVector($1, $3); $$ = $1;}
 				;
 
 
-comando 		:	atribuicao
-				|	retorno
-				|	seEntao
-				|	impressao
-				|	enquanto
+comando 		:	atribuicao {$$ = $1;}
+				|	retorno {$$ = $1;}
+				|	seEntao {$$ = $1;}
+				|	impressao {$$ = $1;}
+				|	enquanto {$$ = $1;}
 				;
 
 
 atribuicao		:	ID ASSIGN expressao {Node *n = (st->get($1, nscopes) != NULL) ? st->get($1, nscopes) : st->get($1, ST_GLOBAL);
 											if(n != NULL){
+
+												// if is a pointer
+												while($3->dim == 0)
+													$3 = st->get($3->name, $3->scope);
+
 												if($3->type.second == n->type.second){
 													if($3->dim == n->dim)
 														n->setValue($3->getValue());
@@ -185,6 +221,9 @@ atribuicao		:	ID ASSIGN expressao {Node *n = (st->get($1, nscopes) != NULL) ? st
 													printf("\nERRO SEMANTICO: tipos incompativeis! na linha %d\n", nlines);
 											} 
 											else printf("\nERRO SEMANTICO: variavel nao foi declarada! linha:%d\n", nlines);
+
+											$$ = new vector<Node>();
+											$$->push_back(*n);
 										}
 				|	ID B_OPEN INTNUM B_CLOSE ASSIGN expressao {Node *n = (st->get($1, nscopes) != NULL) ? st->get($1, nscopes) : st->get($1, ST_GLOBAL);
 															if(n != NULL){
@@ -207,7 +246,7 @@ expressao		:	expAritmetica {$$ = $1;}
 				;
 
 
-expAritmetica	:	expAritmetica PLUS expAritmetica { assignValue($$, $1, $3, "+", nlines); }
+expAritmetica	:	expAritmetica PLUS expAritmetica { assignValue($$, $1, $3, "+", nlines);  }
 				|	expAritmetica MINUS expAritmetica { assignValue($$, $1, $3, "-", nlines); }
 				|	expAritmetica MULT expAritmetica { assignValue($$, $1, $3, "*", nlines); }
 				|	expAritmetica DIV expAritmetica { assignValue($$, $1, $3, "/", nlines); }
@@ -267,22 +306,53 @@ t2				:	BOOLEANO {$$ = new Node(1, ii(ST_CONST, ST_BOOL)); $$->setValue($1);}
 
 
 
-seEntao			:	IF P_OPEN expLogica P_CLOSE THEN blocoComandos ELSE blocoComandos
-				|	IF expLogica P_CLOSE THEN blocoComandos ELSE blocoComandos	{printf("\nERRO SINTATICO: nao ha abre parenteses no if! linha:%d\n", nlines); exit(0);}
-				|	IF P_OPEN expLogica P_CLOSE blocoComandos ELSE blocoComandos {printf("\nERRO SINTATICO: nao ha o token THEN para o if! linha:%d\n", nlines); exit(0);}
+seEntao			:	IF P_OPEN expLogica P_CLOSE THEN blocoComandos ELSE blocoComandos {$$ = new vector<Node>(); 
+																					  Node *n = new Node("if", -1, ii(ST_CMD, ST_UNKNOWN), nscopes, nlines);
+																					  $$->push_back(*n);
+																					  $$->push_back(*$3);
+																					  appendVector($$, $6);
+																					  appendVector($$, $8);
+																					}
+				|	IF P_OPEN t2 P_CLOSE THEN blocoComandos ELSE blocoComandos {$$ = new vector<Node>(); 
+																				  Node *n = new Node("if", -1, ii(ST_CMD, ST_UNKNOWN), nscopes, nlines);
+																				  $$->push_back(*n);
+																				  $$->push_back(*$3);
+																				  appendVector($$, $6);
+																				  appendVector($$, $8);
+																				}
+				|	IF P_OPEN P_CLOSE THEN blocoComandos ELSE blocoComandos {printf("\nERRO SINTATICO: nao ha uma expressao logica na condicao do if! linha:%d\n", nlines); exit(0);}
 				;
 
 
-enquanto 		:	WHILE P_OPEN expLogica P_CLOSE blocoComandos
+enquanto 		:	WHILE P_OPEN expLogica P_CLOSE blocoComandos {$$ = new vector<Node>();
+																  Node *n = new Node("while", -1, ii(ST_CMD, ST_UNKNOWN), nscopes, nlines);
+																  $$->push_back(*n);
+																  $$->push_back(*$3);
+																  appendVector($$, $5);
+																}
+				|	WHILE P_OPEN t2 P_CLOSE blocoComandos {$$ = new vector<Node>(); 
+															  Node *n = new Node("while", -1, ii(ST_CMD, ST_UNKNOWN), nscopes, nlines);
+															  $$->push_back(*n);
+															  $$->push_back(*$3);
+															  appendVector($$, $5);
+															}
 				|	WHILE P_OPEN P_CLOSE blocoComandos {printf("\nERRO SINTATICO: nao ha uma expressao logica na condicao do while! linha:%d\n", nlines); exit(0);}
 				;
 
 
-impressao		:	PRINT expAritmetica
+impressao		:	PRINT expAritmetica {$$ = new vector<Node>(); 
+										  Node *n = new Node("print", -1, ii(ST_CMD, ST_UNKNOWN), nscopes, nlines);
+										  $$->push_back(*n);
+										  $$->push_back(*$2);
+										}
 				;
 
 
-retorno			:	RETURN expAritmetica {if(funcaoatual->type.second != $2->type.second) 
+retorno			:	RETURN expAritmetica {	$$ = new vector<Node>(); 
+											Node *n = new Node("return", -1, ii(ST_CMD, ST_UNKNOWN), nscopes, nlines);
+										    $$->push_back(*n);
+										 	$$->push_back(*$2);
+											if(funcaoatual->type.second != $2->type.second) 
 												printf("\nERRO SEMANTICO: tipos incompativeis entre declaracao e retorno da funcao `%s`\n", funcaoatual->name.c_str());
 										}
 				;	
@@ -294,6 +364,9 @@ retorno			:	RETURN expAritmetica {if(funcaoatual->type.second != $2->type.second
 
 int main(){
 	yyparse();
+
+	// interpretarCodigo(&codigo);
+
 	Node *n = st->get("seila", ST_GLOBAL);
 	if(n != NULL)
 		cout << n->name << "[" << n->dim << "]" << endl;
