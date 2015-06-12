@@ -1,11 +1,36 @@
-int a;
-int b[30];
-int seila[30];
+int a = 2;
+int b[5];
+int seila[5] = b;
 
 int soma(int a, int b){
+	seila[0] = 1;
+	seila[1] = 2;
+	seila[2] = 3;
+	seila[3] = 3;
+	seila[4] = 3;
 	return a + b;
 };
 
+
+char convert(int c){
+	b[0] = 273;
+	seila = b;
+	return '3';
+};
+
+int convert2(bool a){
+	return 25;	
+};
+
+
+int fib(int i){
+	if(i < 2) then {
+		return i;
+	}
+	else{
+		return fib(1) + fib(2);
+	};
+};
 
 
 int main(){
@@ -13,6 +38,7 @@ int main(){
 	float c, d;
 	int e;
 	char f = '7';
+	int *m;
 
 	
 	a = 0; e = 7;

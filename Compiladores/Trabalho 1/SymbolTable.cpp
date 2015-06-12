@@ -1,34 +1,3 @@
-#include <algorithm>
-#include <string>
-#include <vector>
-#include <deque>
-#include <map>
-#include <iostream>
-#include <cassert>
-#include <cstring>
-#include <iomanip>
-
-using namespace std;
-
-
-typedef pair<int, int> ii;
-typedef pair<char, char> cc;
-typedef pair<float, float> ff;
-typedef pair<bool, bool> bb;
-
-typedef pair<string, int> si;
-
-enum STTypes{
-	ST_INT, ST_BOOL, ST_FLOAT, ST_CHAR,
-	ST_FUNC, ST_VAR, ST_CONST,  ST_CMD,
-	ST_GLOBAL, ST_LOCAL
-};
-
-const int ST_UNKNOWN = -1;
-const ii UNKNOWN_TYPE = ii(ST_UNKNOWN, ST_UNKNOWN);
-const int UNKNOWN_SCOPE = ST_UNKNOWN;
-
-
 class Node{
 
 	public:
@@ -52,12 +21,15 @@ class Node{
 		// n -> array of size n
 		int dim;
 
+		// if is a pointer
+		Node *pt;
+
 		// if is a function
 		map<string, Node> params;
 
 		// attribute value
 		// void *value;
-		double value;
+		double *value;
 		
 		// flag for interpreter
 		bool setted;
@@ -70,6 +42,8 @@ class Node{
 			this->scope = scope;
 			this->dim = dim;
 			this->setted = false;
+			this->value = new double[dim];
+			this->pt = NULL;
 		};
 
 		// const node
@@ -78,32 +52,102 @@ class Node{
 			this->dim = dim;
 			this->type = type;
 			this->setted = false;
+			this->value = new double[dim];
+			this->pt = NULL;
 		}
 
 
 		void setValue(double v){
-			this->value = v;
+			this->value[0] = v;
 			this->setted = true;
 		}
 
+		void setValue(unsigned int i, double v){
+			this->value[i] = v;
+			this->setted = true;
+		}
 		
+		void setValue(double *v){
+			memcpy(this->value, v, sizeof(v));
+			this->setted = true;
+		}
+
+		void setValue(Node *x){
+			this->pt = x;
+			this->setted = true;
+		}
+
+
 		double getValue(){
+			return this->value[0];
+		}
+
+		double getValue(unsigned int index){
+			if(index >= 0 and index < this->dim)
+				return this->value[index];
+			semanticError->arrayBound(this->name);
+		}
+
+		double* getValueArr(){
 			return this->value;
 		}
 
+		Node* getPointer(){
+			return this->pt;
+		}
+
+
+
+		string typeToString(){
+			string s;
+			if(this->type.second == ST_INT)
+				s = "int";
+			else if(this->type.second == ST_FLOAT)
+				s = "float";
+			else if(this->type.second == ST_CHAR)
+				s = "char";
+			else if(this->type.second == ST_BOOL)
+				s = "bool";
+			else
+				s = "undefined";
+			return s;
+		}
+
+
+		string functionToString(){
+			map<string, Node>::iterator itp;
+			string s = "(";
+			string t = "";
+
+			for(itp = this->params.begin(); itp != this->params.end(); ++itp)
+				t += itp->second.typeToString() + " " + itp->first + ", ";
+				
+			if(t.size() > 0)
+				t[t.size()-2] = ')';
+			else
+				t = ")";
+
+			return s+t;
+		}
+
+
 		void printValue(int w){
 
-			if(this->setted){
+			if(this->setted and this->dim == 1){
 				int t = this->type.second;
 				if(t == ST_INT)
-					cout << setw(w) << (int) this->value;
+					cout << setw(w) << (int) this->value[0];
 				else if(t == ST_FLOAT)
-					cout << setw(w) << (float) this->value;
+					cout << setw(w) << (float) this->value[0];
 				else if(t == ST_CHAR)
-					cout << setw(w) << (char) this->value;
+					cout << setw(w) << (char) this->value[0];
 				else
-					cout << setw(w) << (bool) this->value;
+					cout << setw(w) << (bool) this->value[0];
 			}
+			else if(this->setted and this->dim == 0)
+				cout << setw(w) << "pointer to " << this->pt->name << endl; 
+			else if(this->setted and this->dim > 1)
+				cout << setw(w) << "array";
 			else
 				cout << setw(w) << "undefined";
 		}
@@ -190,41 +234,12 @@ class SymbolTable{
 				cout << setw(4) << " | ";
 
 
-
-				if(it->second.type.second == ST_INT)
-					s = "int ";
-				else if(it->second.type.second == ST_FLOAT)
-					s = "float ";
-				else if(it->second.type.second == ST_CHAR)
-					s = "char ";
-				else
-					s = "bool ";
+				s = it->second.typeToString() + " ";
 
 				if(it->second.type.first == ST_VAR)
 					s += "variable";
-				else if(it->second.type.first == ST_FUNC){
-					string t = "";
-					s += "function(";
-					string x = "";
-
-					for(itp = it->second.params.begin(); itp != it->second.params.end(); ++itp){
-						if(itp->second.type.second == ST_INT)
-							x = "int ";
-						else if(itp->second.type.second == ST_FLOAT)
-							x = "float ";
-						else if(itp->second.type.second == ST_CHAR)
-							x = "char ";
-						else
-							x = "bool ";
-
-						t += x + itp->first + ",";
-					}
-					if(t.size() > 0)
-						t[t.size()-1] = ')';
-					else
-						t = ")";
-					s += t;
-				}
+				else if(it->second.type.first == ST_FUNC)
+					s += "function"+it->second.functionToString();
 				else
 					s += "const";	
 
@@ -236,14 +251,12 @@ class SymbolTable{
 				cout << setw(4) << " | "; 
 
 
-
 				cout << left << setw(16) << it->second.scope - ST_GLOBAL;
 				cout << setw(4) << " | "; 
 
 
 				it->second.printValue(16);
 				cout << setw(4) << " | ";
-
 
 
 				cout << left << setw(16) << it->second.line;
