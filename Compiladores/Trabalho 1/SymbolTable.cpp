@@ -68,7 +68,7 @@ class Node{
 		}
 		
 		void setValue(double *v){
-			memcpy(this->value, v, sizeof(v));
+			memcpy(this->value, v, this->dim * sizeof(v));
 			this->setted = true;
 		}
 

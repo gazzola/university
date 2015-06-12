@@ -119,4 +119,11 @@ class SyntaxError{
 			exit(0); 
 		}
 
+		void unkownOperator(string x){
+			cout << endl << "ERRO SINTATICO:";
+			cout << " operador '" << x << "' nao conhecido!";
+			cout << " linha: " << nlines << "." << endl;
+			exit(0); 
+		}
+
 };

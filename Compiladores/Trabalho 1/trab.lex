@@ -40,6 +40,7 @@ aspas [\"\']
 "<="		{printf("<<=, LE> "); ncols+=2; return LE;}
 ">="		{printf("<>=, GE> "); ncols+=2; return GE;}
 "=="		{printf("<==, EQ> "); ncols+=2; return EQ;}
+"!="		{printf("<!=, NEQ> "); ncols+=2; return NEQ;}
 "char"		{printf("<, CHAR> "); ncols+=4; return CHAR;}
 "int"		{printf("<INT> "); ncols+=3; return INT;}
 "float"		{printf("<FLOAT> "); ncols+=5; return FLOAT;}

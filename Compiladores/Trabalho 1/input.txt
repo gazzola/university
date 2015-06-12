@@ -1,6 +1,7 @@
 int a = 2;
 int b[5];
 int seila[5] = b;
+int soma;
 
 int soma(int a, int b){
 	seila[0] = 1;
@@ -39,7 +40,7 @@ int main(){
 	int e;
 	char f = '7';
 	int *m;
-
+	int k[5];
 	
 	a = 0; e = 7;
 	
@@ -63,6 +64,14 @@ int main(){
 	} else {
 		b = a * ( 4 + 7 ) + 5 * e;
 	};
+
+
+
+	k[0] = 7;
+	k[1] = 7;
+	k[2] = 7;
+	seila = k;
+
 	return b - 5;
 
 };

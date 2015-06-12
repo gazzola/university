@@ -96,7 +96,7 @@ vector<Node> *codigo = new vector<Node>(); // todo o codigo
 %token P_OPEN P_CLOSE B_OPEN B_CLOSE C_OPEN C_CLOSE
 %token<tchar> PLUS MINUS MULT DIV POINTER
 %token<tchar> OPE OPOU
-%token ASSIGN LT GT LE GE EQ
+%token ASSIGN LT GT LE GE EQ NEQ
 %token INT FLOAT BOOL CHAR VOID TRUE FALSE
 %token MAIN IF THEN ELSE WHILE PRINT RETURN
 
@@ -105,7 +105,7 @@ vector<Node> *codigo = new vector<Node>(); // todo o codigo
 %right ASSIGN
 %left OPOU
 %left OPE
-%left EQ
+%left EQ NEQ
 %left LT GT LE GE
 %left PLUS MINUS
 %left MULT DIV
@@ -241,6 +241,7 @@ expLogica		:	expLogica OPE expLogica { assignValue($$, $1, $3, "&"); }
 				|   expAritmetica LE expAritmetica { assignValue($$, $1, $3, "<="); }
 				|   expAritmetica GE expAritmetica { assignValue($$, $1, $3, ">="); }
 				|   expAritmetica EQ expAritmetica { assignValue($$, $1, $3, "=="); }
+				|   expAritmetica NEQ expAritmetica { assignValue($$, $1, $3, "!="); }
 				|	t2 OPE	t2 { assignValue($$, $1, $3, "&"); }
 				|	t2 OPOU	t2 { assignValue($$, $1, $3, "|"); }
 				;
@@ -286,7 +287,7 @@ void interpretarCodigo(vector<Node> *v){
 
 int main(){
 
-	string hr = "---------------------";
+	const string hr = "---------------------";
 
 	cout << "TOKENS E LEXEMAS:" << endl << hr << endl;
 	yyparse();

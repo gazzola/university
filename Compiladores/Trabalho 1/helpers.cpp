@@ -14,7 +14,7 @@ void assignOperation(Node *a, T v1, T v2, string op){
 		a->setValue((T) v1 * (T) v2);
 	else if("/"){
 		if(v2 == 0)
-			printf("\nALERTA: divisao por 0 na linha %d\n", a->line);
+			cout << endl << "ALERTA: divisao por 0 na linha " << a->line << endl;
 		else
 			a->setValue((T) v1 / (T) v2);
 	}
@@ -28,6 +28,10 @@ void assignOperation(Node *a, T v1, T v2, string op){
 		a->setValue((T) v1 >= (T) v2);
 	else if("==")
 		a->setValue((T) v1 == (T) v2);
+	else if("!=")
+		a->setValue((T) v1 != (T) v2);
+	else
+		syntaxError->unkownOperator(op);
 	
 }
 
