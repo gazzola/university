@@ -2,33 +2,33 @@
 // a = b op c com cast dos tipos genericos T
 template <class T>
 void assignOperation(Node *a, T v1, T v2, string op){
-	if("&")
+	if(op == "&")
 		a->setValue((T) v1 && (T) v2);
-	else if("|")
+	else if(op == "|")
 		a->setValue((T) v1 || (T) v2);
-	else if("+")
+	else if(op == "+")
 		a->setValue((T) v1 + (T) v2);
-	else if("-")
+	else if(op == "-")
 		a->setValue((T) v1 - (T) v2);
-	else if("*")
+	else if(op == "*")
 		a->setValue((T) v1 * (T) v2);
-	else if("/"){
-		if(v2 == 0)
-			cout << endl << "ALERTA: divisao por 0 na linha " << a->line << endl;
+	else if(op == "/"){
+		if((T) v2 == 0)
+			cout << endl << "WARNING: divisao por 0 na linha " << a->line << endl;
 		else
 			a->setValue((T) v1 / (T) v2);
 	}
-	else if("<")
+	else if(op == "<")
 		a->setValue((T) v1 < (T) v2);
-	else if(">")
+	else if(op == ">")
 		a->setValue((T) v1 > (T) v2);
-	else if("<=")
+	else if(op == "<=")
 		a->setValue((T) v1 <= (T) v2);
-	else if(">=")
+	else if(op == ">=")
 		a->setValue((T) v1 >= (T) v2);
-	else if("==")
+	else if(op == "==")
 		a->setValue((T) v1 == (T) v2);
-	else if("!=")
+	else if(op == "!=")
 		a->setValue((T) v1 != (T) v2);
 	else
 		syntaxError->unkownOperator(op);

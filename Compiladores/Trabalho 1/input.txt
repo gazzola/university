@@ -1,7 +1,7 @@
 int a = 2;
 int b[5];
 int seila[5] = b;
-int soma;
+
 
 int soma(int a, int b){
 	seila[0] = 1;
