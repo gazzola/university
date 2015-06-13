@@ -7,11 +7,12 @@ id {letra}(_{letra}|_{digito}|{letra}|{digito})*
 numint {digito}+
 numfloat {digito}+((\.|e|\.e)?{digito}+)?
 caractere \'.\'
+aspas [\"\']
 
 iderro1 {letra}(_{letra}|_{digito}|{letra}|{digito})*_
 iderro2 {digito}(_{letra}|_{digito}|{letra}|{digito})*
 nferro {digito}+((,|e|,e)?{digito}+)?
-aspas [\"\']
+
 
 
 

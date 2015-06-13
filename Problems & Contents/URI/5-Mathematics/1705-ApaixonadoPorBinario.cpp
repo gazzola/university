@@ -2,6 +2,7 @@
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
+#include <string>
 #include <cmath>
 #include <vector>
 #include <queue>
@@ -14,160 +15,257 @@ using namespace std;
 
 typedef long long unsigned int llu;
 typedef pair<llu, llu> ii;
+typedef pair<vector<llu>, vector<llu>> vv;
+typedef pair<llu, vector<llu>> vi;
 
-const int TAM = 1 << 12;
+// const llu LIM = 10000005;
+const llu LIM = 10000005;
+const int TAM = (1 << 12) - 1;
+const llu MAX = 1000000000000; //10^12
 
-vector<llu> gerarBinarios(int n){
+
+bool isprime[LIM];
+llu prime[LIM];
+llu prime_cont = 1;
+
+void crivo(){
+	prime[0] = 2;
+	memset(isprime, true, sizeof(isprime));
+
+	for(llu i=3; i<=LIM; i+=2){
+		if(isprime[i]){
+			prime[prime_cont++] = i;
+			for(llu j=i*i; j<=LIM; j+=i) 
+				isprime[j] = false;
+		}
+	}
+}
+
+
+
+void factorize(llu n, vector<llu> &factors){
+	
+	for(unsigned int i=0; i<prime_cont; i++){
+
+		llu p = prime[i];
+		if(p*p > n)
+			break;
+
+		while(n % p == 0){
+			n /= p;
+			factors.push_back(p);
+		}
+			
+	}
+
+	if(n > 1)
+		factors.push_back(n);
+}
+
+llu firstFactor(llu n){
+	
+	for(unsigned int i=0; i<prime_cont; i++){
+
+		llu p = prime[i];
+		if(p*p > n)
+			break;
+
+		while(n % p == 0)
+			return p;
+	}
+
+	return n;
+}
+
+
+vector<ii> gerarBinarios(){
 
 	queue<string> q;
-	vector<llu> v;
-
+	// vector<llu> v;
+	// vector<llu> xp;
+	vector<ii> d;
+	llu x;
 
 	q.push("1");
 
-	while(n--){
+	while(true){
 		string s1 = q.front();
 		q.pop();
 
-		v.push_back(stoll(s1));
+		x = stoll(s1);
+		if(x >= MAX)
+			break;
+
+		// xp.clear();
+		// factorize(x, xp);
+		// cout << x << ": ";
+		// for(int i=0; i<(int) xp.size(); i++)
+		// 	cout << xp[i] << " ";
+		// cout << endl;
+
+		if(x != 1)
+			d.push_back(ii(x, firstFactor(x)));
 		
 		string s2 = s1;
 		q.push(s1.append("0"));
 		q.push(s2.append("1"));
 	}
 
-	return v;
-}
-
-bool ehPrimo(llu x){
-
-	if(x == 2 or x == 3)
-		return true;
-
-	if(x % 2 == 0 or x < 2 or x % 3 == 0)
-		return false;
-
-	if(x < 9)
-		return true;
-
-	llu i = 5;
-	while(i*i <= x){
-		if(x%i == 0 or x%(i+2) == 0)
-			return false;
-		i += 6;
-	}
-
-	return true;
+	return d;
 }
 
 
-int acharI(int x, vector<llu> &divs){
 
-	int ini=1, fim=divs.size(), meio=0;
-	llu n = x;
 
-	while(ini < fim){
+bool orderBy(const ii &x, const ii &y){
 
-		meio = (ini+fim)/2;
-
-		if((divs[meio-1] <= n and divs[meio] >= n) or (divs[meio] <= n and divs[meio+1] >= n))
-			return meio;
-		else if(divs[meio] > n)
-			fim = meio-1;
-		else
-			ini = meio+1;
-	}
-
-	return 1;
+	
+	// if(x.second > y.second)
+	// 	return false;
+	// else if(x.second < y.second)
+	// 	return true;
+	
+	return x.first < y.first;
 }
 
-llu acharMenorMultiplo(llu x, vector<ii> &vet){
-	int ini = 0, meio, fim = 74012;
+bool orderBy2(const ii &x, const ii &y){
+
+	
+	// if(x.second > y.second)
+	// 	return false;
+	// else if(x.second < y.second)
+	// 	return true;
+	
+	return x.first < y.first;
+}
+
+
+
+
+
+
+
+void buscarIndices(vector<vi> &bins, llu x, int &i, int &n){
+
+	int ini=0, meio=0, fim=bins.size()-1;
 	while(ini <= fim){
 		meio = (ini+fim)/2;
-		if(vet[meio].first == x)
-			return vet[meio].second;
-		else if(vet[meio].first < x)
-			ini = meio+1;
-		else
+		if(bins[meio].second[0] == x)
+			break;
+		else if(bins[meio].second[0] > x)
 			fim = meio-1;
+		else
+			ini = meio+1;
 	}
 
-	return 0;
+	if(bins[meio].second[0] == x){
+
+		int p, q;
+		p = q = meio;
+
+		while(p>=0 and bins[p-1].second[0] == x)
+			p--;
+		i = p;
+		
+		while(q<n and bins[q+1].second[0] == x)
+			q++;
+		n = q;
+	}
+	else{
+		i = 1;
+		n = bins.size()-1;
+	}
 }
 
-bool ehBinarioDecimal(llu x){
+
+
+llu buscaFator(vector<ii> &bins, int f, llu x){
+
+	int i, n;
+	// buscarIndices(bins, f[0], i, n);
+	// cout << i << " " << n << endl;
 	
-	llu p = 1;
-	int d; 
-
-	while(x/p > 0){
-		d = x%(p*10) / p;
-		if(d > 1)
-			return false;
-		p *= 10;
+	i = f;
+	n = (int) bins.size()-1;
+	
+	while(i <= n){
+		if(bins[i].first % x == 0)
+			return bins[i].first;
+		i++;
 	}
 
-
-	return true;
+	return MAX;
 }
 
 
+int buscaBinaria(vector<ii> &bins, llu x){
+	int ini=0, meio=0, fim=bins.size()-1;
+	while(ini <= fim){
+		meio = (ini+fim)/2;
+		if(bins[meio].first == x)
+			return meio;
+		else if(bins[meio].first > x)
+			fim = meio-1;
+		else
+			ini = meio+1;
+	}
+	return meio;
+}
 
 
 int main(){
 	
 
 
-	// map<llu, int> vis;
+	// vector<llu> divs;
+	vector<ii> bins, bins2;
+	map<llu, int> posbins;
 	
-	// vector<llu> divs = gerarBinarios(TAM);
-	// vector<ii> primedivs;
-	// set<llu> foi;
-	
+	crivo();
+	bins = gerarBinarios();
+	bins2 = bins;
+	// cout << bins.size() << endl;
 
-	// for(int i=0; i<(int) divs.size(); i++){
-	// 	for(llu j=2; j*j<=divs[i]; j++){
-	// 		if(divs[i]%j == 0){
-	// 			if(vis.count(j) == 0){
-	// 				vis[j] = 1;
-	// 				primedivs.push_back(ii(j, divs[i]));
-	// 			}
+	sort(bins.begin(), bins.end(), orderBy);
+	sort(bins2.begin(), bins2.end(), orderBy2);
+	for(int i=0; i<(int)bins2.size(); i++)
+		posbins[bins2[i].first] = i;
 
-	// 			if(vis.count(divs[i]/j) == 0){
-	// 				vis[divs[i]/j] = 1;
-	// 				primedivs.push_back(ii(divs[i]/j, divs[i]));
-	// 			}
-	// 		}
-	// 	}
+
+	// for(int i=0; i<(int) bins.size(); i++){
+	// 	cout << bins[i].first << ": ";
+	// 	for(int j=0; j<(int) bins[i].second.size(); j++)
+	// 		cout << bins[i].second[j] << " ";
+	// 	cout << endl;
 	// }
 
-	// // printf("%d\n\n", (int)primedivs.size());
-	// sort(primedivs.begin(), primedivs.end());
+	// vector<ii> facs = binFactors(bins);
 
-	// for(int i=0; i<(int) primedivs.size(); i++){
-	// 	printf("bindivs.push_back(ii(%llu, %llu)); ", primedivs[i].first, primedivs[i].second);
-	// }
-
-	// ii bindivs[74013];
-	vector<ii> bindivs;
-
-
-
-	llu n, k;
+	
+	llu n, f;
 
 	while(scanf("%llu", &n) != EOF){
 		
-		if(ehBinarioDecimal(n)){
-			printf("%llu\n", n);
+		if(n == 1){
+			printf("1\n");
 			continue;
 		}
 
-		k = acharMenorMultiplo(n, bindivs);
-		if(k > 0)
-			printf("%llu\n", k);
-		else
+		if(n%9 == 1){
 			printf("-1\n");
+			continue;
+		}
+
+		
+		// f = firstFactor(n);
+		
+		int p = buscaBinaria(bins, n);
+		p = posbins[bins[p].first];
+		llu x = buscaFator(bins2, p, n);
+		if(x == MAX)
+			printf("-1\n");
+		else
+			printf("%llu\n", x);
 
 	}
 

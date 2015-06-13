@@ -4,5 +4,6 @@
 *.hi
 *.pyc
 *.class
+*.odt
 */__pycache__/
 teste

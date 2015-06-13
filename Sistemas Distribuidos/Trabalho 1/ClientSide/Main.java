@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Main{
 	 
-	private void search(int port){
+	private void search(String ip, int port){
 		
 		Scanner input = new Scanner(System.in);
 		System.out.println("Type a domain name for get a ip adress.\n");
@@ -14,10 +14,9 @@ public class Main{
 			String domain = input.next();
 
 			try{
-				Registry myRegistry = LocateRegistry.getRegistry("127.0.0.1", port);
+				Registry myRegistry = LocateRegistry.getRegistry(ip, port);
 				Message impl = (Message) myRegistry.lookup("myMessage");
-				String ip = impl.getIpOf(domain);
-				System.out.println("IP Adress: " + ip);
+				System.out.println("IP Adress: " + impl.getIpOf(domain));
 			} 
 			catch(Exception e){
 				e.printStackTrace();
@@ -27,6 +26,6 @@ public class Main{
 	 
 	public static void main(String[] args){
 		Main main = new Main();
-		main.search(Integer.parseInt(args[0]));
+		main.search(args[0], Integer.parseInt(args[1]));
 	}
 }

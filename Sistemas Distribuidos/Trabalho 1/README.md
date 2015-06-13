@@ -18,16 +18,5 @@ Use a criatividade. Estruturas de outros trabalhos de outras disciplinas podem s
 ## Integrantes:
 
 * Marcos Vinícius Treviso (121150107)
+* Matheus Beniz Bieger (131100019)
 
-
-## Execução:
-	
-Rodar servidor primeiro.
-```bash
-java Main <porta>
-```
-
-Rodar clientes.
-```bash
-java Main <porta>
-```

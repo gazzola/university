@@ -1,3 +1,8 @@
-class AbsSynTree{
+// Ast::Abstract Syntax Tree
+
+namespace Ast{
+
+
+	
 
 };

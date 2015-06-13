@@ -52,9 +52,10 @@ unsigned int tiporetorno = ST_UNKNOWN;
 
 
 // display errors
-#include "errors.cpp"
-SemanticError *semanticError = new SemanticError();
+#include "SyntaxError.cpp"
+#include "SemanticError.cpp"
 SyntaxError *syntaxError = new SyntaxError(); 
+SemanticError *semanticError = new SemanticError();
 
 
 // symbol table definition and instance:
@@ -227,6 +228,7 @@ t1 				:	P_OPEN expAritmetica P_CLOSE { $$ = $2; }
 				|	FLOATNUM { $$ = createConstNode(ST_FLOAT, $1); }
 				|	CARACTERE { $$ = createConstNode(ST_CHAR, $1); }
 				|	BOOLEANO { $$ = createConstNode(ST_BOOL, $1); }
+					/* regras adicionadas para permitir bool e char */
 				;
 
 listaExp		:	expAritmetica { $$ = createItemVector($1); }

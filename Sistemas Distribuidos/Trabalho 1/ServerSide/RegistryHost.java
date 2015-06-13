@@ -3,9 +3,6 @@ import java.util.*;
 public class RegistryHost{
 
 	private static Map<String, Host> data = new HashMap<String, Host>();
-	// highly well implemented, uses a data-strucutre 
-	// that in the middle case is like an order 
-	// statistics tree multi-level.
 
 	private RegistryHost(){}
 

@@ -45,6 +45,10 @@ class SymbolTable{
 		const static int PARAM;
 		const static int LOCAL;
 
+		// unknown type and scope
+		const static ii UNKNOWN_TYPE;
+		const static int UNKNOWN_SCOPE;
+
 		SymbolTable(){};
 
 		Node* get(string name){
@@ -66,6 +70,8 @@ class SymbolTable{
 const int SymbolTable::GLOBAL = 0;
 const int SymbolTable::PARAM = 1;
 const int SymbolTable::LOCAL = 2;
+const ii SymbolTable::UNKNOWN_TYPE = ii(-1, -1);
+const int SymbolTable::UNKNOWN_SCOPE = -1;
 
 
 

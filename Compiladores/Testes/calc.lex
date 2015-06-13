@@ -1,8 +1,8 @@
-%option yylineno
+
 
 del [ \t]
 ws {del}+
-letra [A-Za-z]
+letra [a-z]
 digito [0-9]
 id {letra}(_{letra}|_{digito}|{letra}|{digito})*
 numint {digito}+(e{digito}+)?
