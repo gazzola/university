@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.7)  18 JUN 2015 15:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.7)  18 JUN 2015 16:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2140,6 +2140,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ])
 [24] (./textuais/introducao.tex
+
+LaTeX Warning: Citation `dos2014training' on page 25 undefined on input line 9.
+
+
+
+LaTeX Warning: Citation `fonseca2015evaluating' on page 25 undefined on input l
+ine 9.
+
 <img/exemplo_classificacao.png, id=276, 438.438pt x 110.814pt>
 File: img/exemplo_classificacao.png Graphic file (type png)
 
@@ -2269,9 +2277,9 @@ File: img/Colbert-WordTable2.png Graphic file (type png)
 <use img/Colbert-WordTable2.png>
 Package pdftex.def Info: img/Colbert-WordTable2.png used on input line 322.
 (pdftex.def)             Requested size: 341.77603pt x 120.44969pt.
-) (./textuais/trabalhosrelacionados.tex
-[38 <./img/Turian-WordTSNE.png (PNG copy)> <./img/Colbert-WordTable2.png (PNG c
-opy)>] [39] [40
+ [38 <./img/Turian-WordTSNE.png (PNG copy)> <./img/Colbert-WordTable2.png (PNG 
+copy)>]) (./textuais/trabalhosrelacionados.tex
+[39] [40
 
 ]) (./textuais/desenvolvimento.tex [41] [42
 
@@ -2526,10 +2534,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 364.
  ) 
 Here is how much of TeX's memory you used:
- 39984 strings out of 493304
- 843114 string characters out of 6139872
- 1031944 words of memory out of 5000000
- 42363 multiletter control sequences out of 15000+600000
+ 39988 strings out of 493304
+ 843218 string characters out of 6139872
+ 1032944 words of memory out of 5000000
+ 42367 multiletter control sequences out of 15000+600000
  108491 words of font info for 83 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  68i,19n,106p,10466b,2157s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2550,7 +2558,7 @@ nts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on monografia.pdf (72 pages, 1873268 bytes).
+Output written on monografia.pdf (72 pages, 1873628 bytes).
 PDF statistics:
  964 PDF objects out of 1000 (max. 8388607)
  826 compressed objects within 9 object streams
