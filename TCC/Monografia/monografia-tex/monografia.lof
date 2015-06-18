@@ -1,18 +1,22 @@
 \select@language {brazil}
-\contentsline {figure}{\numberline {1}{\ignorespaces Exemplo de classifica\IeC {\c c}\IeC {\~a}o gramatical}}{25}{figure.1.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Diagrama para resultado final}}{29}{figure.3.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Demonstra\IeC {\c c}\IeC {\~a}o de regress\IeC {\~a}o}}{30}{figure.3.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Demonstra\IeC {\c c}\IeC {\~a}o de classifica\IeC {\c c}\IeC {\~a}o}}{31}{figure.3.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces \IeC {\'A}rvore de recurs\IeC {\~a}o de Fibonacci.}}{38}{figure.5.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Gr\IeC {\'a}fico produzido diretamente no arquivo fonte.}}{38}{figure.5.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Outro gr\IeC {\'a}fico feito em \textlatin {\LaTeX }.}}{39}{figure.5.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Varia\IeC {\c c}\IeC {\~a}o dos resultados utilizando sele\IeC {\c c}\IeC {\~a}o por Janela Deslizante.}}{40}{figure.5.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Gr\IeC {\'a}fico produzido em Excel e salvo como PDF.}}{41}{figure.5.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Exemplo de subfiguras.}}{41}{figure.5.10}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces Uma figura de um arquivo.}}{41}{subfigure.5.10.2}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces Uma figura em puro c\IeC {\'o}digo TikZ.}}{41}{subfigure.5.10.2}
-\contentsline {figure}{\numberline {11}{\ignorespaces Mesmo exemplo de subfiguras, agora em escala.}}{42}{figure.5.11}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces Uma figura de um arquivo.}}{42}{subfigure.5.11.2}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces Uma figura em puro c\IeC {\'o}digo TikZ.}}{42}{subfigure.5.11.2}
-\contentsline {figure}{\numberline {12}{\ignorespaces Exemplo de tamanhos de fonte}}{59}{figure.anexochapback.2.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Tela do JabRef para uma vers\IeC {\~a}o inicial do arquivo bib deste documento}}{61}{figure.anexochapback.2.13}
+\contentsline {figure}{\numberline {1}{\ignorespaces Exemplo de classifica\IeC {\c c}\IeC {\~a}o gramatical\relax }}{25}{figure.caption.11}
+\contentsline {figure}{\numberline {2}{\ignorespaces Diagrama para resultado final\relax }}{29}{figure.caption.12}
+\contentsline {figure}{\numberline {3}{\ignorespaces Demonstra\IeC {\c c}\IeC {\~a}o de regress\IeC {\~a}o\relax }}{30}{figure.caption.13}
+\contentsline {figure}{\numberline {4}{\ignorespaces Demonstra\IeC {\c c}\IeC {\~a}o de classifica\IeC {\c c}\IeC {\~a}o\relax }}{31}{figure.caption.14}
+\contentsline {figure}{\numberline {5}{\ignorespaces Fun\IeC {\c c}\IeC {\~a}o sigmoide\relax }}{32}{figure.caption.16}
+\contentsline {figure}{\numberline {6}{\ignorespaces Fun\IeC {\c c}\IeC {\~a}o de custo - $J(\theta _0, \theta _1)$\relax }}{34}{figure.caption.17}
+\contentsline {figure}{\numberline {7}{\ignorespaces Funcionamento do Gradiente Descendente\relax }}{35}{figure.caption.18}
+\contentsline {figure}{\numberline {8}{\ignorespaces Exemplo de cria\IeC {\c c}\IeC {\~a}o de \textit {word embeddings}\relax }}{37}{figure.caption.19}
+\contentsline {figure}{\numberline {9}{\ignorespaces t-SNE: Visualiza\IeC {\c c}\IeC {\~a}o para \textit {word embeddings}\relax }}{38}{figure.caption.20}
+\contentsline {figure}{\numberline {10}{\ignorespaces Exemplo de palavras similares\relax }}{38}{figure.caption.21}
+\contentsline {figure}{\numberline {11}{\ignorespaces \IeC {\'A}rvore de recurs\IeC {\~a}o de Fibonacci.\relax }}{46}{figure.caption.24}
+\contentsline {figure}{\numberline {12}{\ignorespaces Gr\IeC {\'a}fico produzido diretamente no arquivo fonte.\relax }}{46}{figure.caption.25}
+\contentsline {figure}{\numberline {13}{\ignorespaces Outro gr\IeC {\'a}fico feito em \textlatin {\LaTeX }.\relax }}{47}{figure.caption.26}
+\contentsline {figure}{\numberline {14}{\ignorespaces Varia\IeC {\c c}\IeC {\~a}o dos resultados utilizando sele\IeC {\c c}\IeC {\~a}o por Janela Deslizante.\relax }}{48}{figure.caption.27}
+\contentsline {figure}{\numberline {15}{\ignorespaces Gr\IeC {\'a}fico produzido em Excel e salvo como PDF.\relax }}{49}{figure.caption.28}
+\contentsline {figure}{\numberline {16}{\ignorespaces Exemplo de subfiguras.\relax }}{49}{figure.caption.29}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces Uma figura de um arquivo.}}{49}{subfigure.5.16.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces Uma figura em puro c\IeC {\'o}digo TikZ.}}{49}{subfigure.5.16.2}
+\contentsline {figure}{\numberline {17}{\ignorespaces Mesmo exemplo de subfiguras, agora em escala.\relax }}{50}{figure.caption.30}
+\contentsline {figure}{\numberline {18}{\ignorespaces Exemplo de tamanhos de fonte\relax }}{67}{figure.caption.35}
+\contentsline {figure}{\numberline {19}{\ignorespaces Tela do JabRef para uma vers\IeC {\~a}o inicial do arquivo bib deste documento\relax }}{69}{figure.caption.37}
