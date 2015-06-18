@@ -1,0 +1,16 @@
+%==============================================================================
+\chapter{O problema}\label{problema}
+%==============================================================================
+
+Primeiramente, devemos informar que o problema a ser resolvido não é fácil, pois uma palavra pode possuir diferentes categorias gramáticais, e para solucionar precisamos analisar todo o contexto no qual a palavra esta associada. Além disso, como já mostrado anteriormente, há muita ambiguidade no português do Brasil, segundo [X], o português brasileiro é uma das línguas com mais ambiguidade, e isso dificulta a análise morfo-sintática. No exemplo anterior, não fica claro qual é o tipo de banco que está sendo referenciado, os dois são substantivos que se encaixam semanticamente na sentença (\textit{banco: lugar onde é guardado dinheiro.} ou \textit{banco: objeto colocado em praças.}). Entretanto a ambiguidade pode muitas vezes ser resolvida se o contexto for analisado, como por exemplo:
+
+\begin{center}
+"Eu canto na escola."
+\end{center}
+
+A palavra \textit{canto} pode ser classificada como substantivo ou como verbo, mas levando em consideração o sentido da frase, fica evidente que a classificação correta é verbo.
+
+Dito isso, o problema deste trabalho consiste em desenvolver um método para classificar palavras em suas respectivas classes gramaticais de modo eficiente. Para solucionar esse problema, será feito o uso de técnicas de aprendizado de máquina.
+
+Em ordem de conseguir essa eficiência é necessário escolher um bom método computacional, esse trabalho se baseará na utilização de um método conhecido por redes neurais profundas (\textit{deep-learning}), para que seja possível treinar modelos capazes de realizar a classificação. Utilizamos redes neurais pois elas oferecem um jeito alternativo de realizado aprendizado de máquina quando temos hipóteses complexas com muitas características diferentes.
+
