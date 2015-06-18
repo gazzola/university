@@ -1,4 +1,4 @@
-del [ \n\t]
+del [ \n\t\r]
 ws {del}+
 letra [A-Za-z]
 digito [0-9]
@@ -20,6 +20,7 @@ nferro {digito}+((,|e|,e)?{digito}+)?
 <<EOF>>		{printf("\n"); yyterminate();}
 "\t"		{printf("\t"); ncols+=4;}
 "\n"		{printf("\n"); nlines++;}
+"\r"		{printf("\r");}
 " "			{printf(" "); ncols++;}
 ";"			{printf("<;, SEMICOLON> "); ncols+=1; return SEMICOLON;}
 ","			{printf("<,, COMMA> "); ncols+=1; return COMMA;}

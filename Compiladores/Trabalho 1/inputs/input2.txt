@@ -1,0 +1,12 @@
+float a = 54.35;
+
+int main(){
+	
+	int b, c;
+	
+	print b/c;
+	c = a + b + c;
+	print c;
+
+	return 0;
+};
