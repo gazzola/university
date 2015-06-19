@@ -6,66 +6,71 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{25}{chapter.1}
-\contentsline {section}{\numberline {1.1}Objetivo}{25}{section.1.1}
-\contentsline {section}{\numberline {1.2}Estrutura do trabalho}{26}{section.1.2}
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{27}{chapter.1}
+\contentsline {section}{\numberline {1.1}Objetivo}{27}{section.1.1}
+\contentsline {section}{\numberline {1.2}Estrutura do trabalho}{28}{section.1.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {O problema}}{27}{chapter.2}
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {O problema}}{29}{chapter.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Fundamentos}}{29}{chapter.3}
-\contentsline {section}{\numberline {3.1}Aprendizado de m\IeC {\'a}quina}{29}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Classifica\IeC {\c c}\IeC {\~a}o}{30}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Fun\IeC {\c c}\IeC {\~a}o de hip\IeC {\'o}tese}{31}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Fun\IeC {\c c}\IeC {\~a}o de custo}{33}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Minimiza\IeC {\c c}\IeC {\~a}o da fun\IeC {\c c}\IeC {\~a}o de custo}{34}{subsection.3.1.4}
-\contentsline {subsection}{\numberline {3.1.5}Classifica\IeC {\c c}\IeC {\~a}o multiclasse}{36}{subsection.3.1.5}
-\contentsline {subsection}{\numberline {3.1.6}Regulariza\IeC {\c c}\IeC {\~a}o}{36}{subsection.3.1.6}
-\contentsline {section}{\numberline {3.2}C\IeC {\'o}rpus e seu conjunto de classes gramaticais}{36}{section.3.2}
-\contentsline {section}{\numberline {3.3}Representa\IeC {\c c}\IeC {\~a}o das palavras}{37}{section.3.3}
-\contentsline {section}{\numberline {3.4}Redes neurais profundas}{39}{section.3.4}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Fundamentos}}{31}{chapter.3}
+\contentsline {section}{\numberline {3.1}Aprendizado de m\IeC {\'a}quina}{31}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Classifica\IeC {\c c}\IeC {\~a}o}{33}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Fun\IeC {\c c}\IeC {\~a}o de hip\IeC {\'o}tese}{34}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Fun\IeC {\c c}\IeC {\~a}o de custo}{36}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Minimiza\IeC {\c c}\IeC {\~a}o da fun\IeC {\c c}\IeC {\~a}o de custo}{37}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Classifica\IeC {\c c}\IeC {\~a}o multiclasse}{39}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.6}Regulariza\IeC {\c c}\IeC {\~a}o}{39}{subsection.3.1.6}
+\contentsline {section}{\numberline {3.2}C\IeC {\'o}rpus e seu conjunto de classes gramaticais}{39}{section.3.2}
+\contentsline {section}{\numberline {3.3}Representa\IeC {\c c}\IeC {\~a}o das palavras}{40}{section.3.3}
+\contentsline {section}{\numberline {3.4}Redes neurais profundas}{42}{section.3.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Trabalhos relacionados}}{41}{chapter.4}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Trabalhos relacionados}}{43}{chapter.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Desenvolvimento}}{43}{chapter.5}
-\contentsline {section}{\numberline {5.1}Formata\IeC {\c c}\IeC {\~a}o}{43}{section.5.1}
-\contentsline {section}{\numberline {5.2}Codifica\IeC {\c c}\IeC {\~a}o dos arquivos: UTF8}{43}{section.5.2}
-\contentsline {section}{\numberline {5.3}Cita\IeC {\c c}\IeC {\~o}es}{43}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Refer\IeC {\^e}ncias internas}{44}{subsection.5.3.1}
-\contentsline {section}{\numberline {5.4}Tabelas}{44}{section.5.4}
-\contentsline {section}{\numberline {5.5}Figuras}{45}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Sobre a indica\IeC {\c c}\IeC {\~a}o da fonte de uma tabela ou figura}{47}{subsection.5.5.1}
-\contentsline {section}{\numberline {5.6}Express\IeC {\~o}es matem\IeC {\'a}ticas}{49}{section.5.6}
-\contentsline {section}{\numberline {5.7}Enumera\IeC {\c c}\IeC {\~o}es: al\IeC {\'\i }neas e subal\IeC {\'\i }neas}{50}{section.5.7}
-\contentsline {section}{\numberline {5.8}Espa\IeC {\c c}amento entre par\IeC {\'a}grafos e linhas}{51}{section.5.8}
-\contentsline {section}{\numberline {5.9}Inclu\IeC {\c c}\IeC {\~a}o de outros arquivos}{52}{section.5.9}
-\contentsline {section}{\numberline {5.10}Compilar o documento \textlatin {\LaTeX }}{52}{section.5.10}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Desenvolvimento}}{45}{chapter.5}
+\contentsline {section}{\numberline {5.1}Formata\IeC {\c c}\IeC {\~a}o}{45}{section.5.1}
+\contentsline {section}{\numberline {5.2}Codifica\IeC {\c c}\IeC {\~a}o dos arquivos: UTF8}{45}{section.5.2}
+\contentsline {section}{\numberline {5.3}Cita\IeC {\c c}\IeC {\~o}es}{45}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Refer\IeC {\^e}ncias internas}{46}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.4}Tabelas}{46}{section.5.4}
+\contentsline {section}{\numberline {5.5}Figuras}{47}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Sobre a indica\IeC {\c c}\IeC {\~a}o da fonte de uma tabela ou figura}{49}{subsection.5.5.1}
+\contentsline {section}{\numberline {5.6}Express\IeC {\~o}es matem\IeC {\'a}ticas}{51}{section.5.6}
+\contentsline {section}{\numberline {5.7}Enumera\IeC {\c c}\IeC {\~o}es: al\IeC {\'\i }neas e subal\IeC {\'\i }neas}{52}{section.5.7}
+\contentsline {section}{\numberline {5.8}Espa\IeC {\c c}amento entre par\IeC {\'a}grafos e linhas}{53}{section.5.8}
+\contentsline {section}{\numberline {5.9}Inclu\IeC {\c c}\IeC {\~a}o de outros arquivos}{54}{section.5.9}
+\contentsline {section}{\numberline {5.10}Compilar o documento \textlatin {\LaTeX }}{54}{section.5.10}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o}}{55}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o}}{57}{chapter.6}
 \vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Refer\^encias}{59}{section*.34}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Ap\^endices}}{57}{section*.32}
+\contentsline {part}{\uppercase {Ap\^endices}}{61}{section*.35}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Primeiro Ap\IeC {\^e}ndice}}{59}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Primeiro Ap\IeC {\^e}ndice}}{63}{appendix.A}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Segundo Ap\IeC {\^e}ndice}}{61}{appendix.B}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Segundo Ap\IeC {\^e}ndice}}{65}{appendix.B}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Anexos}}{63}{section*.33}
+\contentsline {part}{\uppercase {Anexos}}{67}{section*.36}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Primeiro Anexo}}{65}{appendix.anexochapback.1}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Primeiro Anexo}}{69}{appendix.anexochapback.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {LaTex para Principiantes}}{67}{appendix.anexochapback.2}
-\contentsline {section}{\numberline {B.1}Outras Dicas}{68}{section.anexochapback.2.1}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {LaTex para Principiantes}}{71}{appendix.anexochapback.2}
+\contentsline {section}{\numberline {B.1}Outras Dicas}{72}{section.anexochapback.2.1}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\'Indice}{75}{section*.41}

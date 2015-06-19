@@ -2,11 +2,11 @@
 \chapter{Fundamentos}\label{fundamentos}
 %==============================================================================
 
-Este trabalho é baseado em conceitos de aprendizado de máquina, que dedica-se na elaboraçãode algoritmos e técnicas que permitem um computador a aprender padrões.  
+Devido aos impasses demonstrados no \autoref{oproblema}, este trabalho é baseado em conceitos de aprendizado de máquina, que dedica-se na elaboraçãode algoritmos e técnicas que permitem um computador a aprender padrões.  
 
 \section{Aprendizado de máquina}\label{sec:aprendizadodemaquina}
 
-Para realizar a aprendizagem é necessário primeiramente dados de entrada que servem como exemplo para nosso modelo, com esses dados é possível treinar o modelo para que ele possa então aprender com base nesses exemplos para que depois seja possível generalizar sobre outros dados não testados ainda. O diagrama da \autoref{fig:passoapasso} abaixo mostra os passos para obter o resultado final.
+Para realizar a aprendizagem é necessário primeiramente dados de entrada que servem como exemplo para nosso modelo, com esses dados é possível treinar o modelo para que ele possa então aprender com base nesses exemplos. Depois de realizar o treinamento, é possível generalizar sobre outros dados ainda não testados e gerar uma resposta apropriada como saída. O diagrama da \autoref{fig:passoapasso} abaixo mostra os passos para obter o resultado final.
 
 \begin{figure}[htb]
 	  \caption{Diagrama para resultado final}\label{fig:passoapasso}
@@ -24,27 +24,29 @@ O aprendizado supervisionado permite dividir os problemas em duas categorias dis
 
 
 \begin{itemize}
-	\item \textbf{Regressão}: Tenta-se prever resultados com uma saída contínua, significando que estamos tentando mapear variáveis de entrada em alguma função contínua. A \autoref{fig:demregressao} demonstra esse processo. Nessa demonstração, os círculos em vermelho são dados de exemplo, já a reta azul representa a predição feita pela regressão.
-	\item \textbf{Classificação}:  Tenta-se prever resultados em uma saída discreta, ou seja, estamos tentando mapear variáveis de entrada em categoriais discretas. A \autoref{fig:demclassificacao} demonstra esse processo. Aqui tem duas classes diferentes, as representadas pelos círculos amarelos e pelas cruzes vermelhas, já o contorno em verde representa o resultado da classificação sobre esses dados de exemplo.
+	\item \textbf{Regressão}: Tenta-se prever resultados com uma saída contínua, significando que deseja-se mapear variáveis de entrada em alguma função contínua. A \autoref{fig:demregressao} demonstra esse processo. Nessa demonstração, os círculos em vermelho são dados de exemplo, já a reta azul representa a predição feita pela regressão.
+	\item \textbf{Classificação}:  Tenta-se prever resultados em uma saída discreta, ou seja, deseja0se mapear variáveis de entrada em categoriais discretas. A \autoref{fig:demclassificacao} demonstra esse processo. Essa demonstração tem duas classes diferentes, as representadas pelos círculos amarelos e pelas cruzes vermelhas, já o contorno em verde representa o resultado da classificação sobre esses dados de exemplo.
 \end{itemize}
 
 
 \begin{figure}[htb]
 	  \caption{Demonstração de regressão}\label{fig:demregressao}
 	  \begin{center}
-	      \includegraphics[scale=0.55]{img/regressao2}
+	      \includegraphics[scale=0.75]{img/regressao2}
 	  \end{center}
+	  \legend{Fonte: \cite{machinelearningcoursera}.}
 \end{figure}
 
 \begin{figure}[htb]
   \caption{Demonstração de classificação}\label{fig:demclassificacao}
   \begin{center}
-      \includegraphics[scale=0.55]{img/classificacao2}
+      \includegraphics[scale=0.75]{img/classificacao2}
   \end{center}
+  \legend{Fonte: \cite{machinelearningcoursera}.}
 \end{figure}
 
 
-Logo adiante será explicado os fundamentos de classificação e um método para resolver esse problema chamado de regressão logística. E em virtude de apresentar conceitos fundamentais há serem aplicados posteriormente nas redes neurais profundas, será falado um pouco mais sobre regressão logística e propriedades importantes que serão referenciadas durante todo o trabalho.
+Logo adiante será explicado os fundamentos de classificação e uma técnica para resolver esse problema chamada de regressão logística \cite{hosmer2004applied}. E em virtude de apresentar conceitos fundamentais há serem aplicados posteriormente nas redes neurais profundas, será falado um pouco mais sobre regressão logística, e também sobre propriedades importantes que serão referenciadas durante todo o trabalho.
 
 \subsection{Classificação}
 
@@ -54,20 +56,23 @@ Em um problema de classificação, nossa saída \textit{Y} vai ser um vetor com 
 Y \in \{0, 1\}
 \end{equation}
 
-A equação \ref{eq:binaryclassification} esta tratando apenas duas classes, esse problema é chamado de classificação binária. Para resolver esse problema, um método que pode ser utilizado é regressão logística [X].
+A equação \ref{eq:binaryclassification} está tratando apenas duas classes. Sendo assim, esse problema é chamado de classificação binária. Para resolver esse problema, um método que pode ser utilizado é regressão logística.
 
-A fim de simplificar o uso das variáveis, faremos o uso de uma notação normalmente utilizado em textos de classificação e mostrados na tabela \autoref{tab:classificacaonomenclatura}.
+A fim de simplificar o uso das variáveis, faremos o uso de uma notação que é normalmente utilizada em textos de aprendizado de máquina, ela pode ser vista na \autoref{tab:classificacaonomenclatura}.
 
 \begin{table}[!htb]
 \caption{Nomenclaturas} \label{tab:classificacaonomenclatura}
 \begin{center}
-\begin{tabular}{m{2.0cm}m{8.0cm}}
+\begin{tabular}{m{2cm}m{14.0cm}}
   \toprule
-  $m$ & número de exemplos de treinamento \\
   $X$ & dados de entrada ou \textit{features} \\
   $Y$ & dados de saída \\
+  $X_j^{(i)}$ & o valor da \textit{feature} \textit{j} no i-ésimo exemplo de treinamento \\
+  $X^{(i)}$ & o vetor coluna de todas as \textit{features} no i-ésimo exemplo de treinamento \\
+  $m$ & número de exemplos de treinamento \\
+  $n$ & $|X^{(i)}|$, o número de \textit{features} \\
   $(x, y)$ & um exemplo de treinamento \\
-  $(x^{(i)}, y^{(i)})$ & o i-ésimo exemplo de treinamento \\
+  $(X^{(i)}, Y^{(i)})$ & o i-ésimo exemplo de treinamento \\
   $\theta$ & parâmetros a serem aprendidos \\
   \bottomrule
 \end{tabular}
@@ -78,16 +83,33 @@ A fim de simplificar o uso das variáveis, faremos o uso de uma notação normal
 
 
 
+\ \\
+\ \\
 
 \subsection{Função de hipótese}
+
+A função de hipótese descreve a confiança dos dados de entrada para os dados de saída, para isso é atribuido valores para os parâmetros $\theta$s. Essa relação está definida na \autoref{eq:funcaodehipotese}. Observe que ela tem apenas dois parâmetros. Na realidade uma hipótese pode ter vários parâmetros relacionados com os dados de entrada \textit{X}, se tiver \textit{n} dados de entrada, então haverá \textit{n+1} parâmetros. A forma geral da função de hipótese está mostrada na \autoref{eq:funcaodehipotesegeral}.
+
+\begin{align}
+h_{\theta}(x) = &\ \theta_0 + \theta_1 x \label{eq:funcaodehipotese} \\
+h_{\theta}(x) = &\ \theta_0 + \theta_1 x_1 + \theta_2 x_2 + ... + \theta_n x_n \label{eq:funcaodehipotesegeral}
+\end{align}
+
+Uma maneira de simplificar a função de hipótese é trabalhar com a definição de multiplicação de matrizes. Então a função de hipótese pode ser representada de uma forma vetorizada, como mostrado na \autoref{eq:funcaodehipotesegeralvet}.
+
+\begin{equation}
+h_{\theta}(x) = \big[\theta_0\ \theta_1\ ...\ \theta_n\big] \times \begin{bmatrix} x_0 \\ x_1 \\ \vdots \\ x_n \end{bmatrix}  = \theta^TX \label{eq:funcaodehipotesegeralvet}
+\end{equation}
+
+Para que seja possível fazer operações de matrizes com $\theta$ e $X$, será setado $X_0^{(i)} = 1$ para todos os valores de $i$. Isso faz com que os vetores $\theta$ e $X^{(i)}$ combinem um com o outro elementarmente.
+
+Uma função de hipótese tem o objetivo de mapear funções aleatórias dentro do intervalo de saída \textit{Y}. Portanto, nossa função de hipótese deve satisfazer a \autoref{eq:reglogicfuncaohip}.
 
 \begin{equation}\label{eq:reglogicfuncaohip}
 0 \leq h_{\theta}(x) \leq 1
 \end{equation}
 
-Uma função de hipótese tem o objetivo de mapear funções aleatórias dentro de nosso intervalo de saída \textit{Y}. Portanto, nossa função de hipótese deve satisfazer a equação \ref{eq:reglogicfuncaohip}.
-
-Para fazer com que uma entrada contínua fique nesse intervalo, é necessária utilizar uma função linear que faça esse mapeamento de modo linear. A nova forma da função de hipótese usa a função sigmoide, também conhecida como função logística.
+Para fazer com que uma entrada contínua fique nesse intervalo, é necessário utilizar uma função linear que faça esse mapeamento de modo linear, e para isso mudamos a forma da função de hipótese. A nova forma usa a função sigmoide, também conhecida como função logística.
 
 \begin{align}
 h_{\theta}(x) = g(\theta^TX) \nonumber \\
@@ -102,9 +124,9 @@ g(z) = \frac{1}{1 + e^{-z}} \label{eq:funcaosigmoide}
   \end{center}
 \end{figure}
 
-A função da \autoref{eq:funcaosigmoide} representada na fígura \autoref{fig:funcaosigmoide} mapeia qualquer número no intervalo [0, 1], fazendo isso útil para transformar qualquer valor arbitrário em uma função mais ideal para problemas de classificação.
+A função da \autoref{eq:funcaosigmoide} representada na fígura \autoref{fig:funcaosigmoide} mapeia qualquer número no intervalo [0, 1], tornando isso útil para transformar qualquer valor arbitrário em uma função mais ideal para problemas de classificação.
 
-Portanto, para calcula a função de hipótese, podemos colocar o $\theta^TX$ na função logística. Isso nos dará a probabilidade que a saída é 1.
+Para calcular a função de hipótese, podemos colocar o $\theta^TX$ na função logística. Isso nos dará a probabilidade de que a saída é 1.
 
 \begin{equation}
 h_{\theta}(x) = P(y=1 | X ; \theta) = 1 - P(y=0 | X ; \theta) \nonumber
@@ -112,13 +134,13 @@ h_{\theta}(x) = P(y=1 | X ; \theta) = 1 - P(y=0 | X ; \theta) \nonumber
 
 Ou seja, a probabilidade de nossa predição ser 1 é o oposto da probabilidade de ser 0. Sendo assim, a soma das probabilidades para \textit{y = 0} e \textit{y = 1} deve ser 1.
 
-Em ordem de ter a classificação discreta, podemos traduzir a saída da função de hipótese de acordo com a \autoref{eq:decisionboundary}:
+Para de ter a classificação discreta podemos traduzir a saída da função de hipótese de acordo com a \autoref{eq:decisionboundary}:
 \begin{align} 
 h_{\theta}(x) \geq 0.5 \Rightarrow y = 1 \nonumber \\
 h_{\theta}(x) < 0.5 \Rightarrow y = 0 \label{eq:decisionboundary}
 \end{align}
 
-Portanto, se a entrada é $\theta^TX$, isso significa que:
+Então, se a entrada é $\theta^TX$, isso significa que:
 \begin{equation}
 h_{\theta}(x) = g(\theta^TX) \geq 0.5 \quad \text{ quando } \quad \theta^TX \geq 0 \nonumber
 \end{equation}
@@ -129,7 +151,7 @@ A partir disso, podemos dizer que:
 \theta^TX < 0 \Rightarrow y = 0 \nonumber
 \end{align}
 
-O \textbf{limite de decisão} (ou barreira de decisão) é a linha que separa a área quando \textit{y = 0} e quando \textit{y = 1}. Isso é criado pela função de hipótese. Uma observação importante é que a função de hipótese não precisa ser linear, pode ser até mesmo um círculo ou ter qualquer forma para ajudar os dados como mostrado na \autoref{fig:demclassificacao}.
+O \textbf{limite de decisão} (ou barreira de decisão) é a linha que separa a área quando \textit{y = 0} e quando \textit{y = 1}. Isso é criado pela função de hipótese. Uma observação importante é que a função de hipótese não precisa ser linear, pode ser até mesmo um círculo ou ter qualquer forma para ajustar os dados, como mostrado na \autoref{fig:demclassificacao}.
 
 
 \subsection{Função de custo}
@@ -162,7 +184,7 @@ Podemos simplificar a \autoref{eq:funcaocusto} com dois casos condicionais em ap
 Custo(h_{\theta}(x), y) = -ylog(h_{\theta}(x)) - (1-y)log(1 - h_{\theta}(x))
 \end{equation}
 
-Nota-se que quando \textit{y} é igual a 1. o segundo termo será 0 e não afetará o resultado. E quando \textit{y} é igual a 0, o primeiro termo será 0 e não afetara o resultado. Aplicando a \autoref{eq:funcaodecustosimplificada} na função de custo da equação \autoref{eq:funcaodecusto}, podemos reescrê-la como a equação \autoref{eq:funcaodecustofinal} ou na versão vetorizada da \autoref{eq:funcaodecustovet}.
+Nota-se que quando \textit{y} é igual a 1, o segundo termo será 0 e não afetará o resultado. E quando \textit{y} é igual a 0, o primeiro termo será 0 e não afetara o resultado. Aplicando a \autoref{eq:funcaodecustosimplificada} na função de custo da equação \autoref{eq:funcaodecusto}, podemos reescrê-la como a equação \autoref{eq:funcaodecustofinal} ou na versão vetorizada da \autoref{eq:funcaodecustovet}.
 
 \begin{equation}
 \label{eq:funcaodecustofinal}
@@ -178,16 +200,14 @@ O objetivo da regressão logística é minimizar a função de custo em relaçã
 
 \begin{figure}
   \caption{Função de custo - $J(\theta_0, \theta_1)$}
-  \begin{subfigure}[htb]{0.5\textwidth}
+  \begin{subfigure}[htb \label{fig:funcaodecustosurf}]{0.5\textwidth}
     \includegraphics[width=\textwidth]{img/funcaodecustosurf}
     \caption{Gráfico de superfície}
-    \label{fig:funcaodecustosurf}
-  \end{subfigure}
+  \end{subfigure} 
   %
-  \begin{subfigure}[htb]{0.5\textwidth}
+  \begin{subfigure}[htb \label{fig:funcaodecustocontorno}]{0.5\textwidth}
     \includegraphics[width=\textwidth]{img/funcaodecustocontorno}
     \caption{Gráfico de contorno}
-    \label{fig:funcaodecustocontorno}
   \end{subfigure}
 \end{figure}
 
@@ -196,7 +216,7 @@ O objetivo da regressão logística é minimizar a função de custo em relaçã
 
 Para essa tarefa é necessário a aplicação de um algoritmo que pega a função de custo e tente minimizá-la, e por fim retorne os valores dos parâmetros $ \theta $s aprendidos. Com isso, estaremos melhorando nossa função de hipótese. 
 
-Um dos algoritmos mais utilizados para essa tarefa é o \textbf{Gradient Descendente} [X], seu funcionamento baseia-se em seguir a derivida da função de custo em relação aos parâmetros $\theta$s alternadamente, com isso a encosta da tangente dará a direção para seguir adiante. Além disso, é aplicada uma taxa de aprendizagem $ \alpha $ a cada iteração, para tentar controlar a convergência.
+Um dos algoritmos mais utilizados para essa tarefa é o \textbf{Gradiente Descendente} [X], seu funcionamento baseia-se em seguir a derivida da função de custo em relação aos parâmetros $\theta$s alternadamente, com isso a encosta da tangente dará a direção para seguir adiante. Além disso, é aplicada uma taxa de aprendizagem $ \alpha $ a cada iteração, para tentar controlar a convergência.
 
 Seu funcionamento é descrito pelo algoritmo \ref{eq:gradientedesc}.
 
@@ -207,7 +227,7 @@ Seu funcionamento é descrito pelo algoritmo \ref{eq:gradientedesc}.
 \end{equation}
 \textit{\quad\quad\quad \}}
 
-Ao trabalhar sobre a derivada parcial da função de custo, podemos chegar na \autoref{eq:gradientefinal} e adiante na versão vetorizada na \autoref{eq:gradientefinalvet}. A explicação da derivada pode ser encontrado em [X].
+Ao trabalhar sobre a derivada parcial da função de custo, podemos chegar na \autoref{eq:gradientefinal} e adiante na versão vetorizada na \autoref{eq:gradientefinalvet}. A explicação de como trabalhar sobre a derivada pode ser encontrado no \autoref{app:derivadagradiente}.
 
 \begin{equation}
 \quad \theta_j := \theta_j = \alpha \sum\limits_{i=1}^{m}\Big(h_{\theta}(x^{(i)}) - y^{(i)} \Big) x_j^{(i)} \label{eq:gradientefinal}
@@ -237,7 +257,7 @@ O Gradiente Descendente é apenas um dos vários algoritmos que existem para min
 
 \subsection{Classificação multiclasse}
 
-O POS tagging é um problema de classificação multiclasse, onde temos que etiquetar uma palavra em uma de várias categorias possíveis. É possível fazer isso ao expandir nossa definição para que a saída seja $y = \{0, 1, ..., n\}$. Nesse caso, é dividido o problema em \textit{n + 1} problemas de classificação binária e em cada um será feito a predizagem da probabilidade de que $y$ é membro de uma dessas classes.
+O \ac{pos} Tagging é um problema de classificação multiclasse, onde deve-se etiquetar uma palavra em uma de várias categorias gramaticais possíveis. É possível fazer isso ao expandir nossa definição para que a saída seja $y = \{0, 1, ..., n\}$. Nesse caso, é dividido o problema em \textit{n + 1} problemas de classificação binária e em cada um será feito a predizagem da probabilidade de que $y$ é membro de uma dessas classes.
 \begin{align}
 h_{\theta}^{(0)}(X) =&  P(y=0 | X ; \theta) \nonumber \\
 h_{\theta}^{(1)}(X) =&  P(y=1 | X ; \theta) \nonumber \\
@@ -268,7 +288,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 Córpus são uma coleção de textos colocados como um só, eles são os exemplos de entrada para nosso treinamento. A qualidade e o tamanho desses córpus são importantes para que o etiquetador possa generalizar sentenças ainda não vistas. Eles contém também um conjunto de classes gramaticais associadas a cada palavra.
 
-Esses conjuntos podem se diferenciar na sua granularidade, como por exemplo, podem ter diferentes classes gramáticais para nomes no plural e no singular, ou agrupar eles em uma única classe [X]. No inglês, há vários córpus de qualidade que são amplamento utilizados, são o Penn Treebank tagset [X], CLAWS5 [X] e CLAWS7 [X].
+Esses conjuntos podem se diferenciar na sua granularidade, como por exemplo, podem ter diferentes classes gramaticais para nomes no plural e no singular, ou agrupar eles em uma única classe [X]. No inglês, há vários córpus de qualidade que são amplamento utilizados, são o Penn Treebank tagset [X], CLAWS5 [X] e CLAWS7 [X].
 
 Já no português esses córpus estão evoluindo com o tempo, embora muitos erros são encontrados neles [X], eles ainda são a melhor opção devido a seu tamanho e qualidade, os principais e mais utilizados para essa tarefa são o Mac-Morpho [X] com cerca de um milhão de palavras, que retrata artigos publicados na Folha de São Paulo em 1994. O Tycho Brahe [X] que também tem cerca de um milhão de palavras e retrata assuntos históricos de 66 textos diferentes, a linguagem utilizada nele é muito diferente da usada no cotidiano e por isso o seu uso é apenas a fim de curiosidade. Temos também o Bosque [X], que contém cerca de 185 mil palavras. Além desses, [X] et al. apresenta uma versão revisada do Mac-Morpho, com classes gramaticais novas e junção de outras. 
 
@@ -283,7 +303,7 @@ A aprendizagem baseada em córpus tem se mostrado uma estratégia atrativa, já 
 
 
 
-\section{Representação das palavras}
+\section{Representação das palavras}\label{sec:representacaodaspalavras}
 
 Palavras \footnote{Uma palavra pode ser qualquer conjunto de caracteres, inclusive pontuações, números, etc.} podem ser representadas de várias maneiras em um modelo de aprendizagem, podendo ser até mesmo feito o uso real da palavra como um conjunto de caracteres.
 

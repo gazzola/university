@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.7)  18 JUN 2015 16:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.7)  19 JUN 2015 17:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1933,26 +1933,26 @@ Writing nomenclature file monografia.nlo
 (./consertos.tex) (./monografia.aux)
 \openout1 = `monografia.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 210.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 221.
+LaTeX Font Info:    ... okay on input line 221.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 221.
+LaTeX Font Info:    ... okay on input line 221.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 221.
+LaTeX Font Info:    ... okay on input line 221.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 221.
+LaTeX Font Info:    ... okay on input line 221.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 221.
+LaTeX Font Info:    ... okay on input line 221.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 221.
+LaTeX Font Info:    ... okay on input line 221.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 221.
+LaTeX Font Info:    ... okay on input line 221.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 221.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \AtBeginShipoutBox=\box62
-Package hyperref Info: Link coloring ON on input line 210.
+Package hyperref Info: Link coloring ON on input line 221.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1962,9 +1962,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count340
 )
-LaTeX Info: Redefining \ref on input line 210.
-LaTeX Info: Redefining \pageref on input line 210.
-LaTeX Info: Redefining \nameref on input line 210.
+LaTeX Info: Redefining \ref on input line 221.
+LaTeX Info: Redefining \pageref on input line 221.
+LaTeX Info: Redefining \nameref on input line 221.
 \myptabbox=\box63
 \myptabboxwidth=\skip275
 Package lastpage Info: Please have a look at the pageslts package at
@@ -1973,7 +1973,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 210.
+(lastpage)             ! on input line 221.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -2008,11 +2008,11 @@ ABD: EveryShipout initializing macros
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.9} into y
 our preamble.
- on input line 210.
+ on input line 221.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 221.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 232.
 
 (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2023,42 +2023,42 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 228.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 239.
 
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<ot1.cmap>>
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 228.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 239.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<oml.cmap>>
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 228
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 239
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<oms.cmap>>
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 228
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 239
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 228.
+(Font)              <12> on input line 239.
 <<omx.cmap>>
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 228.
+(Font)              <8> on input line 239.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 228.
-LaTeX Font Info:    Try loading font information for U+msa on input line 228.
+(Font)              <6> on input line 239.
+LaTeX Font Info:    Try loading font information for U+msa on input line 239.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 228.
+LaTeX Font Info:    Try loading font information for U+msb on input line 239.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -2066,7 +2066,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.228 
+l.239 
        [1
 
 
@@ -2074,7 +2074,7 @@ l.228
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.228 
+l.239 
        [2
 
 ] (./pretextuais/folhadeaprovacao.tex [3
@@ -2092,9 +2092,6 @@ l.228
 ]) (./pretextuais/epigrafe.tex [9] [10
 
 ]) (./pretextuais/resumo.tex
-
-LaTeX Warning: Citation `NBR6028:2003' on page 11 undefined on input line 2.
-
 [11] [12
 
 ]) (./pretextuais/abstract.tex [13] [14
@@ -2108,7 +2105,7 @@ LaTeX Warning: Citation `NBR6028:2003' on page 11 undefined on input line 2.
 *************************************************
 * acro warning: "replaced"
 * 
-* The option `header' is deprecated. Use `heading' instead on line 279.
+* The option `header' is deprecated. Use `heading' instead on line 290.
 *************************************************
 [19
 
@@ -2118,60 +2115,50 @@ LaTeX Warning: Citation `NBR6028:2003' on page 11 undefined on input line 2.
 *************************************************
 * acro warning: "replaced"
 * 
-* The option `header' is deprecated. Use `heading' instead on line 285.
+* The option `header' is deprecated. Use `heading' instead on line 296.
 *************************************************
 [21
 
 ] [22
 
-]
-No file monografia.nls.
-(./monografia.toc
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 49.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 49.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 49.
+] (./monografia.nls) [23
 
+] [24
+
+] (./monografia.toc
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23
-
-])
-[24] (./textuais/introducao.tex
-
-LaTeX Warning: Citation `dos2014training' on page 25 undefined on input line 9.
-
-
-
-LaTeX Warning: Citation `fonseca2015evaluating' on page 25 undefined on input l
-ine 9.
-
-<img/exemplo_classificacao.png, id=276, 438.438pt x 110.814pt>
+ [25]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 52.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 52.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 52.
+)
+[26] (./textuais/introducao.tex
+<img/exemplo_classificacao.png, id=312, 399.894pt x 96.36pt>
 File: img/exemplo_classificacao.png Graphic file (type png)
 
 <use img/exemplo_classificacao.png>
 Package pdftex.def Info: img/exemplo_classificacao.png used on input line 16.
-(pdftex.def)             Requested size: 219.21846pt x 55.40685pt.
- [25
+(pdftex.def)             Requested size: 199.9465pt x 48.17987pt.
+ [27
 
 
  <./img/exemplo_classificacao.png>]
-Overfull \hbox (2.04631pt too wide) in paragraph at lines 52--53
-[][][]\T1/lmr/m/n/12 Capítulo 4[][][]: Apre-sen-ta-ção de tra-ba-lhos re-la-ci-
-o-na-dos que pro-cu-ram re-sol-ver o mesmo
- []
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 37.
 
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 
-LaTeX Warning: Reference `comparativo' on page 26 undefined on input line 56.
+LaTeX Warning: Reference `comparativo' on page 28 undefined on input line 46.
 
-) (./textuais/problema.tex [26]) (./textuais/fundamentos.tex [27
+) (./textuais/problema.tex [28] [29
 
-] [28
-
-]
-<img/passoapasso.png, id=305, 820.666pt x 234.476pt>
+]) (./textuais/fundamentos.tex [30]
+<img/passoapasso.png, id=354, 820.666pt x 234.476pt>
 File: img/passoapasso.png Graphic file (type png)
  <use img/passoapasso.png>
 Package pdftex.def Info: img/passoapasso.png used on input line 14.
@@ -2183,134 +2170,155 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 27.
- [29 <./img/passoapasso.png>]
-<img/regressao2.png, id=317, 578.16pt x 433.62pt>
+ [31
+
+ <./img/passoapasso.png>]
+<img/regressao2.png, id=362, 492.8814pt x 390.258pt>
 File: img/regressao2.png Graphic file (type png)
  <use img/regressao2.png>
 Package pdftex.def Info: img/regressao2.png used on input line 35.
-(pdftex.def)             Requested size: 317.98898pt x 238.49173pt.
+(pdftex.def)             Requested size: 369.66014pt x 292.69276pt.
 
-<img/classificacao2.png, id=318, 578.16pt x 433.62pt>
+<img/classificacao2.png, id=367, 501.5538pt x 390.258pt>
 File: img/classificacao2.png Graphic file (type png)
 
 <use img/classificacao2.png>
-Package pdftex.def Info: img/classificacao2.png used on input line 42.
-(pdftex.def)             Requested size: 317.98898pt x 238.49173pt.
- [30 <./img/regressao2.png>] [31 <./img/classificacao2.png>] <img/funcaosigmoid
-e.png, id=337, 578.16pt x 433.62pt>
+Package pdftex.def Info: img/classificacao2.png used on input line 43.
+(pdftex.def)             Requested size: 376.16443pt x 292.69276pt.
+
+Underfull \vbox (badness 1748) has occurred while \output is active []
+
+ [32 <./img/regressao2.png>]
+Overfull \hbox (24.24408pt too wide) in paragraph at lines 66--79
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33 <./img/classificacao2.png>] [34]
+<img/funcaosigmoide.png, id=400, 578.16pt x 433.62pt>
 File: img/funcaosigmoide.png Graphic file (type png)
 
 <use img/funcaosigmoide.png>
-Package pdftex.def Info: img/funcaosigmoide.png used on input line 101.
+Package pdftex.def Info: img/funcaosigmoide.png used on input line 123.
 (pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
- [32 <./img/funcaosigmoide.png>] [33pdfTeX warning (ext4): destination with the
- same identifier (name{equation.3.1.4}) has been already used, duplicate ignore
+ [35 <./img/funcaosigmoide.png>] [36pdfTeX warning (ext4): destination with the
+ same identifier (name{equation.3.1.7}) has been already used, duplicate ignore
 d
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.159 
+l.181 
       pdfTeX warning (ext4): destination with the same identifier (name{equatio
-n.3.1.5}) has been already used, duplicate ignored
+n.3.1.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.159 
-      ] <img/funcaodecustosurf.png, id=364, 578.16pt x 433.62pt>
+l.181 
+      ]
+
+LaTeX Warning: Reference `fig:funcaodecustosurf' on page 37 undefined on input 
+line 198.
+
+
+LaTeX Warning: Reference `fig:funcaodecustocontorno' on page 37 undefined on in
+put line 198.
+
+<img/funcaodecustosurf.png, id=426, 578.16pt x 433.62pt>
 File: img/funcaodecustosurf.png Graphic file (type png)
 
 <use img/funcaodecustosurf.png>
-Package pdftex.def Info: img/funcaodecustosurf.png used on input line 182.
+Package pdftex.def Info: img/funcaodecustosurf.png used on input line 204.
 (pdftex.def)             Requested size: 227.5pt x 170.61967pt.
 
-<img/funcaodecustocontorno.png, id=365, 578.16pt x 433.62pt>
+<img/funcaodecustocontorno.png, id=427, 578.16pt x 433.62pt>
 File: img/funcaodecustocontorno.png Graphic file (type png)
 
 <use img/funcaodecustocontorno.png>
-Package pdftex.def Info: img/funcaodecustocontorno.png used on input line 188.
+Package pdftex.def Info: img/funcaodecustocontorno.png used on input line 209.
 (pdftex.def)             Requested size: 227.5pt x 170.61967pt.
 
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 181--192
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 203--212
 []$[]$ $[]$ 
  []
 
-[34 <./img/funcaodecustosurf.png> <./img/funcaodecustocontorno.png>]
-<img/funcgraddesc1.png, id=378, 606.76688pt x 318.43968pt>
+[37 <./img/funcaodecustosurf.png> <./img/funcaodecustocontorno.png>]
+
+LaTeX Warning: Reference `app:derivadagradiente' on page 38 undefined on input 
+line 230.
+
+<img/funcgraddesc1.png, id=440, 606.76688pt x 318.43968pt>
 File: img/funcgraddesc1.png Graphic file (type png)
 
 <use img/funcgraddesc1.png>
-Package pdftex.def Info: img/funcgraddesc1.png used on input line 225.
+Package pdftex.def Info: img/funcgraddesc1.png used on input line 245.
 (pdftex.def)             Requested size: 227.5pt x 119.39514pt.
 
-<img/funcgraddesc2.png, id=379, 606.76688pt x 318.43968pt>
+<img/funcgraddesc2.png, id=441, 606.76688pt x 318.43968pt>
 File: img/funcgraddesc2.png Graphic file (type png)
 
 <use img/funcgraddesc2.png>
-Package pdftex.def Info: img/funcgraddesc2.png used on input line 230.
+Package pdftex.def Info: img/funcgraddesc2.png used on input line 250.
 (pdftex.def)             Requested size: 227.5pt x 119.39514pt.
 
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 224--233
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 244--253
 []$[]$ $[]$ 
  []
 
-[35 <./img/funcgraddesc1.png> <./img/funcgraddesc2.png>] [36]
+[38 <./img/funcgraddesc1.png> <./img/funcgraddesc2.png>] [39]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 288.
+(Font)              <5> on input line 308.
 
-<img/criacaowordemb.png, id=397, 1412.477pt x 45.771pt>
+<img/criacaowordemb.png, id=460, 1412.477pt x 45.771pt>
 File: img/criacaowordemb.png Graphic file (type png)
 
 <use img/criacaowordemb.png>
-Package pdftex.def Info: img/criacaowordemb.png used on input line 295.
+Package pdftex.def Info: img/criacaowordemb.png used on input line 315.
 (pdftex.def)             Requested size: 423.74637pt x 13.7314pt.
- [37 <./img/criacaowordemb.png>]
-<img/Turian-WordTSNE.png, id=407, 1794.705pt x 649.42625pt>
+ [40 <./img/criacaowordemb.png>]
+<img/Turian-WordTSNE.png, id=470, 1794.705pt x 649.42625pt>
 File: img/Turian-WordTSNE.png Graphic file (type png)
 
 <use img/Turian-WordTSNE.png>
-Package pdftex.def Info: img/Turian-WordTSNE.png used on input line 312.
+Package pdftex.def Info: img/Turian-WordTSNE.png used on input line 332.
 (pdftex.def)             Requested size: 448.67516pt x 162.35616pt.
 
-<img/Colbert-WordTable2.png, id=409, 1367.1075pt x 481.8pt>
+<img/Colbert-WordTable2.png, id=472, 1367.1075pt x 481.8pt>
 File: img/Colbert-WordTable2.png Graphic file (type png)
 
 <use img/Colbert-WordTable2.png>
-Package pdftex.def Info: img/Colbert-WordTable2.png used on input line 322.
+Package pdftex.def Info: img/Colbert-WordTable2.png used on input line 342.
 (pdftex.def)             Requested size: 341.77603pt x 120.44969pt.
- [38 <./img/Turian-WordTSNE.png (PNG copy)> <./img/Colbert-WordTable2.png (PNG 
+ [41 <./img/Turian-WordTSNE.png (PNG copy)> <./img/Colbert-WordTable2.png (PNG 
 copy)>]) (./textuais/trabalhosrelacionados.tex
-[39] [40
+[42]) (./textuais/desenvolvimento.tex [43
 
-]) (./textuais/desenvolvimento.tex [41] [42
+] [44
 
-]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 23.
+] [45]
 
-(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-
-LaTeX Warning: Citation `NBR10520:2002' on page 43 undefined on input line 48.
-
-[43]
-
-LaTeX Warning: Citation `SisbiUnipampa2011' on page 44 undefined on input line 
+LaTeX Warning: Citation `SisbiUnipampa2011' on page 46 undefined on input line 
 54.
 
 
-LaTeX Warning: Citation `SisbiUnipampa2011' on page 44 undefined on input line 
+LaTeX Warning: Citation `SisbiUnipampa2011' on page 46 undefined on input line 
 55.
 
 
 Underfull \hbox (badness 1721) in paragraph at lines 94--94
 []|\T1/lmr/bx/n/10 Sistemas de
  []
-
-
-LaTeX Warning: Citation `van86' on page 44 undefined on input line 101.
-
-
-LaTeX Warning: Citation `van86' on page 44 undefined on input line 101.
 
 
 Overfull \hbox (1.01985pt too wide) in paragraph at lines 105--109
@@ -2328,16 +2336,16 @@ PGFPlots: reading {resultados.txt}
 
 Underfull \vbox (badness 3590) has occurred while \output is active []
 
- [44]
+ [46]
 PGFPlots: reading {resultados.txt}
 PGFPlots: reading {resultados.txt}
 PGFPlots: reading {resultados.txt}
 
-[45]
+[47]
 Underfull \vbox (badness 1990) has occurred while \output is active []
 
- [46]
-<img/abntex2-modelo-img-grafico.pdf, id=483, 847.165pt x 314.17375pt>
+ [48]
+<img/abntex2-modelo-img-grafico.pdf, id=549, 847.165pt x 314.17375pt>
 File: img/abntex2-modelo-img-grafico.pdf Graphic file (type pdf)
 
 <use img/abntex2-modelo-img-grafico.pdf>
@@ -2345,29 +2353,23 @@ Package pdftex.def Info: img/abntex2-modelo-img-grafico.pdf used on input line
 300.
 (pdftex.def)             Requested size: 423.58145pt x 157.08649pt.
 
-
-LaTeX Warning: Citation `araujo2012' on page 47 undefined on input line 302.
-
-
-LaTeX Warning: Citation `araujo2012' on page 47 undefined on input line 302.
-
-<img/exemplo.pdf, id=493, 284.06125pt x 96.36pt>
+<img/exemplo.pdf, id=563, 284.06125pt x 96.36pt>
 File: img/exemplo.pdf Graphic file (type pdf)
  <use img/exemplo.pdf>
 Package pdftex.def Info: img/exemplo.pdf used on input line 313.
 (pdftex.def)             Requested size: 284.06053pt x 96.35974pt.
 
 
-LaTeX Warning: Citation `Moro2012' on page 47 undefined on input line 313.
+LaTeX Warning: Citation `Moro2012' on page 49 undefined on input line 313.
 
 
-LaTeX Warning: Citation `Moro2012' on page 47 undefined on input line 313.
+LaTeX Warning: Citation `Moro2012' on page 49 undefined on input line 313.
 
 
-LaTeX Warning: Citation `Moro2012' on page 47 undefined on input line 333.
+LaTeX Warning: Citation `Moro2012' on page 49 undefined on input line 333.
 
 
-LaTeX Warning: Citation `Moro2012' on page 47 undefined on input line 333.
+LaTeX Warning: Citation `Moro2012' on page 49 undefined on input line 333.
 
 File: img/exemplo.pdf Graphic file (type pdf)
 <use img/exemplo.pdf>
@@ -2375,45 +2377,30 @@ Package pdftex.def Info: img/exemplo.pdf used on input line 347.
 (pdftex.def)             Requested size: 142.03026pt x 48.17987pt.
 
 
-LaTeX Warning: Citation `Moro2012' on page 47 undefined on input line 349.
+LaTeX Warning: Citation `Moro2012' on page 49 undefined on input line 349.
 
 
-LaTeX Warning: Citation `Moro2012' on page 47 undefined on input line 349.
+LaTeX Warning: Citation `Moro2012' on page 49 undefined on input line 349.
 
 
-LaTeX Warning: Citation `Moro2012' on page 47 undefined on input line 372.
+LaTeX Warning: Citation `Moro2012' on page 49 undefined on input line 372.
 
 
-LaTeX Warning: Citation `Moro2012' on page 47 undefined on input line 372.
+LaTeX Warning: Citation `Moro2012' on page 49 undefined on input line 372.
 
 
-LaTeX Warning: Citation `NBR14724:2011' on page 47 undefined on input line 382.
-
-
-
-LaTeX Warning: Citation `SisbiUnipampa2011' on page 47 undefined on input line 
+LaTeX Warning: Citation `SisbiUnipampa2011' on page 49 undefined on input line 
 382.
 
-[47]
+[49]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [48]
+ [50]
 Underfull \vbox (badness 1189) has occurred while \output is active []
 
- [49 <./img/abntex2-modelo-img-grafico.pdf> <./img/exemplo.pdf>]
+ [51 <./img/abntex2-modelo-img-grafico.pdf> <./img/exemplo.pdf>] [52]
 
-LaTeX Warning: Citation `NBR6024:2012' on page 50 undefined on input line 424.
-
-
-LaTeX Warning: Citation `NBR14724:2011' on page 50 undefined on input line 434.
-
-
-[50]
-
-LaTeX Warning: Citation `NBR6024:2012' on page 51 undefined on input line 450.
-
-
-LaTeX Warning: Reference `sec:divisoes' on page 51 undefined on input line 494.
+LaTeX Warning: Reference `sec:divisoes' on page 53 undefined on input line 494.
 
 
 
@@ -2422,51 +2409,54 @@ Overfull \hbox (26.65024pt too wide) in paragraph at lines 498--498
 fo de cada seção.[] 
  []
 
-[51]
-
-LaTeX Warning: Citation `memoir' on page 52 undefined on input line 523.
-
+[53]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <17.28> on input line 544.
-[52]
+ [54]
 Overfull \hbox (1.95023pt too wide) in paragraph at lines 554--554
 []   \T1/lmtt/m/n/12 makeindex ARQUIVO_PRINCIPAL.nlo -s nomencl.ist -o ARQUIVO_
 PRINCIPAL.nls[] 
  []
 
-) (./textuais/conclusao.tex [53] [54
+) (./textuais/conclusao.tex [55] [56
 
-])
-No file monografia.bbl.
-(./postextuais/apendices.tex [55] [56
+]) (./monografia.bbl (./monografia.brf)
+\tf@brf=\write7
+\openout7 = `monografia.brf'.
+
+
+[57] [58
+
+]
+bibitemlist
+[59]) (./postextuais/apendices.tex [60]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\uppercase' on input line 5.
+
+[61
+
+
+] [62] [63
+
+] [64
+
+]) (./postextuais/anexos.tex [65] [66
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 5.
 
-[57
+[67
 
-] [58] [59
+] [68] [69
 
-] [60
-
-]) (./postextuais/anexos.tex [61] [62
+] [70
 
 ]
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 5.
-
-[63
-
-] [64] [65
-
-] [66
-
-]
-
-LaTeX Warning: Citation `Moro2012' on page 67 undefined on input line 19.
+LaTeX Warning: Citation `Moro2012' on page 71 undefined on input line 19.
 
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 33.
@@ -2490,59 +2480,65 @@ Overfull \hbox (6.66756pt too wide) in paragraph at lines 33--33
 [][][][]\T1/lmr/m/n/12 Perceba 
  []
 
-<img/fontsize.pdf, id=650, 694.595pt x 236.885pt>
+<img/fontsize.pdf, id=763, 694.595pt x 236.885pt>
 File: img/fontsize.pdf Graphic file (type pdf)
  <use img/fontsize.pdf>
 Package pdftex.def Info: img/fontsize.pdf used on input line 37.
 (pdftex.def)             Requested size: 318.49861pt x 108.62503pt.
 
-[67 <./img/fontsize.pdf>] [68]
-<img/jabref.pdf, id=671, 546.04pt x 384.43625pt>
+[71 <./img/fontsize.pdf>] [72]
+<img/jabref.pdf, id=786, 546.04pt x 384.43625pt>
 File: img/jabref.pdf Graphic file (type pdf)
  <use img/jabref.pdf>
 Package pdftex.def Info: img/jabref.pdf used on input line 111.
 (pdftex.def)             Requested size: 445.89806pt x 313.93164pt.
- [69 <./img/jabref.pdf>]
+ [73 <./img/jabref.pdf>]
 Overfull \hbox (4.72952pt too wide) in paragraph at lines 144--145
 []\T1/lmr/m/n/12 Favorito por-tu-guês: [][]$<[]http : / / linorg . usp . br / C
 TAN / info / lshort / portuguese / pt-[]lshort .
  []
 
-)
-No file monografia.ind.
+) (./monografia.ind [74] [75
 
+
+
+]) 
 AED: lastpage setting LastPage
-[70]
-\tf@lof=\write7
-\openout7 = `monografia.lof'.
+\tf@lof=\write8
+\openout8 = `monografia.lof'.
 
-\tf@lot=\write8
-\openout8 = `monografia.lot'.
+\tf@lot=\write9
+\openout9 = `monografia.lot'.
 
-\tf@toc=\write9
-\openout9 = `monografia.toc'.
+\tf@toc=\write10
+\openout10 = `monografia.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 364.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 364.
- (./monografia.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 364.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 364.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 375.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 375.
+(./monografia.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 375.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 375.
+Package rerunfilecheck Info: File `monografia.brf' has not changed.
+(rerunfilecheck)             Checksum: 383BE152B0DDA846FF731DBE59F18690;1486.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 364.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 375.
  ) 
 Here is how much of TeX's memory you used:
- 39988 strings out of 493304
- 843218 string characters out of 6139872
- 1032944 words of memory out of 5000000
- 42367 multiletter control sequences out of 15000+600000
- 108491 words of font info for 83 fonts, out of 8000000 for 9000
+ 40191 strings out of 493304
+ 847115 string characters out of 6139872
+ 1035110 words of memory out of 5000000
+ 42530 multiletter control sequences out of 15000+600000
+ 109133 words of font info for 85 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  68i,19n,106p,10466b,2157s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
+ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/l
 m/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcs
@@ -2558,10 +2554,10 @@ nts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on monografia.pdf (72 pages, 1873628 bytes).
+Output written on monografia.pdf (77 pages, 1891946 bytes).
 PDF statistics:
- 964 PDF objects out of 1000 (max. 8388607)
- 826 compressed objects within 9 object streams
- 207 named destinations out of 1000 (max. 500000)
- 513 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1122 PDF objects out of 1200 (max. 8388607)
+ 969 compressed objects within 10 object streams
+ 235 named destinations out of 1000 (max. 500000)
+ 529 words of extra memory for PDF output out of 10000 (max. 10000000)
 
