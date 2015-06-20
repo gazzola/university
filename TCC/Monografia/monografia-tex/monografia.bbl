@@ -5,6 +5,17 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
+\bibitem[Afonso et al. 2002]{afonso2002floresta}
+\abntrefinfo{Afonso et al.}{AFONSO et al.}{2002}
+{AFONSO, S. et al. Floresta sint{\'a} (c) tica: A treebank for portuguese. In:
+  \emph{LREC}. [S.l.: s.n.], 2002.}
+
+\bibitem[Alu{\'\i}sio et al. 2003]{aluisio2003account}
+\abntrefinfo{Alu{\'\i}sio et al.}{ALU{\'I}SIO et al.}{2003}
+{ALU{\'I}SIO, S. et al. An account of the challenge of tagging a reference
+  corpus for brazilian portuguese. In:  \emph{Computational Processing of the
+  Portuguese Language}. [S.l.]: Springer, 2003. p. 110--117.}
+
 \bibitem[Araujo 2012]{araujo2012}
 \abntrefinfo{Araujo}{ARAUJO}{2012}
 {ARAUJO, L.~C.
@@ -45,6 +56,19 @@ Rio de Janeiro, 2012. 4~p.}
   \emph{International Conference on Artificial Intelligence and Statistics}.
   [S.l.: s.n.], 2011.}
 
+\bibitem[Collobert et al. 2011]{collobert2011natural}
+\abntrefinfo{Collobert et al.}{COLLOBERT et al.}{2011}
+{COLLOBERT, R. et al. Natural language processing (almost) from scratch.
+\emph{The Journal of Machine Learning Research}, JMLR. org, v.~12, p.
+  2493--2537, 2011.}
+
+\bibitem[Fonseca e Rosa 2013]{fonseca2013mac}
+\abntrefinfo{Fonseca e Rosa}{FONSECA; ROSA}{2013}
+{FONSECA, E.~R.; ROSA, J. L.~G. Mac-morpho revisited: Towards robust
+  part-of-speech tagging. In:  \emph{Proceedings of the 9th Brazilian Symposium
+  in Information and Human Language Technology}. [S.l.: s.n.], 2013. p.
+  98--107.}
+
 \bibitem[Fonseca, Rosa e Alu{\'\i}sio 2015]{fonseca2015evaluating}
 \abntrefinfo{Fonseca, Rosa e Alu{\'\i}sio}{FONSECA; ROSA; ALU{\'I}SIO}{2015}
 {FONSECA, E.~R.; ROSA, J. L.~G.; ALU{\'I}SIO, S.~M. Evaluating word embeddings
@@ -56,6 +80,11 @@ Rio de Janeiro, 2012. 4~p.}
 \abntrefinfo{Jr e Lemeshow}{JR; LEMESHOW}{2004}
 {JR, D.~W. H.; LEMESHOW, S. \emph{Applied logistic regression}. [S.l.]: John
   Wiley \& Sons, 2004.}
+
+\bibitem[Maaten e Hinton 2008]{van2008visualizing}
+\abntrefinfo{Maaten e Hinton}{MAATEN; HINTON}{2008}
+{MAATEN, L. Van~der; HINTON, G. Visualizing data using t-sne.
+\emph{Journal of Machine Learning Research}, v.~9, n. 2579-2605, p.~85, 2008.}
 
 \bibitem[Manning e Sch{\"u}tze 1999]{manning1999foundations}
 \abntrefinfo{Manning e Sch{\"u}tze}{MANNING; SCH{\"U}TZE}{1999}
@@ -70,6 +99,13 @@ Rio de Janeiro, 2012. 4~p.}
 Biblioteca Digital de Teses e Disserta{\c{c}}{\~o}es da Universidade Federal de
   S{\~a}o Carlos, 2010.}
 
+\bibitem[Michalski, Carbonell e Mitchell 2013]{michalski2013machine}
+\abntrefinfo{Michalski, Carbonell e Mitchell}{MICHALSKI; CARBONELL;
+  MITCHELL}{2013}
+{MICHALSKI, R.~S.; CARBONELL, J.~G.; MITCHELL, T.~M. \emph{Machine learning: An
+  artificial intelligence approach}. [S.l.]: Springer Science \& Business
+  Media, 2013.}
+
 \bibitem[Ng 2015]{machinelearningcoursera}
 \abntrefinfo{Ng}{NG}{2015}
 {NG, A. \emph{Course of Machine Learning}.
@@ -81,6 +117,25 @@ Biblioteca Digital de Teses e Disserta{\c{c}}{\~o}es da Universidade Federal de
 {SANTOS, C.~N. dos; ZADROZNY, B. Training state-of-the-art portuguese pos
   taggers without handcrafted features. In:  \emph{Computational Processing of
   the Portuguese Language}. [S.l.]: Springer, 2014. p. 82--93.}
+
+\bibitem[Temponi 2004]{temponi2004corpus}
+\abntrefinfo{Temponi}{TEMPONI}{2004}
+{TEMPONI, C.~N. O corpus anotado do portugu{\^e}s hist{\'o}rico: um
+  avan{\c{c}}o para as pesquisas em ling{\"u}{\'\i}stica hist{\'o}rica do
+  portugu{\^e}s.
+\emph{Revista Virtual de Estudos da Linguagem: ReVEL}, v.~2, n.~3, p.~1, 2004.}
+
+\bibitem[The Penn Treebank Project (2014). 2014]{penntreebank}
+\abntrefinfo{The\ldots}{THE\ldots}{2014}
+{THE Penn Treebank Project (2014).
+[S.l.], 2014. Dispon{\'\i}vel em: \url{http://www.cis.upenn.edu/~treebank/}.}
+
+\bibitem[Turian, Ratinov e Bengio 2010]{turian2010word}
+\abntrefinfo{Turian, Ratinov e Bengio}{TURIAN; RATINOV; BENGIO}{2010}
+{TURIAN, J.; RATINOV, L.; BENGIO, Y. Word representations: a simple and general
+  method for semi-supervised learning. In:  ASSOCIATION FOR COMPUTATIONAL
+  LINGUISTICS. \emph{Proceedings of the 48th annual meeting of the association
+  for computational linguistics}. [S.l.], 2010. p. 384--394.}
 
 \bibitem[{van} Gigch e Pipino 1986]{van86}
 \abntrefinfo{{van} Gigch e Pipino}{{van} GIGCH; PIPINO}{1986}

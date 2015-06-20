@@ -6,7 +6,7 @@ Devido aos impasses demonstrados no \autoref{oproblema}, este trabalho é basead
 
 \section{Aprendizado de máquina}\label{sec:aprendizadodemaquina}
 
-Para realizar a aprendizagem é necessário primeiramente dados de entrada que servem como exemplo para nosso modelo, com esses dados é possível treinar o modelo para que ele possa então aprender com base nesses exemplos. Depois de realizar o treinamento, é possível generalizar sobre outros dados ainda não testados e gerar uma resposta apropriada como saída. O diagrama da \autoref{fig:passoapasso} abaixo mostra os passos para obter o resultado final.
+Para realizar a aprendizagem é necessário, a princípio, dados de entrada que servem como exemplo para nosso modelo, com esses dados é possível treinar o modelo para que ele possa então aprender com base nesses exemplos. Depois de realizar o treinamento, é possível generalizar sobre outros dados ainda não testados e gerar uma resposta apropriada como saída. O diagrama da \autoref{fig:passoapasso} abaixo mostra os passos para obter o resultado final.
 
 \begin{figure}[htb]
 	  \caption{Diagrama para resultado final}\label{fig:passoapasso}
@@ -34,7 +34,7 @@ O aprendizado supervisionado permite dividir os problemas em duas categorias dis
 	  \begin{center}
 	      \includegraphics[scale=0.75]{img/regressao2}
 	  \end{center}
-	  \legend{Fonte: \cite{machinelearningcoursera}.}
+	  \legend{Fonte: \citeonline{machinelearningcoursera}}
 \end{figure}
 
 \begin{figure}[htb]
@@ -42,7 +42,7 @@ O aprendizado supervisionado permite dividir os problemas em duas categorias dis
   \begin{center}
       \includegraphics[scale=0.75]{img/classificacao2}
   \end{center}
-  \legend{Fonte: \cite{machinelearningcoursera}.}
+  \legend{Fonte: \citeonline{machinelearningcoursera}}
 \end{figure}
 
 
@@ -95,7 +95,7 @@ h_{\theta}(x) = &\ \theta_0 + \theta_1 x \label{eq:funcaodehipotese} \\
 h_{\theta}(x) = &\ \theta_0 + \theta_1 x_1 + \theta_2 x_2 + ... + \theta_n x_n \label{eq:funcaodehipotesegeral}
 \end{align}
 
-Uma maneira de simplificar a função de hipótese é trabalhar com a definição de multiplicação de matrizes. Então a função de hipótese pode ser representada de uma forma vetorizada, como mostrado na \autoref{eq:funcaodehipotesegeralvet}.
+Uma maneira de simplificar a função de hipótese é trabalhar com a definição de multiplicação de matrizes. Então a função de hipótese pode ser representada de uma forma vetorizada, como mostrado na \autoref{eq:funcaodehipotesegeralvet}. Para maiores informações a respeito de matrizes e vetores, consultar o Anexo \ref{anexo:algebralinear}, que traz informações básicas de álgebra linear.
 
 \begin{equation}
 h_{\theta}(x) = \big[\theta_0\ \theta_1\ ...\ \theta_n\big] \times \begin{bmatrix} x_0 \\ x_1 \\ \vdots \\ x_n \end{bmatrix}  = \theta^TX \label{eq:funcaodehipotesegeralvet}
@@ -117,10 +117,25 @@ z = \theta^TX \nonumber \\
 g(z) = \frac{1}{1 + e^{-z}} \label{eq:funcaosigmoide}
 \end{align}
 
-\begin{figure}[htb]
-  \caption{Função sigmoide}\label{fig:funcaosigmoide}
+\begin{figure}[!htb]
+  \caption{Função sigmoide}
+  \label{fig:funcaosigmoide}
   \begin{center}
-      \includegraphics[scale=0.75]{img/funcaosigmoide}
+  \begin{tikzpicture}
+  \begin{axis}[
+  		width=.8\textwidth,
+		scaled ticks=false,
+		log ticks with fixed point,
+		ymin=0,ymax=1,xmin=-10,xmax=10,domain=-10:10,
+		log basis y = 10,
+		xlabel=X,
+      	ylabel=Y,
+      	legend style={draw=none},
+      	samples=200,
+    ]
+    \addplot[blue] { 1 / (1 + pow(e, -x))};
+  \end{axis}
+  \end{tikzpicture}
   \end{center}
 \end{figure}
 
@@ -134,7 +149,7 @@ h_{\theta}(x) = P(y=1 | X ; \theta) = 1 - P(y=0 | X ; \theta) \nonumber
 
 Ou seja, a probabilidade de nossa predição ser 1 é o oposto da probabilidade de ser 0. Sendo assim, a soma das probabilidades para \textit{y = 0} e \textit{y = 1} deve ser 1.
 
-Para de ter a classificação discreta podemos traduzir a saída da função de hipótese de acordo com a \autoref{eq:decisionboundary}:
+Para ter uma classificação discreta podemos traduzir a saída da função de hipótese de acordo com a \autoref{eq:decisionboundary}:
 \begin{align} 
 h_{\theta}(x) \geq 0.5 \Rightarrow y = 1 \nonumber \\
 h_{\theta}(x) < 0.5 \Rightarrow y = 0 \label{eq:decisionboundary}
@@ -151,12 +166,19 @@ A partir disso, podemos dizer que:
 \theta^TX < 0 \Rightarrow y = 0 \nonumber
 \end{align}
 
-O \textbf{limite de decisão} (ou barreira de decisão) é a linha que separa a área quando \textit{y = 0} e quando \textit{y = 1}. Isso é criado pela função de hipótese. Uma observação importante é que a função de hipótese não precisa ser linear, pode ser até mesmo um círculo ou ter qualquer forma para ajustar os dados, como mostrado na \autoref{fig:demclassificacao}.
+O \textbf{limite de decisão} (ou barreira de decisão) é a linha que separa a área quando \textit{y = 0} e quando \textit{y = 1}. Isso é criado pela função de hipótese. Uma observação importante é que a função de hipótese não precisa ser linear, pode ser até mesmo um círculo ou ter qualquer forma para ajustar os dados, como mostrado na \autoref{fig:demclassificacao}. Isto é, uma função de hipótese pode ter várias \textit{features}. Novas \textit{features} podem ser criadas ao combinar as \textit{features} já existentes e modificando-as. Por exemplo, se houvesse dois dados de entrada $x_1$ e $x_2$, seria possível criar a função de hipótese:
+
+\begin{equation}
+\nonumber
+h_{\theta}(x) = \theta_0 + \theta_1 x_1 + \theta_2 x_2 + \theta_3 x_1 x_2 + \theta_4 x_1^2 + \theta_5 x_2^2 + \theta_6 x_1^2 x_2^2 + \cdots
+\end{equation}
+
+Todavia, essa abordagem pode gerar problemas de desempenho. Algumas \textit{features} podem também acabar se tornando obsoletas e não ajudar em nada no resultado final, tornando seu cálculo inútil. Mas o principal problema dessa abordagem é o \textit{overfitting}, que faz com que a função de hipótese interpole os dados, esse problema será explicado na \autoref{subsec:regularizacao}.
 
 
 \subsection{Função de custo}
 
-Para medir a precisão da função de hipótese é necessário uma função de custo. É feita uma média (elegante) de todos os resultados das hipóteses com a entrada \textit{X} comparada com o valor objetivo \textit{Y}. Ela pode ser expressa como na \autoref{eq:funcaodecusto}.
+Para medir a precisão da função de hipótese é necessário uma função que diga o quão precisa aquela hipótese é, tal função é denominada de função de custo. Com ela, é feita uma média de todos os resultados das hipóteses com a entrada \textit{X} comparada com o valor objetivo \textit{Y}. Ela pode ser expressa como na \autoref{eq:funcaodecusto}.
 
 \begin{equation}
 \label{eq:funcaodecusto}
@@ -175,7 +197,38 @@ Onde,
 \end{align}
 
 
-O quanto mais a função de hipótese está longe de \textit{y}, maior é a saída da função de custo. Se a função de hipótese é igual a \textit{y}, então nosso custo é 0.
+A \autoref{eq:funcaocusto} captura a intuição de que se $h_\theta(x) = 0$, mas $y = 1$, então o algoritmo de aprendizado será penalizado por um custo muito alto. A \autoref{fig:logfunctions} demonstra os dois respectivos casos dessa equação.
+
+
+\begin{figure}[!htb]
+  \caption{Representação dos casos da função de custo}
+  \label{fig:logfunctions}
+  \begin{center}
+  \begin{tikzpicture}
+
+  % \draw[step=1cm,gray,very thin] (0,0) grid (11.3, 9.5);
+
+  \begin{axis}[
+  		width=.8\textwidth,
+		scaled ticks=false,
+		xlabel=$x$,
+		log ticks with fixed point,
+		ymin=0,ymax=2,xmin=0,xmax=1,domain=0:1,
+		log basis y = 10,
+      	legend style={draw=none},
+      	samples=200,
+    ]
+    \addplot[blue] { - ln(x)/ln(10)};
+    \addplot[orange] { - ln(1 - x)/ln(10)};
+    \addlegendentry{$-log(h_{\theta}(x))$}
+    \addlegendentry{$-log(1 - h_{\theta}(x))$}
+  \end{axis}
+  \end{tikzpicture}
+  \end{center}
+\end{figure}
+
+
+O quanto mais a função de hipótese está longe de \textit{y}, maior é a saída da função de custo. Se a função de hipótese é igual a \textit{y}, então o custo é 0.
 
 Podemos simplificar a \autoref{eq:funcaocusto} com dois casos condicionais em apenas um caso:
 
@@ -195,20 +248,22 @@ J(\theta) = - \frac{1}{m}\sum\limits_{i=1}^{m}\Big( y^{(i)}log(h_{\theta}(x^{(i)
 J(\theta) = - \frac{1}{m}\Big( log(g(X\theta))^TY + log(1 - g(X\theta))^T(1 - Y) \Big) \label{eq:funcaodecustovet}
 \end{equation}
 
-O objetivo da regressão logística é minimizar a função de custo em relação aos parâmetros $\theta$s. Usando dois parâmetros é possível visualizar uma função de custo através de seu gráfico, isso pode ser observado no exemplo da \autoref{fig:funcaodecustosurf} e da \autoref{fig:funcaodecustocontorno}. 
+O objetivo da regressão logística é minimizar a função de custo em relação aos parâmetros $\theta$s. Usando dois parâmetros é possível visualizar uma função de custo através do número de iterações, isso pode ser observado no exemplo da \autoref{fig:funcaodecustosurf} e da \autoref{fig:funcaodecustocontorno}. 
 
 
 \begin{figure}
   \caption{Função de custo - $J(\theta_0, \theta_1)$}
-  \begin{subfigure}[htb \label{fig:funcaodecustosurf}]{0.5\textwidth}
-    \includegraphics[width=\textwidth]{img/funcaodecustosurf}
-    \caption{Gráfico de superfície}
+  \begin{subfigure}[htb]{0.5\textwidth} \label{fig:funcaodecustosurf}
+    \includegraphics[width=\textwidth]{img/funcaodecustosurf} 
+    \legend{(a) Gráfico de superfície} 
   \end{subfigure} 
   %
-  \begin{subfigure}[htb \label{fig:funcaodecustocontorno}]{0.5\textwidth}
-    \includegraphics[width=\textwidth]{img/funcaodecustocontorno}
-    \caption{Gráfico de contorno}
-  \end{subfigure}
+  \begin{subfigure}[htb]{0.5\textwidth} \label{fig:funcaodecustocontorno}
+    \includegraphics[width=\textwidth]{img/funcaodecustocontorno} 
+    \legend{(b) Gráfico de contorno}
+  \end{subfigure} 
+
+  \legend{Fonte: \citeonline{machinelearningcoursera}}
 \end{figure}
 
 
@@ -216,7 +271,7 @@ O objetivo da regressão logística é minimizar a função de custo em relaçã
 
 Para essa tarefa é necessário a aplicação de um algoritmo que pega a função de custo e tente minimizá-la, e por fim retorne os valores dos parâmetros $ \theta $s aprendidos. Com isso, estaremos melhorando nossa função de hipótese. 
 
-Um dos algoritmos mais utilizados para essa tarefa é o \textbf{Gradiente Descendente} [X], seu funcionamento baseia-se em seguir a derivida da função de custo em relação aos parâmetros $\theta$s alternadamente, com isso a encosta da tangente dará a direção para seguir adiante. Além disso, é aplicada uma taxa de aprendizagem $ \alpha $ a cada iteração, para tentar controlar a convergência.
+Um dos algoritmos mais utilizados para essa tarefa é o \textbf{Gradiente Descendente} \cite{michalski2013machine}, seu funcionamento baseia-se em seguir a derivida da função de custo em relação aos parâmetros $\theta$s alternadamente, com isso a encosta da tangente dará a direção para seguir adiante. Ademais, é aplicada uma taxa de aprendizagem $ \alpha $ a cada iteração, para tentar controlar a convergência.
 
 Seu funcionamento é descrito pelo algoritmo \ref{eq:gradientedesc}.
 
@@ -227,7 +282,7 @@ Seu funcionamento é descrito pelo algoritmo \ref{eq:gradientedesc}.
 \end{equation}
 \textit{\quad\quad\quad \}}
 
-Ao trabalhar sobre a derivada parcial da função de custo, podemos chegar na \autoref{eq:gradientefinal} e adiante na versão vetorizada na \autoref{eq:gradientefinalvet}. A explicação de como trabalhar sobre a derivada pode ser encontrado no \autoref{app:derivadagradiente}.
+Ao trabalhar sobre a derivada parcial da função de custo, podemos chegar na \autoref{eq:gradientefinal} e adiante na versão vetorizada na \autoref{eq:gradientefinalvet}. A explicação de como trabalhar sobre a derivada pode ser encontrado no \autoref{app:derivadasgraddesc}.
 
 \begin{equation}
 \quad \theta_j := \theta_j = \alpha \sum\limits_{i=1}^{m}\Big(h_{\theta}(x^{(i)}) - y^{(i)} \Big) x_j^{(i)} \label{eq:gradientefinal}
@@ -237,22 +292,24 @@ Ao trabalhar sobre a derivada parcial da função de custo, podemos chegar na \a
 \quad \theta := \theta - \frac{\alpha}{m}X^T(g(X\theta) - Y) \label{eq:gradientefinalvet}
 \end{equation}
 
-Na \autoref{fig:funcgraddesc} é possível visualizar esse funcionamento sobre os parâmetros. Observe que nesse caso o algoritmo consegue convergir para o mínimo global, porém em alguns casos (dependendo de nossa taxa de aprendizagem $ \alpha $) pode-se convergir para um mínimo local como mostrado na \autoref{fig:funcgraddescnot}
+Na \autoref{fig:funcgraddesc} é possível visualizar esse funcionamento sobre os parâmetros. Observe que nesse caso o algoritmo consegue convergir para o mínimo global, porém em alguns casos (dependendo de nossa taxa de aprendizagem $ \alpha $) pode-se convergir para um mínimo local como mostrado na \autoref{fig:funcgraddescnot}. Basicamente se $\alpha$ for um valor muito alto, os passos para o mínimal ótimo serão grandes e portanto o risco de divergência é maior, caso seja muito baixo, os passos para o mínimal ótimo serão pequenos e portanto vai demorar muito para convergir. Em \cite{machinelearningcoursera}, é dito para testar manualmente esse valor, começando com 0,001 e subindo multiplicando por 10 esse valor até atingir uma divergência no resultado. Sendo assim possível analisar o melhor valor da taxa de aprendizagem e selecioná-la para o treinamento definitivo.
 
 \begin{figure}
   \caption{Funcionamento do Gradiente Descendente}
-  \begin{subfigure}[htb]{0.5\textwidth}
+  \begin{subfigure}[htb]{0.5\textwidth} \label{fig:funcgraddesc}
     \includegraphics[width=\textwidth]{img/funcgraddesc1}
-    \caption{Convergindo para uma mínimo global} \label{fig:funcgraddesc}
+    \legend{(a) Convergindo para uma mínimo global} 
   \end{subfigure}
   %
-  \begin{subfigure}[htb]{0.5\textwidth}
+  \begin{subfigure}[htb]{0.5\textwidth} \label{fig:funcgraddescnot}
     \includegraphics[width=\textwidth]{img/funcgraddesc2}
-    \caption{Convergindo para uma mínimo local} \label{fig:funcgraddescnot}
+    \legend{(b) Convergindo para uma mínimo local}
   \end{subfigure}
+
+  \legend{Fonte: \citeonline{machinelearningcoursera}}
 \end{figure}
 
-O Gradiente Descendente é apenas um dos vários algoritmos que existem para minimizar a função de custo. De acordo com [X] há alternativas mais sofisticadas como o Gradiente Conjugado, BFGS e L-BFGS, mas também é sugerido que não devemos tentar codificar esses algoritmos, visto que são difíceis e requerem um bom conhecimento de cálculo numérico.
+O Gradiente Descendente é apenas um dos vários algoritmos que existem para minimizar a função de custo. De acordo com \cite{machinelearningcoursera}, há alternativas mais sofisticadas como o Gradiente Conjugado, BFGS e L-BFGS, onde além de serem mais rápidos que o Gradiente Descendente, eles não precisam selecionar manualmente o valor de $\alpha$. Mas, também é sugerido que não devemos tentar codificar esses algoritmos, visto que são mais complexos e requerem um bom conhecimento de cálculo numérico.
 
 
 \subsection{Classificação multiclasse}
@@ -271,35 +328,59 @@ prediction = max_i(h_{\theta}^{(i)}(X)) \nonumber
 \end{equation}
 
 
-\subsection{Regularização}
+\subsection{Regularização}\label{subsec:regularizacao}
 
-Regularização é um conceito importante designado para resolver o problema de \textit{overfitting}.
+Como já mencionado, regularização é um conceito importante designado para resolver o problema de \textit{overfitting}.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Quando se trabalha com abordagens de aprendizagem supervisionada, tem dois problemas que podem ocorrer dependendo das \textit{features} escolhidas. O \textbf{\textit{underfitting}} ocorre quando a forma da função de hipótese mapeia mal à tendência dos dados. Isso é causado por uma função que é muito simples ou que usa pouquíssimas \textit{features}. Em contrapartida, \textbf{\textit{overfitting}} é causado por uma função de hipótese que encaixa os dados avaliados mas não generaliza bem para classificar novos dados. É usualmente causado por uma função complexa que cria muitas curvas e ângulos desnecessários não relacionados aos dados.
 
+\begin{figure}
+  
+  \caption{Exemplo de \textit{underfitting} e \textit{overfitting}} \label{fig:exemplounderover}
+  
+  \begin{subfigure}[htb]{0.5\textwidth}
+    \includegraphics[width=\textwidth]{img/underfittingex}
+    \legend{(a) \textit{underfitting}} 
+  \end{subfigure}
+  %
+  \begin{subfigure}[htb]{0.5\textwidth}
+    \includegraphics[width=\textwidth]{img/overfittingex}
+    \legend{(b) \textit{overfitting}}
+  \end{subfigure}
+
+  \legend{Fonte: \citeonline{machinelearningcoursera}}
+\end{figure}
+
+A classificação ideal para o conjunto de dados mostrados na \autoref{fig:exemplounderover} é o exemplo mostrado na \autoref{fig:demclassificacao}.
+
+Segundo \cite{machinelearningcoursera}, há duas opções principais para resolver o problema de \textit{overfitting}:
+
+\begin{alineas}
+	\item Reduzir o número de \textit{features}:
+		\begin{alineas}
+			\item Manualmente selecionar quais \textit{features} usar;
+			\item Usar um algoritmo de seleção de modelo.
+		\end{alineas}
+	\item Regularização:
+		\begin{alineas}
+			\item Manter todos as \textit{features}, mas reduzir os parâmetros $\theta_j$.
+		\end{alineas}
+\end{alineas}
+
+Em geral, regularização funciona bem quando há bastante features levemente úteis.
 
 
 \section{Córpus e seu conjunto de classes gramaticais}
 
 Córpus são uma coleção de textos colocados como um só, eles são os exemplos de entrada para nosso treinamento. A qualidade e o tamanho desses córpus são importantes para que o etiquetador possa generalizar sentenças ainda não vistas. Eles contém também um conjunto de classes gramaticais associadas a cada palavra.
 
-Esses conjuntos podem se diferenciar na sua granularidade, como por exemplo, podem ter diferentes classes gramaticais para nomes no plural e no singular, ou agrupar eles em uma única classe [X]. No inglês, há vários córpus de qualidade que são amplamento utilizados, são o Penn Treebank tagset [X], CLAWS5 [X] e CLAWS7 [X].
+Esses conjuntos podem se diferenciar na sua granularidade, como por exemplo, podem ter diferentes classes gramaticais para nomes no plural e no singular, ou agrupar eles em uma única classe \cite{fonseca2015evaluating}. No inglês, há vários conjunto de classes gramaticais de qualidade que são amplamento utilizados, são o Penn Treebank tagset \cite{penntreebank}, CLAWS5 e CLAWS7.
 
-Já no português esses córpus estão evoluindo com o tempo, embora muitos erros são encontrados neles [X], eles ainda são a melhor opção devido a seu tamanho e qualidade, os principais e mais utilizados para essa tarefa são o Mac-Morpho [X] com cerca de um milhão de palavras, que retrata artigos publicados na Folha de São Paulo em 1994. O Tycho Brahe [X] que também tem cerca de um milhão de palavras e retrata assuntos históricos de 66 textos diferentes, a linguagem utilizada nele é muito diferente da usada no cotidiano e por isso o seu uso é apenas a fim de curiosidade. Temos também o Bosque [X], que contém cerca de 185 mil palavras. Além desses, [X] et al. apresenta uma versão revisada do Mac-Morpho, com classes gramaticais novas e junção de outras. 
+Já no português, os córpus estão evoluindo com o tempo, embora alguns erros são encontrados neles \cite{fonseca2013mac}, eles ainda são a melhor opção devido a seu tamanho e qualidade, os principais e mais utilizados para essa tarefa são o Mac-Morpho \cite{aluisio2003account} com cerca de um milhão de palavras, que retrata artigos publicados na Folha de São Paulo em 1994. O Tycho Brahe \cite{temponi2004corpus} que também tem cerca de um milhão de palavras e retrata assuntos históricos de 66 textos diferentes. Temos também o Bosque \cite{afonso2002floresta}, que contém cerca de 185 mil palavras. Além desses, \cite{fonseca2015evaluating} apresenta uma versão revisada do Mac-Morpho, com classes gramaticais novas e junção de outras. 
 
-Infelizmente esses córpus não podem ser combinados em um só, já que eles se diferenciam no conjunto de classes gramaticais e também no seu uso associado.
+Infelizmente esses córpus não podem ser combinados em um só, já que eles se diferenciam no conjunto de classes gramaticais e também no seu uso associado. Uma possível alternativa para essa combinação, seria o uso de uma aprendizagem não supervisionada, aplicando técnicas de clusterização.
 
-A aprendizagem baseada em córpus tem se mostrado uma estratégia atrativa, já que pode ser usado recursos criados com melhores performance [X, Y, Z]. Devido a isso, nesse trabalho vamos utilizar três córpus: o Mac-Morpho original; Mac-Morpho revisado e o Tycho Brahe. O conjunto de etiquetas para esses córpus podem ser encontrados, respectivamente, em [X], [Y] e [Z].
-
-
-\textit{- Falar mais alguma coisa sobre?}
-
-\textit{- Colocar alguma tabela aqui?}
+A aprendizagem baseada em córpus tem se mostrado uma estratégia atrativa, já que pode ser usado recursos criados com melhores performance [X, Y, Z]. Devido a isso, nesse trabalho vamos utilizar três córpus: o Mac-Morpho original; Mac-Morpho revisado e o Tycho Brahe. O conjunto de etiquetas para esses córpus podem ser encontrados, respectivamente, em \cite{aluisio2003account}, \cite{fonseca2015evaluating} e \cite{temponi2004corpus}.
 
 
 
@@ -307,7 +388,7 @@ A aprendizagem baseada em córpus tem se mostrado uma estratégia atrativa, já 
 
 Palavras \footnote{Uma palavra pode ser qualquer conjunto de caracteres, inclusive pontuações, números, etc.} podem ser representadas de várias maneiras em um modelo de aprendizagem, podendo ser até mesmo feito o uso real da palavra como um conjunto de caracteres.
 
-No entanto, a melhor abordagem e a mais indicada atualmente é a utilização de \textit{word embeddings}, elas são representação de palavras como vetores reais valorados em um espaço multidimensional [X]. Elas podem ser geradas de maneiras diferentes dependendo da técnica utilizada, clássicas abordagens baseiam-se na frequência e co-ocorrência [X] das palavras, até mesmo via modelos de redes neurais [X]. Um dos processos de criação é mostrado na \autoref{fig:criacaowordemb}.
+No entanto, a melhor abordagem e a mais indicada atualmente é a utilização de \textit{word embeddings}, elas são representação de palavras como vetores reais valorados em um espaço multidimensional \cite{turian2010word}. Elas podem ser geradas de maneiras diferentes dependendo da técnica utilizada, clássicas abordagens baseiam-se na frequência e co-ocorrência das palavras, até mesmo via modelos de redes neurais \cite{dos2014training}. Um dos processos de criação é mostrado na \autoref{fig:criacaowordemb}.
 
 \begin{figure}[htb]
   \caption{Exemplo de criação de \textit{word embeddings}} \label{fig:criacaowordemb}
@@ -324,14 +405,14 @@ W:word \to \mathbb{R}^n
 
 Em ordem de prever esses valores com precisão, a rede precisa aprender bons parâmetros para \textit{W}.
 
-A grande vantagem em se utilizar \textit{word embeddings} é o fato dessa técnica conseguir capturar informações sintáticas e semânticas das palavras. Isso pode ser visualizado através do t-SNE [X], uma técnica sofisticada para visualizar dados em altas dimensões.
+A grande vantagem em se utilizar \textit{word embeddings} é o fato dessa técnica conseguir capturar informações sintáticas e semânticas das palavras. Isso pode ser visualizado através do t-SNE \cite{van2008visualizing}, uma técnica sofisticada para visualizar dados em altas dimensões.
 
 \begin{figure}[htb]
   \caption{t-SNE: Visualização para \textit{word embeddings}}\label{fig:wordtsne}
   \begin{center}
       \includegraphics[scale=0.25]{img/Turian-WordTSNE}
   \end{center}
-  \legend{Fonte: Turian et al. (2010).}
+  \legend{Fonte: \citeonline{turian2010word}}
 \end{figure}
 
 Na \autoref{fig:wordtsne} podemos visualizar um tipo de mapeamento entre os sentidos intuitivos das palavras, onde na esquerda estão palavras referentes a números e na direita palavras referentes a profissões. Ou seja, palavras similares estão pertos umas das outras.
@@ -341,7 +422,7 @@ Na \autoref{fig:wordtsne} podemos visualizar um tipo de mapeamento entre os sent
   \begin{center}
       \includegraphics[scale=0.25]{img/Colbert-WordTable2}
   \end{center}
-  \legend{Fonte: Collobert et al. (2011)}
+  \legend{Fonte: \citeonline{collobert2011natural}}
 \end{figure}
 
 Na \autoref{fig:palavrassimilares} temos mais alguns exemplos desse conceito, com isso podemos realizar tarefas semânticas mais facilmente, como o exemplo \ref{eq:exemploobjetivo}, que é o que esperamos obter.
@@ -350,11 +431,14 @@ Para mais informações sobre \textit{word embeddings} consultar [X] e [Y].
 
 
 
-\section{Redes neurais profundas}
+\section{Redes neurais}
 
 O que escrever aqui? 
 
 - Conceitos basicos de redes neurais
 
-- Redes neurais profundas e seus algoritmos
 
+
+\section{Aprendizagem profunda}
+
+- Redes neurais profundas e seus algoritmos

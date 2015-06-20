@@ -26,6 +26,17 @@
   Number                   = {EPFL-CONF-192374}
 }
 
+@Article{collobert2011natural,
+  Title                    = {Natural language processing (almost) from scratch},
+  Author                   = {Collobert, Ronan and Weston, Jason and Bottou, L{\'e}on and Karlen, Michael and Kavukcuoglu, Koray and Kuksa, Pavel},
+  Journal                  = {The Journal of Machine Learning Research},
+  Year                     = {2011},
+  Pages                    = {2493--2537},
+  Volume                   = {12},
+
+  Publisher                = {JMLR. org}
+}
+
 @InProceedings{fonseca2013mac,
   Title                    = {Mac-morpho revisited: Towards robust part-of-speech tagging},
   Author                   = {Fonseca, Erick Rocha and Rosa, Joao Lu{\i}s G},
@@ -55,11 +66,40 @@
   Publisher                = {Springer}
 }
 
+@Book{hosmer2004applied,
+  Title                    = {Applied logistic regression},
+  Author                   = {Hosmer Jr, David W and Lemeshow, Stanley},
+  Publisher                = {John Wiley \& Sons},
+  Year                     = {2004}
+}
+
 @PhdThesis{kepler2005etiquetador,
   Title                    = {Um etiquetador morfo-sint{\'a}tico baseado em cadeiasi de Markov de tamanho vari{\'a}vel},
   Author                   = {Kepler, F{\'a}bio Natanael},
   School                   = {Instituto de Matem{\'a}tica e Estat{\'\i}stica da Universidade de S{\~a}o Paulo, 12/04/2005.},
   Year                     = {2005}
+}
+
+@Book{manning1999foundations,
+  Title                    = {Foundations of statistical natural language processing},
+  Author                   = {Manning, Christopher D and Sch{\"u}tze, Hinrich},
+  Publisher                = {MIT press},
+  Year                     = {1999}
+}
+
+@Article{marquiafavel2010processo,
+  Title                    = {Um processo para a gera{\c{c}}{\~a}o de recursos ling{\"u}{\'\i}sticos aplic{\'a}veis em ferramentas de aux{\'\i}lio {\`a} escrita cient{\'\i}fica},
+  Author                   = {Marquiaf{\'a}vel, Vanessa Silva},
+  Year                     = {2010},
+
+  Publisher                = {Biblioteca Digital de Teses e Disserta{\c{c}}{\~o}es da Universidade Federal de S{\~a}o Carlos}
+}
+
+@Book{michalski2013machine,
+  Title                    = {Machine learning: An artificial intelligence approach},
+  Author                   = {Michalski, Ryszard S and Carbonell, Jaime G and Mitchell, Tom M},
+  Publisher                = {Springer Science \& Business Media},
+  Year                     = {2013}
 }
 
 @Article{mikolov2013efficient,
@@ -107,6 +147,15 @@
   Number                   = {3},
   Pages                    = {1},
   Volume                   = {2}
+}
+
+@InProceedings{turian2010word,
+  Title                    = {Word representations: a simple and general method for semi-supervised learning},
+  Author                   = {Turian, Joseph and Ratinov, Lev and Bengio, Yoshua},
+  Booktitle                = {Proceedings of the 48th annual meeting of the association for computational linguistics},
+  Year                     = {2010},
+  Organization             = {Association for Computational Linguistics},
+  Pages                    = {384--394}
 }
 
 @Article{turney2010frequency,
