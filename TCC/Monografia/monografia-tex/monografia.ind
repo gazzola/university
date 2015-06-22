@@ -1,52 +1,69 @@
 \begin{theindex}
 
-  \item Adobe Illustrator, \hyperpage{50}
-  \item Adobe Photoshop, \hyperpage{51}
-  \item al\IeC {\'\i }neas, \hyperpage{54}
+  \item Adobe Illustrator, \hyperpage{66}
+  \item Adobe Photoshop, \hyperpage{67}
+  \item al\IeC {\'\i }neas, \hyperpage{70}
 
   \indexspace
 
   \item cita\IeC {\c c}\IeC {\~o}es
-    \subitem diretas, \hyperpage{47}
-    \subitem simples, \hyperpage{48}
-  \item CorelDraw, \hyperpage{50}
+    \subitem diretas, \hyperpage{63}
+    \subitem simples, \hyperpage{64}
+  \item CorelDraw, \hyperpage{66}
+
+  \indexspace
+
+  \item {DDV}, \hyperpage{61, 62}
 
   \indexspace
 
   \item espa\IeC {\c c}amento
-    \subitem do primeiro par\IeC {\'a}grafo, \hyperpage{55}
-    \subitem dos par\IeC {\'a}grafos, \hyperpage{55}
-    \subitem entre as linhas, \hyperpage{56}
-    \subitem entre os par\IeC {\'a}grafos, \hyperpage{55}
-  \item express\IeC {\~o}es matem\IeC {\'a}ticas, \hyperpage{53}
+    \subitem do primeiro par\IeC {\'a}grafo, \hyperpage{71}
+    \subitem dos par\IeC {\'a}grafos, \hyperpage{71}
+    \subitem entre as linhas, \hyperpage{72}
+    \subitem entre os par\IeC {\'a}grafos, \hyperpage{71}
+  \item express\IeC {\~o}es matem\IeC {\'a}ticas, \hyperpage{69}
 
   \indexspace
 
-  \item {Fig.}, \hyperpage{47}
-  \item figuras, \hyperpage{49}
-  \item filosofia, \hyperpage{49}
+  \item {FDV}, \hyperpage{44}
+  \item {Fig.}, \hyperpage{63}
+  \item figuras, \hyperpage{65}
+  \item filosofia, \hyperpage{65}
 
   \indexspace
 
-  \item Gimp, \hyperpage{51}
+  \item Gimp, \hyperpage{67}
+  \item {GloVe}, \hyperpage{45}, \hyperpage{62}
 
   \indexspace
 
-  \item incisos, \hyperpage{54}
-  \item InkScape, \hyperpage{50}
+  \item {HAL}, \hyperpage{44}, \hyperpage{61, 62}
 
   \indexspace
 
-  \item {PLN}, \hyperpage{27}
-  \item {POS}, \hyperpage{27, 28}, \hyperpage{40}
+  \item incisos, \hyperpage{70}
+  \item InkScape, \hyperpage{66}
 
   \indexspace
 
-  \item subal\IeC {\'\i }neas, \hyperpage{54}
+  \item {NLM}, \hyperpage{44}, \hyperpage{61, 62}
 
   \indexspace
 
-  \item tabelas, \hyperpage{48}
-  \item {TCC}, \hyperpage{47}
+  \item {PLN}, \hyperpage{27}, \hyperpage{44}, \hyperpage{56, 57}
+  \item {POS}, \hyperpage{15}, \hyperpage{17}, \hyperpage{27, 28}, 
+		\hyperpage{40}, \hyperpage{42}, \hyperpage{57, 58}, 
+		\hyperpage{62}
+
+  \indexspace
+
+  \item {SG}, \hyperpage{44}, \hyperpage{61, 62}
+  \item subal\IeC {\'\i }neas, \hyperpage{70}
+
+  \indexspace
+
+  \item tabelas, \hyperpage{64}
+  \item {TCC}, \hyperpage{63}
 
 \end{theindex}

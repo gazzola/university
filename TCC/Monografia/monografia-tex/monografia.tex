@@ -64,14 +64,17 @@
 \usepackage{filecontents}   % Para colocar o conteúdo de um arquivo dentro de um arquivo tex
 \usepackage{todonotes}      % Para criar anotações durante o desenvolvimento do texto
 %\usepackage{multirow}       % Permite fazer tabelas com múltiplas linhas
-%\let\newfloat=\undefined    % Workaround para usar o pacote algorithm
-%\usepackage{algorithm}      % Para escrever algoritmos
-%\usepackage{clrscode}       % Para escrever algoritmos
-%\usepackage{clrscode3e}     % Para escrever algoritmos; mais simples que os pacotes acima
+\let\newfloat=\undefined    % Workaround para usar o pacote algorithm
+\usepackage{algorithm}      % Para escrever algoritmos
+\usepackage{algpseudocode}
+\usepackage{pifont}
+% \usepackage{clrscode}       % Para escrever algoritmos
+% \usepackage{clrscode3e}     % Para escrever algoritmos; mais simples que os pacotes acima
 \usepackage{pdfpages}        % Para incluir a folha de aprovação assinada em PDF
 \usepackage{amsmath}
 \usepackage{amsfonts}
-\usepackage{subcaption} 
+\usepackage{subcaption}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}m{#1}} 
 
 % -------------------------------------------------------------------------------------------------
 % Configurações de pacotes
@@ -90,6 +93,8 @@
     \else
         Citado #1 vezes nas páginas #2.%
     \fi}%
+
+\captionsetup[subfigure]{labelformat=simple}
 % -------------------------------------------------------------------------------------------------
 % Configurações de aparência do PDF final
 \definecolor{blue}{RGB}{41,5,195}
@@ -199,6 +204,47 @@
   class = acronimos
 }
 
+
+\DeclareAcronym{ddv}{
+  short = DDV,
+  long  = Dentro do Vocabulário,
+  class = acronimos
+}
+
+\DeclareAcronym{fdv}{
+  short = FDV,
+  long  = Fora do Vocabulário,
+  class = acronimos
+}
+
+\DeclareAcronym{nlm}{
+  short = NLM,
+  long = Neural Language Model,
+  class = acronimos
+}
+
+\DeclareAcronym{hal}{
+  short = HAL,
+  long = Hyperspace Analogue to Language,
+  class = acronimos
+}
+
+\DeclareAcronym{sg}{
+  short = SG,
+  long = Skip-Gram,
+  class = acronimos
+}
+
+\DeclareAcronym{glove}{
+  short = GloVe,
+  long = Global Vectors for Word Representation,
+  class = acronimos
+}
+
+
+
+
+
 % -------------------------------------------------------------------------------------------------
 % Nomenclaturas/Símbolos
 \nomenclature{$A_i$}{Área do $i^{esimo}$ componente}
@@ -212,6 +258,8 @@
 \nomenclature{$(x, y)$}{Um exemplo de treinamento}
 \nomenclature{$(X^{(i)}, Y^{(i)})$}{O i-ésimo exemplo de treinamento}
 \nomenclature{$\theta$}{Parâmetros a serem aprendidos}
+\nomenclature{$\alpha$}{Taxa de aprendizagem}
+\nomenclature{$\lambda$}{Parâmetro de regularização}
 
 % -------------------------------------------------------------------------------------------------
 % Inclui alguns ajustes finos para que fique de acordo com o Manual de Normatização
@@ -343,6 +391,8 @@
 %\input{textuais/outrospontos} % Outro capítulo
 %\bookmarksetup{startatroot} % Usar se o próximo capítulo não pertencer à parte anterior e não existir uma parte nova
 \input{textuais/conclusao} % [OBRIGATORIO]
+
+\input{textuais/cronograma} % [OBRIGATORIO]
 
 
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

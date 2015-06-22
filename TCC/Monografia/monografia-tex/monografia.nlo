@@ -9,3 +9,5 @@
 \nomenclatureentry{a$(x, y)$@[{$(x, y)$}]\begingroup Um exemplo de treinamento\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{a$(X^{(i)}, Y^{(i)})$@[{$(X^{(i)}, Y^{(i)})$}]\begingroup O i-ésimo exemplo de treinamento\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{a$\theta$@[{$\theta$}]\begingroup Parâmetros a serem aprendidos\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{a$\alpha$@[{$\alpha$}]\begingroup Taxa de aprendizagem\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{a$\lambda$@[{$\lambda$}]\begingroup Parâmetro de regularização\nomeqref {0}|nompageref}{1}

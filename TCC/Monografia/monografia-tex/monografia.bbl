@@ -56,11 +56,24 @@ Rio de Janeiro, 2012. 4~p.}
   \emph{International Conference on Artificial Intelligence and Statistics}.
   [S.l.: s.n.], 2011.}
 
+\bibitem[Collobert e Weston 2008]{collobert2008unified}
+\abntrefinfo{Collobert e Weston}{COLLOBERT; WESTON}{2008}
+{COLLOBERT, R.; WESTON, J. A unified architecture for natural language
+  processing: Deep neural networks with multitask learning. In:  ACM.
+  \emph{Proceedings of the 25th international conference on Machine learning}.
+  [S.l.], 2008. p. 160--167.}
+
 \bibitem[Collobert et al. 2011]{collobert2011natural}
 \abntrefinfo{Collobert et al.}{COLLOBERT et al.}{2011}
 {COLLOBERT, R. et al. Natural language processing (almost) from scratch.
 \emph{The Journal of Machine Learning Research}, JMLR. org, v.~12, p.
   2493--2537, 2011.}
+
+\bibitem[Deng e Yu 2014]{deng2014deep}
+\abntrefinfo{Deng e Yu}{DENG; YU}{2014}
+{DENG, L.; YU, D. Deep learning: methods and applications.
+\emph{Foundations and Trends in Signal Processing}, Now Publishers Inc., v.~7,
+  n.~3--4, p. 197--387, 2014.}
 
 \bibitem[Fonseca e Rosa 2013]{fonseca2013mac}
 \abntrefinfo{Fonseca e Rosa}{FONSECA; ROSA}{2013}
@@ -80,6 +93,27 @@ Rio de Janeiro, 2012. 4~p.}
 \abntrefinfo{Jr e Lemeshow}{JR; LEMESHOW}{2004}
 {JR, D.~W. H.; LEMESHOW, S. \emph{Applied logistic regression}. [S.l.]: John
   Wiley \& Sons, 2004.}
+
+\bibitem[Kepler 2005]{kepler2005etiquetador}
+\abntrefinfo{Kepler}{KEPLER}{2005}
+{KEPLER, F.~N.
+\emph{Um etiquetador morfo-sint{\'a}tico baseado em cadeiasi de Markov de
+  tamanho vari{\'a}vel}.
+Tese (Doutorado) --- Instituto de Matem{\'a}tica e Estat{\'\i}stica da
+  Universidade de S{\~a}o Paulo, 12/04/2005., 2005.}
+
+\bibitem[Lund e Burgess 1996]{lund1996producing}
+\abntrefinfo{Lund e Burgess}{LUND; BURGESS}{1996}
+{LUND, K.; BURGESS, C. Producing high-dimensional semantic spaces from lexical
+  co-occurrence.
+\emph{Behavior Research Methods, Instruments, \& Computers}, Springer, v.~28,
+  n.~2, p. 203--208, 1996.}
+
+\bibitem[Luo e Xu 2015]{luo2015learning}
+\abntrefinfo{Luo e Xu}{LUO; XU}{2015}
+{LUO, Q.; XU, W. Learning word vectors efficiently using shared representations
+  and document representations. In:  \emph{Twenty-Ninth AAAI Conference on
+  Artificial Intelligence}. [S.l.: s.n.], 2015.}
 
 \bibitem[Maaten e Hinton 2008]{van2008visualizing}
 \abntrefinfo{Maaten e Hinton}{MAATEN; HINTON}{2008}
@@ -106,17 +140,40 @@ Biblioteca Digital de Teses e Disserta{\c{c}}{\~o}es da Universidade Federal de
   artificial intelligence approach}. [S.l.]: Springer Science \& Business
   Media, 2013.}
 
+\bibitem[Mikolov et al. 2013]{mikolov2013efficient}
+\abntrefinfo{Mikolov et al.}{MIKOLOV et al.}{2013}
+{MIKOLOV, T. et al. Efficient estimation of word representations in vector
+  space.
+\emph{arXiv preprint arXiv:1301.3781}, 2013.}
+
 \bibitem[Ng 2015]{machinelearningcoursera}
 \abntrefinfo{Ng}{NG}{2015}
 {NG, A. \emph{Course of Machine Learning}.
 [S.l.], 2015. Dispon{\'\i}vel em:
   \url{https://www.coursera.org/learn/machine-learning/}.}
 
+\bibitem[Ng et al. 2013]{ng2013unsupervised}
+\abntrefinfo{Ng et al.}{NG et al.}{2013}
+{NG, A. et al. \emph{Unsupervised feature learning and deep learning}. [S.l.]:
+  Stanford, Tutorial, 2013.}
+
+\bibitem[Pennington, Socher e Manning 2014]{pennington2014glove}
+\abntrefinfo{Pennington, Socher e Manning}{PENNINGTON; SOCHER; MANNING}{2014}
+{PENNINGTON, J.; SOCHER, R.; MANNING, C.~D. Glove: Global vectors for word
+  representation.
+\emph{Proceedings of the Empiricial Methods in Natural Language Processing
+  (EMNLP 2014)}, v.~12, p. 1532--1543, 2014.}
+
 \bibitem[Santos e Zadrozny 2014]{dos2014training}
 \abntrefinfo{Santos e Zadrozny}{SANTOS; ZADROZNY}{2014}
 {SANTOS, C.~N. dos; ZADROZNY, B. Training state-of-the-art portuguese pos
   taggers without handcrafted features. In:  \emph{Computational Processing of
   the Portuguese Language}. [S.l.]: Springer, 2014. p. 82--93.}
+
+\bibitem[Socher 2015]{deeplearningfornlp}
+\abntrefinfo{Socher}{SOCHER}{2015}
+{SOCHER, R. \emph{Deep Learning for Natural Language Processing}. 2015.
+Dispon{\'\i}vel em: \url{http://cs224d.stanford.edu/}.}
 
 \bibitem[Temponi 2004]{temponi2004corpus}
 \abntrefinfo{Temponi}{TEMPONI}{2004}
@@ -142,6 +199,13 @@ Biblioteca Digital de Teses e Disserta{\c{c}}{\~o}es da Universidade Federal de
 {{van} GIGCH, J.~P.; PIPINO, L.~L. In search for a paradigm for the discipline
   of information systems.
 \emph{Future Computing Systems}, v.~1, n.~1, p. 71--97, 1986.}
+
+\bibitem[Viterbi 1967]{viterbi1967error}
+\abntrefinfo{Viterbi}{VITERBI}{1967}
+{VITERBI, A.~J. Error bounds for convolutional codes and an asymptotically
+  optimum decoding algorithm.
+\emph{Information Theory, IEEE Transactions on}, IEEE, v.~13, n.~2, p.
+  260--269, 1967.}
 
 \bibitem[Wilson e Madsen 2010]{memoir}
 \abntrefinfo{Wilson e Madsen}{WILSON; MADSEN}{2010}

@@ -10,8 +10,8 @@ Scanning style file /usr/share/texlive/texmf-dist/makeindex/nomencl/nomencl.ist.
 Scanning input file monografia.nlo....
 !! Input index error (file = monografia.nlo, line = 8):
    -- Extra `|' at position 34 of first argument.
-done (10 entries accepted, 1 rejected).
-Sorting entries....done (35 comparisons).
-Generating output file monografia.nls....done (25 lines written, 0 warnings).
+done (12 entries accepted, 1 rejected).
+Sorting entries....done (46 comparisons).
+Generating output file monografia.nls....done (29 lines written, 0 warnings).
 Output written in monografia.nls.
 Transcript written in monografia.ilg.

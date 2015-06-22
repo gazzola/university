@@ -6,6 +6,10 @@
 		\nompageref{1}
   \item [{$(X^{(i)}, Y^{(i)})$}]\begingroup O i-ésimo exemplo de treinamento\nomeqref {0}
 		\nompageref{1}
+  \item [{$\alpha$}]\begingroup Taxa de aprendizagem\nomeqref {0}
+		\nompageref{1}
+  \item [{$\lambda$}]\begingroup Parâmetro de regularização\nomeqref {0}
+		\nompageref{1}
   \item [{$\mathcal{T}$}]\begingroup Conjunto de trabalhos de TCC\nomeqref {0}
 		\nompageref{1}
   \item [{$\theta$}]\begingroup Parâmetros a serem aprendidos\nomeqref {0}

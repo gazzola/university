@@ -2,10 +2,36 @@
 \chapter{Trabalhos relacionados}\label{trabalhosrelacionados}
 %==============================================================================
 
-Vários métodos já foram propostos para resolver esse mesmo problema em português, apesar de nenhum deles ter um aproveitamento de 100\% de precisão, muitos deles já são utilizados em escala global em diversas ferramentas formuladas por grandes empresas de tecnologia [X,Y].
+Vários métodos já foram propostos para resolver esse mesmo problema em português brasileiro, apesar de nenhum deles ter um aproveitamento de 100\%, eles conseguiram ótimos resultados e utilizaram técnicas que são consideradas como o melhor do que se há atualmente.
 
-É apresentado em [X] um etiquetador morfo-sintático baseado em cadeias de Markov de tamanho variável. Ele é testado sobre o córpus Tycho Brahe [X], ele apresenta uma precisão de 95.51\%. 
+É apresentado em \cite{kepler2005etiquetador} um etiquetador morfo-sintático baseado em cadeias de Markov. É realizado testes com dois etiquetadores diferentes, um baseado em Cadeias de Markov Ocultas (HMM, do inglês \textit{Hidden Markov Models}), e outro baseado em Cadeias de Markov de Tamanho variável (VLMC, do inglês \textit{Variable Length Markov Chains}. A representação das palavras é feita de forma empírica, pois a etiquetagem baseia-se em modelos probabilísticos, onde a etiqueta de uma palavra depende da próprio palavra e de etiquetas anteriores. Ele é testado sobre o \textit{córpus} Tycho Brahe, e apresenta uma precisão de 95,51\% com o etiquetador VLMC, essa precisão é alcançado com um tempo de aprendizagem + etiqueatem de 157 segundos. 
 
-Em [Y] é apresentado um etiquetador que aprende automaticamente as features a serem usadas através de uma rede neural profunda que emprega uma camada evolutiva capaz de aprender a uma representação de caracteres das palavras. Isso foi testado sobre diferente córpus, no Mac-Morpho [X] foi alcançado uma precisão de 97.47\%, no Tycho Brahe teve precisão de 97.17\%, além disso, foi feito testes sobre uma versão revisada do Mac-Morpho distribuída por [Y] e obteve uma precisão de 97.17\%
+\textit{- falar de mais algum aqui? qual?}
 
-O mais recente etiquetador para o português brasileiro é mostrado em [X], onde é utilizado diferentes técnicas de representação das palavras e feita uma comparação entre elas. Nele é utilizado um modelo de rede neural profunda disponibilizado em [Y] e a melhor técnica obtém uma precisão de 97.47\% no Mac-Morpho original.
+Em \cite{dos2014training} é apresentado um etiquetador que aprende automaticamente as features a serem usadas através de uma rede neural profunda que emprega uma camada evolutiva capaz de aprender \textit{embeddings} em nível de caractere e em nível de palavra. Éssa rede neural profunda é conhecida como CharWNN e foi proposta originalmente por \citeonline{collobert2011natural}. Além disso, é usado um modelo em janela utilizado em \cite{collobert2011natural} para atribuir classes gramaticais para cada palavra em uma sentença. Essa estratégia assume que a classe de uma palavra depende geralmente das palavras vizinhas. No fim é utilizado o algoritmo de Viterbi \cite{viterbi1967error} para prever qual a sequência de classes gramaticais é a mais provável para aquela sentença, para então ser treinada em um modelo de rede neural com algumas \textit{features} que obtém informações dos formatos da palavra. Esse trabalho usa três diferentes para o treinamento: \textit{córpus}; o Mac-Morpho original; o Mac-Morpho revisado em \cite{fonseca2013mac}, e o Tycho Brahe. Eles avaliam seu modelo sobre palavras fora do vocabulário e sobre palavras presente no vocabulário. Com o Mac-Morpho foi obtido o melhor desempenho do trabalho, uma acurácia de 97,47\% sobre palavras \ac{ddv}. Nesse trabalho não é mostrado estatísticas de tempo de treinamento e etiquetagem.
+
+O mais recente etiquetador para o português brasileiro é mostrado em \cite{fonseca2015evaluating}, onde é utilizado diferentes técnicas de representação das palavras: vetores gerados de forma aleatória, \ac{nlm}, \ac{hal}, \ac{sg}. É feita então uma comparação entre elas. Nele é implementado um modelo de rede neural profunda idealizado em \cite{collobert2008unified}, que se baseria em uma rede neural com simples com múltiplas camadas que recebe as \textit{word embeggins} como entrada e aprende a sua classe gramatical. Para isso, eles realizam o treinamento utilizando o Tycho Brahe, a versão original do Mac-Morpho (versão 1) e a revisada pelos mesmos autores em um trabalho anterior \cite{fonseca2013mac} (versão 2), e também sobre mais uma versão do Mac-Morpho revisado (versão 3) por eles nesse mesmo trabalho. Atualmente, \citeonline{fonseca2015evaluating} dizem ter alcançado o estado-da-arte do \ac{pos} Tagging para o português brasileiro, com uma acurácia de 97,57\% sobre o Mac-Morpho original e no escopo de palavras \ac{ddv}. Esse trabalho não apresenta estatísticas de de tempo de treinamento e etiquetagem.
+
+A \autoref{tab:comparacaotrabsrel} sumarizada as técnicas e resultados encontrados pelos trabalhos relacionados que tentam resolver o mesmo problema que este trabalho.
+
+\begin{table}[!htb]
+\footnotesize
+\centering
+\caption{Comparativo entre técnicas e resultados encontrados na literatura para o problema de \ac{pos} Tagging.}
+\label{tab:comparacaotrabsrel}
+\begin{tabular}{m{2cm}m{3cm}m{3cm}m{2cm}m{2cm}m{2cm}}
+  \toprule
+  \textbf{Autores} & \textbf{Modelo}  & \textbf{Representação das palavras}  & \textbf{Córpus} & \textbf{Acurácia} & \textbf{Tempo}  \\
+  \midrule
+  \citeonline{kepler2005etiquetador} & VLMM & Sequência de caracteres & Tycho Brahe & 95,51\% & 157 segundos \\
+  \citeonline{dos2014training} & Redes neurais profundas  & Representação vetorial (CharWNN) & Tycho Brahe; Mac-Morpho v1; Mac-Morpho v2 & 97,47\% & - \\
+  \citeonline{fonseca2015evaluating} & Redes neurais & Representação vetorial (\ac{nlm}, \ac{hal}, \ac{sg}) & Tycho Brahe; Mac-Morpho v1; Mac-Morpho v2; Mac-Morpho v3 & 97,57\% & - \\
+  Este trabalho & Redes neurais profundas & Representação vetorial (\ac{nlm}, \ac{sg}, \ac{glove}) & Tycho Brahe; Mac-Morpho v1; Mac-Morpho v3 & - & - \\
+  \bottomrule
+\end{tabular}
+\end{table}
+
+- Ajeitar a tabela !!!!
+
+
+% nome trab - modelo - representacao  - corpus - acuracia - tempo
