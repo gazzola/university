@@ -21,14 +21,5 @@
 \contentsline {figure}{\numberline {20}{\ignorespaces Sentido do aprendizado de m\IeC {\'a}quina\relax }}{58}{figure.caption.35}
 \contentsline {figure}{\numberline {21}{\ignorespaces Tamanho das redes neurais ao longo dos anos\relax }}{59}{figure.caption.36}
 \contentsline {figure}{\numberline {22}{\ignorespaces Funcionamento de aprendizagem profunda em \ac {pos} Tagging\relax }}{59}{figure.caption.37}
-\contentsline {figure}{\numberline {23}{\ignorespaces \IeC {\'A}rvore de recurs\IeC {\~a}o de Fibonacci.\relax }}{66}{figure.caption.41}
-\contentsline {figure}{\numberline {24}{\ignorespaces Gr\IeC {\'a}fico produzido diretamente no arquivo fonte.\relax }}{66}{figure.caption.42}
-\contentsline {figure}{\numberline {25}{\ignorespaces Outro gr\IeC {\'a}fico feito em \textlatin {\LaTeX }.\relax }}{67}{figure.caption.43}
-\contentsline {figure}{\numberline {26}{\ignorespaces Varia\IeC {\c c}\IeC {\~a}o dos resultados utilizando sele\IeC {\c c}\IeC {\~a}o por Janela Deslizante.\relax }}{68}{figure.caption.44}
-\contentsline {figure}{\numberline {27}{\ignorespaces Gr\IeC {\'a}fico produzido em Excel e salvo como PDF.\relax }}{69}{figure.caption.45}
-\contentsline {figure}{\numberline {28}{\ignorespaces Exemplo de subfiguras.\relax }}{69}{figure.caption.46}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces Uma figura de um arquivo.}}{69}{subfigure.5.28.2}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces Uma figura em puro c\IeC {\'o}digo TikZ.}}{69}{subfigure.5.28.2}
-\contentsline {figure}{\numberline {29}{\ignorespaces Mesmo exemplo de subfiguras, agora em escala.\relax }}{70}{figure.caption.47}
-\contentsline {figure}{\numberline {30}{\ignorespaces Exemplo de tamanhos de fonte\relax }}{93}{figure.caption.55}
-\contentsline {figure}{\numberline {31}{\ignorespaces Tela do JabRef para uma vers\IeC {\~a}o inicial do arquivo bib deste documento\relax }}{95}{figure.caption.57}
+\contentsline {figure}{\numberline {23}{\ignorespaces Exemplo de tamanhos de fonte\relax }}{83}{figure.caption.46}
+\contentsline {figure}{\numberline {24}{\ignorespaces Tela do JabRef para uma vers\IeC {\~a}o inicial do arquivo bib deste documento\relax }}{85}{figure.caption.48}

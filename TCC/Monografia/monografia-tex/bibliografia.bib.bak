@@ -18,6 +18,13 @@
   Pages                    = {110--117}
 }
 
+@Book{bengio2015deep,
+  Title                    = {Deep Learning},
+  Author                   = {Bengio, Yoshua and Goodfellow, Ian J and Courville, Aaron},
+  Publisher                = {Book in preparation for MIT Press},
+  Year                     = {2015}
+}
+
 @InProceedings{collobert2011deep,
   Title                    = {Deep learning for efficient discriminative parsing},
   Author                   = {Collobert, Ronan},

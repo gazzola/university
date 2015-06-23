@@ -799,7 +799,7 @@ Para treinar a rede neural, é possível seguir os seguintes passos:
 
 \section{Aprendizagem profunda}
 
-A aprendizagem profunda é uma ramificação da aprendizagem de máquina, que baseia-se num conjunto de algoritmos que procuram modelar abstrações de alto nível usando modelos arquitetoriais, com estruturas complexas, compostas de múltiplas transformações não lineares \cite{deng2014deep}. Suas definições são intrínsecas, pois não há um consenso de quão profundo um modelo neural precisa ser para ser considerado um modelo de aprendizagem profunda. Entretanto, há a certeza de que aprendizagem profunda pode ser seguraramente categorizada como o estudo de modelos que tratam uma grande quantidade de composições de aprendizagem ou conceitos de aprendizagem que não conseguem ser empregados em aprendizado de máquina \cite{bengio2015deep}. 
+A aprendizagem profunda é uma ramificação da aprendizagem de máquina, que baseia-se num conjunto de algoritmos que procuram modelar abstrações de alto nível usando modelos arquitetoriais, com estruturas complexas, compostas de múltiplas transformações não lineares \cite{deng2014deep}. Suas definições são intrínsecas, pois não há um consenso de quão profundo um modelo neural precisa ser para ser considerado um modelo de aprendizagem profunda. Entretanto, há a certeza de que aprendizagem profunda pode ser seguraramente categorizada como o estudo de modelos que tratam uma grande quantidade de composições de aprendizagem ou conceitos de aprendizagem que não conseguem ser empregados em aprendizado de máquina \cite{Bengio-et-al-2015-Book}. 
 
 % A \autoref{fig:differentareas} demonstra a relação entre diferentes disciplinas de inteligência artificial (IA).
 
@@ -807,7 +807,7 @@ A aprendizagem profunda é uma ramificação da aprendizagem de máquina, que ba
 % \centering
 % \caption{Relações entre diferentes disciplinas em IA} \label{fig:differentareas}
 % \includegraphics[width=0.65\textwidth]{img/differentareas}
-% \legend{Fonte: \citeonline{bengio2015deep}}
+% \legend{Fonte: \citeonline{Bengio-et-al-2015-Book}}
 % \end{figure}
 
 
@@ -819,10 +819,10 @@ Aprendizagem profunda resolve esse problema de representação ao introduzir rep
 \centering
 \caption{Modelo de aprendizagem profunda} \label{fig:aprendendodeep}
 \includegraphics[width=0.75\textwidth]{img/aprendendodeep.pdf}
-\legend{Adaptade de: \citeonline{bengio2015deep}}
+\legend{Adaptade de: \citeonline{Bengio-et-al-2015-Book}}
 \end{figure}
 
-Na \autoref{fig:aprendendodeep}, cada pixel da imagem são \textit{features} passadas para a primeia camada oculta, que consegue identificar bordas facilmente, ao comparar o brilho de pixels vizinhos. Ao passar a descrição dessas bordas para a segunda camada oculta, ela consegue facilmente procurar por contornos, que são reconhecidos como uma coleção de bordas. Ao chegar na terceira camada oculta, consegue-se detectar partes inteiras de objetos específicos, ao procurar por específicas coleções de contornos e bordas. No final, a descrição da imagem em termos das partes dos objetos contidos pode ser usada para reconhcer objetos inteiros presentes na imagem \cite{bengio2015deep}.
+Na \autoref{fig:aprendendodeep}, cada pixel da imagem são \textit{features} passadas para a primeia camada oculta, que consegue identificar bordas facilmente, ao comparar o brilho de pixels vizinhos. Ao passar a descrição dessas bordas para a segunda camada oculta, ela consegue facilmente procurar por contornos, que são reconhecidos como uma coleção de bordas. Ao chegar na terceira camada oculta, consegue-se detectar partes inteiras de objetos específicos, ao procurar por específicas coleções de contornos e bordas. No final, a descrição da imagem em termos das partes dos objetos contidos pode ser usada para reconhcer objetos inteiros presentes na imagem \cite{Bengio-et-al-2015-Book}.
 
 
 A \autoref{fig:sentidoadm} mostra que o aprendizado de máquina se resume em otimizar pesos para fazer uma ótima predição final. E para isso, é necessário dois itens: Descrever os dados através de \textit{features} de modo que o computador consiga entender; Aplicar um algoritmo de aprendizagem. Para o primeiro item, é necessário conhecimento do domínio específico, o que acaba gerando o chamado \textit{engenharia de features}, que ultimamente não é bem visto pela comunidade de \ac{pln}. O segundo item consiste em otimizar os pesos de acordo com as \textit{features}, e qualquer bom algoritmo de minimização da função de custo pode ser utilizado.
@@ -833,7 +833,7 @@ A \autoref{fig:sentidoadm} mostra que o aprendizado de máquina se resume em oti
 \includegraphics[width=0.75\textwidth]{img/sentidoadm}
 \end{figure}
 
-A aprendizagem profunda tenta automaticamente aprender boas \textit{features} ou representações. Na \autoref{sec:representacaodaspalavras} foi mostrado o conceito de \textit{word embeddings} ou vetor de \textit{features}, na verdade esse conceito está fortemente associado ao aprendizado profundo, onde tenta-se aprender múltiplos níveis da representação. Especificamente, é um tipo de aprendizado de máquina, uma técnica que permite sistemas computacionais à melhorarem com experiência e dados \cite{bengio2015deep}.
+A aprendizagem profunda tenta automaticamente aprender boas \textit{features} ou representações. Na \autoref{sec:representacaodaspalavras} foi mostrado o conceito de \textit{word embeddings} ou vetor de \textit{features}, na verdade esse conceito está fortemente associado ao aprendizado profundo, onde tenta-se aprender múltiplos níveis da representação. Especificamente, é um tipo de aprendizado de máquina, uma técnica que permite sistemas computacionais à melhorarem com experiência e dados \cite{Bengio-et-al-2015-Book}.
 
 O modelo dominante em aprendizado profundo é redes neurais. Nesse modelo, as \textit{features} são aprendidas rapidamente e automaticamente, adaptando-se muito bem as tarefas de \ac{pln}. Com isso, é possível aprender representações das informações linguísticas de modo não supervisionado (a partir do texto fonte) e também de modo supervisionado (usando classes específicas). Ela começou a ser usada recentemente devido a criação de novos modelos, algoritmos e ideias, e também devido ao aumento do desempenho computacional \cite{deeplearningfornlp}.
 
@@ -841,7 +841,7 @@ O modelo dominante em aprendizado profundo é redes neurais. Nesse modelo, as \t
 \centering
 \caption{Tamanho das redes neurais ao longo dos anos} \label{fig:aumentorntam}
 \includegraphics[width=0.75\textwidth]{img/aumentorntam.pdf}
-\legend{Adaptade de: \citeonline{bengio2015deep}}
+\legend{Adaptade de: \citeonline{Bengio-et-al-2015-Book}}
 \end{figure}
 
 Como o processo de criação automatizada de \textit{features} acaba gerando muitos vetores de representações, temos que criar um modelo capaz de trabalhar com essas informações com o objetivo de aprender. Por isso, geralmente se trabalha com redes neurais com múltiplas camadas. A \autoref{fig:aumentorntam} demonstra o aumento do tamanhos das redes neurais de acordo com o tempo. 
