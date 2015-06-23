@@ -25,7 +25,7 @@ O aprendizado supervisionado permite dividir os problemas em duas categorias dis
 
 \begin{itemize}
 	\item \textbf{Regressão}: Tenta-se prever resultados com uma saída contínua, significando que deseja-se mapear variáveis de entrada em alguma função contínua. A \autoref{fig:demregressao} demonstra esse processo. Nessa demonstração, os círculos em vermelho são dados de exemplo, já a reta azul representa a predição feita pela regressão.
-	\item \textbf{Classificação}:  Tenta-se prever resultados em uma saída discreta, ou seja, deseja0se mapear variáveis de entrada em categoriais discretas. A \autoref{fig:demclassificacao} demonstra esse processo. Essa demonstração tem duas classes diferentes, as representadas pelos círculos amarelos e pelas cruzes vermelhas, já o contorno em verde representa o resultado da classificação sobre esses dados de exemplo.
+	\item \textbf{Classificação}:  Tenta-se prever resultados em uma saída discreta, ou seja, deseja-se mapear variáveis de entrada em categoriais discretas. A \autoref{fig:demclassificacao} demonstra esse processo. Essa demonstração tem duas classes diferentes, as representadas pelos círculos amarelos e pelas cruzes vermelhas, já o contorno em verde representa o resultado da classificação sobre esses dados de exemplo.
 \end{itemize}
 
 
@@ -61,7 +61,7 @@ A equação \ref{eq:binaryclassification} está tratando apenas duas classes. Se
 A fim de simplificar o uso das variáveis, faremos o uso de uma notação que é normalmente utilizada em textos de aprendizado de máquina, ela pode ser vista na \autoref{tab:classificacaonomenclatura}.
 
 \begin{table}[!htb]
-\caption{Nomenclaturas} \label{tab:classificacaonomenclatura}
+\caption{Notação utilizada para classificação} \label{tab:classificacaonomenclatura}
 \begin{center}
 \begin{tabular}{m{2cm}m{14.0cm}}
   \toprule
@@ -76,7 +76,6 @@ A fim de simplificar o uso das variáveis, faremos o uso de uma notação que é
   $\theta$ & parâmetros a serem aprendidos \\
   \bottomrule
 \end{tabular}
-\legend{Notação utilizada para classificação}
 \end{center}
 
 \end{table}
@@ -88,7 +87,7 @@ A fim de simplificar o uso das variáveis, faremos o uso de uma notação que é
 
 \subsection{Função de hipótese}
 
-A função de hipótese descreve a confiança dos dados de entrada para os dados de saída, para isso é atribuido valores para os parâmetros $\theta$s. Essa relação está definida na \autoref{eq:funcaodehipotese}. Observe que ela tem apenas dois parâmetros. Na realidade uma hipótese pode ter vários parâmetros relacionados com os dados de entrada \textit{X}, se tiver \textit{n} dados de entrada, então haverá \textit{n+1} parâmetros. A forma geral da função de hipótese está mostrada na \autoref{eq:funcaodehipotesegeral}.
+A função de hipótese descreve a confiança dos dados de entrada para os dados de saída, para isso é atribuído valores para os parâmetros thetas ($\theta$s). Essa relação está definida na \autoref{eq:funcaodehipotese}. Observe que ela tem apenas dois parâmetros. Na realidade uma hipótese pode ter vários parâmetros relacionados com os dados de entrada \textit{X}, se tiver \textit{n} dados de entrada, então haverá \textit{n+1} parâmetros. A forma geral da função de hipótese está mostrada na \autoref{eq:funcaodehipotesegeral}.
 
 \begin{align}
 h_{\theta}(x) = &\ \theta_0 + \theta_1 x \label{eq:funcaodehipotese} \\
@@ -189,7 +188,7 @@ Onde,
 
 
 \begin{align}
- Custo(h_{\theta}(x^{(i)}, y^{(i)}) = \left\{
+ Custo(h_{\theta}(x^{(i)}, y^{(i)})) = \left\{
   \begin{array}{l l} 
     -log(h_{\theta}(x)) & \quad \text{se } y=1 \\
     -log(1 - h_{\theta}(x)) & \quad \text{se } y=0 \label{eq:funcaocusto}
@@ -215,13 +214,14 @@ A \autoref{eq:funcaocusto} captura a intuição de que se $h_\theta(x) = 0$, mas
 		log ticks with fixed point,
 		ymin=0,ymax=2,xmin=0,xmax=1,domain=0:1,
 		log basis y = 10,
+        ylabel=$custo$,
       	legend style={draw=none},
       	samples=200,
     ]
     \addplot[blue] { - ln(x)/ln(10)};
     \addplot[orange] { - ln(1 - x)/ln(10)};
-    \addlegendentry{$-log(h_{\theta}(x))$}
-    \addlegendentry{$-log(1 - h_{\theta}(x))$}
+    \addlegendentry{y = 1}
+    \addlegendentry{y = 0}
   \end{axis}
   \end{tikzpicture}
   \end{center}
@@ -237,7 +237,7 @@ Podemos simplificar a \autoref{eq:funcaocusto} com dois casos condicionais em ap
 Custo(h_{\theta}(x), y) = -ylog(h_{\theta}(x)) - (1-y)log(1 - h_{\theta}(x))
 \end{equation}
 
-Nota-se que quando \textit{y} é igual a 1, o segundo termo será 0 e não afetará o resultado. E quando \textit{y} é igual a 0, o primeiro termo será 0 e não afetara o resultado. Aplicando a \autoref{eq:funcaodecustosimplificada} na função de custo da equação \autoref{eq:funcaodecusto}, podemos reescrevê-la como a equação \autoref{eq:funcaodecustofinal} ou na versão vetorizada da \autoref{eq:funcaodecustovet}.
+Nota-se que quando \textit{y} é igual a 1, o segundo termo será 0 e não afetará o resultado. E quando \textit{y} é igual a 0, o primeiro termo será 0 e não afetará o resultado. Aplicando a \autoref{eq:funcaodecustosimplificada} na função de custo da equação \autoref{eq:funcaodecusto}, podemos reescrevê-la como a equação \autoref{eq:funcaodecustofinal} ou na versão vetorizada da \autoref{eq:funcaodecustovet}.
 
 \begin{equation}
 \label{eq:funcaodecustofinal}
@@ -292,7 +292,7 @@ Ao trabalhar sobre a derivada parcial da função de custo, podemos chegar na \a
 \quad \theta := \theta - \frac{\alpha}{m}X^T(g(X\theta) - Y) \label{eq:gradientefinalvet}
 \end{equation}
 
-Na \autoref{fig:funcgraddesc} é possível visualizar esse funcionamento sobre os parâmetros. Observe que nesse caso o algoritmo consegue convergir para o mínimo global, porém em alguns casos (dependendo de nossa taxa de aprendizagem $ \alpha $) pode-se convergir para um mínimo local como mostrado na \autoref{fig:funcgraddescnot}. Basicamente se $\alpha$ for um valor muito alto, os passos para o mínimal ótimo serão grandes e portanto o risco de divergência é maior, caso seja muito baixo, os passos para o mínimal ótimo serão pequenos e portanto vai demorar muito para convergir. Em \cite{machinelearningcoursera}, é dito para testar manualmente esse valor, começando com 0,001 e subindo multiplicando por 10 esse valor até atingir uma divergência no resultado. Sendo assim possível analisar o melhor valor da taxa de aprendizagem e selecioná-la para o treinamento definitivo.
+Na \autoref{fig:funcgraddesc} é possível visualizar esse funcionamento sobre os parâmetros. Observe que nesse caso o algoritmo consegue convergir para o mínimo global, porém em alguns casos (dependendo de nossa taxa de aprendizagem $ \alpha $) pode-se convergir para um mínimo local como mostrado na \autoref{fig:funcgraddescnot}. Basicamente se $\alpha$ for um valor muito alto, os passos para o mínimal ótimo serão grandes e portanto o risco de divergência será maior, caso seja muito baixo, os passos para o mínimal ótimo serão pequenos e portanto irá demorar muito para convergir. \citeonline{machinelearningcoursera} diz para testar manualmente esse valor, começando com 0,001 e ir multiplicando por 10 esse valor até atingir uma divergência no resultado. Sendo assim possível analisar o melhor valor da taxa de aprendizagem e selecioná-la para o treinamento definitivo.
 
 \begin{figure}
   \caption{Funcionamento do Gradiente Descendente}
@@ -309,12 +309,12 @@ Na \autoref{fig:funcgraddesc} é possível visualizar esse funcionamento sobre o
   \legend{Fonte: \citeonline{machinelearningcoursera}}
 \end{figure}
 
-O Gradiente Descendente é apenas um dos vários algoritmos que existem para minimizar a função de custo. De acordo com \cite{machinelearningcoursera}, há alternativas mais sofisticadas como o Gradiente Conjugado, BFGS e L-BFGS, onde além de serem mais rápidos que o Gradiente Descendente, eles não precisam selecionar manualmente o valor de $\alpha$. Mas, também é sugerido que não devemos tentar codificar esses algoritmos, visto que são mais complexos e requerem um bom conhecimento de cálculo numérico.
+O Gradiente Descendente é apenas um dos vários algoritmos que existem para minimizar a função de custo. De acordo com \citeonline{machinelearningcoursera}, há alternativas mais sofisticadas como o Gradiente Conjugado, Broyden–Fletcher–Goldfarb–Shanno (BFGS) e Limited-memory-BFGS (L-BFGS), onde além de serem mais rápidos que o Gradiente Descendente, não é preciso selecionar manualmente o valor de $\alpha$. Mas, também é sugerido que não devemos tentar codificar esses algoritmos, visto que são mais complexos e requerem um bom conhecimento de cálculo numérico, onde ao invés podemos usar bibliotecas otimizadas que implementam esses algoritmos.
 
 
 \subsection{Classificação multiclasse}
 
-O \ac{pos} Tagging é um problema de classificação multiclasse, onde deve-se etiquetar uma palavra em uma de várias categorias gramaticais possíveis. É possível fazer isso ao expandir nossa definição para que a saída seja $y = \{0, 1, ..., n\}$. Nesse caso, é dividido o problema em \textit{n + 1} problemas de classificação binária e em cada um será feito a predizagem da probabilidade de que $y$ é membro de uma dessas classes.
+O \ac{pos} Tagging é um problema de classificação multiclasse, onde deve-se etiquetar uma palavra em uma de várias categorias gramaticais possíveis. É possível fazer isso ao expandir nossa definição para que a saída seja $y = \{0, 1, ..., n\}$. Nesse caso, é dividido o problema em \textit{n + 1} problemas de classificação binária e em cada um será feito a prdição da probabilidade de que $y$ é membro de uma dessas classes.
 \begin{align}
 h_{\theta}^{(0)}(X) =&  P(y=0 | X ; \theta) \nonumber \\
 h_{\theta}^{(1)}(X) =&  P(y=1 | X ; \theta) \nonumber \\
@@ -367,7 +367,7 @@ Segundo \cite{machinelearningcoursera}, há duas opções principais para resolv
 		\end{alineas}
 \end{alineas}
 
-Em geral, regularização funciona bem quando há bastante features levemente úteis. Quando há \textit{overfitting} da função de hipótese, é possível reduzir a influência de alguns termos da função aumentando os seus custos. Por exemplo, caso quiséssemos eliminar a influência de $\theta_3x^3$ e $\theta_4x^4$ da \autoref{eq:funcaodehipotesereg}, poderíamos mudar a forma da função de custo. Com isso, a função de hipótese não é alterada e as \textit{features} não são elimidas, como mostrado na \autoref{eq:funcaodecustoreg}.
+Em geral, regularização funciona bem quando há bastante features levemente úteis. Quando há \textit{overfitting} da função de hipótese, é possível reduzir a influência de alguns termos da função aumentando os seus custos. Por exemplo, caso quiséssemos eliminar a influência de $\theta_3x^3$ e $\theta_4x^4$ da \autoref{eq:funcaodehipotesereg}, poderíamos mudar a forma da função de custo. Com isso, a função de hipótese não é alterada e as \textit{features} não são eliminadas, como mostrado na \autoref{eq:funcaodecustoreg}.
 
 \begin{equation} \label{eq:funcaodehipotesereg}
 h_{\theta}(x) = \theta_0 + \theta_1 x^1 + \theta_2 x^2 + \theta_3 x^3 + \theta_4 x^4
@@ -405,9 +405,9 @@ Com isso a regressão logística pode ser aplicada normalmente, pois a regulariz
 
 Córpus são uma coleção de textos colocados como um só, eles são os exemplos de entrada para nosso treinamento. A qualidade e o tamanho desses córpus são importantes para que o etiquetador possa generalizar sentenças ainda não vistas. Eles contém também um conjunto de classes gramaticais associadas a cada palavra.
 
-Esses conjuntos podem se diferenciar na sua granularidade, como por exemplo, podem ter diferentes classes gramaticais para nomes no plural e no singular, ou agrupar eles em uma única classe \cite{fonseca2015evaluating}. No inglês, há vários conjunto de classes gramaticais de qualidade que são amplamento utilizados, são o Penn Treebank tagset \cite{penntreebank}, CLAWS5 e CLAWS7.
+Esses conjuntos podem se diferenciar na sua granularidade, como por exemplo, podem ter diferentes classes gramaticais para nomes no plural e no singular, ou agrupar eles em uma única classe \cite{fonseca2015evaluating}. No inglês, há vários conjuntos de classes gramaticais de qualidade que são amplamento utilizados, são o Penn Treebank tagset \cite{penntreebank}, CLAWS5 e CLAWS7.
 
-Já no português, os córpus estão evoluindo com o tempo, embora alguns erros são encontrados neles \cite{fonseca2013mac}, eles ainda são a melhor opção devido a seu tamanho e qualidade. Os principais e mais utilizados para essa tarefa são o Mac-Morpho \cite{aluisio2003account} com cerca de um milhão de palavras, que retrata artigos publicados na Folha de São Paulo em 1994. O Tycho Brahe \cite{temponi2004corpus} que também tem cerca de um milhão de palavras e retrata assuntos históricos de 66 textos diferentes. Temos também o Bosque \cite{afonso2002floresta}, que contém cerca de 185 mil palavras. Além desses, \cite{fonseca2015evaluating} apresenta uma versão revisada do Mac-Morpho, com classes gramaticais novas e junção de outras. Dados referentes a cada \textit{córpus} podem ser encontrados na \autoref{tab:dadoscorpus}.
+Já no português, os córpus estão evoluindo com o tempo, embora alguns erros são encontrados neles \cite{fonseca2013mac}, eles ainda são a melhor opção devido a seu tamanho e qualidade. Os principais e mais utilizados para essa tarefa são o Mac-Morpho \cite{aluisio2003account} com cerca de um milhão de palavras, que retrata artigos publicados na Folha de São Paulo em 1994. O Tycho Brahe \cite{temponi2004corpus} que também tem cerca de um milhão de palavras e retrata assuntos históricos de 66 textos diferentes. Há também o Bosque \cite{afonso2002floresta}, que contém cerca de 185 mil palavras. Além desses, \cite{fonseca2015evaluating} apresenta uma versão revisada do Mac-Morpho, com classes gramaticais novas e junção de outras. Dados referentes a cada \textit{córpus} podem ser encontrados na \autoref{tab:dadoscorpus}.
 
 \begin{table}[!htb]
 \footnotesize
@@ -425,7 +425,7 @@ Já no português, os córpus estão evoluindo com o tempo, embora alguns erros 
 \end{tabular}
 \end{table}
 
-Infelizmente esses córpus não podem ser combinados em um só, já que eles se diferenciam no conjunto de classes gramaticais e também no seu uso associado. Uma possível alternativa para essa combinação, seria o uso de uma aprendizagem não supervisionada, aplicando técnicas de clusterização.
+Infelizmente esses córpus não podem ser combinados em um só, já que eles se diferenciam no conjunto de classes gramaticais e também no seu uso associado. Uma possível alternativa para essa combinação seria o uso de uma aprendizagem não supervisionada, aplicando técnicas de clusterização.
 
 A aprendizagem baseada em córpus tem se mostrado uma estratégia atrativa, já que pode ser usado recursos criados com boa eficiência. Devido a isso, nesse trabalho vamos utilizar três córpus: o Mac-Morpho original; Mac-Morpho revisado e o Tycho Brahe. O conjunto de etiquetas para esses córpus podem ser encontrados, respectivamente, em \cite{aluisio2003account}, \cite{fonseca2015evaluating} e \cite{temponi2004corpus}.
 
@@ -435,18 +435,15 @@ A aprendizagem baseada em córpus tem se mostrado uma estratégia atrativa, já 
 
 Palavras \footnote{Uma palavra pode ser qualquer conjunto de caracteres, inclusive pontuações, números, etc.} podem ser representadas de várias maneiras em um modelo de aprendizagem, podendo ser até mesmo feito o uso real da palavra como uma \textit{feature}.
 
-No entanto, a melhor abordagem e a mais indicada atualmente é a utilização de \textit{word embeddings}, elas são representação de palavras como vetores reais valorados em um espaço multidimensional \cite{turian2010word}. Elas podem ser geradas de maneiras diferentes dependendo da técnica utilizada, clássicas abordagens baseiam-se na frequência e co-ocorrência das palavras. Mas normalmente o processo geração é feito através de redes neurais, onde é possível capturar informações sintáticas e semânticas sobre as palavras. 
+No entanto, a melhor abordagem e a mais indicada atualmente é a utilização de \textit{word embeddings}, elas são representação de palavras como vetores reais valorados em um espaço multidimensional \cite{turian2010word}. Elas podem ser geradas de maneiras diferentes dependendo da técnica utilizada, clássicas abordagens baseiam-se na frequência e co-ocorrência das palavras profundas. Mas ultimamente o processo de geração tem sido feito através de redes neurais, onde é possível capturar informações sintáticas e semânticas sobre as palavras \cite{collobert2011natural}.
 
 \textit{Word embeddings} conseguem mapear palavras em um espaço relativamente pequeno (usando algumas centenas de dimensões ou até menos) e capturam similiaridades entre as palavras (o tipo de similaridade varia com o método usado para gerá-las) de acordo com sua distância euclidiana, \textit{cosine}, Jaccard, etc. Quando falamos que elas são similares, significa que elas tendem a serem usadas no mesmo contexto e usualmente pertencem a mesma classe gramatical. Além disso, palavras não vistas nos dados de treinamento não são completamente desconhecidas, pois elas tem uma representação vetorial. Por isso, espera-se que o impacto de palavras \ac{fdv} seja menor \cite{fonseca2015evaluating}.
 
 As \textit{word embeddings} podem então ser consideradas como novas \textit{features} obtidas a partir das originais. Essa técnica tem interessado cada vez mais pesquisadores na área de \ac{pln}, e com isso novos processos de geração de \textit{word embeddings} tem surgido.
 
-\cite{collobert2011natural} usa uma modelo de rede neural (
-\ac{nlm}, do inglês) para inicializar suas representações de palavras, com isso evita-se a tarefa de \textit{engenharia de features}. Esse modelo é baseado na extração dos parâmetros aprendidos em uma rede neural treinada por \textit{backpropagation}, onde apos o treinamento, será gearada uma tabela de busca com a palavra original com chave e o vetor de \textit{features} como valor. Além disso, é mostrado a eficiência desse método em aplicações de análise sintática e semântica.
+\citeonline{collobert2011natural} usa um modelo de rede neural (\ac{nlm}, do inglês) para inicializar suas representações de palavras, com isso evita-se a tarefa de \textit{engenharia de features}. Esse modelo é baseado na extração dos parâmetros aprendidos em uma rede neural treinada por \textit{backpropagation}, onde após o treinamento, é gerada uma tabela de busca com a palavra original como chave e o vetor de \textit{features} como valor. Além disso, é mostrado a eficiência desse método em aplicações de análise sintática e semântica.
 
-O número de dimensões dos vetores podem variar. Em geral, quanto mais dimensões há, melhores representações podem ser alcançadas, mas se a dimensão for muito grande, o processamento pode ser demorado.
-
-\cite{collobert2011natural} ainda nos mostra como extender a ideia de representação vetorial para incorporar \textit{features} discretas. Um exemplo disse é a presença de capitalização, que traz informações importantes da palavra. Esse processo pode ser feito ao criar vetores correspondentes a \textit{feature} criada. A \autoref{fig:exemplofeaturevectors} ilustra esse processo.
+\citeonline{collobert2011natural} ainda nos mostra como extender a ideia de representação vetorial para incorporar \textit{features} discretas. Um exemplo disso é a presença de capitalização, que traz informações importantes da palavra. Esse processo pode ser feito ao criar vetores correspondentes a \textit{feature} criada. A \autoref{fig:exemplofeaturevectors} ilustra esse processo.
 
 \begin{figure}[htb]
   \caption{Exemplo de vetores de \textit{features} de cinco dimensões representando palavras} \label{fig:exemplofeaturevectors}
@@ -457,14 +454,16 @@ O número de dimensões dos vetores podem variar. Em geral, quanto mais dimensõ
 
 Outro método utilizado para a criação dos vetores é o \ac{hal} \cite{lund1996producing}. Ele é baseado na contagem de ocorrência de palavras próximas umas das outras para então obter uma grande matriz de contagem. Após finalizar a contagem, é analisada a distância euclidiana contabilizada entre as palavras do vocabulário e uma palavra alvo. Essas distâncias são então ordenadas, e os vizinhos com menores distâncias são examinados.
 
-Além dessas, outra estratégia para gerar vetores é a modelação \ac{sg}, que tem como objetivo minimizar a complexidade computacional na geração das \textit{word embeddings}. Essa estratégia consiste em prever palavras próximas de uma dada palavra. Isso é feito usando uma palavra como entrada para o um classificador de complexidade logarítmica com uma camada de projeção contínua. A previsão é feita com um conjunto de palavras predecessoras e sucessoras, porém quando maior for esse conjunto, maior será a complexidade computacional \cite{mikolov2013efficient}. Já que o classificador não tem uma camada oculta na sua arquitetura, ele é consideravelmente mais rápido que um modelo de rede neural. Essa estratégia é utilizada pela ferramenta \textit{word2vec}, que contém a contribuição do próprio \citeonline{mikolov2013efficient}.
+Além dessas, outra estratégia para gerar vetores é a modelação \ac{sg}, que tem como objetivo minimizar a complexidade computacional na geração das \textit{word embeddings}. Essa estratégia consiste em prever palavras próximas de uma dada palavra. Isso é feito usando uma palavra como entrada para o um classificador de complexidade logarítmica com uma camada de projeção contínua. A previsão é feita com um conjunto de palavras predecessoras e sucessoras, porém quanto maior for esse conjunto, maior será a complexidade computacional \cite{mikolov2013efficient}. Já que o classificador não tem uma camada oculta na sua arquitetura, ele é consideravelmente mais rápido que um modelo de rede neural. Essa estratégia é utilizada pela ferramenta \textit{word2vec}, que contém a contribuição do próprio \citeonline{mikolov2013efficient}.
 
-A estratégia mais recente e indicada por \citeonline{deeplearningfornlp} é a utilização de \ac{glove} idealizados em \cite{luo2015learning}. Essa estratégia consiste em modelar as palavras usando representações compartilhadas entre as palavras alvo e seu contexto. Essa estratégia é atualmente o estado da arte para a representação de palavras em vetores de \textit{features} \cite{pennington2014glove}.
+A estratégia mais recente e indicada por \citeonline{deeplearningfornlp} é a utilização de \ac{glove} para representação de palavras idealizados em \cite{pennington2014glove}. Essa estratégia consiste em modelar as palavras usando representações compartilhadas entre as palavras alvo e seu contexto. Essa estratégia é atualmente o estado da arte para a representação de palavras em vetores de \textit{features}.
 
 Portanto, para a criação de um vetor de \textit{features}, temos a transformação \textit{W} para uma palavra \textit{word}:
 \begin{equation}
 W:word \to \mathbb{R}^n
 \end{equation}
+
+O número de dimensões $n$ dos vetores podem variar. Em geral, quanto mais dimensões há, melhores representações podem ser alcançadas, mas se a dimensão for muito grande, o processamento pode ser demorado.
 
 Como já mencionado, a grande vantagem em se utilizar \textit{word embeddings} é o fato dessa representação conseguir capturar informações sintáticas e semânticas das palavras. Isso pode ser visualizado através do t-SNE \cite{van2008visualizing}, uma técnica sofisticada para visualizar dados em altas dimensões.
 
@@ -492,13 +491,13 @@ Na \autoref{fig:palavrassimilares} temos mais alguns exemplos desse conceito, co
 
 \section{Redes neurais}\label{sec:redesneurais}
 
-Redes neurais tem como origem algoritmos que tentam imitar o cérebro humano. Elas eram amplamente utilizdas na década de 80 e no começo da década de 90, porém sua popularidade diminuiu no fim dessa mesma década. Resurgiram recentemente e são o estado-da-arte para varias aplicações de inteligência artificial \cite{machinelearningcoursera}.
+Redes neurais tem como origem algoritmos que tentam imitar o cérebro humano. Elas eram amplamente utilizdas na década de 80 e no começo da década de 90, porém sua popularidade diminuiu no fim dessa mesma década. Ressurgiram recentemente e são o estado-da-arte para várias aplicações de inteligência artificial \cite{machinelearningcoursera}.
 
 \subsection{Neurocomputação}
 
 Há evidências de que o cérebro usa apenas um ``algoritmo de aprendizagem'' para todas diferentes funções. Cientistas já tentaram cortar (no cérebro de animais) a conexão entre as orelhas e o córtex auditivo e reconectar com o nervo óptico, o resultado foi que o córtex auditivo literalmente aprendeu a ver. 
 
-Na \autoref{fig:vendocomalingua} os cientistas conseguiram fazer com que o ser humano possa enxergar através de sensores da língua conectado a uma câmera fotográfica. Já na \autoref{fig:terceiroolho}, foi implantando um terceiro olho em um sapo e após um tempo comprovou-se que o sapo definitivamente aprender a ver com aquele olho.
+Na \autoref{fig:vendocomalingua} os cientistas conseguiram fazer com que o ser humano possa enxergar através de sensores da língua conectado a uma câmera fotográfica. Já na \autoref{fig:terceiroolho}, foi implantado um terceiro olho em um sapo e após um tempo comprovou-se que o sapo definitivamente aprendeu a ver com aquele olho.
 
 
 \begin{figure}
@@ -549,7 +548,7 @@ A diferença é que em redes neurais ela é usualmente conhecida como função d
 
 A primeira camada é chamada de ``camada de entrada'' e a camada final de ``camada de saída'', que nos dá o valor final computado sobre a hipótese. É possível ter camadas intermediárias entre as camadas de entrada e saída chamadas de ``camadas ocultas''. 
 
-Nomeamos os nodos das camadas intermediarias de $a_0^2, a_1^2, ..., a_n^2$ e chamamo-os de unidades de ativação. A tabela \autoref{tab:nomenclaturaredesneuras} reúne as notações geralmente usadas no contexto de redes neurais.
+Nomeamos os nodos das camadas intermediarias de $a_0^{(j)}, a_1^(j), ..., a_n^(j)$ e chamamo-os de unidades de ativação. A tabela \autoref{tab:nomenclaturaredesneuras} reúne as notações geralmente usadas no contexto de redes neurais.
 
 \begin{table}[!htb]
 \caption{Notação utilizada para representação redes neurais} \label{tab:nomenclaturaredesneuras}
@@ -619,13 +618,13 @@ Levando em consideração que $x$ é um vetor coluna com dimensão $(n+1)$, pode
 z^{(j)} = \theta^{(j-1)}x \nonumber
 \end{equation}
 
-Como sabemos que $x$ é nosso vetor de entrada ($x = a^{(1)}$), podemos reescrever a equação como $z^{(j)} = \theta^{(j-1)}a^{(1)}$. Lembrando da regra \ref{eq:regradimensoes}, é possível analisar que a matriz  $\theta^{(j-1)}$ tem dimensões $S_j \times (n+1)$, e portanto a multiplicação dessa matriz com o vetor $x$ com altura $(n+1)$, irá resultar no vetor $z$ com altura $S_j$. E com isso, podemos obter um vetor de nodos de ativação para a camada $j$ através da \autoref{eq:obternodosativacao}.
+Como sabemos que $x$ é nosso vetor de entrada ($x = a^{(1)}$), podemos reescrever a equação como $z^{(j)} = \theta^{(j-1)}a^{(1)}$. Lembrando da regra \ref{eq:regradimensoes}, é possível analisar que a matriz  $\theta^{(j-1)}$ tem dimensões $S_j \times (n+1)$, e portanto a multiplicação dessa matriz com o vetor $x$ com altura $(n+1)$, irá resultar no vetor $z$ com altura $S_j$. Portanto, podemos obter um vetor de nodos de ativação para a camada $j$ através da \autoref{eq:obternodosativacao}.
 
 \begin{equation} \label{eq:obternodosativacao}
 a^{(j)} = g(z^{(j)}) 
 \end{equation}
 
-Onde a função $g$ pode ser aplicada elementarmente no vetor $z^{(j)}$. Com isso, é adicionado a unidade viés para a camada $j$ após o término da computação de $a^{(j)}$. Onde essa unidade será o elemento $a_0^{(j)}$, que é por definição igual a 1.
+Onde a função $g$ pode ser aplicada elementarmente no vetor $z^{(j)}$. Após o término da computação de $a^{(j)}$, é adicionado a unidade viés para a camada $j$. Onde essa unidade será o elemento $a_0^{(j)}$, que é por definição igual a 1.
 
 Para computar as hipóteses finais, é necessário primeiro computar os outros vetores $z$ das próximas camadas. Podemos fazer isso de acordo com a \autoref{eq:proximovetorz}.
 
@@ -742,8 +741,8 @@ Isso porém ignora a regularização, que é feita depois.
 
 Uma observação importante é que $\delta^{(l+1)}$ é um vetor com $S_{l+1}$ elementos, e $a^{(l)}$ é um vetor com $S_l$ elementos. Portanto a multiplicação deles vai gerar uma matriz com dimensão $S_{l+1} \times S_l$, que é a mesma dimensão que $\theta^{(l)}$. Ou seja, o processo irá produzir um termo gradiente para todos elementos em $\theta^{(l)}$. O algoritmo \autoref{alg:backpropalgorithm} junta todas essas equações.
 
-\begin{algorithm}
-\caption{Algoritmo de Backpropagation} \label{alg:backpropalgorithm}
+\begin{algorithm} \label{alg:backpropalgorithm}
+\caption{Algoritmo de Backpropagation} 
 \begin{algorithmic}
 \Procedure{Backpropagation}{}
 	\State dado um conjunto de treinamento $\{(x^{(1)}, y^{(1)}), \ldots, (x^{(m)}, y^{(m)}) \}$
@@ -793,37 +792,59 @@ Para treinar a rede neural, é possível seguir os seguintes passos:
 \item Implementar o \textit{Forward-propagation} para obter $h_\theta(x^{(i)})$;
 \item Implementar a função de custo;
 \item Implementar o \textit{Backpropagation} para computar as derivadas parciais;
-\item Usar o Gradiente Descendente ou outra função de otimização para minimizar a função de custo com os pesos $\theta$.
+\item Usar o Gradiente Descendente ou outro algoritmo de otimização para minimizar a função de custo com os pesos $\theta$.
 
 \end{enumerate}
 
 
 \section{Aprendizagem profunda}
 
-A aprendizagem profunda é uma ramificação da aprendizagem de máquina baseado em um conjunto de algoritmos que procuram modelar abstrações de alto nível usando modelos arquitetoriais, com estruturas complexas ou outrora, compostas de múltiplas transformações não lineares \cite{deng2014deep}.
+A aprendizagem profunda é uma ramificação da aprendizagem de máquina, que baseia-se num conjunto de algoritmos que procuram modelar abstrações de alto nível usando modelos arquitetoriais, com estruturas complexas, compostas de múltiplas transformações não lineares \cite{deng2014deep}. Suas definições são intrínsecas, pois não há um consenso de quão profundo um modelo neural precisa ser para ser considerado um modelo de aprendizagem profunda. Entretanto, há a certeza de que aprendizagem profunda pode ser seguraramente categorizada como o estudo de modelos que tratam uma grande quantidade de composições de aprendizagem ou conceitos de aprendizagem que não conseguem ser empregados em aprendizado de máquina \cite{bengio2015deep}. 
+
+% A \autoref{fig:differentareas} demonstra a relação entre diferentes disciplinas de inteligência artificial (IA).
+
+% \begin{figure}
+% \centering
+% \caption{Relações entre diferentes disciplinas em IA} \label{fig:differentareas}
+% \includegraphics[width=0.65\textwidth]{img/differentareas}
+% \legend{Fonte: \citeonline{bengio2015deep}}
+% \end{figure}
+
+
+Extrair \textit{features} significantes manualmente é uma tarefa muito difícil, pois pode haver muitas variações nos dados que podem ser identificadas utilizando um nível sofisticado, quase humano, de entendimento. Quando é assim tão difícil de obter uma representação como de resolver o problema principal, a aprendizagem de representação parece não ajudar. 
+
+Aprendizagem profunda resolve esse problema de representação ao introduzir representações que são expressas em termos de representações mais simples. Permitindo o computador a construir conceitos complexos a partir de conceitos simples. A \autoref{fig:aprendendodeep} ilustra um modelo de aprendizagem profunda.
+
+\begin{figure}
+\centering
+\caption{Modelo de aprendizagem profunda} \label{fig:aprendendodeep}
+\includegraphics[width=0.75\textwidth]{img/aprendendodeep.pdf}
+\legend{Adaptade de: \citeonline{bengio2015deep}}
+\end{figure}
+
+Na \autoref{fig:aprendendodeep}, cada pixel da imagem são \textit{features} passadas para a primeia camada oculta, que consegue identificar bordas facilmente, ao comparar o brilho de pixels vizinhos. Ao passar a descrição dessas bordas para a segunda camada oculta, ela consegue facilmente procurar por contornos, que são reconhecidos como uma coleção de bordas. Ao chegar na terceira camada oculta, consegue-se detectar partes inteiras de objetos específicos, ao procurar por específicas coleções de contornos e bordas. No final, a descrição da imagem em termos das partes dos objetos contidos pode ser usada para reconhcer objetos inteiros presentes na imagem \cite{bengio2015deep}.
+
+
+A \autoref{fig:sentidoadm} mostra que o aprendizado de máquina se resume em otimizar pesos para fazer uma ótima predição final. E para isso, é necessário dois itens: Descrever os dados através de \textit{features} de modo que o computador consiga entender; Aplicar um algoritmo de aprendizagem. Para o primeiro item, é necessário conhecimento do domínio específico, o que acaba gerando o chamado \textit{engenharia de features}, que ultimamente não é bem visto pela comunidade de \ac{pln}. O segundo item consiste em otimizar os pesos de acordo com as \textit{features}, e qualquer bom algoritmo de minimização da função de custo pode ser utilizado.
 
 \begin{figure}
 \centering
 \caption{Sentido do aprendizado de máquina} \label{fig:sentidoadm}
-\includegraphics[width=0.65\textwidth]{img/sentidoadm}
+\includegraphics[width=0.75\textwidth]{img/sentidoadm}
 \end{figure}
 
-A \autoref{fig:sentidoadm} mostra que o aprendizado de máquina se resumiu em otimizar pesos para fazer uma ótima predição final. E para isso, é necessário dois itens: Descrever os dados através de \textit{features} de modo que o computador consiga entender; Aplicar um algoritmo de aprendizagem. Para o primeiro item, é necessário conhecimento do domínio específico, o que acaba gerando o chamado \textit{engenharia de features}, que ultimamente não é bem visto pela comunidade de \ac{pln}. O segundo item consiste em otimizar os pesos de acordo com as \textit{features}, e qualquer bom algoritmo de minimização da função de custo pode ser utilizado.
+A aprendizagem profunda tenta automaticamente aprender boas \textit{features} ou representações. Na \autoref{sec:representacaodaspalavras} foi mostrado o conceito de \textit{word embeddings} ou vetor de \textit{features}, na verdade esse conceito está fortemente associado ao aprendizado profundo, onde tenta-se aprender múltiplos níveis da representação. Especificamente, é um tipo de aprendizado de máquina, uma técnica que permite sistemas computacionais à melhorarem com experiência e dados \cite{bengio2015deep}.
 
-Já o a aprendizagem profunda tenta automaticamente aprender boas \textit{features} ou representações. Na \autoref{sec:representacaodaspalavras} foi mostrado o conceito de \textit{word embeddings} ou vetor de \textit{features}, na verdade esse conceito está fortemente associado ao aprendizado profundo, onde tenta-se aprender múltiplos níveis da representação. 
-
-O modelo dominante em aprendizado profundo é redes neurais. Nesse modelo, as \textit{features} são aprendidas rapidamente e automaticamente, adaptando-se muito bem as tarefas de \ac{pln}. Com isso, é possível aprender representações das informações linguisticas de modo não supervisionado (a partir do texto fonte) e também de modo supervisionado (usando classes específicas). Ela começou a ser usada recentemente devido a criação de novos modelos, algoritmos e ideiais, e também devido ao aumento do desempenho computacional \cite{deeplearningfornlp}.
-
-Como o processo de criação automatizada de \textit{features} acaba gerando muitos vetores de representações, temos que criar um modelo capaz de trabalhar com essas informações com o objetivo de aprender. Por isso, geralmente se trabalha com redes neurais com múltiplas camadas, como mostrado na imagem \autoref{fig:deepneuralnetwork}. 
+O modelo dominante em aprendizado profundo é redes neurais. Nesse modelo, as \textit{features} são aprendidas rapidamente e automaticamente, adaptando-se muito bem as tarefas de \ac{pln}. Com isso, é possível aprender representações das informações linguísticas de modo não supervisionado (a partir do texto fonte) e também de modo supervisionado (usando classes específicas). Ela começou a ser usada recentemente devido a criação de novos modelos, algoritmos e ideias, e também devido ao aumento do desempenho computacional \cite{deeplearningfornlp}.
 
 \begin{figure}
 \centering
-\caption{Rede neural com múltiplas camadas} \label{fig:deepneuralnetwork}
-\includegraphics[width=0.75\textwidth]{img/exemplodeepneuralnetwork}
-\legend{Fonte: \citeonline{deeplearningfornlp}}
+\caption{Tamanho das redes neurais ao longo dos anos} \label{fig:aumentorntam}
+\includegraphics[width=0.75\textwidth]{img/aumentorntam.pdf}
+\legend{Adaptade de: \citeonline{bengio2015deep}}
 \end{figure}
 
-O problema dessa abordagem é que o algoritmo de \textit{backpropagation} não funciona muito bem, pois acaba perdendo precisão aritmética nas camadas intermediárias, e quando chega no fim o resultado da hipótese é muito pior do que se tivesse apenas uma arquitetura básica com apenas uma camada oculta. 
+Como o processo de criação automatizada de \textit{features} acaba gerando muitos vetores de representações, temos que criar um modelo capaz de trabalhar com essas informações com o objetivo de aprender. Por isso, geralmente se trabalha com redes neurais com múltiplas camadas. A \autoref{fig:aumentorntam} demonstra o aumento do tamanhos das redes neurais de acordo com o tempo. 
 
 A técnica utilizada ultimamente em \ac{pos} Tagging está ilustrada na \autoref{fig:atualmentepost}. Que consiste em primeiramente obter a representação das palavras em vetores reais com dimensões definidas pelo usuário, e após isso mesclar com \textit{features} de formato das palavras (e.g capitalização), para então jogar esses vetores como entrada numa rede neural. O que muda em cada abordagem geralmente é a questão do treinamento da representação das palavras, as novas \textit{features} criadas e como é organizado o modelo da rede neural.
 
@@ -833,11 +854,3 @@ A técnica utilizada ultimamente em \ac{pos} Tagging está ilustrada na \autoref
 \includegraphics[width=0.75\textwidth]{img/deeplearningfunc}
 \end{figure}
 
-
-\textit{- secao a ser melhorada }
-
-\textit{- incluir de \url{http://www.iro.umontreal.ca/~bengioy/dlbook/} }
-
-\textit{- incluir de \url{http://cs224d.stanford.edu/lecture_notes/LectureNotes1.pdf} }
-
-\textit{- talvez incluir de \url{http://colah.github.io/posts/2014-07-NLP-RNNs-Representations/} (dar mais uma lida para formalizar as ideias) }

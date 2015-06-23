@@ -55,11 +55,11 @@
 \contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Cronograma de atividades}}{77}{chapter.7}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{79}{section*.50}
+\contentsline {chapter}{Refer\^encias}{79}{section*.51}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Ap\^endices}}{83}{section*.51}
+\contentsline {part}{\uppercase {Ap\^endices}}{83}{section*.52}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
@@ -72,7 +72,7 @@
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Anexos}}{89}{section*.52}
+\contentsline {part}{\uppercase {Anexos}}{89}{section*.53}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
@@ -83,4 +83,4 @@
 \contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {LaTex para Principiantes}}{93}{appendix.anexochapback.2}
 \contentsline {section}{\numberline {B.1}Outras Dicas}{94}{section.anexochapback.2.1}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\'Indice}{97}{section*.57}
+\contentsline {chapter}{\'Indice}{97}{section*.58}

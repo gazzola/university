@@ -169,6 +169,15 @@
   Publisher                = {Stanford, Tutorial}
 }
 
+@Article{pennington2014glove,
+  Title                    = {Glove: Global vectors for word representation},
+  Author                   = {Pennington, Jeffrey and Socher, Richard and Manning, Christopher D},
+  Journal                  = {Proceedings of the Empiricial Methods in Natural Language Processing (EMNLP 2014)},
+  Year                     = {2014},
+  Pages                    = {1532--1543},
+  Volume                   = {12}
+}
+
 @Article{roe1992visual,
   Title                    = {Visual projections routed to the auditory pathway in ferrets: receptive fields of visual neurons in primary auditory cortex},
   Author                   = {Roe, Anna W and Pallas, Sarah L and Kwon, Young H and Sur, Mriganka},
