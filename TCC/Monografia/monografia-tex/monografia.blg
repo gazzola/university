@@ -14,7 +14,7 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: bibliografia.bib
 Database file #3: abntex2-modelo-references.bib
-Warning--I didn't find a database entry for "Moro2012"
+Warning--I didn't find a database entry for "temponi2004corpus"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -24,45 +24,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 29 entries,
+You've used 28 entries,
             6711 wiz_defined-function locations,
-            1360 strings with 14517 characters,
-and the built_in function-call counts, 26804 in all, are:
-= -- 2414
-> -- 881
-< -- 195
-+ -- 539
+            1352 strings with 14298 characters,
+and the built_in function-call counts, 27512 in all, are:
+= -- 2570
+> -- 880
+< -- 252
++ -- 600
 - -- 265
-* -- 1909
-:= -- 3505
-add.period$ -- 106
-call.type$ -- 29
-change.case$ -- 308
-chr.to.int$ -- 56
-cite$ -- 28
-duplicate$ -- 1539
-empty$ -- 1793
+* -- 1934
+:= -- 3588
+add.period$ -- 103
+call.type$ -- 28
+change.case$ -- 301
+chr.to.int$ -- 52
+cite$ -- 27
+duplicate$ -- 1682
+empty$ -- 1744
 format.name$ -- 1262
-if$ -- 6208
+if$ -- 6273
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 496
-newline$ -- 136
+missing$ -- 481
+newline$ -- 131
 num.names$ -- 130
-pop$ -- 654
+pop$ -- 644
 preamble$ -- 1
-purify$ -- 117
+purify$ -- 114
 quote$ -- 0
-skip$ -- 1772
+skip$ -- 1929
 stack$ -- 1
-substring$ -- 1086
-swap$ -- 677
-text.length$ -- 33
+substring$ -- 1127
+swap$ -- 717
+text.length$ -- 31
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 11
 warning$ -- 0
-while$ -- 204
+while$ -- 203
 width$ -- 0
-write$ -- 449
+write$ -- 431
 (There was 1 warning)

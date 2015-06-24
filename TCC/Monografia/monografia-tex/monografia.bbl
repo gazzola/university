@@ -16,12 +16,6 @@
   corpus for brazilian portuguese. In:  \emph{Computational Processing of the
   Portuguese Language}. [S.l.]: Springer, 2003. p. 110--117.}
 
-\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2003]{NBR6028:2003}
-\abntrefinfo{ABNT}{ABNT}{2003}
-{ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \emph{{NBR} 6028}: Resumo -
-  apresenta{\c c}{\~a}o.
-Rio de Janeiro, 2003. 2~p.}
-
 \bibitem[Bengio, Goodfellow e Courville 2015]{Bengio-et-al-2015-Book}
 \abntrefinfo{Bengio, Goodfellow e Courville}{BENGIO; GOODFELLOW;
   COURVILLE}{2015}
@@ -153,13 +147,6 @@ Biblioteca Digital de Teses e Disserta{\c{c}}{\~o}es da Universidade Federal de
 {SOCHER, R. \emph{Deep Learning for Natural Language Processing}. 2015.
 Dispon{\'\i}vel em: \url{http://cs224d.stanford.edu/}.}
 
-\bibitem[Temponi 2004]{temponi2004corpus}
-\abntrefinfo{Temponi}{TEMPONI}{2004}
-{TEMPONI, C.~N. O corpus anotado do portugu{\^e}s hist{\'o}rico: um
-  avan{\c{c}}o para as pesquisas em ling{\"u}{\'\i}stica hist{\'o}rica do
-  portugu{\^e}s.
-\emph{Revista Virtual de Estudos da Linguagem: ReVEL}, v.~2, n.~3, p.~1, 2004.}
-
 \bibitem[The Penn Treebank Project (2014). 2014]{penntreebank}
 \abntrefinfo{The\ldots}{THE\ldots}{2014}
 {THE Penn Treebank Project (2014).
@@ -171,6 +158,12 @@ Dispon{\'\i}vel em: \url{http://cs224d.stanford.edu/}.}
   method for semi-supervised learning. In:  ASSOCIATION FOR COMPUTATIONAL
   LINGUISTICS. \emph{Proceedings of the 48th annual meeting of the association
   for computational linguistics}. [S.l.], 2010. p. 384--394.}
+
+\bibitem[UNICAMP 2010]{tychobrahe2010corpus}
+\abntrefinfo{UNICAMP}{UNICAMP}{2010}
+{UNICAMP. \emph{Tycho Brahe Parsed Corpus of Historical Portuguese}. 2010.
+Dispon{\'\i}vel em:
+  \url{http://www.tycho.iel.unicamp.br/~tycho/corpus/en/index.html.}}
 
 \bibitem[Viterbi 1967]{viterbi1967error}
 \abntrefinfo{Viterbi}{VITERBI}{1967}

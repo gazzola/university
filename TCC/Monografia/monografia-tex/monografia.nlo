@@ -1,5 +1,3 @@
-\nomenclatureentry{a$A_i$@[{$A_i$}]\begingroup Área do $i^{esimo}$ componente\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{a$\mathcal{T}$@[{$\mathcal{T}$}]\begingroup Conjunto de trabalhos de TCC\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{a$X$@[{$X$}]\begingroup Dados de entrada ou \textit{features}\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{a$Y$@[{$Y$}]\begingroup Dados de saída\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{a$X_j^{(i)}$@[{$X_j^{(i)}$}]\begingroup O valor da \textit{feature} \textit{j} no i-ésimo exemplo de treinamento\nomeqref {0}|nompageref}{1}

@@ -10,11 +10,7 @@
 		\nompageref{1}
   \item [{$\lambda$}]\begingroup Parâmetro de regularização\nomeqref {0}
 		\nompageref{1}
-  \item [{$\mathcal{T}$}]\begingroup Conjunto de trabalhos de TCC\nomeqref {0}
-		\nompageref{1}
   \item [{$\theta$}]\begingroup Parâmetros a serem aprendidos\nomeqref {0}
-		\nompageref{1}
-  \item [{$A_i$}]\begingroup Área do $i^{esimo}$ componente\nomeqref {0}
 		\nompageref{1}
   \item [{$m$}]\begingroup Número de exemplos de treinamento\nomeqref {0}
 		\nompageref{1}

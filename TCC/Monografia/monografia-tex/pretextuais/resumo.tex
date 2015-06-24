@@ -1,15 +1,9 @@
 \begin{resumo}
- Segundo a \citeonline[3.1-3.2]{NBR6028:2003}, o resumo deve ressaltar o
- objetivo, o método, os resultados e as conclusões do documento. A ordem e a extensão
- destes itens dependem do tipo de resumo (informativo ou indicativo) e do
- tratamento que cada item recebe no documento original. O resumo deve ser
- precedido da referência do documento, com exceção do resumo inserido no
- próprio documento. (\ldots) As palavras-chave devem figurar logo abaixo do
- resumo, antecedidas da expressão Palavras-chave:, separadas entre si por
- ponto e finalizadas também por ponto.
+ 
+Part-of-speech Tagging consiste em classificar uma palavra pertencente a um conjunto de textos em uma classe gramatical através da análise morfossintática. Apesar de muitos métodos já terem sidos propostos para essa tarefa, em Processamento de Linguagem Natural estamos sempre buscando ganhar mais performance, já que Part-of-speech Tagging pode ser aplicada em uma grande variedade de aplicações. Nós estudamos diferentes métodos para gerar representações de palavras \textit{word embeddings} a partir de uma coleção de textos denominadas córpus. Criamos então um modelo baseado em aprendizagem profunda utilizando redes neurais que recebe essas representações como entrada e gerá como saída uma classe gramatical associada. O modelo neural é guiado, onde palavras mais fáceis de serem analisadas são aplicadas primeiro na rede. Sua saída é complementada na entrada da própria palavra classificada. O treinamento é feito sobre três diferente córpus etiquetados para o português brasileiro.
 
  \vspace{\onelineskip}
     
  \noindent
- \textbf{Palavras-chave}: Aprendizado de máquina. Processamento de linguagem natural. Part-of-speech tagging. Redes neurais. Word embeddings.
+ \textbf{Palavras-chave}: Aprendizado de máquina. Aprendizagem profunda. Processamento de linguagem natural. Part-of-speech tagging. Redes neurais. Word embeddings.
 \end{resumo}

@@ -2,11 +2,11 @@
 \chapter{Fundamentos}\label{fundamentos}
 %==============================================================================
 
-Devido aos impasses demonstrados no \autoref{oproblema}, este trabalho é baseado em conceitos de aprendizado de máquina, que dedica-se na elaboraçãode algoritmos e técnicas que permitem um computador a aprender padrões.  
+Devido aos impasses mostrados no \autoref{oproblema}, este trabalho é baseado em conceitos de aprendizado de máquina, que dedica-se na elaboraçãode algoritmos e técnicas que permitem a um computador aprender padrões.  
 
 \section{Aprendizado de máquina}\label{sec:aprendizadodemaquina}
 
-Para realizar a aprendizagem é necessário, a princípio, dados de entrada que servem como exemplo para nosso modelo, com esses dados é possível treinar o modelo para que ele possa então aprender com base nesses exemplos. Depois de realizar o treinamento, é possível generalizar sobre outros dados ainda não testados e gerar uma resposta apropriada como saída. O diagrama da \autoref{fig:passoapasso} abaixo mostra os passos para obter o resultado final.
+Para realizar a aprendizagem é necessário, a princípio, dados de entrada que servem como exemplo para nosso modelo. Com esses dados é possível treinar o modelo para que ele possa então aprender com base nesses exemplos. Depois de realizar o treinamento, é possível generalizar sobre outros dados ainda não testados e gerar uma resposta apropriada como saída. O diagrama da \autoref{fig:passoapasso} abaixo mostra os passos para obter o resultado final.
 
 \begin{figure}[htb]
 	  \caption{Diagrama para resultado final}\label{fig:passoapasso}
@@ -16,16 +16,16 @@ Para realizar a aprendizagem é necessário, a princípio, dados de entrada que 
 \end{figure}
 
 
-O aprendizado de máquina pode ser dividido em duas abordagens: O \textbf{aprendizado supervisionado}, onde é dado um conjunto de dados de entrada e já se sabe como a saída deve parecer, tendo a ideia de que há uma relação entre a entrada e a saída; O \textbf{aprendizado não supervisionado}, que nos permite abordar problemas com pouca ou até nenhuma ideia de como os resultados devem parecer, nesse caso a caixa de exemplos de saída pode não existir.
+O aprendizado de máquina pode ser dividido em duas abordagens: o \textbf{aprendizado supervisionado}, onde é dado um conjunto de dados de entrada e já se sabe como a saída deve parecer, tendo a ideia de que há uma relação entre a entrada e a saída; o \textbf{aprendizado não supervisionado}, que nos permite abordar problemas com pouca ou até nenhuma ideia de como os resultados devem parecer, nesse caso a caixa de exemplos de saída pode não existir.
 
-Neste trabalho a abordagem utilizada vai ser o aprendizado supervisionado, pois já temos uma classe gramatical apropriada para cada palavra em seu contexto.
+Neste trabalho, utilizaremos o aprendizado supervisionado, pois já temos um conjunto de classes gramaticais como saída esperada.
 
 O aprendizado supervisionado permite dividir os problemas em duas categorias distintas:
 
 
 \begin{itemize}
-	\item \textbf{Regressão}: Tenta-se prever resultados com uma saída contínua, significando que deseja-se mapear variáveis de entrada em alguma função contínua. A \autoref{fig:demregressao} demonstra esse processo. Nessa demonstração, os círculos em vermelho são dados de exemplo, já a reta azul representa a predição feita pela regressão.
-	\item \textbf{Classificação}:  Tenta-se prever resultados em uma saída discreta, ou seja, deseja-se mapear variáveis de entrada em categoriais discretas. A \autoref{fig:demclassificacao} demonstra esse processo. Essa demonstração tem duas classes diferentes, as representadas pelos círculos amarelos e pelas cruzes vermelhas, já o contorno em verde representa o resultado da classificação sobre esses dados de exemplo.
+	\item \textbf{Regressão}: Tenta-se prever resultados com uma saída contínua, significando que deseja-se mapear variáveis de entrada em alguma função contínua. A \autoref{fig:demregressao} demonstra esse processo. Os círculos em vermelho são dados de exemplo, já a reta azul representa a predição feita pela regressão.
+	\item \textbf{Classificação}:  Tenta-se prever resultados em uma saída discreta, ou seja, deseja-se mapear variáveis de entrada em categoriais discretas. A \autoref{fig:demclassificacao} demonstra esse processo. Tem duas classes diferentes, as representadas pelos círculos amarelos e pelas cruzes vermelhas, já o contorno em verde representa o resultado da classificação sobre esses dados de exemplo.
 \end{itemize}
 
 
@@ -46,24 +46,24 @@ O aprendizado supervisionado permite dividir os problemas em duas categorias dis
 \end{figure}
 
 
-Logo adiante será explicado os fundamentos de classificação e uma técnica para resolver esse problema chamada de regressão logística \cite{hosmer2004applied}. E em virtude de apresentar conceitos fundamentais há serem aplicados posteriormente nas redes neurais profundas, será falado um pouco mais sobre regressão logística, e também sobre propriedades importantes que serão referenciadas durante todo o trabalho.
+Logo adiante explicaremos os fundamentos de classificação e uma técnica para resolver esse problema chamada de regressão logística \cite{hosmer2004applied}. E em virtude de apresentar conceitos fundamentais a serem aplicados posteriormente nas redes neurais profundas, falaremos um pouco mais sobre regressão logística, e também sobre propriedades importantes que serão referenciadas durante todo o trabalho.
 
 \subsection{Classificação}
 
 Em um problema de classificação, nossa saída \textit{Y} vai ser um vetor com valores sendo apenas zero ou um.
 
-\begin{equation}\label{eq:binaryclassification}
-Y \in \{0, 1\}
+\begin{equation}
+Y \in \{0, 1\} \nonumber
 \end{equation}
 
-A equação \ref{eq:binaryclassification} está tratando apenas duas classes. Sendo assim, esse problema é chamado de classificação binária. Para resolver esse problema, um método que pode ser utilizado é regressão logística.
+A equação acima está tratando apenas duas classes. Sendo assim, esse problema é chamado de classificação binária. Para resolver esse problema, um método que pode ser utilizado é regressão logística.
 
 A fim de simplificar o uso das variáveis, faremos o uso de uma notação que é normalmente utilizada em textos de aprendizado de máquina, ela pode ser vista na \autoref{tab:classificacaonomenclatura}.
 
 \begin{table}[!htb]
 \caption{Notação utilizada para classificação} \label{tab:classificacaonomenclatura}
 \begin{center}
-\begin{tabular}{m{2cm}m{14.0cm}}
+\begin{tabular}{ll}
   \toprule
   $X$ & dados de entrada ou \textit{features} \\
   $Y$ & dados de saída \\
@@ -87,22 +87,22 @@ A fim de simplificar o uso das variáveis, faremos o uso de uma notação que é
 
 \subsection{Função de hipótese}
 
-A função de hipótese descreve a confiança dos dados de entrada para os dados de saída, para isso é atribuído valores para os parâmetros thetas ($\theta$s). Essa relação está definida na \autoref{eq:funcaodehipotese}. Observe que ela tem apenas dois parâmetros. Na realidade uma hipótese pode ter vários parâmetros relacionados com os dados de entrada \textit{X}, se tiver \textit{n} dados de entrada, então haverá \textit{n+1} parâmetros. A forma geral da função de hipótese está mostrada na \autoref{eq:funcaodehipotesegeral}.
+A função de hipótese tem o objetivo de mapear funções aleatórias dentro do intervalo de saída \textit{Y}, para isso é atribuído valores para os parâmetros $\theta$s. Essa relação está definida na \autoref{eq:funcaodehipotese}. Observe que ela tem apenas dois parâmetros. Na realidade uma hipótese pode ter vários parâmetros relacionados com os dados de entrada \textit{X}, se tiver \textit{n} dados de entrada (\textit{features}), então haverá \textit{n+1} parâmetros. A forma geral da função de hipótese está mostrada na \autoref{eq:funcaodehipotesegeral}.
 
 \begin{align}
 h_{\theta}(x) = &\ \theta_0 + \theta_1 x \label{eq:funcaodehipotese} \\
 h_{\theta}(x) = &\ \theta_0 + \theta_1 x_1 + \theta_2 x_2 + ... + \theta_n x_n \label{eq:funcaodehipotesegeral}
 \end{align}
 
-Uma maneira de simplificar a função de hipótese é trabalhar com a definição de multiplicação de matrizes. Então a função de hipótese pode ser representada de uma forma vetorizada, como mostrado na \autoref{eq:funcaodehipotesegeralvet}. Para maiores informações a respeito de matrizes e vetores, consultar o Anexo \ref{anexo:algebralinear}, que traz informações básicas de álgebra linear.
+Uma maneira de simplificar a função de hipótese é trabalhar com a definição de multiplicação de matrizes. Então a função de hipótese pode ser representada de uma forma vetorizada, como mostrado na \autoref{eq:funcaodehipotesegeralvet}. 
 
 \begin{equation}
 h_{\theta}(x) = \big[\theta_0\ \theta_1\ ...\ \theta_n\big] \times \begin{bmatrix} x_0 \\ x_1 \\ \vdots \\ x_n \end{bmatrix}  = \theta^TX \label{eq:funcaodehipotesegeralvet}
 \end{equation}
 
-Para que seja possível fazer operações de matrizes com $\theta$ e $X$, será setado $X_0^{(i)} = 1$ para todos os valores de $i$. Isso faz com que os vetores $\theta$ e $X^{(i)}$ combinem um com o outro elementarmente.
+Para que seja possível fazer operações de matrizes com $\theta$ e $X$, será atribuído $X_0^{(i)} = 1$ para todos os valores de $i$. Isso faz com que os vetores $\theta$ e $X^{(i)}$ combinem um com o outro elementarmente.
 
-Uma função de hipótese tem o objetivo de mapear funções aleatórias dentro do intervalo de saída \textit{Y}. Portanto, nossa função de hipótese deve satisfazer a \autoref{eq:reglogicfuncaohip}.
+Portanto, nossa função de hipótese deve satisfazer a \autoref{eq:reglogicfuncaohip}.
 
 \begin{equation}\label{eq:reglogicfuncaohip}
 0 \leq h_{\theta}(x) \leq 1
@@ -111,9 +111,8 @@ Uma função de hipótese tem o objetivo de mapear funções aleatórias dentro 
 Para fazer com que uma entrada contínua fique nesse intervalo, é necessário utilizar uma função linear que faça esse mapeamento de modo linear, e para isso mudamos a forma da função de hipótese. A nova forma usa a função sigmoide, também conhecida como função logística.
 
 \begin{align}
-h_{\theta}(x) = g(\theta^TX) \nonumber \\
-z = \theta^TX \nonumber \\
-g(z) = \frac{1}{1 + e^{-z}} \label{eq:funcaosigmoide}
+h_{\theta}(x) = & g(\theta^TX) \nonumber \\
+g(z) = & \frac{1}{1 + e^{-z}} \label{eq:funcaosigmoide}
 \end{align}
 
 \begin{figure}[!htb]
@@ -138,7 +137,7 @@ g(z) = \frac{1}{1 + e^{-z}} \label{eq:funcaosigmoide}
   \end{center}
 \end{figure}
 
-A função da \autoref{eq:funcaosigmoide} representada na fígura \autoref{fig:funcaosigmoide} mapeia qualquer número no intervalo [0, 1], tornando isso útil para transformar qualquer valor arbitrário em uma função mais ideal para problemas de classificação.
+A função da \autoref{eq:funcaosigmoide} representada na \autoref{fig:funcaosigmoide} mapeia qualquer número no intervalo [0, 1], tornando isso útil para transformar qualquer valor arbitrário em uma função mais ideal para problemas de classificação.
 
 Para calcular a função de hipótese, podemos colocar o $\theta^TX$ na função logística. Isso nos dará a probabilidade de que a saída é 1.
 
@@ -172,12 +171,12 @@ O \textbf{limite de decisão} (ou barreira de decisão) é a linha que separa a 
 h_{\theta}(x) = \theta_0 + \theta_1 x_1 + \theta_2 x_2 + \theta_3 x_1 x_2 + \theta_4 x_1^2 + \theta_5 x_2^2 + \theta_6 x_1^2 x_2^2 + \cdots
 \end{equation}
 
-Todavia, essa abordagem pode gerar problemas de desempenho. Algumas \textit{features} podem também acabar se tornando obsoletas e não ajudar em nada no resultado final, tornando seu cálculo inútil. Mas o principal problema dessa abordagem é o \textit{overfitting}, que faz com que a função de hipótese interpole os dados, esse problema será explicado na \autoref{subsec:regularizacao}.
+Todavia, essa abordagem pode gerar problemas de desempenho. Algumas \textit{features} podem também acabar se tornando obsoletas e não ajudar em nada no resultado final, tornando seu cálculo inútil. Mas o principal problema dessa abordagem é o \textit{overfitting}, que faz com que a função de hipótese não generalize sobre dados desconhecidos. Esse problema será explicado na \autoref{subsec:regularizacao}.
 
 
 \subsection{Função de custo}
 
-Para medir a precisão da função de hipótese é necessário uma função que diga o quão precisa aquela hipótese é, tal função é denominada de função de custo. Com ela, é feita uma média de todos os resultados das hipóteses com a entrada \textit{X} comparada com o valor objetivo \textit{Y}. Ela pode ser expressa como na \autoref{eq:funcaodecusto}.
+Para medir a precisão da função de hipótese é necessário uma função que diga o quão precisa aquela hipótese é. Tal função é denominada de função de custo. Com ela, é feita uma média de todos os resultados das hipóteses com a entrada \textit{X} comparada com o valor objetivo \textit{Y}. Ela pode ser expressa como na \autoref{eq:funcaodecusto}.
 
 \begin{equation}
 \label{eq:funcaodecusto}
@@ -271,18 +270,18 @@ O objetivo da regressão logística é minimizar a função de custo em relaçã
 
 Para essa tarefa é necessário a aplicação de um algoritmo que pega a função de custo e tente minimizá-la, e por fim retorne os valores dos parâmetros $ \theta $s aprendidos. Com isso, estaremos melhorando nossa função de hipótese. 
 
-Um dos algoritmos mais utilizados para essa tarefa é o \textbf{Gradiente Descendente} \cite{michalski2013machine}, seu funcionamento baseia-se em seguir a derivida da função de custo em relação aos parâmetros $\theta$s alternadamente, com isso a encosta da tangente dará a direção para seguir adiante. Ademais, é aplicada uma taxa de aprendizagem $ \alpha $ a cada iteração, para tentar controlar a convergência.
+Um dos algoritmos mais utilizados para essa tarefa é o \textbf{Gradiente Descendente} \cite{michalski2013machine}. Seu funcionamento baseia-se em seguir a derivada da função de custo em relação aos parâmetros $\theta$s alternadamente, com isso a encosta da tangente dará a direção para seguir adiante. Ademais, é aplicada uma taxa de aprendizagem $ \alpha $ a cada iteração, para tentar controlar a convergência.
 
 Seu funcionamento é descrito pelo algoritmo \ref{eq:gradientedesc}.
 
-\textit{repita até convergir \{}
+repita até convergir \{
 \begin{equation}
 \label{eq:gradientedesc}
 \quad \theta_j := \theta_j - \alpha \frac{\partial}{\partial\theta_j} J(\theta)
 \end{equation}
-\textit{\quad\quad\quad \}}
+\quad\quad\quad \}
 
-Ao trabalhar sobre a derivada parcial da função de custo, podemos chegar na \autoref{eq:gradientefinal} e adiante na versão vetorizada na \autoref{eq:gradientefinalvet}. A explicação de como trabalhar sobre a derivada pode ser encontrado no \autoref{app:derivadasgraddesc}.
+Ao trabalhar sobre a derivada parcial da função de custo, podemos chegar na \autoref{eq:gradientefinal} e adiante na versão vetorizada na \autoref{eq:gradientefinalvet}. 
 
 \begin{equation}
 \quad \theta_j := \theta_j = \alpha \sum\limits_{i=1}^{m}\Big(h_{\theta}(x^{(i)}) - y^{(i)} \Big) x_j^{(i)} \label{eq:gradientefinal}
@@ -322,17 +321,14 @@ h_{\theta}^{(1)}(X) =&  P(y=1 | X ; \theta) \nonumber \\
 h_{\theta}^{(n)}(X) =&  P(y=n | X ; \theta) \nonumber
 \end{align}
 
-E então escolhe-se a classe com o valor de hipótese mais alto.
-\begin{equation}
-prediction = max_i(h_{\theta}^{(i)}(X)) \nonumber
-\end{equation}
+E então escolhe-se a classe com o valor de hipótese mais alto: $ \max_i(h_{\theta}^{(i)}(X)) $.
 
 
 \subsection{Regularização}\label{subsec:regularizacao}
 
-Como já mencionado, regularização é um conceito importante designado para resolver o problema de \textit{overfitting}.
+Regularização é uma técnica importante para resolver o problema de \textit{overfitting}.
 
-Quando se trabalha com abordagens de aprendizagem supervisionada, tem dois problemas que podem ocorrer dependendo das \textit{features} escolhidas. O \textbf{\textit{underfitting}} ocorre quando a forma da função de hipótese mapeia mal à tendência dos dados. Isso é causado por uma função que é muito simples ou que usa pouquíssimas \textit{features}. Em contrapartida, \textbf{\textit{overfitting}} é causado por uma função de hipótese que encaixa os dados avaliados mas não generaliza bem para classificar novos dados. É usualmente causado por uma função complexa que cria muitas curvas e ângulos desnecessários não relacionados aos dados.
+Quando se trabalha com abordagens de aprendizagem supervisionada, tem-se dois problemas que podem ocorrer dependendo das \textit{features} escolhidas. O \textbf{\textit{underfitting}} ocorre quando a forma da função de hipótese mapeia mal a tendência dos dados. Isso é causado por uma função que é muito simples ou que usa pouquíssimas \textit{features}. Em contrapartida, \textbf{\textit{overfitting}} é causado por uma função de hipótese que encaixa os dados avaliados mas não generaliza bem para classificar novos dados. É usualmente causado por uma função complexa que cria muitas curvas e ângulos desnecessários.
 
 \begin{figure}
   
@@ -361,7 +357,7 @@ Segundo \cite{machinelearningcoursera}, há duas opções principais para resolv
 			\item Manualmente selecionar quais \textit{features} usar;
 			\item Usar um algoritmo de seleção de modelo.
 		\end{alineas}
-	\item Regularização:
+	\item Aplicar regularização:
 		\begin{alineas}
 			\item Manter todos as \textit{features}, mas reduzir os parâmetros $\theta_j$.
 		\end{alineas}
@@ -393,8 +389,8 @@ Como foi regularizado a função de custo, há de se regularizar o algoritmo que
 
 \textit{repita até convergir \{}
 \begin{align} 
-\quad \theta_j := &\ \theta_j - \frac{\alpha}{m} \sum\limits_{i=1}^{m}(h_{\theta}(x^{(i)}) - y^{(i)}) x_0^{(i)} \quad\quad \text{se \textit{j = 0}} \nonumber \\
-\quad \theta_j := &\ \theta_j - \alpha \Big[ \frac{1}{m} \sum\limits_{i=1}^{m} (h_{\theta}(x^{(i)}) - y^{(i)}) x_0^{(i)} + \frac{\lambda}{m}\theta_j \Big] \quad\quad \text{se \textit{j > 0}} \label{eq:graddescreg}
+\quad \theta_j := &\ \theta_j - \frac{\alpha}{m} \sum\limits_{i=1}^{m}(h_{\theta}(x^{(i)}) - y^{(i)}) x_0^{(i)} & \text{se \textit{j = 0}} \nonumber \\
+\quad \theta_j := &\ \theta_j - \alpha \Big[ \frac{1}{m} \sum\limits_{i=1}^{m} (h_{\theta}(x^{(i)}) - y^{(i)}) x_0^{(i)} + \frac{\lambda}{m}\theta_j \Big] & \text{se \textit{j > 0}} \label{eq:graddescreg}
 \end{align}
 \textit{\quad\quad\quad \}}
 
@@ -403,11 +399,11 @@ Com isso a regressão logística pode ser aplicada normalmente, pois a regulariz
 
 \section{Córpus e seu conjunto de classes gramaticais}
 
-Córpus são uma coleção de textos colocados como um só, eles são os exemplos de entrada para nosso treinamento. A qualidade e o tamanho desses córpus são importantes para que o etiquetador possa generalizar sentenças ainda não vistas. Eles contém também um conjunto de classes gramaticais associadas a cada palavra.
+Córpus são coleções de textos agrupos. Eles são os exemplos de entrada para o treinamento dos parâmetros de um modelo. Eles podem conter informações adicionais, como classes gramaticais associadas das palavras. A anotação é feita manualmente por especialistas.
 
 Esses conjuntos podem se diferenciar na sua granularidade, como por exemplo, podem ter diferentes classes gramaticais para nomes no plural e no singular, ou agrupar eles em uma única classe \cite{fonseca2015evaluating}. No inglês, há vários conjuntos de classes gramaticais de qualidade que são amplamento utilizados, são o Penn Treebank tagset \cite{penntreebank}, CLAWS5 e CLAWS7.
 
-Já no português, os córpus estão evoluindo com o tempo, embora alguns erros são encontrados neles \cite{fonseca2013mac}, eles ainda são a melhor opção devido a seu tamanho e qualidade. Os principais e mais utilizados para essa tarefa são o Mac-Morpho \cite{aluisio2003account} com cerca de um milhão de palavras, que retrata artigos publicados na Folha de São Paulo em 1994. O Tycho Brahe \cite{temponi2004corpus} que também tem cerca de um milhão de palavras e retrata assuntos históricos de 66 textos diferentes. Há também o Bosque \cite{afonso2002floresta}, que contém cerca de 185 mil palavras. Além desses, \cite{fonseca2015evaluating} apresenta uma versão revisada do Mac-Morpho, com classes gramaticais novas e junção de outras. Dados referentes a cada \textit{córpus} podem ser encontrados na \autoref{tab:dadoscorpus}.
+Já no português, os córpus estão evoluindo com o tempo. Embora alguns erros são encontrados neles \cite{fonseca2013mac}, eles ainda são a melhor opção devido a seu tamanho e qualidade. Os principais e mais utilizados para o treinamento são o Mac-Morpho \cite{aluisio2003account} com cerca de um milhão de palavras, que retrata artigos publicados na Folha de São Paulo em 1994. O Tycho Brahe \cite{tychobrahe2010corpus} que também tem cerca de um milhão de palavras de 66 textos históricos entre 1380 e 1881. Há também o Bosque \cite{afonso2002floresta}, um córpus parseado que contém cerca de 185 mil palavras. Além desses, \cite{fonseca2015evaluating} apresenta uma versão revisada do Mac-Morpho, com classes gramaticais novas e junção de outras. Dados referentes a cada \textit{córpus} podem ser encontrados na \autoref{tab:dadoscorpus}.
 
 \begin{table}[!htb]
 \footnotesize
@@ -427,15 +423,15 @@ Já no português, os córpus estão evoluindo com o tempo, embora alguns erros 
 
 Infelizmente esses córpus não podem ser combinados em um só, já que eles se diferenciam no conjunto de classes gramaticais e também no seu uso associado. Uma possível alternativa para essa combinação seria o uso de uma aprendizagem não supervisionada, aplicando técnicas de clusterização.
 
-A aprendizagem baseada em córpus tem se mostrado uma estratégia atrativa, já que pode ser usado recursos criados com boa eficiência. Devido a isso, nesse trabalho vamos utilizar três córpus: o Mac-Morpho original; Mac-Morpho revisado e o Tycho Brahe. O conjunto de etiquetas para esses córpus podem ser encontrados, respectivamente, em \cite{aluisio2003account}, \cite{fonseca2015evaluating} e \cite{temponi2004corpus}.
+A aprendizagem supervisionada, utilizando córpus como entrada, tem se mostrado uma estratégia atrativa, já que pode ser usado recursos criados com boa eficiência. Devido a isso, nesse trabalho vamos utilizar três córpus: o Mac-Morpho original; Mac-Morpho revisado e o Tycho Brahe. O conjunto de etiquetas para esses córpus podem ser encontrados, respectivamente, em \cite{aluisio2003account}, \cite{fonseca2015evaluating} e \cite{temponi2004corpus}.
 
 
 
 \section{Representação das palavras}\label{sec:representacaodaspalavras}
 
-Palavras \footnote{Uma palavra pode ser qualquer conjunto de caracteres, inclusive pontuações, números, etc.} podem ser representadas de várias maneiras em um modelo de aprendizagem, podendo ser até mesmo feito o uso real da palavra como uma \textit{feature}.
+Palavras\footnote{Uma palavra pode ser qualquer conjunto de caracteres, inclusive pontuações, números, etc.} podem ser representadas de várias maneiras em um modelo de aprendizagem, podendo ser até mesmo feito o uso real da palavra como uma \textit{feature}.
 
-No entanto, a melhor abordagem e a mais indicada atualmente é a utilização de \textit{word embeddings}, elas são representação de palavras como vetores reais valorados em um espaço multidimensional \cite{turian2010word}. Elas podem ser geradas de maneiras diferentes dependendo da técnica utilizada, clássicas abordagens baseiam-se na frequência e co-ocorrência das palavras profundas. Mas ultimamente o processo de geração tem sido feito através de redes neurais, onde é possível capturar informações sintáticas e semânticas sobre as palavras \cite{collobert2011natural}.
+No entanto, uma abordagem recente que vem obtendo sucesso é a utilização de \textit{word embeddings}, elas são representação de palavras como vetores reais valorados em um espaço multidimensional \cite{turian2010word}. Elas podem ser geradas de maneiras diferentes dependendo da técnica utilizada. Clássicas abordagens baseiam-se na frequência e co-ocorrência das palavras profundas. Mas ultimamente o processo de geração tem sido feito através de redes neurais, onde é possível capturar informações sintáticas e semânticas sobre as palavras \cite{collobert2011natural}.
 
 \textit{Word embeddings} conseguem mapear palavras em um espaço relativamente pequeno (usando algumas centenas de dimensões ou até menos) e capturam similiaridades entre as palavras (o tipo de similaridade varia com o método usado para gerá-las) de acordo com sua distância euclidiana, \textit{cosine}, Jaccard, etc. Quando falamos que elas são similares, significa que elas tendem a serem usadas no mesmo contexto e usualmente pertencem a mesma classe gramatical. Além disso, palavras não vistas nos dados de treinamento não são completamente desconhecidas, pois elas tem uma representação vetorial. Por isso, espera-se que o impacto de palavras \ac{fdv} seja menor \cite{fonseca2015evaluating}.
 
@@ -450,6 +446,7 @@ As \textit{word embeddings} podem então ser consideradas como novas \textit{fea
   \begin{center}
       \includegraphics[scale=0.35]{img/exemplofeaturevectors.pdf}
   \end{center}
+  \legend{Adapatade de: \citeonline{fonseca2015evaluating}}
 \end{figure}
 
 Outro método utilizado para a criação dos vetores é o \ac{hal} \cite{lund1996producing}. Ele é baseado na contagem de ocorrência de palavras próximas umas das outras para então obter uma grande matriz de contagem. Após finalizar a contagem, é analisada a distância euclidiana contabilizada entre as palavras do vocabulário e uma palavra alvo. Essas distâncias são então ordenadas, e os vizinhos com menores distâncias são examinados.
@@ -495,7 +492,7 @@ Redes neurais tem como origem algoritmos que tentam imitar o cérebro humano. El
 
 \subsection{Neurocomputação}
 
-Há evidências de que o cérebro usa apenas um ``algoritmo de aprendizagem'' para todas diferentes funções. Cientistas já tentaram cortar (no cérebro de animais) a conexão entre as orelhas e o córtex auditivo e reconectar com o nervo óptico, o resultado foi que o córtex auditivo literalmente aprendeu a ver. 
+Há evidências de que o cérebro usa apenas um ``algoritmo de aprendizagem'' para todas diferentes funções. Cientistas já tentaram cortar (no cérebro de animais) a conexão entre as orelhas e o córtex auditivo e reconectar com o nervo óptico, o resultado foi que o córtex auditivo literalmente aprendeu a ver \cite{machinelearningcoursera}. 
 
 Na \autoref{fig:vendocomalingua} os cientistas conseguiram fazer com que o ser humano possa enxergar através de sensores da língua conectado a uma câmera fotográfica. Já na \autoref{fig:terceiroolho}, foi implantado um terceiro olho em um sapo e após um tempo comprovou-se que o sapo definitivamente aprendeu a ver com aquele olho.
 
@@ -531,7 +528,7 @@ Em um nível bem simples de abstração, neurônios são basicamente unidades co
 
 A função de hipótese pode ser representada através de um modelo de redes neurais. Nesse modelo, o $x_0$ é usualmente chamado de viés de entrada ou unidade viés (do inglês \textit{bias unit}) e ele sempre será igual a 1.
 
-Em redes neurais, é usado a mesma função logística como em classificação:
+Em redes neurais, é usado a mesma função logística como em regressão logística:
 
 \begin{equation}
 \frac{1}{1 + e^{\theta^TX}} \nonumber
@@ -548,7 +545,7 @@ A diferença é que em redes neurais ela é usualmente conhecida como função d
 
 A primeira camada é chamada de ``camada de entrada'' e a camada final de ``camada de saída'', que nos dá o valor final computado sobre a hipótese. É possível ter camadas intermediárias entre as camadas de entrada e saída chamadas de ``camadas ocultas''. 
 
-Nomeamos os nodos das camadas intermediarias de $a_0^{(j)}, a_1^(j), ..., a_n^(j)$ e chamamo-os de unidades de ativação. A tabela \autoref{tab:nomenclaturaredesneuras} reúne as notações geralmente usadas no contexto de redes neurais.
+Nomeamos os nodos das camadas intermediarias de $a_0^{(j)}, a_1^{(j)}, ..., a_n^{(j)}$ e chamamo-os de unidades de ativação. A tabela \autoref{tab:nomenclaturaredesneuras} reúne as notações geralmente usadas no contexto de redes neurais.
 
 \begin{table}[!htb]
 \caption{Notação utilizada para representação redes neurais} \label{tab:nomenclaturaredesneuras}
@@ -647,7 +644,7 @@ Para classificar dados em múltiplas classes, a função de hipótese deve retor
 
 \begin{figure}
 \centering
-\caption{Modelo da rede neural} \label{fig:redeneuralmulticlass}
+\caption{Modelo de rede neural - Passos do \textit{Forward Propagation}} \label{fig:redeneuralmulticlass}
 \includegraphics[width=0.65\textwidth]{img/redeneuralmulticlass}
 \legend{Fonte: \citeonline{machinelearningcoursera}}
 \end{figure}
@@ -710,7 +707,7 @@ Em redes neurais, para realizar a minimização de custo um dos algoritmos ampla
 \end{equation}
 
 
-Em \textit{backpropagation} é calculado o \textbf{erro} para cada nodo. Extendemos a notação usada pela \autoref{tab:tabfuncaocustorn} ao adicionar uma nova variável $\delta_j^{l}$ que é igual ao ``erro'' do nodo $j$ na camada $l$. Sendo assim, para a última camada, é possível calcular um vetor de valores $\delta$ com: $\delta^{(L)} = a^{(L)} - y$. Ou seja, os ``valores de erro'' para a última camada são simplesmente a diferença entre os resultados atauis na última camada e as saídas corretas em $y$.
+Em \textit{backpropagation} é calculado o \textbf{erro} para cada nodo. Extendemos a notação usada pela \autoref{tab:tabfuncaocustorn} ao adicionar uma nova variável $\delta_j^{l}$ que é igual ao ``erro'' do nodo $j$ na camada $l$. Sendo assim, para a última camada, é possível calcular um vetor de valores $\delta$ com: $\delta^{(L)} = a^{(L)} - y$. Ou seja, os ``valores de erro'' para a última camada são simplesmente a diferença entre os resultados atuais na última camada e as saídas corretas em $y$.
 
 A questão chave desse algoritmo é como obter os valores de $\delta$ nas camadas anteriores à última. Para isso é usado a \autoref{eq:deltaanteriores} que nos leva para trás, da direita para esquerda.
 
@@ -739,20 +736,22 @@ Agora é possível computar a derivada parcial ao multiplicar os valores de ativ
 
 Isso porém ignora a regularização, que é feita depois.
 
-Uma observação importante é que $\delta^{(l+1)}$ é um vetor com $S_{l+1}$ elementos, e $a^{(l)}$ é um vetor com $S_l$ elementos. Portanto a multiplicação deles vai gerar uma matriz com dimensão $S_{l+1} \times S_l$, que é a mesma dimensão que $\theta^{(l)}$. Ou seja, o processo irá produzir um termo gradiente para todos elementos em $\theta^{(l)}$. O algoritmo \autoref{alg:backpropalgorithm} junta todas essas equações.
+Uma observação importante é que $\delta^{(l+1)}$ é um vetor com $S_{l+1}$ elementos, e $a^{(l)}$ é um vetor com $S_l$ elementos. Portanto a multiplicação deles vai gerar uma matriz com dimensão $S_{l+1} \times S_l$, que é a mesma dimensão que $\theta^{(l)}$. Ou seja, o processo irá produzir um termo gradiente para todos elementos em $\theta^{(l)}$. O algoritmo \ref{backpropalgorithmx} junta todas essas equações.
 
-\begin{algorithm} \label{alg:backpropalgorithm}
-\caption{Algoritmo de Backpropagation} 
+\begin{algorithm} 
+\caption{Algoritmo de Backpropagation} \label{backpropalgorithmx}
 \begin{algorithmic}
 \Procedure{Backpropagation}{}
 	\State dado um conjunto de treinamento $\{(x^{(1)}, y^{(1)}), \ldots, (x^{(m)}, y^{(m)}) \}$
 	\State $\Delta_{i,j}^{(l)} = 0$ para todo $(l, i, j)$
 	\For{cada exemplo de treinamento $t=1$ até $m$ }
-		\State $a^{(i)} = x^{(t)}$
-		\State \textit{Forward-Propagation}($a^{(l)}$) para $l = 2 \text{ até } L$
+		\State $a^{(1)} = x^{(t)}$
+		\State \textit{Forward-Propagation}($a^{(2)}$)
 		\State $\delta^{(L)} = a^{(L)} - y^{(t)}$
-		\State $\delta^{(l)} = ((\theta^{(l)})^T \delta^{(l+1)}) .* a^{(l)} .* (1 - a^{(l)})$ para $l = L-1 \text{ até } 2$
-		\State $\Delta^{(l)} = \Delta^{(l)} + \delta^{(l+1)}(a^{(l)})^T $ \Comment{usando vetorização}
+		\For{$l=L-1$ até $2$}
+      \State $\delta^{(l)} = ((\theta^{(l)})^T \delta^{(l+1)}) .* a^{(l)} .* (1 - a^{(l)})$
+		  \State $\Delta^{(l)} = \Delta^{(l)} + \delta^{(l+1)}(a^{(l)})^T $
+    \EndFor
 	\EndFor
 		\If {$j = 0$}
 			\State $D_{i,j}^{(l)} = \frac{1}{m}\Delta^{(l)}$

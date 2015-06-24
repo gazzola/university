@@ -1,33 +1,33 @@
 \begin{theindex}
 
-  \item {DDV}, \hyperpage{61, 62}
+  \item {DDV}, \hyperpage{57, 58}
 
   \indexspace
 
-  \item {FDV}, \hyperpage{44}
+  \item {FDV}, \hyperpage{40}
 
   \indexspace
 
-  \item {GloVe}, \hyperpage{45}, \hyperpage{62, 63}
+  \item {GloVe}, \hyperpage{41}, \hyperpage{58, 59}
 
   \indexspace
 
-  \item {HAL}, \hyperpage{44}, \hyperpage{61, 62}
+  \item {HAL}, \hyperpage{40}, \hyperpage{57, 58}
 
   \indexspace
 
-  \item {NLM}, \hyperpage{44}, \hyperpage{61--63}
+  \item {NLM}, \hyperpage{40}, \hyperpage{57--59}
 
   \indexspace
 
-  \item {PLN}, \hyperpage{27}, \hyperpage{44}, \hyperpage{58}, 
-		\hyperpage{63}
-  \item {POS}, \hyperpage{15}, \hyperpage{17}, \hyperpage{27, 28}, 
-		\hyperpage{40}, \hyperpage{42}, \hyperpage{58, 59}, 
-		\hyperpage{62, 63}
+  \item {PLN}, \hyperpage{23}, \hyperpage{40}, \hyperpage{54}, 
+		\hyperpage{59}
+  \item {POS}, \hyperpage{13}, \hyperpage{15}, \hyperpage{23, 24}, 
+		\hyperpage{36}, \hyperpage{38}, \hyperpage{54, 55}, 
+		\hyperpage{58, 59}
 
   \indexspace
 
-  \item {SG}, \hyperpage{44}, \hyperpage{61--63}
+  \item {SG}, \hyperpage{40}, \hyperpage{57--59}
 
 \end{theindex}
