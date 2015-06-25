@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.7)  25 JUN 2015 06:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.7)  25 JUN 2015 07:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2456,7 +2456,7 @@ Package pdftex.def Info: img/aumentorntam.pdf used on input line 842.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50 <./img/sentidoadm.pdf>] <img/deeplearningfunc.pdf, id=910, 591.23184pt x 4
+ [50 <./img/sentidoadm.pdf>] <img/deeplearningfunc.pdf, id=908, 591.23184pt x 4
 87.8594pt>
 File: img/deeplearningfunc.pdf Graphic file (type pdf)
 
@@ -2546,14 +2546,14 @@ Overfull \hbox (3.33855pt too wide) in paragraph at lines 20--30
 ) (./textuais/desenvolvimento.tex [54] [55
 
 ] [56]
-<img/neuralnetworkfinal.pdf, id=1043, 1046.6309pt x 812.55113pt>
+<img/neuralnetworkfinal.pdf, id=1041, 1046.6309pt x 812.55113pt>
 File: img/neuralnetworkfinal.pdf Graphic file (type pdf)
 
 <use img/neuralnetworkfinal.pdf>
 Package pdftex.def Info: img/neuralnetworkfinal.pdf used on input line 75.
 (pdftex.def)             Requested size: 418.64494pt x 325.0147pt.
 
-<img/guidedlearning.pdf, id=1048, 594.90683pt x 223.35628pt>
+<img/guidedlearning.pdf, id=1046, 594.90683pt x 223.35628pt>
 File: img/guidedlearning.pdf Graphic file (type pdf)
 
 <use img/guidedlearning.pdf>
@@ -2640,10 +2640,10 @@ ype1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/pub
 lic/tex-gyre/qcsr.pfb>
-Output written on monografia.pdf (68 pages, 5034899 bytes).
+Output written on monografia.pdf (68 pages, 5034951 bytes).
 PDF statistics:
- 1490 PDF objects out of 1728 (max. 8388607)
- 1241 compressed objects within 13 object streams
+ 1488 PDF objects out of 1728 (max. 8388607)
+ 1240 compressed objects within 13 object streams
  231 named destinations out of 1000 (max. 500000)
  483 words of extra memory for PDF output out of 10000 (max. 10000000)
 
