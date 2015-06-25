@@ -152,7 +152,7 @@
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % -------------------------------------------------------------------------------------------------
-\titulo{Aprendizagem guiada para análise morfossintática utilizando redes neurais}
+\titulo{Aprendizagem guiada para análise morfossintática utilizando redes neurais recorrentes}
 \autor{Marcos Vinícius Treviso}
 \local{Alegrete}
 \data{2015}
@@ -185,16 +185,16 @@
 }
 % -------------------------------------------------------------------------------------------------
 % Acrônimos/Siglas (definido pelo parâmetro 'class')
-\DeclareAcronym{tcc}{
-  short = TCC,
-  long  = Trabalho de Conclusão de Curso,
-  long-plural-form = Trabalhos de Conclusão de Curso,
-  class = acronimos
-}
+% \DeclareAcronym{tcc}{
+%   short = TCC,
+%   long  = Trabalho de Conclusão de Curso,
+%   long-plural-form = Trabalhos de Conclusão de Curso,
+%   class = acronimos
+% }
 
 \DeclareAcronym{pos}{
   short = POS,
-  long  = Part-of-speech,
+  long  = \textit{Part-of-speech},
   class = acronimos
 }
 
@@ -219,25 +219,25 @@
 
 \DeclareAcronym{nlm}{
   short = NLM,
-  long = Neural Language Model,
+  long = \textit{Neural Language Model},
   class = acronimos
 }
 
 \DeclareAcronym{hal}{
   short = HAL,
-  long = Hyperspace Analogue to Language,
+  long = \textit{Hyperspace Analogue to Language},
   class = acronimos
 }
 
 \DeclareAcronym{sg}{
   short = SG,
-  long = Skip-Gram,
+  long = \textit{Skip-Gram},
   class = acronimos
 }
 
 \DeclareAcronym{glove}{
   short = GloVe,
-  long = Global Vectors,
+  long = \textit{Global Vectors},
   class = acronimos
 }
 
@@ -295,12 +295,12 @@
 % -----------------------------------------------
 % Dedicatória [OPCIONAL]
 % -----------------------------------------------
-\input{pretextuais/dedicatoria}
+% \input{pretextuais/dedicatoria}
 
 % -----------------------------------------------
 % Agradecimentos [OPCIONAL]
 % -----------------------------------------------
-\input{pretextuais/agradecimentos}
+% \input{pretextuais/agradecimentos}
 
 % -----------------------------------------------
 % Epígrafe [OPCIONAL]
@@ -380,7 +380,7 @@
 % trabalho: introducao.tex, relacionados.tex, metodologia.tex, experimentos.tex, conclusao.tex.
 \input{textuais/introducao} % [OBRIGATORIO]
 %\part{Revisão de Literatura} % Pode-se usar partes para organizar os capítulos
-\input{textuais/problema} % [OBRIGATORIO]
+% \input{textuais/problema} % [OBRIGATORIO]
 
 \input{textuais/fundamentos} % [OBRIGATORIO]
 
@@ -390,9 +390,10 @@
 %\part{Resultados}
 %\input{textuais/outrospontos} % Outro capítulo
 %\bookmarksetup{startatroot} % Usar se o próximo capítulo não pertencer à parte anterior e não existir uma parte nova
-% \input{textuais/conclusao} % [OBRIGATORIO]
 
 \input{textuais/cronograma} % [OBRIGATORIO]
+
+\input{textuais/consideracoes} % [OBRIGATORIO]
 
 
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

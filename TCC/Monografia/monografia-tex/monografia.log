@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.7)  24 JUN 2015 12:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.7)  25 JUN 2015 06:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2124,24 +2124,17 @@ l.288
 l.288 
        [2
 
-] (./pretextuais/dedicatoria.tex [3] [4
+] (./pretextuais/epigrafe.tex [3] [4
 
-])
-(./pretextuais/agradecimentos.tex [5
+]) (./pretextuais/resumo.tex
+[5] [6
 
-] [6
+]) (./pretextuais/abstract.tex [7] [8
 
-]) (./pretextuais/epigrafe.tex [7]
-[8
+]) (./monografia.lof) [9] [10
 
-]) (./pretextuais/resumo.tex [9] [10
-
-]) (./pretextuais/abstract.tex [11]
-[12
-
-]) (./monografia.lof) [13] [14
-
-] (./monografia.lot) [15] [16
+]
+(./monografia.lot) [11] [12
 
 ]
 *************************************************
@@ -2149,45 +2142,50 @@ l.288
 * 
 * The option `header' is deprecated. Use `heading' instead on line 345.
 *************************************************
-[17
+[13
 
-] [18
+] [14
 
-] (./monografia.nls) [19
+] (./monografia.nls) [15
 
-] [20
+] [16
 
 ] (./monografia.toc
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 22.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 32.
-) [21] [22
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 30.
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
-(./textuais/introducao.tex
-<img/exemploclassificacao.pdf, id=289, 539.72644pt x 83.2123pt>
+ [17]
+[18] (./textuais/introducao.tex
+<img/exemploclassificacao.pdf, id=273, 539.72644pt x 83.2123pt>
 File: img/exemploclassificacao.pdf Graphic file (type pdf)
 
 <use img/exemploclassificacao.pdf>
 Package pdftex.def Info: img/exemploclassificacao.pdf used on input line 16.
 (pdftex.def)             Requested size: 404.79384pt x 62.40904pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 22.
+(Font)              <10> on input line 20.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 22.
+(Font)              <7> on input line 20.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 22.
- [23
+(Font)              <5> on input line 20.
 
- <./img/exemploclassificacao.pdf>])
-(./textuais/problema.tex [24]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 9.
- (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-))
-(./textuais/fundamentos.tex [25
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] [26]
-<img/passoapasso.png, id=347, 820.666pt x 234.476pt>
+ [19
+
+
+ <./img/exemploclassificacao.pdf>]
+Underfull \vbox (badness 1038) has occurred while \output is active []
+
+ [20])
+(./textuais/fundamentos.tex [21] [22
+
+]
+<img/passoapasso.png, id=331, 820.666pt x 234.476pt>
 File: img/passoapasso.png Graphic file (type png)
  <use img/passoapasso.png>
 Package pdftex.def Info: img/passoapasso.png used on input line 14.
@@ -2199,25 +2197,23 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 27.
- [27
-
- <./img/passoapasso.png>]
-<img/regressao2.png, id=357, 492.8814pt x 390.258pt>
+ [23 <./img/passoapasso.png>]
+<img/regressao2.png, id=342, 492.8814pt x 390.258pt>
 File: img/regressao2.png Graphic file (type png)
  <use img/regressao2.png>
 Package pdftex.def Info: img/regressao2.png used on input line 35.
 (pdftex.def)             Requested size: 369.66014pt x 292.69276pt.
 
-<img/classificacao2.png, id=362, 501.5538pt x 390.258pt>
+<img/classificacao2.png, id=347, 501.5538pt x 390.258pt>
 File: img/classificacao2.png Graphic file (type png)
 
 <use img/classificacao2.png>
 Package pdftex.def Info: img/classificacao2.png used on input line 43.
 (pdftex.def)             Requested size: 376.16443pt x 292.69276pt.
 
-Underfull \vbox (badness 4429) has occurred while \output is active []
+Underfull \vbox (badness 1748) has occurred while \output is active []
 
- [28 <./img/regressao2.png>]
+ [24 <./img/regressao2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 85--87
 
  []
@@ -2230,24 +2226,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--87
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29 <./img/classificacao2.png>]pdfTeX warning (ext4): destination with the sam
-e identifier (name{equation.3.1.1}) has been already used, duplicate ignored
+ [25 <./img/classificacao2.png>]pdfTeX warning (ext4): destination with the sam
+e identifier (name{equation.2.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.95 \end{align}
-                 [30] [31]pdfTeX warning (ext4): destination with the same iden
-tifier (name{equation.3.1.6}) has been already used, duplicate ignored
+                 [26] [27]pdfTeX warning (ext4): destination with the same iden
+tifier (name{equation.2.1.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.154 \end{align}
-                  [32pdfTeX warning (ext4): destination with the same identifie
-r (name{equation.3.1.7}) has been already used, duplicate ignored
+                  [28pdfTeX warning (ext4): destination with the same identifie
+r (name{equation.2.1.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.195 \end{align}
                  pdfTeX warning (ext4): destination with the same identifier (n
-ame{equation.3.1.7}) has been already used, duplicate ignored
+ame{equation.2.1.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -2255,14 +2251,14 @@ l.195 \end{align}
                  ]
 NOTE: coordinate (0Y0.0e0],3Y0.0e0]) has been dropped because it is unbounded (
 in y). (see also unbounded coords=jump). 
-[33] <img/funcaodecustosurf.png, id=428, 578.16pt x 433.62pt>
+[29] <img/funcaodecustosurf.png, id=413, 578.16pt x 433.62pt>
 File: img/funcaodecustosurf.png Graphic file (type png)
 
 <use img/funcaodecustosurf.png>
 Package pdftex.def Info: img/funcaodecustosurf.png used on input line 256.
 (pdftex.def)             Requested size: 227.5pt x 170.61967pt.
 
-<img/funcaodecustocontorno.png, id=429, 578.16pt x 433.62pt>
+<img/funcaodecustocontorno.png, id=414, 578.16pt x 433.62pt>
 File: img/funcaodecustocontorno.png Graphic file (type png)
 
 <use img/funcaodecustocontorno.png>
@@ -2273,15 +2269,15 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 255--264
 []$[]$ $[]$ 
  []
 
-[34 <./img/funcaodecustosurf.png> <./img/funcaodecustocontorno.png>]
-<img/funcgraddesc1.png, id=452, 606.76688pt x 318.43968pt>
+[30 <./img/funcaodecustosurf.png> <./img/funcaodecustocontorno.png>]
+<img/funcgraddesc1.png, id=436, 606.76688pt x 318.43968pt>
 File: img/funcgraddesc1.png Graphic file (type png)
 
 <use img/funcgraddesc1.png>
 Package pdftex.def Info: img/funcgraddesc1.png used on input line 299.
 (pdftex.def)             Requested size: 227.5pt x 119.39514pt.
 
-<img/funcgraddesc2.png, id=453, 606.76688pt x 318.43968pt>
+<img/funcgraddesc2.png, id=437, 606.76688pt x 318.43968pt>
 File: img/funcgraddesc2.png Graphic file (type png)
 
 <use img/funcgraddesc2.png>
@@ -2292,15 +2288,15 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 298--307
 []$[]$ $[]$ 
  []
 
-[35 <./img/funcgraddesc1.png> <./img/funcgraddesc2.png>]
-<img/underfittingex.png, id=470, 502.0356pt x 394.5942pt>
+[31 <./img/funcgraddesc1.png> <./img/funcgraddesc2.png>]
+<img/underfittingex.png, id=454, 502.0356pt x 394.5942pt>
 File: img/underfittingex.png Graphic file (type png)
 
 <use img/underfittingex.png>
 Package pdftex.def Info: img/underfittingex.png used on input line 338.
 (pdftex.def)             Requested size: 227.5pt x 178.81209pt.
 
-<img/overfittingex.png, id=471, 495.7722pt x 395.5578pt>
+<img/overfittingex.png, id=455, 495.7722pt x 395.5578pt>
 File: img/overfittingex.png Graphic file (type png)
 
 <use img/overfittingex.png>
@@ -2311,15 +2307,11 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 337--346
 []$[]$ $[]$ 
  []
 
-[36]
-Underfull \vbox (badness 1917) has occurred while \output is active []
-
- [37 <./img/underfittingex.png> <./img/overfittingex.png>] [38]
-
-LaTeX Warning: Citation `temponi2004corpus' on page 39 undefined on input line 
-426.
-
-[39] <img/exemplofeaturevectors.pdf, id=555, 597.50786pt x 845.04686pt>
+[32] [33 <./img/underfittingex.png> <./img/overfittingex.png>]
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 400.
+ [34] [35]
+<img/exemplofeaturevectors.pdf, id=543, 597.50786pt x 845.04686pt>
 File: img/exemplofeaturevectors.pdf Graphic file (type pdf)
 
 <use img/exemplofeaturevectors.pdf>
@@ -2328,15 +2320,16 @@ Package pdftex.def Info: img/exemplofeaturevectors.pdf used on input line 447.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40]
-<img/Turian-WordTSNE.png, id=583, 1794.705pt x 649.42625pt>
+ [36]
+[37 <./img/exemplofeaturevectors.pdf>]
+<img/Turian-WordTSNE.png, id=612, 1794.705pt x 649.42625pt>
 File: img/Turian-WordTSNE.png Graphic file (type png)
 
 <use img/Turian-WordTSNE.png>
 Package pdftex.def Info: img/Turian-WordTSNE.png used on input line 470.
 (pdftex.def)             Requested size: 448.67516pt x 162.35616pt.
- [41 <./img/exemplofeaturevectors.pdf>]
-<img/Colbert-WordTable2.png, id=633, 1367.1075pt x 481.8pt>
+
+<img/Colbert-WordTable2.png, id=618, 1367.1075pt x 481.8pt>
 File: img/Colbert-WordTable2.png Graphic file (type png)
 
 <use img/Colbert-WordTable2.png>
@@ -2347,40 +2340,33 @@ Overfull \hbox (23.4948pt too wide) in paragraph at lines 480--481
  [] 
  []
 
-
-LaTeX Warning: Reference `eq:exemploobjetivo' on page 42 undefined on input lin
-e 485.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [42 <./img/Turian-WordTSNE.png> <./img/Colbert-WordTable2.png (PNG copy)>]
-<img/seeingtongue.png, id=649, 1252.68pt x 562.1pt>
+[38 <./img/Turian-WordTSNE.png> <./img/Colbert-WordTable2.png (PNG copy)>]
+<img/seeingtongue.png, id=635, 1252.68pt x 562.1pt>
 File: img/seeingtongue.png Graphic file (type png)
  <use img/seeingtongue.png>
 Package pdftex.def Info: img/seeingtongue.png used on input line 503.
 (pdftex.def)             Requested size: 227.5pt x 102.08278pt.
 
-<img/thirdeye.png, id=650, 993.7125pt x 546.04pt>
+<img/thirdeye.png, id=636, 993.7125pt x 546.04pt>
 File: img/thirdeye.png Graphic file (type png)
  <use img/thirdeye.png>
 Package pdftex.def Info: img/thirdeye.png used on input line 508.
 (pdftex.def)             Requested size: 186.55167pt x 102.50722pt.
 
-<img/neuron.png, id=656, 852.18375pt x 481.8pt>
+<img/neuron.png, id=642, 852.18375pt x 481.8pt>
 File: img/neuron.png Graphic file (type png)
  <use img/neuron.png>
 Package pdftex.def Info: img/neuron.png used on input line 524.
 (pdftex.def)             Requested size: 341.25pt x 192.93713pt.
- [43 <./img/seeingtongue.png> <./img/thirdeye.png>]
-<img/redeneuralmat.pdf, id=667, 798.45464pt x 903.28354pt>
+ [39 <./img/seeingtongue.png> <./img/thirdeye.png>]
+<img/redeneuralmat.pdf, id=653, 798.45464pt x 903.28354pt>
 File: img/redeneuralmat.pdf Graphic file (type pdf)
 
 <use img/redeneuralmat.pdf>
 Package pdftex.def Info: img/redeneuralmat.pdf used on input line 542.
 (pdftex.def)             Requested size: 341.25pt x 386.04747pt.
 
-<img/redeneuraloculta.pdf, id=670, 1167.9549pt x 800.36516pt>
+<img/redeneuraloculta.pdf, id=656, 1167.9549pt x 800.36516pt>
 File: img/redeneuraloculta.pdf Graphic file (type pdf)
 
 <use img/redeneuraloculta.pdf>
@@ -2389,43 +2375,43 @@ Package pdftex.def Info: img/redeneuraloculta.pdf used on input line 571.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44 <./img/neuron.png>] [45 <./img/redeneuralmat.pdf> <./img/redeneuraloculta.
+ [40 <./img/neuron.png>] [41 <./img/redeneuralmat.pdf> <./img/redeneuraloculta.
 pdf
 
 pdfTeX warning: pdflatex (file ./img/redeneuraloculta.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
->] [46pdfTeX warning (ext4): destination with the same identifier (name{equatio
-n.3.4.20}) has been already used, duplicate ignored
+>] [42pdfTeX warning (ext4): destination with the same identifier (name{equatio
+n.2.4.20}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.605 \end{align}
                  pdfTeX warning (ext4): destination with the same identifier (n
-ame{equation.3.4.21}) has been already used, duplicate ignored
+ame{equation.2.4.21}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.605 \end{align}
-                 ] [47pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.3.4.24}) has been already used, duplicate ignored
+                 ] [43pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.2.4.24}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.644 
-      ] <img/redeneuralmulticlass.png, id=778, 520.94624pt x 436.63126pt>
+      ] <img/redeneuralmulticlass.png, id=764, 520.94624pt x 436.63126pt>
 File: img/redeneuralmulticlass.png Graphic file (type png)
 
 <use img/redeneuralmulticlass.png>
 Package pdftex.def Info: img/redeneuralmulticlass.png used on input line 648.
 (pdftex.def)             Requested size: 295.74722pt x 247.88303pt.
- [48pdfTeX warning (ext4): destination with the same identifier (name{equation.
-3.4.27}) has been already used, duplicate ignored
+ [44pdfTeX warning (ext4): destination with the same identifier (name{equation.
+2.4.27}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.668 
        <./img/redeneuralmulticlass.png>]pdfTeX warning (ext4): destination with
- the same identifier (name{equation.3.4.27}) has been already used, duplicate i
+ the same identifier (name{equation.2.4.27}) has been already used, duplicate i
 gnored
 <to be read again> 
                    \relax 
@@ -2433,18 +2419,18 @@ l.692 \begin{equation}
                       \label{eq:funcaodecustorn}
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 701.
- [49] [50]
+ [45] [46]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 742.
 
-<img/backpropagationalg.png, id=820, 540.0175pt x 400.49625pt>
+<img/backpropagationalg.png, id=806, 540.0175pt x 400.49625pt>
 File: img/backpropagationalg.png Graphic file (type png)
 
 <use img/backpropagationalg.png>
 Package pdftex.def Info: img/backpropagationalg.png used on input line 770.
 (pdftex.def)             Requested size: 295.74722pt x 219.33862pt.
- [51] [52 <./img/backpropagationalg.png>]
-<img/aprendendodeep.pdf, id=852, 1050.26962pt x 731.53299pt>
+ [47] [48 <./img/backpropagationalg.png>]
+<img/aprendendodeep.pdf, id=839, 1050.26962pt x 731.53299pt>
 File: img/aprendendodeep.pdf Graphic file (type pdf)
 
 <use img/aprendendodeep.pdf>
@@ -2453,7 +2439,7 @@ Package pdftex.def Info: img/aprendendodeep.pdf used on input line 820.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [53 <./img/aprendendodeep.pdf>] <img/sentidoadm.pdf, id=883, 422.70422pt x 225
+ [49 <./img/aprendendodeep.pdf>] <img/sentidoadm.pdf, id=869, 422.70422pt x 225
 .46735pt>
 File: img/sentidoadm.pdf Graphic file (type pdf)
 
@@ -2461,7 +2447,7 @@ File: img/sentidoadm.pdf Graphic file (type pdf)
 Package pdftex.def Info: img/sentidoadm.pdf used on input line 832.
 (pdftex.def)             Requested size: 341.25pt x 182.02547pt.
 
-<img/aumentorntam.pdf, id=890, 1180.55312pt x 713.11267pt>
+<img/aumentorntam.pdf, id=876, 1180.55312pt x 713.11267pt>
 File: img/aumentorntam.pdf Graphic file (type pdf)
 
 <use img/aumentorntam.pdf>
@@ -2470,24 +2456,24 @@ Package pdftex.def Info: img/aumentorntam.pdf used on input line 842.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54 <./img/sentidoadm.pdf>] <img/deeplearningfunc.pdf, id=924, 591.23184pt x 4
+ [50 <./img/sentidoadm.pdf>] <img/deeplearningfunc.pdf, id=910, 591.23184pt x 4
 87.8594pt>
 File: img/deeplearningfunc.pdf Graphic file (type pdf)
 
 <use img/deeplearningfunc.pdf>
 Package pdftex.def Info: img/deeplearningfunc.pdf used on input line 853.
 (pdftex.def)             Requested size: 341.25pt x 281.58893pt.
-) (./textuais/trabalhosrelacionados.tex [55 <./img/aumentorntam.pdf> <./img/dee
+) (./textuais/trabalhosrelacionados.tex [51 <./img/aumentorntam.pdf> <./img/dee
 plearningfunc.pdf
 
 pdfTeX warning: pdflatex (file ./img/deeplearningfunc.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
->] [56
+>] [52
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [57]
+ [53]
 Underfull \hbox (badness 10000) in paragraph at lines 22--22
 []|\T1/lmr/bx/n/10 Representação
  []
@@ -2557,47 +2543,46 @@ Overfull \hbox (3.33855pt too wide) in paragraph at lines 20--30
  [][] 
  []
 
-) (./textuais/desenvolvimento.tex [58] [59
+) (./textuais/desenvolvimento.tex [54] [55
 
-]
-<img/guidedlearning.pdf, id=1052, 594.90683pt x 223.35628pt>
-File: img/guidedlearning.pdf Graphic file (type pdf)
-
-<use img/guidedlearning.pdf>
-Package pdftex.def Info: img/guidedlearning.pdf used on input line 46.
-(pdftex.def)             Requested size: 297.45268pt x 111.67786pt.
-
-<img/neuralnetworkfinal.pdf, id=1053, 1046.6309pt x 812.55113pt>
+] [56]
+<img/neuralnetworkfinal.pdf, id=1043, 1046.6309pt x 812.55113pt>
 File: img/neuralnetworkfinal.pdf Graphic file (type pdf)
 
 <use img/neuralnetworkfinal.pdf>
-Package pdftex.def Info: img/neuralnetworkfinal.pdf used on input line 60.
+Package pdftex.def Info: img/neuralnetworkfinal.pdf used on input line 75.
 (pdftex.def)             Requested size: 418.64494pt x 325.0147pt.
- [60] [61 <./img/guidedlearning.pdf> <./img/neuralnetworkfinal.pdf
 
-pdfTeX warning: pdflatex (file ./img/neuralnetworkfinal.pdf): PDF inclusion: mu
-ltiple pdfs with page group included in a single page
->]) (./textuais/cronograma.tex [62pdfTeX warning (ext4): destination with the s
-ame identifier (name{equation.5.3.4}) has been already used, duplicate ignored
+<img/guidedlearning.pdf, id=1048, 594.90683pt x 223.35628pt>
+File: img/guidedlearning.pdf Graphic file (type pdf)
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.2 \chapter
-            {Cronograma de atividades}\label{cronograma}pdfTeX warning (ext4): 
-destination with the same identifier (name{equation.5.3.4}) has been already us
-ed, duplicate ignored
+<use img/guidedlearning.pdf>
+Package pdftex.def Info: img/guidedlearning.pdf used on input line 84.
+(pdftex.def)             Requested size: 178.47342pt x 67.00739pt.
+ [57 <./img/neuralnetworkfinal.pdf>] [58pdfTeX warning (ext4): destination with
+ the same identifier (name{equation.4.3.4}) has been already used, duplicate ig
+nored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2 \chapter
-            {Cronograma de atividades}\label{cronograma}]) (./monografia.bbl
+l.118 \end{equation}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{equation.4.3.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.118 \end{equation}
+                     <./img/guidedlearning.pdf>]) (./textuais/cronograma.tex
+[59] [60
+
+]) (./textuais/consideracoes.tex [61] [62
+
+]) (./monografia.bbl
 (./monografia.brf)
 \tf@brf=\write7
 \openout7 = `monografia.brf'.
 
- [63
-
-] [64
+ [63] [64
 
 ]
 bibitemlist
@@ -2613,28 +2598,25 @@ AED: lastpage setting LastPage
 \tf@toc=\write10
 \openout10 = `monografia.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 426.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 426.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 427.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 427.
  (./monografia.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 426.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 426.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 427.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 427.
 Package rerunfilecheck Info: File `monografia.brf' has not changed.
-(rerunfilecheck)             Checksum: ABC306D70B47BE687A736900F94DF799;4388.
-
-
-LaTeX Warning: There were undefined references.
+(rerunfilecheck)             Checksum: 9B87DAFDCB1F0344CFA09C7D079C5355;4504.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 426.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 427.
  ) 
 Here is how much of TeX's memory you used:
- 40641 strings out of 493304
- 853423 string characters out of 6139872
- 1079056 words of memory out of 5000000
- 42965 multiletter control sequences out of 15000+600000
- 110708 words of font info for 76 fonts, out of 8000000 for 9000
+ 40570 strings out of 493304
+ 852081 string characters out of 6139872
+ 1078941 words of memory out of 5000000
+ 42903 multiletter control sequences out of 15000+600000
+ 116007 words of font info for 77 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  68i,19n,106p,10466b,2038s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
@@ -2651,16 +2633,17 @@ lic/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/te
 xmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri
 10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fon
 ts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pf
-b></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/sh
-are/texmf/fonts/type1/public/tex-gyre/qcsr.pfb>
-Output written on monografia.pdf (68 pages, 5005656 bytes).
+b></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/pub
+lic/tex-gyre/qcsr.pfb>
+Output written on monografia.pdf (68 pages, 5034899 bytes).
 PDF statistics:
- 1479 PDF objects out of 1728 (max. 8388607)
- 1231 compressed objects within 13 object streams
- 234 named destinations out of 1000 (max. 500000)
- 491 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1490 PDF objects out of 1728 (max. 8388607)
+ 1241 compressed objects within 13 object streams
+ 231 named destinations out of 1000 (max. 500000)
+ 483 words of extra memory for PDF output out of 10000 (max. 10000000)
 

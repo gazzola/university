@@ -5,42 +5,42 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{23}{chapter.1}
-\contentsline {section}{\numberline {1.1}Objetivo}{24}{section.1.1}
-\contentsline {section}{\numberline {1.2}Estrutura do trabalho}{24}{section.1.2}
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{19}{chapter.1}
+\contentsline {section}{\numberline {1.1}O problema}{20}{section.1.1}
+\contentsline {section}{\numberline {1.2}Objetivo}{20}{section.1.2}
+\contentsline {section}{\numberline {1.3}Estrutura do trabalho}{21}{section.1.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {O problema}}{25}{chapter.2}
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Fundamentos}}{23}{chapter.2}
+\contentsline {section}{\numberline {2.1}Aprendizado de m\IeC {\'a}quina}{23}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Classifica\IeC {\c c}\IeC {\~a}o}{25}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Fun\IeC {\c c}\IeC {\~a}o de hip\IeC {\'o}tese}{26}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Fun\IeC {\c c}\IeC {\~a}o de custo}{28}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Minimiza\IeC {\c c}\IeC {\~a}o da fun\IeC {\c c}\IeC {\~a}o de custo}{30}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}Classifica\IeC {\c c}\IeC {\~a}o multiclasse}{32}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.6}Regulariza\IeC {\c c}\IeC {\~a}o}{32}{subsection.2.1.6}
+\contentsline {section}{\numberline {2.2}\textit {C\IeC {\'o}rpus} e seu conjunto de classes gramaticais}{34}{section.2.2}
+\contentsline {section}{\numberline {2.3}Representa\IeC {\c c}\IeC {\~a}o das palavras}{35}{section.2.3}
+\contentsline {section}{\numberline {2.4}Redes neurais}{39}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Neurocomputa\IeC {\c c}\IeC {\~a}o}{39}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Representa\IeC {\c c}\IeC {\~a}o do modelo}{39}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Representa\IeC {\c c}\IeC {\~a}o vetorizada do modelo}{42}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Classifica\IeC {\c c}\IeC {\~a}o multiclasse}{44}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.5}Fun\IeC {\c c}\IeC {\~a}o de custo}{45}{subsection.2.4.5}
+\contentsline {subsection}{\numberline {2.4.6}Algoritmo \textit {Backpropagation}}{45}{subsection.2.4.6}
+\contentsline {subsection}{\numberline {2.4.7}Treinamento}{47}{subsection.2.4.7}
+\contentsline {section}{\numberline {2.5}Aprendizagem profunda}{48}{section.2.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Fundamentos}}{27}{chapter.3}
-\contentsline {section}{\numberline {3.1}Aprendizado de m\IeC {\'a}quina}{27}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Classifica\IeC {\c c}\IeC {\~a}o}{29}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Fun\IeC {\c c}\IeC {\~a}o de hip\IeC {\'o}tese}{30}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Fun\IeC {\c c}\IeC {\~a}o de custo}{32}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Minimiza\IeC {\c c}\IeC {\~a}o da fun\IeC {\c c}\IeC {\~a}o de custo}{34}{subsection.3.1.4}
-\contentsline {subsection}{\numberline {3.1.5}Classifica\IeC {\c c}\IeC {\~a}o multiclasse}{36}{subsection.3.1.5}
-\contentsline {subsection}{\numberline {3.1.6}Regulariza\IeC {\c c}\IeC {\~a}o}{36}{subsection.3.1.6}
-\contentsline {section}{\numberline {3.2}C\IeC {\'o}rpus e seu conjunto de classes gramaticais}{38}{section.3.2}
-\contentsline {section}{\numberline {3.3}Representa\IeC {\c c}\IeC {\~a}o das palavras}{39}{section.3.3}
-\contentsline {section}{\numberline {3.4}Redes neurais}{43}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Neurocomputa\IeC {\c c}\IeC {\~a}o}{43}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Representa\IeC {\c c}\IeC {\~a}o do modelo}{43}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Representa\IeC {\c c}\IeC {\~a}o vetorizada do modelo}{46}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Classifica\IeC {\c c}\IeC {\~a}o multiclasse}{48}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Fun\IeC {\c c}\IeC {\~a}o de custo}{49}{subsection.3.4.5}
-\contentsline {subsection}{\numberline {3.4.6}Algoritmo \textit {Backpropagation}}{49}{subsection.3.4.6}
-\contentsline {subsection}{\numberline {3.4.7}Treinamento}{51}{subsection.3.4.7}
-\contentsline {section}{\numberline {3.5}Aprendizagem profunda}{52}{section.3.5}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Trabalhos relacionados}}{53}{chapter.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Trabalhos relacionados}}{57}{chapter.4}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Metodologia}}{55}{chapter.4}
+\contentsline {section}{\numberline {4.1}Representa\IeC {\c c}\IeC {\~a}o das palavras}{55}{section.4.1}
+\contentsline {section}{\numberline {4.2}Pontua\IeC {\c c}\IeC {\~o}es para estrutura gramatical}{56}{section.4.2}
+\contentsline {section}{\numberline {4.3}Treinamento}{57}{section.4.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Metodologia}}{59}{chapter.5}
-\contentsline {section}{\numberline {5.1}Representa\IeC {\c c}\IeC {\~a}o das palavras}{59}{section.5.1}
-\contentsline {section}{\numberline {5.2}Pontua\IeC {\c c}\IeC {\~o}es para estrutura gramatical}{59}{section.5.2}
-\contentsline {section}{\numberline {5.3}Treinamento}{60}{section.5.3}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Cronograma de atividades}}{61}{chapter.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Cronograma de atividades}}{63}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Considera\IeC {\c c}\IeC {\~o}es finais}}{63}{chapter.6}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{65}{section*.42}
+\contentsline {chapter}{Refer\^encias}{65}{section*.40}

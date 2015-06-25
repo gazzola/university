@@ -131,6 +131,11 @@ Biblioteca Digital de Teses e Disserta{\c{c}}{\~o}es da Universidade Federal de
 \emph{Proceedings of the Empiricial Methods in Natural Language Processing
   (EMNLP 2014)}, v.~12, p. 1532--1543, 2014.}
 
+\bibitem[Pennsylvania 2014]{penntreebank}
+\abntrefinfo{Pennsylvania}{PENNSYLVANIA}{2014}
+{PENNSYLVANIA, U. of. \emph{The Penn Treebank Project (2014).} 2014.
+Dispon{\'\i}vel em: \url{http://www.cis.upenn.edu/~treebank/}.}
+
 \bibitem[Santos e Zadrozny 2014]{dos2014training}
 \abntrefinfo{Santos e Zadrozny}{SANTOS; ZADROZNY}{2014}
 {SANTOS, C.~N. dos; ZADROZNY, B. Training state-of-the-art portuguese pos
@@ -146,11 +151,6 @@ Biblioteca Digital de Teses e Disserta{\c{c}}{\~o}es da Universidade Federal de
 \abntrefinfo{Socher}{SOCHER}{2015}
 {SOCHER, R. \emph{Deep Learning for Natural Language Processing}. 2015.
 Dispon{\'\i}vel em: \url{http://cs224d.stanford.edu/}.}
-
-\bibitem[The Penn Treebank Project (2014). 2014]{penntreebank}
-\abntrefinfo{The\ldots}{THE\ldots}{2014}
-{THE Penn Treebank Project (2014).
-[S.l.], 2014. Dispon{\'\i}vel em: \url{http://www.cis.upenn.edu/~treebank/}.}
 
 \bibitem[Turian, Ratinov e Bengio 2010]{turian2010word}
 \abntrefinfo{Turian, Ratinov e Bengio}{TURIAN; RATINOV; BENGIO}{2010}

@@ -253,7 +253,9 @@
   Title                    = {Tycho Brahe Parsed Corpus of Historical Portuguese},
 
   Author                   = {UNICAMP},
-  Year                     = {2010}
+  Year                     = {2010},
+
+  Url                      = {http://www.tycho.iel.unicamp.br/~tycho/corpus/en/index.html.}
 }
 
 @Article{van2008visualizing,

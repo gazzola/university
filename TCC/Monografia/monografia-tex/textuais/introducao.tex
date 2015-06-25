@@ -2,13 +2,13 @@
 \chapter{Introdução}\label{introducao}
 %==============================================================================
 
-O ato de classificar uma palavra pertencente a um conjunto de textos em uma classe gramatical depende de sua estrutura morfossintática. A análise morfossintática de uma palavra consiste em atribuí-la à sua correta classe gramatical de acordo com seu contexto. Esse ato é conhecido no campo de \ac{pln} como \ac{pos} Tagging. A \autoref{fig:exemploclassificacao} ilustra esse processo. 
+O ato de classificar uma palavra pertencente a um conjunto de textos em uma classe gramatical depende de sua estrutura morfossintática. A análise morfossintática de uma palavra consiste em atribuí-la à sua correta classe gramatical de acordo com seu contexto. Esse ato é conhecido no campo de \ac{pln} como \ac{pos} Tagging, ou etiquetagem na literatura brasileira. A \autoref{fig:exemploclassificacao} ilustra esse processo. 
 
 % O conjunto de textos denominados \textit{córpus} são amplamente utilizados para esse processo, e é sobre eles que é feito o treinamento do modelo de reconhecimento de padrões para que seja possível classificar uma palavra a uma certa classe gramatical.
 
 A principal medida dessa classificação é justamente a eficiência com o qual cada classe gramatical é atribuída para certa palavra, nesse quesito, há vários métodos propostos que conseguiram uma eficiência de cerca de 97\% \cite{dos2014training, collobert2011deep, fonseca2015evaluating}. Ou seja, cerca de uma palavra a cada vinte é classificada errada. 
 
-Apesar de muitos desses métodos já serem utilizados em larga escala, em \ac{pln} estamos sempre buscando ganhar mais performance, já que \ac{pos} Tagging pode ser aplicada em uma grande variedade de aplicações como tradução automática e extração de informações de textos \cite{manning1999foundations}, ferramentas de auxílio à leitura e escrita \cite{marquiafavel2010processo}, entre outras.
+Apesar de muitos desses métodos já serem utilizados em larga escala, em \ac{pln} estamos sempre buscando ganhar mais desempenho, já que \ac{pos} Tagging pode ser aplicada em uma grande variedade de aplicações como tradução automática e extração de informações de textos \cite{manning1999foundations}, ferramentas de auxílio à leitura e escrita \cite{marquiafavel2010processo}, entre outras.
 
 \begin{figure}[htb]
   \caption{Exemplo de classificação gramatical}\label{fig:exemploclassificacao}
@@ -17,14 +17,21 @@ Apesar de muitos desses métodos já serem utilizados em larga escala, em \ac{pl
   \end{center}
 \end{figure}
 
-A ambiguidade é uma propriedade que faz com que um objeto linguístico possa ser intepretado de modos diferentes. Existem dois tipos de ambiguidade: a ambiguidade sintática, que ocorre quando um lexema pode pertencer a mais de uma classe gramatical; ambiguidade semântica, onde um objeto linguístico pode trazer significados diferentes, dando sentidos diferentes à oração. Na \autoref{fig:exemploclassificacao} há os dois tipos de ambiguidade. A palavra \textit{banco} pode ser classificada como substantivo ou verbo, categorizando uma ambiguidade sintática. Já a sentença inteira é semanticamente ambígua, pois não dá para saber quem estava deitado no \textit{banco}.
-
-Sendo assim, é possível afirmar que a ambiguidade\footnote{Quando é empregado o termo ``ambiguidade'' no contexto de \ac{pos} Tagging, fica subentendido de que se trata de uma ambiguidade sintática.} é um grande problema em \ac{pos} Tagging. 
-
+A ambiguidade é uma propriedade que faz com que um objeto linguístico possa ser intepretado de modos diferentes. Existem dois tipos de ambiguidade: a ambiguidade sintática, que ocorre quando um lexema pode pertencer a mais de uma classe gramatical; ambiguidade semântica, que ocorre quando um objeto linguístico traz significados diferentes, dando sentidos diferentes à sentença. A ambiguidade\footnote{Quando é empregado o termo ``ambiguidade'' no contexto de \ac{pos} Tagging, fica subentendido de que se trata de uma ambiguidade sintática.} é um grande problema a ser considerado no processo de \ac{pos} Tagging. 
 
 
 
 % Nosso trabalho consiste em classificar palavras de acordo com seu contexto, ou seja, é feita a análise em termos das unidades primitivas que a compõem, e uma vez que ela é cumprida, podemos aplicar o resultado em outras análises.
+
+%==============================================================================
+\section{O problema}\label{sec:oproblema}
+%==============================================================================
+
+\ac{pos} Tagging é um processo díficil de ser realizado em \ac{pln}, pois linguagens naturais tem bastante ambiguidade. Sendo que há muita ambiguidade no Português do Brasil, visto que é uma língua com uma sintaxe flexível e que possui uma rica morfologia. Essa ambiguidade dificulta a análise morfossintática, porque não é possível determinar a priori qual classe gramatical a palavra sendo analisada pertence. No exemplo anterior, da \autoref{fig:exemploclassificacao}, não fica claro qual é o tipo de \textit{banco} que está sendo referenciado, onde pode ser classificado como um verbo ou como um substantivo. Para resolver o problema da ambiguidade, é necessário analisar os lexemas vizinhos de uma dada palavra, ou seja, é preciso analisar o seu contexto associado.
+
+Uma estratégia trivial seria utilizar um dicionário com uma função de mapeamento de um para um, onde a \textit{chave} seria a palavra e o \textit{valor} seria a classe gramatical. Infelizmente essa técnica requer muitos recursos computacionais, visto que o número de entradas seria grande por ter todas as palavras possíveis de vocabulário brasileiro, caso contrário, haveria o problema de ter uma palavra fora do vocabulário, e portanto ela não teria uma classe gramatical associada. Porém, o principal revés dessa estratégia é a ambiguidade, que faz com que uma palavra tenha mais que uma classe gramatical associada, e portanto não é possível mapear com indubitabilidade de que a classe associada é a correta sem antes analisar o contexto.
+
+Dito isso, este trabalho consiste em desenvolver um método para classificar palavras em suas respectivas classes gramaticais de modo eficiente. Uma abordagem que está sendo amplamente utilizada para resolver esse problema é aprendizado de máquina, pois ela permite treinar um modelo que aprende padrões morfológicos, sintáticos e semânticos de uma sentença. E em ordem de conseguir solucionar esse problema com eficiência, é necessário escolher um bom método computacional. Este trabalho se baseará na utilização de um método de aprendizagem profunda, que utiliza um modelo neural recorrente com múltiplas camadas. Utilizamos redes neurais pois elas oferecem um jeito alternativo de realizar aprendizado de máquina quando temos hipóteses complexas com muitas características diferentes. 
 
 
 %------------------------------------------------------------------------------
@@ -33,9 +40,9 @@ Sendo assim, é possível afirmar que a ambiguidade\footnote{Quando é empregado
 
 Este trabalho irá propor um novo método de classificação de palavras em classes gramaticais e analisar sua eficiência em relação a trabalhos já publicados que utilizam métodos já consolidados. Primordialmente, isso será feito para o escopo da língua portuguesa brasileira. 
 
-Para buscar uma boa eficiência será proposto um método original, que se baseia em classificar primeiramente palavras mais fáceis, desse modo, espera-se deixar palavras ambíguas por último. Por exemplo, para a \autoref{fig:exemploclassificacao} deixaríamos a palavra \textit{banco} para o final, uma vez que não sabemos se isso se trata de um verbo ou de um substantivo.  
+Para buscar uma boa eficiência será proposto um método original, que se baseia em classificar primeiramente palavras mais fáceis, desse modo, espera-se deixar palavras ambíguas por último. Por exemplo, para a \autoref{fig:exemploclassificacao} deixaríamos a palavra \textit{banco} para o final. Além disso, o método se baseia numa técnica que  representa palavras e classes gramaticais em vetores reais multivalorados. Essa técnica será explicada na \autoref{sec:representacaodaspalavras}. 
 
-Como já mencionado, o estado-da-arte atual tem atualmente cerca de 97\% de acurácia, tentaremos ultrapassar esse limite aplicando novas técnicas de classificação e utilizando características significantes das palavras. A acurácia da classificação não será a única medida levada em consideração, o tempo de processamento gasto no treinamento para cada \textit{córpus} também será.
+Como já mencionado, o estado da arte atual tem atualmente cerca de 97\% de acurácia, tentaremos ultrapassar esse limite aplicando novas técnicas de classificação e utilizando características significantes das palavras. A acurácia da classificação não será a única medida levada em consideração, o tempo de processamento gasto no treinamento do modelo também será.
 
 % Para exemplificar brevemente uma possível aplicação, no final pretende-se que o modelo seja capaz de classificar corretamente as palavras analisando o seu contexto, e com isso outros analisadores conseguirão identificar o uso das palavras de acordo com seu significado, como mostrado abaixo na \autoref{eq:exemploobjetivo}. Essa equação será explicada na \autoref{sec:representacaodaspalavras}.
 
@@ -49,4 +56,4 @@ Como já mencionado, o estado-da-arte atual tem atualmente cerca de 97\% de acur
 \section{Estrutura do trabalho}\label{sec:estruturadotrabalho}
 %------------------------------------------------------------------------------
 
-Este trabalho está dividido na seguinte maneira: No \autoref{oproblema} será descrito o problema de etiquetagem. No \autoref{fundamentos} será mostrados os principais fundamentos necessários para entender o método proposto e seus conceitos relacionados; após passar os fundamentos, será apresentado no \autoref{trabalhosrelacionados} os trabalhos relacionados que procuram resolver o problema de \ac{pos} Tagging utilizando diferentes técnicas e abordagens. Depois, no \autoref{desenvolvimento} será detalhado aspectos da metodologia a ser aplicada e a explicação do método proposto juntamente com as técnicas utilizadas. Por fim, no \autoref{cronograma} será apresentado o cronograma de tarefas previstas até a conclusão deste trabalho.
+Este trabalho está dividido na seguinte maneira: No \autoref{fundamentos} é mostrado os principais fundamentos necessários para entender o método proposto e seus conceitos relacionados; após passar os fundamentos, será apresentado no \autoref{trabalhosrelacionados} os trabalhos relacionados que procuram resolver o problema de \ac{pos} Tagging utilizando diferentes técnicas e métodos. Depois, no \autoref{desenvolvimento} será detalhado aspectos da metodologia a ser aplicada e a explicação do método proposto juntamente com as técnicas utilizadas. No \autoref{cronograma} será apresentado o cronograma de tarefas previstas até a conclusão deste trabalho. Por fim, o \autoref{consideracoes} apresenta as considerações finais.
