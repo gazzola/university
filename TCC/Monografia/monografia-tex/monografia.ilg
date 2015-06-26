@@ -7,11 +7,6 @@ Scanning style file /usr/share/texlive/texmf-dist/makeindex/nomencl/nomencl.ist.
 ** Input style error (file = /usr/share/texlive/texmf-dist/makeindex/nomencl/nomencl.ist, line = 72):
    -- Unknown specifier lethead_flag.
 ...done (10 attributes redefined, 3 ignored).
-Scanning input file monografia.nlo....
-!! Input index error (file = monografia.nlo, line = 6):
-   -- Extra `|' at position 34 of first argument.
-done (10 entries accepted, 1 rejected).
-Sorting entries....done (38 comparisons).
-Generating output file monografia.nls....done (25 lines written, 0 warnings).
-Output written in monografia.nls.
+Scanning input file monografia.nlo...done (0 entries accepted, 0 rejected).
+Nothing written in monografia.nls.
 Transcript written in monografia.ilg.

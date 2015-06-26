@@ -1,25 +1,26 @@
 \select@language {brazil}
-\contentsline {figure}{\numberline {1}{\ignorespaces Exemplo de classifica\IeC {\c c}\IeC {\~a}o gramatical\relax }}{19}{figure.caption.7}
-\contentsline {figure}{\numberline {2}{\ignorespaces Diagrama para resultado final\relax }}{23}{figure.caption.8}
-\contentsline {figure}{\numberline {3}{\ignorespaces Demonstra\IeC {\c c}\IeC {\~a}o de regress\IeC {\~a}o\relax }}{24}{figure.caption.9}
-\contentsline {figure}{\numberline {4}{\ignorespaces Demonstra\IeC {\c c}\IeC {\~a}o de classifica\IeC {\c c}\IeC {\~a}o\relax }}{25}{figure.caption.10}
-\contentsline {figure}{\numberline {5}{\ignorespaces Fun\IeC {\c c}\IeC {\~a}o sigmoide\relax }}{27}{figure.caption.12}
-\contentsline {figure}{\numberline {6}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o dos casos da fun\IeC {\c c}\IeC {\~a}o de custo\relax }}{29}{figure.caption.13}
-\contentsline {figure}{\numberline {7}{\ignorespaces Fun\IeC {\c c}\IeC {\~a}o de custo - $J(\theta _0, \theta _1)$\relax }}{30}{figure.caption.14}
-\contentsline {figure}{\numberline {8}{\ignorespaces Funcionamento do Gradiente Descendente\relax }}{31}{figure.caption.15}
-\contentsline {figure}{\numberline {9}{\ignorespaces Exemplo de \textit {underfitting} e \textit {overfitting}\relax }}{33}{figure.caption.16}
-\contentsline {figure}{\numberline {10}{\ignorespaces Exemplo de vetores de \textit {features} de cinco dimens\IeC {\~o}es representando palavras\relax }}{37}{figure.caption.18}
-\contentsline {figure}{\numberline {11}{\ignorespaces t-SNE: Visualiza\IeC {\c c}\IeC {\~a}o para \textit {word embeddings}\relax }}{38}{figure.caption.19}
-\contentsline {figure}{\numberline {12}{\ignorespaces Exemplo de palavras similares\relax }}{38}{figure.caption.20}
-\contentsline {figure}{\numberline {13}{\ignorespaces Exemplos de representa\IeC {\c c}\IeC {\~a}o de sensores no c\IeC {\'e}rebro\relax }}{39}{figure.caption.21}
-\contentsline {figure}{\numberline {14}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o de um neur\IeC {\^o}nio\relax }}{40}{figure.caption.22}
-\contentsline {figure}{\numberline {15}{\ignorespaces Abstra\IeC {\c c}\IeC {\~a}o matem\IeC {\'a}tica de um neur\IeC {\^o}nio\relax }}{41}{figure.caption.23}
-\contentsline {figure}{\numberline {16}{\ignorespaces Rede neural com uma camada oculta\relax }}{41}{figure.caption.25}
-\contentsline {figure}{\numberline {17}{\ignorespaces Modelo de rede neural - Passos do \textit {Forward Propagation}\relax }}{44}{figure.caption.26}
-\contentsline {figure}{\numberline {18}{\ignorespaces Passos do Backpropagation\relax }}{48}{figure.caption.28}
-\contentsline {figure}{\numberline {19}{\ignorespaces Modelo de aprendizagem profunda\relax }}{49}{figure.caption.29}
-\contentsline {figure}{\numberline {20}{\ignorespaces Sentido do aprendizado de m\IeC {\'a}quina\relax }}{50}{figure.caption.30}
-\contentsline {figure}{\numberline {21}{\ignorespaces Tamanho das redes neurais ao longo dos anos\relax }}{51}{figure.caption.31}
-\contentsline {figure}{\numberline {22}{\ignorespaces Funcionamento de aprendizagem profunda em POS Tagging\relax }}{51}{figure.caption.32}
-\contentsline {figure}{\numberline {23}{\ignorespaces Modelo da rede neural\relax }}{57}{figure.caption.35}
-\contentsline {figure}{\numberline {24}{\ignorespaces Grafo de transi\IeC {\c c}\IeC {\~o}es de palavras mais f\IeC {\'a}ceis\relax }}{58}{figure.caption.36}
+\contentsline {figure}{\numberline {1}{\ignorespaces Exemplo de classifica\IeC {\c c}\IeC {\~a}o gramatical\relax }}{17}{figure.caption.6}
+\contentsline {figure}{\numberline {2}{\ignorespaces Diagrama para resultado final\relax }}{21}{figure.caption.7}
+\contentsline {figure}{\numberline {3}{\ignorespaces Demonstra\IeC {\c c}\IeC {\~a}o de regress\IeC {\~a}o\relax }}{22}{figure.caption.8}
+\contentsline {figure}{\numberline {4}{\ignorespaces Demonstra\IeC {\c c}\IeC {\~a}o de classifica\IeC {\c c}\IeC {\~a}o\relax }}{23}{figure.caption.9}
+\contentsline {figure}{\numberline {5}{\ignorespaces Fun\IeC {\c c}\IeC {\~a}o sigmoide\relax }}{25}{figure.caption.11}
+\contentsline {figure}{\numberline {6}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o dos casos da fun\IeC {\c c}\IeC {\~a}o de custo\relax }}{27}{figure.caption.12}
+\contentsline {figure}{\numberline {7}{\ignorespaces Fun\IeC {\c c}\IeC {\~a}o de custo - $J(\theta _0, \theta _1)$\relax }}{28}{figure.caption.13}
+\contentsline {figure}{\numberline {8}{\ignorespaces Funcionamento do Gradiente Descendente\relax }}{29}{figure.caption.14}
+\contentsline {figure}{\numberline {9}{\ignorespaces Exemplo de \textit {underfitting} e \textit {overfitting}\relax }}{31}{figure.caption.15}
+\contentsline {figure}{\numberline {10}{\ignorespaces Exemplo de matriz de coocorr\IeC {\^e}ncia para cria\IeC {\c c}\IeC {\~a}o de palavras vetorizadas\relax }}{34}{figure.caption.17}
+\contentsline {figure}{\numberline {11}{\ignorespaces Exemplo de vetores de \textit {features} de cinco dimens\IeC {\~o}es representando palavras\relax }}{35}{figure.caption.18}
+\contentsline {figure}{\numberline {12}{\ignorespaces t-SNE: Visualiza\IeC {\c c}\IeC {\~a}o para \textit {word embeddings}\relax }}{36}{figure.caption.19}
+\contentsline {figure}{\numberline {13}{\ignorespaces Exemplo de palavras similares\relax }}{37}{figure.caption.20}
+\contentsline {figure}{\numberline {14}{\ignorespaces Exemplos de representa\IeC {\c c}\IeC {\~a}o de sensores no c\IeC {\'e}rebro\relax }}{38}{figure.caption.21}
+\contentsline {figure}{\numberline {15}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o de um neur\IeC {\^o}nio\relax }}{38}{figure.caption.22}
+\contentsline {figure}{\numberline {16}{\ignorespaces Abstra\IeC {\c c}\IeC {\~a}o matem\IeC {\'a}tica de um neur\IeC {\^o}nio\relax }}{39}{figure.caption.23}
+\contentsline {figure}{\numberline {17}{\ignorespaces Rede neural com uma camada oculta\relax }}{40}{figure.caption.25}
+\contentsline {figure}{\numberline {18}{\ignorespaces Modelo de rede neural - Passos do \textit {Forward Propagation}\relax }}{43}{figure.caption.26}
+\contentsline {figure}{\numberline {19}{\ignorespaces Passos do Backpropagation\relax }}{46}{figure.caption.28}
+\contentsline {figure}{\numberline {20}{\ignorespaces Modelo de aprendizagem profunda\relax }}{48}{figure.caption.29}
+\contentsline {figure}{\numberline {21}{\ignorespaces Sentido do aprendizado de m\IeC {\'a}quina\relax }}{49}{figure.caption.30}
+\contentsline {figure}{\numberline {22}{\ignorespaces Tamanho das redes neurais ao longo dos anos\relax }}{50}{figure.caption.31}
+\contentsline {figure}{\numberline {23}{\ignorespaces Funcionamento de aprendizagem profunda em POS Tagging\relax }}{50}{figure.caption.32}
+\contentsline {figure}{\numberline {24}{\ignorespaces Modelo da rede neural\relax }}{55}{figure.caption.36}
+\contentsline {figure}{\numberline {25}{\ignorespaces Grafo de transi\IeC {\c c}\IeC {\~o}es de palavras mais f\IeC {\'a}ceis\relax }}{56}{figure.caption.37}

@@ -1,8 +1,9 @@
 \select@language {brazil}
-\contentsline {table}{\numberline {1}{\ignorespaces Nota\IeC {\c c}\IeC {\~a}o utilizada para classifica\IeC {\c c}\IeC {\~a}o\relax }}{26}{table.caption.11}
-\contentsline {table}{\numberline {2}{\ignorespaces Dados dos \textit {c\IeC {\'o}rpus}\relax }}{35}{table.caption.17}
-\contentsline {table}{\numberline {3}{\ignorespaces Nota\IeC {\c c}\IeC {\~a}o utilizada para representa\IeC {\c c}\IeC {\~a}o em redes neurais\relax }}{42}{table.caption.24}
-\contentsline {table}{\numberline {4}{\ignorespaces Nota\IeC {\c c}\IeC {\~a}o utilizada para aprendizado em redes neurais\relax }}{45}{table.caption.27}
-\contentsline {table}{\numberline {5}{\ignorespaces Comparativo entre t\IeC {\'e}cnicas e resultados encontrados na literatura para o problema de \ac {pos} Tagging.\relax }}{54}{table.caption.33}
-\contentsline {table}{\numberline {6}{\ignorespaces Nota\IeC {\c c}\IeC {\~a}o utilizada para o treinamento do modelo\relax }}{55}{table.caption.34}
-\contentsline {table}{\numberline {7}{\ignorespaces Cronograma de atividades restantes\relax }}{61}{table.caption.37}
+\contentsline {table}{\numberline {1}{\ignorespaces Nota\IeC {\c c}\IeC {\~a}o utilizada para classifica\IeC {\c c}\IeC {\~a}o\relax }}{24}{table.caption.10}
+\contentsline {table}{\numberline {2}{\ignorespaces Dados dos \textit {c\IeC {\'o}rpus}\relax }}{33}{table.caption.16}
+\contentsline {table}{\numberline {3}{\ignorespaces Nota\IeC {\c c}\IeC {\~a}o utilizada para representa\IeC {\c c}\IeC {\~a}o em redes neurais\relax }}{40}{table.caption.24}
+\contentsline {table}{\numberline {4}{\ignorespaces Nota\IeC {\c c}\IeC {\~a}o utilizada para aprendizado em redes neurais\relax }}{44}{table.caption.27}
+\contentsline {table}{\numberline {5}{\ignorespaces Comparativo de t\IeC {\'e}cnicas encontradas na literatura para \ac {pos} Tagging\relax }}{52}{table.caption.33}
+\contentsline {table}{\numberline {6}{\ignorespaces Comparativo dos melhores resultados encontrados na literatura para \ac {pos} Tagging\relax }}{52}{table.caption.34}
+\contentsline {table}{\numberline {7}{\ignorespaces Nota\IeC {\c c}\IeC {\~a}o utilizada para o treinamento do modelo\relax }}{53}{table.caption.35}
+\contentsline {table}{\numberline {8}{\ignorespaces Cronograma de atividades restantes\relax }}{59}{table.caption.38}

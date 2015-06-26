@@ -76,6 +76,15 @@
 \usepackage{subcaption}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}m{#1}} 
 
+\usepackage{tablefootnote}
+
+\makeatletter
+\newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
+\makeatother
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
 % -------------------------------------------------------------------------------------------------
 % Configurações de pacotes
 % -------------------------------------------------------------------------------------------------
@@ -152,14 +161,14 @@
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % -------------------------------------------------------------------------------------------------
-\titulo{Aprendizagem Guiada para Análise Morfossintática Utilizando Redes Neurais Recorrentes}
+\titulo{Aprendizagem Guiada para Análise Morfossintática Utilizando Redes Neurais Recursivas}
 \autor{Marcos Vinícius Treviso}
 \local{Alegrete}
 \data{2015}
 \orientador{Fábio Natanael Kepler}
 \coorientador{} % Se houver
 \instituicao{Universidade Federal do Pampa}
-\tipotrabalho{Projeto de Trabalho de Conclusão de Curso} % Para TCC I
+\tipotrabalho{Projeto de Trabalho de Conclusão de Curso } % Para TCC I
 % \tipotrabalho{Trabalho de Conclusão de Curso~} % Para TCC II
 % O preambulo deve conter o tipo do trabalho, o objetivo, o nome da instituição e a área de concentração
 \preambulo{\imprimirtipotrabalho apresentado ao Curso de Graduação em Ciência da
@@ -249,17 +258,19 @@
 % Nomenclaturas/Símbolos
 % \nomenclature{$A_i$}{Área do $i^{esimo}$ componente}
 % \nomenclature{$\mathcal{T}$}{Conjunto de trabalhos de TCC}
-\nomenclature{$X$}{Dados de entrada ou \textit{features}}
-\nomenclature{$Y$}{Dados de saída}
-\nomenclature{$X_j^{(i)}$}{O valor da \textit{feature} \textit{j} no i-ésimo exemplo de treinamento}
-\nomenclature{$X^{(i)}$}{O vetor coluna de todas as \textit{features} no i-ésimo exemplo de treinamento}
-\nomenclature{$m$}{Número de exemplos de treinamento}
-\nomenclature{$n$}{$|X^{(i)}|$, o número de \textit{features}}
-\nomenclature{$(x, y)$}{Um exemplo de treinamento}
-\nomenclature{$(X^{(i)}, Y^{(i)})$}{O i-ésimo exemplo de treinamento}
-\nomenclature{$\theta$}{Parâmetros a serem aprendidos}
-\nomenclature{$\alpha$}{Taxa de aprendizagem}
-\nomenclature{$\lambda$}{Parâmetro de regularização}
+
+
+% \nomenclature{$X$}{Dados de entrada ou \textit{features}}
+% \nomenclature{$Y$}{Dados de saída}
+% \nomenclature{$X_j^{(i)}$}{O valor da \textit{feature} \textit{j} no i-ésimo exemplo de treinamento}
+% \nomenclature{$X^{(i)}$}{O vetor coluna de todas as \textit{features} no i-ésimo exemplo de treinamento}
+% \nomenclature{$m$}{Número de exemplos de treinamento}
+% \nomenclature{$n$}{$|X^{(i)}|$, o número de \textit{features}}
+% \nomenclature{$(x, y)$}{Um exemplo de treinamento}
+% \nomenclature{$(X^{(i)}, Y^{(i)})$}{O i-ésimo exemplo de treinamento}
+% \nomenclature{$\theta$}{Parâmetros a serem aprendidos}
+% \nomenclature{$\alpha$}{Taxa de aprendizagem}
+% \nomenclature{$\lambda$}{Parâmetro de regularização}
 
 % -------------------------------------------------------------------------------------------------
 % Inclui alguns ajustes finos para que fique de acordo com o Manual de Normatização
@@ -393,7 +404,7 @@
 
 \input{textuais/cronograma} % [OBRIGATORIO]
 
-\input{textuais/consideracoes} % [OBRIGATORIO]
+% \input{textuais/consideracoes} % [OBRIGATORIO]
 
 
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
