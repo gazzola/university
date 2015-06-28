@@ -100,7 +100,7 @@ Para treinar a rede neural, todos os ajustamentos são feitos em ordem de maximi
 \sum\limits_{(w_1^t,c_1^t) \in \phi} P(c_1^t|w_1^t,\theta) \nonumber \\
 \end{equation}
 
-Onde $\phi$ denota o conjunto dos pares de palavras e classes gramaticais. Computamos a probabilidade acima utilizando uma operação \textit{softmax}:
+Onde $\phi$ denota o conjunto dos pares de palavras e classes gramaticais. Computamos a probabilidade acima utilizando uma operação \textit{softmax} \cite{Bengio-et-al-2015-Book}:
 
 \begin{align}
 P(c_1^t|w_1^t,\theta) = &\ \dfrac{e^{S(w_1^t, c_1^t)}}{\sum\limits_{u_1^t \in \gamma^t} e^{S(w_1^t, u_1^t)}} \nonumber \nonumber \\
