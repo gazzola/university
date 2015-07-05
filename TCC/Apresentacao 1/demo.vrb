@@ -1,0 +1,28 @@
+\frametitle{Redes neurais recursivas}
+
+  \begin{itemize}
+    \item Grafo computacional parece como uma árvore
+
+    \item Aplica-se transformações recursivamente
+
+     % ``Dado um grafo acíclico dirigido, é visitado os nodos em ordem topológica, e recursivamente aplica-se transformações para gerar novas representações a partir de prévias representações já computadas dos nodos filhos''
+
+
+    \item Composição da saída com entrada
+
+    \item[\ ] \
+
+    \begin{figure}
+      \begin{center}
+        \includegraphics[scale=0.25]{img/redeneuralrecursiva.pdf}
+      \end{center}
+    \end{figure}
+
+
+
+
+  \end{itemize}
+
+
+
+
