@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.7)  5 JUL 2015 20:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.7)  6 JUL 2015 14:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1889,19 +1889,19 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 ))
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 72.
+(hyperref)                removing `\\' on input line 73.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 72.
+(hyperref)                removing `\\' on input line 73.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 72.
+(hyperref)                removing `\\' on input line 73.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 72.
+(hyperref)                removing `\\' on input line 73.
 
 (/home/marcos/texmf/tex/latex/mtheme/pgfplotsthemetol.sty
 Package: pgfplotsthemetol 2015/06/16 PGFplots colors based on Paul Tol's SRON t
@@ -1909,21 +1909,21 @@ echnical note
 ) (./demo.aux)
 \openout1 = `demo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 76.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 77.
 
 (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1992,7 +1992,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box82
-Package hyperref Info: Link coloring OFF on input line 76.
+Package hyperref Info: Link coloring OFF on input line 77.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -2002,56 +2002,56 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count327
 )
-LaTeX Info: Redefining \ref on input line 76.
-LaTeX Info: Redefining \pageref on input line 76.
-LaTeX Info: Redefining \nameref on input line 76.
+LaTeX Info: Redefining \ref on input line 77.
+LaTeX Info: Redefining \pageref on input line 77.
+LaTeX Info: Redefining \nameref on input line 77.
 
 (./demo.out) (./demo.out)
 \@outlinefile=\write5
 \openout5 = `demo.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 76.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 77.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 76.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 77.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/lmr/m/n on input line 76.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 76.
+(Font)                  OT1/cmss/m/n --> T1/lmr/m/n on input line 77.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 76.
+(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 76.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 76.
+(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 77.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 76.
+(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 76.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 76.
+(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 77.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 76.
+(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 76.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 76.
+(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 77.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 76.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 76.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 77.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 76.
+(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 77.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 76.
+(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/lmr/bx/n on input line 76.
+(Font)                  OT1/cmss/bx/n --> T1/lmr/bx/n on input line 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/lmss/bx/n --> T1/lmss/bx/n on input line 76.
+(Font)                  T1/lmss/bx/n --> T1/lmss/bx/n on input line 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 76.
+(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 76.
+(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/lmtt/m/n --> T1/lmtt/bx/n on input line 76.
+(Font)                  T1/lmtt/m/n --> T1/lmtt/bx/n on input line 77.
 
 (/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-basic-dicti
 onary/translator-basic-dictionary-English.dict
@@ -2077,45 +2077,45 @@ Dictionary: translator-numbers-dictionary, Language: English
 tionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 76.
+LaTeX Info: Redefining \includegraphics on input line 77.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             macros/latex/contrib/pageslts/ 
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 76.
+(lastpage)             ! on input line 77.
 
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.9}).
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-(./demo.nav) <img/unipampa_logo.png, id=38, 449.68pt x 221.82875pt>
+(./demo.nav) <img/unipampa_logo.png, id=14, 449.68pt x 221.82875pt>
 File: img/unipampa_logo.png Graphic file (type png)
 
 <use img/unipampa_logo.png>
-Package pdftex.def Info: img/unipampa_logo.png used on input line 78.
-(pdftex.def)             Requested size: 86.51048pt x 42.67912pt.
+Package pdftex.def Info: img/unipampa_logo.png used on input line 79.
+(pdftex.def)             Requested size: 72.09436pt x 35.56593pt.
 
-Overfull \vbox (62.67912pt too high) detected at line 78
+Overfull \vbox (55.56593pt too high) detected at line 79
  []
 
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 78.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 79.
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
 
  []
 
 
-Overfull \vbox (13.79993pt too high) detected at line 78
+Overfull \vbox (13.79993pt too high) detected at line 79
  []
 
 [1
@@ -2144,7 +2144,7 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
 \openout4 = `demo.vrb'.
 
  (./demo.vrb
-<img/exemploclassificacao.pdf, id=74, 539.72644pt x 83.2123pt>
+<img/exemploclassificacao.pdf, id=51, 539.72644pt x 83.2123pt>
 File: img/exemploclassificacao.pdf Graphic file (type pdf)
 
 <use img/exemploclassificacao.pdf>
@@ -2156,7 +2156,7 @@ Package pdftex.def Info: img/exemploclassificacao.pdf used on input line 14.
 \openout4 = `demo.vrb'.
 
 
-(./demo.vrb <img/funcoes.pdf, id=94, 684.40085pt x 256.59818pt>
+(./demo.vrb <img/funcoes.pdf, id=71, 684.40085pt x 256.59818pt>
 File: img/funcoes.pdf Graphic file (type pdf)
 
 <use img/funcoes.pdf>
@@ -2178,7 +2178,7 @@ Package pdftex.def Info: img/funcoes.pdf used on input line 15.
 ]
 \openout4 = `demo.vrb'.
 
- (./demo.vrb <img/passoapasso.png, id=119, 820.666pt x 234.476pt>
+ (./demo.vrb <img/passoapasso.png, id=97, 820.666pt x 234.476pt>
 File: img/passoapasso.png Graphic file (type png)
 
 <use img/passoapasso.png>
@@ -2235,13 +2235,17 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 11.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 11.
+
+
+LaTeX Warning: Citation `fonseca2015evaluating' on page 9 undefined on input li
+ne 29.
+
 ) [9
 
 ]
 \openout4 = `demo.vrb'.
 
- (./demo.vrb)
-[10
+ (./demo.vrb) [10
 
 ]
 \openout4 = `demo.vrb'.
@@ -2255,9 +2259,9 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 24.
 )
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 308.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 309.
 
-Overfull \vbox (14.18527pt too high) detected at line 308
+Overfull \vbox (14.18527pt too high) detected at line 309
  []
 
 [11
@@ -2265,7 +2269,7 @@ Overfull \vbox (14.18527pt too high) detected at line 308
 ]
 \openout4 = `demo.vrb'.
 
- (./demo.vrb <img/Turian-WordTSNE.png, id=153, 1794.705pt x 649.42625pt>
+ (./demo.vrb <img/Turian-WordTSNE.png, id=128, 1794.705pt x 649.42625pt>
 File: img/Turian-WordTSNE.png Graphic file (type png)
 
 <use img/Turian-WordTSNE.png>
@@ -2275,6 +2279,14 @@ Package pdftex.def Info: img/Turian-WordTSNE.png used on input line 10.
 Overfull \hbox (15.74309pt too wide) in paragraph at lines 10--11
  [] 
  []
+
+
+LaTeX Warning: Citation `turian2010word' on page 12 undefined on input line 12.
+
+
+
+LaTeX Warning: Citation `turian2010word' on page 12 undefined on input line 12.
+
 
 ) [12
 
@@ -2287,14 +2299,23 @@ Overfull \hbox (15.74309pt too wide) in paragraph at lines 10--11
 \openout4 = `demo.vrb'.
 
  (./demo.vrb
-<img/redeneuralmulticlass.png, id=172, 520.94624pt x 436.63126pt>
+<img/redeneuralmulticlass.png, id=142, 520.94624pt x 436.63126pt>
 File: img/redeneuralmulticlass.png Graphic file (type png)
 
 <use img/redeneuralmulticlass.png>
 Package pdftex.def Info: img/redeneuralmulticlass.png used on input line 7.
 (pdftex.def)             Requested size: 208.3748pt x 174.6494pt.
+
+
+LaTeX Warning: Citation `machinelearningcoursera' on page 14 undefined on input
+ line 9.
+
+
+LaTeX Warning: Citation `machinelearningcoursera' on page 14 undefined on input
+ line 9.
+
 )
-Overfull \vbox (23.68016pt too high) detected at line 392
+Overfull \vbox (23.68016pt too high) detected at line 393
  []
 
 [14
@@ -2303,14 +2324,23 @@ Overfull \vbox (23.68016pt too high) detected at line 392
 \openout4 = `demo.vrb'.
 
  (./demo.vrb
-<img/backpropagationalg.png, id=184, 540.0175pt x 400.49625pt>
+<img/backpropagationalg.png, id=149, 540.0175pt x 400.49625pt>
 File: img/backpropagationalg.png Graphic file (type png)
 
 <use img/backpropagationalg.png>
 Package pdftex.def Info: img/backpropagationalg.png used on input line 7.
 (pdftex.def)             Requested size: 226.8058pt x 168.20728pt.
+
+
+LaTeX Warning: Citation `machinelearningcoursera' on page 15 undefined on input
+ line 9.
+
+
+LaTeX Warning: Citation `machinelearningcoursera' on page 15 undefined on input
+ line 9.
+
 )
-Overfull \vbox (17.23804pt too high) detected at line 407
+Overfull \vbox (17.23804pt too high) detected at line 408
  []
 
 [15
@@ -2319,14 +2349,23 @@ Overfull \vbox (17.23804pt too high) detected at line 407
 \openout4 = `demo.vrb'.
 
  (./demo.vrb
-<img/aprendendodeep2.pdf, id=196, 688.40016pt x 736.45439pt>
+<img/aprendendodeep2.pdf, id=156, 688.40016pt x 736.45439pt>
 File: img/aprendendodeep2.pdf Graphic file (type pdf)
 
 <use img/aprendendodeep2.pdf>
 Package pdftex.def Info: img/aprendendodeep2.pdf used on input line 20.
 (pdftex.def)             Requested size: 165.2194pt x 176.75266pt.
+
+
+LaTeX Warning: Citation `Bengio-et-al-2015-Book' on page 16 undefined on input 
+line 22.
+
+
+LaTeX Warning: Citation `Bengio-et-al-2015-Book' on page 16 undefined on input 
+line 22.
+
 )
-Overfull \vbox (12.03906pt too high) detected at line 440
+Overfull \vbox (1.03906pt too high) detected at line 441
  []
 
 [16
@@ -2335,9 +2374,30 @@ Overfull \vbox (12.03906pt too high) detected at line 440
 \openout4 = `demo.vrb'.
 
  (./demo.vrb
-Overfull \hbox (9.99896pt too wide) in paragraph at lines 18--19
+
+LaTeX Warning: Citation `kepler2005etiquetador' on page 17 undefined on input l
+ine 12.
+
+
+LaTeX Warning: Citation `dos2014training' on page 17 undefined on input line 13
+.
+
+
+LaTeX Warning: Citation `fonseca2015evaluating' on page 17 undefined on input l
+ine 14.
+
+
+Overfull \hbox (10.01305pt too wide) in paragraph at lines 18--19
 []  
  []
+
+
+LaTeX Warning: Citation `fonseca2015evaluating' on page 17 undefined on input l
+ine 23.
+
+
+LaTeX Warning: Citation `fonseca2015evaluating' on page 17 undefined on input l
+ine 27.
 
 ) [17
 
@@ -2360,7 +2420,10 @@ Overfull \hbox (9.99896pt too wide) in paragraph at lines 18--19
 \openout4 = `demo.vrb'.
 
  (./demo.vrb
-<img/guidedlearning.pdf, id=273, 594.90683pt x 223.35628pt>
+
+LaTeX Warning: Citation `shen2007guided' on page 21 undefined on input line 9.
+
+<img/guidedlearning.pdf, id=216, 594.90683pt x 223.35628pt>
 File: img/guidedlearning.pdf Graphic file (type pdf)
 
 <use img/guidedlearning.pdf>
@@ -2372,14 +2435,14 @@ Package pdftex.def Info: img/guidedlearning.pdf used on input line 15.
 \openout4 = `demo.vrb'.
 
  (./demo.vrb
-<img/neuralnetworkfinal_alg2.pdf, id=294, 1768.0304pt x 1593.45313pt>
+<img/neuralnetworkfinal_alg2.pdf, id=236, 1768.0304pt x 1593.45313pt>
 File: img/neuralnetworkfinal_alg2.pdf Graphic file (type pdf)
 
 <use img/neuralnetworkfinal_alg2.pdf>
 Package pdftex.def Info: img/neuralnetworkfinal_alg2.pdf used on input line 7.
 (pdftex.def)             Requested size: 265.19312pt x 239.00766pt.
 )
-Overfull \vbox (17.29407pt too high) detected at line 613
+Overfull \vbox (17.29407pt too high) detected at line 614
  []
 
 [22
@@ -2387,13 +2450,17 @@ Overfull \vbox (17.29407pt too high) detected at line 613
  <./img/neuralnetworkfinal_alg2.pdf>]
 \openout4 = `demo.vrb'.
 
- (./demo.vrb) [23
+ (./demo.vrb
+
+LaTeX Warning: Citation `Bengio-et-al-2015-Book' on page 23 undefined on input 
+line 21.
+
+) [23
 
 ]
 \openout4 = `demo.vrb'.
 
- (./demo.vrb)
-[24
+ (./demo.vrb) [24
 
 ] (./demo.bbl (./demo.brf)
 \tf@brf=\write6
@@ -2408,7 +2475,7 @@ Overfull \vbox (17.29407pt too high) detected at line 613
 
 
 ]
-Overfull \vbox (3.94621pt too high) detected at line 697
+Overfull \vbox (3.94621pt too high) detected at line 698
  []
 
 [28
@@ -2417,7 +2484,7 @@ Overfull \vbox (3.94621pt too high) detected at line 697
 \openout4 = `demo.vrb'.
 
  (./demo.vrb
-<img/redeneuralrecursiva.pdf, id=404, 783.74042pt x 602.16748pt>
+<img/redeneuralrecursiva.pdf, id=353, 783.74042pt x 602.16748pt>
 File: img/redeneuralrecursiva.pdf Graphic file (type pdf)
 
 <use img/redeneuralrecursiva.pdf>
@@ -2437,31 +2504,43 @@ Package pdftex.def Info: img/redeneuralrecursiva.pdf used on input line 17.
 
 
 
+Package lastpage Warning: Rerun to get the references right on input line 736.
+
+
 AED: lastpage setting LastPage
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 740.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 740.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 736.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 736.
 (./demo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 740.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 740.
-Package rerunfilecheck Info: File `demo.out' has not changed.
-(rerunfilecheck)             Checksum: E0EEC9D3A64D62CAD4BCB4B8C1AC6FED;302.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 736.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 736.
+
+
+Package rerunfilecheck Warning: File `demo.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `demo.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  E0EEC9D3A64D62CAD4BCB4B8C1AC6FED;302.
 Package rerunfilecheck Info: File `demo.brf' has not changed.
 (rerunfilecheck)             Checksum: 23C813B78CB62C6EFA29D0B70BC7C8BD;532.
-
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 740.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 736.
  ) 
 Here is how much of TeX's memory you used:
- 39788 strings out of 493304
- 869529 string characters out of 6139872
- 1042895 words of memory out of 5000000
- 42126 multiletter control sequences out of 15000+600000
- 57380 words of font info for 61 fonts, out of 8000000 for 9000
+ 39786 strings out of 493304
+ 869530 string characters out of 6139872
+ 1041385 words of memory out of 5000000
+ 42122 multiletter control sequences out of 15000+600000
+ 62916 words of font info for 63 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  65i,12n,106p,10460b,2206s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
@@ -2480,10 +2559,10 @@ sso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf
 0.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf/fonts
 /type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on demo.pdf (29 pages, 1195599 bytes).
+Output written on demo.pdf (29 pages, 1192318 bytes).
 PDF statistics:
- 500 PDF objects out of 1000 (max. 8388607)
- 373 compressed objects within 4 object streams
+ 448 PDF objects out of 1000 (max. 8388607)
+ 329 compressed objects within 4 object streams
  71 named destinations out of 1000 (max. 500000)
- 166 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 
