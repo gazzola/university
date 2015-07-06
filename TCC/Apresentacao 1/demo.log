@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.7)  6 JUL 2015 14:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.7)  6 JUL 2015 14:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2091,7 +2091,7 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.9}).
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-(./demo.nav) <img/unipampa_logo.png, id=14, 449.68pt x 221.82875pt>
+(./demo.nav) <img/unipampa_logo.png, id=38, 449.68pt x 221.82875pt>
 File: img/unipampa_logo.png Graphic file (type png)
 
 <use img/unipampa_logo.png>
@@ -2144,7 +2144,7 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
 \openout4 = `demo.vrb'.
 
  (./demo.vrb
-<img/exemploclassificacao.pdf, id=51, 539.72644pt x 83.2123pt>
+<img/exemploclassificacao.pdf, id=74, 539.72644pt x 83.2123pt>
 File: img/exemploclassificacao.pdf Graphic file (type pdf)
 
 <use img/exemploclassificacao.pdf>
@@ -2156,7 +2156,7 @@ Package pdftex.def Info: img/exemploclassificacao.pdf used on input line 14.
 \openout4 = `demo.vrb'.
 
 
-(./demo.vrb <img/funcoes.pdf, id=71, 684.40085pt x 256.59818pt>
+(./demo.vrb <img/funcoes.pdf, id=94, 684.40085pt x 256.59818pt>
 File: img/funcoes.pdf Graphic file (type pdf)
 
 <use img/funcoes.pdf>
@@ -2178,7 +2178,7 @@ Package pdftex.def Info: img/funcoes.pdf used on input line 15.
 ]
 \openout4 = `demo.vrb'.
 
- (./demo.vrb <img/passoapasso.png, id=97, 820.666pt x 234.476pt>
+ (./demo.vrb <img/passoapasso.png, id=119, 820.666pt x 234.476pt>
 File: img/passoapasso.png Graphic file (type png)
 
 <use img/passoapasso.png>
@@ -2235,17 +2235,13 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 11.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 11.
-
-
-LaTeX Warning: Citation `fonseca2015evaluating' on page 9 undefined on input li
-ne 29.
-
 ) [9
 
 ]
 \openout4 = `demo.vrb'.
 
- (./demo.vrb) [10
+ (./demo.vrb)
+[10
 
 ]
 \openout4 = `demo.vrb'.
@@ -2269,7 +2265,7 @@ Overfull \vbox (14.18527pt too high) detected at line 309
 ]
 \openout4 = `demo.vrb'.
 
- (./demo.vrb <img/Turian-WordTSNE.png, id=128, 1794.705pt x 649.42625pt>
+ (./demo.vrb <img/Turian-WordTSNE.png, id=153, 1794.705pt x 649.42625pt>
 File: img/Turian-WordTSNE.png Graphic file (type png)
 
 <use img/Turian-WordTSNE.png>
@@ -2279,14 +2275,6 @@ Package pdftex.def Info: img/Turian-WordTSNE.png used on input line 10.
 Overfull \hbox (15.74309pt too wide) in paragraph at lines 10--11
  [] 
  []
-
-
-LaTeX Warning: Citation `turian2010word' on page 12 undefined on input line 12.
-
-
-
-LaTeX Warning: Citation `turian2010word' on page 12 undefined on input line 12.
-
 
 ) [12
 
@@ -2299,21 +2287,12 @@ LaTeX Warning: Citation `turian2010word' on page 12 undefined on input line 12.
 \openout4 = `demo.vrb'.
 
  (./demo.vrb
-<img/redeneuralmulticlass.png, id=142, 520.94624pt x 436.63126pt>
+<img/redeneuralmulticlass.png, id=172, 520.94624pt x 436.63126pt>
 File: img/redeneuralmulticlass.png Graphic file (type png)
 
 <use img/redeneuralmulticlass.png>
 Package pdftex.def Info: img/redeneuralmulticlass.png used on input line 7.
 (pdftex.def)             Requested size: 208.3748pt x 174.6494pt.
-
-
-LaTeX Warning: Citation `machinelearningcoursera' on page 14 undefined on input
- line 9.
-
-
-LaTeX Warning: Citation `machinelearningcoursera' on page 14 undefined on input
- line 9.
-
 )
 Overfull \vbox (23.68016pt too high) detected at line 393
  []
@@ -2324,21 +2303,12 @@ Overfull \vbox (23.68016pt too high) detected at line 393
 \openout4 = `demo.vrb'.
 
  (./demo.vrb
-<img/backpropagationalg.png, id=149, 540.0175pt x 400.49625pt>
+<img/backpropagationalg.png, id=184, 540.0175pt x 400.49625pt>
 File: img/backpropagationalg.png Graphic file (type png)
 
 <use img/backpropagationalg.png>
 Package pdftex.def Info: img/backpropagationalg.png used on input line 7.
 (pdftex.def)             Requested size: 226.8058pt x 168.20728pt.
-
-
-LaTeX Warning: Citation `machinelearningcoursera' on page 15 undefined on input
- line 9.
-
-
-LaTeX Warning: Citation `machinelearningcoursera' on page 15 undefined on input
- line 9.
-
 )
 Overfull \vbox (17.23804pt too high) detected at line 408
  []
@@ -2349,23 +2319,14 @@ Overfull \vbox (17.23804pt too high) detected at line 408
 \openout4 = `demo.vrb'.
 
  (./demo.vrb
-<img/aprendendodeep2.pdf, id=156, 688.40016pt x 736.45439pt>
+<img/aprendendodeep2.pdf, id=196, 688.40016pt x 736.45439pt>
 File: img/aprendendodeep2.pdf Graphic file (type pdf)
 
 <use img/aprendendodeep2.pdf>
 Package pdftex.def Info: img/aprendendodeep2.pdf used on input line 20.
 (pdftex.def)             Requested size: 165.2194pt x 176.75266pt.
-
-
-LaTeX Warning: Citation `Bengio-et-al-2015-Book' on page 16 undefined on input 
-line 22.
-
-
-LaTeX Warning: Citation `Bengio-et-al-2015-Book' on page 16 undefined on input 
-line 22.
-
 )
-Overfull \vbox (1.03906pt too high) detected at line 441
+Overfull \vbox (12.03906pt too high) detected at line 441
  []
 
 [16
@@ -2374,30 +2335,9 @@ Overfull \vbox (1.03906pt too high) detected at line 441
 \openout4 = `demo.vrb'.
 
  (./demo.vrb
-
-LaTeX Warning: Citation `kepler2005etiquetador' on page 17 undefined on input l
-ine 12.
-
-
-LaTeX Warning: Citation `dos2014training' on page 17 undefined on input line 13
-.
-
-
-LaTeX Warning: Citation `fonseca2015evaluating' on page 17 undefined on input l
-ine 14.
-
-
-Overfull \hbox (10.01305pt too wide) in paragraph at lines 18--19
+Overfull \hbox (9.99896pt too wide) in paragraph at lines 18--19
 []  
  []
-
-
-LaTeX Warning: Citation `fonseca2015evaluating' on page 17 undefined on input l
-ine 23.
-
-
-LaTeX Warning: Citation `fonseca2015evaluating' on page 17 undefined on input l
-ine 27.
 
 ) [17
 
@@ -2420,10 +2360,7 @@ ine 27.
 \openout4 = `demo.vrb'.
 
  (./demo.vrb
-
-LaTeX Warning: Citation `shen2007guided' on page 21 undefined on input line 9.
-
-<img/guidedlearning.pdf, id=216, 594.90683pt x 223.35628pt>
+<img/guidedlearning.pdf, id=273, 594.90683pt x 223.35628pt>
 File: img/guidedlearning.pdf Graphic file (type pdf)
 
 <use img/guidedlearning.pdf>
@@ -2435,7 +2372,7 @@ Package pdftex.def Info: img/guidedlearning.pdf used on input line 15.
 \openout4 = `demo.vrb'.
 
  (./demo.vrb
-<img/neuralnetworkfinal_alg2.pdf, id=236, 1768.0304pt x 1593.45313pt>
+<img/neuralnetworkfinal_alg2.pdf, id=294, 1768.0304pt x 1593.45313pt>
 File: img/neuralnetworkfinal_alg2.pdf Graphic file (type pdf)
 
 <use img/neuralnetworkfinal_alg2.pdf>
@@ -2450,17 +2387,13 @@ Overfull \vbox (17.29407pt too high) detected at line 614
  <./img/neuralnetworkfinal_alg2.pdf>]
 \openout4 = `demo.vrb'.
 
- (./demo.vrb
-
-LaTeX Warning: Citation `Bengio-et-al-2015-Book' on page 23 undefined on input 
-line 21.
-
-) [23
+ (./demo.vrb) [23
 
 ]
 \openout4 = `demo.vrb'.
 
- (./demo.vrb) [24
+ (./demo.vrb)
+[24
 
 ] (./demo.bbl (./demo.brf)
 \tf@brf=\write6
@@ -2484,7 +2417,7 @@ Overfull \vbox (3.94621pt too high) detected at line 698
 \openout4 = `demo.vrb'.
 
  (./demo.vrb
-<img/redeneuralrecursiva.pdf, id=353, 783.74042pt x 602.16748pt>
+<img/redeneuralrecursiva.pdf, id=404, 783.74042pt x 602.16748pt>
 File: img/redeneuralrecursiva.pdf Graphic file (type pdf)
 
 <use img/redeneuralrecursiva.pdf>
@@ -2504,31 +2437,19 @@ Package pdftex.def Info: img/redeneuralrecursiva.pdf used on input line 17.
 
 
 
-Package lastpage Warning: Rerun to get the references right on input line 736.
-
-
 AED: lastpage setting LastPage
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 736.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 736.
 (./demo.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 736.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 736.
-
-
-Package rerunfilecheck Warning: File `demo.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `demo.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  E0EEC9D3A64D62CAD4BCB4B8C1AC6FED;302.
+Package rerunfilecheck Info: File `demo.out' has not changed.
+(rerunfilecheck)             Checksum: E0EEC9D3A64D62CAD4BCB4B8C1AC6FED;302.
 Package rerunfilecheck Info: File `demo.brf' has not changed.
 (rerunfilecheck)             Checksum: 23C813B78CB62C6EFA29D0B70BC7C8BD;532.
 
+
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -2536,11 +2457,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 736.
  ) 
 Here is how much of TeX's memory you used:
- 39786 strings out of 493304
- 869530 string characters out of 6139872
- 1041385 words of memory out of 5000000
- 42122 multiletter control sequences out of 15000+600000
- 62916 words of font info for 63 fonts, out of 8000000 for 9000
+ 39789 strings out of 493304
+ 869542 string characters out of 6139872
+ 1042978 words of memory out of 5000000
+ 42127 multiletter control sequences out of 15000+600000
+ 57380 words of font info for 61 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  65i,12n,106p,10460b,2206s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
@@ -2559,10 +2480,10 @@ sso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf
 0.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf/fonts
 /type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on demo.pdf (29 pages, 1192318 bytes).
+Output written on demo.pdf (29 pages, 1195600 bytes).
 PDF statistics:
- 448 PDF objects out of 1000 (max. 8388607)
- 329 compressed objects within 4 object streams
+ 500 PDF objects out of 1000 (max. 8388607)
+ 373 compressed objects within 4 object streams
  71 named destinations out of 1000 (max. 500000)
- 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
