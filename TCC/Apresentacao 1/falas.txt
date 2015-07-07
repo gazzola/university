@@ -1,0 +1,352 @@
+SLIDE 1 : CAPA
+-----------------------------------------
+
+- Boa noite, meu nome é Marcos Treviso, graduando do curso de Ciência da Computação na Universidade Federal do Pampa. Este trabalho trata sobre Aprendizagem Guiada para Análise Morfossintática usando Redes Neurais Recursivas, e é orientado pelo Fábio Kepler.
+
+
+
+SLIDE 2 : AGENDA
+-----------------------------------------
+
+- A apresentação foi dividida em 6 partes: Uma breve introdução do que é a análise morfossintática; Uma fundamentação básica dos conceitos aplicados no método proposto; Discussão de trabalhos relacionados encontrados na literatura; A explicação do método proposto; E por fim, as referências.
+
+
+
+SLIDE 3 : INTRODUÇÃO
+-----------------------------------------
+
+- A introdução aborda o conceito de Part-of-speech Tagging (POS) Tagging, a definição do problema, e os objetivos deste trabalho
+
+
+
+SLIDE 4 : POS Tagging
+-----------------------------------------
+
+- A análise morfossintática de uma palavra consiste em atribuí-la à sua correta classe gramatical de acordo com seu contexto. O ato de classificar uma palavra pertencente a um conjunto de textos em uma classe gramatical depende de sua estrutura morfossintática. Em Processamento de Linguagem Natural (PLN) esse ato é conhecido como POS Tagging.
+
++ Por exemplo, para essa figura, cada palavra foi classificada em sua respectiva classe gramatical.
+
+- A principal medida dessa classificação é a acurácia de uma palavra ser classificada corretamente para sua respectiva classe gramatical. Atualmente, vários métodos propostos conseguiram uma acurácia de cerca de 97%. Ou seja, cerca de uma palavra a cada vinte, uma a cada trinta, é classificada errada. 
+
+- Apesar dessa acurácia ser alta, em PLN estamos sempre buscando mais desempenho, já que POS Tagging pode ser aplicada como pré-processamento em uma grande variedade de aplicações, como tradução automática e extração de informações de textos, ferramentas de auxílio à leitura e escrita, sumarização, entre outras.
+
+
+
+SLIDE 5 : O Problema
+-----------------------------------------
+
+- POS Tagging é um processo difícil de ser realizado em PLN, pois linguages naturais tem bastante ambiguidade. Como o Português do Brasil, que por ter uma sintaxe flexível e possuir uma rica morfologia, tem muita ambiguidade.
+
+- Uma possível estratégia trivial seria utilizar um dicionário com uma função de mapeamento de um para um. Onde a chave seria a palavra e o valor seria a classe gramatical. 
+
++ Ou seja, teríamos uma função sobrejetora que mapeiam uma palavra para uma classe gramatical. Entretanto, como há ambiguidade, vamos ter na verdade uma função multivalorada, com uma palavra podendo pertencer a mais de uma classe gramatical.
+
+- Para resolver isso, temos que analisar o contexto no qual a palavra está associada, ou seja, temos que analisar suas palavras vizinhas.
+
+- Uma maneira de encontrar essa solução, é utilizar aprendizado de máquina, que é uma abordagem que é amplamente utilizada para POS Tagging, pois ela consegue aprender padrões morfológicos, sintáticos e semânticos de uma sentença. 
+
+
+
+SLIDE 6 : Objetivos
+-----------------------------------------
+
+- O objetivo principal deste trabalho é criar um novo método para POS Tagging, onde a princípio será treinado sobre a língua portuguesa brasileira.
+
+- Com esse método, esperamos atingir o estado da arte para POS Tagging no português. Buscamos isso ao utilizar novas técnicas e abordagens encontradas na literatura. Como aprendizagem profunda, representação de palavras em vetores e redes neurais recursivas.
+
+- As medidas levadas em consideração para a análise de eficiência será a acurácia com que um palavra é classificada. E o tempo de treinamento do modelo de aprendizagem.
+
+
+
+SLIDE 7 : Fundamentação
+-----------------------------------------
+
+A fim de entender o método proposto e seus conceitos relacionados, será mostrado, brevemente, os fundamentos necessários.
+
+
+
+
+SLIDE 8 : Aprendizado de máquina
+-----------------------------------------
+
+- Dedica-se na elaboração de algoritmos e técnicas que permitem a um computador aprender padrões.
+
++ Para realizar a aprendizagem é necessário dados de entrada (features), que servem como exemplo para nosso modelo. Com esses dados é possível treinar o modelo para que ela possa então aprender com base nesses exemplos. Depois de realizar o treinamento, é possível generalizar sobre outros dados ainda não testados e gerar uma resposta apropriada como saída.
+
+- Esse aprendizado pode ser dividido em duas abordagens: O aprendizado supervisionado, onde é dado um conjunto de dados de entrada e já se sabe como a saída deve parecer, tendo a ideia de que há uma relação entre a entrada e a saída. E o aprendizado não supervisionado, que permite abordar problemas com pouca ou até nenhuma ideia de como os resultados devem parecer, nesse caso a caixa de exemplos de saída pode não existir.
+
+- Aprendizado supervisionado pode dividir os problemas em duas categorias distintas: Problemas de regressão, onde tenta-se prever resultados em uma saída contínua. E problemas de classificação, onde tenta-se prever resultados em uma saída discreta. 
+
+
+- Neste trabalho, POS Tagging é categorizado como um problema de classificação multiclasse, pois já temos as classes gramaticais apropriadas para cada palavra. 
+
+
+? OBS: Colocar imagens de regressao e classificacao?
+
+
+SLIDE 9 : Córpus
+-----------------------------------------
+
+- São coleções de textos agrupados. Eles são os exemplos de entrada para o treinamento dos parâmetros de um modelo. 
+
+- Eles podem conter informações adicionais, como classes classes gramaticais às palavras. Quando isso acontece, é dito que o córpus é anotado. Essa anotação é geralmente feita manualmente por especialistas de linguagens naturais.
+
+- Para este trabalho, vamos utilizar para o treinamento supervisionado o: Mac-Morpho original, que é composto por artigos publicados na Folha de São Paulo em 1994. o Mac-Morpho revisado por FONSECA, ROSA e ALUÍSIO no ínicio desse ano, onde foi revisado as classes gramaticais (juntando umas  e criando outras). 
+
+- Ambos os córpus tem cerca de um milhão de palavras. Mas se diferenciam bastante em relação a quantidade de classes gramaticais. 
+
+- Eles não podem ser juntados em um grande córpus pelo fato de que seus conjuntos de classes gramaticais são diferentes. Uma possível solução para isso seria utilizar uma aprendizagem não supervisionado, aplicando técnicas de clusterização.
+
+
+
+SLIDE 10 : Representação das palavras
+-----------------------------------------
+
+- São as palavras que servem como os dados de entrada para o nosso modelo, ou seja, elas são nossas features.
+
+- A representação das palavras pode ser feita através de word embeddings, que são vetores reais valorados em um espaço multidimensional.
+
+- O uso de word embeddings alavancou o desempenho em aplicações de PLN, e também conseguiu diminuir o processo de engenharia de features, que consiste em criar features manualmente para no modelo.
+
+- Isso aconteceu pois elas conseguem capturar similiradades entre as palavras. Quando é dito que duas word embeddings são similares, significa que elas tendem a ser usadas no mesmo contexto e usualmente pertencem a mesma classe gramatical. Em termos matemáticos, significa que que os vetores estão próximos um do outro, ou seja, sua distância euclidiana tende a ser curta. 
+
+- A similaridade das word embeddings diferenciam de acordo com as técnicas utilizadas para as suas gerações.
+
+
+
+SLIDE 11 : Técnicas para geração de word embeddings
+-----------------------------------------------------
+
+- Abordagens clássicas baseiam-se em utilizar matrizes de coocorrência, contando a frequência com que palavras vizinhas ocorrem para uma dada palavra.
+
+- Há técnicas recentes que baseiam-se em modelos de linguagens neurais, onde é extraído parâmetros aprendidos em uma rede neural.
+
+- O Hyperspace Analogue to Language utiliza a técnica de matriz de coocorrência para buscar as frequências e depois decompõe essas matriz em vetores utilizando o método de escalamento multidimensional.
+
+- A modelação skip-gram realiza uma precisão de palavras vizinhas num conjunto de tamanho finito que contém palavras predecessoras e sucessoras, ela tem como objetivo minimizar a complexidade computacional na geração de word embeddings. Essa estratégia é utilizada pela ferramente word2vec, que contém a contribuição do próprio Mikolov.
+
+- A estratégia mais recente e indica por Socher, é a utilização de Global Vectors, que consiste em criar os vetores de acordo com a razão das probabilidades na matriz de coocorrência em relação ao contexto de uma outra palavra do vocabulário.
+
+- Ou seja, no final das contas, o que está acontecendo é a transformação W, que pega uma palavra escrita como um conjunto de caracteres e resultado num vetor real com dimensão n.
+
+
+
+
+SLIDE 12 : Técnicas para geração de word embeddings
+-----------------------------------------------------
+
+Na seguinte imagem, é possível visualizar que palavras com sentidos semânticos parecidos estão mais próximas umas das outras. Onde no lado esquerdo há numerais e no direito profissões.
+
+
+
+
+
+SLIDE 13 : Redes neurais
+-----------------------------------------------------
+
+- Tem como origem algoritmos que tentam imitar o cérebro humano. Em um nível bem simples de abstração, neurônios são unidades de ativação que recebem entradas como impulso elétrico que são canalizados para a saída, e o corpo desse neurônio é responsável por realizar os cálculos.
+
+- No modelo matemático, temos unidades de ativação i para cada camada j da rede neural. As unidades de ativação da primeira camada são iguais a nossa entrada, ou seja, apenas é atribuido o valor de entrada para elas.
+
+- Para ir de uma camada para a próxima, devemos multiplicar o já calculadas unidades de ativação para a camada j com a linha de theta da camada j correspondente. Atribuimos cada linha i para novas unidades de ativação i.
+
+- Após realizar essa multiplicação entre os pesos e as unidades de ativação, aplicamos uma função de ativação g(z) que é responsável por deixar nossos dados no intervalo entre 0 e 1, conforme mostra a figura ao lado.
+
+- Os parâmetros z da função de ativação na próxima camada j+1, é justamente a multiplicação dos pesos theta com as unidades de ativação na camada j.
+
+
+
+
+
+SLIDE 14 : Redes neurais
+-----------------------------------------------------
+
+- O processo de aprendizagem em redes neurais consiste em dois passos: 
+
+- O primeiro passos consiste em calcular os pesos e as unidades de ativação da camada de entrada até a camada de saída, para então gerar uma hipótese.
+
+- Isso é feito da seguinte maneira: 
+
+: atribuímos primeiramente a entrada para as unidades de ativação na primeira camada, e após isso adicionamos uma nova unidade chamada de unidade viés, que por definição sempre será igual a 1.
+
+: calculamos o parâmetro z para a segunda realizando a multiplicação matriz-vetor entre os pesos e as unidades de ativação da camada enterior. 
+
+: esses parâmetros são então passos para a função de ativação sigmoide que vai deixar os dados no intervalo desejado. E como anteriormente, é adicionado um novo nodo de ativação viés no início do vetor das unidades de ativação.
+
+: esse processo se repete até a camada de saída, quando então o vetor de unidades de ativação resultante é justamente a hipótesse calculada.
+
+
+: o número de unidades de ativação na camada de saída é igual ao número de classes que queremos classificar.
+
+: desse modo, gostaríamos de saber qual é a saída com o maior valor de hipótese, essa classe seria então a classe gramatical com maior probabilidade de ser etiquetada. Isso pode ser feito simplesmente através de uma maximização entre as unidades de saída. 
+
+
+
+
+
+SLIDE 15 : Redes neurais
+-----------------------------------------------------
+
+
+- O segundo passo do processo de aprendizagem consiste em ajustar os pesos theta
+
+- Fazemos isso ao calcular o erro para cada unidade de ativação em todas as camadas, exceto a primeira.
+
+- Para isso é utilizado um vetor delta, responsável por guardar o erro em cada unidade. 
+
+- Para a última camada, os erros são na verdade a diferença entre o valor calculado na ultima camada e o valor das saídas reais y.
+
+- A questão chave desse passo é como propagar esse erro para as outras camadas. Isso é feito de traz para frente, onde é feito a multiplicação da matriz de pesos da propria camada com o vetor de erros delta da camada posterior. Essa multiplicação vai resultar em um vetor com altura igual ao número de unidades de ativação nessa camada (2). Isso é na verdade os erros propagados para essa camada, com eles, podemos multiplicar pela derivada a função de ativação avaliada com os parâmetros z. Podemos lembrar que nossa derivada é a inclinação da reta tangente em relação a alguma função de custo. Desse modo, quanto maior a inclinação, mais incorretos estamos.
+
+
+
+SLIDE 16 : Aprendizagem profunda
+-----------------------------------------------------
+
+- A aprendizagem profunda é uma ramificação da aprendizagem de máquina, onde baseia-se num conjunto de algoritmos que procuram modelar abstrações com estruturas complexas, compostas de múltiplas transformações não lineares.
+
+- Extrair features manualmente é uma tarefa difícil, pois pode haver variações nos dados que podem ser identifacadas utilizando um nível sofistiticado, quase humano, de entendimento. A aprendizagem profunda tenta automaticamente aprender boas features ou representações.
+
++ Na Figura tal, cada pixel da imagem são features passadas para a primeia camada oculta, que consegue identificar bordas facilmente ao comparar o brilho de pixels vizinhos. Ao passar a descrição dessas bordas para a segunda camada oculta, ela consegue facilmente procurar por contornos, que são reconhecidos como uma coleção de bordas. Ao chegar na terceira camada oculta, consegue-se detectar partes inteiras de objetos específicos ao procurar por específicas coleções de contornos e bordas. No final, a descrição da imagem em termos das partes dos objetos pode ser usada para reconhcer objetos inteiros presentes
+na imagem.
+
+
+- A aprendizagem profunda começou a ser usada recentemente (desde 2007 para cá, evoluíndo muito nos últimos 5 anos) devido a criação de novos modelos, algoritmos  e ideiais, mas também devido ao aumento do desempenho computacional.
+
+- Isso porque o principal modelo utilizado em aprendizagem profunda é redes neurais com múltiplas camadas, isso torna o treinamento bastante lento caso não haja desempenho de processamento. 
+
+
+
+
+
+SLIDE 17 : Trabalhos relacionados
+-----------------------------------------------------
+
+- Vários métodos já foram propostos para resolver esse mesmo problema para o português brasileiro, apesar de nenhum deles ter um aproveitamento de 100%, vários conseguiram ótimos resultados e utilizaram variadas técnicas para isso.
+
+- Kepler usou um modelo baseado em cadeias de markov com tamanho variavel. Como representação das palavras foi usado sequência de caracteres e o córpus utilizado foi o Tycho Brahe.
+
+- ...
+
+
+- Atualmente Fonseca, Rosa e Aluísio alcançaram o estado da arte com 97,57% para todas as palavras analisadas, ou seja, para palavras fora e dentro do vocabulario. 
+
+- Para palavras fora do vocábulario, o estado da arte também é deles, com 97,34% de acurácia.
+
+
+
+
+SLIDE 18 : Metodologia
+-----------------------------------------------------
+
+- Nossa metodologia foi dividida em 3 partes. A primeira consiste em buscar uma representação para as palavras. A segunda a realizar pontuações para a estrutura gramatical. E a terceira a realizar o treinamento do modelo neural.
+
+
+
+
+SLIDE 19 : Representação das palavras
+-----------------------------------------------------
+
+- Para a representação das palavras, pensamos em utilizar três técnicas já mencionadas: Neural Language Model, Modelação Skip-Gram e Global Vectors. 
+
+- Com elas, faremos as seguintes transformações:
+
+: para cada palavra i pertencente a um conjunto de palavras omega, a transformamos em um vetor real valorado com dimensão d
+
+: Para manter a rede neural recursiva homogênea, faremos isso para cada classe gramatical i pertencente a um conjunto de classes gramaticais gama, a transformamos em um vetor real valorado com dimensao d
+
+
+- Alem disso, pensamos em utilizar outras duas features:
+
+: A capitalização, que é uma feature importante para reconhecimento de nomes e entidades.
+
+: E prefixos, que consegue distinguir dados importantes, como horas, medidas de velocidade, etc.
+
+
+
+SLIDE 20 : Pontuações para estrutura gramatical
+-----------------------------------------------------
+
+- Para classificar palavras em uma sentença, o etiquetador obtém uma janela de palavras de tamanho fixo t a cada momento, e transforma as palavras em vetores de features.
+
+- Essa janela é centralizada em uma palavra vetorizada vn, e concatena-se metade de t para esquerda e metade de t para direita. Em caso de palavras no começo ou no fim do texto, é usado vetores especiais para preencher esse espaço.
+
+- As pontuações são calculadas através da função s, com um vetor de palavras centralizado em n para uma classe gramatical c. E através de uma estrutura A, que armazena a pontuação de transição de ir de uma classe c, passar por outra classe d e chegar a e. Essa estrutura consegue armazernar informações importante, como após um pronome é provavel que venha um verbo, e depois desse verbo venha um substantivo.
+
+- A pontuação final para uma sequência de palavras de tamanho t, dado um conjunto de classes de tamanho t é dada pela equação abaixo:
+
+: Essa equação na verdade realiza a aprendizagem guida, onde soma para cada palavra k na janela as maiores pontuações já encontradas. Ou seja, na primeira iteração é buscado o i que maximiza a soma das pontuações, depois disso, é adicionado esse i a um conjunto Q. Após isso, o processo se repete até que todos os i tenham sido classificados.
+
+
+
+SLIDE 21 : Treinamento 
+-----------------------------------------------------
+
+- O treinamento do modelo é supervisionado utilizando um rede neural recursiva para classifiar as palavras em suas classes gramaticais. 
+
+- Isso é feito através de uma aprendizagem guiada por palavras mais fáceis. Um método proposto origalmente por Shen, Satta e Joshi em 2007, que na época obteve bons resultados.
+
+- Essa aprendizagem pode ser pensada como um grafo acíclico dirigido, onde arestas com pesos mais baixos são transições que serão calculadas primeiro. 
+
+- No exemplo dessa figura, primeiramente classificaríamos livro, depois guardado, depois está, e por último o artigo O.
+
+- Em virtude de mudar o ambiente de aprendizagem a cada classificação, ou seja, a cada acerto, é feito a composição dos vetores da palavra n sendo analisada com o vetor da classe resultante c. Essa composição foi, a principio, pensada como uma soma, mas é um detalhe técnico que pode ser mudado ao longo do trabalho.
+
+
+
+SLIDE 22 : Treinamento 
+-----------------------------------------------------
+
+- Essa figura resume o método proposto:
+
+- nela, obtemos um janela de palavras com tamanho t e instanciamos uma fila Q. Após isso, é feito a classificação para cada palavra no intervalo de t, centrado em n. Nesse caso, supomos que o tamanho da janela é 5, para facilitar a visualização.
+
+- Então, se a palavra ainda não foi classificada, ou seja, se ela não estiver na fila Q, ela é jogada para a rede neural, que computa as pontuações para ela e gera como saída dois valores: O primeiro é armazenado numa lista que contém o índice da classe gramátical classificada. O segundo é adicionado a outra lista que contém a probabilidade dessa classificação ter ocorrido, ou seja, a probabilidade da saída ser a classe resultante  dado a palavra original e os pesos theta.
+
+- Após calcular isso para todo k dentro da janela de palavras, pega-se a classe gramátical que contém a maior probabilidade de ser classificada até o momento, com isso, recuperamos a classe gramátical resultante da rede neural e fizemos a composição do vetor da palavra k mais provável com o vetor da classe j classificada. Após isso, adicionamos o índice k na fila de índices já classificados e retomamos o mesmo processo até que o tamanho dessa fila seja igual ao tamanho da janela. Ou seja, até que todas as palavras tenham sido classificadas.
+
+
+
+SLIDE 23 : Treinamento 
+----------------------------------------------------
+
+- Para treinar a rede neural, todos os ajustamentos são feitos em ordem de maximizar a seguinte probabilidade: 
+
+
+- Onde phi denota um conjunto de pares de palavras e classes gramaticais. Para computar essa probabilidade, é possível realizar uma operação softmax.
+
+- A função de custo então pode ser definida como:
+
+
+Onde ajustamos o primeiro termo da rede utilizando algum algoritmo de minimação como: Gradiente descendente, gradiente desc estocastico, adagrad, adadelta e outros.
+
+
+- E maximizamos o segundo termo, que é na verdade nossa pontuação para a sentença. Para isso, realizamos um incremento da estrutura A e da função s em cada etapa do backpropagation.
+
+
+
+
+SLIDE 24 : Cronograma 
+----------------------------------------------------
+
+Para o cronograma, foi decidido que será feito a implementação do modelo neural recursivo de agosto até outubro. O treinamento do modelo será feito de setembro até novembro. A avaliação dos resultados obtidos será feita de acordo com o treinamento do modelo, uma vez que ele estiver funcional. E a escrita da monografia será feita durante todo esse tempo.
+
+
+
+SLIDE 25,26,27 : Referências 
+----------------------------------------------------
+
+Aqui estão as referências para a apresentação.
+
+
+
+
+SLIDE 28
+----------------------------------------------------
+
+Era isso, obrigado pela atenção.
+
+
+
+
+

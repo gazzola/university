@@ -70,7 +70,7 @@
 \title{Aprendizagem Guiada para Análise Morfossintática usando Redes Neurais Recursivas}
 \subtitle{}
 \date{8 de julho de 2015}
-\author[Treviso]{Marcos Vinícius Treviso\\\scriptsize\texttt{ marcosvtreviso@gmail.com}\\\\Orientador: Fábio Natanael Kepler\\}
+\author[Treviso]{Marcos Vinícius Treviso\\\scriptsize\texttt{ marcosvtreviso@gmail.com}\\\\Orientador: Fábio Natanael Kepler\\\tiny{Trabalho de Conclusão de Curso I}\\}
 \institute{Universidade Federal do Pampa}
 \titlegraphic{\hfill\includegraphics[height=1.25cm]{img/unipampa_logo.png}}
 
@@ -232,7 +232,7 @@
       \midrule
       Mac-Morpho original & 53,374 & 1,221,465 & 41  \\
       Mac-Morpho revisado\footnotemark & 49,932 & 945,958   & 26  \\
-      Tycho Brahe         & 96,125 & 1,541,654 & 265 \\
+      Tycho Brahe         & 55,932 & 1,541,654 & 265 \\
       \bottomrule
     \end{tabular}
     % \caption{Dados dos \textit{córpus}} \label{tab:dadoscorpus}
@@ -460,7 +460,7 @@
     \toprule
     \textbf{Autores} & \textbf{Modelo}  & \textbf{Representação das palavras}  & \textbf{Córpus} \\
     \midrule
-    \citeonline{kepler2005etiquetador} & VLMM & Sequência de caracteres & Tycho Brahe \\
+    \citeonline{kepler2005etiquetador} & VLMC & Sequência de caracteres & Tycho Brahe \\
     \citeonline{dos2014training} & Redes neurais profundas  & Vetores (CharWNN) & Tycho Brahe; Mac-Morpho \\
     \citeonline{fonseca2015evaluating} & Redes neurais & Vetores (NLM, HAL, SG) & Tycho Brahe; Mac-Morpho \\
     Este trabalho & Redes neurais recursivas & Vetores Vetores (NLM, SG, GloVe) & Tycho Brahe; Mac-Morpho \\
@@ -669,7 +669,7 @@ S(w_1^t, c_1^t) = \sum\limits_{k=1}^{t} \Big( \argmax_{1 \leq i \leq t, i \notin
     \textbf{A1} & X & X & X &   &   \\
     \textbf{A2} &   & X & X & X &   \\
     \textbf{A3} &   &   & X & X & X \\
-    \textbf{A4} &   &   &   & X & X \\
+    \textbf{A4} & X & X & X & X & X \\
     \bottomrule
   \end{tabular}
   \end{table}

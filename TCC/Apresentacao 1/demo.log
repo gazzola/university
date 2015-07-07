@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.7)  6 JUL 2015 14:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.7)  7 JUL 2015 13:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1903,6 +1903,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 73.
 
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 73.
+
 (/home/marcos/texmf/tex/latex/mtheme/pgfplotsthemetol.sty
 Package: pgfplotsthemetol 2015/06/16 PGFplots colors based on Paul Tol's SRON t
 echnical note
@@ -2459,7 +2463,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 736.
 Here is how much of TeX's memory you used:
  39789 strings out of 493304
  869542 string characters out of 6139872
- 1042978 words of memory out of 5000000
+ 1043128 words of memory out of 5000000
  42127 multiletter control sequences out of 15000+600000
  57380 words of font info for 61 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -2480,7 +2484,7 @@ sso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf
 0.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf/fonts
 /type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on demo.pdf (29 pages, 1195600 bytes).
+Output written on demo.pdf (29 pages, 1195871 bytes).
 PDF statistics:
  500 PDF objects out of 1000 (max. 8388607)
  373 compressed objects within 4 object streams
