@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="neuralnetworkfinal_alg.svg">
+   sodipodi:docname="neuralnetworkfinal_alg2.svg">
   <defs
      id="defs4">
     <inkscape:path-effect
@@ -116,12 +116,12 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
      inkscape:cx="2169.3535"
-     inkscape:cy="1921.7947"
+     inkscape:cy="1693.2233"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1855"
-     inkscape:window-height="1056"
+     inkscape:window-width="1375"
+     inkscape:window-height="876"
      inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -135,7 +135,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -601,23 +601,27 @@
        sodipodi:linespacing="140%"
        id="text4145"
        y="-113.58768"
-       x="818.83997"
+       x="782.83997"
        style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:139.99999762%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:TG Pagella Math;-inkscape-font-specification:TG Pagella Math"
        xml:space="preserve"><tspan
          style="font-size:56px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:139.99999762%;font-family:Serif;-inkscape-font-specification:Serif Italic"
          y="-113.58768"
-         x="818.83997"
+         x="782.83997"
          id="tspan4147"
          sodipodi:role="line">k = <tspan
    style="font-style:normal;-inkscape-font-specification:Serif"
    id="tspan3167">argmax</tspan><tspan
    style="font-size:65.00091553%;baseline-shift:sub"
-   id="tspan3160">k</tspan>(U<tspan
+   id="tspan3160">k</tspan><tspan
+   style="font-style:normal;-inkscape-font-specification:Serif"
+   id="tspan3141">(</tspan>U<tspan
    style="font-size:65.00091553%;baseline-shift:sub"
-   id="tspan3163">2</tspan>) </tspan><tspan
+   id="tspan3163">2,k</tspan><tspan
+   style="font-style:normal;-inkscape-font-specification:Serif"
+   id="tspan3143">) </tspan></tspan><tspan
          style="font-size:56px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:139.99999762%;font-family:Serif;-inkscape-font-specification:Serif"
          y="-35.187679"
-         x="818.83997"
+         x="782.83997"
          sodipodi:role="line"
          id="tspan3137"><tspan
    style="font-style:italic;line-height:139.99999762%;-inkscape-font-specification:Serif Italic"
@@ -630,7 +634,7 @@
    id="tspan3162">k</tspan></tspan><tspan
          style="font-size:56px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:139.99999762%;font-family:Serif;-inkscape-font-specification:Serif"
          y="43.212318"
-         x="818.83997"
+         x="782.83997"
          sodipodi:role="line"
          id="tspan3133"><tspan
    style="font-style:italic;-inkscape-font-specification:Serif Italic"
@@ -647,7 +651,7 @@
    id="tspan3171">j</tspan>)</tspan><tspan
          style="font-size:56px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:139.99999762%;font-family:Serif;-inkscape-font-specification:Serif"
          y="121.61232"
-         x="818.83997"
+         x="782.83997"
          sodipodi:role="line"
          id="tspan3135"><tspan
    style="font-style:italic;-inkscape-font-specification:Serif Italic"
@@ -667,7 +671,7 @@
          y="2.5341492"
          style="font-size:56px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif Italic"><tspan
            style="font-style:normal;-inkscape-font-specification:Serif"
-           id="tspan3186">  </tspan></tspan></text>
+           id="tspan3186" /></tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text4173"

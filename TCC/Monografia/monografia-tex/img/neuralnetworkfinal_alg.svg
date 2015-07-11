@@ -115,16 +115,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="1199.3267"
-     inkscape:cy="1654.4583"
+     inkscape:cx="2169.3535"
+     inkscape:cy="1921.7947"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="927"
-     inkscape:window-height="1028"
-     inkscape:window-x="992"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     inkscape:window-x="65"
      inkscape:window-y="24"
-     inkscape:window-maximized="0"
+     inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true" />
   <metadata
@@ -486,13 +486,13 @@
     <text
        xml:space="preserve"
        style="font-size:34.91024017px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:TG Pagella Math;-inkscape-font-specification:TG Pagella Math"
-       x="1486.0684"
+       x="1370.3541"
        y="-763.41565"
        id="text3083"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3085"
-         x="1486.0684"
+         x="1370.3541"
          y="-763.41565"
          style="font-size:36.6971283px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">1 ≤ <tspan
    style="font-style:italic;-inkscape-font-specification:Serif Italic"
@@ -517,21 +517,22 @@
          sodipodi:role="line"
          id="tspan4061"><tspan
    style="font-style:italic;-inkscape-font-specification:Serif Italic"
-   id="tspan4453">U</tspan>[2][<tspan
-   style="font-style:italic;-inkscape-font-specification:Serif Italic"
-   id="tspan4529">k</tspan>] = P(<tspan
+   id="tspan4453">U<tspan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="tspan3140">2,k</tspan></tspan> = P(<tspan
    style="font-style:italic;-inkscape-font-specification:Serif Italic"
    id="tspan4525">y</tspan> = <tspan
    style="font-style:italic;-inkscape-font-specification:Serif Italic"
-   id="tspan4519">c</tspan><tspan
-   style="font-size:65.00091553%;font-style:italic;baseline-shift:sub;-inkscape-font-specification:Serif Italic"
-   id="tspan4505">U[1][k]  </tspan><tspan
-   style="font-style:italic;-inkscape-font-specification:Serif Italic"
-   id="tspan4517">| w</tspan><tspan
+   id="tspan4519">c<tspan
    style="font-size:65.00091553%;baseline-shift:sub"
-   id="tspan4509">k</tspan><tspan
+   id="tspan3146">U<tspan
+   id="tspan3154">1,k </tspan></tspan>| w</tspan><tspan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="tspan4509"><tspan
+     style="font-style:italic;-inkscape-font-specification:Serif Italic"
+     id="tspan3158">k </tspan></tspan><tspan
    style="font-style:italic;-inkscape-font-specification:Serif Italic"
-   id="tspan4515">; θ</tspan>) </tspan></text>
+   id="tspan4515">; θ</tspan> ) </tspan></text>
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:TG Pagella Math;-inkscape-font-specification:TG Pagella Math"
@@ -545,9 +546,9 @@
          y="-813.46057"
          style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif"><tspan
    style="font-style:italic;-inkscape-font-specification:Serif Italic"
-   id="tspan4455">U</tspan>[1][<tspan
-   style="font-style:italic;-inkscape-font-specification:Serif Italic"
-   id="tspan4527">k</tspan>] = argmax (<tspan
+   id="tspan3136">U<tspan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="tspan3144">1,k</tspan></tspan> = argmax (<tspan
    style="font-style:italic;-inkscape-font-specification:Serif Italic"
    id="tspan4111">h</tspan><tspan
    style="font-size:65.00091553%;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;baseline-shift:sub;font-family:Serif;-inkscape-font-specification:Serif Italic"
@@ -590,66 +591,95 @@
        id="path4139"
        inkscape:connector-curvature="0" />
     <rect
-       y="-179.4203"
-       x="626.28461"
-       height="255.06615"
-       width="783.17804"
+       y="-176.49573"
+       x="677.78058"
+       height="332.97046"
+       width="685.90033"
        id="rect4143"
-       style="color:#000000;fill:none;stroke:#000000;stroke-width:1.94768751;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:2.08255267;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <text
-       sodipodi:linespacing="125%"
+       sodipodi:linespacing="140%"
        id="text4145"
        y="-113.58768"
-       x="704.40967"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:TG Pagella Math;-inkscape-font-specification:TG Pagella Math"
+       x="818.83997"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:139.99999762%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:TG Pagella Math;-inkscape-font-specification:TG Pagella Math"
        xml:space="preserve"><tspan
-         style="font-size:56px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif"
+         style="font-size:56px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:139.99999762%;font-family:Serif;-inkscape-font-specification:Serif Italic"
          y="-113.58768"
-         x="704.40967"
+         x="818.83997"
          id="tspan4147"
-         sodipodi:role="line"><tspan
+         sodipodi:role="line">k = <tspan
+   style="font-style:normal;-inkscape-font-specification:Serif"
+   id="tspan3167">argmax</tspan><tspan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="tspan3160">k</tspan>(U<tspan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="tspan3163">2</tspan>) </tspan><tspan
+         style="font-size:56px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:139.99999762%;font-family:Serif;-inkscape-font-specification:Serif"
+         y="-35.187679"
+         x="818.83997"
+         sodipodi:role="line"
+         id="tspan3137"><tspan
+   style="font-style:italic;line-height:139.99999762%;-inkscape-font-specification:Serif Italic"
+   id="tspan3139">j</tspan> = <tspan
    style="font-style:italic;-inkscape-font-specification:Serif Italic"
-   id="tspan4435">j</tspan> = <tspan
-   style="font-style:italic;-inkscape-font-specification:Serif Italic"
-   id="tspan4457">U</tspan>[1][argmax<tspan
+   id="tspan3169">U</tspan><tspan
    style="font-size:65.00091553%;font-style:italic;baseline-shift:sub;-inkscape-font-specification:Serif Italic"
-   id="tspan4155">i</tspan>(<tspan
+   id="tspan3165">1,</tspan><tspan
+   style="font-size:65.00091553%;font-style:italic;line-height:139.99999762%;baseline-shift:sub;-inkscape-font-specification:Serif Italic"
+   id="tspan3162">k</tspan></tspan><tspan
+         style="font-size:56px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:139.99999762%;font-family:Serif;-inkscape-font-specification:Serif"
+         y="43.212318"
+         x="818.83997"
+         sodipodi:role="line"
+         id="tspan3133"><tspan
    style="font-style:italic;-inkscape-font-specification:Serif Italic"
-   id="tspan4459">U</tspan>[2])]</tspan></text>
+   id="tspan3185">v<tspan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="tspan3187">k</tspan></tspan> = <tspan
+   style="font-style:italic;-inkscape-font-specification:Serif Italic"
+   id="tspan3193">β</tspan>(<tspan
+   style="font-style:italic;-inkscape-font-specification:Serif Italic"
+   id="tspan3181">v<tspan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="tspan3191">k</tspan> , z</tspan><tspan
+   style="font-size:65.00091553%;font-style:italic;baseline-shift:sub;-inkscape-font-specification:Serif Italic"
+   id="tspan3171">j</tspan>)</tspan><tspan
+         style="font-size:56px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:139.99999762%;font-family:Serif;-inkscape-font-specification:Serif"
+         y="121.61232"
+         x="818.83997"
+         sodipodi:role="line"
+         id="tspan3135"><tspan
+   style="font-style:italic;-inkscape-font-specification:Serif Italic"
+   id="tspan3179">Q.append</tspan>(<tspan
+   style="font-style:italic;-inkscape-font-specification:Serif Italic"
+   id="tspan3177">k</tspan>)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:TG Pagella Math;-inkscape-font-specification:TG Pagella Math"
-       x="692.07764"
-       y="-41.465851"
+       x="806.50793"
+       y="2.5341492"
        id="text4157"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4159"
-         x="692.07764"
-         y="-41.465851"
-         style="font-size:56px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif Italic">v<tspan
-   style="font-size:65.00091553%;font-style:italic;baseline-shift:sub;-inkscape-font-specification:Serif Italic"
-   id="tspan4167">j</tspan> = v<tspan
-   style="font-size:65.00091553%;font-style:italic;baseline-shift:sub;-inkscape-font-specification:Serif Italic"
-   id="tspan4171">j</tspan> + z<tspan
-   style="font-size:65.00091553%;font-style:italic;baseline-shift:sub;-inkscape-font-specification:Serif Italic"
-   id="tspan4169">j </tspan></tspan></text>
+         x="806.50793"
+         y="2.5341492"
+         style="font-size:56px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif Italic"><tspan
+           style="font-style:normal;-inkscape-font-specification:Serif"
+           id="tspan3186">  </tspan></tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text4173"
-       y="30.534149"
-       x="690.79248"
+       y="92.534149"
+       x="805.22278"
        style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:TG Pagella Math;-inkscape-font-specification:TG Pagella Math"
        xml:space="preserve"><tspan
          style="font-size:56px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif Italic"
-         y="30.534149"
-         x="690.79248"
+         y="92.534149"
+         x="805.22278"
          id="tspan4175"
-         sodipodi:role="line">Q.append<tspan
-   style="font-style:normal;-inkscape-font-specification:Serif"
-   id="tspan4447">(<tspan
-   style="font-style:italic;-inkscape-font-specification:Serif Italic"
-   id="tspan4499">j</tspan>)</tspan></tspan></text>
+         sodipodi:role="line" /></text>
     <text
        sodipodi:linespacing="125%"
        id="text4185"
@@ -665,7 +695,7 @@
    style="font-weight:bold;-inkscape-font-specification:Serif Bold"
    id="tspan4241">para</tspan><tspan
    id="tspan4189"
-   style="font-size:56px;font-style:italic;-inkscape-font-specification:Serif Italic"> t-2 ≤ k ≤ t+2</tspan>: </tspan></text>
+   style="font-size:56px;font-style:italic;-inkscape-font-specification:Serif Italic"> k-2 ≤ k ≤ k+2</tspan>: </tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text4191"
@@ -755,9 +785,9 @@
        inkscape:connector-curvature="0" />
     <path
        style="color:#000000;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#Arrow1Lend);visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 979.99999,75.219332 0,119.999998 1208.57141,0 0,-1805.71423 -1194.28569,0"
+       d="m 1365,-20.494954 823.5714,0.264634 0,-1590.26458 -1194.28569,0"
        id="path4251"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
+       sodipodi:nodetypes="cccc" />
   </g>
 </svg>

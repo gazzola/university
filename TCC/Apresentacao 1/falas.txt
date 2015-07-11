@@ -1,34 +1,38 @@
 SLIDE 1 : CAPA
 -----------------------------------------
 
-- Boa noite, meu nome é Marcos Treviso, graduando do curso de Ciência da Computação na Universidade Federal do Pampa. Este trabalho trata sobre Aprendizagem Guiada para Análise Morfossintática usando Redes Neurais Recursivas, e é orientado pelo Fábio Kepler.
+- Boa noite, meu nome é Marcos Treviso, sou graduando do curso de Ciência da Computação, Este é meu projeto de trabalho de conclusão de curso 1, que trata sobre Aprendizagem Guiada para Análise Morfossintática usando Redes Neurais Recursivas. E este trabalho é orientado pelo professor Fábio Kepler.
 
 
 
 SLIDE 2 : AGENDA
 -----------------------------------------
 
-- A apresentação foi dividida em 6 partes: Uma breve introdução do que é a análise morfossintática; Uma fundamentação básica dos conceitos aplicados no método proposto; Discussão de trabalhos relacionados encontrados na literatura; A explicação do método proposto; E por fim, as referências.
+- A apresentação foi dividida em 5 partes: 
+
+A primeira parte traz uma breve introdução do que é a análise morfossintática, onde será falado sobre POS Tagging, qual é o problema que o trabalho tenta solucionar, e os objetivos; 
+
+A segunda traz uma fundamentação básica dos conceitos aplicados no modelo proposto, começando por aprendizado de máquina, e definindo o que são córpus e como é feita a representação de palavras, após isso, será contextualizado o modelo de redes neurais e abordagem de aprendizagem profunda. 
+
+Também será discutido os trabalhos relacionados encontrados na literatura; 
+
+E na metodologia será explicado como será feito a representação das palavras no modelo proposto, as pontuações para as classes gramaticais e como será realizado o treinamento do modelo proposto. 
+
+E por fim, será discutido o cronograma para as atividades futuras.
 
 
 
-SLIDE 3 : INTRODUÇÃO
------------------------------------------
 
-- A introdução aborda o conceito de Part-of-speech Tagging (POS) Tagging, a definição do problema, e os objetivos deste trabalho
-
-
-
-SLIDE 4 : POS Tagging
+SLIDE 3 : POS Tagging
 -----------------------------------------
 
 - A análise morfossintática de uma palavra consiste em atribuí-la à sua correta classe gramatical de acordo com seu contexto. O ato de classificar uma palavra pertencente a um conjunto de textos em uma classe gramatical depende de sua estrutura morfossintática. Em Processamento de Linguagem Natural (PLN) esse ato é conhecido como POS Tagging.
 
 + Por exemplo, para essa figura, cada palavra foi classificada em sua respectiva classe gramatical.
 
-- A principal medida dessa classificação é a acurácia de uma palavra ser classificada corretamente para sua respectiva classe gramatical. Atualmente, vários métodos propostos conseguiram uma acurácia de cerca de 97%. Ou seja, cerca de uma palavra a cada vinte, uma a cada trinta, é classificada errada. 
+- A principal medida dessa classificação é a acurácia com que uma palavra é classificada para sua respectiva classe gramatical. Ou seja, a taxa de acerto com que uma palavra é classificada corretamente. Atualmente, vários métodos propostos conseguiram uma acurácia de cerca de 97%. Ou seja, cerca de uma palavra a cada vinte, uma a cada trinta, é classificada errada. 
 
-- Apesar dessa acurácia ser alta, em PLN estamos sempre buscando mais desempenho, já que POS Tagging pode ser aplicada como pré-processamento em uma grande variedade de aplicações, como tradução automática e extração de informações de textos, ferramentas de auxílio à leitura e escrita, sumarização, entre outras.
+- Apesar dessa acurácia ser alta, em PLN estamos sempre buscando mais desempenho, já que POS Tagging pode ser aplicada como pré-processamento em uma grande variedade de aplicações, como tradução automática, sumarização, ferramentas de auxílio à leitura e escrita, entre outras.
 
 
 
@@ -37,9 +41,9 @@ SLIDE 5 : O Problema
 
 - POS Tagging é um processo difícil de ser realizado em PLN, pois linguages naturais tem bastante ambiguidade. Como o Português do Brasil, que por ter uma sintaxe flexível e possuir uma rica morfologia, tem muita ambiguidade.
 
-- Uma possível estratégia trivial seria utilizar um dicionário com uma função de mapeamento de um para um. Onde a chave seria a palavra e o valor seria a classe gramatical. 
+- Uma possível estratégia trivial seria utilizar um dicionário com uma função de mapeamento de um para um. Onde a chave seria a palavra e o valor seria a classe gramatical. Entretanto isso não é eficaz, pois teríamos mais de um valor para a mesma chave. 
 
-+ Ou seja, teríamos uma função sobrejetora que mapeiam uma palavra para uma classe gramatical. Entretanto, como há ambiguidade, vamos ter na verdade uma função multivalorada, com uma palavra podendo pertencer a mais de uma classe gramatical.
++ Em outras palavras, no caso ideal, teríamos uma função sobrejetora que mapeia uma palavra para uma classe gramatical. Entretanto, como há ambiguidade, vamos ter na verdade uma função multivalorada, com uma palavra podendo pertencer a mais de uma classe gramatical.
 
 - Para resolver isso, temos que analisar o contexto no qual a palavra está associada, ou seja, temos que analisar suas palavras vizinhas.
 
@@ -50,9 +54,9 @@ SLIDE 5 : O Problema
 SLIDE 6 : Objetivos
 -----------------------------------------
 
-- O objetivo principal deste trabalho é criar um novo método para POS Tagging, onde a princípio será treinado sobre a língua portuguesa brasileira.
+- O objetivo principal deste trabalho é criar um novo modelo para POS Tagging, onde a princípio será treinado sobre a língua portuguesa brasileira.
 
-- Com esse método, esperamos atingir o estado da arte para POS Tagging no português. Buscamos isso ao utilizar novas técnicas e abordagens encontradas na literatura. Como aprendizagem profunda, representação de palavras em vetores e redes neurais recursivas.
+- Com esse modelo, esperamos alcançar o estado da arte para POS Tagging no português. Buscamos isso ao combinar novas abordagens encontradas na literatura, criando assim novas abordagens. Como aprendizagem profunda, representação de palavras em vetores, redes neurais recursivas e aprendizagem guiada por palavras mais fáceis.
 
 - As medidas levadas em consideração para a análise de eficiência será a acurácia com que um palavra é classificada. E o tempo de treinamento do modelo de aprendizagem.
 
@@ -71,17 +75,18 @@ SLIDE 8 : Aprendizado de máquina
 
 - Dedica-se na elaboração de algoritmos e técnicas que permitem a um computador aprender padrões.
 
-+ Para realizar a aprendizagem é necessário dados de entrada (features), que servem como exemplo para nosso modelo. Com esses dados é possível treinar o modelo para que ela possa então aprender com base nesses exemplos. Depois de realizar o treinamento, é possível generalizar sobre outros dados ainda não testados e gerar uma resposta apropriada como saída.
+- Esse aprendizado pode ser dividido em duas abordagens: O aprendizado supervisionado, onde é dado um conjunto de dados de entrada e já se sabe como a saída deve parecer, tendo a ideia de que há uma relação entre a entrada e a saída. E o aprendizado não supervisionado, que permite abordar problemas com pouca ou até nenhuma ideia de como os resultados devem parecer.
 
-- Esse aprendizado pode ser dividido em duas abordagens: O aprendizado supervisionado, onde é dado um conjunto de dados de entrada e já se sabe como a saída deve parecer, tendo a ideia de que há uma relação entre a entrada e a saída. E o aprendizado não supervisionado, que permite abordar problemas com pouca ou até nenhuma ideia de como os resultados devem parecer, nesse caso a caixa de exemplos de saída pode não existir.
++ Para realizar a aprendizagem é necessário dados de entrada. Esses dados de entrada servem como exemplo para nosso modelo. Com esses dados é possível treinar o modelo para que ela possa então aprender com base nesses exemplos de entrada e saída. No caso de um aprendizado não supervisionado, esses exemplos de saída podem não existir. Depois de realizar o treinamento, é possível generalizar sobre outros dados ainda não testados e gerar uma resposta apropriada como saída. Essa generalização é feita através da criação de características, ou features, obtidas através dos dados de entrada.
+
 
 - Aprendizado supervisionado pode dividir os problemas em duas categorias distintas: Problemas de regressão, onde tenta-se prever resultados em uma saída contínua. E problemas de classificação, onde tenta-se prever resultados em uma saída discreta. 
 
++ Neste trabalho, POS Tagging é categorizado como um problema de classificação multiclasse, pois já temos as classes gramaticais apropriadas para cada palavra. Portanto, em POS Tagging teríamos mais conjuntos de y, como quadrados, asteriscos, etc. Cada um representando uma classe gramatical diferente.
 
-- Neste trabalho, POS Tagging é categorizado como um problema de classificação multiclasse, pois já temos as classes gramaticais apropriadas para cada palavra. 
 
 
-? OBS: Colocar imagens de regressao e classificacao?
+
 
 
 SLIDE 9 : Córpus
@@ -91,7 +96,7 @@ SLIDE 9 : Córpus
 
 - Eles podem conter informações adicionais, como classes classes gramaticais às palavras. Quando isso acontece, é dito que o córpus é anotado. Essa anotação é geralmente feita manualmente por especialistas de linguagens naturais.
 
-- Para este trabalho, vamos utilizar para o treinamento supervisionado o: Mac-Morpho original, que é composto por artigos publicados na Folha de São Paulo em 1994. o Mac-Morpho revisado por FONSECA, ROSA e ALUÍSIO no ínicio desse ano, onde foi revisado as classes gramaticais (juntando umas  e criando outras). 
+- Para este trabalho, vamos utilizar para o treinamento supervisionado o: Mac-Morpho original, que é composto por artigos publicados na Folha de São Paulo em 1994. o Mac-Morpho revisado por FONSECA, ROSA e ALUÍSIO no ínicio desse ano, onde foi revisado as classes gramaticais (juntando umas  e criando outras).  E o Tycho Brahe, composto por 66 textos históricos.
 
 - Ambos os córpus tem cerca de um milhão de palavras. Mas se diferenciam bastante em relação a quantidade de classes gramaticais. 
 
@@ -102,15 +107,15 @@ SLIDE 9 : Córpus
 SLIDE 10 : Representação das palavras
 -----------------------------------------
 
-- São as palavras que servem como os dados de entrada para o nosso modelo, ou seja, elas são nossas features.
-
-- A representação das palavras pode ser feita através de word embeddings, que são vetores reais valorados em um espaço multidimensional.
+- A representação das palavras pode ser feita através de word embeddings, que são vetores reais valorados em um espaço multidimensional. Cada dimensão pode ser considerada, a grosso modo, como uma feature.
 
 - O uso de word embeddings alavancou o desempenho em aplicações de PLN, e também conseguiu diminuir o processo de engenharia de features, que consiste em criar features manualmente para no modelo.
 
 - Isso aconteceu pois elas conseguem capturar similiradades entre as palavras. Quando é dito que duas word embeddings são similares, significa que elas tendem a ser usadas no mesmo contexto e usualmente pertencem a mesma classe gramatical. Em termos matemáticos, significa que que os vetores estão próximos um do outro, ou seja, sua distância euclidiana tende a ser curta. 
 
 - A similaridade das word embeddings diferenciam de acordo com as técnicas utilizadas para as suas gerações.
+
+- Esse processo de criação consiste em gerar as word embeddings atavés de um grande córpus, como por exemplo toda a wikipédia. Com isso, será criado vetores para palavras fora do vocábulareio de treinamento. E portanto, espara-se que o modelo consiga generalizar bem para palavras fora do vocabulario.
 
 
 
@@ -123,7 +128,7 @@ SLIDE 11 : Técnicas para geração de word embeddings
 
 - O Hyperspace Analogue to Language utiliza a técnica de matriz de coocorrência para buscar as frequências e depois decompõe essas matriz em vetores utilizando o método de escalamento multidimensional.
 
-- A modelação skip-gram realiza uma precisão de palavras vizinhas num conjunto de tamanho finito que contém palavras predecessoras e sucessoras, ela tem como objetivo minimizar a complexidade computacional na geração de word embeddings. Essa estratégia é utilizada pela ferramente word2vec, que contém a contribuição do próprio Mikolov.
+- A modelação skip-gram realiza uma previsão de palavras vizinhas num conjunto de tamanho finito que contém palavras predecessoras e sucessoras, ela tem como objetivo minimizar a complexidade computacional na geração de word embeddings. Essa estratégia é utilizada pela ferramente word2vec, que contém a contribuição do próprio Mikolov.
 
 - A estratégia mais recente e indica por Socher, é a utilização de Global Vectors, que consiste em criar os vetores de acordo com a razão das probabilidades na matriz de coocorrência em relação ao contexto de uma outra palavra do vocabulário.
 
@@ -148,11 +153,13 @@ SLIDE 13 : Redes neurais
 
 - No modelo matemático, temos unidades de ativação i para cada camada j da rede neural. As unidades de ativação da primeira camada são iguais a nossa entrada, ou seja, apenas é atribuido o valor de entrada para elas.
 
-- Para ir de uma camada para a próxima, devemos multiplicar o já calculadas unidades de ativação para a camada j com a linha de theta da camada j correspondente. Atribuimos cada linha i para novas unidades de ativação i.
+- Além disso, temos pesos de ir de uma camada para outra. Esses pesos são na realidade o quê está sendo aprendido na rede neural.
+
+- Para ir de uma camada para a próxima, devemos multiplicar as já calculadas unidades de ativação para a camada j com a linha de theta da camada j correspondente. Essa multiplicação pode ser guardada num vetor z.
+
 
 - Após realizar essa multiplicação entre os pesos e as unidades de ativação, aplicamos uma função de ativação g(z) que é responsável por deixar nossos dados no intervalo entre 0 e 1, conforme mostra a figura ao lado.
 
-- Os parâmetros z da função de ativação na próxima camada j+1, é justamente a multiplicação dos pesos theta com as unidades de ativação na camada j.
 
 
 
@@ -196,7 +203,9 @@ SLIDE 15 : Redes neurais
 
 - Para a última camada, os erros são na verdade a diferença entre o valor calculado na ultima camada e o valor das saídas reais y.
 
-- A questão chave desse passo é como propagar esse erro para as outras camadas. Isso é feito de traz para frente, onde é feito a multiplicação da matriz de pesos da propria camada com o vetor de erros delta da camada posterior. Essa multiplicação vai resultar em um vetor com altura igual ao número de unidades de ativação nessa camada (2). Isso é na verdade os erros propagados para essa camada, com eles, podemos multiplicar pela derivada a função de ativação avaliada com os parâmetros z. Podemos lembrar que nossa derivada é a inclinação da reta tangente em relação a alguma função de custo. Desse modo, quanto maior a inclinação, mais incorretos estamos.
+- A questão chave desse passo é como propagar esse erro para as outras camadas. Isso é feito de traz para frente, onde é feito a multiplicação da matriz de pesos da propria camada com o vetor de erros delta da camada posterior. Essa multiplicação vai resultar em um vetor com altura igual ao número de unidades de ativação nessa camada (2). 
+
+Isso é na verdade os erros propagados para essa camada, com eles, podemos multiplicar pela derivada a função de ativação avaliada com os parâmetros z. Podemos lembrar que nossa derivada é a inclinação da reta tangente em relação a alguma função de custo. Desse modo, quanto maior a inclinação, mais incorretos estamos.
 
 
 
@@ -207,13 +216,13 @@ SLIDE 16 : Aprendizagem profunda
 
 - Extrair features manualmente é uma tarefa difícil, pois pode haver variações nos dados que podem ser identifacadas utilizando um nível sofistiticado, quase humano, de entendimento. A aprendizagem profunda tenta automaticamente aprender boas features ou representações.
 
-+ Na Figura tal, cada pixel da imagem são features passadas para a primeia camada oculta, que consegue identificar bordas facilmente ao comparar o brilho de pixels vizinhos. Ao passar a descrição dessas bordas para a segunda camada oculta, ela consegue facilmente procurar por contornos, que são reconhecidos como uma coleção de bordas. Ao chegar na terceira camada oculta, consegue-se detectar partes inteiras de objetos específicos ao procurar por específicas coleções de contornos e bordas. No final, a descrição da imagem em termos das partes dos objetos pode ser usada para reconhcer objetos inteiros presentes
++ Na Figura tal, cada pixel da imagem são passados para a primeia camada, que consegue identificar bordas facilmente ao comparar o brilho de pixels vizinhos. Ao passar a descrição dessas bordas para a segunda camada oculta, ela consegue facilmente procurar por contornos, que são reconhecidos como uma coleção de bordas. Ao chegar na terceira camada oculta, consegue-se detectar partes inteiras de objetos específicos ao procurar por específicas coleções de contornos e bordas. No final, a descrição da imagem em termos das partes dos objetos pode ser usada para reconhcer objetos inteiros presentes
 na imagem.
 
 
 - A aprendizagem profunda começou a ser usada recentemente (desde 2007 para cá, evoluíndo muito nos últimos 5 anos) devido a criação de novos modelos, algoritmos  e ideiais, mas também devido ao aumento do desempenho computacional.
 
-- Isso porque o principal modelo utilizado em aprendizagem profunda é redes neurais com múltiplas camadas, isso torna o treinamento bastante lento caso não haja desempenho de processamento. 
+- O principal modelo utilizado em aprendizagem profunda é redes neurais com múltiplas camadas, isso torna o treinamento bastante lento caso não haja desempenho de processamento. 
 
 
 
@@ -267,7 +276,7 @@ SLIDE 19 : Representação das palavras
 SLIDE 20 : Pontuações para estrutura gramatical
 -----------------------------------------------------
 
-- Para classificar palavras em uma sentença, o etiquetador obtém uma janela de palavras de tamanho fixo t a cada momento, e transforma as palavras em vetores de features.
+- Para classificar palavras em uma sentença, o etiquetador obtém uma janela de vetores palavras de tamanho fixo t a cada momento
 
 - Essa janela é centralizada em uma palavra vetorizada vn, e concatena-se metade de t para esquerda e metade de t para direita. Em caso de palavras no começo ou no fim do texto, é usado vetores especiais para preencher esse espaço.
 
@@ -284,7 +293,7 @@ SLIDE 21 : Treinamento
 
 - O treinamento do modelo é supervisionado utilizando um rede neural recursiva para classifiar as palavras em suas classes gramaticais. 
 
-- Isso é feito através de uma aprendizagem guiada por palavras mais fáceis. Um método proposto origalmente por Shen, Satta e Joshi em 2007, que na época obteve bons resultados.
+- Isso é feito através de uma aprendizagem guiada por palavras mais fáceis. Um modelo proposto origalmente por Shen, Satta e Joshi em 2007, que na época obteve bons resultados.
 
 - Essa aprendizagem pode ser pensada como um grafo acíclico dirigido, onde arestas com pesos mais baixos são transições que serão calculadas primeiro. 
 
@@ -297,7 +306,7 @@ SLIDE 21 : Treinamento
 SLIDE 22 : Treinamento 
 -----------------------------------------------------
 
-- Essa figura resume o método proposto:
+- Essa figura resume o modelo proposto:
 
 - nela, obtemos um janela de palavras com tamanho t e instanciamos uma fila Q. Após isso, é feito a classificação para cada palavra no intervalo de t, centrado em n. Nesse caso, supomos que o tamanho da janela é 5, para facilitar a visualização.
 

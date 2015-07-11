@@ -29,7 +29,7 @@
 \usepackage{booktabs}       % Formatação de tabelas
 % -------------------------------------------------------------------------------------------------
 % Para citações
-\usepackage[brazilian,hyperpageref]{backref} % Páginas com as citações na bibliografia
+% \usepackage[brazilian,hyperpageref]{backref} % Páginas com as citações na bibliografia
 \usepackage[alf]{abntex2cite} % Citações padrão ABNT (alfanumérico)
 % -------------------------------------------------------------------------------------------------
 % Pacotes opcionais
@@ -55,6 +55,7 @@
 
 \usepackage{tablefootnote}
 \usepackage{adjustbox}
+\usepackage{color}
 
 \captionsetup{labelformat=empty,labelsep=none}
 
@@ -78,38 +79,131 @@
 
 \maketitle
 
+
 \begin{frame}
-  \frametitle{Agenda da apresentação}
-  \setbeamertemplate{section in toc}[mine]
-  \tableofcontents[hideallsubsections]
+  \frametitle{Roteiro}
+  % \setbeamertemplate{section in toc}[mine]
+  % \tableofcontents[hideallsubsections]
+
+
+  \begin{itemize}
+
+  \vspace{-1em}
+
+    \item Introdução
+    
+    \begin{itemize}
+      \item[\ ] \textit{Part-of-speech} (POS) Tagging 
+      \item[\ ] O problema
+      \item[\ ] Objetivos
+    \end{itemize}
+
+
+    \item Fundamentação
+
+    \begin{itemize}
+      \item[\ ] Aprendizado de máquina
+      \item[\ ] Córpus
+      \item[\ ] Representação de palavras
+      \item[\ ] Redes neurais
+      \item[\ ] Aprendizagem profunda
+    \end{itemize}
+
+
+    \item Trabalhos relacionados
+
+    \item Metodologia
+
+    \begin{itemize}
+      \item[\ ] Representação de palavras
+      \item[\ ] Pontuações para classes gramaticais
+      \item[\ ] Treinamento
+    \end{itemize}
+
+
+    \item Cronograma
+
+  \end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{Roteiro}
+  % \setbeamertemplate{section in toc}[mine]
+  % \tableofcontents[hideallsubsections]
+
+
+  \begin{itemize}
+
+  \vspace{-1em}
+
+    \item Introdução
+    
+    \begin{itemize}
+      \item[\ ] \textit{Part-of-speech} (POS) Tagging 
+      \item[\ ] O problema
+      \item[\ ] Objetivos
+    \end{itemize}
+
+
+    \color{gray}
+    \item[\color{gray}{$\bullet$}] Fundamentação
+
+    \begin{itemize}
+      \color{gray}
+      \item[\ ] Aprendizado de máquina
+      \item[\ ] Córpus
+      \item[\ ] Representação de palavras
+      \item[\ ] Redes neurais
+      \item[\ ] Aprendizagem profunda
+    \end{itemize}
+
+
+    \color{gray}
+    \item[\color{gray}{$\bullet$}] Trabalhos relacionados
+
+    \color{gray}
+    \item[\color{gray}{$\bullet$}] Metodologia
+
+    \begin{itemize}
+      \color{gray}
+      \item[\ ] Representação de palavras
+      \item[\ ] Pontuações para classes gramaticais
+      \item[\ ] Treinamento
+    \end{itemize}
+
+    \color{gray}
+    \item[\color{gray}{$\bullet$}] Cronograma
+
+  \end{itemize}
+
 \end{frame}
 
 
 \section{Introdução}
-
-
-\begin{frame}[fragile]
-  \frametitle{Introdução}
-
-  \begin{itemize}
-      \item \textit{Part-of-speech} (POS) Tagging 
-      \item O problema
-      \item Objetivos
-    \end{itemize}
-
-
-\end{frame}
-
 
 \begin{frame}[fragile]
   \frametitle{POS Tagging}
 
   É conhecido em Processamento de Linguagem Natural (PLN) como o ato de classificar uma palavra pertencente a um conjunto de textos em uma classe gramatical.
 
- \begin{itemize}
-      \item[-] Acurácia
-      \item[-] Aplicações
-      \item[-] Desafios
+    \begin{itemize}
+      \item Qual a medida de eficiência? 
+      \begin{itemize}
+        \item[-] Acurácia
+        \item[-] Atualmente cerca de 97\%
+      \end{itemize}
+
+      \item[\ ] \ 
+
+      \item Quais são as aplicações?
+      \begin{itemize}
+        \item[-] Tradução automática
+        \item[-] Sumarização
+      \end{itemize}
+
     \end{itemize}
 
   
@@ -129,10 +223,10 @@
   
 
  \begin{itemize}
-      \item[-] Há muita ambiguidade no português 
-      \item[-] Estratégia trivial não é eficaz
-      \item[-] É necessário analisar o contexto
-      \item[-] Aprendizado de máquina
+      \item Linguagens naturais são ambíguas 
+      \item Estratégia trivial não é eficaz
+      \item Necessário analisar o contexto
+      \item Aprendizado de máquina
     \end{itemize}
 
   
@@ -152,18 +246,17 @@
 
 
  \begin{itemize}
-    \item[-] Novo método para POS Tagging
+    \item Desenvolver novo modelo para POS Tagging
     \begin{itemize}
       \item[-] A príncipio para o português brasileiro
     \end{itemize}
     \item[\ ] \ 
-    \item[-] Estado da arte
+    \item Alcançar estado da arte
     \begin{itemize}
-      \item[-] Novas técnicas
-      \item[-] Novas abordagens
+      \item[-] Combinar abordagens existentes
     \end{itemize}
      \item[\ ] \ 
-    \item[-] Análise de eficiência
+    \item Analisar a eficiência
     \begin{itemize}
       \item[-] Acurácia
       \item[-] Tempo de treinamento
@@ -174,42 +267,127 @@
 
 
 
+\begin{frame}
+  \frametitle{Roteiro}
+  % \setbeamertemplate{section in toc}[mine]
+  % \tableofcontents[hideallsubsections]
 
-\section{Fundamentação}
-
-\begin{frame}[fragile]
-  \frametitle{Fundamentação}
 
   \begin{itemize}
-    \item Aprendizado de máquina
-    \item Córpus
-    \item Representação das palavras
-    \item Redes neurais
-    \item Aprendizagem profunda
+
+  \vspace{-1em}
+
+    
+    \item[\color{gray}{$\bullet$}] \textcolor{gray}{Introdução}
+    
+    \begin{itemize}
+      \color{gray}{
+      \item[\ ] \textit{Part-of-speech} (POS) Tagging 
+      \item[\ ] O problema
+      \item[\ ] Objetivos
+      }
+    \end{itemize}
+
+
+    
+    \item Fundamentação
+
+    \begin{itemize}
+      \item[\ ] Aprendizado de máquina
+      \item[\ ] Córpus
+      \item[\ ] Representação de palavras
+      \item[\ ] Redes neurais
+      \item[\ ] Aprendizagem profunda
+    \end{itemize}
+
+
+    \color{gray}
+    \item[\color{gray}{$\bullet$}] Trabalhos relacionados
+
+    \color{gray}
+    \item[\color{gray}{$\bullet$}] Metodologia
+
+    \begin{itemize}
+      \color{gray}
+      \item[\ ] Representação de palavras
+      \item[\ ] Pontuações para classes gramaticais
+      \item[\ ] Treinamento
+    \end{itemize}
+
+    \color{gray}
+    \item[\color{gray}{$\bullet$}] Cronograma
+
   \end{itemize}
-  
 
 \end{frame}
 
 
+\section{Fundamentação}
+
 \begin{frame}[fragile]
   \frametitle{Aprendizado de máquina}
 
-  \begin{itemize}
-    \item[-] Aprendizado supervisionado
-    \begin{itemize}
-      \item[-] Regressão
-      \item[-] Classificação  
-    \end{itemize}
-    \item[-] Aprendizado não supervisionado
-  \end{itemize}
+  \only<1>{
 
-  \begin{figure}[htb]
-  \begin{center}
-      \includegraphics[scale=0.38]{img/passoapasso.png}
-   % \caption{Matriz de coocorrência para criação de palavras vetorizadas} \label{fig:matrizdecoocorrencia}
-  \end{center}
-\end{figure}
+    \begin{itemize}
+      \item Aprendizado supervisionado
+      \begin{itemize}
+        \item[-] Regressão
+        \item[-] Classificação  
+      \end{itemize}
+      \item Aprendizado não supervisionado
+    \end{itemize}
+
+    \begin{figure}[htb]
+    \begin{center}
+        \includegraphics[scale=0.38]{img/passoapasso.png}
+     % \caption{Matriz de coocorrência para criação de palavras vetorizadas} \label{fig:matrizdecoocorrencia}
+    \end{center}
+    \end{figure}
+
+    \begin{equation}
+    h_\theta(x) = \theta_0 + \theta_1f(x_1) + \theta_2 f(x_2) + ... + \theta_n f(x_n) \nonumber
+    \end{equation}
+
+  }
+
+
+  \only<2>{
+
+     \begin{itemize}
+      \item Aprendizado supervisionado
+      \begin{itemize}
+        \item[-] \textbf{Regressão}
+        \item[-] \textbf{Classificação}
+      \end{itemize}
+      \item Aprendizado não supervisionado
+    \end{itemize}
+
+  \begin{columns}[onlytextwidth]
+    \column{0.5\textwidth}
+    \begin{figure}[htb]
+    \begin{center}
+        \includegraphics[width=\textwidth]{img/regressao2x.png}
+    \end{center}
+    \end{figure}  
+    
+
+    \column{0.5\textwidth}
+    \begin{figure}[htb]
+    \begin{center}
+        \includegraphics[width=\textwidth]{img/classificacao2x.png}
+    \end{center}
+    \end{figure}  
+
+
+  \end{columns}
+
+    
+
+  }
+
+
+  
 
 \end{frame}
 
@@ -219,9 +397,9 @@
   \frametitle{Córpus}
 
   \begin{itemize}
-    \item[-] Coleções de textos agrupados
-    \item[-] Anotação gramatical manual
-    \item[-] \textit{Córpus} para o português brasileiro:\\ \
+    \item Coleções de textos agrupados
+    \item Anotação gramatical manual
+    \item \textit{Córpus} para o português brasileiro:\\ \
 
     \begin{table}[!htb]
     \footnotesize
@@ -239,66 +417,92 @@
     \end{table}
 
   \item[\ ] \ 
-  \item[-] Por que não combiná-los?
+  \item Por que não combiná-los?
   \item[\ ] \ 
   \end{itemize}
 
 
-{\scriptsize 1. Revisado em: \cite{fonseca2015evaluating}.}
+{\scriptsize 1. Revisado por: \citeonline{fonseca2015evaluating}.}
 
 \end{frame}
 
 
 
 \begin{frame}[fragile]
-  \frametitle{Representação das palavras}
+  \frametitle{Representação de palavras}
 
   \begin{itemize}
-    \item[-] Dados de entrada (\textit{features})
+
+    \item Vetores reais valorados em um espaço multidimensional (\textit{word embeddings})
     
     \item[\ ] \ 
 
-    \item[-] Vetores reais valorados em um espaço multidimensional (\textit{word embeddings})
-    
-    \item[\ ] \ 
-
-    \item[-] Mais desempenho de aplicações em PLN e menos engenharia de \textit{features}
+    \item Mais desempenho de aplicações em PLN e menos engenharia de \textit{features}
 
     \item[\ ] \ 
 
-    \item[-] Conseguem capturar informações sintáticas e semânticas
+    \item Conseguem capturar informações sintáticas e semânticas
 
     \item[\ ] \ 
 
-    \item[-] Geradas de maneiras diferentes dependendo da técnica utilizada
+    \item Geradas de maneiras diferentes dependendo da técnica utilizada
+
+
+    \item[\ ] \ 
+
+    \item Palavras fora do vocábulario de treinamento também tem seu próprio vetor
+
+
   \end{itemize}
   
 
 
 \end{frame}
+
+
+
+\begin{frame}[fragile]
+  \frametitle{Técnicas para geração de \textit{word embeddings}}
+
+   \begin{itemize}
+    \item Palavras similares estão próximas
+    \item[\ ] \ 
+  \end{itemize}
+
+  \begin{figure}[htb]
+  \begin{center}
+      \includegraphics[scale=0.18]{img/Turian-WordTSNE}
+  \end{center}
+  \caption{Imagem criada pelo t-SNE\\Fonte: \citeonline{turian2010word}}
+
+\end{figure}
+
+
+\end{frame}
+
 
 
 \begin{frame}[fragile]
   \frametitle{Técnicas para geração de \textit{word embeddings}}
   
    \begin{itemize}
-    \item[-] Matriz de coocorrência
+    \item Matriz de coocorrência
 
     \item[\ ] \ 
 
-    \item[-] \textit{Neural Language Model} (NLM): Através de redes neurais
+    \item \textit{Neural Language Model} (NLM): Através de redes neurais
 
     \item[\ ] \ 
 
-    \item[-] \textit{Hyperspace Analogue to Language} (HAL): Matriz de coocorrência com um método de decomposição (Escalamento Multidimensional)
+    \item \textit{Hyperspace Analogue to Language} (HAL): Matriz de coocorrência com um método de decomposição (Escalamento Multidimensional)
 
     \item[\ ] \ 
 
-    \item[-] Modelação \textit{Skip-Gram} (SG): Previsão de palavras vizinhas num conjunto de tamanho finito.
+    \item Modelação \textit{Skip-Gram} (SG): Previsão de palavras vizinhas num conjunto de tamanho finito: \textit{word2vec}
 
     \item[\ ] \ 
 
-    \item[-] \textit{Global Vectors} (GloVe): Razão das probabilidades na matriz de coocorrência em relação ao contexto de uma outra palavra do vocabulário.
+    \item \textit{Global Vectors} (GloVe): Razão das probabilidades na matriz de coocorrência em relação ao contexto de uma outra palavra do vocabulário
 
   \end{itemize}
 
@@ -308,24 +512,6 @@
 
 \end{frame}
 
-\begin{frame}[fragile]
-  \frametitle{Técnicas para geração de \textit{word embeddings}}
-
-   \begin{itemize}
-    \item[-] Palavras similares estão próximas.
-    \item[\ ] \ 
-  \end{itemize}
-
-  \begin{figure}[htb]
-  \begin{center}
-      \includegraphics[scale=0.18]{img/Turian-WordTSNE}
-  \end{center}
-  \caption{Fonte: \citeonline{turian2010word}}
-
-\end{figure}
-
-
-\end{frame}
 
 
 
@@ -338,18 +524,31 @@
     \column{0.5\textwidth}
       
       \begin{itemize}
-        \item[-] Simulação do cérebro humano
+        \item Simulação do cérebro humano
         \item[\ ] \ 
-        \item[-] Unidades de ativação: $a_i^{(j)}$
+        \item Unidades de ativação: $a_i^{(j)}$
         \item[\ ] \ 
-        \item[-] Pesos: $\theta^{(j)}$
+        \item Pesos: $\theta^{(j)}$
         \item[\ ] \ 
-        \item[-] Função de ativação: $g(z)$
+        \item Parâmetros: $z^{(j+1)} =  \theta^{(j)}a^{(j)}$
         \item[\ ] \ 
-        \item[-] Parâmetros: $z^{(j+1)} =  \theta^{(j)}a^{(j)}$
+        \item Função de ativação: $g(z)$
+        \item[\ ] \ 
+        \item $a^{(j+1)} = g(z^{(j+1)})$
       \end{itemize}
 
+
     \column{0.5\textwidth}
+
+    \only<1>{
+        \begin{figure}[!htb]
+        \begin{center}
+        \includegraphics[width=\textwidth]{img/redeneuraloculta2.pdf}
+        \end{center}
+        \end{figure}
+    }
+
+    \only<2>{
       
        \begin{figure}[!htb]
         \begin{center}
@@ -371,6 +570,9 @@
         \end{tikzpicture}
         \end{center}
         \end{figure}
+      }
+
+      
 
   \end{columns}
   
@@ -378,10 +580,15 @@
 \end{frame}
 
 
+
+
+
+
 \begin{frame}[fragile]
   \frametitle{Redes neurais}
 
-  - Processo de aprendizagem:
+  - Processo de aprendizagem (\textit{Forward Propagation}):
+  
 
   \begin{figure}
     \begin{center}
@@ -396,7 +603,7 @@
 \begin{frame}[fragile]
   \frametitle{Redes neurais}
 
-  - Processo de aprendizagem:
+  - Processo de aprendizagem (\textit{Backpropagation}):
 
   \begin{figure}
     \begin{center}
@@ -409,40 +616,63 @@
 
 
 
-\begin{frame}[fragile]
-  \frametitle{Aprendizagem profunda}
 
-  \begin{columns}[onlytextwidth]
-    \column{0.45\textwidth}
-      
-      \begin{itemize}
-        \item[-] Muitas tranformações não lineares
-        \item[\ ] \ 
-        \item[-] Objetivo de aprender automaticamente boas \textit{features}
-        \item[\ ] \ 
-        \item[-] Crescimento do desempenho computacional
-        \item[\ ] \ 
-        \item[-] Redes neurais com múltiplas camadas
-      \end{itemize}
 
-    \column{0.55\textwidth}
-      
-      \begin{figure}
-      \begin{center}
-        \includegraphics[scale=0.24]{img/aprendendodeep2.pdf}
-      \end{center}
-      \caption{Adaptade de: \citeonline{Bengio-et-al-2015-Book}}
-    \end{figure}
-       
+\begin{frame}
+  \frametitle{Roteiro}
+  % \setbeamertemplate{section in toc}[mine]
+  % \tableofcontents[hideallsubsections]
 
-  \end{columns}
-  
+
+  \begin{itemize}
+
+  \vspace{-1em}
+
+    
+    \item[\color{gray}{$\bullet$}] \textcolor{gray}{Introdução}
+    
+    \begin{itemize}
+      \color{gray}{
+      \item[\ ] \textit{Part-of-speech} (POS) Tagging 
+      \item[\ ] O problema
+      \item[\ ] Objetivos
+      }
+    \end{itemize}
+
+
+    
+    \item[\color{gray}{$\bullet$}] \textcolor{gray}{Fundamentação}
+
+    \begin{itemize}
+      \color{gray}{
+      \item[\ ] Aprendizado de máquina
+      \item[\ ] Córpus
+      \item[\ ] Representação de palavras
+      \item[\ ] Redes neurais
+      \item[\ ] Aprendizagem profunda
+      }
+    \end{itemize}
+
+
+    
+    \item Trabalhos relacionados
+
+    \color{gray}
+    \item[\color{gray}{$\bullet$}] Metodologia
+
+    \begin{itemize}
+      \color{gray}
+      \item[\ ] Representação de palavras
+      \item[\ ] Pontuações para classes gramaticais
+      \item[\ ] Treinamento
+    \end{itemize}
+
+    \color{gray}
+    \item[\color{gray}{$\bullet$}] Cronograma
+
+  \end{itemize}
 
 \end{frame}
-
-
-
-
 
 
 
@@ -456,14 +686,14 @@
   \item Escopo do português brasileiro
 
   \item[\ ] \adjustbox{max height=\dimexpr\textheight-5.5cm\relax,max width=\textwidth}{
-  \begin{tabular}{llll}
+  \begin{tabular}{llllc}
     \toprule
-    \textbf{Autores} & \textbf{Modelo}  & \textbf{Representação das palavras}  & \textbf{Córpus} \\
+    \textbf{Autores} & \textbf{Modelo}  & \textbf{Rep. palavras}  & \textbf{Córpus} & \textbf{Acurácia} \\
     \midrule
-    \citeonline{kepler2005etiquetador} & VLMC & Sequência de caracteres & Tycho Brahe \\
-    \citeonline{dos2014training} & Redes neurais profundas  & Vetores (CharWNN) & Tycho Brahe; Mac-Morpho \\
-    \citeonline{fonseca2015evaluating} & Redes neurais & Vetores (NLM, HAL, SG) & Tycho Brahe; Mac-Morpho \\
-    Este trabalho & Redes neurais recursivas & Vetores Vetores (NLM, SG, GloVe) & Tycho Brahe; Mac-Morpho \\
+    \citeonline{kepler2005etiquetador} & VLMC & Seq. de carac. & Tycho Brahe & 95,51\% \\
+    \citeonline{dos2014training} & Redes neurais profundas  & Vetores & Tycho Brahe; Mac-Morpho & 97,47\% \\
+    \citeonline{fonseca2015evaluating} & Redes neurais & Vetores & Tycho Brahe; Mac-Morpho & 97,57\% \\
+    Este trabalho & Redes neurais recursivas & Vetores & Tycho Brahe; Mac-Morpho & - \\
     \bottomrule
   \end{tabular}
   }
@@ -471,17 +701,74 @@
   \item[\ ] \ 
   \item[\ ] \ 
 
-  \item Estado da arte com 97,57\% de acurácia para todas palavras \cite{fonseca2015evaluating}
+  \item Estado da arte com 97,57\% de acurácia para todas palavras. Treinado com o Mac-Morpho original \cite{fonseca2015evaluating}
 
   \item[\ ] \ 
 
-  \item Estado da arte com 94,34\% de acurácia para palavras fora do vocábulario \cite{fonseca2015evaluating}
+  \item Estado da arte com 94,34\% de acurácia para palavras fora do vocábulario. Treinado com o Mac-Morpho revisado \cite{fonseca2015evaluating}
   
   \end{itemize}
 
 \end{frame}
 
 
+
+
+
+
+
+\begin{frame}
+  \frametitle{Roteiro}
+  % \setbeamertemplate{section in toc}[mine]
+  % \tableofcontents[hideallsubsections]
+
+
+  \begin{itemize}
+
+  \vspace{-1em}
+
+    
+    \item[\color{gray}{$\bullet$}] \textcolor{gray}{Introdução}
+    
+    \begin{itemize}
+      \color{gray}{
+      \item[\ ] \textit{Part-of-speech} (POS) Tagging 
+      \item[\ ] O problema
+      \item[\ ] Objetivos
+      }
+    \end{itemize}
+
+
+    
+    \item[\color{gray}{$\bullet$}] \textcolor{gray}{Fundamentação}
+
+    \begin{itemize}
+      \color{gray}{
+      \item[\ ] Aprendizado de máquina
+      \item[\ ] Córpus
+      \item[\ ] Representação de palavras
+      \item[\ ] Redes neurais
+      \item[\ ] Aprendizagem profunda
+      }
+    \end{itemize}
+
+    
+    \item[\color{gray}{$\bullet$}] \textcolor{gray}{Trabalhos relacionados}
+
+    \item Metodologia
+
+    \begin{itemize}
+      \item[\ ] Representação de palavras
+      \item[\ ] Pontuações para classes gramaticais
+      \item[\ ] Treinamento
+    \end{itemize}
+
+    \color{gray}
+    \item[\color{gray}{$\bullet$}] Cronograma
+
+  \end{itemize}
+
+\end{frame}
 
 
 
@@ -489,25 +776,12 @@
 
 
 \begin{frame}[fragile]
-  \frametitle{Metodologia}
-
-  \begin{itemize}
-    \item Representação das palavras
-    \item Pontuações para estrutura gramatical
-    \item Treinamento
-  \end{itemize}
-  
-
-\end{frame}
-
-
-\begin{frame}[fragile]
-\frametitle{Representação das palavras}
+\frametitle{Representação de palavras}
 
 
   \begin{itemize}
 
-    \item[-] Técnicas:
+    \item Técnicas:
     \begin{itemize}
       \item[-] NLM
       \item[-] SG
@@ -521,11 +795,11 @@
 
     \item[\ ] \ 
 
-    \item[-] Capitalização
+    \item Capitalização
 
     \item[\ ] \ 
 
-    \item[-] Prefixos
+    \item Prefixos
 
   \end{itemize}
 
@@ -534,18 +808,18 @@
 
 
 \begin{frame}[fragile]
-\frametitle{Pontuações para estrutura gramatical}
+\frametitle{Pontuações para classes gramaticais}
 
 
   \begin{itemize}
 
-    \item[-] Janela de palavras com tamanho $t$:
+    \item Janela de palavras com tamanho $t$:
 
     \item[\ ] $V_n = \big\{ v_{n - (t-1)/2}, ..., v_n, ..., v_{{n + (t-1)/2}} \big\} $
 
     \item[\ ] \ 
 
-    \item[-] Pontuações para estrutura gramatical:
+    \item Pontuações para classes gramaticais:
 
     \item[\ ] $s_c(V_n)$
 
@@ -553,7 +827,7 @@
 
     \item[\ ] \ 
 
-    \item[-] Pontuação final para $w_i^t$ dado $c_1^t$:
+    \item Pontuação final para $w_i^t$ dado $c_1^t$:
 
     \item[\ ] \begin{equation} 
 S(w_1^t, c_1^t) = \sum\limits_{k=1}^{t} \Big( \argmax_{1 \leq i \leq t, i \notin Q} (s_{c_i}(V_i) + A_{c_{i-1}, c_{i}, c_{i+1}}) \Big) \nonumber
@@ -572,11 +846,11 @@ S(w_1^t, c_1^t) = \sum\limits_{k=1}^{t} \Big( \argmax_{1 \leq i \leq t, i \notin
   
   \begin{itemize}
 
-    \item[-] Treinamento supervisionado
+    \item Treinamento supervisionado
 
-    \item[-] Rede neural recursiva
+    \item Rede neural recursiva
 
-    \item[-] Aprendizagem guiada por palavras mais fáceis \cite{shen2007guided}
+    \item Aprendizagem guiada por palavras mais fáceis \cite{shen2007guided}
 
     \item[\ ] \
 
@@ -589,9 +863,9 @@ S(w_1^t, c_1^t) = \sum\limits_{k=1}^{t} \Big( \argmax_{1 \leq i \leq t, i \notin
 
     \item[\ ] \
 
-    \item[-] Composição dos vetores:
+    \item Composição dos vetores:
 
-    \item[\ ] $v_n = v_n + z_c$ 
+    \item[\ ] $\beta(v_n, z_c) \mapsto v_n + z_c$ 
 
   \end{itemize}
 
@@ -601,7 +875,7 @@ S(w_1^t, c_1^t) = \sum\limits_{k=1}^{t} \Big( \argmax_{1 \leq i \leq t, i \notin
 
 
 \begin{frame}[fragile]
-\frametitle{Treinamento}
+\frametitle{Modelo Proposto}
 \vspace{-2.5em}
 
 
@@ -615,19 +889,19 @@ S(w_1^t, c_1^t) = \sum\limits_{k=1}^{t} \Big( \argmax_{1 \leq i \leq t, i \notin
 
 
 \begin{frame}[fragile]
-\frametitle{Treinamento}
+\frametitle{Modelo Proposto}
   
   \begin{itemize}
 
-    \item[-] Ajustamentos feitos para maximizar:
+    \item Ajustes feitos para maximizar:
 
     \item[\ ] \begin{equation}
-    \sum\limits_{(w_1^t,c_1^t) \in \phi} P(c_1^t|w_1^t,\theta) \nonumber
+    \sum\limits_{(w_1^t,c_1^t) \in \phi} P(c_1^t|w_1^t;\theta) \nonumber
     \end{equation}
 
     \item[\ ] \ 
 
-    \item[-] Função de custo:
+    \item Função de custo:
 
     \item[\ ] \begin{equation}
     J(\theta) = log\Bigg(\sum\limits_{u_1^t \in \gamma^t} e^{S(w_1^t, u_1^t)} \Bigg) - S(w_1^t, c_1^t) \nonumber
@@ -635,7 +909,7 @@ S(w_1^t, c_1^t) = \sum\limits_{k=1}^{t} \Big( \argmax_{1 \leq i \leq t, i \notin
 
     \item[\ ] \ 
 
-    \item[-] Gradiente Descendente, Gradiente Descendente Estocástico, Adagrad, Adadelta, etc. \cite{Bengio-et-al-2015-Book}
+    \item Gradiente Descendente, Gradiente Descendente Estocástico, Adagrad, Adadelta, etc. \cite{Bengio-et-al-2015-Book}
 
   \end{itemize}
 
@@ -644,6 +918,61 @@ S(w_1^t, c_1^t) = \sum\limits_{k=1}^{t} \Big( \argmax_{1 \leq i \leq t, i \notin
 
 
 
+
+\begin{frame}
+  \frametitle{Roteiro}
+  % \setbeamertemplate{section in toc}[mine]
+  % \tableofcontents[hideallsubsections]
+
+
+  \begin{itemize}
+
+  \vspace{-1em}
+
+    
+    \item[\color{gray}{$\bullet$}] \textcolor{gray}{Introdução}
+    
+    \begin{itemize}
+      \color{gray}{
+      \item[\ ] \textit{Part-of-speech} (POS) Tagging 
+      \item[\ ] O problema
+      \item[\ ] Objetivos
+      }
+    \end{itemize}
+
+
+    
+    \item[\color{gray}{$\bullet$}] \textcolor{gray}{Fundamentação}
+
+    \begin{itemize}
+      \color{gray}{
+      \item[\ ] Aprendizado de máquina
+      \item[\ ] Córpus
+      \item[\ ] Representação de palavras
+      \item[\ ] Redes neurais
+      \item[\ ] Aprendizagem profunda
+      }
+    \end{itemize}
+
+    
+    \item[\color{gray}{$\bullet$}] \textcolor{gray}{Trabalhos relacionados}
+
+    \item[\color{gray}{$\bullet$}] \textcolor{gray}{Metodologia}
+
+    \begin{itemize}
+      \color{gray}{
+      \item[\ ] Representação de palavras
+      \item[\ ] Pontuações para classes gramaticais
+      \item[\ ] Treinamento
+      }
+    \end{itemize}
+
+    
+    \item Cronograma
+
+  \end{itemize}
+
+\end{frame}
 
 
 \section{Cronograma}
@@ -695,12 +1024,43 @@ S(w_1^t, c_1^t) = \sum\limits_{k=1}^{t} \Big( \argmax_{1 \leq i \leq t, i \notin
 
 % \plain{Aprendizagem Guiada para Análise Morfossintática usando Redes Neurais Recursivas \\ \ \\ {\normalsize asd}}
 
-\plain{Aprendizagem Guiada para Análise Morfossintática usando Redes Neurais Recursivas \\ \ \\ {\normalsize Marcos Vinícius Treviso} \\ \texttt{\scriptsize marcosvtreviso@gmail.com} \\ \ \\ {\normalsize Orientador: Fábio Natanael Kepler} \\ \ \\ \ \\ \ \\ {\normalsize 8 de julho de 2015} \\ {\scriptsize Universidade Federal do Pampa}}
+\plain{Aprendizagem Guiada para Análise Morfossintática usando Redes Neurais Recursivas \\ \ \\ {\normalsize Marcos Vinícius Treviso} \\ \texttt{\scriptsize marcosvtreviso@gmail.com} \\ \ \\ {\normalsize Orientador: Fábio Natanael Kepler} \\ \ \\ \ \\ {\tiny Trabalho de Conclusão de Curso I} \\ {\normalsize 8 de julho de 2015} \\ {\scriptsize Universidade Federal do Pampa}}
 
 
 
 
 
+
+\begin{frame}[fragile]
+  \frametitle{Aprendizagem profunda}
+
+  \begin{columns}[onlytextwidth]
+    \column{0.45\textwidth}
+      
+      \begin{itemize}
+        \item Muitas tranformações não lineares
+        \item[\ ] \ 
+        \item Objetivo de aprender automaticamente boas \textit{features}
+        \item[\ ] \ 
+        \item Crescimento do desempenho computacional e criação de novos algoritmos
+        \item[\ ] \ 
+        \item Redes neurais com múltiplas camadas
+      \end{itemize}
+
+    \column{0.55\textwidth}
+      
+      \begin{figure}
+      \begin{center}
+        \includegraphics[scale=0.24]{img/aprendendodeep2.pdf}
+      \end{center}
+      \caption{Adaptado de: \citeonline{Bengio-et-al-2015-Book}}
+    \end{figure}
+       
+
+  \end{columns}
+  
+
+\end{frame}
 
 
 
@@ -730,6 +1090,8 @@ S(w_1^t, c_1^t) = \sum\limits_{k=1}^{t} \Big( \argmax_{1 \leq i \leq t, i \notin
   \end{itemize}
 
 \end{frame}
+
+
 
 
 

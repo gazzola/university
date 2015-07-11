@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.7)  26 JUN 2015 23:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.7)  6 JUL 2015 16:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2169,11 +2169,11 @@ File: img/exemploclassificacao.pdf Graphic file (type pdf)
 Package pdftex.def Info: img/exemploclassificacao.pdf used on input line 16.
 (pdftex.def)             Requested size: 404.79384pt x 62.40904pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 20.
+(Font)              <10> on input line 21.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 20.
+(Font)              <7> on input line 21.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 20.
+(Font)              <5> on input line 21.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2476,12 +2476,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.2.4.
 l.789 	\item N
               úmero de unidades de entrada: igual ao número de dimensões ...
 ] [46 <./img/backpropagationalg.png>]
-<img/aprendendodeep.pdf, id=830, 1050.26962pt x 731.53299pt>
+<img/aprendendodeep.pdf, id=830, 1059.74998pt x 736.45494pt>
 File: img/aprendendodeep.pdf Graphic file (type pdf)
 
 <use img/aprendendodeep.pdf>
 Package pdftex.def Info: img/aprendendodeep.pdf used on input line 828.
-(pdftex.def)             Requested size: 341.25pt x 237.68959pt.
+(pdftex.def)             Requested size: 341.25pt x 237.14249pt.
  [47]
 <img/sentidoadm.pdf, id=853, 422.70422pt x 225.46735pt>
 File: img/sentidoadm.pdf Graphic file (type pdf)
@@ -2493,14 +2493,14 @@ Package pdftex.def Info: img/sentidoadm.pdf used on input line 840.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [48 <./img/aprendendodeep.pdf>]
-<img/aumentorntam.pdf, id=880, 1180.55312pt x 713.11267pt>
+<img/aumentorntam.pdf, id=883, 1180.55312pt x 713.11267pt>
 File: img/aumentorntam.pdf Graphic file (type pdf)
 
 <use img/aumentorntam.pdf>
 Package pdftex.def Info: img/aumentorntam.pdf used on input line 850.
 (pdftex.def)             Requested size: 341.25pt x 206.13362pt.
 
-<img/deeplearningfunc.pdf, id=888, 591.23184pt x 487.8594pt>
+<img/deeplearningfunc.pdf, id=891, 591.23184pt x 487.8594pt>
 File: img/deeplearningfunc.pdf Graphic file (type pdf)
 
 <use img/deeplearningfunc.pdf>
@@ -2544,22 +2544,23 @@ Overfull \hbox (0.70383pt too wide) in paragraph at lines 37--52
 ) (./textuais/desenvolvimento.tex [52] [53
 
 ] [54]
-<img/neuralnetworkfinal_alg.pdf, id=1068, 1768.0304pt x 1624.51913pt>
-File: img/neuralnetworkfinal_alg.pdf Graphic file (type pdf)
+<img/neuralnetworkfinal_alg2.pdf, id=1071, 1768.0304pt x 1593.45313pt>
+File: img/neuralnetworkfinal_alg2.pdf Graphic file (type pdf)
 
-<use img/neuralnetworkfinal_alg.pdf>
-Package pdftex.def Info: img/neuralnetworkfinal_alg.pdf used on input line 76.
-(pdftex.def)             Requested size: 442.00652pt x 406.12878pt.
+<use img/neuralnetworkfinal_alg2.pdf>
+Package pdftex.def Info: img/neuralnetworkfinal_alg2.pdf used on input line 76.
 
-<img/guidedlearning.pdf, id=1073, 594.90683pt x 223.35628pt>
+(pdftex.def)             Requested size: 442.00652pt x 398.3623pt.
+
+<img/guidedlearning.pdf, id=1076, 594.90683pt x 223.35628pt>
 File: img/guidedlearning.pdf Graphic file (type pdf)
 
 <use img/guidedlearning.pdf>
 Package pdftex.def Info: img/guidedlearning.pdf used on input line 85.
 (pdftex.def)             Requested size: 178.47342pt x 67.00739pt.
- [55 <./img/neuralnetworkfinal_alg.pdf>] [56 <./img/guidedlearning.pdf>]) (./te
-xtuais/cronograma.tex [57pdfTeX warning (ext4): destination with the same ident
-ifier (name{equation.4.3.4}) has been already used, duplicate ignored
+ [55 <./img/neuralnetworkfinal_alg2.pdf>] [56 <./img/guidedlearning.pdf>]) (./t
+extuais/cronograma.tex [57pdfTeX warning (ext4): destination with the same iden
+tifier (name{equation.4.3.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -2602,8 +2603,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 438.
  ) 
 Here is how much of TeX's memory you used:
  40653 strings out of 493304
- 853627 string characters out of 6139872
- 1080638 words of memory out of 5000000
+ 853632 string characters out of 6139872
+ 1080619 words of memory out of 5000000
  42991 multiletter control sequences out of 15000+600000
  116007 words of font info for 77 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -2638,10 +2639,10 @@ e1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/publi
 c/tex-gyre/qcsr.pfb>
-Output written on monografia.pdf (64 pages, 5074558 bytes).
+Output written on monografia.pdf (64 pages, 5074565 bytes).
 PDF statistics:
- 1527 PDF objects out of 1728 (max. 8388607)
- 1267 compressed objects within 13 object streams
+ 1530 PDF objects out of 1728 (max. 8388607)
+ 1269 compressed objects within 13 object streams
  220 named destinations out of 1000 (max. 500000)
  480 words of extra memory for PDF output out of 10000 (max. 10000000)
 

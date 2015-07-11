@@ -1,8 +1,8 @@
 \beamer@endinputifotherversion {3.24pt}
 \select@language {brazil}
-\beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
-\beamer@sectionintoc {2}{Fundamenta\IeC {\c c}\IeC {\~a}o}{7}{0}{2}
-\beamer@sectionintoc {3}{Trabalhos relacionados}{17}{0}{3}
-\beamer@sectionintoc {4}{Metodologia}{18}{0}{4}
-\beamer@sectionintoc {5}{Cronograma}{24}{0}{5}
-\beamer@sectionintoc {6}{Refer\IeC {\^e}ncias}{25}{0}{6}
+\beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{4}{0}{1}
+\beamer@sectionintoc {2}{Fundamenta\IeC {\c c}\IeC {\~a}o}{8}{0}{2}
+\beamer@sectionintoc {3}{Trabalhos relacionados}{19}{0}{3}
+\beamer@sectionintoc {4}{Metodologia}{21}{0}{4}
+\beamer@sectionintoc {5}{Cronograma}{27}{0}{5}
+\beamer@sectionintoc {6}{Refer\IeC {\^e}ncias}{28}{0}{6}
