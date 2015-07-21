@@ -1,12 +1,43 @@
-float a = 54.35;
+int a = 2;
+int b[5];
+bool seila[5] = b;
+
+
+int bitmask(int bt, int k){
+	
+	if(bt & k == k) then {
+		bt = bt | k;
+	}
+	else {
+		bt = bt & (!k);
+	};
+
+	seila[bt] = true;
+	return bt;
+}
+
 
 int main(){
+	int a, b;
+	float c, d;
+	int e;
+	char f = '7';
+	int *m;
+	int k[5];
 	
-	int b, c;
+	a = 0; e = 7;
 	
-	print b/c;
-	c = a + b + c;
-	print c;
+	while( ){
+		a = a + f;
+	};
 
-	return 0;
+	if(a == b & a == e & a == seila[1]) then {
+		a = bitmask(c, k[1.8]);
+		b = 6 / 0;
+	} else {
+		b = a * k[1] * soma;
+	};
+
+	return b - 5;
+
 };

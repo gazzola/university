@@ -11,7 +11,6 @@ class SemanticError{
 			exit(0); 
 		}
 
-
 		void undeclaration(string of, string x){
 			cout << endl << "ERRO SEMANTICO: " << of;
 			cout << " '" << x << "'" << " nao foi declarada!";

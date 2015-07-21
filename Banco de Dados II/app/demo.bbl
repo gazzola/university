@@ -1,0 +1,54 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.2 }
+
+\bibitem[Bengio, Goodfellow e Courville 2015]{Bengio-et-al-2015-Book}
+\abntrefinfo{Bengio, Goodfellow e Courville}{BENGIO; GOODFELLOW;
+  COURVILLE}{2015}
+{BENGIO, Y.; GOODFELLOW, I.~J.; COURVILLE, A. Deep learning. Book in
+  preparation for MIT Press. 2015. Dispon{\'\i}vel em:
+  \url{http://www.iro.umontreal.ca/~bengioy/dlbook}.}
+
+\bibitem[Fonseca, Rosa e Alu{\'\i}sio 2015]{fonseca2015evaluating}
+\abntrefinfo{Fonseca, Rosa e Alu{\'\i}sio}{FONSECA; ROSA; ALU{\'I}SIO}{2015}
+{FONSECA, E.~R.; ROSA, J. L.~G.; ALU{\'I}SIO, S.~M. Evaluating word embeddings
+  and a revised corpus for part-of-speech tagging in portuguese.
+\emph{Journal of the Brazilian Computer Society}, Springer, v.~21, n.~1, p.
+  1--14, 2015.}
+
+\bibitem[Kepler 2005]{kepler2005etiquetador}
+\abntrefinfo{Kepler}{KEPLER}{2005}
+{KEPLER, F.~N.
+\emph{Um etiquetador morfo-sint{\'a}tico baseado em cadeias de Markov de
+  tamanho vari{\'a}vel}.
+Tese (Doutorado) --- Instituto de Matem{\'a}tica e Estat{\'\i}stica da
+  Universidade de S{\~a}o Paulo, 12/04/2005., 2005.}
+
+\bibitem[Ng 2015]{machinelearningcoursera}
+\abntrefinfo{Ng}{NG}{2015}
+{NG, A. \emph{Course of Machine Learning}.
+[S.l.], 2015. Dispon{\'\i}vel em:
+  \url{https://www.coursera.org/learn/machine-learning/}.}
+
+\bibitem[Santos e Zadrozny 2014]{dos2014training}
+\abntrefinfo{Santos e Zadrozny}{SANTOS; ZADROZNY}{2014}
+{SANTOS, C.~N. dos; ZADROZNY, B. Training state-of-the-art portuguese pos
+  taggers without handcrafted features. In:  \emph{Computational Processing of
+  the Portuguese Language}. [S.l.]: Springer, 2014. p. 82--93.}
+
+\bibitem[Shen, Satta e Joshi 2007]{shen2007guided}
+\abntrefinfo{Shen, Satta e Joshi}{SHEN; SATTA; JOSHI}{2007}
+{SHEN, L.; SATTA, G.; JOSHI, A. Guided learning for bidirectional sequence
+  classification. In:  CITESEER. \emph{ACL}. [S.l.], 2007. v.~7, p. 760--767.}
+
+\bibitem[Turian, Ratinov e Bengio 2010]{turian2010word}
+\abntrefinfo{Turian, Ratinov e Bengio}{TURIAN; RATINOV; BENGIO}{2010}
+{TURIAN, J.; RATINOV, L.; BENGIO, Y. Word representations: a simple and general
+  method for semi-supervised learning. In:  ASSOCIATION FOR COMPUTATIONAL
+  LINGUISTICS. \emph{Proceedings of the 48th annual meeting of the association
+  for computational linguistics}. [S.l.], 2010. p. 384--394.}
+
+\end{thebibliography}

@@ -128,11 +128,16 @@ programa		: 	declaracoes funcaoMain
 
 declaracoes		:	/* vazio */
 				|	declaracoes declFuncao 
-				|	declaracoes declrVariaveis 
+				|	declaracoes declVariaveis 
 				;
 
 
-declrVariaveis	: tipo listaItens SEMICOLON { addListaVars($2); }
+declVariaveis	: tipo listaItens SEMICOLON { addListaVars($2); }
+				;
+
+
+declVarsAux		: /* vazio */
+				| declVarsAux declVariaveis 
 				;
 
 
@@ -175,7 +180,7 @@ tipo			:	INT	{ $$ = ST_INT; tipoatual = ST_INT; }
 				;
 
 
-corpoFuncao		:	declaracoes comandos
+corpoFuncao		:	declVarsAux comandos
 				;
 
 
@@ -282,7 +287,8 @@ retorno			:	RETURN expAritmetica { verifyReturn(funcaoatual, $2); }
 
 
 void interpretarCodigo(vector<Node> *v){
-	//todo
+	// first: generateAST in parsing time
+	// todo
 }
 
 
@@ -302,18 +308,24 @@ int main(){
 	st->print();
 
 
-	Node *n = st->get("seila", ST_GLOBAL);
-	if(n != NULL){
-		cout << n->name << "[" << n->dim << "]" << endl;
-		for(int i=0; i<n->dim; i++)
-			cout << n->name << "[" << i << "] = " << n->getValue(i) << endl;
-	}
+	// se quiser buscar um programa
+	// Node *n = st->get("seila", ST_GLOBAL);
+	// if(n != NULL){
+	// 	cout << n->name << "[" << n->dim << "]" << endl;
+	// 	for(int i=0; i<n->dim; i++)
+	// 		cout << n->name << "[" << i << "] = " << n->getValue(i) << endl;
+	// }
+
 
 	// executa o programa
-	interpretarCodigo(codigo);
+	// interpretarCodigo(codigo);
+
 
 	// libera a memoria
-	delete codigo;
+	// delete codigo;
+
+	// libera memoria symbol table
+	delete st;
 }
 
 
@@ -321,6 +333,6 @@ int main(){
 
 
 void yyerror(const char *s){
-	cout << endl << s << endl;
+	cout << endl << s << "! linha: " << nlines << endl;
 	exit(0);
 }

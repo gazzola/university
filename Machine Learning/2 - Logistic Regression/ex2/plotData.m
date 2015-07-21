@@ -21,7 +21,7 @@ negative = find(y == 0);
 plot(X(positive, 1), X(positive, 2), 'r+', 'LineWidth', 2, 'MarkerSize', 7);
 plot(X(negative, 1), X(negative, 2), 'bo', 'MarkerFaceColor', 'y', 'MarkerSize', 7);
 legend('Admitted', 'Not admitted');
-title('Plot of input data');
+% title('Plot of input data');
 
 
 % =========================================================================

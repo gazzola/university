@@ -1,27 +1,13 @@
 int fib(int i){
-	if(i < 2) then {
-		return i;
-	}
-	else{
-		return fib(1) + fib(2);
-	};
+	i = fib(i+1) + fib(i+2);
 };
 
-char convert(int c){
-	int seila[25];
-	seila[1] = c;
-	return seila[1];
-};
 
-int convert2(bool a){
-	if(a) then {
-		return 1;
-	}
-	else {
-		return 0;
-	}	
+void swap(int a, int b){
+ int c = a;
+ a = b;
+ b = c;	
 };
-
 
 int main(){
 
@@ -33,7 +19,7 @@ int main(){
 	while (x < 100){
 		print fib(x);
 		
-		c = convert(x);
+		swap(x, y);
 
 		if(c == '1') then {
 			a = true;

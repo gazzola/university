@@ -19,7 +19,7 @@ nferro {digito}+((,|e|,e)?{digito}+)?
 %%
 <<EOF>>		{printf("\n"); yyterminate();}
 "\t"		{printf("\t"); ncols+=4;}
-"\n"		{printf("\n"); nlines++;}
+"\n"		{printf("\n"); nlines++; ncols=0;}
 "\r"		{printf("\r");}
 " "			{printf(" "); ncols++;}
 ";"			{printf("<;, SEMICOLON> "); ncols+=1; return SEMICOLON;}

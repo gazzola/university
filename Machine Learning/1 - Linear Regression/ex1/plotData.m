@@ -17,8 +17,8 @@ function plotData(x, y)
 
 figure; 
 plot(x, y, 'r.', 'MarkerSize', 5); % Plot the data
-ylabel('X'); % Set the y−axis label
-xlabel('Y'); % Set the x−axis label
+ylabel('Y'); % Set the y−axis label
+xlabel('X'); % Set the x−axis label
 
 
 

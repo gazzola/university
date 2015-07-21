@@ -33,8 +33,8 @@ plotData(X, y);
 hold on;
 
 % Labels and Legend
-xlabel('Microchip Test 1')
-ylabel('Microchip Test 2')
+xlabel('X')
+ylabel('Y')
 
 % Specified in plot order
 legend('y = 1', 'y = 0')
@@ -87,7 +87,7 @@ pause;
 initial_theta = zeros(size(X, 2), 1);
 
 % Set regularization parameter lambda to 1 (you should vary this)
-lambda = 1;
+lambda = 100;
 
 % Set Options
 options = optimset('GradObj', 'on', 'MaxIter', 400);
@@ -99,13 +99,13 @@ options = optimset('GradObj', 'on', 'MaxIter', 400);
 % Plot Boundary
 plotDecisionBoundary(theta, X, y);
 hold on;
-title(sprintf('lambda = %g', lambda))
+
 
 % Labels and Legend
-xlabel('Microchip Test 1')
-ylabel('Microchip Test 2')
+xlabel('X')
+ylabel('Y')
 
-legend('y = 1', 'y = 0', 'Decision boundary')
+legend('y = 1', 'y = 0', 'Barreira de decisao')
 hold off;
 
 % Compute accuracy on our training set

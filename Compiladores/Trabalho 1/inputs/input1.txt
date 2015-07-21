@@ -1,36 +1,8 @@
-int a = 2;
-int b[5];
-int seila[5] = b;
+int a;
 
 
 int soma(int a, int b){
-	seila[0] = 1;
-	seila[1] = 2;
-	seila[2] = 3;
-	seila[3] = 3;
-	seila[4] = 3;
 	return a + b;
-};
-
-
-char convert(int c){
-	b[0] = 273;
-	seila = b;
-	return '3';
-};
-
-int convert2(bool a){
-	return 25;	
-};
-
-
-int fib(int i){
-	if(i < 2) then {
-		return i;
-	}
-	else{
-		return fib(1) + fib(2);
-	};
 };
 
 
@@ -38,9 +10,6 @@ int main(){
 	int a, b;
 	float c, d;
 	int e;
-	char f = '7';
-	int *m;
-	int k[5];
 	
 	a = 0; e = 7;
 	
@@ -48,30 +17,18 @@ int main(){
 		a = a + 1;
 	};
 
-	if(a == (25-8) | a == b & a == e) then {
+	if(a == 0 | a == b & a == e) then {
 		a = soma(a,b);
-		b = 6 / 0;
-		if(a) then {
-			print a;
-		}
-		else { };
+		b = 6 / d;
 
 		if(b >= a) then {
-			while(c < 0.0){
+			while(c < 0){
 				print b;
 			};
 		} else { };
 	} else {
-		b = a * ( 4 + 7 ) + 5 * e;
+		b = a * ( 4 + 7 ) + 5 * c;
 	};
 
-
-
-	k[0] = 7;
-	k[1] = 7;
-	k[2] = 7;
-	seila = k;
-
-	return b - 5;
-
+	return b-5;
 };
