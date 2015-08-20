@@ -1,9 +1,15 @@
 \documentclass[10pt]{beamer}
 
-\usetheme[nosectionslide]{m}
+\usetheme[nosectionslide,everytitleformat=regular]{m}
 
 % camel case
-\renewcommand{\mthemetitleformat}{}
+% \renewcommand{\mthemetitleformat}{}
+
+% \metropolisset[everytitleformat=regular]
+
+% \metropolisset[inner/block=fill]
+
+% \mthemetitleformat{regular}
 
 \definecolor{mDarkRed}{HTML}{8F0129}
 \definecolor{mGreen}{HTML}{0E8740}
@@ -88,7 +94,7 @@
 
   \begin{itemize}
 
-  \vspace{-1em}
+  % \vspace{-1em}
 
     \item Introdução
     
@@ -137,7 +143,7 @@
 
   \begin{itemize}
 
-  \vspace{-1em}
+  % \vspace{-1em}
 
     \item Introdução
     
@@ -275,7 +281,7 @@
 
   \begin{itemize}
 
-  \vspace{-1em}
+  % \vspace{-1em}
 
     
     \item[\color{gray}{$\bullet$}] \textcolor{gray}{Introdução}
@@ -462,28 +468,27 @@
 
 
 \begin{frame}[fragile]
-  \frametitle{Técnicas para geração de \textit{word embeddings}}
+  \frametitle{Técnicas para geração de \protect\textit{word embeddings}}
 
    \begin{itemize}
+    \item[\ ] \
     \item Palavras similares estão próximas
-    \item[\ ] \ 
+     
   \end{itemize}
 
   \begin{figure}[htb]
-  \begin{center}
-      \includegraphics[scale=0.18]{img/Turian-WordTSNE}
-  \end{center}
-  \caption{Imagem criada pelo t-SNE\\Fonte: \citeonline{turian2010word}}
+	  \begin{center}
+	      \includegraphics[scale=0.18]{img/Turian-WordTSNE}
+	  \end{center}
+	  \caption{Imagem criada pelo t-SNE\\Fonte: \citeonline{turian2010word}}
 
-\end{figure}
-
-
+	\end{figure}
 \end{frame}
 
 
 
 \begin{frame}[fragile]
-  \frametitle{Técnicas para geração de \textit{word embeddings}}
+  \frametitle{Técnicas para geração de \protect\textit{word embeddings}}
   
    \begin{itemize}
     \item Matriz de coocorrência
@@ -626,7 +631,7 @@
 
   \begin{itemize}
 
-  \vspace{-1em}
+  % \vspace{-1em}
 
     
     \item[\color{gray}{$\bullet$}] \textcolor{gray}{Introdução}
@@ -685,20 +690,36 @@
 
   \item Escopo do português brasileiro
 
-  \item[\ ] \adjustbox{max height=\dimexpr\textheight-5.5cm\relax,max width=\textwidth}{
-  \begin{tabular}{llllc}
-    \toprule
-    \textbf{Autores} & \textbf{Modelo}  & \textbf{Rep. palavras}  & \textbf{Córpus} & \textbf{Acurácia} \\
-    \midrule
-    \citeonline{kepler2005etiquetador} & VLMC & Seq. de carac. & Tycho Brahe & 95,51\% \\
-    \citeonline{dos2014training} & Redes neurais profundas  & Vetores & Tycho Brahe; Mac-Morpho & 97,47\% \\
-    \citeonline{fonseca2015evaluating} & Redes neurais & Vetores & Tycho Brahe; Mac-Morpho & 97,57\% \\
-    Este trabalho & Redes neurais recursivas & Vetores & Tycho Brahe; Mac-Morpho & - \\
-    \bottomrule
-  \end{tabular}
+  \end{itemize}
+
+  \adjustbox{max height=\dimexpr\textheight-5.5cm\relax,max width=\textwidth}{
+	  \begin{tabular}{llllc}
+	    \toprule
+	    \textbf{Autores} & \textbf{Modelo}  & \textbf{Rep. palavras}  & \textbf{Córpus} & \textbf{Acurácia} \\
+	    \midrule
+	    \citeonline{kepler2005etiquetador} & VLMC & Seq. de carac. & Tycho Brahe & 95,51\% \\
+	    \citeonline{dos2014training} & Redes neurais profundas  & Vetores & Tycho Brahe; Mac-Morpho & 97,47\% \\
+	    \citeonline{fonseca2015evaluating} & Redes neurais & Vetores & Tycho Brahe; Mac-Morpho & 97,57\% \\
+	    Este trabalho & Redes neurais recursivas & Vetores & Tycho Brahe; Mac-Morpho & - \\
+	    \bottomrule
+	  \end{tabular}
   }
 
-  \item[\ ] \ 
+  % \item[\ ] \adjustbox{max height=\dimexpr\textheight-5.5cm\relax,max width=\textwidth}{
+  % \begin{tabular}{llllc}
+  %   \toprule
+  %   \textbf{Autores} & \textbf{Modelo}  & \textbf{Rep. palavras}  & \textbf{Córpus} & \textbf{Acurácia} \\
+  %   \midrule
+  %   \citeonline{kepler2005etiquetador} & VLMC & Seq. de carac. & Tycho Brahe & 95,51\% \\
+  %   \citeonline{dos2014training} & Redes neurais profundas  & Vetores & Tycho Brahe; Mac-Morpho & 97,47\% \\
+  %   \citeonline{fonseca2015evaluating} & Redes neurais & Vetores & Tycho Brahe; Mac-Morpho & 97,57\% \\
+  %   Este trabalho & Redes neurais recursivas & Vetores & Tycho Brahe; Mac-Morpho & - \\
+  %   \bottomrule
+  % \end{tabular}
+  % }
+
+  \begin{itemize}
+
   \item[\ ] \ 
 
   \item Estado da arte com 97,57\% de acurácia para todas palavras. Treinado com o Mac-Morpho original \cite{fonseca2015evaluating}
@@ -725,7 +746,7 @@
 
   \begin{itemize}
 
-  \vspace{-1em}
+  % \vspace{-1em}
 
     
     \item[\color{gray}{$\bullet$}] \textcolor{gray}{Introdução}
@@ -876,7 +897,7 @@ S(w_1^t, c_1^t) = \sum\limits_{k=1}^{t} \Big( \argmax_{1 \leq i \leq t, i \notin
 
 \begin{frame}[fragile]
 \frametitle{Modelo Proposto}
-\vspace{-2.5em}
+\vspace{-0.75em}
 
 
   \begin{figure}
@@ -927,7 +948,7 @@ S(w_1^t, c_1^t) = \sum\limits_{k=1}^{t} \Big( \argmax_{1 \leq i \leq t, i \notin
 
   \begin{itemize}
 
-  \vspace{-1em}
+  % \vspace{-1em}
 
     
     \item[\color{gray}{$\bullet$}] \textcolor{gray}{Introdução}
