@@ -108,7 +108,7 @@ def normal_equation(X, Y):
 
 if __name__ == '__main__':
 
-	X, Y = load('x23.txt')
+	X, Y = load('x01.txt')
 	n = X.shape[1]+1
 	m = len(Y) 
 
@@ -122,10 +122,10 @@ if __name__ == '__main__':
 
 	# feature normalization speed up the gradient descent convergence  
 	mu,sigma = 0, 1
-	X, mu, sigma = feature_normalize(X)
+	# X, mu, sigma = feature_normalize(X)
 	theta = np.zeros((n, 1))
 	num_iters = 150
-	alpha = 0.1
+	alpha = 0.0000001
 
 
 	# add 1 column to x
