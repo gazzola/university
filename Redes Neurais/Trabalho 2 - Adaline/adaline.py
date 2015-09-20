@@ -2,28 +2,29 @@ import numpy as np
 from matplotlib import pyplot
 
 
+def lineplot(x,y):
+	pyplot.plot(x, y, 'b-', linewidth=1.0)
+	pyplot.xlim(min(x)-1, max(x)+1)
+	pyplot.ylim(min(y)-1, max(y)+1)
+	pyplot.show()
+
+
 def unitstep(X):
 	return (1 + np.sign(X))/2
-	# X[X>=0], X[X<0] = 1.0, 0.0
-	# return X
 
 
 def sigmoid(X):
 	return 1.0 / (1.0 + np.exp(-1 * X))
 
 
+'''
+the activation function must fit the input data
+'''
 def activation(X):
-	# return unitstep(X)
-	# return sigmoid(X)
-	return np.sign(X) # for fun
-	# return np.tanh(X) # for fun
-
-
-def scatterplot(x,y):
-	pyplot.plot(x, y, 'b-', linewidth=1.0)
-	pyplot.xlim(min(x)-1, max(x)+1)
-	pyplot.ylim(min(y)-1, max(y)+1)
-	pyplot.show()
+	# return unitstep(X) # [0, 1]
+	# return sigmoid(X) # [0, 1]
+	return np.sign(X) # [-1, 1]
+	# return np.tanh(X) # [-1, 1] for fun
 
 
 
@@ -55,7 +56,7 @@ def gradient(X, Y, A, W, alpha):
 '''
 see if the precision was reached
 '''
-def target(cost, err, only_last=True):
+def target(cost, err, only_last=False):
 	if only_last:
 		return abs(cost[-1]) > err
 	return abs(cost[-1] - cost[-2]) > err
@@ -72,7 +73,7 @@ def train(X, Y, W, alpha, max_iters=10, err=1e-6):
 	cost_history = np.array([0, cost(X, Y, W)])
 	i = 1
 
-	while i < max_iters and target(cost_history, err, False):
+	while i < max_iters and target(cost_history, err, only_last=False):
 		
 		Z = X.dot(W) 		# (m x n) x (n x 1) -> (m x 1)
 		A = activation(Z)	# (m x 1)
@@ -97,6 +98,7 @@ def categorize(y):
 	# return y # change the activation function!
 
 
+
 '''
 read data in file (must be in format x0, x1, x2, ..., xn, y)
 and return a numpy array of X and Y (bias included)
@@ -119,7 +121,6 @@ def read_data(file_name, bias=-1, ignore_line_number=True):
 
 
 
-
 '''
 return weights as a column vector of length n
 '''
@@ -130,13 +131,13 @@ def initialize_weights(n, random=True):
 
 
 '''
-plot cost_history, the graph should be constant over iterations
+plot cost_history, the graph should converge over iterations
 '''
 def plot_error(cost_history):
 	pyplot.xlabel('iterations')
 	pyplot.ylabel('cost(W)')
 	pyplot.title('Cost function over iterations')
-	scatterplot(list(range(cost_history.shape[0])), cost_history)
+	lineplot(list(range(cost_history.shape[0])), cost_history)
 
 
 
@@ -150,22 +151,23 @@ def predict(X_new, W):
 
 if __name__ == '__main__':
 	
-	err = 1e-6
+	precision = 1e-6
 	bias = -1
 	alpha = 0.0025
 	max_iters = 2000
 	epochs = 5
 	all_weights = []
+	line = "-"*25
 
 	X, Y = read_data('dados.txt', bias)
 
 	for e in range(epochs):
 		
-		W = initialize_weights(X.shape[1])
-		weight_history, cost_history = train(X, Y, W, alpha, max_iters, err)
-		print("-"*25)
+		W = initialize_weights(X.shape[1], random=True)
+		weight_history, cost_history = train(X, Y, W, alpha, max_iters, precision)
+		print(line)
 		print("Num iters:", cost_history.shape[0])
-		print("-"*25)
+		print(line)
 
 		if e <= epochs:
 			plot_error(cost_history)

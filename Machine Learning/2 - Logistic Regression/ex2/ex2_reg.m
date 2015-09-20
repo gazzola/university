@@ -27,6 +27,8 @@ clear ; close all; clc
 data = load('ex2data2.txt');
 X = data(:, [1, 2]); y = data(:, 3);
 
+[X mu sigma] = featureNormalize(X)
+
 plotData(X, y);
 
 % Put some labels 
@@ -68,6 +70,8 @@ lambda = 1;
 [cost, grad] = costFunctionReg(initial_theta, X, y, lambda);
 
 fprintf('Cost at initial theta (zeros): %f\n', cost);
+fprintf('Gradient at initial theta (zeros): \n');
+fprintf(' %f \n', grad);
 
 fprintf('\nProgram paused. Press enter to continue.\n');
 pause;
