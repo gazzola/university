@@ -192,10 +192,7 @@ class NeuralNetwork:
 			sys.stdout.flush()
 			# time.sleep(1e-3)
 
-			# break
-
-
-		print ""
+		print("\n")
 		return cost_history
 
 
@@ -223,7 +220,7 @@ if __name__ == '__main__':
 	lineplot(list(range(nb_iters)), j_history)
 
 	p = nn.predict(X)
-	print 'Acc: ', np.mean(p == Y) * 100.0
+	print('Acc: ', np.mean(p == Y) * 100.0)
 	
 
 

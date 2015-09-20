@@ -1,8 +1,6 @@
 import numpy as np
 from matplotlib import pyplot
 from random import random
-from numpy import sin, cos, pi
-from scipy.optimize import leastsq
 
 def load(fname, ignore_line_number=True):
 
@@ -23,7 +21,6 @@ def load(fname, ignore_line_number=True):
 
 
 def scatterplot(x, y):
-
 	t = np.squeeze(np.asarray(y))
 	pos = t == 1
 	neg = t == 0
@@ -185,7 +182,7 @@ if __name__ == '__main__':
 	num_iters = 500
 	alpha = 0.1
 	lbda = 1
-	degree = 10
+	degree = 6
 
 	if n == 3:
 		pyplot.xlabel('X')
