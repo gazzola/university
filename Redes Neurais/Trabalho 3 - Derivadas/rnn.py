@@ -9,6 +9,10 @@ def load_mat(filename):
 	return scipy.io.loadmat('dados/'+filename)
 
 
+def save_mat(filename, mat):
+	scipy.io.savemat('dados/'+filename, mat)
+
+
 def sigmoid(X):
 	return 1.0 / (1.0 + np.exp(-X))
 
@@ -118,7 +122,8 @@ class NeuralNetwork:
 		# add regularization:
 		s0 = np.sum(np.power(self.weights[0][:,1:], 2))
 		s1 = np.sum(np.power(self.weights[1][:,1:], 2))
-		J += lbda*(s0 + s1)/(2*m) 
+		s2 = np.sum(np.power(self.weights[2][:,1:], 2))
+		J += lbda*(s0 + s1 + s2)/(2*m) 
 
 		return J
 

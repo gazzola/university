@@ -181,8 +181,8 @@ if __name__ == '__main__':
 
 	num_iters = 500
 	alpha = 0.1
-	lbda = 1
-	degree = 6
+	lbda = 8
+	degree = 12
 
 	if n == 3:
 		pyplot.xlabel('X')
