@@ -32,12 +32,19 @@ def get_epsilon(l_in, l_out):
 def mean_relative_error(x, y):
 	return sum([(i-j)/j for i,j in zip(x, y)])/len(y)
 
+
 def variance(x):
 	return np.std(x)
 
 
 def accuracy(x, y):
 	return np.mean(x == y) * 100.0
+
+
+def shuffle_data(x, y):
+	z = np.concatenate((x,y), axis=1)
+	np.random.shuffle(z)
+	return z[:,:-1], np.array(z[:,-1])
 
 
 def f_score(x, y):
@@ -57,7 +64,7 @@ def f_score(x, y):
 
 def vectorize_output(Y, nb_labels):
 	Y_vec = np.zeros((Y.shape[0], nb_labels))
-	for i in xrange(nb_labels):
+	for i in range(nb_labels):
 		Y_vec[:, i] = (Y == i)[:,0]
 	return Y_vec
 
@@ -114,12 +121,9 @@ class NeuralNetwork:
 
 		# Weights:
 		self.weights = list(range(2))
-
-		epsilon = get_epsilon(self.nb_hidden, self.nb_input)
-		self.weights[0] = np.random.randn(self.nb_hidden, self.nb_input+1) * 2 * epsilon - epsilon
-
-		epsilon = get_epsilon(self.nb_output, self.nb_hidden)
-		self.weights[1] = np.random.randn(self.nb_output, self.nb_hidden+1) * 2 * epsilon - epsilon
+		self.weights[0] = np.zeros((self.nb_hidden, self.nb_input+1))
+		self.weights[1] = np.zeros((self.nb_output, self.nb_hidden+1))
+		self.initialize_weights()
 
 
 		# Deltas:
@@ -258,7 +262,7 @@ class NeuralNetwork:
 
 
 	def update_weights(self, grad, alpha):
-		for i in xrange(len(grad)):
+		for i in range(len(grad)):
 			self.weights[i] = self.weights[i] - alpha * grad[i]
 
 
@@ -271,9 +275,9 @@ class NeuralNetwork:
 			return abs(cost[-1] - cost[-2]) > precision
 
 
-		cost_history = [0]
-
+		cost_history = []
 		i = 0
+		
 		while i < nb_iters and reached_precision(cost_history, precision):
 
 			R = self.forward_propagation(X)
@@ -288,7 +292,7 @@ class NeuralNetwork:
 			i += 1
 
 		print("\n"+"-"*30)
-		return cost_history[1:]
+		return cost_history
 
 
 
@@ -304,13 +308,17 @@ if __name__ == '__main__':
 	# data = {'X_test':X_test, 'Y_test':Y_test}
 	# save_mat('test.mat', data)
 
-
 	mat = load_mat('train.mat')
 	X, Y = np.matrix(mat['X']), mat['Y'] - 1
+
 
 	mat_test = load_mat('test.mat')
 	X_test, Y_test = np.matrix(mat_test['X_test']), mat_test['Y_test'] - 1
 
+
+	validation_split = 0.2
+	use_shuffle = False
+	use_validation = True
 
 	nb_input  = 4
 	nb_hidden = 15
@@ -325,11 +333,24 @@ if __name__ == '__main__':
 	precision = 1e-6
 
 	timer 	  = time.clock if (sys.platform == 'win32') else time.time
-	Y_vec	  = vectorize_output(Y, nb_labels)
+	
 
 	nn = NeuralNetwork(nb_input, nb_hidden, nb_labels, cost_function='cross_entropy')
 
 	for i in range(nb_epochs):
+
+		if use_shuffle:
+			X, Y = shuffle_data(X, Y)
+		
+		if use_validation:
+			limit = int(len(Y) - len(Y)*validation_split)
+			X_train, Y_train = X[:limit], Y[:limit]
+			X_valid, Y_valid = X[limit:], Y[limit:]
+		else:
+			X_train, Y_train = X, Y
+
+
+		Y_vec	  = vectorize_output(Y_train, nb_labels)
 		
 		print('Epoch %d' % (i+1))
 		print("-"*30)
@@ -337,7 +358,7 @@ if __name__ == '__main__':
 		nn.initialize_weights()
 
 		start_time = timer()
-		j_history = nn.train(X, Y_vec, alpha, lbda, momentum, precision, nb_iters)	
+		j_history = nn.train(X_train, Y_vec, alpha, lbda, momentum, precision, nb_iters)	
 		total_time = timer() - start_time
 
 		predictions = nn.predict_classes(X_test)
@@ -345,7 +366,10 @@ if __name__ == '__main__':
 		print('Iterations:\t %d' % len(j_history))
 		print('Time:\t\t %.9f seconds' % total_time)
 		print('Accuracy test:\t %.2f' %  accuracy(predictions, Y_test))
-		print('Accuracy train:\t %.2f' %  accuracy(nn.predict_classes(X), Y))
+		print('Accuracy train:\t %.2f' %  accuracy(nn.predict_classes(X_train), Y_train))
+
+		if use_validation:
+			print('Accuracy val:\t %.2f' %  accuracy(nn.predict_classes(X_valid), Y_valid))
 
 		print('Predictions:')
 		for i, p in enumerate(predictions):
