@@ -1,0 +1,20 @@
+\frametitle{Conclusão}
+
+  \begin{itemize}
+
+    \item Regressão logística generaliza melhor que redes neurais
+
+    \item Regressão logística é mais rápida para convergir para o problema do XOR
+
+    \item Regressão logística tem o custo extra de calcular features polinomiais
+
+    \item Regressão logística precisa de pelo menos um polinômio de grau 2 para classificar corretamente
+
+    \item Redes neurais começa a divergir após um determinado valor de taxa de aprendizado
+
+    \item Redes neurais teve boa acurácia com 3+ unidades ocultas
+
+    \item É importante testar os hiper parâmetros!
+
+  \end{itemize}
+

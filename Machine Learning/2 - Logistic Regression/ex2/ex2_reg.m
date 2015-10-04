@@ -24,7 +24,7 @@ clear ; close all; clc
 %  The first two columns contains the X values and the third column
 %  contains the label (y).
 
-data = load('ex2data2.txt');
+data = load('xor.txt');
 X = data(:, [1, 2]); y = data(:, 3);
 
 [X mu sigma] = featureNormalize(X)
@@ -91,7 +91,7 @@ pause;
 initial_theta = zeros(size(X, 2), 1);
 
 % Set regularization parameter lambda to 1 (you should vary this)
-lambda = 100;
+lambda = 0;
 
 % Set Options
 options = optimset('GradObj', 'on', 'MaxIter', 400);

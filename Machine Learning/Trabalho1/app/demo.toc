@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.33pt}
+\select@language {brazil}
+\beamer@sectionintoc {1}{Ambiente de Teste}{4}{0}{1}
+\beamer@sectionintoc {2}{Resultados}{7}{0}{2}
+\beamer@sectionintoc {3}{Conclus\IeC {\~a}o}{24}{0}{3}

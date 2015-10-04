@@ -126,7 +126,7 @@ def gradient_descent(X ,Y, theta, alpha, lbda, num_iters):
 
 		J_history.append(J)
 
-		print "Iteration %4d - Cost %.4f \r" % (i+1, J), 
+		# print "Iteration %4d - Cost %.4f \r" % (i+1, J), 
 
 	print ""
 	return theta, J_history

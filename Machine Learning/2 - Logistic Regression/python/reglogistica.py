@@ -1,4 +1,5 @@
 import numpy as np
+import sys
 from matplotlib import pyplot
 from random import random
 
@@ -26,6 +27,8 @@ def scatterplot(x, y):
 	neg = t == 0
 	pyplot.plot(x[pos,0], x[pos,1], 'b.', label='y = 1')
 	pyplot.plot(x[neg,0], x[neg,1], 'r+', label='y = 0')
+	pyplot.xlim(np.min(x)-1, np.max(x)+1)
+	pyplot.ylim(np.min(y)-1, np.max(y)+1)
 	pyplot.legend(loc='upper right', numpoints=1)
 
 
@@ -66,6 +69,9 @@ def sigmoid(X):
 def map_features(x, degree=7):
 
 	if degree > 0:
+
+		degree += 1
+
 		n = (degree*(degree+1))/2
 		v = np.matrix(np.zeros((x.shape[0], n-1)))
 		x1 = x[:, 0]
@@ -114,7 +120,7 @@ def cost(X, Y, theta, lbda=1):
 
 
 
-def gradient_descent(X ,Y, theta, alpha, lbda, num_iters):
+def gradient_descent(X ,Y, theta, alpha, lbda, num_iters, err=1e-6):
 
 	J_history = []
 
@@ -123,6 +129,9 @@ def gradient_descent(X ,Y, theta, alpha, lbda, num_iters):
 		# with vectorization:
 		J, grad = cost(X, Y, theta, lbda)
 		theta = theta - (alpha * grad)
+
+		sys.stdout.write("Iteration %4d - Cost %.4f \r" % (i+1, J))
+		sys.stdout.flush()
 
 		J_history.append(J)
 
@@ -136,9 +145,11 @@ def draw_boundary(X, theta, degree=1):
 
 		def map_f(x, y, degree=7):
 
+			degree += 1
+
 			n = (degree*(degree+1))/2
 			v = np.ones((x.shape[0], n))
-			k = 1
+			k = 0
 
 			for i in range(1, degree):
 				for j in range(i+1):
@@ -147,7 +158,7 @@ def draw_boundary(X, theta, degree=1):
 
 			return v
 
-		dim = np.linspace(min(X[:,0])[0,0], max(X[:,0])[0,0], 50)
+		dim = np.linspace(np.min(X), np.max(X), 50)
 		dx, dy = np.meshgrid(dim, dim)
 		v = map_f(dx.flatten(), dy.flatten(), degree)
 		z = (np.dot(v, theta)).reshape(50, 50)
@@ -172,17 +183,21 @@ def draw_boundary(X, theta, degree=1):
 
 if __name__ == '__main__':
 
-	X_orig, Y = load('mydata.txt', ignore_line_number=False)
+	X_orig, Y = load('mydata2.txt', ignore_line_number=False)
 	n = X_orig.shape[1]+1
 	m = len(Y) 
 
 	mu,sigma = 0, 1
 	X_norm, mu, sigma = feature_normalize(X_orig)
+	# X_norm = X_orig
 
-	num_iters = 500
-	alpha = 0.1
-	lbda = 8
-	degree = 12
+	print X_norm
+
+
+	num_iters = 100000
+	alpha = 3.0
+	lbda = 0.0
+	degree = 2
 
 	if n == 3:
 		pyplot.xlabel('X')
@@ -193,6 +208,9 @@ if __name__ == '__main__':
 
 	
 	X = map_features(X_norm, degree)
+
+	print X.shape
+
 	n = X.shape[1]+1
 	theta = np.zeros((n, 1))
 
@@ -230,6 +248,7 @@ if __name__ == '__main__':
 	p = predict(X, theta) >= 0.5
 	acc = np.mean(p == Y) * 100.0
 	print "Accuracy:", acc
+	print p
 
 
 	# plot decision boundary
