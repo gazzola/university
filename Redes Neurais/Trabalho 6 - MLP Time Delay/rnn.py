@@ -30,7 +30,7 @@ def get_epsilon(l_in, l_out):
 
 
 def mean_relative_error(x, y):
-	return sum([(i-j)/j for i,j in zip(x, y)])/len(y)
+	return sum([(i-j)**2 for i,j in zip(x, y)])/len(y)
 
 
 def variance(x):
@@ -210,9 +210,9 @@ class NeuralNetwork:
 		m = float(X.shape[0])
 
 		# evaluate cost function
-		A  = (X - Y);
-		J = np.sum(A.T * A)/(2*m);
-		
+		A  = (X - Y)
+		J = np.sum(A.T * A)/(2*m)
+
 		# add regularization:
 		s0 = np.sum(np.power(self.weights[0][:,1:], 2))
 		s1 = np.sum(np.power(self.weights[1][:,1:], 2))
@@ -369,7 +369,8 @@ if __name__ == '__main__':
 				X_valid, Y_valid = X[limit:], Y[limit:]
 			else:
 				X_train = np.zeros(Y.shape)
-				X_train[:], Y_train = X, Y
+				Y_train = np.zeros(Y.shape)
+				X_train[:], Y_train[:] = X, Y
 
 
 			
@@ -402,7 +403,6 @@ if __name__ == '__main__':
 			lineplot(list(range(len(d))), d)
 
 
-
 			print('Train:')
 			print('Iterations:\t %d' % iters)
 			print('Time:\t\t %.9f seconds' % total_time)
@@ -414,6 +414,8 @@ if __name__ == '__main__':
 
 			begin_test = X_train.shape[0]
 			X_new_test = np.vstack((X_train, X_test))
+			X_predictions = np.vstack((X_train, X_test))
+			
 			iters, err = 0, 0
 			total_time = 0
 
@@ -421,23 +423,20 @@ if __name__ == '__main__':
 
 				X_input = X_new_test[b:p].T
 				
-				start_time = timer()
-				j_history = nn.train(X_input, X_new_test[p], alpha, lbda, momentum, precision, nb_iters, verbose=False)
-				total_time += timer() - start_time
+				# start_time = timer()
+				# j_history = nn.train(X_input, X_new_test[p], alpha, lbda, momentum, precision, nb_iters, verbose=False)
+				# total_time += timer() - start_time
 
-				X_new_test[p] = nn.predict(X_input)
+				X_predictions[p] = nn.predict(X_input)
 				b, p = b+1, p+1
-				
-				iters += len(j_history)
-				err += np.mean(np.array(j_history))
-
-
-			predictions = X_new_test[begin_test:]
 
 
 
-			print('Iterations:\t %d' % iters)
-			print('Time:\t\t %.9f seconds' % total_time)
+
+			predictions = X_predictions[begin_test:]
+
+			print('Mean Rel. Error: %.4f' %  mean_relative_error(X_predictions[:begin_test], Y_train))
+			print('Variance:\t %.4f' %  np.var(X_predictions[:begin_test]))
 			print('Mean Rel. Error: %.4f' %  mean_relative_error(predictions, Y_test))
 			print('Variance:\t %.4f' %  np.var(predictions))
 
@@ -448,13 +447,13 @@ if __name__ == '__main__':
 
 
 
-			pyplot.plot(list(range(len(Y))), Y, 'bo', label='train')
-			pyplot.plot(list(range(len(Y), len(Y)+len(Y_test))), Y_test, 'rx', label='test')
-			pyplot.plot(list(range(len(X_new_test))), X_new_test, 'yv', label='predict')
+			pyplot.plot(list(range(len(Y_train))), Y_train, 'bo', label='train')
+			pyplot.plot(list(range(len(Y_train), len(Y_train)+len(Y_test))), Y_test, 'ro', label='test')
+			pyplot.plot(list(range(len(X_predictions))), X_predictions, 'kx', label='predict')
 
 			pyplot.legend(loc='upper right', numpoints=1)
 
-			pyplot.plot(list(range(len(X_new_test))), X_new_test, 'g-')
+			pyplot.plot(list(range(len(X_predictions))), X_predictions, 'g-')
 			pyplot.show()
 
 			

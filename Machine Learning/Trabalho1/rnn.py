@@ -101,7 +101,6 @@ class NeuralNetwork:
 			z[c] = 1
 		return z
 
-
 	
 	def predict(self, X):
 		return self.forward_propagation(X)
@@ -132,7 +131,6 @@ class NeuralNetwork:
 		# add regularization:
 		s0 = np.sum(np.power(self.weights[0][:,1:], 2))
 		s1 = np.sum(np.power(self.weights[1][:,1:], 2))
-		
 		J += lbda*(s0 + s1)/(2*m) 
 
 		return J
@@ -149,7 +147,6 @@ class NeuralNetwork:
 		# add regularization:
 		s0 = np.sum(np.power(self.weights[0][:,1:], 2))
 		s1 = np.sum(np.power(self.weights[1][:,1:], 2))
-		
 		J += lbda*(s0 + s1)/(2*m) 
 
 		return J
@@ -274,7 +271,7 @@ if __name__ == '__main__':
 	nb_iters  = 10000
 	nb_epochs = 1
 
-	alpha	  = 1.0
+	alpha	  = 3.0
 	lbda	  = 0.0
 	momentum  = 0.0
 	precision = 1e-6
@@ -335,7 +332,7 @@ if __name__ == '__main__':
 		result_accs.write("%d %.4f\n" % (nb_hidden, mc))
 		result_alphas.write("%d %.4f\n" % (nb_hidden, md))
 
-		print('Degree %.2f - %d' % (alpha, nb_labels))
+		print('Alpha %.2f - %d' % (alpha, nb_labels))
 		print("-"*30)
 		print('Iterations:\t media:%.2lf \t desvio:%.2f' % (ma, da))
 		print('Time:\t\t media:%.2lf \t desvio:%.2f seconds' % (mb, db))

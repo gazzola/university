@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.8.15)  3 OCT 2015 10:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.8.15)  7 OCT 2015 13:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2283,7 +2283,7 @@ Overfull \vbox (12.11032pt too high) detected at line 472
  <./img/alphas_rnn.png>]
 PGFPlots: reading {resultados_rnn/rnn_result_times_hidden.txt}
 
-Overfull \vbox (2.77301pt too high) detected at line 510
+Overfull \vbox (2.76808pt too high) detected at line 510
  []
 
 [16
@@ -2291,7 +2291,7 @@ Overfull \vbox (2.77301pt too high) detected at line 510
 ]
 PGFPlots: reading {resultados_rnn/rnn_result_iters_hidden.txt}
 
-Overfull \vbox (2.77498pt too high) detected at line 548
+Overfull \vbox (2.77196pt too high) detected at line 548
  []
 
 [17
@@ -2304,15 +2304,15 @@ Overfull \vbox (8.53174pt too high) detected at line 586
 
 [18
 
-] <img/boundaries_rnns.png, id=147, 1968.35374pt x 1067.99pt>
-File: img/boundaries_rnns.png Graphic file (type png)
+] <img/boundaries_rnns_new.png, id=147, 1948.27875pt x 1053.9375pt>
+File: img/boundaries_rnns_new.png Graphic file (type png)
 
-<use img/boundaries_rnns.png>
-Package pdftex.def Info: img/boundaries_rnns.png used on input line 610.
-(pdftex.def)             Requested size: 354.28839pt x 192.2299pt.
+<use img/boundaries_rnns_new.png>
+Package pdftex.def Info: img/boundaries_rnns_new.png used on input line 610.
+(pdftex.def)             Requested size: 350.67505pt x 189.70056pt.
  [19
 
- <./img/boundaries_rnns.png>]
+ <./img/boundaries_rnns_new.png>]
 PGFPlots: reading {resultados_rl/reg_result_times.txt}
 PGFPlots: reading {resultados_rnn/rnn_result_times.txt}
 
@@ -2387,7 +2387,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 849.
  ) 
 Here is how much of TeX's memory you used:
  43376 strings out of 493105
- 987327 string characters out of 6137072
+ 987347 string characters out of 6137072
  1151624 words of memory out of 5000000
  45789 multiletter control sequences out of 15000+600000
  70419 words of font info for 65 fonts, out of 8000000 for 9000
@@ -2407,7 +2407,7 @@ ssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy
 10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/font
 s/type1/public/lm/lmsy8.pfb>
-Output written on demo.pdf (25 pages, 696915 bytes).
+Output written on demo.pdf (25 pages, 712610 bytes).
 PDF statistics:
  256 PDF objects out of 1000 (max. 8388607)
  191 compressed objects within 2 object streams

@@ -271,7 +271,7 @@ class NeuralNetwork:
 
 
 
-	def train(self, X, Y, alpha=0.3, lbda=1.0, momentum=0.5, precision=1e-6, nb_iters=100):
+	def train(self, X, Y, alpha=0.3, lbda=1.0, momentum=0.5, precision=1e-6, nb_iters=100, verbose=True):
 
 		def reached_precision(cost, precision):
 			if len(cost) < 2:
@@ -290,12 +290,15 @@ class NeuralNetwork:
 			self.update_weights(G, alpha)
 			cost_history.append(J)
 
-			sys.stdout.write("Iteration %4d - Cost %.4f \r" % (i+1, J))
-			sys.stdout.flush()
+			if verbose:
+				sys.stdout.write("Iteration %4d - Cost %.4f \r" % (i+1, J))
+				sys.stdout.flush()
 
 			i += 1
 
-		print("\n"+"-"*30)
+		if verbose:
+			print("\n"+"-"*30)
+		
 		return cost_history
 
 
@@ -303,86 +306,127 @@ class NeuralNetwork:
 if __name__ == '__main__':
 
 
-	# X, Y = read_data('dados/dados.txt', ignore_line_number=True)
-
+	X, Y = read_data('dados/dados.txt', ignore_line_number=True)
 	# data = {'X':X, 'Y':Y}
 	# save_mat('train.mat', data)
 
-	# X_test, Y_test = read_data('dados/testes.txt', ignore_line_number=True)
+	X_test, Y_test = read_data('dados/testes.txt', ignore_line_number=True)
 	# data = {'X_test':X_test, 'Y_test':Y_test}
 	# save_mat('test.mat', data)
 
-	mat = load_mat('train.mat')
-	X, Y = np.matrix(mat['X']), mat['Y'] - 1
+	# mat = load_mat('train.mat')
+	# X, Y = np.matrix(mat['X']), mat['Y']
 
-
-	mat_test = load_mat('test.mat')
-	X_test, Y_test = np.matrix(mat_test['X_test']), mat_test['Y_test'] - 1
+	# mat_test = load_mat('test.mat')
+	# X_test, Y_test = np.matrix(mat_test['X_test']), mat_test['Y_test'] - 1
 
 
 	validation_split = 0.2
 	use_shuffle = False
-	use_validation = True
+	use_validation = False
 
-	nb_input  = 4
-	nb_hidden = 15
-	nb_labels = 3
+	# p_order = nb_input
+	nb_input  = [5, 10, 15]
+	nb_hidden = [10, 15, 25]
+	nb_labels = 1
 
 	nb_iters  = 100000
 	nb_epochs = 3
 
-	alpha	  = 3.0
+	alpha	  = 0.1
 	lbda	  = 0.0
-	momentum  = 0.9
-	precision = 1e-6
+	momentum  = 0.8
+	precision = 0.5 * 1e-6
 
 	timer 	  = time.clock if (sys.platform == 'win32') else time.time
 	
+	X = np.zeros(Y.shape)
+	X_test = np.zeros(Y_test.shape)
 
-	nn = NeuralNetwork(nb_input, nb_hidden, nb_labels, cost_function='cross_entropy')
-
-	for i in range(nb_epochs):
-
-		if use_shuffle:
-			X, Y = shuffle_data(X, Y)
-		
-		if use_validation:
-			limit = int(len(Y) - len(Y)*validation_split)
-			X_train, Y_train = X[:limit], Y[:limit]
-			X_valid, Y_valid = X[limit:], Y[limit:]
-		else:
-			X_train, Y_train = X, Y
+	X[:] = Y
+	X_test[:] = Y_test
 
 
-		Y_vec	  = vectorize_output(Y_train, nb_labels)
-		
-		print('Epoch %d' % (i+1))
-		print("-"*30)
+	for k in range(len(nb_hidden)):
 
-		nn.initialize_weights()
+		print("Rede %d:" % (k+1))
+		print("="*30)
 
-		start_time = timer()
-		j_history = nn.train(X_train, Y_vec, alpha, lbda, momentum, precision, nb_iters)	
-		total_time = timer() - start_time
+		nn = NeuralNetwork(nb_input[k], nb_hidden[k], nb_labels, cost_function='mean_squared_error')
 
-		predictions = nn.predict_classes(X_test)
+		for i in range(nb_epochs):
 
-		print('Iterations:\t %d' % len(j_history))
-		print('Time:\t\t %.9f seconds' % total_time)
-		print('Accuracy test:\t %.2f' %  accuracy(predictions, Y_test))
-		print('Accuracy train:\t %.2f' %  accuracy(nn.predict_classes(X_train), Y_train))
-
-		if use_validation:
-			print('Accuracy val:\t %.2f' %  accuracy(nn.predict_classes(X_valid), Y_valid))
-
-		print('Predictions:')
-		for i, p in enumerate(predictions):
-			print('  sample %2d: %d' % (i+1, p+1))
-		
-		print('\n')
-
-		lineplot(list(range(len(j_history))), j_history)
-
-		
+			print('Epoch %d' % (i+1))
+			print("-"*30)
 
 
+			if use_shuffle:
+				X, Y = shuffle_data(X, Y)
+			
+			if use_validation:
+				limit = int(len(Y) - len(Y)*validation_split)
+				X_train, Y_train = X[:limit], Y[:limit]
+				X_valid, Y_valid = X[limit:], Y[limit:]
+			else:
+				X_train = np.zeros(Y.shape)
+				X_train[:], Y_train = X, Y
+
+
+			
+			# TRAIN:
+			p = nb_input[k]
+			X_vec = np.zeros((X.shape[0], p))
+
+			for j in range(p, X_train.shape[0]+p):
+				X_vec[j-p,:] = X_train[j-p:j][0]
+
+			
+			nn.initialize_weights()
+			start_time = timer()
+			j_history = nn.train(X_vec, Y_train, alpha, lbda, momentum, precision, nb_iters)	
+			total_time = timer() - start_time
+
+
+			predictions_orig = nn.predict(X_vec)
+			print('Train:')
+			print('Iterations:\t %d' % len(j_history))
+			print('Time:\t\t %.9f seconds' % total_time)
+			print('Mean Rel. Error: %.4f' %  mean_relative_error(predictions_orig, Y_train))
+			print('Variance:\t %.4f' %  np.var(predictions_orig))
+
+
+
+			# TEST:
+			p = nb_input[k]
+			X_test_vec = np.ones((X_test.shape[0], p))
+			for j in range(X_test.shape[0]):
+				X_test_vec[j,:] = X_test[j:j+p][0]
+
+
+
+			predictions = nn.predict(X_test_vec)
+			print('\nTest:')
+			print('Mean Rel. Error: %.4f' %  mean_relative_error(predictions, Y_test))
+			print('Variance:\t %.4f' %  np.var(predictions))
+			print('Predictions:')
+			for i, p in enumerate(predictions):
+				print('  sample %2d: %.4f' % (X_train.shape[0]+i, p))
+			print('\n')
+
+
+
+
+			# PLOT:
+			X_final = np.vstack((predictions_orig, predictions))
+
+
+			pyplot.plot(list(range(len(Y))), Y, 'bo', label='train')
+			pyplot.plot(list(range(len(Y), len(Y)+len(Y_test))), Y_test, 'ro', label='test')
+			pyplot.plot(list(range(len(X_final))), X_final, 'kx', label='predict')
+
+			pyplot.legend(loc='upper right', numpoints=1)
+
+			pyplot.plot(list(range(len(X_final))), X_final, 'g-')
+			pyplot.show()
+
+			
