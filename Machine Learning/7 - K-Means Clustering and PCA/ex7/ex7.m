@@ -80,12 +80,17 @@ load('ex7data2.mat');
 % Settings for running K-Means
 K = 3;
 max_iters = 10;
+X = load('data.dat');
+[m, n] = size(X);
 
 % For consistency, here we set centroids to specific values
 % but in practice you want to generate them automatically, such as by
 % settings them to be random examples (as can be seen in
 % kMeansInitCentroids).
-initial_centroids = [3 3; 6 2; 8 5];
+% initial_centroids = [3 3; 6 2; 8 5];
+
+epsilon = (sqrt(6) * max(X))/min(X) 
+initial_centroids = rand(K, n) * 1000;
 
 % Run K-Means algorithm. The 'true' at the end tells our function to plot
 % the progress of K-Means
