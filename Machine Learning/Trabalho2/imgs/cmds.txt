@@ -1,0 +1,2 @@
+jpegtopnm img.jpeg > img.ppm
+convert img.ppm -compress None img.ppm
