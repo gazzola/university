@@ -1,0 +1,10 @@
+K-MEDOIDS
+------
+
+
+- selecionar K objetos representativos arbitrariamente
+- para cada par com um bjeto não-selecionado h e objetos selecionado i, calcular o custo total de troca TC_ih
+	- se TC_in <= @, i é substituido por h
+
+- associa-se entao, cada objeto nao-selecionado ao objeto representativo mais similar
+- repetir passos 2-3 atpe não haver mais modificacoes

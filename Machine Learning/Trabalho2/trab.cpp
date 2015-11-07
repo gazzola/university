@@ -51,17 +51,19 @@ void initialize_centroids(){
 
 void find_closest_centroids(){
 
+	double r, g, b, y, y_star;
+
 	for(int i=0; i<H; ++i){
 		for(int j=0; j<W; ++j){
 
-			double y_star = INF;
+			y_star = INF;
 
 			for(int k=0; k<K; ++k){
 				
-				double r = pow(image[i][j].r - centroids[k].r, 2);
-				double g = pow(image[i][j].g - centroids[k].g, 2);
-				double b = pow(image[i][j].b - centroids[k].b, 2);
-				double y = sqrt(r+g+b);
+				r = pow(image[i][j].r - centroids[k].r, 2);
+				g = pow(image[i][j].g - centroids[k].g, 2);
+				b = pow(image[i][j].b - centroids[k].b, 2);
+				y = sqrt(r+g+b);
 
 				if(y < y_star){
 					y_star = y;
@@ -76,13 +78,13 @@ void find_closest_centroids(){
 
 void compute_centroids(){
 
-	for(int i=0; i<K; ++i){
-		
-		double r = 0;
-		double g = 0;
-		double b = 0;
 
-		int q = 0;
+	double r, g, b;
+	int q;
+
+	for(int i=0; i<K; ++i){
+			
+		r = g = b = q = 0;
 
 		for(int l=0; l<H; ++l){
 			for(int j=0; j<W; ++j){
@@ -109,15 +111,17 @@ void train(){
 		find_closest_centroids();
 		compute_centroids();
 	}
-	
+
 	printf("\n");
 }
 
+
 void update_colors(){
 
+	int k;
 	for(int i=0; i<H; ++i){
 		for(int j=0; j<W; ++j){
-			int k = image[i][j].k;
+			k = image[i][j].k;
 			image[i][j].r = centroids[k].r;
 			image[i][j].g = centroids[k].g;
 			image[i][j].b = centroids[k].b;

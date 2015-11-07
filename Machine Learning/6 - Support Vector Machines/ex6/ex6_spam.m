@@ -67,6 +67,8 @@ pause;
 % You will have X, y in your environment
 load('spamTrain.mat');
 
+X(1:10)
+
 fprintf('\nTraining Linear SVM (Spam Classification)\n')
 fprintf('(this may take 1 to 2 minutes) ...\n')
 

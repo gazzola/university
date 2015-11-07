@@ -31,19 +31,19 @@ email_contents = regexprep(email_contents, '<[^<>]+>', ' ');
 
 % Handle Numbers
 % Look for one or more characters between 0-9
-email_contents = regexprep(email_contents, '[0-9]+', 'number');
+email_contents = regexprep(email_contents, '[0-9]+', 'NUMBER');
 
 % Handle URLS
 % Look for strings starting with http:// or https://
 email_contents = regexprep(email_contents, ...
-                           '(http|https)://[^\s]*', 'httpaddr');
+                           '(http|https)://[^\s]*', 'HTTPADDR');
 
 % Handle Email Addresses
 % Look for strings with @ in the middle
-email_contents = regexprep(email_contents, '[^\s]+@[^\s]+', 'emailaddr');
+email_contents = regexprep(email_contents, '[^\s]+@[^\s]+', 'EMAILADDR');
 
 % Handle $ sign
-email_contents = regexprep(email_contents, '[$]+', 'dollar');
+email_contents = regexprep(email_contents, '[$]+', 'DOLLAR');
 
 
 % ========================== Tokenize Email ===========================

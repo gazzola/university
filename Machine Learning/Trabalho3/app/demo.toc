@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.33pt}
+\select@language {brazil}
+\beamer@sectionintoc {1}{Multinomial Naive Bayes}{4}{0}{1}
+\beamer@sectionintoc {2}{Ambiente de Teste}{7}{0}{2}
+\beamer@sectionintoc {3}{Resultados}{10}{0}{3}
+\beamer@sectionintoc {4}{Conclus\IeC {\~a}o}{13}{0}{4}
