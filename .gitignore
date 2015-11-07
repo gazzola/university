@@ -7,10 +7,6 @@
 *.odt
 */__pycache__/
 teste
-enron1/
-enron2/
-enron3/
-enron4/
-enron5/
-enron6/
+enron*/
+enron*_vocabulary.txt
 *.mat
