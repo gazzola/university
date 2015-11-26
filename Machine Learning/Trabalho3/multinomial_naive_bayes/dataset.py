@@ -24,6 +24,11 @@ class Dataset:
 				yield (self.preprocess(text), t)
 
 
+	def get_text_file(self):
+		text = open(self.dirname, "r", encoding="utf-8").read()
+		yield self.preprocess(text)
+
+
 	def remove_punctuation(self, s):
 		table = s.maketrans("","",string.punctuation)
 		return s.translate(table)

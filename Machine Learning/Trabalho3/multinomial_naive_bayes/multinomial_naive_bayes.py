@@ -86,7 +86,10 @@ if __name__ == '__main__':
 
 	direc = 'enron1'
 	X, Y, Z, ds = Reader.read_data('dados/'+direc, True)
+
 	X_train, Y_train, X_val, Y_val = Reader.split_data(X, Y, use_random=True, val=0.2)
+	X_test = Reader.read_file_with_dataset('dados/sample.txt', ds)
+
 	# X_val, Y_val, X_test, Y_test   = Reader.split_data(X_val, Y_val, use_random=True, val=0.5) 
 	# X_test, Y_test = Reader.read_data_with_dataset('dados/enron1', ds)
 
@@ -108,6 +111,10 @@ if __name__ == '__main__':
 	Y_vstar = classifier.predict(X_val)
 	print('Valid accuracy:', classifier.evaluate(Y_val, Y_vstar))
 	Statistics.confusion_mat(Y_val, Y_vstar)
+
+	Y_tstar = classifier.predict(X_test)
+	print('Predicted email: %s\n' % Reader.get_classes()[Y_tstar])
+
 
 	# Y_tstar = classifier.predict(X_test)
 	# print('Test  accuracy:', classifier.evaluate(Y_test, Y_tstar))

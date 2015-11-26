@@ -4,10 +4,16 @@ from dataset import Dataset
 
 class Reader:
 
+
+	@staticmethod
+	def get_classes():
+		return ['spam', 'ham']
+
+
 	@staticmethod
 	def read_data(dirname, return_dataset=False):
 		
-		ds = Dataset(dirname, ['spam', 'ham'])
+		ds = Dataset(dirname, Reader.get_classes())
 		emails, classes = [], []
 
 		for sentences, email_type in ds.get_text():
@@ -56,6 +62,29 @@ class Reader:
 					emails[i][j] = random.randint(0, len(dic)-1) # if the word was not seen before, we pick a random one
 
 		return np.array(emails), np.array(classes)
+
+
+	@staticmethod
+	def read_file_with_dataset(dirname, ds_orig, return_dataset=False):
+		
+		ds = Dataset(dirname, ['spam', 'ham'])
+		emails = []
+
+		for sentences in ds.get_text_file():
+			ds.build_vocabulary(sentences)
+			emails.append(sentences)
+
+		# transform word to indices
+		dic = ds_orig.get_word_indices()
+		for i, s in enumerate(emails):
+			for j, x in enumerate(s):
+				if x in dic:
+					emails[i][j] = dic[x]
+				else:
+					emails[i][j] = random.randint(0, len(dic)-1) # if the word was not seen before, we pick a random one
+
+		print(emails)
+		return np.array(emails)
 
 
 
