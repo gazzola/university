@@ -18,49 +18,51 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Warning--campo year vazio ou faltando em kerasframework
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.2           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 28 entries,
+You've used 38 entries,
             6711 wiz_defined-function locations,
-            1352 strings with 14307 characters,
-and the built_in function-call counts, 27459 in all, are:
-= -- 2527
-> -- 895
-< -- 252
-+ -- 597
-- -- 270
-* -- 1937
-:= -- 3599
-add.period$ -- 104
-call.type$ -- 28
-change.case$ -- 302
-chr.to.int$ -- 52
-cite$ -- 27
-duplicate$ -- 1687
-empty$ -- 1743
-format.name$ -- 1285
-if$ -- 6230
+            1401 strings with 16102 characters,
+and the built_in function-call counts, 38181 in all, are:
+= -- 3536
+> -- 1185
+< -- 397
++ -- 836
+- -- 358
+* -- 2660
+:= -- 4967
+add.period$ -- 146
+call.type$ -- 38
+change.case$ -- 410
+chr.to.int$ -- 68
+cite$ -- 38
+duplicate$ -- 2476
+empty$ -- 2381
+format.name$ -- 1715
+if$ -- 8602
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 484
-newline$ -- 131
-num.names$ -- 135
-pop$ -- 652
+missing$ -- 651
+newline$ -- 179
+num.names$ -- 185
+pop$ -- 864
 preamble$ -- 1
-purify$ -- 114
+purify$ -- 154
 quote$ -- 0
-skip$ -- 1892
+skip$ -- 2733
 stack$ -- 1
-substring$ -- 1118
-swap$ -- 721
-text.length$ -- 31
+substring$ -- 1621
+swap$ -- 1042
+text.length$ -- 46
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 7
-warning$ -- 0
-while$ -- 206
+type$ -- 13
+warning$ -- 1
+while$ -- 288
 width$ -- 0
-write$ -- 431
+write$ -- 589
+(There was 1 warning)

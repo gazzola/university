@@ -1,0 +1,8 @@
+    Words:   Total    (%)      Correct Wrong Precision%
+    Known:  169770 ( 95.1770%)  165243  4527 97.3335%
+  Unknown:    8603 (  4.8230%)    7772   831 90.3406%
+Ambiguous:  108492 ( 60.8231%)  104695  3797 96.5002%
+    Total:  178373 (100.0000%)  173015  5358 96.9962%
+Total sentences	 : 8609
+Wrong sentences	 : 3231
+Correct sentences: 5378

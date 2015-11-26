@@ -72,15 +72,23 @@
 % \usepackage{clrscode3e}     % Para escrever algoritmos; mais simples que os pacotes acima
 \usepackage{pdfpages}        % Para incluir a folha de aprovação assinada em PDF
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{amsfonts}
 \usepackage{subcaption}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}m{#1}} 
 
+\usepackage{fancyvrb}
 \usepackage{tablefootnote}
+
+\usepackage{listings} % Para adicionar código python
+\usepackage{minted}
 
 \makeatletter
 \newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
 \makeatother
+
+
+
 
 \DeclareMathOperator*{\argmin}{arg\,min}
 \DeclareMathOperator*{\argmax}{arg\,max}
@@ -161,15 +169,15 @@
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % -------------------------------------------------------------------------------------------------
-\titulo{Aprendizagem Guiada para Análise Morfossintática usando Redes Neurais Recursivas}
+\titulo{Dois modelos de aprendizagem profunda para análise morfossintática}
 \autor{Marcos Vinícius Treviso}
 \local{Alegrete}
 \data{2015}
 \orientador{Fábio Natanael Kepler}
 \coorientador{} % Se houver
 \instituicao{Universidade Federal do Pampa}
-\tipotrabalho{Projeto de Trabalho de Conclusão de Curso } % Para TCC I
-% \tipotrabalho{Trabalho de Conclusão de Curso~} % Para TCC II
+% \tipotrabalho{Projeto de Trabalho de Conclusão de Curso } % Para TCC I
+\tipotrabalho{Trabalho de Conclusão de Curso\ } % Para TCC II
 % O preambulo deve conter o tipo do trabalho, o objetivo, o nome da instituição e a área de concentração
 \preambulo{\imprimirtipotrabalho apresentado ao Curso de Graduação em Ciência da
            Computação da Universidade Federal do Pampa como requisito parcial para a obtenção do
@@ -214,11 +222,11 @@
 }
 
 
-\DeclareAcronym{ddv}{
-  short = DDV,
-  long  = Dentro do Vocabulário,
-  class = acronimos
-}
+% \DeclareAcronym{ddv}{
+%   short = DDV,
+%   long  = Dentro do Vocabulário,
+%   class = acronimos
+% }
 
 \DeclareAcronym{fdv}{
   short = FDV,
@@ -249,6 +257,26 @@
   long = \textit{Global Vectors},
   class = acronimos
 }
+
+
+\DeclareAcronym{lstm}{
+  short = LSTM,
+  long = \textit{Long Short Term Memory},
+  class = acronimos
+}
+
+\DeclareAcronym{gru}{
+  short = GRU,
+  long = \textit{Gated Recurrent Unit},
+  class = acronimos
+}
+
+\DeclareAcronym{relu}{
+  short = ReLU,
+  long = \textit{Rectified Linear Unit},
+  class = acronimos
+}
+
 
 
 
@@ -301,7 +329,7 @@
 % Folha de aprovação [OBRIGATÓRIO]
 % -----------------------------------------------
 % Veja alguns detalhes no arquivo.
-% \input{pretextuais/folhadeaprovacao}
+\input{pretextuais/folhadeaprovacao}
 
 % -----------------------------------------------
 % Dedicatória [OPCIONAL]
@@ -311,7 +339,7 @@
 % -----------------------------------------------
 % Agradecimentos [OPCIONAL]
 % -----------------------------------------------
-% \input{pretextuais/agradecimentos}
+\input{pretextuais/agradecimentos}
 
 % -----------------------------------------------
 % Epígrafe [OPCIONAL]
@@ -398,13 +426,16 @@
 \input{textuais/trabalhosrelacionados} % [OBRIGATORIO]
 
 \input{textuais/desenvolvimento} % [OBRIGATORIO]
-%\part{Resultados}
+
+\input{textuais/resultados} % [OBRIGATORIO]
+
+% \part{Resultados}
 %\input{textuais/outrospontos} % Outro capítulo
 %\bookmarksetup{startatroot} % Usar se o próximo capítulo não pertencer à parte anterior e não existir uma parte nova
 
-\input{textuais/cronograma} % [OBRIGATORIO]
+% \input{textuais/cronograma} % [OBRIGATORIO]
 
-% \input{textuais/consideracoes} % [OBRIGATORIO]
+\input{textuais/consideracoes} % [OBRIGATORIO]
 
 
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -421,7 +452,7 @@
 % -----------------------------------------------
 % Apêndices [OPCIONAL]
 % -----------------------------------------------
-% \input{postextuais/apendices}
+\input{postextuais/apendices}
 
 % -----------------------------------------------
 % Anexos [OPCIONAL]

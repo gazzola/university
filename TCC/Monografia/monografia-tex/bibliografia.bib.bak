@@ -1,4 +1,4 @@
-% This file was created with JabRef 2.10b2.
+% This file was created with JabRef 2.10.
 % Encoding: UTF-8
 
 
@@ -25,6 +25,23 @@
   Year                     = {2015},
 
   Url                      = {http://www.iro.umontreal.ca/~bengioy/dlbook}
+}
+
+@Article{cho2014learning,
+  Title                    = {Learning phrase representations using rnn encoder-decoder for statistical machine translation},
+  Author                   = {Cho, Kyunghyun and Van Merri{\"e}nboer, Bart and Gulcehre, Caglar and Bahdanau, Dzmitry and Bougares, Fethi and Schwenk, Holger and Bengio, Yoshua},
+  Journal                  = {arXiv preprint arXiv:1406.1078},
+  Year                     = {2014}
+}
+
+@Misc{kerasframework,
+  Title                    = {Keras Framework},
+
+  Author                   = {Chollet, Fran{\c{c}}ois},
+
+  Owner                    = {marcos},
+  Timestamp                = {2015.11.22},
+  Url                      = {http://keras.io/}
 }
 
 @InProceedings{collobert2011deep,
@@ -96,6 +113,18 @@
   Publisher                = {Springer}
 }
 
+@Article{hochreiter1997long,
+  Title                    = {Long short-term memory},
+  Author                   = {Hochreiter, Sepp and Schmidhuber, J{\"u}rgen},
+  Journal                  = {Neural computation},
+  Year                     = {1997},
+  Number                   = {8},
+  Pages                    = {1735--1780},
+  Volume                   = {9},
+
+  Publisher                = {MIT Press}
+}
+
 @Book{hosmer2004applied,
   Title                    = {Applied logistic regression},
   Author                   = {Hosmer Jr, David W and Lemeshow, Stanley},
@@ -103,11 +132,33 @@
   Year                     = {2004}
 }
 
-@PhdThesis{kepler2005etiquetador,
-  Title                    = {Um etiquetador morfo-sint{\'a}tico baseado em cadeiasi de Markov de tamanho vari{\'a}vel},
+@InProceedings{kepler2010variable,
+  Title                    = {Variable-length Markov models and ambiguous words in Portuguese},
+  Author                   = {Kepler, Fabio Natanael and Finger, Marcelo},
+  Booktitle                = {Proceedings of the NAACL HLT 2010 Young Investigators Workshop on Computational Approaches to Languages of the Americas},
+  Year                     = {2010},
+  Organization             = {Association for Computational Linguistics},
+  Pages                    = {15--23}
+}
+
+@MastersThesis{kepler2005etiquetador,
+  Title                    = {Um etiquetador morfo-sint{\'a}tico baseado em cadeias de Markov de tamanho vari{\'a}vel},
   Author                   = {Kepler, F{\'a}bio Natanael},
   School                   = {Instituto de Matem{\'a}tica e Estat{\'\i}stica da Universidade de S{\~a}o Paulo, 12/04/2005.},
   Year                     = {2005}
+}
+
+@InProceedings{kombrink2011recurrent,
+  Title                    = {Recurrent Neural Network Based Language Modeling in Meeting Recognition.},
+  Author                   = {Kombrink, Stefan and Mikolov, Tomas and Karafi{\'a}t, Martin and Burget, Luk{\'a}s},
+  Booktitle                = {INTERSPEECH},
+  Year                     = {2011},
+  Pages                    = {2877--2880}
+}
+
+@Article{blacktwo,
+  Title                    = {Two/Too Simple Adaptations of word2vec for Syntax Problems},
+  Author                   = {Ling, Wang and Dyer, Chris and Black, Alan and Trancoso, Isabel}
 }
 
 @Article{lund1996producing,
@@ -127,6 +178,15 @@
   Author                   = {Luo, Qun and Xu, Weiran},
   Booktitle                = {Twenty-Ninth AAAI Conference on Artificial Intelligence},
   Year                     = {2015}
+}
+
+@InCollection{manning2011part,
+  Title                    = {Part-of-speech tagging from 97\% to 100\%: is it time for some linguistics?},
+  Author                   = {Manning, Christopher D},
+  Booktitle                = {Computational Linguistics and Intelligent Text Processing},
+  Publisher                = {Springer},
+  Year                     = {2011},
+  Pages                    = {171--189}
 }
 
 @Book{manning1999foundations,
@@ -178,6 +238,26 @@
   Publisher                = {Stanford, Tutorial}
 }
 
+@Article{lstmnet,
+  Title                    = {Understanding LSTM Networks},
+  Author                   = {Christopher Olah},
+  Year                     = {2015},
+
+  Owner                    = {marcos},
+  Timestamp                = {2015.11.10},
+  Url                      = {http://colah.github.io/posts/2015-08-Understanding-LSTMs/}
+}
+
+@Article{convnet,
+  Title                    = {Conv Nets: A Modular Perspective},
+  Author                   = {Christopher Olah},
+  Year                     = {2014},
+
+  Owner                    = {marcos},
+  Timestamp                = {2015.11.10},
+  Url                      = {http://colah.github.io/posts/2014-07-Conv-Nets-Modular/}
+}
+
 @Article{pennington2014glove,
   Title                    = {Glove: Global vectors for word representation},
   Author                   = {Pennington, Jeffrey and Socher, Richard and Manning, Christopher D},
@@ -185,6 +265,17 @@
   Year                     = {2014},
   Pages                    = {1532--1543},
   Volume                   = {12}
+}
+
+@Misc{penntreebank,
+  Title                    = {The Penn Treebank Project (2014).},
+
+  Author                   = {University of Pennsylvania},
+  Month                    = {April},
+  Year                     = {2014},
+
+  Timestamp                = {2015.06.18},
+  Url                      = {http://www.cis.upenn.edu/~treebank/}
 }
 
 @Article{roe1992visual,
@@ -208,6 +299,18 @@
   Pages                    = {82--93}
 }
 
+@Article{schuster1997bidirectional,
+  Title                    = {Bidirectional recurrent neural networks},
+  Author                   = {Schuster, Mike and Paliwal, Kuldip K},
+  Journal                  = {Signal Processing, IEEE Transactions on},
+  Year                     = {1997},
+  Number                   = {11},
+  Pages                    = {2673--2681},
+  Volume                   = {45},
+
+  Publisher                = {IEEE}
+}
+
 @InProceedings{shen2007guided,
   Title                    = {Guided learning for bidirectional sequence classification},
   Author                   = {Shen, Libin and Satta, Giorgio and Joshi, Aravind},
@@ -228,6 +331,34 @@
   Owner                    = {marcos},
   Timestamp                = {2015.06.22},
   Url                      = {http://cs224d.stanford.edu/}
+}
+
+@InProceedings{socher2011parsing,
+  Title                    = {Parsing natural scenes and natural language with recursive neural networks},
+  Author                   = {Socher, Richard and Lin, Cliff C and Manning, Chris and Ng, Andrew Y},
+  Booktitle                = {Proceedings of the 28th international conference on machine learning (ICML-11)},
+  Year                     = {2011},
+  Pages                    = {129--136}
+}
+
+@InProceedings{socher2010learning,
+  Title                    = {Learning continuous phrase representations and syntactic parsing with recursive neural networks},
+  Author                   = {Socher, Richard and Manning, Christopher D and Ng, Andrew Y},
+  Booktitle                = {Proceedings of the NIPS-2010 Deep Learning and Unsupervised Feature Learning Workshop},
+  Year                     = {2010},
+  Pages                    = {1--9}
+}
+
+@Article{srivastava2014dropout,
+  Title                    = {Dropout: A simple way to prevent neural networks from overfitting},
+  Author                   = {Srivastava, Nitish and Hinton, Geoffrey and Krizhevsky, Alex and Sutskever, Ilya and Salakhutdinov, Ruslan},
+  Journal                  = {The Journal of Machine Learning Research},
+  Year                     = {2014},
+  Number                   = {1},
+  Pages                    = {1929--1958},
+  Volume                   = {15},
+
+  Publisher                = {JMLR. org}
 }
 
 @InProceedings{turian2010word,
@@ -278,14 +409,5 @@
   Volume                   = {13},
 
   Publisher                = {IEEE}
-}
-
-@Manual{penntreebank,
-  Title                    = {The Penn Treebank Project (2014).},
-  Month                    = {April},
-  Year                     = {2014},
-
-  Timestamp                = {2015.06.18},
-  Url                      = {http://www.cis.upenn.edu/~treebank/}
 }
 

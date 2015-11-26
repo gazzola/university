@@ -1,9 +1,36 @@
 %==============================================================================
-\chapter{Considerações finais}\label{consideracoes}
+\chapter{Considerações finais}\label{consideracoesfinais}
 %==============================================================================
 
-A aprendizagem guiada tem como objetivo ganhar acurácia, pois com uma palavra já classificada, o contexto da janela de palavras sendo analisada fica mais representativo, e portanto menos ambíguo. Apesar de \citeonline{shen2007guided} não utilizar modelos baseados em redes neurais, conseguiu alcançar bons resultados. Além disso, estamos utilizando representações vetorizadas das classes gramaticais e das palavras, e com isso esperamos obter mais acurácia, pois estamos levando mais informações em consideração no momento em que a rede neural recorrente computa a hipótese. Ou seja, pretende-se obter bons resultados com essa metodologia.
+\section{Conclusão}
 
-A aplicação do método neural pode ser lento devido a utilização dos trigramas. Caso isso se confirme verdade, será feitos apenas alguns testes com eles e então diminuiremos a notação para funcionar com bigramas. 
+Este trabalho apresentou dois modelos neurais diferentes para solucionar o problema de \ac{pos} Tagging. Esses dois modelos foram definidos e a complexidade de treinamento e predição do modelo neural recursivo foi analisada. Para os dois modelos, nós calculamos a acurácia sobre três diferentes \textit{córpus}. Utilizamos vetores distribuídos de palavras treinados de modo não supervisionado para a representação das palavras. Isso fez com que a acurácia para palavras fora do vocabulário ficasse maior. Além disso, verificamos o impacto do tamanho da sentença para nossos piores resultados a fim de analisar os erros cometidos. 
 
-Para esta etapa do trabalho, ainda não foram testadas as hipóteses levantadas através da metodologia, sendo assim, não há resultados previsórios.
+Através dos experimentos, foi possível perceber que o conjunto de treinamento utilizado para aprender as \textit{word embeddings} tem uma grande influência nos resultados. Percebemos também que o modelo neural recursivo sofreu de \textit{underfitting}. Os testes mostraram que o modelo neural recorrente bidirecional é mais eficiente e também mais rápido para treinar e classificar. Não foi possível alcançar o estado da arte, porém conseguimos o segundo melhor resultado para palavras fora do vocabulário no Mac-Morpho original. 
+
+Para a implementação deste trabalho, nós criamos uma ferramenta chamada DeepTagger, que está disponível publicamente no repositório do BitBucket, que pode ser acessado através do endereço: \url{https://bitbucket.org/fabiokepler/deeptagger}. 
+
+
+\section{Trabalhos futuros}
+
+Pretendemos realizar mais testes com o modelo neural recorrente bidirecional, principalmente com um \textit{dump} da Wikipédia maior. E também pretendemos criar novas técnicas a serem empregadas ao DeepTagger, como:
+
+\begin{itemize}
+
+\item Modelo de caracteres.
+
+\item Mecanismos de atenção.
+
+\item Suporte a outras representações distribuídas de vetores.
+
+\end{itemize}
+
+
+Para conseguir realizar mais testes no modelo neural recursivo, vamos paralelizar o código de treinamento e de predição.
+
+
+% A aprendizagem guiada tem como objetivo ganhar acurácia, pois com uma palavra já classificada, o contexto da janela de palavras sendo analisada fica mais representativo, e portanto menos ambíguo. Apesar de \citeonline{shen2007guided} não utilizar modelos baseados em redes neurais, conseguiu alcançar bons resultados. Além disso, estamos utilizando representações vetorizadas das classes gramaticais e das palavras, e com isso esperamos obter mais acurácia, pois estamos levando mais informações em consideração no momento em que a rede neural recorrente computa a hipótese. Ou seja, pretende-se obter bons resultados com essa metodologia.
+
+% A aplicação do método neural pode ser lento devido a utilização dos trigramas. Caso isso se confirme verdade, será feitos apenas alguns testes com eles e então diminuiremos a notação para funcionar com bigramas. 
+
+% Para esta etapa do trabalho, ainda não foram testadas as hipóteses levantadas através da metodologia, sendo assim, não há resultados previsórios.

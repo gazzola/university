@@ -1,0 +1,308 @@
+[2015-11-23 02:16:23,896] __main__                  INFO     Finished building TrevisoTrainableVectorsManualBidir model
+[2015-11-23 02:16:23,896] __main__                  INFO     Training model...
+[2015-11-23 02:16:23,897] __main__                  DEBUG    and validating over dev corpus...
+[2015-11-23 02:16:27,250] deeptagger.model.recurrent.treviso DEBUG    Getting manual features...
+[2015-11-23 02:18:58,392] deeptagger.model.recurrent.treviso DEBUG    Getting manual features...
+Train on 728497 samples, validate on 178373 samples
+Epoch 1/7
+728497/728497 [==============================] - 1129s - loss: 0.3517 - val_loss: 0.1548
+[2015-11-23 02:38:25,383] urllib3.connectionpool    INFO     Starting new HTTP connection (1): localhost
+[2015-11-23 02:38:25,384] urllib3.connectionpool    DEBUG    Setting read timeout to None
+[2015-11-23 02:38:25,385] urllib3.connectionpool    DEBUG    "POST /publish/epoch/end/ HTTP/1.1" 200 2
+[2015-11-23 02:39:16,527] deeptagger.model.recurrent.treviso INFO     Tag accuracy after epoch 0: 0.9558789727144803
+Epoch 2/7
+728497/728497 [==============================] - 1129s - loss: 0.1850 - val_loss: 0.1415
+[2015-11-23 02:58:05,582] urllib3.connectionpool    INFO     Starting new HTTP connection (1): localhost
+[2015-11-23 02:58:05,583] urllib3.connectionpool    DEBUG    Setting read timeout to None
+[2015-11-23 02:58:05,604] urllib3.connectionpool    DEBUG    "POST /publish/epoch/end/ HTTP/1.1" 200 2
+[2015-11-23 02:58:58,531] deeptagger.model.recurrent.treviso INFO     Tag accuracy after epoch 1: 0.9595678718191655
+Epoch 3/7
+728497/728497 [==============================] - 1123s - loss: 0.1653 - val_loss: 0.1373
+[2015-11-23 03:17:42,413] urllib3.connectionpool    INFO     Starting new HTTP connection (1): localhost
+[2015-11-23 03:17:42,414] urllib3.connectionpool    DEBUG    Setting read timeout to None
+[2015-11-23 03:17:42,416] urllib3.connectionpool    DEBUG    "POST /publish/epoch/end/ HTTP/1.1" 200 2
+[2015-11-23 03:18:33,409] deeptagger.model.recurrent.treviso INFO     Tag accuracy after epoch 2: 0.9623317430328581
+Epoch 4/7
+728497/728497 [==============================] - 1125s - loss: 0.1550 - val_loss: 0.1299
+[2015-11-23 03:37:19,278] urllib3.connectionpool    INFO     Starting new HTTP connection (1): localhost
+[2015-11-23 03:37:19,279] urllib3.connectionpool    DEBUG    Setting read timeout to None
+[2015-11-23 03:37:19,296] urllib3.connectionpool    DEBUG    "POST /publish/epoch/end/ HTTP/1.1" 200 2
+[2015-11-23 03:38:10,982] deeptagger.model.recurrent.treviso INFO     Tag accuracy after epoch 3: 0.9644657588312133
+Epoch 5/7
+728497/728497 [==============================] - 1121s - loss: 0.1468 - val_loss: 0.1390
+[2015-11-23 03:56:52,174] urllib3.connectionpool    INFO     Starting new HTTP connection (1): localhost
+[2015-11-23 03:56:52,174] urllib3.connectionpool    DEBUG    Setting read timeout to None
+[2015-11-23 03:56:52,176] urllib3.connectionpool    DEBUG    "POST /publish/epoch/end/ HTTP/1.1" 200 2
+[2015-11-23 03:57:43,576] deeptagger.model.recurrent.treviso INFO     Tag accuracy after epoch 4: 0.9632287397756387
+Epoch 6/7
+728497/728497 [==============================] - 1117s - loss: 0.1409 - val_loss: 0.1442
+[2015-11-23 04:16:21,241] urllib3.connectionpool    INFO     Starting new HTTP connection (1): localhost
+[2015-11-23 04:16:21,241] urllib3.connectionpool    DEBUG    Setting read timeout to None
+[2015-11-23 04:16:21,243] urllib3.connectionpool    DEBUG    "POST /publish/epoch/end/ HTTP/1.1" 200 2
+[2015-11-23 04:17:12,543] deeptagger.model.recurrent.treviso INFO     Tag accuracy after epoch 5: 0.964254679800194
+Epoch 7/7
+728497/728497 [==============================] - 1121s - loss: 0.1361 - val_loss: 0.1424
+[2015-11-23 04:35:53,759] urllib3.connectionpool    INFO     Starting new HTTP connection (1): localhost
+[2015-11-23 04:35:53,760] urllib3.connectionpool    DEBUG    Setting read timeout to None
+[2015-11-23 04:35:53,762] urllib3.connectionpool    DEBUG    "POST /publish/epoch/end/ HTTP/1.1" 200 2
+[2015-11-23 04:36:45,073] deeptagger.model.recurrent.treviso INFO     Tag accuracy after epoch 6: 0.9645910535787366
+[2015-11-23 04:36:45,075] __main__                  INFO     Evaluating model...
+[2015-11-23 04:36:45,495] deeptagger.model.recurrent.treviso DEBUG    Getting manual features...
+178373/178373 [==============================] - 51s     
+[2015-11-23 04:38:14,211] __main__                  INFO     Test accuracy: 0.9645910535787366
+[2015-11-23 04:38:14,211] __main__                  INFO     Predicting over validation corpus...
+[2015-11-23 04:38:14,214] deeptagger.model.recurrent.treviso DEBUG    Getting manual features...
+178373/178373 [==============================] - 51s      
+[2015-11-23 04:39:42,819] __main__                  INFO     Saving predicted tags to 'data/marcos/macmorpho-test.txt.marcos.tagged'...
+178373 178373
+Accuracy: 96.4591%
+g,t,c,w: 178373,178373,0,6316
+    Words:   Total    (%)      Correct Wrong Precision%
+    Known:  169770 ( 95.1770%)  164548  5222 96.9241%
+  Unknown:    8603 (  4.8230%)    7509  1094 87.2835%
+Ambiguous:  108492 ( 60.8231%)  104487  4005 96.3085%
+    Total:  178373 (100.0000%)  172057  6316 96.4591%
+Total sentences: 8609
+Wrong sentences:3699
+Correct sentences:4910
+
+Avg of wrong sentences per size:
+  1: 0/0
+  2: 0/2
+  3: 2/34
+  4: 3/35
+  5: 10/63
+  6: 20/133
+  7: 16/105
+  8: 26/182
+  9: 51/209
+ 10: 54/261
+ 11: 70/251
+ 12: 85/309
+ 13: 104/334
+ 14: 118/333
+ 15: 120/321
+ 16: 119/342
+ 17: 132/381
+ 18: 123/359
+ 19: 144/350
+ 20: 135/332
+ 21: 168/363
+ 22: 152/329
+ 23: 160/311
+ 24: 168/324
+ 25: 132/286
+ 26: 122/242
+ 27: 123/223
+ 28: 142/247
+ 29: 123/214
+ 30: 100/183
+ 31: 88/168
+ 32: 95/152
+ 33: 98/169
+ 34: 75/125
+ 35: 69/102
+ 36: 80/120
+ 37: 52/82
+ 38: 42/74
+ 39: 43/76
+ 40: 37/63
+ 41: 30/50
+ 42: 35/47
+ 43: 29/44
+ 44: 29/47
+ 45: 28/34
+ 46: 19/28
+ 47: 20/28
+ 48: 7/13
+ 49: 14/18
+ 50: 10/13
+ 51: 10/10
+ 52: 8/10
+ 53: 6/7
+ 54: 9/12
+ 55: 3/4
+ 56: 6/10
+ 57: 4/5
+ 58: 4/4
+ 59: 5/7
+ 60: 4/4
+ 61: 1/2
+ 62: 0/1
+ 63: 4/5
+ 64: 2/2
+ 65: 0/0
+ 66: 2/2
+ 67: 1/2
+ 68: 2/3
+ 69: 0/0
+ 70: 1/1
+ 71: 1/1
+ 72: 0/0
+ 73: 0/1
+ 74: 1/1
+ 75: 1/1
+ 76: 0/1
+ 77: 1/1
+ 78: 0/0
+ 79: 1/1
+ 80: 0/0
+ 81: 0/0
+ 82: 0/0
+ 83: 0/0
+ 84: 0/0
+ 85: 0/0
+ 86: 0/0
+ 87: 0/0
+ 88: 0/0
+ 89: 0/0
+ 90: 0/0
+ 91: 0/0
+ 92: 0/0
+ 93: 0/0
+ 94: 0/0
+ 95: 0/0
+ 96: 0/0
+ 97: 0/0
+ 98: 0/0
+ 99: 0/0
+100: 0/0
+101: 0/0
+102: 0/0
+103: 0/0
+104: 0/0
+105: 0/0
+106: 0/0
+107: 0/0
+108: 0/0
+109: 0/0
+110: 0/0
+111: 0/0
+112: 0/0
+113: 0/0
+114: 0/0
+115: 0/0
+116: 0/0
+117: 0/0
+118: 0/0
+119: 0/0
+120: 0/0
+121: 0/0
+122: 0/0
+123: 0/0
+124: 0/0
+125: 0/0
+126: 0/0
+127: 0/0
+128: 0/0
+129: 0/0
+130: 0/0
+131: 0/0
+132: 0/0
+133: 0/0
+134: 0/0
+135: 0/0
+136: 0/0
+137: 0/0
+138: 0/0
+139: 0/0
+140: 0/0
+141: 0/0
+142: 0/0
+143: 0/0
+144: 0/0
+145: 0/0
+146: 0/0
+147: 0/0
+148: 0/0
+149: 0/0
+150: 0/0
+151: 0/0
+152: 0/0
+153: 0/0
+154: 0/0
+155: 0/0
+156: 0/0
+157: 0/0
+158: 0/0
+159: 0/0
+160: 0/0
+161: 0/0
+162: 0/0
+163: 0/0
+164: 0/0
+165: 0/0
+166: 0/0
+167: 0/0
+168: 0/0
+169: 0/0
+170: 0/0
+171: 0/0
+172: 0/0
+173: 0/0
+174: 0/0
+175: 0/0
+176: 0/0
+177: 0/0
+178: 0/0
+179: 0/0
+180: 0/0
+181: 0/0
+182: 0/0
+183: 0/0
+184: 0/0
+185: 0/0
+186: 0/0
+187: 0/0
+188: 0/0
+189: 0/0
+190: 0/0
+191: 0/0
+----------------------------------------------------------------------
+|   Top 30 erros por frequência      || Top 30 erros por porcentagem |
+|   Palavra: #Erro / #Ocor = %Erros  ||    Palavra:  %Erros  |#Ocor| |
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+ConfusionMatrix for 'que':
+       |    P         P         P         A           |
+       |    R         R         R         D    N      |
+       |    O         O         O    P    V    P      |
+       |    -         S    A    A    D    -    R    A |
+       |    K    K    U    D    D    E    K    O    D |
+       |    S    S    B    V    J    N    S    P    J |
+-------+----------------------------------------------+
+PRO-KS |<1776>  58    1    .    .    .    .    .    . |
+    KS |  203<1354>   1    .    .    .    .    .    . |
+PROSUB |   61    1  <18>   .    .    .    .    .    . |
+   ADV |    6    .    5   <.>   .    .    .    1    . |
+PROADJ |    6    5    1    .   <.>   .    .    .    . |
+  PDEN |    3    5    .    .    .   <.>   .    .    . |
+ADV-KS |    6    .    .    .    .    .   <.>   .    . |
+ NPROP |    1    1    .    .    .    .    .   <3>   . |
+   ADJ |    1    1    .    .    .    .    .    .   <.>|
+-------+----------------------------------------------+
+(row = reference; col = test)
+
+ConfusionMatrix for 'a':
+        |                             P                               |
+        |              P              R    P    P                     |
+        |              R    N         O    R    R                     |
+        |         P    O    P         P    O    O                     |
+        |    A    R    S    R    A    E    A    -                     |
+        |    R    E    U    O    D    S    D    K    K    I    K      |
+        |    T    P    B    P    V    S    J    S    S    N    C    N |
+--------+-------------------------------------------------------------+
+    ART |<2960>  51    4    2    1    1    .    .    .    .    .    1 |
+   PREP |   76 <963>   2    .    1    1    .    2    .    .    .    . |
+ PROSUB |    5    2  <31>   .    .    .    .    .    .    .    .    . |
+  NPROP |    5    1    .  <23>   .    .    .    .    .    .    .    . |
+    ADV |    1   13    1    .   <3>   .    .    .    .    .    .    . |
+PROPESS |    4    5    .    .    .   <8>   .    .    .    .    .    . |
+ PROADJ |    .    3    2    .    3    .   <.>   .    .    .    .    . |
+ PRO-KS |    .    .    .    .    .    .    .   <6>   .    .    .    . |
+     KS |    .    2    1    .    .    .    .    .   <.>   .    .    . |
+     IN |    1    .    .    .    .    .    .    .    .   <.>   .    . |
+     KC |    .    1    .    .    .    .    .    .    .    .   <.>   . |
+      N |    .    .    .    .    .    .    .    .    .    .    .   <.>|
+--------+-------------------------------------------------------------+
+(row = reference; col = test)
