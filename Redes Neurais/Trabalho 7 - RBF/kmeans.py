@@ -23,16 +23,18 @@ class KMeans:
 	Simple K-means
 	"""
 
-	def __init__(self, nb_cluster):
+	def __init__(self, nb_cluster=3):
 		self.nb_cluster = nb_cluster
 		self.centroids = np.zeros((nb_cluster, 1), dtype=np.float64)
 		self.previous_centroids = np.zeros((nb_cluster, 1))
 		self.idx = None
 
 
-	def initialize_centroids(self, X):
-		self.centroids = np.random.permutation(X)[:self.nb_cluster]
-
+	def initialize_centroids(self, X, init_from_train=False):
+		if init_from_train:
+			self.centroids = np.random.permutation(X)[:self.nb_cluster]
+		else:
+			self.centroids = np.random.randn(self.nb_cluster, X.shape[1])
 
 	def find_closest_centroids(self, X):
 		for i in range(X.shape[0]):
@@ -69,10 +71,10 @@ class KMeans:
 		return var
 
 
-	def train(self, X, nb_iters=100, verbose=False):
+	def train(self, X, nb_iters=100, verbose=False, init_from_train=False):
 		
 		m, n = X.shape
-		self.initialize_centroids(X)
+		self.initialize_centroids(X, init_from_train=init_from_train)
 		self.idx = np.zeros(m)
 		self.previous_idx = np.ones(m)
 		self.previous_centroids = self.centroids
@@ -92,7 +94,6 @@ class KMeans:
 				self.previous_centroids = self.centroids
 
 			i += 1
-
 
 		if verbose:
 			plot_scatter(X, self.idx, self.nb_cluster)
