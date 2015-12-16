@@ -39,7 +39,7 @@ Realizamos um treinamento não-supervisionado para gerar vetores distribuídos d
 
 Com essas \textit{features}, espera-se que o número de erros para palavras fora do vocabulário seja menor, pois desse modo temos informações relevantes da palavra mesmo que ela não esteja no conjunto de treinamento. 
 
-Para palavras que não estão no vocabulário do treinamento não supervisionado, geramos um único vetor aleatório para elas (ou seja, as palavras compartilham o mesmo vetor).
+Para palavras que não estão no vocabulário do treinamento não-supervisionado, geramos um único vetor aleatório para elas (ou seja, as palavras compartilham o mesmo vetor).
 
 
 \section{Hiperparâmetros}
@@ -91,10 +91,12 @@ A acurácia mede a taxa de acertos e sua equação pode ser vista na \autoref{eq
 \frac{1}{m} \sum\limits_{i=1}^{m} equal(\hat{y}_i, y_i) 
 \end{equation}
 
-Foram obtidos resultados entre diferentes representações de palavras. Onde para cada representação de palavra foi calculada a acurácia entre palavras conhecidas, palavras desconhecidas (palavras que não estão no conjunto de treinamento e estão no conjunto de validação, considerando palavras raras como conhecidas), e também palavras ambíguas. Nós consideramos apenas a acurácia mais alta de uma determinada época sobre o conjunto de validação.
+Foram obtidos resultados entre diferentes representações de palavras. Onde para cada representação de palavra foi calculada a acurácia entre palavras conhecidas, palavras desconhecidas (palavras que não estão no conjunto de treinamento e estão no conjunto de validação, considerando palavras raras como conhecidas), e também palavras ambíguas. Nós consideramos apenas a acurácia mais alta de uma determinada época sobre o conjunto de validação. 
 
 Calculamos também a acurácia em relação a sentença inteira, onde consideramos uma sentença como correta se todas as palavras na sentença foram etiquetadas corretamente, e incorreta caso contrário. Essa métrica se encontra na coluna chamada ``Sentenças''.
 
+
+Os resultados para o modelo neural recursivo podem ser vistos na \autoref{tab:acuraciam1_recur}, \autoref{tab:acuraciam3_recur} e \autoref{tab:acuraciatb_recur} para o Mac-Morpho original, Mac-Morpho revisado e para o Tycho Brahe, respectivamente.
 
 \begin{table}[!htb]
 \footnotesize
@@ -215,6 +217,10 @@ A acurácia obtida no Tycho Brahe foi baixa quando comparada aos trabalhos relac
 % \caption{Distribuição dos comprimentos das sentenças no conjunto de validação do Tycho Brahe} 
 % \end{figure} 
 
+
+
+A \autoref{fig:distribuicaocorpus1} e a \autoref{fig:distribuicaocorpus2} mostram, respectivamente, a distribuição dos comprimentos das sentenças no conjunto de validação do Mac-Morpho e do Tycho Brahe. Nela, é possível perceber que o Tycho Brahe tem mais sentenças com comprimento maior que $50$. Já o Mac-Morpho tem um maior número de sentenças com comprimento menor que $50$. Desse modo, um erro cometido na fase inicial do algoritmo de predição é levado adiante e afeta as outras classificações 
+
 \begin{figure}[!htb]
   \caption{Distribuição dos comprimentos das sentenças}
   \begin{subfigure}[htb]{0.5\textwidth} 
@@ -230,9 +236,8 @@ A acurácia obtida no Tycho Brahe foi baixa quando comparada aos trabalhos relac
 
 
 
-A \autoref{fig:distribuicaocorpus1} e a \autoref{fig:distribuicaocorpus2} mostram, respectivamente, a distribuição dos comprimentos das sentenças no conjunto de validação do Mac-Morpho e do Tycho Brahe. Nela, é possível perceber que o Tycho Brahe tem mais sentenças com comprimento maior que $50$. Já o Mac-Morpho tem um maior número de sentenças com comprimento menor que $50$. Desse modo, um erro cometido na fase inicial do algoritmo de predição é levado adiante e afeta as outras classificações 
 
-Os resultados do modelo neural recorrente bidirecional podem ser encontrados nas tabelas abaixo:
+Os resultados do modelo neural recorrente bidirecional podem ser encontrados na \autoref{tab:acuraciam1_bidir}, \autoref{tab:acuraciam3_bidir} e \autoref{tab:acuraciatb_bidir} para o Mac-Morpho original, Mac-Morpho revisado e para o Tycho Brahe, respectivamente.
 
 \begin{table}[!htb]
 \footnotesize
@@ -302,12 +307,13 @@ A acurácia para palavras fora do vocabulário no Tycho Brahe continuou deixando
   \begin{tikzpicture}[scale=1]
     \begin{axis}[
       width=0.9\textwidth,
-      height=0.5\textwidth,
+      height=0.3\textwidth,
       xmode=normal, %log
       ymode=normal, %log
       ymin=0,
       ymax=1.05,
-      xmin=0,
+      xmin=1,
+      xmax=144,
       % xtick=data,
       % ticks=both,
       xlabel=Tamanho da sentença,
@@ -326,7 +332,7 @@ A acurácia para palavras fora do vocabulário no Tycho Brahe continuou deixando
 \end{figure}
 
 
-Para a primeira hipótese, a \autoref{fig:erroporsentenca} mostra que, para ambos os modelos, a taxa de erros do Tycho Brahe tem um crescimento significativo conforme o tamanho da sentença aumenta, sendo que o recursivo comete mais erros que o bidirecional. Entretanto, não temos opinião concreta sobre o porquê disso ocorrer. A verdade é que vários fatores podem influenciar esse comportamento, como por exemplo os hiperparâmetros, a precisão de ponto flutuante utilizada, e até a próprio modo de treinamento/predição. A \autoref{tab:tammediasentencas} mostra o tamanho média das sentenças em cada \textit{córpus}.
+Para a primeira hipótese, a \autoref{fig:erroporsentenca} mostra que, para ambos os modelos, a taxa de erros do Tycho Brahe tem um crescimento significativo conforme o tamanho da sentença aumenta, sendo que o recursivo comete mais erros que o bidirecional. Entretanto, a gente não vê uma causa do porquê disso ocorrer. A verdade é que vários fatores podem influenciar esse comportamento, como por exemplo os hiperparâmetros, a precisão de ponto flutuante utilizada, e até a próprio modo de treinamento/predição. A \autoref{tab:tammediasentencas} mostra o tamanho média das sentenças em cada \textit{córpus}.
 
 
 
@@ -345,8 +351,13 @@ Para a primeira hipótese, a \autoref{fig:erroporsentenca} mostra que, para ambo
 \end{tabular}
 \end{table}
 
+
 Com os dados da \autoref{tab:tammediasentencas} e usando as equações da análise de complexidade vistas no \autoref{modeloneuralrecursivo}, é possível ver que o tempo de treinamento e de predição para o Tycho Brahe foi maior que para o Mac-Morpho. Na prática, o tempo de treinamento e predição do modelo recursivo foi cerca de oito vezes maior do que o do modelo bidirecional.
 
+
+\begin{equation} \label{eq:taxadevetoresnaoencontradoseq}
+\frac{\mbox{\texttt{número de vetores não encontrados}}}{\mbox{\texttt{número de palavras no vocabulário}}}
+\end{equation}
 
 \begin{table}[!htb]
 \footnotesize
@@ -367,9 +378,7 @@ Com os dados da \autoref{tab:tammediasentencas} e usando as equações da análi
 
 Para a segunda hipótese, podemos levar em consideração a taxa de vetores não encontrados, descrita na \autoref{eq:taxadevetoresnaoencontradoseq}, para cada \textit{córpus} e representação de palavras utilizada, isso pode ser visto na \autoref{tab:vetoresnaoencontrados}. 
 
-\begin{equation} \label{eq:taxadevetoresnaoencontradoseq}
-\frac{\mbox{\texttt{número de vetores não encontrados}}}{\mbox{\texttt{número de palavras no vocabulário}}}
-\end{equation}
+
 
 
 Perceba que a taxa de vetores não encontrados para o Tycho Brahe é muito maior que para os outros \textit{córpus}. Além disso, é possível analisar que os vetores disponibilizados por \citeonline{fonseca2015evaluating} obtiveram a melhor acurácia na maioria dos casos. Isso foi porque eles foram treinados num \textit{córpus} com cerca de 240 milhões de \textit{tokens} numa junção de artigos da Wikipédia e publicações do portal G1 (\url{http://www.g1.com.br)}). Isso fez com que seus vetores ficassem mais precisos no contexto do Mac-Morpho (uma vez que o Mac-Morpho é uma compilação de textos jornalísticos publicados na Folha de São Paulo em 1994).
@@ -377,7 +386,7 @@ Perceba que a taxa de vetores não encontrados para o Tycho Brahe é muito maior
 Podemos também analisar a taxa de ocorrência de vetores não encontrados através da \autoref{eq:taxadeocorrenciavets}. A \autoref{tab:vetoresnaoencontradosocorrencia} mostra os valores dessa taxa para os três \textit{córpus} utilizados para cada representação de palavras.
 
 \begin{equation} \label{eq:taxadeocorrenciavets}
-\frac{\mbox{\texttt{ocorrência de vetores não encontrados}}}{\mbox{\texttt{número de palavras no conjunto de (treinamento $\bigcup$ validação)}}}
+\frac{\mbox{\texttt{ocorrência de vetores não encontrados}}}{\mbox{\texttt{número de palavras no conjunto de (treinamento $\cup$ validação)}}}
 \end{equation}
 
 

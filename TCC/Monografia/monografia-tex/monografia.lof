@@ -25,6 +25,6 @@
 \contentsline {figure}{\numberline {24}{\ignorespaces Exemplo de \textit {Dropout}\relax }}{60}{figure.caption.39}
 \contentsline {figure}{\numberline {25}{\ignorespaces Exemplo de predi\IeC {\c c}\IeC {\~a}o\relax }}{66}{figure.caption.41}
 \contentsline {figure}{\numberline {26}{\ignorespaces Arquitetura da rede neural recorrente bidirecional\relax }}{69}{figure.caption.42}
-\contentsline {figure}{\numberline {27}{\ignorespaces Acur\IeC {\'a}cia de treinamento e valida\IeC {\c c}\IeC {\~a}o para modelo recursivo usando o Wang2Vec\relax }}{74}{figure.caption.47}
+\contentsline {figure}{\numberline {27}{\ignorespaces Acur\IeC {\'a}cia de treinamento e valida\IeC {\c c}\IeC {\~a}o para modelo recursivo usando o Wang2Vec\relax }}{75}{figure.caption.47}
 \contentsline {figure}{\numberline {28}{\ignorespaces Distribui\IeC {\c c}\IeC {\~a}o dos comprimentos das senten\IeC {\c c}as\relax }}{75}{figure.caption.48}
 \contentsline {figure}{\numberline {29}{\ignorespaces Taxa de erros por tamanho da senten\IeC {\c c}a no Tycho Brahe\relax }}{76}{figure.caption.52}

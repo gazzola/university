@@ -663,7 +663,7 @@ A função de custo para redes neurais é um pouco mais complicada que a utiliza
 
 Na \autoref{eq:funcaodecustorn}, foi adicionado alguns somatórios aninhados para tratar os múltiplos nodos de saída. Na primeira parte da equação, entre os colchetes, foi adicionado um somatório aninhado que itera sobre o número de nodos de saída.
 
-Na parte da regularização (após os colchetes), foi lidado com as múltiplas matrizes $\theta$s. Conforme a regra \ref{eq:regradimensoes}, o número de colunas de uma dada matriz $\theta$ é igual ao número de nodos na camada atual (incluindo o viés). Já o número de linhas da matriz $\theta$ é igual ao número de nodos na próxima camada (sem o viés). 
+Na parte da regularização (após os colchetes), lidou-se com as múltiplas matrizes $\theta$s. Conforme a regra \ref{eq:regradimensoes}, o número de colunas de uma dada matriz $\theta$ é igual ao número de nodos na camada atual (incluindo o viés). Já o número de linhas da matriz $\theta$ é igual ao número de nodos na próxima camada (sem o viés). 
 
 \begin{equation}\label{eq:funcaodecustorn}
 J(\theta) = \frac{-1}{m}\Big[ \sum\limits_{i=1}^m \sum\limits_{k=1}^K y_k^{(i)}log(h_{\theta}(x^{(i)})_k) + (1 - y_k^{(i)})log(1 - h_{\theta}(x^{(i)})_k) \Big] +
@@ -676,7 +676,7 @@ J(\theta) = \frac{-1}{m}\Big[ \sum\limits_{i=1}^m \sum\limits_{k=1}^K y_k^{(i)}l
 
 \subsection{Algoritmo \textit{Backpropagation}}
 
-Em redes neurais, para realizar a minimização de custo um dos algoritmos amplamente utilizado é o \textit{Backpropagation}. Seu objetivo é calcular as derivadas parciais da função de custo, para que depois seja possível realizar a operação: $min_{\theta}J(\theta)$. Ou seja, o objetivo é minimizar a função de custo $J$ usando um conjunto ótimo de parâmetros $\theta$. E para isso é necessário o cálculo da derivada parcial da função de custo em relação aos parâmetros $\theta$ para cada nodo de ativação em uma camada $l$, conforme mostrado abaixo.
+Em redes neurais, para realizar a minimização de custo, um dos algoritmos amplamente utilizado é o \textit{Backpropagation}. Seu objetivo é calcular as derivadas parciais da função de custo, para que depois seja possível realizar a operação: $min_{\theta}J(\theta)$. Ou seja, o objetivo é minimizar a função de custo $J$ usando um conjunto ótimo de parâmetros $\theta$. E para isso é necessário o cálculo da derivada parcial da função de custo em relação aos parâmetros $\theta$ para cada nodo de ativação em uma camada $l$, conforme mostrado abaixo.
 
 \begin{equation}
 \frac{\partial}{\partial\theta_{i,j}^{(l)}} J(\theta) \nonumber
@@ -698,7 +698,7 @@ g'(z^{(l)}) = a^{(l)} .* (1 - a^{(l)})
 \end{equation}
 \legend{Fonte: \citeonline{machinelearningcoursera}}
 
-Portanto, a equação completa de \textit{Backpropagation} para os nodos interno é:
+Portanto, a equação completa de \textit{Backpropagation} para os nodos internos é:
 
 \begin{equation}
 \delta^{(l)} = ((\theta^{(l)})^T \delta^{(l+1)}) .* a^{(l)} .* (1 - a^{(l)}) \nonumber
@@ -747,14 +747,7 @@ A matriz $\Delta$ é usada apenas como um acumulador, com o intuito de passar ad
 \legend{Fonte: \citeonline{machinelearningcoursera}}
 \end{figure}
 
-Segundo \cite{machinelearningcoursera}, uma observação importante a ser feita é que os pesos $\theta$ não podem ser inicializados com zero, pois isso não funciona em redes neurais. Uma solução para esse problema é realizar uma \textbf{inicialização aleatória} dos pesos.
-
-
-
-
-
-
-
+Segundo \cite{machinelearningcoursera}, uma observação importante a ser feita é que os pesos $\theta$ não podem ser inicializados com zero, pois isso fará com que a convergência do algoritmo se torne mais lenta. Uma solução para esse problema é realizar uma \textbf{inicialização aleatória} dos pesos.
 
 
 

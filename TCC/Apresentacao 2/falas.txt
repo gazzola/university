@@ -1,0 +1,489 @@
+SLIDE 1 : CAPA
+-----------------------------------------
+
+- Boa noite, meu nome é Marcos Treviso, sou graduando do curso de Ciência da Computação, e sou orientado pelo Fabio Kepler. Este é meu trabalho de conclusão de curso 2, onde criamos dois modelos de aprendizagem profunda pra análise morfossintática. 
+
+
+SLIDE 2 : AGENDA
+-----------------------------------------
+
+- A apresentação foi dividida em 7 partes: 
+
+A primeira parte traz uma breve introdução do que é a análise morfossintática
+
+A segunda traz uma fundamentação básica dos conceitos aplicados nos modelos criados
+
+Também será discutido os trabalhos relacionados encontrados na literatura; 
+
+Será mostrado os modelos criados: que é um modelo neural recursivo e um modelo neural recorrente bidirecional
+
+Será mestrado os testes aplicados e os resultados obtidos
+
+E depois as considerações finais
+
+
+
+
+
+SLIDE 3 : POS Tagging
+-----------------------------------------
+
+- A análise morfossintática de uma palavra consiste em atribuí-la à sua correta classe gramatical de acordo com seu contexto. O ato de classificar uma palavra pertencente a um conjunto de textos em uma classe gramatical depende de sua estrutura morfossintática. Em Processamento de Linguagem Natural (PLN) esse ato é conhecido como POS Tagging.
+
++ Por exemplo, para essa figura, cada palavra foi classificada em sua respectiva classe gramatical.
+
+- A principal medida dessa classificação é a acurácia com que uma palavra é classificada para sua respectiva classe gramatical. Ou seja, a taxa de acerto com que uma palavra é classificada corretamente. Atualmente, vários métodos propostos conseguiram uma acurácia de cerca de 97%. Ou seja, cerca de uma palavra a cada vinte, uma a cada trinta, é classificada errada. 
+
+- Apesar dessa acurácia ser alta, em PLN estamos sempre buscando mais desempenho, já que POS Tagging pode ser aplicada como pré-processamento em uma grande variedade de aplicações, como tradução automática, sumarização, ferramentas de auxílio à leitura e escrita, entre outras.
+
+
+
+SLIDE 5 : O Problema
+-----------------------------------------
+
+- POS Tagging é um processo difícil de ser realizado em PLN, pois linguages naturais tem bastante ambiguidade. Como o Português do Brasil, que por ter uma sintaxe flexível e possuir uma rica morfologia, tem muita ambiguidade.
+
+- Uma possível estratégia trivial seria utilizar um dicionário com uma função de mapeamento de um para um. Onde a chave seria a palavra e o valor seria a classe gramatical. Entretanto isso não é eficaz, pois teríamos mais de um valor para a mesma chave. 
+
++ Em outras palavras, no caso ideal, teríamos uma função sobrejetora que mapeia uma palavra para uma classe gramatical. Entretanto, como há ambiguidade, vamos ter na verdade uma função multivalorada, com uma palavra podendo pertencer a mais de uma classe gramatical.
+
+- Para resolver isso, temos que analisar o contexto no qual a palavra está associada, ou seja, temos que analisar suas palavras vizinhas.
+
+- Uma maneira de encontrar essa solução, é utilizar aprendizado de máquina, que é uma abordagem que é amplamente utilizada para POS Tagging, pois ela consegue aprender padrões morfológicos, sintáticos e semânticos de uma sentença. 
+
+
+
+SLIDE 6 : Objetivos
+-----------------------------------------
+
+- O objetivo principal deste trabalho é criar um novo modelo para POS Tagging, onde a princípio será treinado sobre a língua portuguesa brasileira.
+
+- Com esse modelo, esperamos alcançar o estado da arte para POS Tagging no português. Buscamos isso ao combinar novas abordagens encontradas na literatura, criando assim novas abordagens. Como aprendizagem profunda, representação de palavras em vetores, redes neurais recursivas e aprendizagem guiada por palavras mais fáceis.
+
+- As medidas levadas em consideração para a análise de eficiência será a acurácia com que um palavra é classificada. E o tempo de treinamento do modelo de aprendizagem.
+
+
+
+SLIDE 7 : Fundamentação
+-----------------------------------------
+
+A fim de entender o método proposto e seus conceitos relacionados, será mostrado, brevemente, os fundamentos necessários.
+
+
+
+
+SLIDE 8 : Aprendizado de máquina
+-----------------------------------------
+
+- Dedica-se na elaboração de algoritmos e técnicas que permitem a um computador aprender padrões.
+
+- Esse aprendizado pode ser dividido em duas abordagens: O aprendizado supervisionado, onde é dado um conjunto de dados de entrada e já se sabe como a saída deve parecer, tendo a ideia de que há uma relação entre a entrada e a saída. E o aprendizado não supervisionado, que permite abordar problemas com pouca ou até nenhuma ideia de como os resultados devem parecer.
+
++ Para realizar a aprendizagem é necessário dados de entrada. Esses dados de entrada servem como exemplo para nosso modelo. Com esses dados é possível treinar o modelo para que ela possa então aprender com base nesses exemplos de entrada e saída. No caso de um aprendizado não supervisionado, esses exemplos de saída podem não existir. Depois de realizar o treinamento, é possível generalizar sobre outros dados ainda não testados e gerar uma resposta apropriada como saída. Essa generalização é feita através da criação de características, ou features, obtidas através dos dados de entrada.
+
+
+- Aprendizado supervisionado pode dividir os problemas em duas categorias distintas: Problemas de regressão, onde tenta-se prever resultados em uma saída contínua. E problemas de classificação, onde tenta-se prever resultados em uma saída discreta. 
+
++ Neste trabalho, POS Tagging é categorizado como um problema de classificação multiclasse, pois já temos as classes gramaticais apropriadas para cada palavra. Portanto, em POS Tagging teríamos mais conjuntos de y, como quadrados, asteriscos, etc. Cada um representando uma classe gramatical diferente.
+
+
+
+
+
+
+SLIDE 9 : Córpus
+-----------------------------------------
+
+- São coleções de textos agrupados. Eles são os exemplos de entrada para o treinamento dos parâmetros de um modelo. 
+
+- Eles podem conter informações adicionais, como classes classes gramaticais às palavras. Quando isso acontece, é dito que o córpus é anotado. Essa anotação é geralmente feita manualmente por especialistas de linguagens naturais.
+
+- Para este trabalho, vamos utilizar para o treinamento supervisionado o: Mac-Morpho original, que é composto por artigos publicados na Folha de São Paulo em 1994. o Mac-Morpho revisado por FONSECA, ROSA e ALUÍSIO no ínicio desse ano, onde foi revisado as classes gramaticais (juntando umas  e criando outras).  E o Tycho Brahe, composto por 66 textos históricos.
+
+- Ambos os córpus tem cerca de um milhão de palavras. Mas se diferenciam bastante em relação a quantidade de classes gramaticais. 
+
+- Eles não podem ser juntados em um grande córpus pelo fato de que seus conjuntos de classes gramaticais são diferentes. Uma possível solução para isso seria utilizar uma aprendizagem não supervisionado, aplicando técnicas de clusterização.
+
+
+
+SLIDE 10 : Representação das palavras
+-----------------------------------------
+
+- A representação das palavras pode ser feita através de word embeddings, que são vetores reais valorados em um espaço multidimensional. Cada dimensão pode ser considerada, a grosso modo, como uma feature.
+
+- O uso de word embeddings alavancou o desempenho em aplicações de PLN, e também conseguiu diminuir o processo de engenharia de features, que consiste em criar features manualmente para no modelo.
+
+- Isso aconteceu pois elas conseguem capturar similiradades entre as palavras. Quando é dito que duas word embeddings são similares, significa que elas tendem a ser usadas no mesmo contexto e usualmente pertencem a mesma classe gramatical. Em termos matemáticos, significa que que os vetores estão próximos um do outro, ou seja, sua distância euclidiana tende a ser curta. 
+
+- A similaridade das word embeddings diferenciam de acordo com as técnicas utilizadas para as suas gerações.
+
+- Esse processo de criação consiste em gerar as word embeddings atavés de um grande córpus, como por exemplo toda a wikipédia. Com isso, será criado vetores para palavras fora do vocábulareio de treinamento. E portanto, espara-se que o modelo consiga generalizar bem para palavras fora do vocabulario.
+
+
+
+
+SLIDE 11 : Representação das palavras
+-----------------------------------------------------
+
+Na seguinte imagem, é possível visualizar que palavras com sentidos semânticos parecidos estão mais próximas umas das outras. Onde no lado esquerdo há numerais e no direito profissões.
+
+
+
+
+
+SLIDE 13 : Redes neurais
+-----------------------------------------------------
+
+- Tem como origem algoritmos que tentam imitar o cérebro humano. Em um nível bem simples de abstração, neurônios são unidades de ativação que recebem entradas como impulso elétrico que são canalizados para a saída, e o corpo desse neurônio é responsável por realizar os cálculos.
+
+- No modelo matemático, temos unidades de ativação i para cada camada j da rede neural. As unidades de ativação da primeira camada são iguais a nossa entrada, ou seja, apenas é atribuido o valor de entrada para elas.
+
+- Além disso, temos pesos de ir de uma camada para outra. Esses pesos são na realidade o quê está sendo aprendido na rede neural.
+
+- Para ir de uma camada para a próxima, devemos multiplicar as já calculadas unidades de ativação para a camada j com a linha de theta da camada j correspondente. Essa multiplicação pode ser guardada num vetor z.
+
+
+- Após realizar essa multiplicação entre os pesos e as unidades de ativação, aplicamos uma função de ativação g(z) que é responsável por deixar nossos dados no intervalo entre 0 e 1, conforme mostra a figura ao lado.
+
+
+
+
+
+
+
+SLIDE 16 : Aprendizagem profunda
+-----------------------------------------------------
+
+- A aprendizagem profunda é uma ramificação da aprendizagem de máquina, onde baseia-se num conjunto de algoritmos que procuram modelar abstrações com estruturas complexas, compostas de múltiplas transformações não lineares.
+
+- Extrair features manualmente é uma tarefa difícil, pois pode haver variações nos dados que podem ser identifacadas utilizando um nível sofistiticado, quase humano, de entendimento. A aprendizagem profunda tenta automaticamente aprender boas features ou representações.
+
+- O principal modelo de aprendizagem profunda ão redes neurais. Geralmente essas redes neurais contam com múltiplas camadas. Entre elas, se destacam as redes neurais convolucionais, que fazem uma convolução nos dados e geram features que podem ser usadas em geral. As redes neurais recursivas, que fazem a composição de features de entrada e saída, de modo que o grafo de execução se pareça com um árvore. E as redes neurais recorrentes, onde cada computação é uma entrada  para a próxima, essa computação é feita da esquerda para a direita. Entretanto, as redes neurais recorrentes não conseguem aprender muito bem longas dependências e para isso, foram criadas as LSTMSs e as GRUs, que são um tipo de rede neural com memória, de modo que conseguem lembrar de padrões já visualizados para tomar uma decisão. Além disso, é possível fazer com que a computação ocorra nos dois sentidos, tanto da esquerda para a direita como da direita para a esquerda através de uma rede neural bidirecional. Isso pode ser visto na figura, onde a mesma entrada é computada da esquerda para a direita e ao mesmo tempo, do modo inverso.
+
+
+
+
+
+SLIDE 17 : Trabalhos relacionados
+-----------------------------------------------------
+
+- Vários métodos já foram propostos para resolver esse mesmo problema para o português brasileiro, apesar de nenhum deles ter um aproveitamento de 100%, vários conseguiram ótimos resultados e utilizaram variadas técnicas para isso.
+
+- Kepler e Finger usaram um modelo baseado em cadeias de markov com tamanho variavel. Como representação das palavras foi usado sequência de caracteres e o córpus utilizado foi o Tycho Brahe.
+
+- Santos e Zadrozny utilizaram redes neurais e vetores de palavras e caracteres como representação das palavras. Eles realizaram testes sobre o Tycho Brahe e sobre o Mac-Morpho.
+
+- Fonseca, Rosa e Aluísio também utilizaram redes neurais e utilizaram apenas vetores de palavras como representação das palavras. Eles realizaram testes sobre o Tycho Brahe e o Mac-Morpho
+
+- Este trabalho utilizada redes neurais recursivas e recorrentes, como representação de palavras é utilizado vetores de palavras; E os experimentos foram feitos sobre o Tycho Brahe e o Mac-Morpho.
+
+- O estado da arte depende do córpus utilizado, a seguinte tabela mostra qual foi a acurácia atingida e quem a conseguiu. Neste trabalho nós nomeamos o Mac-Moprho versão 1 como original e o Mac-Morpho versão 3 como revisado (onde essa revisão foi feita justamento por fonseca, rosa e aluísio). O Mac-Morpho versão 2 não foi utilizado. 
+
+
+
+
+
+
+
+
+
+
+SLIDE 17.7: ROTEIRO
+-----------------------------------------
+
+Bom, nosso primeiro modelo é o modelo neural recursivo. Esse modelo foi idealizado no TCC1.
+
+
+
+SLIDE 18 : Pré-processamento
+-----------------------------------------------------
+
+
+- Para classificar palavras em uma sentença, o etiquetador obtém uma janela de vetores palavras de tamanho fixo t a cada momento. Cada valor dentro dessa janela é um inteiro, que representa o índice da palavra no vocabulário.
+
+- Utilizamos também um janela de etiquetas com o mesmo tamanho que a janela de palavras. Onde também são colocados os índices das etiquetas.
+
+- Utilizamos alguns símbolos (ou tokens) especiais. 
+- O token mask foi utilizado para preencher as extremidades das janelas
+- O token unkown foi utilizado para palavras raras ou desconhecidas
+- E foram utilizdos tokens para completar o vetor de sufixos e de prefixos
+
+
+
+SLIDE 19 : Arquitetura
+-----------------------------------------------------
+
+- A nossa arquitetura está demonstrada na seguinte imagem.
+
+- Nós temos duas entradas, as janelas de palavras e de etiquetas. A janela de palavras é passada para a camada de Word Embeddings, onde é obtido os vetores da palavras e das suas features (prefixo, sufixo e capitalização). 
+
+- A janela de etiquetas é passada para a camada Tag Embeddings, onde é criado vetores aleatórios para cada etiqueta. 
+
+- Tanto os vetores da camada word embeddings como os da tag embeddings são ajustados conforme é feito o treinamento. Isso é feito simplesmente realizando mais um etapa do backpropagation até a camada de entrada. Desse modo podemos criar uma lookup table (ou tabela de busca) para cada índice de palavra ou etiqueta, respectivamente.
+
+- Após obter esses vetores, nós os passamos para a próxima camada Merge que é responsável por fazer a composição deles. A função de composição utilizada é a de soma. Perceba que estamos fazendo a composição de uma matriz com dimensão t x d com uma t x d. 
+
+- Após isso, nós passamos esses vetores compostos para a próxima camada, que é responsável por concatenar todos as linhas da matriz, desse modo nós temos um vetor de tamanho t vezes d.
+
+- Nós passamos esse grande vetor para uma camada totalmente conectada (conhecida também como densa). Nessa camada nós utilizamos uma função de ativação bem simples chamada ReLU, demonstrada na segunite equação. 
+
+- A saida da camada densa é aplicada um Dropout. Que é uma técnica de regularização que simplesmente ignora um número especificada de neurônios, desse modo, os neurônios tendem a não ficar especializados em uma tarefa e conseguem generalizar. Na nossa arqutietura, nós mantemos 50% dos neurônios ativos. 
+
+- Por fim, aplicamos uma outra camada totalmente conectada com uma função de ativação softmax, para nos dar uma probabilidade normalizada para cada etiqueta.
+
+
+
+
+
+SLIDE 20 : Treinamento 
+-----------------------------------------------------
+
+- Nosso treinamento utilizada uma heurística que se baseia em escolher palavars mais fáceis para etiquetar primeiramente. Essa heurística também é utilizdaa por Shen, SATTA e JOSHI em 2007. 
+
+- Nós passamos a sentença inteira para a rede neural utilizando o esquema de janela de palavras e janela de etiquetas. Ou seja, nosso batch é a sentença.
+
+- A palavra mais fácil pode ser vista como a palavra mais provável em um determinado momento. Nós obtemos a palavra mais fácil através da seguinte equação: Que busca o índice da linha da tabela de predições M que ainda não foi etiquetado, onde esse índice maximiza o o máximo de cada coluna, onde cada coluna representa uma classe gramatical diferente.
+
+- Por exemplo, para a tabela acima, a palavra mais provável é curso, pois ela tem a maior proabilidade entre todas as palavras para cada classe gramatical.
+
+- Após descobrir qual é a palavra mais provável, nós atualizamos nossa janela de etiquetas com a classe gramatical mais provável dessa palavra mais fácil. Essa atualização é feita em toda a ocorrência da palavra na janela de etiquetas. A seguinte equação demonstra esse processo de atualização, onde  t é o tamanho da janela. E It é uma matriz com 1s na diagonal secundária e zero no resto. e C_MP(M) representa a classe gramatical mais provável da palavra mais fácil.
+
+
+
+
+SLIDE 20 : Predição 
+-----------------------------------------------------
+
+- O processo de predição é bem parecido com o de treinamento. Exceto que agora nós realizamos um beam search com um tamanho B para descobrir qual é a sequência de etiquetas mais provável para a sentença sendo etiquetada. 
+
+- Esse processo pode ser visto através da seguinte exemplificação. Nela, nós temos uma sentença bem simples que como "o livro está guardado". Nós criamos uma janela de palavras com tamanho t, onde t é igual a 3. e também criamos B janelas de etiquetas com o mesmo tamanho, onde B é igual a 2.
+
+- No primeiro passo, é feito o preenchimento das janelas, que é feito de acordo com o pré-processamento.
+
+- Nós aplicamos então essas janelas a rede neural e obtemos a matriz de predição
+
+- Nessa matriz de predição, buscamos qual é a palavra mais fácil e quais são as suas B etiquetas mais prováveis. Definimos a probabilidade da sentença como sendo a probabilidade dessas etiquetas.
+
+- Nós então atualizamos cada matriz de etiquetas para cada sequẽncia, utilizando a equação vista no slide anterior.
+
+- Aplicamos essas janelas na rede neural e obtemos novas matrizes de predição, uma para cada sequência.
+
+- Descobrimos qual é a palavra e etiqueta mais provável dado a probabilidade da sequência de onde elas foram geradas. Seguramos apenas as B mais prováveis e atualizamos nossas B sentenças e suas probabilidades de acordo com as probabildiades dessas etiquetas mais prováveis. Essa atualização da probabilidade é feita através da multiplicação entre elas.
+
+- Após isso, nós voltamos ao passo de atualizar as janelas com as etiquetas mais prováveis. Esse processo continua até que todas as palavras na sentença foram etiquetadas.
+
+
+
+
+SLIDE 23: Roteiro
+---------------------------------
+
+Para o TCC2, nós criamos também um modelo neural recorrente bidirecional para comparar com o modelo neural recursivo.
+
+
+
+
+
+
+SLIDE 22 : Pré-processamento 
+-----------------------------------------------------
+
+- O pré-processamento desse modelo é o mesmo que o do modelo neural recursivo. A única exceção é que agora não temos uma janela de etiquetas. Ou seja, mantemos a janela de palavras, e os símbolos especiais.
+
+
+
+SLIDE 23 : Arquitetura 
+----------------------------------------------------
+
+- Essa arquitetura é bem parecida com o modelo neural recursivo também,, a Diferença é que não temos o a camada de Tag Embeddings para as etiquetas e que incluimos uma camada recorrente bidirecional utilizando GRU.
+
+- Essa camada recorrente bidirecional receba uma janela de palavras com tamanho t e gera uma representação baseando-se nas palavras vizinhas (tanto da direita como da esquerda) de tamanho h_dim. 
+
+- É então concatenado esses vetores e aplicada uma regularização com dropout, para no fim, aplicarmos esse grande vetor a uma camada totalmente conectada com softmax.
+
+
+
+SLIDE 24 : Treinamento e predição 
+----------------------------------------------------
+
+O treinamento e predição desse modelo é bem mais simples que o modelo neural recursivo. 
+
+- Basicamente, o objetivo do treinamento é minimizar a função de custo, que foi definida como sendo a categorical cross-entropy, definida nessa equiação. Onde y_i é a saída correta e y_i chapeu é a saída prevista para um exemplo de treinamento i.
+
+
+- A predição é simplesmente a saida da rede neural, sem delongas. Ou seja, a previsão para um exemplo de treinamento x_i é y chapeu i
+
+
+
+SLIDE 25: Ambiente de teste
+---------------------------------------
+
+Nós contamos, principalmente, com quatro bibliotecas: O Theano, que otimiza e avalia expressões matemáticas. O Theano é responsável por calcular de maneira automatica as derivadas analitcamente da rede neural, para que seja possível calcular os gradientes.
+
+Usamos o Keras, que é uma biblioteca de aprnedizagem profunda implementada sobre o theano, essa biblioteca vem com implementações de cada camada da nossa arquitetura. Além disso.
+
+Usamos o Numpy como uma biblioteca para fazer maniulação de matriz, como por exemplo, para realizar as operações de buscar a palavra mais provável
+
+Usamos também o gensim para realizar o parser do dump da wikipédia, para que fosse possível treinar os vetores de palavras
+
+
+A máquina que tilizamos tinha as seguintes configurações: Linux Ubuntu, Intel Xeon com 24 núcleos
+Memória de 64gb dd3
+e utilizamos python3 como linguagem de programação
+
+
+
+
+SLIDE 26: Pré processamento
+----------------------------
+
+Como pré-processamento dos experiemntos, nós transformamos todas as palavras raras no token <unkown>
+
+transformamos também todos os digitos em 9 para diminuir a espearsdiade.
+
+conforme ja discutido, utilizamos features de prefixo, sufixos e capitalização
+
+utilizamos também vetores distribuidos de palavras, onde eles foram treinados de modo não supervsionado a partir de um dump de artigos da wikipédia que continha cerca de 44 milhões de tokens e após o treinamento gerou cerca de 618mil vetores
+
+Para palavras fora do vocabulário nós cramos um vetor aleatório compartilhado, ou seja, todas as palavras fora do vocaublário tem o mesmo vetor de paalvra
+
+
+
+SLIDE 27: Hiperparametros
+-----------------------------------
+
+
+A maioria dos nossos hiperparametros foram escolhidos de modo empirico, além disso, eles não foram micro-ajustados
+
+Entre o modelo recursivo e bidirecional, os parâmetros que se diferenciam foram o tamanho da janela de palavras, onde no modelo recorrente bidirecional nós utilizamos um janela maior para obter mais contexto.
+
+E também o número de épocas no bidirecional é maior pois ele era cerca de 8x mais rápido para treinar. E no modelo recursivo 3 épocas foram o sufuciente, pos a partir da segunda o modelo já não aprendia mais.
+
+
+
+SLIDE 28: Resultados
+-----------------------------------
+
+
+Realizamos os experimentos sobre três córpus:
+O mac-morpho oringal, o mac-morpho revisado e o tycho brahe
+
+Para cada um desse córpus, nós os dividmos em conjuntos de treianmento e validação, onde 80% foi para treinamento e 20% para validação
+
+
+Nós utilizamos três tipos de vetores distribuidos:
+O Word2vec
+O Wang2Vec
+e os vetores treinados por fonseca, rosa e aluísio
+
+
+
+SLIDE 29: Resultados - acurácia
+-----------------------------------------
+
+Analisamos a acurácia para palavras conhecidas, desonhecidas (ou seja, palavras que estão fora do vocabulário de treinamento) e ambíguas. A acurácia pode ser calculada de acordo com a seguinte equação. QUe é simplesmente a taxa de acertos.
+
+Calculamos também a acurácia para as sentenças, onde uma sentença é dita correta se todas as palavras dentro da sentença foram classificadas corretamente. Não fizemos análise sobre as sentenças pois não há resultados em trabalhos relacionados para que a gente possa comparar.
+
+
+
+SLIDE 30: Resultados - Modelo neural recursivo
+---------------------------------------
+
+Para o modelo neural recursivo, nós obtemos resultados abaixo do esperado. No mac-morpho orignial, nosso melho resultado foi 86.77% para palavras desconhecidas e 95.53 no total.
+
+Para o mac-morpho revisado, nosso melhor resultado foi de 95.79% no total e 88.32% nas palavras desconhecdas.
+
+Já no Tycho Brahe o resultado foi pior ainda, nosso melhor resultado foi de apenas 89.78% no total e apenas 48.77% para palavras desconhecidas, ou seja, menos da metade das palavras desconhecidas são classifcadas erroneamente.
+
+
+
+SLIDE 31: Resultados - Modelo neural recorrente bidirecional
+-----------------------------------------
+
+O modelo neural recorrente bidirecional que foi criado apenas para fim de comparação, acabou se saíndo bem para o POS Tagging. 
+
+No mac-morpho oringinal, nós obtivemos uma acurácia de 92.63% para palavras fora do vocabulario, e 97.37 no total.
+
+No mac-morpho revisado, a gente obteve uma acurácia de 92.18% nas palavras desconhecidas e 97.07% no total.
+
+Mas no tycho brahe o resultado foi um pouco pior. 73.39% de acurácia nas palavras desonhecidas e 96.00 no total. 
+
+
+SLIDES 32: Resultados - Análise
+----------------------------------
+
+Em ambos os modelos, os resultados para o tycho brahe foram os menores. E verificamos que a maioria dos nossos melhores resultados foram alcançados utilizando os vetores treinados por fonseca, rosa e aluisio. 
+
+A gente descobriu o porquê disso ao analisar a taxa de veotres não encontrados e a taxa de ocorrência de vetotres não encontrados.
+
+A taxa de vetores não encontrado é dada pelo número de vetores não encontrados dividio pelo número de palavras no vocabulário. Com ela, percebemos que a taxa de vetores não encontrado para o tycho brahe é bem maior que para o mac-morpho. isso acontece porque o tycho brahe é baseado em textos históricos e como o treinamento dos vetores é feito sobre a wikipédia atual várias palavras não foram encontradas. Isso porque a lingua brasileira mudou muito durante o tempo. 
+
+Além disso, da para perceber que a taxa de vetores nao encontrados nos vetores treinados por fonseca foram maiores que pro word2vec e wang2vec, isso foi porque o dump que utilizamos para treinar os vetores do word2vec e wang2vec foi diferente do dump utilizado por fonseca, rosa e aluisio.
+
+Porém, analisando apenas isso, nos leva a entender que se a maioria dos vetores nao foi encontrada utilizando o a representação fonseca, porque o resultado do modelo bidirecional ainda foi melhor para essa representacao?
+
+Isso é respondido atrabés da taxa de ocorrência dos vetores não encontrados, que é dado pela ocorrência de vetores não encontrados divido pelo número de palavras no córpus. 
+
+Veja que a taxa de ocorrencia para os vetores treinados por fonseca é bem menor que os treinados por nós. E isso fez com que a acuracia ficasse maior para os vetores treinados por ele.
+
+Em geral, com essas taxas, é possível ver que nosso dump estava bem distribuido, ou seja, tinham varias palavras difernetes, porém tinha algumas palavras que são utilizadas com frequencia que não estavam nelas. 
+
+
+
+
+SLIDES 33: Comparacao com trabs relacionados
+------------------------------------------------
+
+
+Colocamos os melhores resultado de cada trabalho relacionado para cada corpus na seguinte tabela. Onde FDV significa palavras fora do vocabulario, ou seja, palavras desconhecidas.
+
+
+Na tabela, é possível ver que conseguimos o segundo melhor resultado para palavras fora do vocabulario no mac-morpho original. Porém não conseguimos alacançar o estado da arte em nenhum córpus. Além disso, no tycho brahe nossas acurácia para palavras fora do vocabulario ficou bem abaixo do esperado.
+
+Fonseca, rosa e aluisio conseguiram os melghores resultados para o mac-morpho revisado, acreditamos que isso ocorreu por os vetores treinados por eles foram treinados sobre um dump da wikipedia em conjunto com artigos publicados no g1, o que fez com uqe os vetores ficassem mais ajustados para o mac-morpho, que é feito de textos jornalisticos. 
+
+Santos e zadrozny conseguiramo o melhor resultado sobre o tycho brahe, acreditamos que eles conseguiram isso pois utilizamos um modelo de caracteres para representar palavras. 
+
+
+
+
+SLIDES 34: conclusao
+------------------------------
+
+A gente criou dois modelos para pos tagging: um modelo neural recursivo e um modelo neural recorrente bidirecional
+
+Fizemos a análise da acurácia sobre três córpus diferentes para três tipos de veotres distribuidos como representação de palavras.
+
+Com essa analise, percebemos que o modelo neural recorrente bidirecional é mais eficiente que o modelo recursivo.
+
+Nós consegumimos obter o segundo melhor resultado para palavras fora do vocabilario no mac-morpho original
+
+Como fruto destre trabalho, nós criamos uma ferramente chamada deeptagger, que está disponível livremente no bitbucket, onde é possível encontrar a implementação dos nossos modelos.
+
+
+
+
+SLIDES 35: trabalhos futuros
+------------------------------------
+
+Como trabalhos futuros, pretendemos realizar mais testes com os modelos, principalemente tentar ajustar bem os hiperparametros.
+
+
+vamos revisar o dump utilizado, ver quais foram as palavras frequentes que não estavam no dump. E caso necessário, aumentar esse dump.
+
+
+Vamos incorporar novas tecnicas no deeptagger, como modelo de caracteres, mecanismos de atencas e suporte a outros representações de palavras
+
+
+E, em ordem de conseguir testar mais vezes o modelo recursivo, vamos paralelizar o codigo de treinamento e predicao, ja que ele é bem lento.
+
+
+
+
+SLIDE 36: trabalhos futuros (spoiler)
+-----------------------------------------
+
+Nesse meio tempo entre a entrega da monografia e a apresentação, a gente incluir um modelo de caracteres no modelo bidirecional e trocar o GRU por LSTM. E com isso, nós alcançamos resultados mais satisfatórios utilziando os vetores treinados por fonseca, rosa e aluísio.
+
+Conseguimos aumentar todas as acurácias, e de quebra, alcançamos o estado da arte no tycho brahe com uma acurácia de 97.27%. No Mac-morpho oringal e revisado quase conseguimos o estado da arte, ficamos bem proximo da acurácia atingida por fonseca rosa e aluisio. 
