@@ -1,28 +1,39 @@
 \begin{theindex}
 
-  \item {FDV}, \hyperpage{34}, \hyperpage{52}
+  \item {FDV}, \hyperpage{39}, \hyperpage{56}
 
   \indexspace
 
-  \item {GloVe}, \hyperpage{36}, \hyperpage{52, 53}
+  \item {GloVe}, \hyperpage{40}, \hyperpage{56}
+  \item {GRU}, \hyperpage{54}, \hyperpage{69, 70}
 
   \indexspace
 
-  \item {HAL}, \hyperpage{35}, \hyperpage{51, 52}
+  \item {HAL}, \hyperpage{39}, \hyperpage{55, 56}
 
   \indexspace
 
-  \item {NLM}, \hyperpage{34}, \hyperpage{51--53}
+  \item {LSTM}, \hyperpage{54}
 
   \indexspace
 
-  \item {PLN}, \hyperpage{17, 18}, \hyperpage{34}, \hyperpage{48, 49}, 
-		\hyperpage{54}
-  \item {POS}, \hyperpage{17--19}, \hyperpage{30}, \hyperpage{32}, 
-		\hyperpage{49}, \hyperpage{52--54}
+  \item {NLM}, \hyperpage{39}, \hyperpage{55, 56}
 
   \indexspace
 
-  \item {SG}, \hyperpage{35, 36}, \hyperpage{51--53}
+  \item {PLN}, \hyperpage{23}, \hyperpage{39}, \hyperpage{50, 51}, 
+		\hyperpage{53, 54}, \hyperpage{71}
+  \item {POS}, \hyperpage{23}, \hyperpage{25}, \hyperpage{34}, 
+		\hyperpage{37}, \hyperpage{51, 52}, \hyperpage{55--57}, 
+		\hyperpage{59}, \hyperpage{69}, \hyperpage{74}, 
+		\hyperpage{76}, \hyperpage{81}
+
+  \indexspace
+
+  \item {ReLU}, \hyperpage{58}, \hyperpage{60}, \hyperpage{70}
+
+  \indexspace
+
+  \item {SG}, \hyperpage{39, 40}, \hyperpage{55, 56}
 
 \end{theindex}

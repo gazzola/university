@@ -1,26 +1,58 @@
 \begin{apendicesenv}
 
+% \lstdefinelanguage{Python}{
+%  keywords={typeof, null, catch, switch, in, int, str, float, self, weights, activation, activation, optimizer, class_mode, mode, input_length},
+%  keywordstyle=\color{ForestGreen}\bfseries,
+%  ndkeywords={boolean, throw, import},
+%  ndkeywords={return, class, if ,elif, endif, while, do, else, True, False , catch, def},
+%  ndkeywordstyle=\color{BrickRed}\bfseries,
+%  identifierstyle=\color{black},
+%  sensitive=false,
+% comment=[l]{\#},
+%  morecomment=[s]{/*}{*/},
+%  commentstyle=\color{purple}\ttfamily,
+%  stringstyle=\color{red}\ttfamily,
+% }
+
 % Imprime uma página indicando o início dos apêndices
 \partapendices
 
 % Para cada apêndice, um \chapter
 
 
-%==============================================================================
-\chapter{Derivadas parciais do Gradiente Descendente}\label{app:derivadasgraddesc}
-%==============================================================================
-
-De acordo com a ABNT:
-
-\begin{quotation}
-Apêndice (opcional): texto utilizado quando o autor pretende complementar sua argumentação. São identificados por letras maiúsculas e travessão, seguido do título. Ex.: APÊNDICE A - Avaliação de células totais aos quatro dias de evolução
-
-Anexo (opcional): texto ou documento \textbf{não elaborado pelo autor} para comprovar ou ilustrar. São identificados por letras maiúsculas e travessão, seguido do título. Ex.: ANEXO A - Representação gráfica de contagem de células
-\end{quotation}
-
-Tais definições (e outras) podem ser encontradas na NBR 14724-2001 Informação e documentação - trabalhos acadêmicos\footnote{http://www.firb.br/abntmonograf.htm}.
+% %==============================================================================
+% \chapter{Derivadas parciais do Gradiente Descendente}\label{app:derivadasgraddesc}
+% %==============================================================================
 
 
+\chapter{Implementação do modelo neural recursivo} \label{app:implementacaorecursivo}
+
+\section{Arquitetura}
+
+\inputminted[linenos,fontsize=\scriptsize]{python}{postextuais/recursive_model_network.py}
+
+\section{Treinamento}
+
+\inputminted[linenos,fontsize=\scriptsize]{python}{postextuais/recursive_model_train.py}
+
+\section{Predição}
+
+\inputminted[linenos,fontsize=\scriptsize]{python}{postextuais/recursive_model_predict.py}
+
+
+\chapter{Implementação do modelo neural recorrente bidirecional} \label{app:implementacaorecorrentebidir}
+
+\section{Arquitetura}
+
+\inputminted[linenos,fontsize=\scriptsize]{python}{postextuais/recurrent_model_network.py}
+
+\section{Treinamento}
+
+\inputminted[linenos,fontsize=\scriptsize]{python}{postextuais/recurrent_model_train.py}
+
+\section{Predição}
+
+\inputminted[linenos,fontsize=\scriptsize]{python}{postextuais/recurrent_model_predict.py}
 
 
 \end{apendicesenv}
