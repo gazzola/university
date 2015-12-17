@@ -248,6 +248,5 @@ if __name__ == '__main__':
 
 	# for i in range(neurons):
 	# 	pyplot.plot(x, kernels[i,:], '-', color='gray', alpha=0.5)
-
 	# pyplot.show()
 
