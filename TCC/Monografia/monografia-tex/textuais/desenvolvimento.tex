@@ -2,7 +2,7 @@
 \chapter{Modelo neural recursivo}\label{modeloneuralrecursivo}
 %==============================================================================
 
-Neste capítulo será explicado um dos modelos propostos para resolver o problema de \ac{pos} Tagging. Para isso, vamos falar primeiramente quais são os pré-processamentos feitos; depois vamos definir a arquitetura do modelo; explicar o algoritmo de treinamento e de predição; e por fim, comentar sobre a implementação do modelo.
+Neste capítulo será explicado um dos modelos criados para resolver o problema de \ac{pos} Tagging. Para isso, vamos falar primeiramente quais são os pré-processamentos feitos; depois vamos definir a arquitetura do modelo; explicar o algoritmo de treinamento e de predição; e por fim, comentar sobre a implementação do modelo.
 
 Com a intuição de simplificar o entendimento, já definimos variáveis que serão utilizadas no método de aprendizagem. Elas podem ser encontradas na \autoref{tab:variaveisdesenvolvimento}.
 \begin{table}[!htb]
@@ -311,8 +311,6 @@ Para entender melhor o funcionamento do algoritmo, sua execução está demonstr
 \end{figure}
 
 Realizamos dois passos do algoritmo na \autoref{fig:execpredicao}. Exemplificamos com uma sentença simples: ``O livro está guardado''. Utilizamos $t = 3$ e identificamos cada palavra na sentença pelo seu índice. Perceba que foi adicionado um símbolo especial de preenchimento chamado ``<padding>'' à esquerda e à direita da sentença. Nesse exemplo, definimos $B = 2$ para simplificar a visualização. O círculo azul representa a rede neural já treinada de acordo com a seção anterior. O símbolo $\cdot$ representa uma concatenação de matrizes em linha (perceba que isso não muda o objetivo da \autoref{eq:maisprovavelnaoetiquetada}).
-
-\newpage
 
 \begin{itemize}
 

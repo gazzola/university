@@ -1,0 +1,9 @@
+\beamer@endinputifotherversion {3.33pt}
+\select@language {brazil}
+\beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{4}{0}{1}
+\beamer@sectionintoc {2}{Fundamenta\IeC {\c c}\IeC {\~a}o}{8}{0}{2}
+\beamer@sectionintoc {3}{Trabalhos relacionados}{17}{0}{3}
+\beamer@sectionintoc {4}{Modelo neural recursivo}{19}{0}{4}
+\beamer@sectionintoc {5}{Modelo neural recorrente bidirecional}{24}{0}{5}
+\beamer@sectionintoc {6}{Testes e resultados}{28}{0}{6}
+\beamer@sectionintoc {7}{Refer\IeC {\^e}ncias}{41}{0}{7}

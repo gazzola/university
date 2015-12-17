@@ -37,7 +37,7 @@
 @Misc{kerasframework,
   Title                    = {Keras Framework},
 
-  Author                   = {Chollet, Fran{\c{c}}ois},
+  Author                   = {Chollet, Francois},
 
   Owner                    = {marcos},
   Timestamp                = {2015.11.22},
@@ -239,7 +239,7 @@
 }
 
 @Article{lstmnet,
-  Title                    = {Understanding LSTM Networks},
+  Title                    = {Understanding {LSTM} Networks},
   Author                   = {Christopher Olah},
   Year                     = {2015},
 

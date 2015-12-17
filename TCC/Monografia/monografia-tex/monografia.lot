@@ -3,7 +3,7 @@
 \contentsline {table}{\numberline {2}{\ignorespaces Dados dos \textit {c\IeC {\'o}rpus}\relax }}{38}{table.caption.18}
 \contentsline {table}{\numberline {3}{\ignorespaces Nota\IeC {\c c}\IeC {\~a}o utilizada para representa\IeC {\c c}\IeC {\~a}o em redes neurais\relax }}{43}{table.caption.23}
 \contentsline {table}{\numberline {4}{\ignorespaces Nota\IeC {\c c}\IeC {\~a}o utilizada para aprendizado em redes neurais\relax }}{46}{table.caption.26}
-\contentsline {table}{\numberline {5}{\ignorespaces Comparativo das t\IeC {\'e}cnicas encontradas na literatura para POS Tagging\relax }}{56}{table.caption.35}
+\contentsline {table}{\numberline {5}{\ignorespaces Comparativo das t\IeC {\'e}cnicas encontradas na literatura para POS Tagging\relax }}{55}{table.caption.35}
 \contentsline {table}{\numberline {6}{\ignorespaces Comparativo dos melhores resultados encontrados na literatura para POS Tagging\relax }}{56}{table.caption.36}
 \contentsline {table}{\numberline {7}{\ignorespaces Nota\IeC {\c c}\IeC {\~a}o utilizada para o modelo neural recursivo\relax }}{57}{table.caption.37}
 \contentsline {table}{\numberline {8}{\ignorespaces Exemplo de etiqueta\IeC {\c c}\IeC {\~a}o\relax }}{61}{table.caption.40}
@@ -11,7 +11,7 @@
 \contentsline {table}{\numberline {10}{\ignorespaces Modelo neural recursivo: Acur\IeC {\'a}cia sobre o Mac-Morpho original\relax }}{74}{table.caption.44}
 \contentsline {table}{\numberline {11}{\ignorespaces Modelo neural recursivo: Acur\IeC {\'a}cia sobre o Mac-Morpho revisado\relax }}{74}{table.caption.45}
 \contentsline {table}{\numberline {12}{\ignorespaces Modelo neural recursivo: Acur\IeC {\'a}cia sobre o Tycho Brahe\relax }}{74}{table.caption.46}
-\contentsline {table}{\numberline {13}{\ignorespaces Modelo neural recorrente bidirecional: Acur\IeC {\'a}cia sobre o Mac-Morpho original\relax }}{75}{table.caption.49}
+\contentsline {table}{\numberline {13}{\ignorespaces Modelo neural recorrente bidirecional: Acur\IeC {\'a}cia sobre o Mac-Morpho original\relax }}{76}{table.caption.49}
 \contentsline {table}{\numberline {14}{\ignorespaces Modelo neural recorrente bidirecional: Acur\IeC {\'a}cia sobre o Mac-Morpho revisado\relax }}{76}{table.caption.50}
 \contentsline {table}{\numberline {15}{\ignorespaces Modelo neural recorrente bidirecional: Acur\IeC {\'a}cia sobre o Tycho Brahe\relax }}{76}{table.caption.51}
 \contentsline {table}{\numberline {16}{\ignorespaces Tamanho m\IeC {\'e}dio das senten\IeC {\c c}as\relax }}{77}{table.caption.53}

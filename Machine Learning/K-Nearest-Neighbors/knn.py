@@ -8,6 +8,8 @@ from features import Features
 from reader import Reader
 from plots import Plots
 
+from keras.datasets import cifar10
+
 
 # http://machinelearningmastery.com/tutorial-to-implement-k-nearest-neighbors-in-python-from-scratch/
 
